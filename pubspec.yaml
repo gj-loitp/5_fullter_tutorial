@@ -20,9 +20,9 @@ dependencies:
   blur: ^3.0.0 #https://pub.dev/packages/blur
 
   cached_network_image: ^3.2.0 #https://pub.dev/packages/cached_network_image
-  connectivity_plus: ^1.0.2 #https://pub.dev/packages/connectivity_plus
-  country_picker: ^2.0.5 #https://pub.dev/packages/country_picker
-  cupertino_icons: ^1.0.3
+  connectivity_plus: ^2.2.0 #https://pub.dev/packages/connectivity_plus
+  country_picker: ^2.0.11 #https://pub.dev/packages/country_picker
+  cupertino_icons: ^1.0.4 #https://pub.dev/packages/cupertino_icons
   crypto: ^3.0.1 #https://pub.dev/packages/crypto/install
 
   drag_select_grid_view: ^0.5.1 #https://pub.dev/packages/drag_select_grid_view
