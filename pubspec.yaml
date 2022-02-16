@@ -10,38 +10,39 @@ dependencies:
   flutter:
     sdk: flutter
 
-  advance_pdf_viewer: ^2.0.0 #https://pub.dev/packages/advance_pdf_viewer
+  advance_pdf_viewer: ^2.0.1 #https://pub.dev/packages/advance_pdf_viewer
   animated_background: ^2.0.0 #https://pub.dev/packages/animated_background
   animated_text_kit: ^4.2.1 #https://pub.dev/packages/animated_text_kit
-  avatar_glow: ^2.0.1 #https://pub.dev/packages/avatar_glow
+  avatar_glow: ^2.0.2 #https://pub.dev/packages/avatar_glow
 
-  battery_plus: ^1.0.1 #https://pub.dev/packages/battery_plus
-  basic_utils: ^3.6.0 #https://pub.dev/packages/basic_utils
+  battery_plus: ^2.1.1 #https://pub.dev/packages/battery_plus
+  basic_utils: ^4.2.0 #https://pub.dev/packages/basic_utils
   blur: ^3.0.0 #https://pub.dev/packages/blur
 
-  cached_network_image: ^3.1.0 #https://pub.dev/packages/cached_network_image
-  connectivity_plus: ^1.0.2 #https://pub.dev/packages/connectivity_plus
-  country_picker: ^2.0.5 #https://pub.dev/packages/country_picker
-  cupertino_icons: ^1.0.3
+  cached_network_image: ^3.2.0 #https://pub.dev/packages/cached_network_image
+  connectivity_plus: ^2.2.0 #https://pub.dev/packages/connectivity_plus
+  country_picker: ^2.0.11 #https://pub.dev/packages/country_picker
+  cupertino_icons: ^1.0.4 #https://pub.dev/packages/cupertino_icons
   crypto: ^3.0.1 #https://pub.dev/packages/crypto/install
 
   drag_select_grid_view: ^0.5.1 #https://pub.dev/packages/drag_select_grid_view
-  device_info_plus: ^1.0.1 #https://pub.dev/packages/device_info_plus
+  device_info_plus: ^3.2.1 #https://pub.dev/packages/device_info_plus
   delayed_display: ^2.0.0 #https://pub.dev/packages/delayed_display
-  dio: ^4.0.0-beta6 #https://pub.dev/packages/dio
+  dio: ^4.0.4 #https://pub.dev/packages/dio
   dotted_border: ^2.0.0 #https://pub.dev/packages/dotted_border
   draggable_scrollbar: ^0.1.0 #https://pub.dev/packages/draggable_scrollbar
 
-  easy_debounce: ^2.0.0 #https://pub.dev/packages/easy_debounce
+  easy_debounce: ^2.0.2+1 #https://pub.dev/packages/easy_debounce
   encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
   english_words: ^4.0.0 #https://pub.dev/packages/english_words
   event_bus: ^2.0.0 #https://pub.dev/packages/event_bus
 
-  focus_detector: ^2.0.0 #https://pub.dev/packages/focus_detector
-  fl_chart: ^0.36.1 #https://pub.dev/packages/fl_chart
-  flutter_easyloading: ^3.0.0 #https://pub.dev/packages/flutter_easyloading
-  flutter_local_notifications: ^5.0.0+4 #https://pub.dev/packages/flutter_local_notifications
-  flutter_native_splash: ^1.2.3 #https://pub.dev/packages/flutter_native_splash
+  focus_detector: ^2.0.1 #https://pub.dev/packages/focus_detector
+  fl_chart: ^0.45.0 #https://pub.dev/packages/fl_chart
+  flutter_easyloading: ^3.0.3 #https://pub.dev/packages/flutter_easyloading
+  flutter_local_notifications: ^9.3.2 #https://pub.dev/packages/flutter_local_notifications
+  flutter_native_timezone: ^2.0.0 #https://pub.dev/packages/flutter_native_timezone
+  flutter_native_splash: ^2.0.4 #https://pub.dev/packages/flutter_native_splash
   flutter_reaction_button: ^1.0.8 #https://pub.dev/packages/flutter_reaction_button
   flutter_slidable: ^0.6.0 #https://pub.dev/packages/flutter_slidable
   flutter_staggered_grid_view: ^0.4.0 #https://pub.dev/packages/flutter_staggered_grid_view
@@ -150,3 +151,4 @@ flutter:
     - assets/sample/
     - assets/lottie/
     - data_repo/starwars_data.json
+    - sound/slow_spring_board.mp3
