@@ -151,3 +151,4 @@ flutter:
     - assets/sample/
     - assets/lottie/
     - data_repo/starwars_data.json
+    - sound/slow_spring_board.mp3
