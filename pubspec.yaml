@@ -32,14 +32,14 @@ dependencies:
   dotted_border: ^2.0.0 #https://pub.dev/packages/dotted_border
   draggable_scrollbar: ^0.1.0 #https://pub.dev/packages/draggable_scrollbar
 
-  easy_debounce: ^2.0.0 #https://pub.dev/packages/easy_debounce
+  easy_debounce: ^2.0.2+1 #https://pub.dev/packages/easy_debounce
   encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
   english_words: ^4.0.0 #https://pub.dev/packages/english_words
   event_bus: ^2.0.0 #https://pub.dev/packages/event_bus
 
-  focus_detector: ^2.0.0 #https://pub.dev/packages/focus_detector
-  fl_chart: ^0.36.1 #https://pub.dev/packages/fl_chart
-  flutter_easyloading: ^3.0.0 #https://pub.dev/packages/flutter_easyloading
+  focus_detector: ^2.0.1 #https://pub.dev/packages/focus_detector
+  fl_chart: ^0.45.0 #https://pub.dev/packages/fl_chart
+  flutter_easyloading: ^3.0.3 #https://pub.dev/packages/flutter_easyloading
   flutter_local_notifications: ^5.0.0+4 #https://pub.dev/packages/flutter_local_notifications
   flutter_native_splash: ^1.2.3 #https://pub.dev/packages/flutter_native_splash
   flutter_reaction_button: ^1.0.8 #https://pub.dev/packages/flutter_reaction_button
