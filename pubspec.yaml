@@ -16,10 +16,10 @@ dependencies:
   avatar_glow: ^2.0.2 #https://pub.dev/packages/avatar_glow
 
   battery_plus: ^2.1.1 #https://pub.dev/packages/battery_plus
-  basic_utils: ^3.6.0 #https://pub.dev/packages/basic_utils
+  basic_utils: ^4.2.0 #https://pub.dev/packages/basic_utils
   blur: ^3.0.0 #https://pub.dev/packages/blur
 
-  cached_network_image: ^3.1.0 #https://pub.dev/packages/cached_network_image
+  cached_network_image: ^3.2.0 #https://pub.dev/packages/cached_network_image
   connectivity_plus: ^1.0.2 #https://pub.dev/packages/connectivity_plus
   country_picker: ^2.0.5 #https://pub.dev/packages/country_picker
   cupertino_icons: ^1.0.3
