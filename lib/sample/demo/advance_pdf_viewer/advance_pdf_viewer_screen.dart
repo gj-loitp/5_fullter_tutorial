@@ -1,6 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:advance_pdf_viewer/advance_pdf_viewer.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
+import 'package:flutter/material.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 
 class AdvancePDFViewerScreen extends StatefulWidget {
