@@ -15,7 +15,7 @@ dependencies:
   animated_text_kit: ^4.2.1 #https://pub.dev/packages/animated_text_kit
   avatar_glow: ^2.0.2 #https://pub.dev/packages/avatar_glow
 
-  battery_plus: ^1.0.1 #https://pub.dev/packages/battery_plus
+  battery_plus: ^2.1.1 #https://pub.dev/packages/battery_plus
   basic_utils: ^3.6.0 #https://pub.dev/packages/basic_utils
   blur: ^3.0.0 #https://pub.dev/packages/blur
 
