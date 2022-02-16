@@ -26,9 +26,9 @@ dependencies:
   crypto: ^3.0.1 #https://pub.dev/packages/crypto/install
 
   drag_select_grid_view: ^0.5.1 #https://pub.dev/packages/drag_select_grid_view
-  device_info_plus: ^1.0.1 #https://pub.dev/packages/device_info_plus
+  device_info_plus: ^3.2.1 #https://pub.dev/packages/device_info_plus
   delayed_display: ^2.0.0 #https://pub.dev/packages/delayed_display
-  dio: ^4.0.0-beta6 #https://pub.dev/packages/dio
+  dio: ^4.0.4 #https://pub.dev/packages/dio
   dotted_border: ^2.0.0 #https://pub.dev/packages/dotted_border
   draggable_scrollbar: ^0.1.0 #https://pub.dev/packages/draggable_scrollbar
 
