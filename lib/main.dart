@@ -1,15 +1,18 @@
 import 'dart:async';
+import 'dart:io';
+import 'dart:ui';
 
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
+import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
-import 'package:hello_word/sample/demo/flutter_local_notifications/received_notification.dart';
-import 'package:rxdart/subjects.dart';
-import 'package:timezone/data/latest.dart' as tz;
+import 'package:rxdart/rxdart.dart';
+import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
+import 'lib/common/const/dimen_constants.dart';
 import 'lib/util/log_dog_utils.dart';
 import 'menu_screen.dart';
 
@@ -27,14 +30,21 @@ final BehaviorSubject<String?> selectNotificationSubject =
 const MethodChannel platform =
     MethodChannel('dexterx.dev/flutter_local_notifications_example');
 
-String? selectedNotificationPayload;
+class ReceivedNotification {
+  ReceivedNotification({
+    required this.id,
+    required this.title,
+    required this.body,
+    required this.payload,
+  });
 
-Future<void> _configureLocalTimeZone() async {
-  tz.initializeTimeZones();
-  final String? timeZoneName =
-      await platform.invokeMethod<String>('getTimeZoneName');
-  tz.setLocalLocation(tz.getLocation(timeZoneName!));
+  final int id;
+  final String? title;
+  final String? body;
+  final String? payload;
 }
+
+String? selectedNotificationPayload;
 
 // build: flutter build appbundle
 //
@@ -54,17 +64,21 @@ void main() async {
     ),
   );
   testLogger();
+
+  //for flutter local notifications
   // needed if you intend to initialize in the `main` function
   WidgetsFlutterBinding.ensureInitialized();
-  _configureLocalTimeZone();
 
-  final NotificationAppLaunchDetails? notificationAppLaunchDetails =
-      await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
+  await _configureLocalTimeZone();
+
+  final NotificationAppLaunchDetails? notificationAppLaunchDetails = !kIsWeb &&
+          Platform.isLinux
+      ? null
+      : await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
   if (notificationAppLaunchDetails?.didNotificationLaunchApp ?? false) {
-    selectedNotificationPayload = notificationAppLaunchDetails?.payload;
-    Dog.d("payload ${notificationAppLaunchDetails?.payload}");
-    //dua vao payload de load screen tuong ung <<< phan nay ko iplm
+    selectedNotificationPayload = notificationAppLaunchDetails!.payload;
   }
+
   const AndroidInitializationSettings initializationSettingsAndroid =
       AndroidInitializationSettings('app_icon');
 
@@ -75,20 +89,38 @@ void main() async {
           requestAlertPermission: false,
           requestBadgePermission: false,
           requestSoundPermission: false,
-          onDidReceiveLocalNotification:
-              (int id, String? title, String? body, String? payload) async {
-            didReceiveLocalNotificationSubject.add(ReceivedNotification(
-                id: id, title: title, body: body, payload: payload));
+          onDidReceiveLocalNotification: (
+            int id,
+            String? title,
+            String? body,
+            String? payload,
+          ) async {
+            didReceiveLocalNotificationSubject.add(
+              ReceivedNotification(
+                id: id,
+                title: title,
+                body: body,
+                payload: payload,
+              ),
+            );
           });
   const MacOSInitializationSettings initializationSettingsMacOS =
       MacOSInitializationSettings(
-          requestAlertPermission: false,
-          requestBadgePermission: false,
-          requestSoundPermission: false);
+    requestAlertPermission: false,
+    requestBadgePermission: false,
+    requestSoundPermission: false,
+  );
+  final LinuxInitializationSettings initializationSettingsLinux =
+      LinuxInitializationSettings(
+    defaultActionName: 'Open notification',
+    defaultIcon: AssetsLinuxIcon('icons/app_icon.png'),
+  );
   final InitializationSettings initializationSettings = InitializationSettings(
-      android: initializationSettingsAndroid,
-      iOS: initializationSettingsIOS,
-      macOS: initializationSettingsMacOS);
+    android: initializationSettingsAndroid,
+    iOS: initializationSettingsIOS,
+    macOS: initializationSettingsMacOS,
+    linux: initializationSettingsLinux,
+  );
   await flutterLocalNotificationsPlugin.initialize(initializationSettings,
       onSelectNotification: (String? payload) async {
     if (payload != null) {
@@ -111,6 +143,15 @@ void main() async {
       home: SplashScreen(),
     ),
   );
+}
+
+Future<void> _configureLocalTimeZone() async {
+  if (kIsWeb || Platform.isLinux) {
+    return;
+  }
+  tz.initializeTimeZones();
+  final String? timeZoneName = await FlutterNativeTimezone.getLocalTimezone();
+  tz.setLocalLocation(tz.getLocation(timeZoneName!));
 }
 
 void testLogger() {

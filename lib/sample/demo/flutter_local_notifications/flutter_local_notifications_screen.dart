@@ -1,30 +1,29 @@
+import 'dart:convert';
 import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:hello_word/main.dart';
-import 'package:hello_word/sample/demo/flutter_local_notifications/padded_elevated_button.dart';
-import 'package:hello_word/sample/demo/flutter_local_notifications/received_notification.dart';
-import 'package:hello_word/sample/demo/flutter_local_notifications/second_page.dart';
 import 'package:http/http.dart' as http;
+import 'package:image/image.dart' as image;
 import 'package:path_provider/path_provider.dart';
 import 'package:timezone/timezone.dart' as tz;
 
-//FlutterLocalNotificationScreen
+import '../../../main.dart';
+
 class FlutterLocalNotificationScreen extends StatefulWidget {
   const FlutterLocalNotificationScreen(
     this.notificationAppLaunchDetails, {
     Key? key,
   }) : super(key: key);
+
+  static const String routeName = '/';
 
   final NotificationAppLaunchDetails? notificationAppLaunchDetails;
 
@@ -101,7 +100,7 @@ class _FlutterLocalNotificationScreenState
 
   void _configureSelectNotificationSubject() {
     selectNotificationSubject.stream.listen((String? payload) async {
-      Get.to(SecondPage(payload));
+      await Navigator.pushNamed(context, '/secondPage');
     });
   }
 
@@ -113,395 +112,575 @@ class _FlutterLocalNotificationScreenState
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: UIUtils.getAppBar(
-        "FlutterLocalNotificationScreen",
-        () {
-          Get.back();
-        },
-        () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/flutter_local_notifications");
-        },
-      ),
-      body: ListView(
-        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        physics: BouncingScrollPhysics(),
-        children: [
-          const Padding(
-            padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
-            child: Text('Tap on a notification when it appears to trigger'
-                ' navigation'),
+  Widget build(BuildContext context) => MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: const Text('Plugin example app'),
           ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(0, 0, 0, 8),
-            child: Text.rich(
-              TextSpan(
-                children: <InlineSpan>[
-                  const TextSpan(
-                    text: 'Did notification launch app? ',
-                    style: TextStyle(fontWeight: FontWeight.bold),
-                  ),
-                  TextSpan(
-                    text: '${widget.didNotificationLaunchApp}',
-                  )
-                ],
-              ),
-            ),
-          ),
-          if (widget.didNotificationLaunchApp)
-            Padding(
-              padding: const EdgeInsets.fromLTRB(0, 0, 0, 8),
-              child: Text.rich(
-                TextSpan(
-                  children: <InlineSpan>[
-                    const TextSpan(
-                      text: 'Launch notification payload: ',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+          body: SingleChildScrollView(
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Center(
+                child: Column(
+                  children: <Widget>[
+                    const Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 0, 8),
+                      child: Text(
+                          'Tap on a notification when it appears to trigger'
+                          ' navigation'),
                     ),
-                    TextSpan(
-                      text: widget.notificationAppLaunchDetails!.payload,
-                    )
+                    _InfoValueString(
+                      title: 'Did notification launch app?',
+                      value: widget.didNotificationLaunchApp,
+                    ),
+                    if (widget.didNotificationLaunchApp)
+                      _InfoValueString(
+                        title: 'Launch notification payload:',
+                        value: widget.notificationAppLaunchDetails!.payload,
+                      ),
+                    PaddedElevatedButton(
+                      buttonText: 'Show plain notification with payload',
+                      onPressed: () async {
+                        await _showNotification();
+                      },
+                    ),
+                    PaddedElevatedButton(
+                      buttonText:
+                          'Show plain notification that has no title with '
+                          'payload',
+                      onPressed: () async {
+                        await _showNotificationWithNoTitle();
+                      },
+                    ),
+                    PaddedElevatedButton(
+                      buttonText:
+                          'Show plain notification that has no body with '
+                          'payload',
+                      onPressed: () async {
+                        await _showNotificationWithNoBody();
+                      },
+                    ),
+                    PaddedElevatedButton(
+                      buttonText: 'Show notification with custom sound',
+                      onPressed: () async {
+                        await _showNotificationCustomSound();
+                      },
+                    ),
+                    if (kIsWeb || !Platform.isLinux) ...<Widget>[
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Schedule notification to appear in 5 seconds '
+                            'based on local time zone',
+                        onPressed: () async {
+                          await _zonedScheduleNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Repeat notification every minute',
+                        onPressed: () async {
+                          await _repeatNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Schedule daily 10:00:00 am notification in your '
+                            'local time zone',
+                        onPressed: () async {
+                          await _scheduleDailyTenAMNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Schedule daily 10:00:00 am notification in your '
+                            "local time zone using last year's date",
+                        onPressed: () async {
+                          await _scheduleDailyTenAMLastYearNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Schedule weekly 10:00:00 am notification in your '
+                            'local time zone',
+                        onPressed: () async {
+                          await _scheduleWeeklyTenAMNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Schedule weekly Monday 10:00:00 am notification '
+                            'in your local time zone',
+                        onPressed: () async {
+                          await _scheduleWeeklyMondayTenAMNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Check pending notifications',
+                        onPressed: () async {
+                          await _checkPendingNotificationRequests();
+                        },
+                      ),
+                    ],
+                    PaddedElevatedButton(
+                      buttonText:
+                          'Schedule monthly Monday 10:00:00 am notification in '
+                          'your local time zone',
+                      onPressed: () async {
+                        await _scheduleMonthlyMondayTenAMNotification();
+                      },
+                    ),
+                    PaddedElevatedButton(
+                      buttonText:
+                          'Schedule yearly Monday 10:00:00 am notification in '
+                          'your local time zone',
+                      onPressed: () async {
+                        await _scheduleYearlyMondayTenAMNotification();
+                      },
+                    ),
+                    PaddedElevatedButton(
+                      buttonText: 'Show notification with no sound',
+                      onPressed: () async {
+                        await _showNotificationWithNoSound();
+                      },
+                    ),
+                    PaddedElevatedButton(
+                      buttonText: 'Cancel notification',
+                      onPressed: () async {
+                        await _cancelNotification();
+                      },
+                    ),
+                    PaddedElevatedButton(
+                      buttonText: 'Cancel all notifications',
+                      onPressed: () async {
+                        await _cancelAllNotifications();
+                      },
+                    ),
+                    if (!kIsWeb && Platform.isAndroid) ...<Widget>[
+                      const Text(
+                        'Android-specific examples',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Check if notifications are enabled for this app',
+                        onPressed: _areNotifcationsEnabledOnAndroid,
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show plain notification with payload and update '
+                            'channel description',
+                        onPressed: () async {
+                          await _showNotificationUpdateChannelDescription();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show plain notification as public on every '
+                            'lockscreen',
+                        onPressed: () async {
+                          await _showPublicNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show notification with custom vibration pattern, '
+                            'red LED and red icon',
+                        onPressed: () async {
+                          await _showNotificationCustomVibrationIconLed();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification using Android Uri sound',
+                        onPressed: () async {
+                          await _showSoundUriNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show notification that times out after 3 seconds',
+                        onPressed: () async {
+                          await _showTimeoutNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show insistent notification',
+                        onPressed: () async {
+                          await _showInsistentNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show big picture notification using local images',
+                        onPressed: () async {
+                          await _showBigPictureNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show big picture notification using base64 String '
+                            'for images',
+                        onPressed: () async {
+                          await _showBigPictureNotificationBase64();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show big picture notification using URLs for '
+                            'Images',
+                        onPressed: () async {
+                          await _showBigPictureNotificationURL();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show big picture notification, hide large icon '
+                            'on expand',
+                        onPressed: () async {
+                          await _showBigPictureNotificationHiddenLargeIcon();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show media notification',
+                        onPressed: () async {
+                          await _showNotificationMediaStyle();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show big text notification',
+                        onPressed: () async {
+                          await _showBigTextNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show inbox notification',
+                        onPressed: () async {
+                          await _showInboxNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show messaging notification',
+                        onPressed: () async {
+                          await _showMessagingNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show grouped notifications',
+                        onPressed: () async {
+                          await _showGroupedNotifications();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with tag',
+                        onPressed: () async {
+                          await _showNotificationWithTag();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Cancel notification with tag',
+                        onPressed: () async {
+                          await _cancelNotificationWithTag();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show ongoing notification',
+                        onPressed: () async {
+                          await _showOngoingNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show notification with no badge, alert only once',
+                        onPressed: () async {
+                          await _showNotificationWithNoBadge();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Show progress notification - updates every second',
+                        onPressed: () async {
+                          await _showProgressNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show indeterminate progress notification',
+                        onPressed: () async {
+                          await _showIndeterminateProgressNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification without timestamp',
+                        onPressed: () async {
+                          await _showNotificationWithoutTimestamp();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with custom timestamp',
+                        onPressed: () async {
+                          await _showNotificationWithCustomTimestamp();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with custom sub-text',
+                        onPressed: () async {
+                          await _showNotificationWithCustomSubText();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with chronometer',
+                        onPressed: () async {
+                          await _showNotificationWithChronometer();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show full-screen notification',
+                        onPressed: () async {
+                          await _showFullScreenNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Create grouped notification channels',
+                        onPressed: () async {
+                          await _createNotificationChannelGroup();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Delete notification channel group',
+                        onPressed: () async {
+                          await _deleteNotificationChannelGroup();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Create notification channel',
+                        onPressed: () async {
+                          await _createNotificationChannel();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Delete notification channel',
+                        onPressed: () async {
+                          await _deleteNotificationChannel();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Get notification channels',
+                        onPressed: () async {
+                          await _getNotificationChannels();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Get active notifications',
+                        onPressed: () async {
+                          await _getActiveNotifications();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Start foreground service',
+                        onPressed: () async {
+                          await _startForegroundService();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText:
+                            'Start foreground service with blue background notification',
+                        onPressed: () async {
+                          await _startForegroundServiceWithBlueBackgroundNotification();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Stop foreground service',
+                        onPressed: () async {
+                          await _stopForegroundService();
+                        },
+                      ),
+                    ],
+                    if (!kIsWeb &&
+                        (Platform.isIOS || Platform.isMacOS)) ...<Widget>[
+                      const Text(
+                        'iOS and macOS-specific examples',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with subtitle',
+                        onPressed: () async {
+                          await _showNotificationWithSubtitle();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with icon badge',
+                        onPressed: () async {
+                          await _showNotificationWithIconBadge();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with attachment',
+                        onPressed: () async {
+                          await _showNotificationWithAttachment();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notifications with thread identifier',
+                        onPressed: () async {
+                          await _showNotificationsWithThreadIdentifier();
+                        },
+                      ),
+                    ],
+                    if (!kIsWeb && Platform.isLinux) ...<Widget>[
+                      const Text(
+                        'Linux-specific examples',
+                        style: TextStyle(fontWeight: FontWeight.bold),
+                      ),
+                      FutureBuilder<LinuxServerCapabilities>(
+                        future: getLinuxCapabilities(),
+                        builder: (
+                          BuildContext context,
+                          AsyncSnapshot<LinuxServerCapabilities> snapshot,
+                        ) {
+                          if (snapshot.hasData) {
+                            final LinuxServerCapabilities caps = snapshot.data!;
+                            return Padding(
+                              padding: const EdgeInsets.symmetric(vertical: 8),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: <Widget>[
+                                  Text(
+                                    'Capabilities of the current system:',
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .subtitle1!
+                                        .copyWith(fontWeight: FontWeight.bold),
+                                  ),
+                                  const SizedBox(height: 8),
+                                  _InfoValueString(
+                                    title: 'Body text:',
+                                    value: caps.body,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Hyperlinks in body text:',
+                                    value: caps.bodyHyperlinks,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Images in body:',
+                                    value: caps.bodyImages,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Markup in the body text:',
+                                    value: caps.bodyMarkup,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Animated icons:',
+                                    value: caps.iconMulti,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Static icons:',
+                                    value: caps.iconStatic,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Notification persistence:',
+                                    value: caps.persistence,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Sound:',
+                                    value: caps.sound,
+                                  ),
+                                  _InfoValueString(
+                                    title: 'Other capabilities:',
+                                    value: caps.otherCapabilities,
+                                  ),
+                                ],
+                              ),
+                            );
+                          } else {
+                            return const CircularProgressIndicator();
+                          }
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with body markup',
+                        onPressed: () async {
+                          await _showLinuxNotificationWithBodyMarkup();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with category',
+                        onPressed: () async {
+                          await _showLinuxNotificationWithCategory();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with byte data icon',
+                        onPressed: () async {
+                          await _showLinuxNotificationWithByteDataIcon();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with theme icon',
+                        onPressed: () async {
+                          await _showLinuxNotificationWithThemeIcon();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with theme sound',
+                        onPressed: () async {
+                          await _showLinuxNotificationWithThemeSound();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with critical urgency',
+                        onPressed: () async {
+                          await _showLinuxNotificationWithCriticalUrgency();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification with timeout',
+                        onPressed: () async {
+                          await _showLinuxNotificationWithTimeout();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Suppress notification sound',
+                        onPressed: () async {
+                          await _showLinuxNotificationSuppressSound();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Transient notification',
+                        onPressed: () async {
+                          await _showLinuxNotificationTransient();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Resident notification',
+                        onPressed: () async {
+                          await _showLinuxNotificationResident();
+                        },
+                      ),
+                      PaddedElevatedButton(
+                        buttonText: 'Show notification on '
+                            'different screen location',
+                        onPressed: () async {
+                          await _showLinuxNotificationDifferentLocation();
+                        },
+                      ),
+                    ],
                   ],
                 ),
               ),
             ),
-          PaddedElevatedButton(
-            buttonText: 'Show plain notification with payload',
-            onPressed: () async {
-              await _showNotification();
-            },
           ),
-          PaddedElevatedButton(
-            buttonText: 'Show plain notification that has no title with '
-                'payload',
-            onPressed: () async {
-              await _showNotificationWithNoTitle();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Show plain notification that has no body with '
-                'payload',
-            onPressed: () async {
-              await _showNotificationWithNoBody();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Show notification with custom sound',
-            onPressed: () async {
-              await _showNotificationCustomSound();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Schedule notification to appear in 5 seconds based '
-                'on local time zone',
-            onPressed: () async {
-              await _zonedScheduleNotification();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Repeat notification every minute',
-            onPressed: () async {
-              await _repeatNotification();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Schedule daily 10:00:00 am notification in your '
-                'local time zone',
-            onPressed: () async {
-              await _scheduleDailyTenAMNotification();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Schedule daily 10:00:00 am notification in your '
-                "local time zone using last year's date",
-            onPressed: () async {
-              await _scheduleDailyTenAMLastYearNotification();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Schedule weekly 10:00:00 am notification in your '
-                'local time zone',
-            onPressed: () async {
-              await _scheduleWeeklyTenAMNotification();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Schedule weekly Monday 10:00:00 am notification in '
-                'your local time zone',
-            onPressed: () async {
-              await _scheduleWeeklyMondayTenAMNotification();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Show notification with no sound',
-            onPressed: () async {
-              await _showNotificationWithNoSound();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Check pending notifications',
-            onPressed: () async {
-              await _checkPendingNotificationRequests();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Cancel notification',
-            onPressed: () async {
-              await _cancelNotification();
-            },
-          ),
-          PaddedElevatedButton(
-            buttonText: 'Cancel all notifications',
-            onPressed: () async {
-              await _cancelAllNotifications();
-            },
-          ),
-          if (Platform.isAndroid) ...<Widget>[
-            const Text(
-              'Android-specific examples',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show plain notification with payload and update '
-                  'channel description',
-              onPressed: () async {
-                await _showNotificationUpdateChannelDescription();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show plain notification as public on every '
-                  'lockscreen',
-              onPressed: () async {
-                await _showPublicNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with custom vibration pattern, '
-                  'red LED and red icon',
-              onPressed: () async {
-                await _showNotificationCustomVibrationIconLed();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification using Android Uri sound',
-              onPressed: () async {
-                await _showSoundUriNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification that times out after 3 seconds',
-              onPressed: () async {
-                await _showTimeoutNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show insistent notification',
-              onPressed: () async {
-                await _showInsistentNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show big picture notification',
-              onPressed: () async {
-                await _showBigPictureNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show big picture notification, hide large icon '
-                  'on expand',
-              onPressed: () async {
-                await _showBigPictureNotificationHiddenLargeIcon();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show media notification',
-              onPressed: () async {
-                await _showNotificationMediaStyle();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show big text notification',
-              onPressed: () async {
-                await _showBigTextNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show inbox notification',
-              onPressed: () async {
-                await _showInboxNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show messaging notification',
-              onPressed: () async {
-                await _showMessagingNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show grouped notifications',
-              onPressed: () async {
-                await _showGroupedNotifications();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with tag',
-              onPressed: () async {
-                await _showNotificationWithTag();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Cancel notification with tag',
-              onPressed: () async {
-                await _cancelNotificationWithTag();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show ongoing notification',
-              onPressed: () async {
-                await _showOngoingNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with no badge, alert only once',
-              onPressed: () async {
-                await _showNotificationWithNoBadge();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show progress notification - updates every second',
-              onPressed: () async {
-                await _showProgressNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show indeterminate progress notification',
-              onPressed: () async {
-                await _showIndeterminateProgressNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification without timestamp',
-              onPressed: () async {
-                await _showNotificationWithoutTimestamp();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with custom timestamp',
-              onPressed: () async {
-                await _showNotificationWithCustomTimestamp();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with custom sub-text',
-              onPressed: () async {
-                await _showNotificationWithCustomSubText();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with chronometer',
-              onPressed: () async {
-                await _showNotificationWithChronometer();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show full-screen notification',
-              onPressed: () async {
-                await _showFullScreenNotification();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Create grouped notification channels',
-              onPressed: () async {
-                await _createNotificationChannelGroup();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Delete notification channel group',
-              onPressed: () async {
-                await _deleteNotificationChannelGroup();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Create notification channel',
-              onPressed: () async {
-                await _createNotificationChannel();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Delete notification channel',
-              onPressed: () async {
-                await _deleteNotificationChannel();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Get notification channels',
-              onPressed: () async {
-                await _getNotificationChannels();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Get active notifications',
-              onPressed: () async {
-                await _getActiveNotifications();
-              },
-            ),
-          ],
-          if (Platform.isIOS || Platform.isMacOS) ...<Widget>[
-            const Text(
-              'iOS and macOS-specific examples',
-              style: TextStyle(fontWeight: FontWeight.bold),
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with subtitle',
-              onPressed: () async {
-                await _showNotificationWithSubtitle();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with icon badge',
-              onPressed: () async {
-                await _showNotificationWithIconBadge();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notification with attachment',
-              onPressed: () async {
-                await _showNotificationWithAttachment();
-              },
-            ),
-            PaddedElevatedButton(
-              buttonText: 'Show notifications with thread identifier',
-              onPressed: () async {
-                await _showNotificationsWithThreadIdentifier();
-              },
-            ),
-          ],
-        ],
-      ),
-    );
-  }
+        ),
+      );
 
   Future<void> _showNotification() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'your channel id',
-      'your channel name',
-      'your channel description',
-      importance: Importance.max,
-      priority: Priority.max,
-      ticker: 'ticker',
-    );
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
+            importance: Importance.max,
+            priority: Priority.high,
+            ticker: 'ticker');
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
-      DateTime.now().millisecond,
-      'plain title',
-      'plain body',
-      platformChannelSpecifics,
-      payload: 'item x',
-    );
+        0, 'plain title', 'plain body', platformChannelSpecifics,
+        payload: 'item x');
   }
 
   Future<void> _showFullScreenNotification() async {
@@ -528,10 +707,9 @@ class _FlutterLocalNotificationScreenState
                   tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
                   const NotificationDetails(
                       android: AndroidNotificationDetails(
-                          'full screen channel id',
-                          'full screen channel name',
-                          'full screen channel description',
-                          priority: Priority.max,
+                          'full screen channel id', 'full screen channel name',
+                          channelDescription: 'full screen channel description',
+                          priority: Priority.high,
                           importance: Importance.high,
                           fullScreenIntent: true)),
                   androidAllowWhileIdle: true,
@@ -549,10 +727,10 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showNotificationWithNoBody() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-            'your channel id', 'your channel name', 'your channel description',
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             ticker: 'ticker');
     const NotificationDetails platformChannelSpecifics = NotificationDetails(
       android: androidPlatformChannelSpecifics,
@@ -564,10 +742,10 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showNotificationWithNoTitle() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-            'your channel id', 'your channel name', 'your channel description',
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             ticker: 'ticker');
     const NotificationDetails platformChannelSpecifics = NotificationDetails(
       android: androidPlatformChannelSpecifics,
@@ -590,24 +768,29 @@ class _FlutterLocalNotificationScreenState
         AndroidNotificationDetails(
       'your other channel id',
       'your other channel name',
-      'your other channel description',
+      channelDescription: 'your other channel description',
       sound: RawResourceAndroidNotificationSound('slow_spring_board'),
-      importance: Importance.max,
-      priority: Priority.max,
     );
     const IOSNotificationDetails iOSPlatformChannelSpecifics =
         IOSNotificationDetails(sound: 'slow_spring_board.aiff');
     const MacOSNotificationDetails macOSPlatformChannelSpecifics =
         MacOSNotificationDetails(sound: 'slow_spring_board.aiff');
-    const NotificationDetails platformChannelSpecifics = NotificationDetails(
-        android: androidPlatformChannelSpecifics,
-        iOS: iOSPlatformChannelSpecifics,
-        macOS: macOSPlatformChannelSpecifics);
+    final LinuxNotificationDetails linuxPlatformChannelSpecifics =
+        LinuxNotificationDetails(
+      sound: AssetsLinuxSound('sound/slow_spring_board.mp3'),
+    );
+    final NotificationDetails platformChannelSpecifics = NotificationDetails(
+      android: androidPlatformChannelSpecifics,
+      iOS: iOSPlatformChannelSpecifics,
+      macOS: macOSPlatformChannelSpecifics,
+      linux: linuxPlatformChannelSpecifics,
+    );
     await flutterLocalNotificationsPlugin.show(
-        0,
-        'custom sound notification title',
-        'custom sound notification body',
-        platformChannelSpecifics);
+      0,
+      'custom sound notification title',
+      'custom sound notification body',
+      platformChannelSpecifics,
+    );
   }
 
   Future<void> _showNotificationCustomVibrationIconLed() async {
@@ -619,20 +802,16 @@ class _FlutterLocalNotificationScreenState
 
     final AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(
-      'other custom channel id',
-      'other custom channel name',
-      'other custom channel description',
-      icon: 'secondary_icon',
-      largeIcon: const DrawableResourceAndroidBitmap('sample_large_icon'),
-      vibrationPattern: vibrationPattern,
-      enableLights: true,
-      color: const Color.fromARGB(255, 255, 0, 0),
-      ledColor: const Color.fromARGB(255, 255, 0, 0),
-      ledOnMs: 1000,
-      ledOffMs: 500,
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+            'other custom channel id', 'other custom channel name',
+            channelDescription: 'other custom channel description',
+            icon: 'secondary_icon',
+            largeIcon: const DrawableResourceAndroidBitmap('sample_large_icon'),
+            vibrationPattern: vibrationPattern,
+            enableLights: true,
+            color: const Color.fromARGB(255, 255, 0, 0),
+            ledColor: const Color.fromARGB(255, 255, 0, 0),
+            ledOnMs: 1000,
+            ledOffMs: 500);
 
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
@@ -651,12 +830,8 @@ class _FlutterLocalNotificationScreenState
         tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
         const NotificationDetails(
             android: AndroidNotificationDetails(
-          'your channel id',
-          'your channel name',
-          'your channel description',
-          importance: Importance.max,
-          priority: Priority.max,
-        )),
+                'your channel id', 'your channel name',
+                channelDescription: 'your channel description')),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
             UILocalNotificationDateInterpretation.absoluteTime);
@@ -664,15 +839,10 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showNotificationWithNoSound() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'silent channel id',
-      'silent channel name',
-      'silent channel description',
-      playSound: false,
-      styleInformation: DefaultStyleInformation(true, true),
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+        AndroidNotificationDetails('silent channel id', 'silent channel name',
+            channelDescription: 'silent channel description',
+            playSound: false,
+            styleInformation: DefaultStyleInformation(true, true));
     const IOSNotificationDetails iOSPlatformChannelSpecifics =
         IOSNotificationDetails(presentSound: false);
     const MacOSNotificationDetails macOSPlatformChannelSpecifics =
@@ -693,15 +863,10 @@ class _FlutterLocalNotificationScreenState
     final UriAndroidNotificationSound uriSound =
         UriAndroidNotificationSound(alarmUri!);
     final AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'uri channel id',
-      'uri channel name',
-      'uri channel description',
-      sound: uriSound,
-      styleInformation: const DefaultStyleInformation(true, true),
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+        AndroidNotificationDetails('uri channel id', 'uri channel name',
+            channelDescription: 'uri channel description',
+            sound: uriSound,
+            styleInformation: const DefaultStyleInformation(true, true));
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -710,15 +875,10 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showTimeoutNotification() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'silent channel id',
-      'silent channel name',
-      'silent channel description',
-      timeoutAfter: 3000,
-      styleInformation: DefaultStyleInformation(true, true),
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+        AndroidNotificationDetails('silent channel id', 'silent channel name',
+            channelDescription: 'silent channel description',
+            timeoutAfter: 3000,
+            styleInformation: DefaultStyleInformation(true, true));
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(0, 'timeout notification',
@@ -729,15 +889,12 @@ class _FlutterLocalNotificationScreenState
     // This value is from: https://developer.android.com/reference/android/app/Notification.html#FLAG_INSISTENT
     const int insistentFlag = 4;
     final AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'your channel id',
-      'your channel name',
-      'your channel description',
-      importance: Importance.max,
-      priority: Priority.max,
-      ticker: 'ticker',
-      additionalFlags: Int32List.fromList(<int>[insistentFlag]),
-    );
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
+            importance: Importance.max,
+            priority: Priority.high,
+            ticker: 'ticker',
+            additionalFlags: Int32List.fromList(<int>[insistentFlag]));
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -768,13 +925,70 @@ class _FlutterLocalNotificationScreenState
             htmlFormatSummaryText: true);
     final AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(
-      'big text channel id',
-      'big text channel name',
-      'big text channel description',
-      styleInformation: bigPictureStyleInformation,
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+            'big text channel id', 'big text channel name',
+            channelDescription: 'big text channel description',
+            styleInformation: bigPictureStyleInformation);
+    final NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+    await flutterLocalNotificationsPlugin.show(
+        0, 'big text title', 'silent body', platformChannelSpecifics);
+  }
+
+  Future<String> _base64encodedImage(String url) async {
+    final http.Response response = await http.get(Uri.parse(url));
+    final String base64Data = base64Encode(response.bodyBytes);
+    return base64Data;
+  }
+
+  Future<void> _showBigPictureNotificationBase64() async {
+    final String largeIcon =
+        await _base64encodedImage('https://via.placeholder.com/48x48');
+    final String bigPicture =
+        await _base64encodedImage('https://via.placeholder.com/400x800');
+
+    final BigPictureStyleInformation bigPictureStyleInformation =
+        BigPictureStyleInformation(
+            ByteArrayAndroidBitmap.fromBase64String(
+                bigPicture), //Base64AndroidBitmap(bigPicture),
+            largeIcon: ByteArrayAndroidBitmap.fromBase64String(largeIcon),
+            contentTitle: 'overridden <b>big</b> content title',
+            htmlFormatContentTitle: true,
+            summaryText: 'summary <i>text</i>',
+            htmlFormatSummaryText: true);
+    final AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+            'big text channel id', 'big text channel name',
+            channelDescription: 'big text channel description',
+            styleInformation: bigPictureStyleInformation);
+    final NotificationDetails platformChannelSpecifics =
+        NotificationDetails(android: androidPlatformChannelSpecifics);
+    await flutterLocalNotificationsPlugin.show(
+        0, 'big text title', 'silent body', platformChannelSpecifics);
+  }
+
+  Future<Uint8List> _getByteArrayFromUrl(String url) async {
+    final http.Response response = await http.get(Uri.parse(url));
+    return response.bodyBytes;
+  }
+
+  Future<void> _showBigPictureNotificationURL() async {
+    final ByteArrayAndroidBitmap largeIcon = ByteArrayAndroidBitmap(
+        await _getByteArrayFromUrl('https://via.placeholder.com/48x48'));
+    final ByteArrayAndroidBitmap bigPicture = ByteArrayAndroidBitmap(
+        await _getByteArrayFromUrl('https://via.placeholder.com/400x800'));
+
+    final BigPictureStyleInformation bigPictureStyleInformation =
+        BigPictureStyleInformation(bigPicture,
+            largeIcon: largeIcon,
+            contentTitle: 'overridden <b>big</b> content title',
+            htmlFormatContentTitle: true,
+            summaryText: 'summary <i>text</i>',
+            htmlFormatSummaryText: true);
+    final AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+            'big text channel id', 'big text channel name',
+            channelDescription: 'big text channel description',
+            styleInformation: bigPictureStyleInformation);
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -795,14 +1009,10 @@ class _FlutterLocalNotificationScreenState
             htmlFormatSummaryText: true);
     final AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(
-      'big text channel id',
-      'big text channel name',
-      'big text channel description',
-      largeIcon: FilePathAndroidBitmap(largeIconPath),
-      styleInformation: bigPictureStyleInformation,
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+            'big text channel id', 'big text channel name',
+            channelDescription: 'big text channel description',
+            largeIcon: FilePathAndroidBitmap(largeIconPath),
+            styleInformation: bigPictureStyleInformation);
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -816,11 +1026,9 @@ class _FlutterLocalNotificationScreenState
         AndroidNotificationDetails(
       'media channel id',
       'media channel name',
-      'media channel description',
+      channelDescription: 'media channel description',
       largeIcon: FilePathAndroidBitmap(largeIconPath),
       styleInformation: const MediaStyleInformation(),
-      importance: Importance.max,
-      priority: Priority.max,
     );
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
@@ -840,13 +1048,9 @@ class _FlutterLocalNotificationScreenState
     );
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(
-      'big text channel id',
-      'big text channel name',
-      'big text channel description',
-      styleInformation: bigTextStyleInformation,
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+            'big text channel id', 'big text channel name',
+            channelDescription: 'big text channel description',
+            styleInformation: bigTextStyleInformation);
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -863,14 +1067,9 @@ class _FlutterLocalNotificationScreenState
         summaryText: 'summary <i>text</i>',
         htmlFormatSummaryText: true);
     final AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'inbox channel id',
-      'inboxchannel name',
-      'inbox channel description',
-      styleInformation: inboxStyleInformation,
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+        AndroidNotificationDetails('inbox channel id', 'inboxchannel name',
+            channelDescription: 'inbox channel description',
+            styleInformation: inboxStyleInformation);
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -908,6 +1107,13 @@ class _FlutterLocalNotificationScreenState
       bot: true,
       icon: BitmapFilePathAndroidIcon(largeIconPath),
     );
+    final Person chef = Person(
+        name: 'Master Chef',
+        key: '3',
+        uri: 'tel:111222333444',
+        icon: ByteArrayAndroidIcon.fromBase64String(
+            await _base64encodedImage('https://placekitten.com/48/48')));
+
     final List<Message> messages = <Message>[
       Message('Hi', DateTime.now(), null),
       Message("What's up?", DateTime.now().add(const Duration(minutes: 5)),
@@ -916,6 +1122,8 @@ class _FlutterLocalNotificationScreenState
           dataMimeType: 'image/png', dataUri: imageUri),
       Message('What kind of food would you prefer?',
           DateTime.now().add(const Duration(minutes: 10)), lunchBot),
+      Message('You do not have time eat! Keep working!',
+          DateTime.now().add(const Duration(minutes: 11)), chef),
     ];
     final MessagingStyleInformation messagingStyle = MessagingStyleInformation(
         me,
@@ -925,15 +1133,10 @@ class _FlutterLocalNotificationScreenState
         htmlFormatTitle: true,
         messages: messages);
     final AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'message channel id',
-      'message channel name',
-      'message channel description',
-      category: 'msg',
-      styleInformation: messagingStyle,
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+        AndroidNotificationDetails('message channel id', 'message channel name',
+            channelDescription: 'message channel description',
+            category: 'msg',
+            styleInformation: messagingStyle);
     final NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -941,8 +1144,8 @@ class _FlutterLocalNotificationScreenState
 
     // wait 10 seconds and add another message to simulate another response
     await Future<void>.delayed(const Duration(seconds: 10), () async {
-      messages.add(Message(
-          'Thai', DateTime.now().add(const Duration(minutes: 11)), null));
+      messages.add(Message("I'm so sorry!!! But I really like thai food ...",
+          DateTime.now().add(const Duration(minutes: 11)), null));
       await flutterLocalNotificationsPlugin.show(
           0, 'message title', 'message body', platformChannelSpecifics);
     });
@@ -955,20 +1158,20 @@ class _FlutterLocalNotificationScreenState
     const String groupChannelDescription = 'grouped channel description';
     // example based on https://developer.android.com/training/notify-user/group.html
     const AndroidNotificationDetails firstNotificationAndroidSpecifics =
-        AndroidNotificationDetails(
-            groupChannelId, groupChannelName, groupChannelDescription,
+        AndroidNotificationDetails(groupChannelId, groupChannelName,
+            channelDescription: groupChannelDescription,
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             groupKey: groupKey);
     const NotificationDetails firstNotificationPlatformSpecifics =
         NotificationDetails(android: firstNotificationAndroidSpecifics);
     await flutterLocalNotificationsPlugin.show(1, 'Alex Faarborg',
         'You will not believe...', firstNotificationPlatformSpecifics);
     const AndroidNotificationDetails secondNotificationAndroidSpecifics =
-        AndroidNotificationDetails(
-            groupChannelId, groupChannelName, groupChannelDescription,
+        AndroidNotificationDetails(groupChannelId, groupChannelName,
+            channelDescription: groupChannelDescription,
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             groupKey: groupKey);
     const NotificationDetails secondNotificationPlatformSpecifics =
         NotificationDetails(android: secondNotificationAndroidSpecifics);
@@ -992,16 +1195,11 @@ class _FlutterLocalNotificationScreenState
         contentTitle: '2 messages',
         summaryText: 'janedoe@example.com');
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      groupChannelId,
-      groupChannelName,
-      groupChannelDescription,
-      styleInformation: inboxStyleInformation,
-      groupKey: groupKey,
-      setAsGroupSummary: true,
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+        AndroidNotificationDetails(groupChannelId, groupChannelName,
+            channelDescription: groupChannelDescription,
+            styleInformation: inboxStyleInformation,
+            groupKey: groupKey,
+            setAsGroupSummary: true);
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -1010,14 +1208,11 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showNotificationWithTag() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'your channel id',
-      'your channel name',
-      'your channel description',
-      importance: Importance.max,
-      priority: Priority.max,
-      tag: 'tag',
-    );
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
+            importance: Importance.max,
+            priority: Priority.high,
+            tag: 'tag');
     const NotificationDetails platformChannelSpecifics = NotificationDetails(
       android: androidPlatformChannelSpecifics,
     );
@@ -1052,10 +1247,10 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showOngoingNotification() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-            'your channel id', 'your channel name', 'your channel description',
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             ongoing: true,
             autoCancel: false);
     const NotificationDetails platformChannelSpecifics =
@@ -1067,12 +1262,8 @@ class _FlutterLocalNotificationScreenState
   Future<void> _repeatNotification() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(
-      'repeating channel id',
-      'repeating channel name',
-      'repeating description',
-      importance: Importance.max,
-      priority: Priority.max,
-    );
+            'repeating channel id', 'repeating channel name',
+            channelDescription: 'repeating description');
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.periodicallyShow(0, 'repeating title',
@@ -1087,13 +1278,9 @@ class _FlutterLocalNotificationScreenState
         'daily scheduled notification body',
         _nextInstanceOfTenAM(),
         const NotificationDetails(
-          android: AndroidNotificationDetails(
-            'daily notification channel id',
-            'daily notification channel name',
-            'daily notification description',
-            importance: Importance.max,
-            priority: Priority.max,
-          ),
+          android: AndroidNotificationDetails('daily notification channel id',
+              'daily notification channel name',
+              channelDescription: 'daily notification description'),
         ),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
@@ -1109,13 +1296,9 @@ class _FlutterLocalNotificationScreenState
         'daily scheduled notification body',
         _nextInstanceOfTenAMLastYear(),
         const NotificationDetails(
-          android: AndroidNotificationDetails(
-            'daily notification channel id',
-            'daily notification channel name',
-            'daily notification description',
-            importance: Importance.max,
-            priority: Priority.max,
-          ),
+          android: AndroidNotificationDetails('daily notification channel id',
+              'daily notification channel name',
+              channelDescription: 'daily notification description'),
         ),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
@@ -1130,13 +1313,9 @@ class _FlutterLocalNotificationScreenState
         'weekly scheduled notification body',
         _nextInstanceOfTenAM(),
         const NotificationDetails(
-          android: AndroidNotificationDetails(
-            'weekly notification channel id',
-            'weekly notification channel name',
-            'weekly notificationdescription',
-            importance: Importance.max,
-            priority: Priority.max,
-          ),
+          android: AndroidNotificationDetails('weekly notification channel id',
+              'weekly notification channel name',
+              channelDescription: 'weekly notificationdescription'),
         ),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
@@ -1151,18 +1330,48 @@ class _FlutterLocalNotificationScreenState
         'weekly scheduled notification body',
         _nextInstanceOfMondayTenAM(),
         const NotificationDetails(
-          android: AndroidNotificationDetails(
-            'weekly notification channel id',
-            'weekly notification channel name',
-            'weekly notificationdescription',
-            importance: Importance.max,
-            priority: Priority.max,
-          ),
+          android: AndroidNotificationDetails('weekly notification channel id',
+              'weekly notification channel name',
+              channelDescription: 'weekly notificationdescription'),
         ),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
             UILocalNotificationDateInterpretation.absoluteTime,
         matchDateTimeComponents: DateTimeComponents.dayOfWeekAndTime);
+  }
+
+  Future<void> _scheduleMonthlyMondayTenAMNotification() async {
+    await flutterLocalNotificationsPlugin.zonedSchedule(
+        0,
+        'monthly scheduled notification title',
+        'monthly scheduled notification body',
+        _nextInstanceOfMondayTenAM(),
+        const NotificationDetails(
+          android: AndroidNotificationDetails('monthly notification channel id',
+              'monthly notification channel name',
+              channelDescription: 'monthly notificationdescription'),
+        ),
+        androidAllowWhileIdle: true,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
+        matchDateTimeComponents: DateTimeComponents.dayOfMonthAndTime);
+  }
+
+  Future<void> _scheduleYearlyMondayTenAMNotification() async {
+    await flutterLocalNotificationsPlugin.zonedSchedule(
+        0,
+        'yearly scheduled notification title',
+        'yearly scheduled notification body',
+        _nextInstanceOfMondayTenAM(),
+        const NotificationDetails(
+          android: AndroidNotificationDetails('yearly notification channel id',
+              'yearly notification channel name',
+              channelDescription: 'yearly notification description'),
+        ),
+        androidAllowWhileIdle: true,
+        uiLocalNotificationDateInterpretation:
+            UILocalNotificationDateInterpretation.absoluteTime,
+        matchDateTimeComponents: DateTimeComponents.dateAndTime);
   }
 
   tz.TZDateTime _nextInstanceOfTenAM() {
@@ -1190,15 +1399,12 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showNotificationWithNoBadge() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-      'no badge channel',
-      'no badge name',
-      'no badge description',
-      channelShowBadge: false,
-      importance: Importance.max,
-      priority: Priority.max,
-      onlyAlertOnce: true,
-    );
+        AndroidNotificationDetails('no badge channel', 'no badge name',
+            channelDescription: 'no badge description',
+            channelShowBadge: false,
+            importance: Importance.max,
+            priority: Priority.high,
+            onlyAlertOnce: true);
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
     await flutterLocalNotificationsPlugin.show(
@@ -1211,18 +1417,15 @@ class _FlutterLocalNotificationScreenState
     for (int i = 0; i <= maxProgress; i++) {
       await Future<void>.delayed(const Duration(seconds: 1), () async {
         final AndroidNotificationDetails androidPlatformChannelSpecifics =
-            AndroidNotificationDetails(
-          'progress channel',
-          'progress channel',
-          'progress channel description',
-          channelShowBadge: false,
-          importance: Importance.max,
-          priority: Priority.max,
-          onlyAlertOnce: true,
-          showProgress: true,
-          maxProgress: maxProgress,
-          progress: i,
-        );
+            AndroidNotificationDetails('progress channel', 'progress channel',
+                channelDescription: 'progress channel description',
+                channelShowBadge: false,
+                importance: Importance.max,
+                priority: Priority.high,
+                onlyAlertOnce: true,
+                showProgress: true,
+                maxProgress: maxProgress,
+                progress: i);
         final NotificationDetails platformChannelSpecifics =
             NotificationDetails(android: androidPlatformChannelSpecifics);
         await flutterLocalNotificationsPlugin.show(
@@ -1238,12 +1441,11 @@ class _FlutterLocalNotificationScreenState
   Future<void> _showIndeterminateProgressNotification() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(
-            'indeterminate progress channel',
-            'indeterminate progress channel',
-            'indeterminate progress channel description',
+            'indeterminate progress channel', 'indeterminate progress channel',
+            channelDescription: 'indeterminate progress channel description',
             channelShowBadge: false,
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             onlyAlertOnce: true,
             showProgress: true,
             indeterminate: true);
@@ -1260,9 +1462,9 @@ class _FlutterLocalNotificationScreenState
   Future<void> _showNotificationUpdateChannelDescription() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails('your channel id', 'your channel name',
-            'your updated channel description',
+            channelDescription: 'your updated channel description',
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             channelAction: AndroidNotificationChannelAction.update);
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
@@ -1276,10 +1478,10 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showPublicNotification() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-            'your channel id', 'your channel name', 'your channel description',
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             ticker: 'ticker',
             visibility: NotificationVisibility.public);
     const NotificationDetails platformChannelSpecifics =
@@ -1351,10 +1553,10 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showNotificationWithoutTimestamp() async {
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
-        AndroidNotificationDetails(
-            'your channel id', 'your channel name', 'your channel description',
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
             importance: Importance.max,
-            priority: Priority.max,
+            priority: Priority.high,
             showWhen: false);
     const NotificationDetails platformChannelSpecifics =
         NotificationDetails(android: androidPlatformChannelSpecifics);
@@ -1368,9 +1570,9 @@ class _FlutterLocalNotificationScreenState
         AndroidNotificationDetails(
       'your channel id',
       'your channel name',
-      'your channel description',
+      channelDescription: 'your channel description',
       importance: Importance.max,
-      priority: Priority.max,
+      priority: Priority.high,
       when: DateTime.now().millisecondsSinceEpoch - 120 * 1000,
     );
     final NotificationDetails platformChannelSpecifics =
@@ -1385,9 +1587,9 @@ class _FlutterLocalNotificationScreenState
         AndroidNotificationDetails(
       'your channel id',
       'your channel name',
-      'your channel description',
+      channelDescription: 'your channel description',
       importance: Importance.max,
-      priority: Priority.max,
+      priority: Priority.high,
       showWhen: false,
       subText: 'custom subtext',
     );
@@ -1403,9 +1605,9 @@ class _FlutterLocalNotificationScreenState
         AndroidNotificationDetails(
       'your channel id',
       'your channel name',
-      'your channel description',
+      channelDescription: 'your channel description',
       importance: Importance.max,
-      priority: Priority.max,
+      priority: Priority.high,
       when: DateTime.now().millisecondsSinceEpoch - 120 * 1000,
       usesChronometer: true,
     );
@@ -1453,18 +1655,16 @@ class _FlutterLocalNotificationScreenState
         .resolvePlatformSpecificImplementation<
             AndroidFlutterLocalNotificationsPlugin>()!
         .createNotificationChannel(const AndroidNotificationChannel(
-            'grouped channel id 1',
-            'grouped channel name 1',
-            'grouped channel description 1',
+            'grouped channel id 1', 'grouped channel name 1',
+            description: 'grouped channel description 1',
             groupId: channelGroupId));
 
     await flutterLocalNotificationsPlugin
         .resolvePlatformSpecificImplementation<
             AndroidFlutterLocalNotificationsPlugin>()!
         .createNotificationChannel(const AndroidNotificationChannel(
-            'grouped channel id 2',
-            'grouped channel name 2',
-            'grouped channel description 2',
+            'grouped channel id 2', 'grouped channel name 2',
+            description: 'grouped channel description 2',
             groupId: channelGroupId));
 
     await showDialog<void>(
@@ -1506,12 +1706,57 @@ class _FlutterLocalNotificationScreenState
     );
   }
 
+  Future<void> _startForegroundService() async {
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails('your channel id', 'your channel name',
+            channelDescription: 'your channel description',
+            importance: Importance.max,
+            priority: Priority.high,
+            ticker: 'ticker');
+    await flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>()
+        ?.startForegroundService(1, 'plain title', 'plain body',
+            notificationDetails: androidPlatformChannelSpecifics,
+            payload: 'item x');
+  }
+
+  Future<void> _startForegroundServiceWithBlueBackgroundNotification() async {
+    const AndroidNotificationDetails androidPlatformChannelSpecifics =
+        AndroidNotificationDetails(
+      'your channel id',
+      'your channel name',
+      channelDescription: 'color background channel description',
+      importance: Importance.max,
+      priority: Priority.high,
+      ticker: 'ticker',
+      color: Colors.blue,
+      colorized: true,
+    );
+
+    /// only using foreground service can color the background
+    await flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>()
+        ?.startForegroundService(
+            1, 'colored background text title', 'colored background text body',
+            notificationDetails: androidPlatformChannelSpecifics,
+            payload: 'item x');
+  }
+
+  Future<void> _stopForegroundService() async {
+    await flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>()
+        ?.stopForegroundService();
+  }
+
   Future<void> _createNotificationChannel() async {
     const AndroidNotificationChannel androidNotificationChannel =
         AndroidNotificationChannel(
       'your channel id 2',
       'your channel name 2',
-      'your channel description 2',
+      description: 'your channel description 2',
     );
     await flutterLocalNotificationsPlugin
         .resolvePlatformSpecificImplementation<
@@ -1524,6 +1769,30 @@ class _FlutterLocalNotificationScreenState
               content:
                   Text('Channel with name ${androidNotificationChannel.name} '
                       'created'),
+              actions: <Widget>[
+                TextButton(
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                  child: const Text('OK'),
+                ),
+              ],
+            ));
+  }
+
+  Future<void> _areNotifcationsEnabledOnAndroid() async {
+    final bool? areEnabled = await flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<
+            AndroidFlutterLocalNotificationsPlugin>()
+        ?.areNotificationsEnabled();
+    await showDialog<void>(
+        context: context,
+        builder: (BuildContext context) => AlertDialog(
+              content: Text(areEnabled == null
+                  ? 'ERROR: received null'
+                  : (areEnabled
+                      ? 'Notifications are enabled'
+                      : 'Notifications are NOT enabled')),
               actions: <Widget>[
                 TextButton(
                   onPressed: () {
@@ -1580,8 +1849,7 @@ class _FlutterLocalNotificationScreenState
   Future<Widget> _getActiveNotificationsDialogContent() async {
     final DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
     final AndroidDeviceInfo androidInfo = await deviceInfo.androidInfo;
-    int version = androidInfo.version.sdkInt ?? 0;
-    if (!(version >= 23)) {
+    if (!(androidInfo.version.sdkInt! >= 23)) {
       return const Text(
         '"getActiveNotifications" is available only for Android 6.0 or newer',
       );
@@ -1699,4 +1967,289 @@ class _FlutterLocalNotificationScreenState
       );
     }
   }
+}
+
+class PaddedElevatedButton extends StatelessWidget {
+  const PaddedElevatedButton({
+    required this.buttonText,
+    required this.onPressed,
+    Key? key,
+  }) : super(key: key);
+
+  final String buttonText;
+  final VoidCallback onPressed;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 8),
+        child: ElevatedButton(
+          onPressed: onPressed,
+          child: Text(buttonText),
+        ),
+      );
+}
+
+Future<void> _showLinuxNotificationWithBodyMarkup() async {
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification with body markup',
+    '<b>bold text</b>\n'
+        '<i>italic text</i>\n'
+        '<u>underline text</u>\n'
+        'https://example.com\n'
+        '<a href="https://example.com">example.com</a>',
+    null,
+  );
+}
+
+Future<void> _showLinuxNotificationWithCategory() async {
+  final LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    category: LinuxNotificationCategory.emailArrived(),
+  );
+  final NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification with category',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationWithByteDataIcon() async {
+  final ByteData assetIcon = await rootBundle.load(
+    'icons/app_icon_density.png',
+  );
+  final image.Image? iconData = image.decodePng(
+    assetIcon.buffer.asUint8List().toList(),
+  );
+  final Uint8List iconBytes = iconData!.getBytes();
+  final LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    icon: ByteDataLinuxIcon(
+      LinuxRawIconData(
+        data: iconBytes,
+        width: iconData.width,
+        height: iconData.height,
+        channels: 4,
+        // The icon has an alpha channel
+        hasAlpha: true,
+      ),
+    ),
+  );
+  final NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification with byte data icon',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationWithThemeIcon() async {
+  final LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    icon: ThemeLinuxIcon('media-eject'),
+  );
+  final NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification with theme icon',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationWithThemeSound() async {
+  final LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    sound: ThemeLinuxSound('message-new-email'),
+  );
+  final NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification with theme sound',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationWithCriticalUrgency() async {
+  const LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    urgency: LinuxNotificationUrgency.critical,
+  );
+  const NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification with critical urgency',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationWithTimeout() async {
+  final LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    timeout: LinuxNotificationTimeout.fromDuration(
+      const Duration(seconds: 1),
+    ),
+  );
+  final NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification with timeout',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationSuppressSound() async {
+  const LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    suppressSound: true,
+  );
+  const NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'suppress notification sound',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationTransient() async {
+  const LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    transient: true,
+  );
+  const NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'transient notification',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationResident() async {
+  const LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(
+    resident: true,
+  );
+  const NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'resident notification',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<void> _showLinuxNotificationDifferentLocation() async {
+  const LinuxNotificationDetails linuxPlatformChannelSpecifics =
+      LinuxNotificationDetails(location: LinuxNotificationLocation(10, 10));
+  const NotificationDetails platformChannelSpecifics = NotificationDetails(
+    linux: linuxPlatformChannelSpecifics,
+  );
+  await flutterLocalNotificationsPlugin.show(
+    0,
+    'notification on different screen location',
+    null,
+    platformChannelSpecifics,
+  );
+}
+
+Future<LinuxServerCapabilities> getLinuxCapabilities() =>
+    flutterLocalNotificationsPlugin
+        .resolvePlatformSpecificImplementation<
+            LinuxFlutterLocalNotificationsPlugin>()!
+        .getCapabilities();
+
+class SecondPage extends StatefulWidget {
+  const SecondPage(
+    this.payload, {
+    Key? key,
+  }) : super(key: key);
+
+  static const String routeName = '/secondPage';
+
+  final String? payload;
+
+  @override
+  State<StatefulWidget> createState() => SecondPageState();
+}
+
+class SecondPageState extends State<SecondPage> {
+  String? _payload;
+
+  @override
+  void initState() {
+    super.initState();
+    _payload = widget.payload;
+  }
+
+  @override
+  Widget build(BuildContext context) => Scaffold(
+        appBar: AppBar(
+          title: Text('Second Screen with payload: ${_payload ?? ''}'),
+        ),
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            child: const Text('Go back!'),
+          ),
+        ),
+      );
+}
+
+class _InfoValueString extends StatelessWidget {
+  const _InfoValueString({
+    required this.title,
+    required this.value,
+    Key? key,
+  }) : super(key: key);
+
+  final String title;
+  final Object? value;
+
+  @override
+  Widget build(BuildContext context) => Padding(
+        padding: const EdgeInsets.fromLTRB(0, 0, 0, 8),
+        child: Text.rich(
+          TextSpan(
+            children: <InlineSpan>[
+              TextSpan(
+                text: '$title ',
+                style: const TextStyle(
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              TextSpan(
+                text: '$value',
+              )
+            ],
+          ),
+        ),
+      );
 }
