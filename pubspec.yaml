@@ -80,7 +80,7 @@ dependencies:
 
   get: ^4.6.1 #https://pub.dev/packages/get
 
-  restart_app: ^1.0.3 #https://pub.dev/packages/restart_app
+  restart_app: ^1.1.0 #https://pub.dev/packages/restart_app
   rxdart: ^0.27.1 #https://pub.dev/packages/rxdart
 
   image_gallery_saver: ^1.6.9 #https://pub.dev/packages/image_gallery_saver
