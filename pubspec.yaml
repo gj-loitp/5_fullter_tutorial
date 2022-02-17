@@ -85,7 +85,7 @@ dependencies:
 
   image_gallery_saver: ^1.7.1 #https://pub.dev/packages/image_gallery_saver
   image_picker: ^0.8.4+9 #https://pub.dev/packages/image_picker
-  in_app_review: ^2.0.2 #https://pub.dev/packages/in_app_review
+  in_app_review: ^2.0.4 #https://pub.dev/packages/in_app_review
   intl: ^0.17.0 #https://pub.dev/packages/intl
 
   horizontal_data_table: ^3.3.0 #https://pub.dev/packages/horizontal_data_table
