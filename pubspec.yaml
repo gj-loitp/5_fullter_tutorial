@@ -70,7 +70,7 @@ dependencies:
 
   url_launcher: ^6.0.20 #https://pub.dev/packages/url_launcher
 
-  share_plus: ^2.1.4 #https://pub.dev/packages/share_plus
+  share_plus: ^3.0.5 #https://pub.dev/packages/share_plus
   simple_url_preview: ^3.0.1 #https://pub.dev/packages/simple_url_preview
   shared_preferences: ^2.0.7 #https://pub.dev/packages/shared_preferences
   shimmer: ^2.0.0 #https://pub.dev/packages/shimmer
