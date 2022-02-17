@@ -65,11 +65,10 @@ dependencies:
   network_info_plus: ^2.1.2 #https://pub.dev/packages/network_info_plus
 
   overflow_view: ^0.3.1 #https://pub.dev/packages/overflow_view
-  #overlay_container: ^0.0.5+1 #https://pub.dev/packages/overlay_container
 
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
-  url_launcher: ^6.0.12 #https://pub.dev/packages/url_launcher
+  url_launcher: ^6.0.20 #https://pub.dev/packages/url_launcher
 
   share_plus: ^2.1.4 #https://pub.dev/packages/share_plus
   simple_url_preview: ^3.0.1 #https://pub.dev/packages/simple_url_preview
