@@ -91,7 +91,7 @@ dependencies:
   horizontal_data_table: ^3.6.1+1 #https://pub.dev/packages/horizontal_data_table
   http: ^0.13.4 #https://pub.dev/packages/http
 
-  video_player: ^2.1.5 #https://pub.dev/packages/video_player
+  video_player: ^2.2.18 #https://pub.dev/packages/video_player
 
   package_info_plus: ^1.0.2 #https://pub.dev/packages/package_info_plus
   path_provider: ^2.0.3 #https://pub.dev/packages/path_provider
