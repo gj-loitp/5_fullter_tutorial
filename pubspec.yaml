@@ -102,9 +102,9 @@ dependencies:
   pull_to_refresh: ^2.0.0 #https://pub.dev/packages/pull_to_refresh
 
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
-  timeago: ^3.1.0 #https://pub.dev/packages/timeago
+  timeago: ^3.2.2 #https://pub.dev/packages/timeago
 
-  wakelock: ^0.5.6 #https://pub.dev/packages/wakelock
+  wakelock: ^0.6.1+1 #https://pub.dev/packages/wakelock
   wave: ^0.2.0 #https://pub.dev/packages/wave
   webview_flutter: ^2.0.6 #https://pub.dev/packages/webview_flutter
   web_scraper: ^0.1.4 #https://pub.dev/packages/web_scraper
