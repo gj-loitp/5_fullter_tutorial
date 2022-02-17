@@ -1,11 +1,8 @@
-
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:get/get.dart';
 import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/lib/util/url_launcher_utils.dart';
 
 class FlutterSpeedDialScreen extends StatefulWidget {
   @override
@@ -15,131 +12,416 @@ class FlutterSpeedDialScreen extends StatefulWidget {
 }
 
 class _FlutterSpeedDialScreenState
-    extends BaseStatefulState<FlutterSpeedDialScreen>
-    with TickerProviderStateMixin {
-  late ScrollController scrollController;
-  bool dialVisible = true;
-
-  @override
-  void initState() {
-    super.initState();
-
-    scrollController = ScrollController()
-      ..addListener(() {
-        setDialVisible(scrollController.position.userScrollDirection ==
-            ScrollDirection.forward);
-      });
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
-  void setDialVisible(bool value) {
-    setState(() {
-      dialVisible = value;
-    });
-  }
-
-  Widget buildBody() {
-    return ListView.builder(
-      controller: scrollController,
-      itemCount: 30,
-      itemBuilder: (ctx, i) => ListTile(title: Text('Item $i')),
-    );
-  }
-
-  SpeedDial buildSpeedDial() {
-    return SpeedDial(
-      /// both default to 16
-      marginEnd: 18,
-      marginBottom: 20,
-      // animatedIcon: AnimatedIcons.menu_close,
-      // animatedIconTheme: IconThemeData(size: 22.0),
-      /// This is ignored if animatedIcon is non null
-      icon: Icons.add,
-      activeIcon: Icons.remove,
-      // iconTheme: IconThemeData(color: Colors.grey[50], size: 30),
-
-      /// The label of the main button.
-      // label: Text("Open Speed Dial"),
-      /// The active label of the main button, Defaults to label if not specified.
-      // activeLabel: Text("Close Speed Dial"),
-      /// Transition Builder between label and activeLabel, defaults to FadeTransition.
-      // labelTransitionBuilder: (widget, animation) => ScaleTransition(scale: animation,child: widget),
-      /// The below button size defaults to 56 itself, its the FAB size + It also affects relative padding and other elements
-      buttonSize: 56.0,
-      visible: true,
-
-      /// If true user is forced to close dial manually
-      /// by tapping main button and overlay is not rendered.
-      closeManually: false,
-      curve: Curves.bounceIn,
-      overlayColor: Colors.black,
-      overlayOpacity: 0.5,
-      onOpen: () => print('OPENING DIAL'),
-      onClose: () => print('DIAL CLOSED'),
-      tooltip: 'Speed Dial',
-      heroTag: 'speed-dial-hero-tag',
-      backgroundColor: Colors.white,
-      foregroundColor: Colors.black,
-      elevation: 8.0,
-      shape: CircleBorder(),
-
-      // orientation: SpeedDialOrientation.Up,
-      // childMarginBottom: 2,
-      // childMarginTop: 2,
-      gradientBoxShape: BoxShape.circle,
-      gradient: LinearGradient(
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-        colors: [Colors.black, Colors.white],
-      ),
-      children: [
-        SpeedDialChild(
-          child: Icon(Icons.accessibility),
-          backgroundColor: Colors.red,
-          label: 'First',
-          labelStyle: TextStyle(fontSize: 18.0),
-          onTap: () => print('FIRST CHILD'),
-          onLongPress: () => print('FIRST CHILD LONG PRESS'),
-        ),
-        SpeedDialChild(
-          child: Icon(Icons.brush),
-          backgroundColor: Colors.blue,
-          label: 'Second',
-          labelStyle: TextStyle(fontSize: 18.0),
-          onTap: () => print('SECOND CHILD'),
-          onLongPress: () => print('SECOND CHILD LONG PRESS'),
-        ),
-        SpeedDialChild(
-          child: Icon(Icons.keyboard_voice),
-          backgroundColor: Colors.green,
-          label: 'Third',
-          labelStyle: TextStyle(fontSize: 18.0),
-          onTap: () => print('THIRD CHILD'),
-          onLongPress: () => print('THIRD CHILD LONG PRESS'),
-        ),
-      ],
-    );
-  }
+    extends BaseStatefulState<FlutterSpeedDialScreen> {
+  var renderOverlay = true;
+  var visible = true;
+  var switchLabelPosition = false;
+  var extend = false;
+  var rmicons = false;
+  var customDialRoot = false;
+  var closeManually = false;
+  var useRAnimation = true;
+  var isDialOpen = ValueNotifier<bool>(false);
+  var speedDialDirection = SpeedDialDirection.up;
+  var buttonSize = const Size(56.0, 56.0);
+  var childrenButtonSize = const Size(56.0, 56.0);
+  var selectedfABLocation = FloatingActionButtonLocation.endDocked;
+  var items = [
+    FloatingActionButtonLocation.startFloat,
+    FloatingActionButtonLocation.startDocked,
+    FloatingActionButtonLocation.centerFloat,
+    FloatingActionButtonLocation.endFloat,
+    FloatingActionButtonLocation.endDocked,
+    FloatingActionButtonLocation.startTop,
+    FloatingActionButtonLocation.centerTop,
+    FloatingActionButtonLocation.endTop,
+  ];
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: UIUtils.getAppBar(
-        "FlutterSpeedDialScreen",
-        () {
-          Get.back();
-        },
-        () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/flutter_speed_dial");
-        },
+    return WillPopScope(
+      onWillPop: () async {
+        if (isDialOpen.value) {
+          isDialOpen.value = false;
+          return false;
+        }
+        return true;
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text("Flutter Speed Dial Example"),
+        ),
+        body: SingleChildScrollView(
+            physics: const BouncingScrollPhysics(),
+            child: Center(
+              child: Container(
+                constraints: const BoxConstraints(maxWidth: 800),
+                child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Container(
+                        padding: const EdgeInsets.all(15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("SpeedDial Location",
+                                style: Theme.of(context).textTheme.bodyText1),
+                            const SizedBox(height: 10),
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Theme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? Colors.grey[800]
+                                      : Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(10)),
+                              child:
+                                  DropdownButton<FloatingActionButtonLocation>(
+                                value: selectedfABLocation,
+                                isExpanded: true,
+                                icon: const Icon(Icons.arrow_drop_down),
+                                iconSize: 20,
+                                underline: const SizedBox(),
+                                onChanged: (fABLocation) => setState(
+                                    () => selectedfABLocation = fABLocation!),
+                                selectedItemBuilder: (BuildContext context) {
+                                  return items.map<Widget>((item) {
+                                    return Align(
+                                        alignment: Alignment.centerLeft,
+                                        child: Container(
+                                            padding: const EdgeInsets.symmetric(
+                                                vertical: 4, horizontal: 10),
+                                            child: Text(item.value)));
+                                  }).toList();
+                                },
+                                items: items.map((item) {
+                                  return DropdownMenuItem<
+                                      FloatingActionButtonLocation>(
+                                    child: Text(
+                                      item.value,
+                                    ),
+                                    value: item,
+                                  );
+                                }).toList(),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        padding: const EdgeInsets.all(15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text("SpeedDial Direction",
+                                style: Theme.of(context).textTheme.bodyText1),
+                            const SizedBox(height: 10),
+                            Container(
+                              decoration: BoxDecoration(
+                                  color: Theme.of(context).brightness ==
+                                          Brightness.dark
+                                      ? Colors.grey[800]
+                                      : Colors.grey[200],
+                                  borderRadius: BorderRadius.circular(10)),
+                              child: DropdownButton<SpeedDialDirection>(
+                                value: speedDialDirection,
+                                isExpanded: true,
+                                icon: const Icon(Icons.arrow_drop_down),
+                                iconSize: 20,
+                                underline: const SizedBox(),
+                                onChanged: (sdo) {
+                                  setState(() {
+                                    speedDialDirection = sdo!;
+                                    selectedfABLocation = (sdo.isUp &&
+                                                selectedfABLocation.value
+                                                    .contains("Top")) ||
+                                            (sdo.isLeft &&
+                                                selectedfABLocation.value
+                                                    .contains("start"))
+                                        ? FloatingActionButtonLocation.endDocked
+                                        : sdo.isDown &&
+                                                !selectedfABLocation.value
+                                                    .contains("Top")
+                                            ? FloatingActionButtonLocation
+                                                .endTop
+                                            : sdo.isRight &&
+                                                    selectedfABLocation.value
+                                                        .contains("end")
+                                                ? FloatingActionButtonLocation
+                                                    .startDocked
+                                                : selectedfABLocation;
+                                  });
+                                },
+                                selectedItemBuilder: (BuildContext context) {
+                                  return SpeedDialDirection.values
+                                      .toList()
+                                      .map<Widget>((item) {
+                                    return Container(
+                                      padding: const EdgeInsets.symmetric(
+                                          vertical: 4, horizontal: 10),
+                                      child: Align(
+                                          alignment: Alignment.centerLeft,
+                                          child: Text(describeEnum(item)
+                                              .toUpperCase())),
+                                    );
+                                  }).toList();
+                                },
+                                items: SpeedDialDirection.values
+                                    .toList()
+                                    .map((item) {
+                                  return DropdownMenuItem<SpeedDialDirection>(
+                                    child:
+                                        Text(describeEnum(item).toUpperCase()),
+                                    value: item,
+                                  );
+                                }).toList(),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      if (!customDialRoot)
+                        SwitchListTile(
+                            contentPadding: const EdgeInsets.all(15),
+                            value: extend,
+                            title: const Text("Extend Speed Dial"),
+                            onChanged: (val) {
+                              setState(() {
+                                extend = val;
+                              });
+                            }),
+                      SwitchListTile(
+                          contentPadding: const EdgeInsets.all(15),
+                          value: visible,
+                          title: const Text("Visible"),
+                          onChanged: (val) {
+                            setState(() {
+                              visible = val;
+                            });
+                          }),
+                      SwitchListTile(
+                          contentPadding: const EdgeInsets.all(15),
+                          value: customDialRoot,
+                          title: const Text("Custom dialRoot"),
+                          onChanged: (val) {
+                            setState(() {
+                              customDialRoot = val;
+                            });
+                          }),
+                      SwitchListTile(
+                          contentPadding: const EdgeInsets.all(15),
+                          value: renderOverlay,
+                          title: const Text("Render Overlay"),
+                          onChanged: (val) {
+                            setState(() {
+                              renderOverlay = val;
+                            });
+                          }),
+                      SwitchListTile(
+                          contentPadding: const EdgeInsets.all(15),
+                          value: closeManually,
+                          title: const Text("Close Manually"),
+                          onChanged: (val) {
+                            setState(() {
+                              closeManually = val;
+                            });
+                          }),
+                      SwitchListTile(
+                          contentPadding: const EdgeInsets.all(15),
+                          value: rmicons,
+                          title: const Text("Remove Icons (for children)"),
+                          onChanged: (val) {
+                            setState(() {
+                              rmicons = val;
+                            });
+                          }),
+                      if (!customDialRoot)
+                        SwitchListTile(
+                            contentPadding: const EdgeInsets.all(15),
+                            value: useRAnimation,
+                            title: const Text("Use Rotation Animation"),
+                            onChanged: (val) {
+                              setState(() {
+                                useRAnimation = val;
+                              });
+                            }),
+                      SwitchListTile(
+                          contentPadding: const EdgeInsets.all(15),
+                          value: switchLabelPosition,
+                          title: const Text("Switch Label Position"),
+                          onChanged: (val) {
+                            setState(() {
+                              switchLabelPosition = val;
+                              if (val) {
+                                if ((selectedfABLocation.value
+                                            .contains("end") ||
+                                        selectedfABLocation.value
+                                            .toLowerCase()
+                                            .contains("top")) &&
+                                    speedDialDirection.isUp) {
+                                  selectedfABLocation =
+                                      FloatingActionButtonLocation.startDocked;
+                                } else if ((selectedfABLocation.value
+                                            .contains("end") ||
+                                        !selectedfABLocation.value
+                                            .toLowerCase()
+                                            .contains("top")) &&
+                                    speedDialDirection.isDown) {
+                                  selectedfABLocation =
+                                      FloatingActionButtonLocation.startTop;
+                                }
+                              }
+                            });
+                          }),
+                      const Text("Button Size"),
+                      Slider(
+                        value: buttonSize.width,
+                        min: 50,
+                        max: 500,
+                        label: "Button Size",
+                        onChanged: (val) {
+                          setState(() {
+                            buttonSize = Size(val, val);
+                          });
+                        },
+                      ),
+                      const Text("Children Button Size"),
+                      Slider(
+                        value: childrenButtonSize.height,
+                        min: 50,
+                        max: 500,
+                        onChanged: (val) {
+                          setState(() {
+                            childrenButtonSize = Size(val, val);
+                          });
+                        },
+                      )
+                    ]),
+              ),
+            )),
+        floatingActionButtonLocation: selectedfABLocation,
+        floatingActionButton: SpeedDial(
+          // animatedIcon: AnimatedIcons.menu_close,
+          // animatedIconTheme: IconThemeData(size: 22.0),
+          // / This is ignored if animatedIcon is non null
+          // child: Text("open"),
+          // activeChild: Text("close"),
+          icon: Icons.add,
+          activeIcon: Icons.close,
+          spacing: 3,
+          openCloseDial: isDialOpen,
+          childPadding: const EdgeInsets.all(5),
+          spaceBetweenChildren: 4,
+          dialRoot: customDialRoot
+              ? (ctx, open, toggleChildren) {
+                  return ElevatedButton(
+                    onPressed: toggleChildren,
+                    style: ElevatedButton.styleFrom(
+                      primary: Colors.blue[900],
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 22, vertical: 18),
+                    ),
+                    child: const Text(
+                      "Custom Dial Root",
+                      style: TextStyle(fontSize: 17),
+                    ),
+                  );
+                }
+              : null,
+          buttonSize: buttonSize,
+          // it's the SpeedDial size which defaults to 56 itself
+          // iconTheme: IconThemeData(size: 22),
+          label: extend ? const Text("Open") : null,
+          // The label of the main button.
+          /// The active label of the main button, Defaults to label if not specified.
+          activeLabel: extend ? const Text("Close") : null,
+
+          /// Transition Builder between label and activeLabel, defaults to FadeTransition.
+          // labelTransitionBuilder: (widget, animation) => ScaleTransition(scale: animation,child: widget),
+          /// The below button size defaults to 56 itself, its the SpeedDial childrens size
+          childrenButtonSize: childrenButtonSize,
+          visible: visible,
+          direction: speedDialDirection,
+          switchLabelPosition: switchLabelPosition,
+
+          /// If true user is forced to close dial manually
+          closeManually: closeManually,
+
+          /// If false, backgroundOverlay will not be rendered.
+          renderOverlay: renderOverlay,
+          // overlayColor: Colors.black,
+          // overlayOpacity: 0.5,
+          onOpen: () => debugPrint('OPENING DIAL'),
+          onClose: () => debugPrint('DIAL CLOSED'),
+          useRotationAnimation: useRAnimation,
+          tooltip: 'Open Speed Dial',
+          heroTag: 'speed-dial-hero-tag',
+          // foregroundColor: Colors.black,
+          // backgroundColor: Colors.white,
+          // activeForegroundColor: Colors.red,
+          // activeBackgroundColor: Colors.blue,
+          elevation: 8.0,
+          isOpenOnStart: false,
+          animationSpeed: 200,
+          shape: customDialRoot
+              ? const RoundedRectangleBorder()
+              : const StadiumBorder(),
+          // childMargin: EdgeInsets.symmetric(horizontal: 10, vertical: 5),
+          children: [
+            SpeedDialChild(
+              child: !rmicons ? const Icon(Icons.accessibility) : null,
+              backgroundColor: Colors.red,
+              foregroundColor: Colors.white,
+              label: 'First',
+              onTap: () => setState(() => rmicons = !rmicons),
+              onLongPress: () => debugPrint('FIRST CHILD LONG PRESS'),
+            ),
+            SpeedDialChild(
+              child: !rmicons ? const Icon(Icons.brush) : null,
+              backgroundColor: Colors.deepOrange,
+              foregroundColor: Colors.white,
+              label: 'Second',
+              onTap: () => debugPrint('SECOND CHILD'),
+            ),
+            SpeedDialChild(
+              child: !rmicons ? const Icon(Icons.margin) : null,
+              backgroundColor: Colors.indigo,
+              foregroundColor: Colors.white,
+              label: 'Show Snackbar',
+              visible: true,
+              onTap: () => ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text(("Third Child Pressed")))),
+              onLongPress: () => debugPrint('THIRD CHILD LONG PRESS'),
+            ),
+          ],
+        ),
+        bottomNavigationBar: BottomAppBar(
+          shape: const CircularNotchedRectangle(),
+          notchMargin: 8.0,
+          child: Row(
+            mainAxisAlignment: selectedfABLocation ==
+                    FloatingActionButtonLocation.startDocked
+                ? MainAxisAlignment.end
+                : selectedfABLocation == FloatingActionButtonLocation.endDocked
+                    ? MainAxisAlignment.start
+                    : MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.max,
+            children: [
+              ValueListenableBuilder<bool>(
+                  valueListenable: isDialOpen,
+                  builder: (ctx, value, _) => IconButton(
+                        icon: const Icon(Icons.open_in_browser),
+                        tooltip: (!value ? "Open" : "Close") + " Speed Dial",
+                        onPressed: () => {isDialOpen.value = !isDialOpen.value},
+                      ))
+            ],
+          ),
+        ),
       ),
-      body: buildBody(),
-      floatingActionButton: buildSpeedDial(),
     );
   }
+}
+
+extension EnumExt on FloatingActionButtonLocation {
+  /// Get Value of The SpeedDialDirection Enum like Up, Down, etc. in String format
+  String get value => toString().split(".")[1];
 }
