@@ -54,7 +54,7 @@ dependencies:
   horizontal_card_pager: ^1.1.1 #https://pub.dev/packages/horizontal_card_pager
   html2md: ^1.2.5 #https://pub.dev/packages/html2md
 
-  local_auth: ^1.1.0 #https://pub.dev/packages/local_auth
+  local_auth: ^1.1.11 #https://pub.dev/packages/local_auth
   logger: ^1.0.0 #https://pub.dev/packages/logger
   lazy_load_scrollview: ^1.3.0 #https://pub.dev/packages/lazy_load_scrollview
   like_button: ^2.0.2 #https://pub.dev/packages/like_button
