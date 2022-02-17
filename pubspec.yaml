@@ -78,7 +78,7 @@ dependencies:
 
   marquee: ^2.2.1 #https://pub.dev/packages/marquee
 
-  get: ^4.1.4 #https://pub.dev/packages/get
+  get: ^4.6.1 #https://pub.dev/packages/get
 
   restart_app: ^1.0.3 #https://pub.dev/packages/restart_app
   rxdart: ^0.27.1 #https://pub.dev/packages/rxdart
