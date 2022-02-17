@@ -62,7 +62,7 @@ dependencies:
 
   modal_bottom_sheet: ^2.0.0 #https://pub.dev/packages/modal_bottom_sheet
 
-  network_info_plus: ^1.1.0 #https://pub.dev/packages/network_info_plus
+  network_info_plus: ^2.1.2 #https://pub.dev/packages/network_info_plus
 
   overflow_view: ^0.3.1 #https://pub.dev/packages/overflow_view
   #overlay_container: ^0.0.5+1 #https://pub.dev/packages/overlay_container
