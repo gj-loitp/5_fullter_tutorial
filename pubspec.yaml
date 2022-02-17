@@ -46,75 +46,68 @@ dependencies:
   flutter_reaction_button: ^1.0.8 #https://pub.dev/packages/flutter_reaction_button
   flutter_slidable: ^0.6.0 #https://pub.dev/packages/flutter_slidable
   flutter_staggered_grid_view: ^0.4.0 #https://pub.dev/packages/flutter_staggered_grid_view
-  flutter_svg: ^0.22.0 #https://pub.dev/packages/flutter_svg
-  flutter_speed_dial: ^3.0.5 #https://pub.dev/packages/flutter_speed_dial
+  flutter_svg: ^1.0.3 #https://pub.dev/packages/flutter_svg
+  flutter_speed_dial: ^5.0.0+1 #https://pub.dev/packages/flutter_speed_dial
   flutter_sticky_header: ^0.6.0 #https://pub.dev/packages/flutter_sticky_header
-  flutter_screen_lock: ^4.0.4+2 #https://pub.dev/packages/flutter_screen_lock
+  flutter_screen_lock: ^5.0.5 #https://pub.dev/packages/flutter_screen_lock
 
   horizontal_card_pager: ^1.1.1 #https://pub.dev/packages/horizontal_card_pager
   html2md: ^1.2.5 #https://pub.dev/packages/html2md
 
-  local_auth: ^1.1.0 #https://pub.dev/packages/local_auth
-  logger: ^1.0.0 #https://pub.dev/packages/logger
+  local_auth: ^1.1.11 #https://pub.dev/packages/local_auth
+  logger: ^1.1.0 #https://pub.dev/packages/logger
   lazy_load_scrollview: ^1.3.0 #https://pub.dev/packages/lazy_load_scrollview
-  like_button: ^2.0.2 #https://pub.dev/packages/like_button
-  lottie: ^1.1.0 #https://pub.dev/packages/lottie
+  like_button: ^2.0.4 #https://pub.dev/packages/like_button
+  lottie: ^1.2.2 #https://pub.dev/packages/lottie
 
   modal_bottom_sheet: ^2.0.0 #https://pub.dev/packages/modal_bottom_sheet
 
-  network_info_plus: ^1.1.0 #https://pub.dev/packages/network_info_plus
+  network_info_plus: ^2.1.2 #https://pub.dev/packages/network_info_plus
 
   overflow_view: ^0.3.1 #https://pub.dev/packages/overflow_view
-  #overlay_container: ^0.0.5+1 #https://pub.dev/packages/overlay_container
 
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
-  url_launcher: ^6.0.12 #https://pub.dev/packages/url_launcher
+  url_launcher: ^6.0.20 #https://pub.dev/packages/url_launcher
 
-  share_plus: ^2.1.4 #https://pub.dev/packages/share_plus
+  share_plus: ^3.0.5 #https://pub.dev/packages/share_plus
   simple_url_preview: ^3.0.1 #https://pub.dev/packages/simple_url_preview
-  shared_preferences: ^2.0.7 #https://pub.dev/packages/shared_preferences
+  shared_preferences: ^2.0.13 #https://pub.dev/packages/shared_preferences
   shimmer: ^2.0.0 #https://pub.dev/packages/shimmer
-  sqflite: ^2.0.0+3 #https://pub.dev/packages/sqflite
+  sqflite: ^2.0.2 #https://pub.dev/packages/sqflite
 
-  marquee: ^2.1.0 #https://pub.dev/packages/marquee
+  marquee: ^2.2.1 #https://pub.dev/packages/marquee
 
-  get: ^4.1.4 #https://pub.dev/packages/get
+  get: ^4.6.1 #https://pub.dev/packages/get
 
-  restart_app: ^1.0.3 #https://pub.dev/packages/restart_app
-  rxdart: ^0.27.1 #https://pub.dev/packages/rxdart
+  restart_app: ^1.1.0 #https://pub.dev/packages/restart_app
+  rxdart: ^0.27.3 #https://pub.dev/packages/rxdart
 
-  image_gallery_saver: ^1.6.9 #https://pub.dev/packages/image_gallery_saver
-  image_picker: ^0.8.1+1 #https://pub.dev/packages/image_picker
-  in_app_review: ^2.0.2 #https://pub.dev/packages/in_app_review
+  image_gallery_saver: ^1.7.1 #https://pub.dev/packages/image_gallery_saver
+  image_picker: ^0.8.4+9 #https://pub.dev/packages/image_picker
+  in_app_review: ^2.0.4 #https://pub.dev/packages/in_app_review
   intl: ^0.17.0 #https://pub.dev/packages/intl
 
-  horizontal_data_table: ^3.3.0 #https://pub.dev/packages/horizontal_data_table
-  http: ^0.13.3 #https://pub.dev/packages/http
+  horizontal_data_table: ^3.6.1+1 #https://pub.dev/packages/horizontal_data_table
+  http: ^0.13.4 #https://pub.dev/packages/http
 
-  video_player: ^2.1.5 #https://pub.dev/packages/video_player
+  video_player: ^2.2.18 #https://pub.dev/packages/video_player
 
-  package_info_plus: ^1.0.2 #https://pub.dev/packages/package_info_plus
-  path_provider: ^2.0.3 #https://pub.dev/packages/path_provider
-  permission_handler: ^9.0.1 #https://pub.dev/packages/permission_handler
-  photo_view: ^0.12.0 #https://pub.dev/packages/photo_view
-  pin_code_fields: ^7.2.0 #https://pub.dev/packages/pin_code_fields
-  progress_state_button: ^1.0.3 #https://pub.dev/packages/progress_state_button
+  package_info_plus: ^1.3.1 #https://pub.dev/packages/package_info_plus
+  path_provider: ^2.0.9 #https://pub.dev/packages/path_provider
+  permission_handler: ^9.0.2 #https://pub.dev/packages/permission_handler
+  photo_view: ^0.13.0 #https://pub.dev/packages/photo_view
+  pin_code_fields: ^7.3.0 #https://pub.dev/packages/pin_code_fields
+  progress_state_button: ^1.0.4 #https://pub.dev/packages/progress_state_button
   pull_to_refresh: ^2.0.0 #https://pub.dev/packages/pull_to_refresh
 
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
-  timeago: ^3.1.0 #https://pub.dev/packages/timeago
+  timeago: ^3.2.2 #https://pub.dev/packages/timeago
 
-  wakelock: ^0.5.6 #https://pub.dev/packages/wakelock
+  wakelock: ^0.6.1+1 #https://pub.dev/packages/wakelock
   wave: ^0.2.0 #https://pub.dev/packages/wave
-  webview_flutter: ^2.0.6 #https://pub.dev/packages/webview_flutter
+  webview_flutter: ^3.0.0 #https://pub.dev/packages/webview_flutter
   web_scraper: ^0.1.4 #https://pub.dev/packages/web_scraper
-
-  #none null safety
-  #flutter_swiper: ^1.1.6 #https://pub.dev/packages/flutter_swiper
-  #md2_tab_indicator: ^1.0.2 #https://pub.dev/packages/md2_tab_indicator
-  #drag_to_expand: ^0.0.1 #https://pub.dev/packages/drag_to_expand
-  #kenburns: ^1.0.5 #https://pub.dev/packages/kenburns
 
 dev_dependencies:
   flutter_test:
