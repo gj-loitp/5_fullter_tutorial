@@ -49,7 +49,7 @@ dependencies:
   flutter_svg: ^1.0.3 #https://pub.dev/packages/flutter_svg
   flutter_speed_dial: ^5.0.0+1 #https://pub.dev/packages/flutter_speed_dial
   flutter_sticky_header: ^0.6.0 #https://pub.dev/packages/flutter_sticky_header
-  flutter_screen_lock: ^4.0.4+2 #https://pub.dev/packages/flutter_screen_lock
+  flutter_screen_lock: ^5.0.5 #https://pub.dev/packages/flutter_screen_lock
 
   horizontal_card_pager: ^1.1.1 #https://pub.dev/packages/horizontal_card_pager
   html2md: ^1.2.5 #https://pub.dev/packages/html2md
