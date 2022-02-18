@@ -18,6 +18,7 @@ dependencies:
   battery_plus: ^2.1.1 #https://pub.dev/packages/battery_plus
   basic_utils: ^4.2.0 #https://pub.dev/packages/basic_utils
   blur: ^3.0.0 #https://pub.dev/packages/blur
+  bloc: ^8.0.2
 
   cached_network_image: ^3.2.0 #https://pub.dev/packages/cached_network_image
   connectivity_plus: ^2.2.0 #https://pub.dev/packages/connectivity_plus

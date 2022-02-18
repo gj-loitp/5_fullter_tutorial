@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/core/base_stateful_state.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
+import 'package:hello_word/sample/demo/flutter_bloc/counter/counter_cubit.dart';
+import 'package:hello_word/sample/demo/flutter_bloc/counter/counter_view.dart';
 
 class FlutterBlockCounterScreen extends StatefulWidget {
   @override
@@ -11,7 +13,8 @@ class FlutterBlockCounterScreen extends StatefulWidget {
   }
 }
 
-class _FlutterBlockCounterScreenState extends BaseStatefulState<FlutterBlockCounterScreen> {
+class _FlutterBlockCounterScreenState
+    extends BaseStatefulState<FlutterBlockCounterScreen> {
   @override
   void initState() {
     super.initState();
@@ -32,10 +35,9 @@ class _FlutterBlockCounterScreenState extends BaseStatefulState<FlutterBlockCoun
         },
         null,
       ),
-      body: ListView(
-        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        physics: BouncingScrollPhysics(),
-        children: [],
+      body: BlocProvider(
+        create: (_) => CounterCubit(),
+        child: CounterView(),
       ),
     );
   }
