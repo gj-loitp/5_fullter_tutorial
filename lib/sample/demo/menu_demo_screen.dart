@@ -5,17 +5,25 @@ import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/main.dart';
 import 'package:hello_word/sample/demo/advance_pdf_viewer/advance_pdf_viewer_screen.dart';
+import 'package:hello_word/sample/demo/async/menu_async_screen.dart';
 import 'package:hello_word/sample/demo/battery_plus/battery_plus_screen.dart';
 import 'package:hello_word/sample/demo/communication_between_widget/communication_between_widget_screen.dart';
 import 'package:hello_word/sample/demo/connectivity_plus/connectivity_plus_screen.dart';
+import 'package:hello_word/sample/demo/counter/counter_screen.dart';
+import 'package:hello_word/sample/demo/crypto/crypto_screen.dart';
 import 'package:hello_word/sample/demo/device_info_plus/device_info_plus_screen.dart';
 import 'package:hello_word/sample/demo/dio/dio_screen.dart';
 import 'package:hello_word/sample/demo/easy_debounce/easy_debounce_screen.dart';
+import 'package:hello_word/sample/demo/encypt/encrypt_screen.dart';
 import 'package:hello_word/sample/demo/event_bus/event_bus_screen.dart';
+import 'package:hello_word/sample/demo/flutter_bloc/menu_flutter_block_screen.dart';
 import 'package:hello_word/sample/demo/flutter_local_notifications/flutter_local_notifications_screen.dart';
 import 'package:hello_word/sample/demo/flutter_screen_lock/flutter_screen_lock_screen.dart';
 import 'package:hello_word/sample/demo/focus_detector/focus_detector_screen.dart';
+import 'package:hello_word/sample/demo/getx/getx_screen.dart';
+import 'package:hello_word/sample/demo/html2md/html2md_screen.dart';
 import 'package:hello_word/sample/demo/image_gallery_saver/image_gallery_saver_screen.dart';
+import 'package:hello_word/sample/demo/inherited/menu_inherited_screen.dart';
 import 'package:hello_word/sample/demo/load_local_json/load_local_json_screen.dart';
 import 'package:hello_word/sample/demo/local_auth/local_auth_screen.dart';
 import 'package:hello_word/sample/demo/package_info_plus/package_info_plus_screen.dart';
@@ -23,20 +31,12 @@ import 'package:hello_word/sample/demo/permission_handler/permission_handler_scr
 import 'package:hello_word/sample/demo/restart_app/restart_app.dart';
 import 'package:hello_word/sample/demo/share_plus/share_plus_screen.dart';
 import 'package:hello_word/sample/demo/shop/shop_screen.dart';
+import 'package:hello_word/sample/demo/theme/theme_screen.dart';
 import 'package:hello_word/sample/demo/tiengviet/tieng_viet_screen.dart';
 import 'package:hello_word/sample/demo/time_ago/time_ago_screen.dart';
 import 'package:hello_word/sample/demo/tip_calculator/tip_calculator_screen.dart';
 import 'package:hello_word/sample/demo/url_launcher/url_launcher_screen.dart';
 import 'package:hello_word/sample/demo/wake_lock/wake_lock_screen.dart';
-
-import 'async/menu_async_screen.dart';
-import 'counter/counter_screen.dart';
-import 'crypto/crypto_screen.dart';
-import 'encypt/encrypt_screen.dart';
-import 'getx/getx_screen.dart';
-import 'html2md/html2md_screen.dart';
-import 'inherited/menu_inherited_screen.dart';
-import 'theme/theme_screen.dart';
 
 class MenuDemoScreen extends StatelessWidget {
   @override
@@ -103,14 +103,20 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "DioScreen",
-                () {
+            () {
               Get.to(DioScreen());
             },
           ),
           UIUtils.getButton(
             "EventBusScreen",
-                () {
+            () {
               Get.to(EventBusScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "MenuFlutterBlockScreen",
+            () {
+              Get.to(MenuFlutterBlockScreen());
             },
           ),
           UIUtils.getButton(
@@ -143,7 +149,7 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "FocusDetectorScreen",
-                () {
+            () {
               Get.to(FocusDetectorScreen());
             },
           ),
@@ -155,7 +161,7 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "Html2MdScreen",
-                () {
+            () {
               Get.to(Html2MdScreen());
             },
           ),
@@ -179,7 +185,7 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "Local Auth",
-                () {
+            () {
               Get.to(LocalAuthScreen());
             },
           ),
@@ -197,13 +203,13 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "RestartAppScreen",
-                () {
+            () {
               Get.to(RestartAppScreen());
             },
           ),
           UIUtils.getButton(
             "SharePlusScreen",
-                () {
+            () {
               Get.to(SharePlusScreen());
             },
           ),
@@ -245,7 +251,7 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "WakeLockScreen",
-                () {
+            () {
               Get.to(WakeLockScreen());
             },
           ),
