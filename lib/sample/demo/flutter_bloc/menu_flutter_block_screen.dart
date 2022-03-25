@@ -4,6 +4,7 @@ import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:hello_word/sample/demo/flutter_bloc/counter/flutter_bloc_counter_screen.dart';
+import 'package:hello_word/sample/demo/flutter_bloc/cubit/cubit_screen.dart';
 
 class MenuFlutterBlockScreen extends StatelessWidget {
   @override
@@ -27,6 +28,12 @@ class MenuFlutterBlockScreen extends StatelessWidget {
             "FlutterBlockCounterScreen",
             () {
               Get.to(FlutterBlockCounterScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "CubitScreen",
+            () {
+              Get.to(CubitScreen());
             },
           ),
         ],

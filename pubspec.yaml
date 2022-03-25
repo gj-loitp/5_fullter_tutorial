@@ -38,6 +38,7 @@ dependencies:
   encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
   english_words: ^4.0.0 #https://pub.dev/packages/english_words
   event_bus: ^2.0.0 #https://pub.dev/packages/event_bus
+  equatable: ^2.0.3 #https://pub.dev/packages/equatable
 
   focus_detector: ^2.0.1 #https://pub.dev/packages/focus_detector
   fl_chart: ^0.45.0 #https://pub.dev/packages/fl_chart
