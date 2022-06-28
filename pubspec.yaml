@@ -30,8 +30,8 @@ dependencies:
   drag_select_grid_view: ^0.5.1 #https://pub.dev/packages/drag_select_grid_view
   device_info_plus: ^4.0.0 #https://pub.dev/packages/device_info_plus
   delayed_display: ^2.0.0 #https://pub.dev/packages/delayed_display
-  dio: ^4.0.4 #https://pub.dev/packages/dio
-  dotted_border: ^2.0.0 #https://pub.dev/packages/dotted_border
+  dio: ^4.0.6 #https://pub.dev/packages/dio
+  dotted_border: ^2.0.0+2 #https://pub.dev/packages/dotted_border
   draggable_scrollbar: ^0.1.0 #https://pub.dev/packages/draggable_scrollbar
 
   easy_debounce: ^2.0.2+1 #https://pub.dev/packages/easy_debounce
@@ -43,7 +43,7 @@ dependencies:
   focus_detector: ^2.0.1 #https://pub.dev/packages/focus_detector
   fl_chart: ^0.45.0 #https://pub.dev/packages/fl_chart
   flutter_bloc: ^8.0.1 #https://pub.dev/packages/flutter_bloc
-  flutter_easyloading: ^3.0.3 #https://pub.dev/packages/flutter_easyloading
+  flutter_easyloading: ^3.0.5 #https://pub.dev/packages/flutter_easyloading
   flutter_local_notifications: ^9.3.2 #https://pub.dev/packages/flutter_local_notifications
   flutter_native_timezone: ^2.0.0 #https://pub.dev/packages/flutter_native_timezone
   flutter_native_splash: ^2.0.4 #https://pub.dev/packages/flutter_native_splash
