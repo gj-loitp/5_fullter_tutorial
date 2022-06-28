@@ -1,14 +1,12 @@
 Flutter Tutorial, Flutter demo
 This app is very useful for all developers. Written by 100% Dart codes.
 
-
-build: 
+build:
 flutter build appbundle
 flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs
 flutter build apk --debug --verbose
 
 flutter pub cache repair
-
 
 flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs
 flutter build appbundle
@@ -32,10 +30,9 @@ flutter build apk --release --no-sound-null-safety
 
 arch -x86_64 pod install --repo-update
 
-
 Widget() {
 return Text(
-"Hello :)",
+“Hello :)”,
 style: TextStyle(
 fontSize: 60.0,
 fontWeight: FontWeight.bold,
@@ -50,7 +47,7 @@ color: Colors.indigo, offset: Offset(0.0, 3.0), blurRadius: 3.0),
 Widget neumorphism(BuildContext context) {
 final elevation = 3.0;
 return Text(
-"Hello :)",
+“Hello :)”,
 style: TextStyle(
 fontSize: 60.0,
 fontWeight: FontWeight.bold,
@@ -68,7 +65,6 @@ blurRadius: elevation),
 );
 }
 
-
 Widget() {
 return PhysicalModel(
 color: Colors.lightBlue,
@@ -80,11 +76,10 @@ size: const Size.square(100.0),
 );
 }
 
-
 Widget() {
 return AnimatedPhysicalModel(
 child: GestureDetector(
-onTap: () => ..., // change elevation here
+onTap: () => …, // change elevation here
 child: SizedBox.fromSize(
 size: const Size.square(100.0),
 ),
@@ -97,7 +92,6 @@ shadowColor: Colors.deepOrange,
 duration: Duration(milliseconds: 500),
 );
 }
-
 
 BoxDecoration(
 borderRadius: BorderRadius.circular(12.0),
@@ -112,8 +106,6 @@ offset: Offset(3.0, 3.0))
 ],
 );
 
-
-
 TextButton(
 style: TextButton.styleFrom(
 shape: CircleBorder(
@@ -122,7 +114,7 @@ width: 2, color: Colors.red, style: BorderStyle.solid)),
 ),
 onPressed: () {},
 child: Image.asset(
-"resources/images/ic_list_customer.png",
+“resources/images/ic_list_customer.png”,
 width: 25,
 height: 25,
 ),
@@ -152,10 +144,10 @@ MaterialPageRoute(builder: (context) => DummyScreen()),
 );
 },
 onLongPress: () {
-print('Long press');
+print(‘Long press’);
 },
 child: Text(
-"TextButton",
+“TextButton”,
 ),
 )
 
@@ -171,7 +163,6 @@ double height2 = height - padding.top;
 
 // Height (without status and toolbar)
 double height3 = height - padding.top - kToolbarHeight;
-
 
 Positioned(
 left: 45,
@@ -189,18 +180,17 @@ color: Colors.black.withAlpha(64),
 blurRadius: 0.5, // soften the shadow
 spreadRadius: 0.5, //extend the shadow
 offset: Offset(
-0, // Move to right 10  horizontally
+0, // Move to right 10 horizontally
 1.5, // Move to bottom 10 Vertically
 ),
 )
 ],
 ),
 child: Image(
-image: AssetImage('resources/images/ic_ranking.png'),
+image: AssetImage(‘resources/images/ic_ranking.png’),
 ),
 ),
 )
-
 
 Transform.rotate(
 angle: -pi / 4,
@@ -219,8 +209,6 @@ fontWeight: FontWeight.w700),
 ),
 ),
 
-
-
 Container(
 width: double.infinity,
 height: DimenConstants.buttonHeight,
@@ -231,7 +219,7 @@ onPressed: () {
 //TODO lotip
 },
 child: Text(
-"Tiếp tục",
+“Tiếp tục”,
 style: TextStyle(
 color: Colors.white,
 fontSize: 14,
@@ -248,66 +236,62 @@ bottomRight: Radius.circular(25.0),
 ),
 ),
 
-
 Container(
 width: 100.0,
 height: 150.0,
 decoration: BoxDecoration(
 image: DecorationImage(
-fit: BoxFit.cover, image: NetworkImage('Path to your image')),
+fit: BoxFit.cover, image: NetworkImage(‘Path to your image’)),
 borderRadius: BorderRadius.all(Radius.circular(8.0)),
 color: Colors.redAccent,
 ),
 )
-			  
 
 //use this as child
 Wrap(
-children: <Widget>[*your_child*])
+children: [your_child])
 Match_parent,Match_parent:
 
 //use this as child
 Container(
 height: double.infinity,
-width: double.infinity,child:*your_child*)
+width: double.infinity,child:your_child)
 Match_parent,Wrap_content :
 
 //use this as child
 Row(
 mainAxisSize: MainAxisSize.max,
-children: <Widget>[*your_child*],
+children: [your_child],
 );
 Wrap_content ,Match_parent:
 
 //use this as child
 Column(
 mainAxisSize: MainAxisSize.max,
-children: <Widget>[your_child],
+children: [your_child],
 );
 
-
 CachedNetworkImage(
-imageUrl: "http://via.placeholder.com/350x150",
+imageUrl: “http://via.placeholder.com/350x150”,
 placeholder: (context, url) => CircularProgressIndicator(),
 errorWidget: (context, url, error) => Icon(Icons.error),
 width: 50,
 height: 50,
 ),
 
-
-static User _instance;
-User._();
-static User get getInstance => _instance = _instance ?? User._();
+static User instance;
+User.();
+static User get getInstance => _instance = instance ?? User.();
 
 IconButton(
-icon: new Image.asset('assets/ic_email.png',width: 15.0,height: 15.0,),
+icon: new Image.asset(‘assets/ic_email.png’,width: 15.0,height: 15.0,),
 onPressed: null,
 )
 
 ClipRRect(
 borderRadius: BorderRadius.circular(8.0),
 child: Image.network(
-subject['images']['large'],
+subject[‘images’][‘large’],
 height: 150.0,
 width: 100.0,
 ),
