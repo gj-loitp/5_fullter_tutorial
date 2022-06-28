@@ -76,13 +76,13 @@ dependencies:
 
   share_plus: ^4.0.10 #https://pub.dev/packages/share_plus
   simple_url_preview: ^3.0.1 #https://pub.dev/packages/simple_url_preview
-  shared_preferences: ^2.0.13 #https://pub.dev/packages/shared_preferences
+  shared_preferences: ^2.0.15 #https://pub.dev/packages/shared_preferences
   shimmer: ^2.0.0 #https://pub.dev/packages/shimmer
-  sqflite: ^2.0.2 #https://pub.dev/packages/sqflite
+  sqflite: ^2.0.2+1 #https://pub.dev/packages/sqflite
 
-  marquee: ^2.2.1 #https://pub.dev/packages/marquee
+  marquee: ^2.2.3 #https://pub.dev/packages/marquee
 
-  get: ^4.6.1 #https://pub.dev/packages/get
+  get: ^4.6.5 #https://pub.dev/packages/get
 
   restart_app: ^1.1.0 #https://pub.dev/packages/restart_app
   rxdart: ^0.27.3 #https://pub.dev/packages/rxdart
