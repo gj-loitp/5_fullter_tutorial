@@ -421,6 +421,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.45.1"
+  flame:
+    dependency: "direct main"
+    description:
+      name: flame
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.2.0"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -877,6 +884,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  ordered_set:
+    dependency: transitive
+    description:
+      name: ordered_set
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "5.0.0"
   overflow_view:
     dependency: "direct main"
     description:
@@ -1316,6 +1330,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.5.0"
+  tiledjsonreader:
+    dependency: "direct main"
+    description:
+      name: tiledjsonreader
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
   timeago:
     dependency: "direct main"
     description:
