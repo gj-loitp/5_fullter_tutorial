@@ -4,7 +4,6 @@ import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:hello_word/sample/empty_screen.dart';
-import 'package:hello_word/sample/widget/button/text_button_screen.dart';
 
 import 'lib/util/uI_utils.dart';
 import 'sample/animation/menu_animation_screen.dart';
@@ -62,7 +61,7 @@ class MenuScreen extends StatelessWidget {
             "Github",
             () {
               UrlLauncherUtils.launchInWebViewWithJavaScript(
-                  "https://github.com/tplloi/fullter_hello_word");
+                  "https://github.com/tplloi/fullter_hello");
             },
           ),
           UIUtils.getButton(
