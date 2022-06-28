@@ -3,14 +3,14 @@ import 'package:hello_word/lib/core/base_stateful_state.dart';
 import 'package:hello_word/lib/game/helpers/direction.dart';
 import 'package:hello_word/lib/game/helpers/joypad.dart';
 
-class GameHelloScreen extends StatefulWidget {
+class MainGamePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _GameHelloScreenState();
+    return _MainGamePageState();
   }
 }
 
-class _GameHelloScreenState extends BaseStatefulState<GameHelloScreen> {
+class _MainGamePageState extends BaseStatefulState<MainGamePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
