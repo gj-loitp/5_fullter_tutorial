@@ -34,6 +34,7 @@ import 'package:hello_word/sample/widget/webview/menu_webview_screen.dart';
 import 'appbar/sliver_app_bar_screen.dart';
 import 'button/menu_button_screen.dart';
 import 'card/card_screen.dart';
+import 'clay_containers/clay_containers_screen.dart';
 import 'cupertino/menu_cupertino_screen.dart';
 import 'dialog/dialog_screen.dart';
 import 'drawer/menu_drawer_screen.dart';
@@ -126,6 +127,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "CheckBoxScreen",
               () {
                 Get.to(CheckBoxScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "ClayContainersScreen",
+                  () {
+                Get.to(ClayContainersScreen());
               },
             ),
             UIUtils.getButton(

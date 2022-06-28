@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:io';
-import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -47,9 +46,7 @@ class ReceivedNotification {
 String? selectedNotificationPayload;
 
 // build: flutter build appbundle
-//
 // flutter pub get && flutter pub run build_runner build --delete-conflicting-outputs
-//
 // flutter build apk --debug --verbose
 
 void main() async {
@@ -134,7 +131,7 @@ void main() async {
     GetMaterialApp(
       enableLog: true,
       debugShowCheckedModeBanner: true,
-      defaultTransition: Transition.native,
+      defaultTransition: Transition.cupertino,
       theme: ThemeData(
         backgroundColor: Colors.white,
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue)

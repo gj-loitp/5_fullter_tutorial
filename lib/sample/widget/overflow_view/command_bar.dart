@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/sample/widget/overflow_view/menu_item.dart';
-import 'package:hello_word/sample/widget/overflow_view/menu_item_data.dart';
 import 'package:overflow_view/overflow_view.dart';
 
 class CommandBar extends StatelessWidget {
@@ -24,7 +22,7 @@ class CommandBar extends StatelessWidget {
 
     return OverflowView.flexible(
       spacing: -4,
-      children: [...commands.map((e) => MenuItem(data: e))],
+      children: [...commands.map((e) => _MenuItem(data: e))],
       builder: (context, remaining) {
         return PopupMenuButton<String>(
           icon: Icon(Icons.menu),
@@ -33,12 +31,47 @@ class CommandBar extends StatelessWidget {
                 .skip(commands.length - remaining)
                 .map((e) => PopupMenuItem<String>(
                       value: e.id,
-                      child: MenuItem(data: e),
+                      child: _MenuItem(data: e),
                     ))
                 .toList();
           },
         );
       },
+    );
+  }
+}
+
+class MenuItemData {
+  const MenuItemData({
+    required this.id,
+    this.label,
+    this.icon,
+  });
+
+  final String id;
+  final String? label;
+  final IconData? icon;
+}
+
+class _MenuItem extends StatelessWidget {
+  const _MenuItem({
+    Key? key,
+    required this.data,
+  }) : super(key: key);
+
+  final MenuItemData data;
+
+  @override
+  Widget build(BuildContext context) {
+    return FlatButton(
+      onPressed: () {},
+      child: Row(
+        children: [
+          if (data.icon != null) Icon(data.icon),
+          if (data.icon != null && data.label != null) SizedBox(width: 8),
+          if (data.label != null) Text(data.label!),
+        ],
+      ),
     );
   }
 }
