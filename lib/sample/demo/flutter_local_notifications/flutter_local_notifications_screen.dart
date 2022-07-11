@@ -824,7 +824,7 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _zonedScheduleNotification() async {
     await flutterLocalNotificationsPlugin.zonedSchedule(
-        0,
+        DateTime.now().millisecond,
         'scheduled title',
         'scheduled body',
         tz.TZDateTime.now(tz.local)
