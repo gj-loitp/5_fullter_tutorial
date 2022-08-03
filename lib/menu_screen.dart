@@ -1,10 +1,12 @@
+import 'package:flame/flame.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:hello_word/sample/empty_screen.dart';
-import 'package:hello_word/sample/widget/button/text_button_screen.dart';
+import 'package:hello_word/sample/game/hello/main_game_page.dart';
 
 import 'lib/util/uI_utils.dart';
 import 'sample/animation/menu_animation_screen.dart';
@@ -47,6 +49,13 @@ class MenuScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
+            "Game",
+            () async {
+              await Flame.device.fullScreen();
+              Get.to(MainGamePage());
+            },
+          ),
+          UIUtils.getButton(
             "Syntax",
             () {
               Get.to(SyntaxScreen());
@@ -58,13 +67,14 @@ class MenuScreen extends StatelessWidget {
               Get.to(MenuWidgetScreen());
             },
           ),
-          UIUtils.getButton(
-            "Github",
-            () {
-              UrlLauncherUtils.launchInWebViewWithJavaScript(
-                  "https://github.com/tplloi/fullter_hello_word");
-            },
-          ),
+          if (kDebugMode)
+            UIUtils.getButton(
+              "Github",
+              () {
+                UrlLauncherUtils.launchInWebViewWithJavaScript(
+                    "https://github.com/tplloi/fullter_hello");
+              },
+            ),
           UIUtils.getButton(
             "Rate app",
             () {

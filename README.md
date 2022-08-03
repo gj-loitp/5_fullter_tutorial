@@ -29,6 +29,11 @@ Save the file by pressing Ctrl + X, Y and then Enter. Close the terminal and reo
 flutter build apk --debug --no-sound-null-safety  
 flutter build apk --release --no-sound-null-safety
 
+
+delete pod file o folder ios
+flutter clean
+flutter pub get
+cd ios
 arch -x86_64 pod install --repo-update
 
 Widget() {  

@@ -824,14 +824,22 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _zonedScheduleNotification() async {
     await flutterLocalNotificationsPlugin.zonedSchedule(
-        0,
+        DateTime.now().millisecond,
         'scheduled title',
         'scheduled body',
-        tz.TZDateTime.now(tz.local).add(const Duration(seconds: 5)),
+        tz.TZDateTime.now(tz.local)
+            .add(const Duration(minutes: 0, seconds: 5)),
         const NotificationDetails(
-            android: AndroidNotificationDetails(
-                'your channel id', 'your channel name',
-                channelDescription: 'your channel description')),
+          android: AndroidNotificationDetails(
+            'your channel id',
+            'your channel name',
+            channelDescription: 'your channel description',
+            importance: Importance.max,
+            priority: Priority.high,
+            playSound: true,
+            icon: '@mipmap/ic_launcher',
+          ),
+        ),
         androidAllowWhileIdle: true,
         uiLocalNotificationDateInterpretation:
             UILocalNotificationDateInterpretation.absoluteTime);

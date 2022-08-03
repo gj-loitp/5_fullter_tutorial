@@ -38,6 +38,8 @@ import 'package:hello_word/sample/demo/tip_calculator/tip_calculator_screen.dart
 import 'package:hello_word/sample/demo/url_launcher/url_launcher_screen.dart';
 import 'package:hello_word/sample/demo/wake_lock/wake_lock_screen.dart';
 
+import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
+
 class MenuDemoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -187,6 +189,12 @@ class MenuDemoScreen extends StatelessWidget {
             "Local Auth",
             () {
               Get.to(LocalAuthScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "OneTargetMobileSDKScreen",
+            () {
+              Get.to(OneTargetMobileSDKScreen());
             },
           ),
           UIUtils.getButton(

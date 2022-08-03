@@ -46,7 +46,7 @@ android {
 
         // Required by the Flutter WebView plugin: https://pub.dev/packages/webview_flutter
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
 
