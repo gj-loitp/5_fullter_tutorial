@@ -83,20 +83,23 @@ dependencies:
 
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
-  url_launcher: ^6.1.4 #https://pub.dev/packages/url_launcher
+  #https://pub.dev/packages/url_launcher
+  url_launcher: ^6.1.5
 
   share_plus: ^4.0.10 #https://pub.dev/packages/share_plus
   simple_url_preview: ^3.0.1 #https://pub.dev/packages/simple_url_preview
   shared_preferences: ^2.0.15 #https://pub.dev/packages/shared_preferences
   shimmer: ^2.0.0 #https://pub.dev/packages/shimmer
-  sqflite: ^2.0.2+1 #https://pub.dev/packages/sqflite
+  #https://pub.dev/packages/sqflite
+  sqflite: ^2.0.2+1
 
   marquee: ^2.2.3 #https://pub.dev/packages/marquee
 
   get: ^4.6.5 #https://pub.dev/packages/get
 
   restart_app: ^1.1.0+1 #https://pub.dev/packages/restart_app
-  rxdart: ^0.27.4 #https://pub.dev/packages/rxdart
+  #https://pub.dev/packages/rxdart
+  rxdart: ^0.27.5
 
   image_gallery_saver: ^1.7.1 #https://pub.dev/packages/image_gallery_saver
   image_picker: ^0.8.5+3 #https://pub.dev/packages/image_picker
