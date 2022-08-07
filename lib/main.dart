@@ -15,6 +15,9 @@ import 'lib/common/const/dimen_constants.dart';
 import 'lib/util/log_dog_utils.dart';
 import 'menu_screen.dart';
 
+//TODO google config show isFullData
+//TODO admob
+
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
