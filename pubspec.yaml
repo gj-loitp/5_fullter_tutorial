@@ -109,7 +109,7 @@ dependencies:
   #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.1.1
   #https://pub.dev/packages/http
-  http: ^0.13.4
+  http: ^0.13.5
 
   video_player: ^2.4.5 #https://pub.dev/packages/video_player
 
@@ -117,7 +117,8 @@ dependencies:
   package_info_plus: ^1.4.2
   #https://pub.dev/packages/path_provider
   path_provider: ^2.0.11
-  permission_handler: ^9.0.2 #https://pub.dev/packages/permission_handler
+  #https://pub.dev/packages/permission_handler
+  permission_handler: ^9.0.2
   photo_view: ^0.14.0 #https://pub.dev/packages/photo_view
   pin_code_fields: ^7.4.0 #https://pub.dev/packages/pin_code_fields
   progress_state_button: ^1.0.4 #https://pub.dev/packages/progress_state_button
@@ -126,14 +127,16 @@ dependencies:
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
   timeago: ^3.2.2 #https://pub.dev/packages/timeago
 
-  wakelock: ^0.6.1+2 #https://pub.dev/packages/wakelock
+  #https://pub.dev/packages/wakelock
+  wakelock: ^0.6.1+2
   wave: ^0.2.2 #https://pub.dev/packages/wave
   webview_flutter: ^3.0.4 #https://pub.dev/packages/webview_flutter
   web_scraper: ^0.1.4 #https://pub.dev/packages/web_scraper
 
-  #game
-  flame: 1.2.0 #https://pub.dev/packages/flame
-  tiledjsonreader: 1.1.0 #https://pub.dev/packages/tiledjsonreader
+  #https://pub.dev/packages/flame
+  flame: 1.2.0
+  #https://pub.dev/packages/tiledjsonreader
+  tiledjsonreader: 1.1.0
 dev_dependencies:
   flutter_test:
     sdk: flutter
