@@ -28,7 +28,7 @@ dependencies:
   crypto: ^3.0.2 #https://pub.dev/packages/crypto/install
 
   drag_select_grid_view: ^0.6.1 #https://pub.dev/packages/drag_select_grid_view
-  device_info_plus: ^4.0.0 #https://pub.dev/packages/device_info_plus
+  device_info_plus: ^4.0.1 #https://pub.dev/packages/device_info_plus
   delayed_display: ^2.0.0 #https://pub.dev/packages/delayed_display
   dio: ^4.0.6 #https://pub.dev/packages/dio
   dotted_border: ^2.0.0+2 #https://pub.dev/packages/dotted_border
@@ -46,7 +46,7 @@ dependencies:
   flutter_easyloading: ^3.0.5 #https://pub.dev/packages/flutter_easyloading
   flutter_local_notifications: ^9.3.2 #https://pub.dev/packages/flutter_local_notifications
   flutter_native_timezone: ^2.0.0 #https://pub.dev/packages/flutter_native_timezone
-  flutter_native_splash: ^2.2.3+1 #https://pub.dev/packages/flutter_native_splash
+  flutter_native_splash: ^2.2.7 #https://pub.dev/packages/flutter_native_splash
   flutter_reaction_button: ^1.0.8 #https://pub.dev/packages/flutter_reaction_button
   flutter_slidable: ^0.6.0 #https://pub.dev/packages/flutter_slidable
   flutter_staggered_grid_view: ^0.4.0 #https://pub.dev/packages/flutter_staggered_grid_view
