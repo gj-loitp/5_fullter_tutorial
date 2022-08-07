@@ -128,15 +128,15 @@ dependencies:
   timeago: ^3.2.2 #https://pub.dev/packages/timeago
 
   #https://pub.dev/packages/wakelock
-  wakelock: ^0.6.1+2
+  wakelock: ^0.6.2
   wave: ^0.2.2 #https://pub.dev/packages/wave
   webview_flutter: ^3.0.4 #https://pub.dev/packages/webview_flutter
   web_scraper: ^0.1.4 #https://pub.dev/packages/web_scraper
 
   #https://pub.dev/packages/flame
-  flame: 1.2.0
+  flame: ^1.2.1
   #https://pub.dev/packages/tiledjsonreader
-  tiledjsonreader: 1.1.0
+  tiledjsonreader: ^1.2.3
 dev_dependencies:
   flutter_test:
     sdk: flutter

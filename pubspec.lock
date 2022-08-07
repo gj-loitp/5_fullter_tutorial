@@ -427,7 +427,7 @@ packages:
       name: flame
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.0"
+    version: "1.2.1"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -1343,7 +1343,7 @@ packages:
       name: tiledjsonreader
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.0"
+    version: "1.2.3"
   timeago:
     dependency: "direct main"
     description:
@@ -1504,7 +1504,7 @@ packages:
       name: wakelock
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.6.1+2"
+    version: "0.6.2"
   wakelock_macos:
     dependency: transitive
     description:
