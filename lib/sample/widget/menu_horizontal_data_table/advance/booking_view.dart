@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/dimen_constants.dart';
@@ -7,13 +6,20 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:horizontal_data_table/horizontal_data_table.dart';
 
 import 'controller_book.dart';
+import 'indicator/md2_indicator.dart';
+import 'indicator/md2_indicator_size.dart';
 import 'model/dummy_floor.dart';
 import 'model/dummy_header_description.dart';
 import 'model/dummy_house.dart';
 import 'model/dummy_model_indicator.dart';
-import 'indicator/md2_indicator.dart';
-import 'indicator/md2_indicator_size.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class BookingView extends StatefulWidget {
   @override
   _SupportViewState createState() => _SupportViewState();

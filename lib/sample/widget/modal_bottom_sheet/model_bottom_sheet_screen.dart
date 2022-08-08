@@ -15,6 +15,13 @@ import 'modal_with_navigator.dart';
 import 'modal_with_nested_scroll.dart';
 import 'modal_with_page_view.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ModelBottomSheetScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -27,7 +34,7 @@ class ModelBottomSheetScreen extends StatelessWidget {
         null,
       ),
       body: CupertinoScrollbar(
-        isAlwaysShown: true,
+        thumbVisibility: true,
         child: ListView(
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),

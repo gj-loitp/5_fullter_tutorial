@@ -5,6 +5,13 @@ import 'page/custom_demo.dart';
 import 'page/rrect_demo.dart';
 import 'page/semi_circle_demo.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 //https://medium.com/flutter-community/creating-draggable-scrollbar-in-flutter-a0ae8cf3143b
 //https://github.com/fluttercommunity/flutter-draggable-scrollbar
 

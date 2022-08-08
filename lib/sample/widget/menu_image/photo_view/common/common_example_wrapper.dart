@@ -1,6 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:photo_view/photo_view.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class CommonExampleRouteWrapper extends StatelessWidget {
   const CommonExampleRouteWrapper({
     this.imageProvider,

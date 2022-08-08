@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sticky_header/flutter_sticky_header.dart';
 import 'package:hello_word/sample/widget/list/flutter_sticky_header/common.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class SideHeaderExample extends StatelessWidget {
   const SideHeaderExample({
     Key? key,

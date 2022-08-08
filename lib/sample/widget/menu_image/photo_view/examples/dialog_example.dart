@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/common/example_app_bar.dart';
 import 'package:photo_view/photo_view.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class DialogExample extends StatefulWidget {
   @override
   _DialogExampleState createState() => _DialogExampleState();

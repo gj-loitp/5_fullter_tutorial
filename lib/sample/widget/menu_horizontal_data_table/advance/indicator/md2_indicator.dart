@@ -2,6 +2,13 @@ import 'package:flutter/cupertino.dart';
 
 import 'md2_indicator_size.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MD2Indicator extends Decoration {
   final double indicatorHeight;
   final Color indicatorColor;

@@ -5,6 +5,13 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/sample/widget/menu_image/photo_view/common/common_example_wrapper.dart';
 import 'package:hello_word/sample/widget/menu_image/photo_view/common/example_button.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class NetworkExamples extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

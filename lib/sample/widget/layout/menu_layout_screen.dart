@@ -8,6 +8,13 @@ import 'package:hello_word/sample/widget/layout/layout_multiple_screen/layout_mu
 import 'layout_builder_screen.dart';
 import 'layout_single_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuLayoutScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

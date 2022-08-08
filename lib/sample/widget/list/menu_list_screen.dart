@@ -14,6 +14,13 @@ import 'package:hello_word/sample/widget/list/list_title_widget/list_tile_screen
 import 'package:hello_word/sample/widget/list/load_more/list_view_load_more_screen.dart';
 import 'package:hello_word/sample/widget/list/pull_to_refresh/pull_to_refresh_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
