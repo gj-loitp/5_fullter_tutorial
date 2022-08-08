@@ -5,6 +5,13 @@ import 'package:hello_word/lib/core/base_stateful_state.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class EmptyScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -13,7 +20,6 @@ class EmptyScreen extends StatefulWidget {
 }
 
 class _EmptyScreenState extends BaseStatefulState<EmptyScreen> {
-
   @override
   void initState() {
     super.initState();
@@ -34,15 +40,13 @@ class _EmptyScreenState extends BaseStatefulState<EmptyScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://github.com/tplloi/fullter_hello_word");
+              "https://github.com/tplloi/fullter_tutorial");
         },
       ),
       body: ListView(
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         physics: BouncingScrollPhysics(),
-        children: [
-
-        ],
+        children: [],
       ),
     );
   }

@@ -3,6 +3,13 @@ import 'package:hello_word/lib/common/const/dimen_constants.dart';
 
 import 'parent_page.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class Child2Page extends StatefulWidget {
   final String? title;
 

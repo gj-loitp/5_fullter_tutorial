@@ -8,6 +8,13 @@ import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'bloc/clients_bloc.dart';
 import 'model/client_model.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 //https://medium.com/flutter-community/using-sqlite-in-flutter-187c1a82e8b
 class SQLiteDemoScreen extends StatefulWidget {
   @override

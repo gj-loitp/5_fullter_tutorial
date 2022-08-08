@@ -24,6 +24,10 @@ import 'menu_screen.dart';
  */
 //TODO google config show isFullData
 //TODO admob
+//TODO change keystore
+//TODO app name, ic launcher
+
+//done
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();

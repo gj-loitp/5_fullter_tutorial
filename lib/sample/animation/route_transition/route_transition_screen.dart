@@ -2,13 +2,21 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
+
+import 'screen/fade_screen.dart';
+import 'screen/random_screen.dart';
 import 'screen/rotation_screen.dart';
 import 'screen/scale_screen.dart';
 import 'screen/size_screen.dart';
 import 'screen/slide_screen.dart';
-import 'screen/fade_screen.dart';
-import 'screen/random_screen.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 //https://medium.com/flutter-community/everything-you-need-to-know-about-flutter-page-route-transition-9ef5c1b32823
 class RouteTransitionScreen extends StatelessWidget {
   @override
