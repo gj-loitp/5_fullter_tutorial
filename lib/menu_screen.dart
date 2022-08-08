@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:hello_word/sample/empty_screen.dart';
-import 'package:hello_word/sample/game/hello/main_game_page.dart';
+import 'package:hello_word/sample/game/ray_world/main_game_page.dart';
 
 import 'lib/util/uI_utils.dart';
 import 'sample/animation/menu_animation_screen.dart';

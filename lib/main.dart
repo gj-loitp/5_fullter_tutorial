@@ -26,6 +26,7 @@ import 'menu_screen.dart';
 //TODO admob
 //TODO change keystore
 //TODO app name, ic launcher
+//TODO rate app, more app dang bi
 
 //done
 
