@@ -5,6 +5,13 @@ import 'package:get/get.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/sample/widget/grid/flutter_staggered_grid_view/tile_widget.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class StaggeredGridViewPage extends StatelessWidget {
   const StaggeredGridViewPage.count({
     required this.title,

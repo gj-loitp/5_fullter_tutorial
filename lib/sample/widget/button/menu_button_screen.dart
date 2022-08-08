@@ -17,6 +17,13 @@ import 'raw_material_button_screen.dart';
 import 'text_button_screen.dart';
 import 'toggle_button_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuButtonScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -36,13 +43,13 @@ class MenuButtonScreen extends StatelessWidget {
           children: <Widget>[
             UIUtils.getButton(
               "FlutterSpeedDialScreen",
-                  () {
+              () {
                 Get.to(FlutterSpeedDialScreen());
               },
             ),
             UIUtils.getButton(
               "ProgressStateScreen",
-                  () {
+              () {
                 Get.to(ProgressStateScreen());
               },
             ),
@@ -72,7 +79,7 @@ class MenuButtonScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "LikeButtonScreen",
-                  () {
+              () {
                 Get.to(LikeButtonScreen());
               },
             ),

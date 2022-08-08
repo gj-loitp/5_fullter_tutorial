@@ -1,6 +1,4 @@
-import 'dart:async';
-
-import 'package:battery_plus/battery_plus.dart';
+import 'package:blur/blur.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/color_constants.dart';
@@ -8,9 +6,14 @@ import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/core/base_stateful_state.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
-import 'package:blur/blur.dart';
-import 'package:hello_word/sample/demo/getx/getx_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class BlurScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

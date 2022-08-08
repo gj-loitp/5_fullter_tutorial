@@ -6,6 +6,13 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:like_button/like_button.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class LikeButtonScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -21,7 +28,7 @@ class LikeButtonScreen extends StatelessWidget {
         },
       ),
       body: CupertinoScrollbar(
-        isAlwaysShown: false,
+        thumbVisibility: false,
         child: ListView(
           physics: BouncingScrollPhysics(),
           children: [

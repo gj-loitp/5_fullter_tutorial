@@ -5,6 +5,13 @@ import 'package:hello_word/sample/widget/bottom_bar/bottom_bar/bottom_app_bar_sc
 import 'package:hello_word/sample/widget/bottom_bar/tab_bar/tab_bar_screen.dart';
 import 'package:hello_word/sample/widget/bottom_bar/tab_bar_2/tab_bar_screen_2.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuBottomBarScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

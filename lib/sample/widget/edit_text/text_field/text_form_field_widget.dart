@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 
 import 'password_field.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class TextFormFieldWidget extends StatefulWidget {
   const TextFormFieldWidget({Key? key}) : super(key: key);
 
