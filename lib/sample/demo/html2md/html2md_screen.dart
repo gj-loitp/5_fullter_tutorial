@@ -6,6 +6,13 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:html2md/html2md.dart' as html2md;
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class Html2MdScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

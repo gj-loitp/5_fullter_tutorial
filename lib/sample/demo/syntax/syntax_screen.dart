@@ -3,6 +3,13 @@ import 'package:get/get.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/sample/model/people.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class SyntaxScreen extends StatelessWidget {
   void test() {
     print("Hello MyApp");

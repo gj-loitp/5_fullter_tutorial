@@ -1,12 +1,18 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 
+import 'db/db_shop.dart';
 import 'product_box.dart';
 import 'product_page_screen.dart';
-import 'db/db_shop.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ShopScreen extends StatelessWidget {
   final listProduct = DbShop.getListProduct();
 

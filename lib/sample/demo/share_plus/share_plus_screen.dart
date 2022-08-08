@@ -8,6 +8,13 @@ import 'package:hello_word/sample/demo/share_plus/image_previews.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:share_plus/share_plus.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class SharePlusScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

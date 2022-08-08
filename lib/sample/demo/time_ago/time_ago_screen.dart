@@ -6,6 +6,13 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:timeago/timeago.dart' as timeago;
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class TimeAgoScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

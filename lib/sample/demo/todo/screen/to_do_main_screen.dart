@@ -6,6 +6,13 @@ import 'tab_note_all.dart';
 import 'tab_note_complete.dart';
 import 'tab_note_in_complete.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ToDoMainScreen extends StatefulWidget {
   final ControllerNote _controllerNote = Get.put(ControllerNote());
 

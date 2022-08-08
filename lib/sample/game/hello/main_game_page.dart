@@ -3,6 +3,13 @@ import 'package:hello_word/lib/core/base_stateful_state.dart';
 import 'package:hello_word/lib/game/helpers/direction.dart';
 import 'package:hello_word/lib/game/helpers/joypad.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MainGamePage extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
