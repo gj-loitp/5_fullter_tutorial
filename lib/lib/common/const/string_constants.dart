@@ -1,3 +1,10 @@
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class StringConstants {
   static const String loading = "Đang tải dữ liệu.\nVui lòng chờ...";
   static const String warning = "Thông báo";

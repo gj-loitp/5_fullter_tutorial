@@ -1,5 +1,12 @@
 import 'package:intl/intl.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class DurationUtils {
   static const FORMAT_T_Z = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
   static const FORMAT_T = "yyyy-MM-dd'T'HH:mm:ss.SSS";

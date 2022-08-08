@@ -1,6 +1,13 @@
 import 'package:in_app_review/in_app_review.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class UrlLauncherUtils {
   static String getLinkGit(String path) {
     return "https://github.com/tplloi/fullter_hello_word/tree/master/$path";
