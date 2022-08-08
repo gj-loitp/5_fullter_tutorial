@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'account_screen.dart';
 import 'settings_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class HomeScreen extends StatefulWidget {
   @override
   HomeScreenState createState() => HomeScreenState();

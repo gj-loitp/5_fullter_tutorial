@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/dimen_constants.dart';
@@ -13,6 +12,13 @@ import 'package:hello_word/sample/widget/list/flutter_sticky_header/not_sticky.d
 import 'package:hello_word/sample/widget/list/flutter_sticky_header/reverse.dart';
 import 'package:hello_word/sample/widget/list/flutter_sticky_header/side_header.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class FlutterStickyHeaderScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -87,7 +93,7 @@ class _FlutterStickyHeaderScreenState
           ),
           UIUtils.getButton(
             "Mixing other slivers",
-                () {
+            () {
               Get.to(MixSliversExample());
             },
           ),

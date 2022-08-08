@@ -12,6 +12,13 @@ import 'package:hello_word/sample/widget/picker/image_picker/aspect_ratio_video.
 import 'package:image_picker/image_picker.dart';
 import 'package:video_player/video_player.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ImagePickerScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

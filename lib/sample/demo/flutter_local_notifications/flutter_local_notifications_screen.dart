@@ -17,6 +17,13 @@ import 'package:timezone/timezone.dart' as tz;
 
 import '../../../main.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class FlutterLocalNotificationScreen extends StatefulWidget {
   const FlutterLocalNotificationScreen(
     this.notificationAppLaunchDetails, {
@@ -827,8 +834,7 @@ class _FlutterLocalNotificationScreenState
         DateTime.now().millisecond,
         'scheduled title',
         'scheduled body',
-        tz.TZDateTime.now(tz.local)
-            .add(const Duration(minutes: 0, seconds: 5)),
+        tz.TZDateTime.now(tz.local).add(const Duration(minutes: 0, seconds: 5)),
         const NotificationDetails(
           android: AndroidNotificationDetails(
             'your channel id',

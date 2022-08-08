@@ -20,6 +20,13 @@ import 'package:hello_word/sample/widget/grid/flutter_staggered_grid_view/stagge
 import 'package:hello_word/sample/widget/grid/flutter_staggered_grid_view/staggered_extent_count_page.dart';
 import 'package:hello_word/sample/widget/grid/flutter_staggered_grid_view/staggered_extent_extent_page.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuFlutterStaggeredGridViewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

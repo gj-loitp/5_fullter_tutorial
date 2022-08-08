@@ -6,6 +6,13 @@ import 'package:hello_word/sample/database/shared_preferences/shared_preferences
 
 import 'sqlite/sqlite_demo_screen.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuDatabaseScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

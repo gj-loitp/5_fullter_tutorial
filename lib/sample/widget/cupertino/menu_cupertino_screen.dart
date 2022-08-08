@@ -8,6 +8,13 @@ import 'cupertino_segmented_control_screen.dart';
 import 'cupertino_timer_picker_screen.dart';
 import 'cupertino_widget_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuCupertinoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

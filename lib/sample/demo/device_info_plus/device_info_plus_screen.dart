@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:device_info_plus/device_info_plus.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -11,6 +10,13 @@ import 'package:hello_word/lib/core/base_stateful_state.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class DeviceInfoPlusScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -205,7 +211,8 @@ class _DeviceInfoPlusScreenState
             return Row(
               children: <Widget>[
                 Container(
-                  padding: const EdgeInsets.all(DimenConstants.marginPaddingMedium),
+                  padding:
+                      const EdgeInsets.all(DimenConstants.marginPaddingMedium),
                   child: Text(
                     property,
                     style: const TextStyle(

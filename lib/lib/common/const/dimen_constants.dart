@@ -1,3 +1,10 @@
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class DimenConstants {
   static const double marginPaddingTiny = 3.75;
   static const double marginPaddingSmall = 7.5;

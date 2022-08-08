@@ -15,6 +15,13 @@ import 'sample/demo/menu_demo_screen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';
 import 'sample/widget/menu_widget_screen.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -72,7 +79,7 @@ class MenuScreen extends StatelessWidget {
               "Github",
               () {
                 UrlLauncherUtils.launchInWebViewWithJavaScript(
-                    "https://github.com/tplloi/fullter_hello");
+                    "https://github.com/tplloi/fullter_tutorial");
               },
             ),
           UIUtils.getButton(

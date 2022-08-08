@@ -1,6 +1,12 @@
-
 import 'package:shared_preferences/shared_preferences.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class SharedPreferencesUtil {
   // static const KEY_USER = "KEY_USER";
   static const KEY_TEST_BOOL = "KEY_TEST_BOOL";

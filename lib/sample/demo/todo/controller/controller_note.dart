@@ -2,6 +2,13 @@ import 'package:get/get.dart';
 import 'package:hello_word/lib/core/base_controller.dart';
 import 'package:hello_word/sample/demo/todo/model/note.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ControllerNote extends BaseController {
   var listNote = <Note>[].obs;
   var listNoteComplete = <Note>[].obs;

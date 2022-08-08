@@ -4,13 +4,20 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class FutureBuilderScreen extends StatefulWidget {
   @override
   _FutureBuilderScreenState createState() => _FutureBuilderScreenState();
 }
 
 class _FutureBuilderScreenState extends State<FutureBuilderScreen> {
-  var _show = '';
+  // var _show = '';
   bool _isClick = false;
 
   Future<String> _getData() async {

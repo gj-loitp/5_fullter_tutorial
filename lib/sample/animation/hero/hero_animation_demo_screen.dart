@@ -7,6 +7,13 @@ import 'custom_logo.dart';
 import 'page_1.dart';
 import 'page_2.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class HeroAnimationDemoScreen extends StatefulWidget {
   @override
   _HeroAnimationDemoScreenState createState() =>

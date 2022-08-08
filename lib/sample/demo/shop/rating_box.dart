@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 
 typedef RatingBoxCallBack = void Function(int rating);
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class RatingBox extends StatefulWidget {
   final int? rating;
   final RatingBoxCallBack _ratingBoxCallBack;

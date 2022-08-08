@@ -9,6 +9,13 @@ import 'package:hello_word/sample/widget/overflow_view/avatar_widget.dart';
 import 'package:hello_word/sample/widget/overflow_view/command_bar.dart';
 import 'package:overflow_view/overflow_view.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class OverflowScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

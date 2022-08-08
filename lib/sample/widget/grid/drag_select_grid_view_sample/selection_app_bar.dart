@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:drag_select_grid_view/drag_select_grid_view.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class SelectionAppBar extends StatelessWidget implements PreferredSizeWidget {
   const SelectionAppBar({
     Key? key,

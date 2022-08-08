@@ -10,6 +10,13 @@ import 'package:hello_word/sample/widget/animated_background/particle_type.dart'
 import 'package:hello_word/sample/widget/animated_background/rain_particle_behaviour.dart';
 import 'package:hello_word/sample/widget/animated_background/space_splash.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class AnimatedBackgroundScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -107,7 +114,7 @@ class _AnimatedBackgroundScreenState
           ),
         ],
         backgroundColor: Colors.blue,
-        brightness: Brightness.dark,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: AnimatedBackground(
         behaviour: _behaviour = _buildBehaviour(),

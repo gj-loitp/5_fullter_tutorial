@@ -27,6 +27,13 @@ import 'positioned_transition_screen.dart';
 import 'rotation_transition_screen.dart';
 import 'hero/hero_animation_demo_screen.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuAnimationScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -6,6 +6,13 @@ import 'package:horizontal_data_table/horizontal_data_table.dart';
 
 import 'user.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 //https://pub.dev/packages/horizontal_data_table
 class HorizontalDataTableScreen extends StatelessWidget {
   @override

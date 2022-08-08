@@ -1,5 +1,12 @@
 import 'dart:convert';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 Client clientFromJson(String str) {
   final jsonData = json.decode(str);
   return Client.fromMap(jsonData);

@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/dimen_constants.dart';
-import 'package:hello_word/lib/common/const/string_constants.dart';
 import 'package:hello_word/lib/core/base_stateful_state.dart';
 import 'package:hello_word/lib/util/log_dog_utils.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
@@ -12,6 +11,13 @@ import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:hello_word/sample/widget/list/lazy_load_scrollview/demo_item.dart';
 import 'package:lazy_load_scrollview/lazy_load_scrollview.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class LazyLoadScrollViewScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -80,10 +86,10 @@ class _LazyLoadScrollViewScreenState
     return Scaffold(
       appBar: UIUtils.getAppBar(
         "LazyLoadScrollViewScreen",
-            () {
+        () {
           Get.back();
         },
-            () {
+        () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
               "https://pub.dev/packages/lazy_load_scrollview");
         },
@@ -95,8 +101,8 @@ class _LazyLoadScrollViewScreenState
           child: ListView(
             children: [
               Padding(
-                padding: const EdgeInsets.all(
-                    DimenConstants.marginPaddingMedium),
+                padding:
+                    const EdgeInsets.all(DimenConstants.marginPaddingMedium),
                 child: UIUtils.getText("Nested horizontal ListView"),
               ),
               Container(
@@ -117,8 +123,8 @@ class _LazyLoadScrollViewScreenState
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.all(
-                    DimenConstants.marginPaddingMedium),
+                padding:
+                    const EdgeInsets.all(DimenConstants.marginPaddingMedium),
                 child: UIUtils.getText("Vertical ListView"),
               ),
               ListView.builder(

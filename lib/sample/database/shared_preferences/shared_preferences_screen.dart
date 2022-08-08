@@ -6,6 +6,13 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class SharedPreferencesScreen extends StatefulWidget {
   @override
   SharedPreferencesScreenState createState() {
@@ -94,24 +101,38 @@ class SharedPreferencesScreenState extends State<SharedPreferencesScreen> {
               UIUtils.getButton("Decrement Counter", () => _onDecrementHit()),
               SizedBox(height: 50),
               UIUtils.getText("$boolValue"),
-              UIUtils.getButton("set true", () {
-                SharedPreferencesUtil.setBool(
-                        SharedPreferencesUtil.KEY_TEST_BOOL, true)
-                    .then((value) {
-                  setState(() {
-                    boolValue = true;
-                  });
-                });
-              }),
-              UIUtils.getButton("set false", () {
-                SharedPreferencesUtil.setBool(
-                        SharedPreferencesUtil.KEY_TEST_BOOL, false)
-                    .then((value) {
-                  setState(() {
-                    boolValue = false;
-                  });
-                });
-              }),
+              UIUtils.getButton(
+                "set true",
+                () {
+                  SharedPreferencesUtil.setBool(
+                          SharedPreferencesUtil.KEY_TEST_BOOL, true)
+                      .then(
+                    (value) {
+                      setState(
+                        () {
+                          boolValue = true;
+                        },
+                      );
+                    },
+                  );
+                },
+              ),
+              UIUtils.getButton(
+                "set false",
+                () {
+                  SharedPreferencesUtil.setBool(
+                          SharedPreferencesUtil.KEY_TEST_BOOL, false)
+                      .then(
+                    (value) {
+                      setState(
+                        () {
+                          boolValue = false;
+                        },
+                      );
+                    },
+                  );
+                },
+              ),
             ],
           ),
         ),

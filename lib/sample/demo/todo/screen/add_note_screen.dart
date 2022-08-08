@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/util/time_utils.dart';
@@ -6,6 +7,13 @@ import 'package:hello_word/sample/demo/todo/controller/controller_note.dart';
 import 'package:hello_word/sample/demo/todo/controller/controller_note_add.dart';
 import 'package:hello_word/sample/demo/todo/model/note.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class AddNoteScreen extends StatefulWidget {
   @override
   AddNoteScreenState createState() => AddNoteScreenState();
@@ -26,7 +34,6 @@ class AddNoteScreenState extends State<AddNoteScreen> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        brightness: Brightness.dark,
         centerTitle: false,
         title: Text(
           "Create your task",
@@ -34,7 +41,7 @@ class AddNoteScreenState extends State<AddNoteScreen> {
             color: Colors.white,
             fontSize: DimenConstants.txtMedium,
           ),
-        ),
+        ), systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: Container(
         width: double.infinity,

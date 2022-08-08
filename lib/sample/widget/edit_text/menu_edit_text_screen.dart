@@ -9,6 +9,13 @@ import 'package:hello_word/sample/widget/edit_text/text_field/text_field_screen.
 import 'edit_text_screen.dart';
 import 'form_field_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuEditTextScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -34,7 +41,7 @@ class MenuEditTextScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "EditTextScreen",
-                  () {
+              () {
                 Get.to(EditTextScreen());
               },
             ),

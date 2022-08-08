@@ -7,6 +7,13 @@ import 'package:hello_word/sample/widget/webview/web_scraper/web_scraper_screen.
 import 'package:hello_word/sample/widget/webview/web_scraper/web_scraper_screen_2.dart';
 import 'package:hello_word/sample/widget/webview/web_view_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MenuWebviewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

@@ -3,6 +3,13 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 
 import 'suggestion_list_widget.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class MySearchDelegate extends SearchDelegate<String?> {
   final List<String> _listWord;
   final List<String> _listHistory;

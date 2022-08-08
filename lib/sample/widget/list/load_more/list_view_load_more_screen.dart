@@ -4,6 +4,13 @@ import 'package:hello_word/lib/common/const/dimen_constants.dart';
 import 'package:hello_word/lib/util/duration_util.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 //https://karthikponnam.medium.com/flutter-loadmore-in-listview-23820612907d
 class ListViewLoadMoreScreen extends StatelessWidget {
   @override

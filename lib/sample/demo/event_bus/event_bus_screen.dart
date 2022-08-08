@@ -12,6 +12,13 @@ import 'package:hello_word/sample/model/people.dart';
 
 import 'event_bus.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class EventBusScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -55,7 +62,7 @@ class EventBusScreenState extends BaseStatefulState<EventBusScreen> {
         },
       ),
       body: CupertinoScrollbar(
-        isAlwaysShown: true,
+        thumbVisibility: true,
         child: ListView(
           physics: BouncingScrollPhysics(),
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),

@@ -7,6 +7,13 @@ import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'controller.dart';
 import 'second_screen.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class GetXScreen extends GetWidget with WidgetsBindingObserver {
   final Controller _controller = Get.put(Controller());
 

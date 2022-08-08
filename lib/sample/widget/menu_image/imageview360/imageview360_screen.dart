@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/core/base_stateful_state.dart';
@@ -6,6 +5,13 @@ import 'package:hello_word/lib/util/uI_utils.dart';
 import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:hello_word/lib/widget/image/imageview360/imageview360.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ImageView360Screen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -27,7 +33,7 @@ class _ImageView360ScreenState extends BaseStatefulState<ImageView360Screen> {
   void initState() {
     //* To load images from assets after first frame build up.
     WidgetsBinding.instance
-        ?.addPostFrameCallback((_) => updateImageList(context));
+        .addPostFrameCallback((_) => updateImageList(context));
     super.initState();
   }
 

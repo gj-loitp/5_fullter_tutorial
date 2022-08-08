@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hello_word/lib/util/uI_utils.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ThemeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -18,7 +25,7 @@ class ThemeScreen extends StatelessWidget {
         child: Center(
           child: Container(
             // use the theme accent color as background color for this base.widget
-            color: Theme.of(context).accentColor,
+            color: Theme.of(context).colorScheme.secondary,
             child: Text(
               'Hello World!',
               // Set text style as per theme

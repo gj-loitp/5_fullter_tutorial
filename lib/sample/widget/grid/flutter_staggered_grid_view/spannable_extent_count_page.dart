@@ -4,6 +4,13 @@ import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 import 'staggered_grid_view_page.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 const List<StaggeredTile> _tiles = <StaggeredTile>[
   StaggeredTile.count(2, 2),
   StaggeredTile.count(1, 1),

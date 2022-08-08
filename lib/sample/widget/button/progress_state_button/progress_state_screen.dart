@@ -10,6 +10,13 @@ import 'package:hello_word/lib/util/url_launcher_utils.dart';
 import 'package:progress_state_button/iconed_button.dart';
 import 'package:progress_state_button/progress_button.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ProgressStateScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {

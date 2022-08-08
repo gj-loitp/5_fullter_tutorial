@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:hello_word/sample/widget/slider/flutter_slidable/home_item.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class VerticalListItem extends StatelessWidget {
   VerticalListItem(this.item);
 

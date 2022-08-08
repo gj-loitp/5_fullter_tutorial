@@ -1,5 +1,12 @@
 import 'package:get/get.dart';
 
+/**
+ * Created by Loitp on 05,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class BaseController extends GetxController {
   var appLoading = AppLoading(
     false,
