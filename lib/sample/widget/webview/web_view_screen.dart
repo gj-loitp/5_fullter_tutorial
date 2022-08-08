@@ -5,6 +5,13 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 const String kNavigationExamplePage = '''
 <!DOCTYPE html><html>
 <head><title>Navigation Delegate Example</title></head>

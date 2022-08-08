@@ -2,6 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:hello_word/sample/widget/video_player/controls_overlay.dart';
 import 'package:video_player/video_player.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class ButterFlyAssetVideo extends StatefulWidget {
   @override
   _ButterFlyAssetVideoState createState() => _ButterFlyAssetVideoState();
