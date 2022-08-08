@@ -3,6 +3,13 @@ import 'package:hello_word/sample/widget/overflow_view/avatar_widget.dart';
 
 import 'avatar.dart';
 
+/**
+ * Created by Loitp on 08,August,2022
+ * Galaxy One company,
+ * Vietnam
+ * +840766040293
+ * freuss47@gmail.com
+ */
 class AvatarOverview extends StatelessWidget {
   AvatarOverview({
     Key? key,
