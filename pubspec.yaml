@@ -134,9 +134,9 @@ dependencies:
   web_scraper: ^0.1.4 #https://pub.dev/packages/web_scraper
 
   #https://pub.dev/packages/flame
-  flame: ^1.2.1
+  flame: 1.0.0-releasecandidate.15
   #https://pub.dev/packages/tiledjsonreader
-  tiledjsonreader: ^1.2.3
+  tiledjsonreader: ^1.0.4
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -173,3 +173,4 @@ flutter:
     - assets/lottie/
     - data_repo/starwars_data.json
     - sound/slow_spring_board.mp3
+    - assets/rayworld_collision_map.json

@@ -1,6 +1,8 @@
 import 'package:flame/components.dart';
+import 'package:flame/geometry.dart';
 import 'package:flame/sprite.dart';
-import 'package:hello_word/lib/game/helpers/direction.dart';
+import 'package:hello_word/sample/game/ray_world/components/world_collidable.dart';
+import 'package:hello_word/sample/game/ray_world/helpers/direction.dart';
 
 /**
  * Created by Loitp on 09,August,2022
@@ -9,7 +11,8 @@ import 'package:hello_word/lib/game/helpers/direction.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-class Player extends SpriteAnimationComponent with HasGameRef {
+class Player extends SpriteAnimationComponent
+    with HasGameRef, Hitbox, Collidable {
   static final _size = 50.0;
   final double _playerSpeed = 300.0;
   Direction direction = Direction.none;
@@ -21,10 +24,15 @@ class Player extends SpriteAnimationComponent with HasGameRef {
   late final SpriteAnimation _runRightAnimation;
   late final SpriteAnimation _standingAnimation;
 
+  Direction _collisionDirection = Direction.none;
+  bool _hasCollided = false;
+
   Player()
       : super(
           size: Vector2.all(_size),
-        );
+        ) {
+    addHitbox(HitboxRectangle());
+  }
 
   @override
   Future<void> onLoad() async {
@@ -68,20 +76,28 @@ class Player extends SpriteAnimationComponent with HasGameRef {
   void movePlayer(double delta) {
     switch (direction) {
       case Direction.up:
-        animation = _runUpAnimation;
-        moveUp(delta);
+        if (canPlayerMoveUp()) {
+          animation = _runUpAnimation;
+          moveUp(delta);
+        }
         break;
       case Direction.down:
-        animation = _runDownAnimation;
-        moveDown(delta);
+        if (canPlayerMoveDown()) {
+          animation = _runDownAnimation;
+          moveDown(delta);
+        }
         break;
       case Direction.left:
-        animation = _runLeftAnimation;
-        moveLeft(delta);
+        if (canPlayerMoveLeft()) {
+          animation = _runLeftAnimation;
+          moveLeft(delta);
+        }
         break;
       case Direction.right:
-        animation = _runRightAnimation;
-        moveRight(delta);
+        if (canPlayerMoveRight()) {
+          animation = _runRightAnimation;
+          moveRight(delta);
+        }
         break;
       case Direction.none:
         animation = _standingAnimation;
@@ -103,5 +119,51 @@ class Player extends SpriteAnimationComponent with HasGameRef {
 
   void moveRight(double delta) {
     position.add(Vector2(delta * _playerSpeed, 0));
+  }
+
+  bool canPlayerMoveUp() {
+    if (_hasCollided && _collisionDirection == Direction.up) {
+      return false;
+    }
+    return true;
+  }
+
+  bool canPlayerMoveDown() {
+    if (_hasCollided && _collisionDirection == Direction.down) {
+      return false;
+    }
+    return true;
+  }
+
+  bool canPlayerMoveLeft() {
+    if (_hasCollided && _collisionDirection == Direction.left) {
+      return false;
+    }
+    return true;
+  }
+
+  bool canPlayerMoveRight() {
+    if (_hasCollided && _collisionDirection == Direction.right) {
+      return false;
+    }
+    return true;
+  }
+
+  @override
+  void onCollision(Set<Vector2> intersectionPoints, Collidable other) {
+    super.onCollision(intersectionPoints, other);
+
+    if (other is WorldCollidable) {
+      if (!_hasCollided) {
+        _hasCollided = true;
+        _collisionDirection = direction;
+      }
+    }
+  }
+
+  @override
+  void onCollisionEnd(Collidable other) {
+    // super.onCollisionEnd(other);
+    _hasCollided = false;
   }
 }

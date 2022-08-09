@@ -427,7 +427,7 @@ packages:
       name: flame
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.1"
+    version: "1.0.0-releasecandidate.15"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -897,7 +897,7 @@ packages:
       name: ordered_set
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.0.0"
+    version: "4.2.0"
   overflow_view:
     dependency: "direct main"
     description:
