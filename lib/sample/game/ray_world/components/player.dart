@@ -31,7 +31,7 @@ class Player extends SpriteAnimationComponent with HasGameRef {
     super.onLoad();
 
     // sprite = await gameRef.loadSprite('player.png');
-    position = gameRef.size / 2 - Vector2.all(_size / 2);
+    // position = gameRef.size / 2 - Vector2.all(_size / 2);
     _loadAnimations().then((_) => {animation = _standingAnimation});
   }
 
