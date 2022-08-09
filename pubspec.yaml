@@ -155,7 +155,7 @@ dependencies:
   #https://pub.dev/packages/flame
   flame: 1.0.0-releasecandidate.15
   #https://pub.dev/packages/tiledjsonreader
-  tiledjsonreader: ^1.0.4
+  tiledjsonreader: ^1.2.3
 
 dev_dependencies:
   flutter_test:
