@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -28,11 +29,7 @@ class ProductBox extends StatelessWidget {
     return InkWell(
       onTap: () {
         print("onTap: " + this.name!);
-        final snackBar = SnackBar(
-          content: Text("Hello " + this.name!),
-          backgroundColor: this.color,
-        );
-        Scaffold.of(context).showSnackBar(snackBar);
+        Get.snackbar('title', '"Hello " + this.name!');
       },
       child: Container(
         padding: EdgeInsets.all(15),

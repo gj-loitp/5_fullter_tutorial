@@ -1,4 +1,4 @@
-import 'package:hello_word/sample/model/product.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/model/product.dart';
 
 class DbShop {
   static List<Product> getListProduct() {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
-import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
 import 'package:horizontal_data_table/horizontal_data_table.dart';
 
 import 'controller_book.dart';

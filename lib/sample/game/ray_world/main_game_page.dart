@@ -1,9 +1,9 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/sample/game/ray_world/helpers/direction.dart';
-import 'package:hello_word/sample/game/ray_world/helpers/joypad.dart';
-import 'package:hello_word/sample/game/ray_world/ray_world_game.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/direction.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/joypad.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/ray_world_game.dart';
 
 /**
  * Created by Loitp on 08,August,2022

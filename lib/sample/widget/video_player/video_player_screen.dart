@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/sample/widget/video_player/player_video_and_pop_page.dart';
-import 'package:hello_word/sample/widget/video_player/tab/bumble_bee_remote_video.dart';
-import 'package:hello_word/sample/widget/video_player/tab/butter_fly_asset_video.dart';
-import 'package:hello_word/sample/widget/video_player/tab/butter_fly_asset_video_in_list.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/player_video_and_pop_page.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/tab/bumble_bee_remote_video.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/tab/butter_fly_asset_video.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/tab/butter_fly_asset_video_in_list.dart';
 
 /**
  * Created by Loitp on 08,August,2022

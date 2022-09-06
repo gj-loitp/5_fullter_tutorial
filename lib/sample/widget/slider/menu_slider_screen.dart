@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/sample/widget/slider/flutter_slidable/flutter_slidable_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/slider/flutter_slidable/flutter_slidable_screen.dart';
 
 import 'range/range_slider_screen.dart';
 import 'slider/slider_screen.dart';

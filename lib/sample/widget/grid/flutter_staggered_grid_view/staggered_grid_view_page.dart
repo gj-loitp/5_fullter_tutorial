@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/sample/widget/grid/flutter_staggered_grid_view/tile_widget.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/flutter_staggered_grid_view/tile_widget.dart';
 
 /**
  * Created by Loitp on 08,August,2022

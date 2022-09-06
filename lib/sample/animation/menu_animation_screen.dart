@@ -1,9 +1,9 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/animation/lottie/lottie_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/animation/route_transition/route_transition_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/sample/animation/lottie/lottie_screen.dart';
-import 'package:hello_word/sample/animation/route_transition/route_transition_screen.dart';
 
 import 'animated_align_screen.dart';
 import 'animated_builder_screen.dart';
@@ -23,9 +23,9 @@ import 'animated_theme_screen.dart';
 import 'decorated_box_transition_screen.dart';
 import 'fade_in_image_screen.dart';
 import 'fade_transition_screen.dart';
+import 'hero/hero_animation_demo_screen.dart';
 import 'positioned_transition_screen.dart';
 import 'rotation_transition_screen.dart';
-import 'hero/hero_animation_demo_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -183,7 +183,7 @@ class MenuAnimationScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "LottieScreen",
-                () => {
+            () => {
               Get.to(LottieScreen()),
             },
           ),

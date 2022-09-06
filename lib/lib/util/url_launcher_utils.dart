@@ -10,7 +10,7 @@ import 'package:url_launcher/url_launcher.dart';
  */
 class UrlLauncherUtils {
   static String getLinkGit(String path) {
-    return "https://github.com/tplloi/fullter_hello_word/tree/master/$path";
+    return "https://github.com/tplloi/fullter_tutorial/tree/master/$path";
   }
 
   static Future<void> launchInBrowser(String url) async {

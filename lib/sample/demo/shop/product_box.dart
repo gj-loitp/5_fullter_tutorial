@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/sample/model/product.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/model/product.dart';
 
 import 'rating_box.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 
 import 'parent_page.dart';
 

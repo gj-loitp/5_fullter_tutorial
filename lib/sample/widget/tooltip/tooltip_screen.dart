@@ -1,6 +1,6 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -43,7 +43,7 @@ class _TooltipScreenState extends State<TooltipScreen> {
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.green),
                 message: 'My Account',
-                child: FlatButton(
+                child: ElevatedButton(
                   onPressed: () {},
                   child: Icon(
                     Icons.account_box,
@@ -56,7 +56,7 @@ class _TooltipScreenState extends State<TooltipScreen> {
               margin: EdgeInsets.all(10),
               child: Tooltip(
                 message: 'My Account',
-                child: FlatButton(
+                child: ElevatedButton(
                   onPressed: () {},
                   child: Icon(
                     Icons.account_box,

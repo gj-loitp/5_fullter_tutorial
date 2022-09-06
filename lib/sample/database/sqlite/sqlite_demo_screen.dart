@@ -2,8 +2,8 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 
 import 'bloc/clients_bloc.dart';
 import 'model/client_model.dart';

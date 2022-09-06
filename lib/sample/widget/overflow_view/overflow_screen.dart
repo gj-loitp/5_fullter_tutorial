@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/lib/util/url_launcher_utils.dart';
-import 'package:hello_word/sample/widget/overflow_view/avatar.dart';
-import 'package:hello_word/sample/widget/overflow_view/avatar_overview.dart';
-import 'package:hello_word/sample/widget/overflow_view/avatar_widget.dart';
-import 'package:hello_word/sample/widget/overflow_view/command_bar.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/avatar.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/avatar_overview.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/avatar_widget.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/command_bar.dart';
 import 'package:overflow_view/overflow_view.dart';
 
 /**

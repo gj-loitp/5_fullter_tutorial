@@ -3,9 +3,9 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_screen_lock/flutter_screen_lock.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:local_auth/local_auth.dart';
 
 /**

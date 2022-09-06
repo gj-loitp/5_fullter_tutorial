@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/sample/widget/video_player/controls_overlay.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/controls_overlay.dart';
 import 'package:video_player/video_player.dart';
 
 /**

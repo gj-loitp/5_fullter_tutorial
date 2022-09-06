@@ -1,7 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:hello_word/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 
 /**
  * Created by Loitp on 08,August,2022

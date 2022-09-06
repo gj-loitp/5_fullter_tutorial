@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/sample/widget/bottom_bar/bottom_bar/bottom_app_bar_screen.dart';
-import 'package:hello_word/sample/widget/bottom_bar/tab_bar/tab_bar_screen.dart';
-import 'package:hello_word/sample/widget/bottom_bar/tab_bar_2/tab_bar_screen_2.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/bottom_bar/bottom_app_bar_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/tab_bar/tab_bar_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/tab_bar_2/tab_bar_screen_2.dart';
 
 /**
  * Created by Loitp on 08,August,2022

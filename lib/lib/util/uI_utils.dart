@@ -1,9 +1,9 @@
 import 'package:avatar_glow/avatar_glow.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
 
 /**
  * Created by Loitp on 05,August,2022

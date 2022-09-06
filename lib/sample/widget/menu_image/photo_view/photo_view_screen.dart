@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/lib/util/url_launcher_utils.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/common_use_cases_examples.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/controller_example.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/custom_child_examples.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/dialog_example.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/gallery/gallery_example.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/hero_example.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/inline_examples.dart';
-import 'package:hello_word/sample/widget/menu_image/photo_view/examples/rotation_examples.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/common_use_cases_examples.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/controller_example.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/custom_child_examples.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/dialog_example.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/gallery/gallery_example.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/hero_example.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/inline_examples.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/rotation_examples.dart';
 
 import 'examples/network_images.dart';
 

@@ -2,8 +2,8 @@ import 'dart:convert';
 
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:hello_word/sample/demo/flutter_bloc/cubit/repository.dart';
-import 'package:hello_word/sample/demo/flutter_bloc/cubit/user.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/cubit/repository.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/cubit/user.dart';
 
 part 'home_state.dart';
 

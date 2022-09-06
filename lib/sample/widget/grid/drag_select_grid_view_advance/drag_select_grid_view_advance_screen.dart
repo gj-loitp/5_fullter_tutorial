@@ -1,8 +1,8 @@
 import 'package:drag_select_grid_view/drag_select_grid_view.dart';
 import 'package:flutter/material.dart';
-import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/sample/widget/grid/drag_select_grid_view_sample/selectable_item.dart';
-import 'package:hello_word/sample/widget/grid/drag_select_grid_view_sample/selection_app_bar.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_sample/selectable_item.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_sample/selection_app_bar.dart';
 
 /**
  * Created by Loitp on 08,August,2022

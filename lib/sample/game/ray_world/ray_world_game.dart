@@ -1,11 +1,11 @@
 import 'dart:ui';
 
 import 'package:flame/game.dart';
-import 'package:hello_word/sample/game/ray_world/components/player.dart';
-import 'package:hello_word/sample/game/ray_world/components/world.dart';
-import 'package:hello_word/sample/game/ray_world/components/world_collidable.dart';
-import 'package:hello_word/sample/game/ray_world/helpers/direction.dart';
-import 'package:hello_word/sample/game/ray_world/helpers/map_loader.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/components/player.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/components/world.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/components/world_collidable.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/direction.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/map_loader.dart';
 
 /**
  * Created by Loitp on 09,August,2022

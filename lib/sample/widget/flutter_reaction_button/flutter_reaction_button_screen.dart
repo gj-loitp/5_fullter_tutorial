@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_reaction_button/flutter_reaction_button.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/util/log_dog_utils.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/log_dog_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
 
 /**
  * Created by Loitp on 08,August,2022

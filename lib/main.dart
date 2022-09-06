@@ -30,6 +30,10 @@ import 'menu_screen.dart';
 
 //done
 
+//TODO change background_image: "assets/images/splash.png"
+//TODO change keystore
+//TODO change ic_launcher
+
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 

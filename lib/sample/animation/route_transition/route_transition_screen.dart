@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
 
 import 'screen/fade_screen.dart';
 import 'screen/random_screen.dart';
