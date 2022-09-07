@@ -133,10 +133,10 @@ dependencies:
   http: ^0.13.5
 
   #https://pub.dev/packages/video_player
-  video_player: ^2.4.5
+  video_player: ^2.4.7
 
   #https://pub.dev/packages/package_info_plus
-  package_info_plus: ^1.4.3
+  package_info_plus: ^1.4.3+1
   #https://pub.dev/packages/path_provider
   path_provider: ^2.0.11
   #https://pub.dev/packages/permission_handler
