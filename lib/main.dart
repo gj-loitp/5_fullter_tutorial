@@ -23,16 +23,10 @@ import 'menu_screen.dart';
  * freuss47@gmail.com
  */
 //TODO google config show isFullData
-//TODO admob
-//TODO change keystore
 //TODO app name, ic launcher
 //TODO rate app, more app dang bi
-
-//done
-
 //TODO change background_image: "assets/images/splash.png"
 //TODO change keystore
-//TODO change ic_launcher
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
