@@ -23,9 +23,11 @@ dependencies:
   bloc: ^8.1.0
 
   #https://pub.dev/packages/cached_network_image
-  cached_network_image: ^3.2.1
-  connectivity_plus: ^2.3.6 #https://pub.dev/packages/connectivity_plus
-  country_picker: ^2.0.15 #https://pub.dev/packages/country_picker
+  cached_network_image: ^3.2.2
+  #https://pub.dev/packages/connectivity_plus
+  connectivity_plus: ^2.3.6+1
+  #https://pub.dev/packages/country_picker
+  country_picker: ^2.0.16
   clay_containers: ^0.3.2 #https://pub.dev/packages/clay_containers
   cupertino_icons: ^1.0.5 #https://pub.dev/packages/cupertino_icons
   crypto: ^3.0.2 #https://pub.dev/packages/crypto/install
