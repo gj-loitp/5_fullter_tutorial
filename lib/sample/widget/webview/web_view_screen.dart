@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 /**
@@ -95,9 +96,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
       name: 'Toaster',
       onMessageReceived: (JavascriptMessage message) {
         // ignore: deprecated_member_use
-        Scaffold.of(context).showSnackBar(
-          SnackBar(content: Text(message.message)),
-        );
+        Get.snackbar('title', message.message);
       },
     );
   }
@@ -112,9 +111,7 @@ class _WebViewScreenState extends State<WebViewScreen> {
             onPressed: () async {
               final String? url = (await controller.data!.currentUrl());
               // ignore: deprecated_member_use
-              Scaffold.of(context).showSnackBar(
-                SnackBar(content: Text("Favorited $url")),
-              );
+              Get.snackbar('title', 'Favorited $url');
             },
             child: const Icon(Icons.favorite),
           );
@@ -222,12 +219,12 @@ Toaster.postMessage("User Agent: " + navigator.userAgent);''');
     final String cookies =
         await controller.evaluateJavascript('document.cookie');
     // ignore: deprecated_member_use
-    Scaffold.of(context).showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          const Text("Cookies:"),
+          const Text(""),
           _getCookieList(cookies),
         ],
       ),
@@ -238,7 +235,7 @@ Toaster.postMessage("User Agent: " + navigator.userAgent);''');
     await controller.evaluateJavascript('''
 caches.open("test_caches_entry"); localStorage["test_localStorage"] = "dummy_entry";''');
     // ignore: deprecated_member_use
-    Scaffold.of(context).showSnackBar(const SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
       content: Text("Added a test entry to cache."),
     ));
   }
@@ -252,7 +249,7 @@ caches.open("test_caches_entry"); localStorage["test_localStorage"] = "dummy_ent
   void _onClearCache(WebViewController controller, BuildContext context) async {
     await controller.clearCache();
     // ignore: deprecated_member_use
-    Scaffold.of(context).showSnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
         content: Text("""
 Cache cleared."""),
@@ -267,7 +264,7 @@ Cache cleared."""),
       message = "There are no cookies.";
     }
     // ignore: deprecated_member_use
-    Scaffold.of(context).showSnackBar(SnackBar(
+    ScaffoldMessenger.of(context).showSnackBar(SnackBar(
       content: Text(message),
     ));
   }
@@ -319,7 +316,7 @@ class NavigationControls extends StatelessWidget {
                         await controller.goBack();
                       } else {
                         // ignore: deprecated_member_use
-                        Scaffold.of(context).showSnackBar(
+                        ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(content: Text("No back history item")),
                         );
                         return;
@@ -335,7 +332,7 @@ class NavigationControls extends StatelessWidget {
                         await controller.goForward();
                       } else {
                         // ignore: deprecated_member_use
-                        Scaffold.of(context).showSnackBar(
+                        ScaffoldMessenger.of(context).showSnackBar(
                           const SnackBar(
                               content: Text("No forward history item")),
                         );

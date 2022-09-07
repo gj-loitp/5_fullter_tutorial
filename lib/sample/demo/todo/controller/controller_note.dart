@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:hello_word/lib/core/base_controller.dart';
-import 'package:hello_word/sample/demo/todo/model/note.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_controller.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/model/note.dart';
 
 /**
  * Created by Loitp on 08,August,2022

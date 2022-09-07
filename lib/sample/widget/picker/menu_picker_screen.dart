@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/common/const/dimen_constants.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
-import 'package:hello_word/sample/widget/picker/country_picker/country_picker_screen.dart';
-import 'package:hello_word/sample/widget/picker/day_picker_screen.dart';
-import 'package:hello_word/sample/widget/picker/image_picker/image_picker_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/country_picker/country_picker_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/day_picker_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/image_picker/image_picker_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

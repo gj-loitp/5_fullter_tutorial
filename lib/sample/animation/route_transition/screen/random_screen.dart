@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/lib/animation/route_transition/enter_exit_route.dart';
-import 'package:hello_word/lib/animation/route_transition/scale_route.dart';
-import 'package:hello_word/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/animation/route_transition/enter_exit_route.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/animation/route_transition/scale_route.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
 
 import '../route_transition_screen.dart';
 

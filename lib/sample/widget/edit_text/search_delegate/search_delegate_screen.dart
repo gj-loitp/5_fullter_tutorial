@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:flutter/material.dart';
 
 import 'my_search_delegate.dart';
@@ -14,7 +15,8 @@ class SearchDelegateScreen extends StatefulWidget {
   _SearchDelegateScreenState createState() => _SearchDelegateScreenState();
 }
 
-class _SearchDelegateScreenState extends State<SearchDelegateScreen> {
+class _SearchDelegateScreenState
+    extends BaseStatefulState<SearchDelegateScreen> {
   final List<String> _listWord;
   late MySearchDelegate _mySearchDelegate;
 
@@ -45,10 +47,9 @@ class _SearchDelegateScreenState extends State<SearchDelegateScreen> {
                 delegate: _mySearchDelegate,
               );
               if (selected != null) {
-                Scaffold.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text('You have selected the word: $selected'),
-                  ),
+                showSnackBarFull(
+                  'title',
+                  'You have selected the word: $selected',
                 );
               }
             },

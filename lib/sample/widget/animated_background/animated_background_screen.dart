@@ -4,11 +4,11 @@ import 'package:animated_background/animated_background.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:hello_word/lib/core/base_stateful_state.dart';
-import 'package:hello_word/lib/util/url_launcher_utils.dart';
-import 'package:hello_word/sample/widget/animated_background/particle_type.dart';
-import 'package:hello_word/sample/widget/animated_background/rain_particle_behaviour.dart';
-import 'package:hello_word/sample/widget/animated_background/space_splash.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/animated_background/particle_type.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/animated_background/rain_particle_behaviour.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/animated_background/space_splash.dart';
 
 /**
  * Created by Loitp on 08,August,2022

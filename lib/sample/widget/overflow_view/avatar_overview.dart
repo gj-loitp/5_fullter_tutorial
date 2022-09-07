@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hello_word/sample/widget/overflow_view/avatar_widget.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/avatar_widget.dart';
 
 import 'avatar.dart';
 

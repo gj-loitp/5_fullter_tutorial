@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:hello_word/lib/core/base_controller.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_controller.dart';
 
 import 'model/dummy_floor.dart';
 import 'model/dummy_header_description.dart';
