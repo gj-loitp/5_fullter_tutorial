@@ -33,7 +33,8 @@ dependencies:
   crypto: ^3.0.2 #https://pub.dev/packages/crypto/install
 
   drag_select_grid_view: ^0.6.1 #https://pub.dev/packages/drag_select_grid_view
-  device_info_plus: ^4.0.1 #https://pub.dev/packages/device_info_plus
+  #https://pub.dev/packages/device_info_plus
+  device_info_plus: ^4.1.2
   delayed_display: ^2.0.0 #https://pub.dev/packages/delayed_display
   dio: ^4.0.6 #https://pub.dev/packages/dio
   dotted_border: ^2.0.0+2 #https://pub.dev/packages/dotted_border
@@ -43,12 +44,14 @@ dependencies:
   encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
   english_words: ^4.0.0 #https://pub.dev/packages/english_words
   event_bus: ^2.0.0 #https://pub.dev/packages/event_bus
-  equatable: ^2.0.3 #https://pub.dev/packages/equatable
+  #https://pub.dev/packages/equatable
+  equatable: ^2.0.5
 
   focus_detector: ^2.0.1 #https://pub.dev/packages/focus_detector
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.45.0
-  flutter_bloc: ^8.0.1 #https://pub.dev/packages/flutter_bloc
+  #https://pub.dev/packages/flutter_bloc
+  flutter_bloc: ^8.1.1
   flutter_easyloading: ^3.0.5 #https://pub.dev/packages/flutter_easyloading
   flutter_local_notifications: ^9.7.0 #https://pub.dev/packages/flutter_local_notifications
   flutter_native_timezone: ^2.0.0 #https://pub.dev/packages/flutter_native_timezone
