@@ -101,8 +101,7 @@ class _DataTableHomePageState extends State<DataTableHomePage> {
     return [
       TextButton(
         style: TextButton.styleFrom(
-          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-          primary: Colors.teal,
+          foregroundColor: Colors.teal, padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           backgroundColor: Colors.yellow,
           textStyle: TextStyle(
             fontStyle: FontStyle.italic,
@@ -124,8 +123,7 @@ class _DataTableHomePageState extends State<DataTableHomePage> {
       ),
       TextButton(
         style: TextButton.styleFrom(
-          padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-          primary: Colors.teal,
+          foregroundColor: Colors.teal, padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
           backgroundColor: Colors.yellow,
           textStyle: TextStyle(
             fontStyle: FontStyle.italic,

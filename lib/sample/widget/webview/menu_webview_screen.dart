@@ -26,7 +26,7 @@ class MenuWebviewScreen extends StatelessWidget {
         null,
       ),
       body: CupertinoScrollbar(
-        isAlwaysShown: true,
+        thumbVisibility: true,
         child: ListView(
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),

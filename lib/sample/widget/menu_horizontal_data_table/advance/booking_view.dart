@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
@@ -50,7 +51,6 @@ class _SupportViewState extends BaseStatefulState {
       backgroundColor: Color(0xff142B74),
       appBar: AppBar(
         backgroundColor: Color(0xff071243),
-        brightness: Brightness.dark,
         centerTitle: false,
         elevation: 1,
         title: Text(
@@ -67,7 +67,7 @@ class _SupportViewState extends BaseStatefulState {
             color: Colors.white,
           ),
           onPressed: () => Get.back(),
-        ),
+        ), systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: Stack(
         children: [

@@ -58,8 +58,9 @@ class UIUtils {
   ) {
     return ElevatedButton(
       style: ElevatedButton.styleFrom(
-        primary: Colors.white70, //bkg color
-        onPrimary: Colors.black, //text color
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white70,
+        //text color
         shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(DimenConstants.radiusMedium),
         ),
@@ -286,8 +287,7 @@ class UIUtils {
                   height: DimenConstants.heightButton,
                   child: TextButton(
                     style: TextButton.styleFrom(
-                      padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
-                      primary: Color(0xff0A79F8),
+                      foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
                       // backgroundColor: Colors.white,
                       textStyle: TextStyle(
                         fontSize: 16,

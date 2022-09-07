@@ -29,8 +29,7 @@ class _TextButtonScreenState extends State<TextButtonScreen> {
       body: Center(
         child: TextButton(
           style: TextButton.styleFrom(
-            primary: Colors.teal,
-            backgroundColor: Colors.yellow,
+            foregroundColor: Colors.teal, backgroundColor: Colors.yellow,
             textStyle: TextStyle(
               fontSize: DimenConstants.txtMedium,
               fontStyle: FontStyle.italic,

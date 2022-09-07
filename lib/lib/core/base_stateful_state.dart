@@ -67,7 +67,7 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                             ? (Expanded(
                                 child: TextButton(
                                   style: TextButton.styleFrom(
-                                    padding: EdgeInsets.fromLTRB(
+                                    foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
                                       DimenConstants.marginPaddingMedium,
                                       DimenConstants.marginPaddingMedium *
                                           2 /
@@ -77,7 +77,6 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                                           2 /
                                           3,
                                     ),
-                                    primary: Color(0xff0A79F8),
                                     backgroundColor: Color(0xffffffff),
                                     textStyle: TextStyle(
                                       fontSize: 14,
@@ -101,13 +100,12 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                               ))
                             : (TextButton(
                                 style: TextButton.styleFrom(
-                                  padding: EdgeInsets.fromLTRB(
+                                  foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
                                     DimenConstants.marginPaddingMedium,
                                     DimenConstants.marginPaddingMedium * 2 / 3,
                                     DimenConstants.marginPaddingMedium,
                                     DimenConstants.marginPaddingMedium * 2 / 3,
                                   ),
-                                  primary: Color(0xff0A79F8),
                                   backgroundColor: Color(0xffffffff),
                                   textStyle: TextStyle(
                                     fontSize: 14,
@@ -139,13 +137,12 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                         child: Expanded(
                           child: TextButton(
                             style: TextButton.styleFrom(
-                              padding: EdgeInsets.fromLTRB(
+                              foregroundColor: Color(0xffffffff), padding: EdgeInsets.fromLTRB(
                                 DimenConstants.marginPaddingMedium,
                                 DimenConstants.marginPaddingMedium * 2 / 3,
                                 DimenConstants.marginPaddingMedium,
                                 DimenConstants.marginPaddingMedium * 2 / 3,
                               ),
-                              primary: Color(0xffffffff),
                               backgroundColor: Color(0xff2B67F6),
                               textStyle: TextStyle(
                                 fontSize: 14,
@@ -254,7 +251,7 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                             ? (Expanded(
                                 child: TextButton(
                                   style: TextButton.styleFrom(
-                                    padding: EdgeInsets.fromLTRB(
+                                    foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
                                       DimenConstants.marginPaddingMedium,
                                       DimenConstants.marginPaddingMedium *
                                           2 /
@@ -264,7 +261,6 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                                           2 /
                                           3,
                                     ),
-                                    primary: Color(0xff0A79F8),
                                     backgroundColor: Color(0xffffffff),
                                     textStyle: TextStyle(
                                       fontSize: 14,
@@ -288,13 +284,12 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                               ))
                             : (TextButton(
                                 style: TextButton.styleFrom(
-                                  padding: EdgeInsets.fromLTRB(
+                                  foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
                                     DimenConstants.marginPaddingMedium,
                                     DimenConstants.marginPaddingMedium * 2 / 3,
                                     DimenConstants.marginPaddingMedium,
                                     DimenConstants.marginPaddingMedium * 2 / 3,
                                   ),
-                                  primary: Color(0xff0A79F8),
                                   backgroundColor: Color(0xffffffff),
                                   textStyle: TextStyle(
                                     fontSize: 14,
@@ -326,13 +321,12 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                         child: Expanded(
                           child: TextButton(
                             style: TextButton.styleFrom(
-                              padding: EdgeInsets.fromLTRB(
+                              foregroundColor: Color(0xffffffff), padding: EdgeInsets.fromLTRB(
                                 DimenConstants.marginPaddingMedium,
                                 DimenConstants.marginPaddingMedium * 2 / 3,
                                 DimenConstants.marginPaddingMedium,
                                 DimenConstants.marginPaddingMedium * 2 / 3,
                               ),
-                              primary: Color(0xffffffff),
                               backgroundColor: Color(0xff2B67F6),
                               textStyle: TextStyle(
                                 fontSize: 14,
@@ -466,13 +460,12 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                     height: 40,
                     child: TextButton(
                       style: TextButton.styleFrom(
-                        padding: EdgeInsets.fromLTRB(
+                        foregroundColor: Color(0xff2B67F6), padding: EdgeInsets.fromLTRB(
                           DimenConstants.marginPaddingMedium * 5 / 2,
                           0,
                           DimenConstants.marginPaddingMedium * 5 / 2,
                           0,
                         ),
-                        primary: Color(0xff2B67F6),
                         textStyle: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
