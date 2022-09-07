@@ -1336,7 +1336,7 @@ packages:
       name: tiledjsonreader
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.4"
+    version: "1.2.5"
   timeago:
     dependency: "direct main"
     description:
