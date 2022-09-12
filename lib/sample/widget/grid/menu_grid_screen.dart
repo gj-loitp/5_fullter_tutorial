@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_advance/drag_select_grid_view_advance_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_sample/drag_select_grid_view_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/flutter_staggered_grid_view/menu_flutter_staggered_grid_view_screen.dart';

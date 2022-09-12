@@ -52,29 +52,44 @@ class UIUtils {
     );
   }
 
-  static ElevatedButton getButton(
+  static Widget getButton(
     String text,
     VoidCallback? onPressed,
   ) {
-    return ElevatedButton(
-      style: ElevatedButton.styleFrom(
-        foregroundColor: Colors.black,
-        backgroundColor: Colors.white70,
-        //text color
-        shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(DimenConstants.radiusMedium),
+    return Container(
+      margin: EdgeInsets.all(DimenConstants.marginPaddingMedium),
+      height: DimenConstants.buttonHeight * 1.5,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+          foregroundColor: Colors.black,
+          backgroundColor: Colors.white,
+          shape: new RoundedRectangleBorder(
+            borderRadius:
+                new BorderRadius.circular(DimenConstants.radiusMedium),
+            side: BorderSide(
+              color: const Color(0xFF8C98A8).withOpacity(0.2),
+              width: 0.5,
+            ),
+          ),
         ),
-      ),
-
-      child: new Text(
-        text,
-        style: TextStyle(
-          // color: Colors.black,
-          fontSize: DimenConstants.txtMedium,
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(
+                text,
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: DimenConstants.txtMedium,
+                ),
+              ),
+            ),
+            Icon(
+              Icons.double_arrow,
+            ),
+          ],
         ),
+        onPressed: onPressed,
       ),
-      // color: Colors.white70,
-      onPressed: onPressed,
     );
   }
 
@@ -287,7 +302,8 @@ class UIUtils {
                   height: DimenConstants.heightButton,
                   child: TextButton(
                     style: TextButton.styleFrom(
-                      foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
+                      foregroundColor: Color(0xff0A79F8),
+                      padding: EdgeInsets.fromLTRB(15, 0, 15, 0),
                       // backgroundColor: Colors.white,
                       textStyle: TextStyle(
                         fontSize: 16,

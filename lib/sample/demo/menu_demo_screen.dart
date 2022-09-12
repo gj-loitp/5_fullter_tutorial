@@ -1,5 +1,5 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/advance_pdf_viewer/advance_pdf_viewer_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/async/menu_async_screen.dart';

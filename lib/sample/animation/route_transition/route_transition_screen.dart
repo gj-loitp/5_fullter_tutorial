@@ -1,7 +1,7 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
 
 import 'screen/fade_screen.dart';
 import 'screen/random_screen.dart';
@@ -60,8 +60,8 @@ class Screen1 extends StatelessWidget {
     );
   }
 
-  List<ElevatedButton> buttons(context) {
-    List<ElevatedButton> buttons = [];
+  List<Widget> buttons(context) {
+    List<Widget> buttons = [];
     screens.forEach(
       (k, v) => buttons.add(UIUtils.getButton(k, () {
         Navigator.push(context, CupertinoPageRoute(builder: (context) => v));

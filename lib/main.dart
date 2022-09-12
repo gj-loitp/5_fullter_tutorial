@@ -27,6 +27,7 @@ import 'menu_screen.dart';
 //TODO rate app, more app dang bi
 //TODO change background_image: "assets/images/splash.png"
 //TODO change keystore
+//done
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/common/common_example_wrapper.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/common/example_button.dart';
 import 'package:photo_view/photo_view.dart';

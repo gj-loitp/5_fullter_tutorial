@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/animation/route_transition/fade_route.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 
 import '../route_transition_screen.dart';
 
