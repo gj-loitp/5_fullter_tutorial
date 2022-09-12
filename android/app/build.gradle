@@ -42,7 +42,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.loitp.baseflutter"
+        applicationId "com.roy93group.fullter_tutorial"
 
         // Required by the Flutter WebView plugin: https://pub.dev/packages/webview_flutter
         minSdkVersion 21

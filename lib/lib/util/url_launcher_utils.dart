@@ -57,6 +57,6 @@ class UrlLauncherUtils {
 
   static void moreApp() {
     UrlLauncherUtils.launchInBrowser(
-        "https://play.google.com/store/apps/dev?id=6295678835392563583");
+        "https://play.google.com/store/apps/developer?id=Roy93Group");
   }
 }
