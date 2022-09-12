@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -76,10 +77,15 @@ class Screen2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.green,
-      body: Center(
-          child: UIUtils.getButton("Go Back!", () {
-        Get.back();
-      })),
+      body: Container(
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
+        child: UIUtils.getButton(
+          "Go Back!",
+          () {
+            Get.back();
+          },
+        ),
+      ),
     );
   }
 }
