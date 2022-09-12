@@ -1,6 +1,7 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:transparent_image/transparent_image.dart';
 
 /**
@@ -19,7 +20,8 @@ class FadeInImageScreen extends StatelessWidget {
         () => Get.back(),
         null,
       ),
-      body: Center(
+      body: Container(
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         child: FadeInImageWidget(),
       ),
     );

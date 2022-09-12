@@ -1,8 +1,9 @@
 import 'dart:math' as math;
 
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -22,7 +23,8 @@ class AnimatedBuilderScreen extends StatelessWidget {
         },
         null,
       ),
-      body: Center(
+      body: Container(
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         child: AnimatedBuilderWidget(),
       ),
     );

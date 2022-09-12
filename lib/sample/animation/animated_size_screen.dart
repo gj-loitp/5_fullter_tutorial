@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
@@ -18,7 +19,8 @@ class AnimatedSizeScreen extends StatelessWidget {
         () => Get.back(),
         null,
       ),
-      body: Center(
+      body: Container(
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         child: AnimatedSizeWidget(),
       ),
     );
@@ -59,9 +61,11 @@ class _AnimatedSizeWidgetState extends State<AnimatedSizeWidget>
           ),
         ),
         UIUtils.getButton("Change Size", () {
-          width = status ? 250 : 200;
-          height = status ? 150 : 200;
-          status = !status;
+          setState(() {
+            width = status ? 250 : 200;
+            height = status ? 150 : 200;
+            status = !status;
+          });
         }),
       ],
     );
