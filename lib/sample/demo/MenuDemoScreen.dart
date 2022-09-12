@@ -14,8 +14,8 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/easyDebounce/EasyDeb
 import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/EncryptScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/eventBus/EventBusScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterBloc/MenuFlutterBlockScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_local_notifications/flutter_local_notifications_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_screen_lock/flutter_screen_lock_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterLocalNotifications/FlutterLocalNotificationsScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterScreenLock/FlutterScreenLockScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/focus_detector/focus_detector_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/getx/getx_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/html2md/html2md_screen.dart';
