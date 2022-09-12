@@ -8,9 +8,9 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/communicationBetween
 import 'package:com.roy93group.flutter_tutorial/sample/demo/connectivityPlus/ConnectivityPlusScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/counter/CounterScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/CryptoScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/device_info_plus/device_info_plus_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/dio_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/easy_debounce/easy_debounce_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/deviceInfoPlus/DeviceInfoPlusScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/DioScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/easyDebounce/EasyDebounceScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/encrypt_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/event_bus/event_bus_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/menu_flutter_block_screen.dart';
