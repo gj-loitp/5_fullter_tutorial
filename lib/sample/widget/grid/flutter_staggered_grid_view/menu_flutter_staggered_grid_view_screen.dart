@@ -1,6 +1,6 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/flutter_staggered_grid_view/example_1.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/flutter_staggered_grid_view/example_2.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/flutter_staggered_grid_view/example_3.dart';

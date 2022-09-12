@@ -1,6 +1,6 @@
 import 'package:advance_pdf_viewer/advance_pdf_viewer.dart';
 import 'package:flutter/material.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 
 /**
  * Created by Loitp on 05,August,2022

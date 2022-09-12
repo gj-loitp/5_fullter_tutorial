@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/webview/web_scraper/web_scraper_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/webview/web_scraper/web_scraper_screen_2.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/webview/web_view_screen.dart';

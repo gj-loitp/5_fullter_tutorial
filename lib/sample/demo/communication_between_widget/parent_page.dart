@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
 import 'child_1_page.dart';
 import 'child_2_page.dart';

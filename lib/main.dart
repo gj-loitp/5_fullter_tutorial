@@ -11,8 +11,8 @@ import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-import 'lib/common/const/dimen_constants.dart';
-import 'lib/util/log_dog_utils.dart';
+import 'lib/common/const/DimenConstants.dart';
+import 'lib/util/LogDogUtils.dart';
 import 'menu_screen.dart';
 
 /**

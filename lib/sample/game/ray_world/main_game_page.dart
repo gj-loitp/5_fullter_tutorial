@@ -1,6 +1,6 @@
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/direction.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/joypad.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/ray_world_game.dart';

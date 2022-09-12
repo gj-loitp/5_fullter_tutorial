@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/bottom_bar/bottom_app_bar_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/tab_bar/tab_bar_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/tab_bar_2/tab_bar_screen_2.dart';

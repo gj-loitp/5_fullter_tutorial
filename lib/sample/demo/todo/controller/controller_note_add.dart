@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/base_controller.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/BaseController.dart';
 
 /**
  * Created by Loitp on 08,August,2022

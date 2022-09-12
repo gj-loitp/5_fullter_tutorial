@@ -1,4 +1,4 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -7,7 +7,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants
  * +840766040293
  * freuss47@gmail.com
  */
-class ValidateUtil {
+class ValidateUtils {
   static bool isValidPassword(String pw) {
     return pw.length >= DimenConstants.minLengthPassword &&
         isValidPasswordFormat(pw);

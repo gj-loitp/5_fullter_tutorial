@@ -1,5 +1,5 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/contact_page_screen/contact_page_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/draggable_scrollbar_demo/draggable_scrollbar_demo_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/flutter_sticky_header/flutter_sticky_header_screen.dart';

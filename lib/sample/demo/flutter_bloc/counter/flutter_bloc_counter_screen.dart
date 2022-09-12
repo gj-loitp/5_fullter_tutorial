@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/counter/counter_cubit.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/counter/counter_view.dart';
 

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 
 import 'contact_list_item.dart';
 import 'contact_modal.dart';
