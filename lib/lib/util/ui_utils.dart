@@ -16,8 +16,9 @@ class UIUtils {
   static AppBar getAppBar(
     String text,
     VoidCallback? onPressed,
-    VoidCallback? onPressCodeViewer,
-  ) {
+    VoidCallback? onPressCodeViewer, {
+    Color backgroundColor = Colors.deepOrange,
+  }) {
     Widget _buildActionCodeWidget() {
       if (onPressCodeViewer == null) {
         return Container();
@@ -44,10 +45,10 @@ class UIUtils {
       ),
 
       //add action on appbar
-      actions: <Widget>[
+      actions: [
         _buildActionCodeWidget(),
       ],
-      backgroundColor: Colors.blue,
+      backgroundColor: backgroundColor,
       systemOverlayStyle: SystemUiOverlayStyle.light,
     );
   }
