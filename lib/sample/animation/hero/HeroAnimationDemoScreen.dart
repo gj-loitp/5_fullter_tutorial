@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 
-import '../../../lib/animation/hero/hero_dialog_route.dart';
+import '../../../lib/animation/hero/HeroDialogRoute.dart';
 import 'CustomLogo.dart';
 import 'Page1.dart';
 import 'Page2.dart';
