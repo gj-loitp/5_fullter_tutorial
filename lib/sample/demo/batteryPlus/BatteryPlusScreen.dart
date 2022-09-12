@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:battery_plus/battery_plus.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -54,7 +54,7 @@ class _BatteryPlusScreenState extends BaseStatefulState<BatteryPlusScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/battery_plus");
+              "https://pub.dev/packages/batteryPlus");
         },
       ),
       body: ListView(
@@ -65,6 +65,7 @@ class _BatteryPlusScreenState extends BaseStatefulState<BatteryPlusScreen> {
         ],
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.deepOrange,
         onPressed: () async {
           final batteryLevel = await _battery.batteryLevel;
           // ignore: unawaited_futures
