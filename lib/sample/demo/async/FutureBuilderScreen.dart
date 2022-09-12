@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
@@ -37,7 +38,9 @@ class _FutureBuilderScreenState extends State<FutureBuilderScreen> {
         },
         null,
       ),
-      body: Column(
+      body: ListView(
+        physics: BouncingScrollPhysics(),
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         children: <Widget>[
           Container(
             height: 300,

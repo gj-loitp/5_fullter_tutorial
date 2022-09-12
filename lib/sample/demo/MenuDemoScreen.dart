@@ -1,8 +1,8 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/advance_pdf_viewer/advance_pdf_viewer_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/async/menu_async_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/advancePdfViewer/AdvancePdfViewerScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/async/MenuAsyncScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/battery_plus/battery_plus_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/communication_between_widget/communication_between_widget_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/connectivity_plus/connectivity_plus_screen.dart';

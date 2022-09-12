@@ -9,7 +9,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-//TODO crash on poco f3
+//TODO crash
 class AdvancePDFViewerScreen extends StatefulWidget {
   @override
   _AdvancePDFViewerScreenState createState() => _AdvancePDFViewerScreenState();
@@ -91,7 +91,7 @@ class _AdvancePDFViewerScreenState extends State<AdvancePDFViewerScreen> {
               ),
               onPressed: () {
                 UrlLauncherUtils.launchInWebViewWithJavaScript(
-                    "https://pub.dev/packages/advance_pdf_viewer");
+                    "https://pub.dev/packages/advancePdfViewer");
               },
             ),
           ],

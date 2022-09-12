@@ -32,8 +32,10 @@ class _StreamBuilderScreenState extends State<StreamBuilderScreen> {
         },
         null,
       ),
-      body: Center(
+      body: Container(
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         child: SingleChildScrollView(
+          physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               StreamBuilder(

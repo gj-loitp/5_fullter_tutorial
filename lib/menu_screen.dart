@@ -11,7 +11,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/main_game_
 import 'lib/util/UIUtils.dart';
 import 'sample/animation/MenuAnimationScreen.dart';
 import 'sample/database/MenuDatabaseScreen.dart';
-import 'sample/demo/menu_demo_screen.dart';
+import 'sample/demo/MenuDemoScreen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';
 import 'sample/widget/menu_widget_screen.dart';
 
