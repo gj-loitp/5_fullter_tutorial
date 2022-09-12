@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 
-import 'custom_logo.dart';
+import 'CustomLogo.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -11,7 +11,7 @@ import 'custom_logo.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-class Page2 extends StatelessWidget {
+class Page1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,27 +20,14 @@ class Page2 extends StatelessWidget {
         child: Stack(
           children: <Widget>[
             Align(
-              alignment: Alignment.topCenter,
+              alignment: Alignment.center,
               child: Hero(
                 tag: "hero1",
                 child: Container(
-                  padding: EdgeInsets.only(top: 50.0),
-                  height: 250.0,
+                  height: 200.0,
                   width: 200.0,
                   child: CustomLogo(),
                 ),
-              ),
-            ),
-            Align(
-              alignment: Alignment.centerRight,
-              child: Hero(
-                tag: "hero2",
-                child: Material(
-                    color: Colors.transparent,
-                    child: Text(
-                      "Hero Text Suzuki Ducati BMW Honda",
-                      style: TextStyle(fontSize: 50.0),
-                    )),
               ),
             ),
             UIUtils.getButton("Close", () {

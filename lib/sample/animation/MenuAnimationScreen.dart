@@ -1,31 +1,31 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/animation/lottie/lottie_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/animation/route_transition/route_transition_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/animation/lottie/LottieScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/animation/routeTransition/RouteTransitionScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'animated_align_screen.dart';
-import 'animated_builder_screen.dart';
-import 'animated_container_screen.dart';
-import 'animated_cross_fade_screen.dart';
-import 'animated_default_text_style_screen.dart';
-import 'animated_icon_screen.dart';
-import 'animated_list_screen.dart';
-import 'animated_modal_barrier_screen.dart';
-import 'animated_opacity_screen.dart';
-import 'animated_padding_screen.dart';
-import 'animated_physical_model_screen.dart';
-import 'animated_positioned_screen.dart';
-import 'animated_size_screen.dart';
-import 'animated_switcher_screen.dart';
-import 'animated_theme_screen.dart';
-import 'decorated_box_transition_screen.dart';
-import 'fade_in_image_screen.dart';
-import 'fade_transition_screen.dart';
-import 'hero/hero_animation_demo_screen.dart';
-import 'positioned_transition_screen.dart';
-import 'rotation_transition_screen.dart';
+import 'AnimatedAlignScreen.dart';
+import 'AnimatedBuilderScreen.dart';
+import 'AnimatedContainerScreen.dart';
+import 'AnimatedCrossFadeScreen.dart';
+import 'AnimatedDefaultTextStyleScreen.dart';
+import 'AnimatedIconScreen.dart';
+import 'AnimatedListScreen.dart';
+import 'AnimatedModalBarrierScreen.dart';
+import 'AnimatedOpacityScreen.dart';
+import 'AnimatedPaddingScreen.dart';
+import 'AnimatedPhysicalModelScreen.dart';
+import 'AnimatedPositionedScreen.dart';
+import 'AnimatedSizeScreen.dart';
+import 'AnimatedSwitcherScreen.dart';
+import 'AnimatedThemeScreen.dart';
+import 'DecoratedBoxTransitionScreen.dart';
+import 'FadeInImageScreen.dart';
+import 'FadeTransitionScreen.dart';
+import 'hero/HeroAnimationDemoScreen.dart';
+import 'PositionedTransitionScreen.dart';
+import 'RotationTransitionScreen.dart';
 
 /**
  * Created by Loitp on 05,August,2022

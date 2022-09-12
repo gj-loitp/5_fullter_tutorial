@@ -9,7 +9,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/main_game_page.dart';
 
 import 'lib/util/ui_utils.dart';
-import 'sample/animation/menu_animation_screen.dart';
+import 'sample/animation/MenuAnimationScreen.dart';
 import 'sample/database/MenuDatabaseScreen.dart';
 import 'sample/demo/menu_demo_screen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';

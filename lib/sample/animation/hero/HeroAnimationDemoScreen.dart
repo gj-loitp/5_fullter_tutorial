@@ -3,9 +3,9 @@ import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 
 import '../../../lib/animation/hero/hero_dialog_route.dart';
-import 'custom_logo.dart';
-import 'page_1.dart';
-import 'page_2.dart';
+import 'CustomLogo.dart';
+import 'Page1.dart';
+import 'Page2.dart';
 
 /**
  * Created by Loitp on 05,August,2022
