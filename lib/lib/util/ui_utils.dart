@@ -54,10 +54,11 @@ class UIUtils {
 
   static Widget getButton(
     String text,
-    VoidCallback? onPressed,
-  ) {
+    VoidCallback? onPressed, {
+    double marginTop = DimenConstants.marginPaddingMedium,
+  }) {
     return Container(
-      margin: EdgeInsets.all(DimenConstants.marginPaddingMedium),
+      margin: EdgeInsets.only(top: marginTop),
       height: DimenConstants.buttonHeight * 1.5,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
@@ -83,6 +84,7 @@ class UIUtils {
                 ),
               ),
             ),
+            SizedBox(width: DimenConstants.marginPaddingMedium),
             Icon(
               Icons.double_arrow,
             ),

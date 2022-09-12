@@ -68,8 +68,7 @@ void main() async {
     SystemUiOverlayStyle(
       // statusBarColor: Colors.blue, // status bar color
       // statusBarIconBrightness: Brightness.light, // status bar icons' color
-
-      systemNavigationBarColor: Colors.blue, // navigation bar color
+      systemNavigationBarColor: Colors.deepOrange, // navigation bar color
       systemNavigationBarIconBrightness:
           Brightness.light, //navigation bar icons' color
     ),
