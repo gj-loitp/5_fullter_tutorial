@@ -10,7 +10,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/model/people.dart';
 
-import 'event_bus.dart';
+import 'EventBus.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -58,7 +58,7 @@ class EventBusScreenState extends BaseStatefulState<EventBusScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/event_bus");
+              "https://pub.dev/packages/eventBus");
         },
       ),
       body: CupertinoScrollbar(

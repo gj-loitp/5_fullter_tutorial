@@ -4,7 +4,8 @@ import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/cubit/home_cubit.dart';
+
+import 'HomeCubit.dart';
 
 /**
  * Created by Loitp on 08,August,2022

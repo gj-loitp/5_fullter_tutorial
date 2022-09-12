@@ -1,10 +1,11 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/counter/flutter_bloc_counter_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/cubit/cubit_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+
+import 'counter/FlutterBlocCounterScreen.dart';
+import 'cubit/CubitScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -24,7 +25,7 @@ class MenuFlutterBlockScreen extends StatelessWidget {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/flutter_bloc");
+              "https://pub.dev/packages/flutterBloc");
         },
       ),
       body: ListView(

@@ -11,9 +11,9 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/CryptoScreen.
 import 'package:com.roy93group.flutter_tutorial/sample/demo/deviceInfoPlus/DeviceInfoPlusScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/DioScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/easyDebounce/EasyDebounceScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/encrypt_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/event_bus/event_bus_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_bloc/menu_flutter_block_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/EncryptScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/eventBus/EventBusScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterBloc/MenuFlutterBlockScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_local_notifications/flutter_local_notifications_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_screen_lock/flutter_screen_lock_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/focus_detector/focus_detector_screen.dart';
