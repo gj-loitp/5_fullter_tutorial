@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import '../db/db_provider.dart';
-import '../model/client_model.dart';
+import '../db/DbProvider.dart';
+import '../model/ClientModel.dart';
 
 /**
  * Created by Loitp on 05,August,2022

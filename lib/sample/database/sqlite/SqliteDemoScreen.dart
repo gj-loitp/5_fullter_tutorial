@@ -1,12 +1,12 @@
 import 'dart:math' as math;
 
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'bloc/clients_bloc.dart';
-import 'model/client_model.dart';
+import 'bloc/ClientsBloc.dart';
+import 'model/ClientModel.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -73,6 +73,7 @@ class _SQLiteDemoScreenState extends State<SQLiteDemoScreen> {
                       onChanged: (bool? value) {
                         clientsBloc.blockUnblock(item);
                       },
+                      checkColor: Colors.white,
                       value: item.blocked,
                     ),
                   ),
@@ -85,7 +86,11 @@ class _SQLiteDemoScreenState extends State<SQLiteDemoScreen> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
+        child: Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
+        backgroundColor: Colors.deepOrange,
         onPressed: () async {
           Client randomClient =
               testClients[math.Random().nextInt(testClients.length)];
