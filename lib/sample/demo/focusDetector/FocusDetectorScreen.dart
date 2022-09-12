@@ -20,7 +20,7 @@ class FocusDetectorScreen extends StatelessWidget {
         Get.back();
       }, () {
         UrlLauncherUtils.launchInWebViewWithJavaScript(
-            "https://pub.dev/packages/focus_detector");
+            "https://pub.dev/packages/focusDetector");
       }),
       body: Center(
         child: _buildFocusWidget(context),

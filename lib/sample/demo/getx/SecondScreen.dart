@@ -1,8 +1,8 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
-import 'controller.dart';
+import 'Controller.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -36,6 +36,7 @@ class SecondScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.deepOrange,
         child: Icon(Icons.exposure_minus_1),
         onPressed: () => _controller.minus(),
       ),

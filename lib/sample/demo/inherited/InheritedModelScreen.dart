@@ -1,6 +1,7 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -43,7 +44,8 @@ class _InheritedModelScreenState extends State<InheritedModelScreen> {
         () => Get.back(),
         null,
       ),
-      body: Center(
+      body: Container(
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         child: InheritedRoot(
           inheritedRootModel: inheritedRootModel,
           add: add,

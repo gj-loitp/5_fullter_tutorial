@@ -16,11 +16,9 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/eventBus/EventBusScr
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterBloc/MenuFlutterBlockScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterLocalNotifications/FlutterLocalNotificationsScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterScreenLock/FlutterScreenLockScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/focus_detector/focus_detector_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/getx/getx_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/html2md/html2md_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/image_gallery_saver/image_gallery_saver_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/inherited/menu_inherited_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/getx/GetXScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/html2md/Html2MdScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/inherited/MenuInheritedScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/load_local_json/load_local_json_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/local_auth/local_auth_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/package_info_plus/package_info_plus_screen.dart';
@@ -38,6 +36,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 
+import 'focusDetector/FocusDetectorScreen.dart';
+import 'imageGallerySaver/ImageGallerySaverScreen.dart';
 import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
 
 /**
