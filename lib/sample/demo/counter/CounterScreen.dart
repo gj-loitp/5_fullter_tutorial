@@ -1,6 +1,6 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -66,6 +66,7 @@ class _CounterHomePageState extends State<CounterHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: Icon(Icons.add),
+        backgroundColor: Colors.deepOrange,
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

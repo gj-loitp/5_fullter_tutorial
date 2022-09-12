@@ -5,9 +5,9 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/advancePdfViewer/Adv
 import 'package:com.roy93group.flutter_tutorial/sample/demo/async/MenuAsyncScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/batteryPlus/BatteryPlusScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/communicationBetweenWidget/CommunicationBetweenWidgetScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/connectivity_plus/connectivity_plus_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/counter/counter_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/crypto_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/connectivityPlus/ConnectivityPlusScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/counter/CounterScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/CryptoScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/device_info_plus/device_info_plus_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/dio_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/easy_debounce/easy_debounce_screen.dart';
