@@ -1,20 +1,20 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/button/flutter_speed_dial/flutter_speed_dial_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/button/like_button_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/button/progress_state_button/progress_state_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/button/LikeButtonScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/button/progressStateButton/ProgressStateScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'back_button_screen.dart';
-import 'button_bar_screen.dart';
-import 'drop_down_screen.dart';
-import 'icon_button_screen.dart';
-import 'outline_button_screen.dart';
-import 'popup_menu_button_screen.dart';
-import 'raw_material_button_screen.dart';
-import 'text_button_screen.dart';
-import 'toggle_button_screen.dart';
+import 'BackButtonScreen.dart';
+import 'ButtonBarScreen.dart';
+import 'DropDownScreen.dart';
+import 'flutterSpeedDial/FlutterSpeedDialScreen.dart';
+import 'IconButtonScreen.dart';
+import 'OutlineButtonScreen.dart';
+import 'PopupMenuButtonScreen.dart';
+import 'RawMaterialButtonScreen.dart';
+import 'TextButtonScreen.dart';
+import 'ToggleButtonScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

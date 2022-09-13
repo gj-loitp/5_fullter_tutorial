@@ -1,6 +1,6 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -23,15 +23,23 @@ class ButtonBarScreen extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+          children: [
             ButtonBar(
               alignment: MainAxisAlignment.spaceAround,
               mainAxisSize: MainAxisSize.max,
               children: <Widget>[
-                UIUtils.getButton("Item1", () {}),
-                UIUtils.getButton("Item2", () {}),
-                UIUtils.getButton("Item3", () {}),
-                UIUtils.getButton("Item4", () {}),
+                UIUtils.getText(
+                  "Item 1",
+                ),
+                UIUtils.getText(
+                  "Item 2",
+                ),
+                UIUtils.getText(
+                  "Item 3",
+                ),
+                UIUtils.getText(
+                  "Item 4",
+                ),
                 UIUtils.getText(
                   "Item 5",
                 ),

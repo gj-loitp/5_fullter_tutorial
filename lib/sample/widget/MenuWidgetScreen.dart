@@ -4,12 +4,9 @@ import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/BlurScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/menu_bottom_bar_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/MenuBottomBarScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_sheet/bottom_sheet_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/chart_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/check_box/check_box_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/check_box/radio_button_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/check_box/radio_button_screen_2.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/ChartScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/data_table/data_table_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/delayed_display/delayed_display_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/dotted_border/dotted_border_screen.dart';
@@ -32,8 +29,11 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/webview/menu_webvi
 
 import 'animatedBackground/AnimatedBackgroundScreen.dart';
 import 'appbar/SliverAppBarScreen.dart';
-import 'button/menu_button_screen.dart';
-import 'card/card_screen.dart';
+import 'button/MenuButtonScreen.dart';
+import 'card/CardScreen.dart';
+import 'checkBox/CheckBoxScreen.dart';
+import 'checkBox/RadioButtonScreen.dart';
+import 'checkBox/RadioButtonScreen2.dart';
 import 'clay_containers/clay_containers_screen.dart';
 import 'cupertino/menu_cupertino_screen.dart';
 import 'dialog/dialog_screen.dart';

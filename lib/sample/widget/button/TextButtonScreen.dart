@@ -65,6 +65,7 @@ class _DummyScreenState extends State<DummyScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
+        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         alignment: Alignment.center,
         child: UIUtils.getButton(
           "Tap",
