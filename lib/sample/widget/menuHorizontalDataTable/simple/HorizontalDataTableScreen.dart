@@ -4,7 +4,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:horizontal_data_table/horizontal_data_table.dart';
 
-import 'user.dart';
+import 'User.dart';
 
 /**
  * Created by Loitp on 08,August,2022

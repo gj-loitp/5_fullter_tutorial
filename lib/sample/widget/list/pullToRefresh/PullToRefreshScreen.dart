@@ -62,7 +62,7 @@ class _PullToRefreshScreenState extends BaseStatefulState<PullToRefreshScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/pull_to_refresh");
+              "https://pub.dev/packages/pullToRefresh");
         },
       ),
       body: SmartRefresher(

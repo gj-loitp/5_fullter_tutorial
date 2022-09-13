@@ -3,8 +3,8 @@ import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
-import 'advance/booking_view.dart';
-import 'simple/horizontal_data_table_screen.dart';
+import 'advance/BookingView.dart';
+import 'simple/HorizontalDataTableScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

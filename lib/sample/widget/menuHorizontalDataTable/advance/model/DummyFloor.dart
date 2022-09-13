@@ -1,4 +1,4 @@
-import 'dummy_house.dart';
+import 'DummyHouse.dart';
 
 /**
  * Created by Loitp on 08,August,2022

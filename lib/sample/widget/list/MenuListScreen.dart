@@ -1,19 +1,19 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/header_body_footer/header_body_footer_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/lazy_load_scrollview/lazy_load_scrollview_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/list_body_widget/list_body_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/list_random_words/random_words_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/list_search/list_view_search_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/list_title_widget/list_tile_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/load_more/list_view_load_more_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/pull_to_refresh/pull_to_refresh_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/list/pullToRefresh/PullToRefreshScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'contactPageScreen/ContactPageScreen.dart';
 import 'draggableScrollbarDemo/DraggableScrollbarDemoScreen.dart';
 import 'flutterStickyHeader/FlutterStickyHeaderScreen.dart';
+import 'headerBodyFooter/HeaderBodyFooterScreen.dart';
+import 'lazyLoadScrollView/LazyLoadScrollViewScreen.dart';
+import 'listBodyWidget/ListBodyScreen.dart';
+import 'listRandomWords/RandomWordsScreen.dart';
+import 'listSearch/ListViewSearchScreen.dart';
+import 'listTitleWidget/ListTileScreen.dart';
+import 'loadMore/ListViewLoadMoreScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -38,71 +38,71 @@ class MenuListScreen extends StatelessWidget {
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
+          children: [
             UIUtils.getButton(
               "ContactPageScreen",
               () {
-                Get.to(ContactPageScreen());
+                Get.to(() => ContactPageScreen());
               },
             ),
             UIUtils.getButton(
               "DraggableScrollBarDemo",
               () {
-                Get.to(DraggableScrollBarDemo());
+                Get.to(() => DraggableScrollBarDemo());
               },
             ),
             UIUtils.getButton(
               "FlutterStickyHeaderScreen",
               () {
-                Get.to(FlutterStickyHeaderScreen());
+                Get.to(() => FlutterStickyHeaderScreen());
               },
             ),
             UIUtils.getButton(
               "HeaderBodyFooterScreen",
               () {
-                Get.to(HeaderBodyFooterScreen());
+                Get.to(() => HeaderBodyFooterScreen());
               },
             ),
             UIUtils.getButton(
               "RandomWordsScreen",
               () {
-                Get.to(RandomWordsScreen());
+                Get.to(() => RandomWordsScreen());
               },
             ),
             UIUtils.getButton(
               "ListViewSearchScreen",
               () {
-                Get.to(ListViewSearchScreen());
+                Get.to(() => ListViewSearchScreen());
               },
             ),
             UIUtils.getButton(
               "LazyLoadScrollViewScreen",
               () {
-                Get.to(LazyLoadScrollViewScreen());
+                Get.to(() => LazyLoadScrollViewScreen());
               },
             ),
             UIUtils.getButton(
               "ListBodyScreen",
               () {
-                Get.to(ListBodyScreen());
+                Get.to(() => ListBodyScreen());
               },
             ),
             UIUtils.getButton(
               "ListTileScreen",
               () {
-                Get.to(ListTileScreen());
+                Get.to(() => ListTileScreen());
               },
             ),
             UIUtils.getButton(
               "ListViewLoadMoreScreen",
               () {
-                Get.to(ListViewLoadMoreScreen());
+                Get.to(() => ListViewLoadMoreScreen());
               },
             ),
             UIUtils.getButton(
               "PullToRefreshScreen",
               () {
-                Get.to(PullToRefreshScreen());
+                Get.to(() => PullToRefreshScreen());
               },
             ),
           ],
