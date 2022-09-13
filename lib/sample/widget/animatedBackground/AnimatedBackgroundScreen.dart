@@ -1,14 +1,16 @@
 import 'dart:math' as math;
 
 import 'package:animated_background/animated_background.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/animated_background/particle_type.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/animated_background/rain_particle_behaviour.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/animated_background/space_splash.dart';
+
+import 'ParticleType.dart';
+import 'RainParticleBehaviour.dart';
+import 'SpaceSplash.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -35,7 +37,7 @@ class _AnimatedBackgroundScreenState
 
   ParticleOptions particleOptions = ParticleOptions(
     image: Image.asset('assets/images/star_stroke.png'),
-    baseColor: Colors.blue,
+    baseColor: ColorConstants.appColor,
     spawnOpacity: 0.0,
     opacityChangeRate: 0.25,
     minOpacity: 0.1,

@@ -3,8 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/animated_background/animated_background_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/blur_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/BlurScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_bar/menu_bottom_bar_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/bottom_sheet/bottom_sheet_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/chart_screen.dart';
@@ -31,7 +30,8 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/video
 import 'package:com.roy93group.flutter_tutorial/sample/widget/wave/wave_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/webview/menu_webview_screen.dart';
 
-import 'appbar/sliver_app_bar_screen.dart';
+import 'animatedBackground/AnimatedBackgroundScreen.dart';
+import 'appbar/SliverAppBarScreen.dart';
 import 'button/menu_button_screen.dart';
 import 'card/card_screen.dart';
 import 'clay_containers/clay_containers_screen.dart';
