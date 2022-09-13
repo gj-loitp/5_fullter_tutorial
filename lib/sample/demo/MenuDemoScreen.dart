@@ -29,9 +29,9 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/shop/ShopScreen.dart
 import 'package:com.roy93group.flutter_tutorial/sample/demo/theme/ThemeScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/tiengviet/TiengVietScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/timeAgo/TimeAgoScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/tip_calculator/tip_calculator_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/url_launcher/url_launcher_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/wake_lock/wake_lock_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/tipCalculator/TipCalculatorScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/urlLauncher/UrlLauncherScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/wakeLock/WakeLockScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';

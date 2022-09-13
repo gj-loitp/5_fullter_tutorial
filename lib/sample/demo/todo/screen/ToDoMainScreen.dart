@@ -1,10 +1,10 @@
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/ControllerNote.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/controller_note.dart';
 
-import 'tab_note_all.dart';
-import 'tab_note_complete.dart';
-import 'tab_note_in_complete.dart';
+import 'TabNoteAll.dart';
+import 'TabNoteComplete.dart';
+import 'TabNoteIncomplete.dart';
 
 /**
  * Created by Loitp on 08,August,2022

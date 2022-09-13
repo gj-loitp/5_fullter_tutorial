@@ -3,8 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/TimeUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/controller_note.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/controller_note_add.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/ControllerNote.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/ControllerNoteAdd.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/model/note.dart';
 
 /**

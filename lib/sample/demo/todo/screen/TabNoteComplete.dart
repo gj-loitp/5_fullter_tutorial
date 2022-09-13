@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/TimeUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/controller_note.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/ControllerNote.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/model/note.dart';
 
 /**
@@ -13,7 +13,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/model/note.dart
  * +840766040293
  * freuss47@gmail.com
  */
-class TabNoteIncomplete extends GetWidget {
+class TabNoteComplete extends GetWidget {
   final ControllerNote _controllerNote = Get.find();
 
   @override
@@ -23,12 +23,13 @@ class TabNoteIncomplete extends GetWidget {
         backgroundColor: Colors.blue,
         centerTitle: false,
         title: Text(
-          "Incomplete",
+          "Complete",
           style: TextStyle(
             color: Colors.white,
             fontSize: DimenConstants.txtMedium,
           ),
-        ), systemOverlayStyle: SystemUiOverlayStyle.light,
+        ),
+        systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: Container(
         width: double.infinity,
@@ -40,7 +41,7 @@ class TabNoteIncomplete extends GetWidget {
 
   Widget _buildList() {
     return Obx(() {
-      int length = _controllerNote.listNoteIncomplete.length;
+      int length = _controllerNote.listNoteComplete.length;
       if (length == 0) {
         return Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -53,7 +54,7 @@ class TabNoteIncomplete extends GetWidget {
             ),
             SizedBox(height: DimenConstants.marginPaddingMedium),
             Text(
-              "You have no task incompleted",
+              "You have no task completed",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.grey,
@@ -65,9 +66,9 @@ class TabNoteIncomplete extends GetWidget {
       } else {
         return ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: _controllerNote.listNoteIncomplete.length,
+          itemCount: _controllerNote.listNoteComplete.length,
           itemBuilder: (context, index) {
-            return _buildRow(_controllerNote.listNoteIncomplete[index], index);
+            return _buildRow(_controllerNote.listNoteComplete[index], index);
           },
         );
       }
