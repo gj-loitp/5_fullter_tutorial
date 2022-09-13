@@ -1,11 +1,12 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
-import 'package:flutter_screen_lock/flutter_screen_lock.dart';
-import 'package:get/get.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screen_lock/flutter_screen_lock.dart';
+import 'package:get/get.dart';
 import 'package:local_auth/local_auth.dart';
 
 /**
@@ -39,7 +40,7 @@ class _FlutterScreenLockScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "flutter_screen_lock: ^7.0.4",
+        "FlutterScreenLockScreen",
         () {
           Get.back();
         },
@@ -62,6 +63,9 @@ class _FlutterScreenLockScreenState
                 },
               ),
               child: const Text('Manualy open'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
             ElevatedButton(
               onPressed: () => screenLock<void>(
@@ -70,6 +74,9 @@ class _FlutterScreenLockScreenState
                 canCancel: false,
               ),
               child: const Text('Not cancelable'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
             ElevatedButton(
               onPressed: () {
@@ -94,6 +101,9 @@ class _FlutterScreenLockScreenState
                 );
               },
               child: const Text('Confirm mode'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
             ElevatedButton(
               onPressed: () => screenLock<void>(
@@ -112,6 +122,9 @@ class _FlutterScreenLockScreenState
               child: const Text(
                 'use local_auth \n(Show local_auth when opened)',
                 textAlign: TextAlign.center,
+              ),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
               ),
             ),
             ElevatedButton(
@@ -132,6 +145,9 @@ class _FlutterScreenLockScreenState
                 ),
               ),
               child: const Text('Using footer'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
             ElevatedButton(
               onPressed: () {
@@ -204,6 +220,9 @@ class _FlutterScreenLockScreenState
                 );
               },
               child: const Text('Customize styles'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
             ElevatedButton(
               onPressed: () => screenLock<void>(
@@ -215,6 +234,9 @@ class _FlutterScreenLockScreenState
                 },
               ),
               child: const Text('Next page with unlock'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
             ElevatedButton(
               onPressed: () => screenLock<void>(
@@ -227,6 +249,9 @@ class _FlutterScreenLockScreenState
                 ),
               ),
               child: const Text('Not blur'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
             ElevatedButton(
               onPressed: () => screenLock<void>(
@@ -242,6 +267,9 @@ class _FlutterScreenLockScreenState
                 ),
               ),
               child: const Text('Delay next retry'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: ColorConstants.appColor,
+              ),
             ),
           ],
         ),
