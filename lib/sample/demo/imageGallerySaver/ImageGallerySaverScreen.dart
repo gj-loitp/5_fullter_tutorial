@@ -68,38 +68,18 @@ class _ImageGallerySaverScreenState
               color: Colors.red,
             ),
           ),
-          Container(
-            padding: EdgeInsets.only(top: 15),
-            child: UIUtils.getButton("Save Local Image", () {
-              _saveScreen();
-            }),
-            width: 200,
-            height: 44,
-          ),
-          Container(
-            padding: EdgeInsets.only(top: 15),
-            child: UIUtils.getButton("Save network image", () {
-              _getHttp();
-            }),
-            width: 200,
-            height: 44,
-          ),
-          Container(
-            padding: EdgeInsets.only(top: 15),
-            child: UIUtils.getButton("Save network video", () {
-              _saveVideo();
-            }),
-            width: 200,
-            height: 44,
-          ),
-          Container(
-            padding: EdgeInsets.only(top: 15),
-            child: UIUtils.getButton("Save Gif to gallery", () {
-              _saveGif();
-            }),
-            width: 200,
-            height: 44,
-          ),
+          UIUtils.getButton("Save Local Image", () {
+            _saveScreen();
+          }),
+          UIUtils.getButton("Save network image", () {
+            _getHttp();
+          }),
+          UIUtils.getButton("Save network video", () {
+            _saveVideo();
+          }),
+          UIUtils.getButton("Save Gif to gallery", () {
+            _saveGif();
+          }),
         ],
       ),
     );
