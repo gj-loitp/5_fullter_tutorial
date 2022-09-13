@@ -1,8 +1,5 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/contact_page_screen/contact_page_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/draggable_scrollbar_demo/draggable_scrollbar_demo_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/flutter_sticky_header/flutter_sticky_header_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/header_body_footer/header_body_footer_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/lazy_load_scrollview/lazy_load_scrollview_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/list_body_widget/list_body_screen.dart';
@@ -13,6 +10,10 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/list/load_more/lis
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/pull_to_refresh/pull_to_refresh_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'contactPageScreen/ContactPageScreen.dart';
+import 'draggableScrollbarDemo/DraggableScrollbarDemoScreen.dart';
+import 'flutterStickyHeader/FlutterStickyHeaderScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

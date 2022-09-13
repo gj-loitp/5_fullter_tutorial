@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import 'page/arrows_demo.dart';
-import 'page/custom_demo.dart';
-import 'page/rrect_demo.dart';
-import 'page/semi_circle_demo.dart';
+import 'page/ArrowsDemo.dart';
+import 'page/CustomDemo.dart';
+import 'page/RrectDemo.dart';
+import 'page/SemiCircleDemo.dart';
 
 /**
  * Created by Loitp on 08,August,2022

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sticky_header/flutter_sticky_header.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/flutter_sticky_header/common.dart';
+
+import 'Common.dart';
 
 /**
  * Created by Loitp on 08,August,2022

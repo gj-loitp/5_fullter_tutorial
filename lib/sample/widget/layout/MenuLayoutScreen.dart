@@ -1,12 +1,12 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/layout/custom_multi_child_layout/custom_multi_child_layout_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/layout/layout_multiple_screen/layout_multiple_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'layout_builder_screen.dart';
-import 'layout_single_screen.dart';
+import 'LayoutBuilderScreen.dart';
+import 'LayoutSingleScreen.dart';
+import 'customMultiChildLayout/CustomMultiChildLayoutScreen.dart';
+import 'layoutMultipleScreen/LayoutMultipleScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

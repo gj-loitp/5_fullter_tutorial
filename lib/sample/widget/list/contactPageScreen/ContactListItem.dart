@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'contact_modal.dart';
+import 'ContactModal.dart';
 
 /**
  * Created by Loitp on 08,August,2022

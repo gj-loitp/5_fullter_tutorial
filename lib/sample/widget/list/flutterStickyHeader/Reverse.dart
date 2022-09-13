@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sticky_header/flutter_sticky_header.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/list/flutter_sticky_header/common.dart';
+
+import 'Common.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -9,15 +10,16 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/list/flutter_stick
  * +840766040293
  * freuss47@gmail.com
  */
-class AnimatedHeaderExample extends StatelessWidget {
-  const AnimatedHeaderExample({
+class ReverseExample extends StatelessWidget {
+  const ReverseExample({
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return AppScaffold(
-      title: 'Animated header Example',
+      reverse: true,
+      title: 'Reverse Example',
       slivers: [
         _StickyHeaderList(index: 0),
         _StickyHeaderList(index: 1),
@@ -38,11 +40,8 @@ class _StickyHeaderList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SliverStickyHeader.builder(
-      builder: (context, state) => _AnimatedHeader(
-        state: state,
-        index: index,
-      ),
+    return SliverStickyHeader(
+      header: Header(index: index),
       sliver: SliverList(
         delegate: SliverChildBuilderDelegate(
           (context, i) => ListTile(
@@ -54,25 +53,6 @@ class _StickyHeaderList extends StatelessWidget {
           childCount: 6,
         ),
       ),
-    );
-  }
-}
-
-class _AnimatedHeader extends StatelessWidget {
-  const _AnimatedHeader({
-    Key? key,
-    this.state,
-    this.index,
-  }) : super(key: key);
-
-  final int? index;
-  final SliverStickyHeaderState? state;
-
-  @override
-  Widget build(BuildContext context) {
-    return Header(
-      index: index,
-      color: Colors.lightBlue.withOpacity(1 - state!.scrollPercentage),
     );
   }
 }

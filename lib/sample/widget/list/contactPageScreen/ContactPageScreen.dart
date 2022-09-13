@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'contact_modal.dart';
-import 'contacts_list.dart';
+import 'ContactModal.dart';
+import 'ContactsList.dart';
 
 /**
  * Created by Loitp on 08,August,2022
