@@ -1,8 +1,9 @@
 import 'package:flame/components.dart';
 import 'package:flame/geometry.dart';
 import 'package:flame/sprite.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/components/world_collidable.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/direction.dart';
+
+import '../helpers/Direction.dart';
+import 'WorldCollidable.dart';
 
 /**
  * Created by Loitp on 09,August,2022

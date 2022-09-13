@@ -1,11 +1,12 @@
 import 'dart:ui';
 
 import 'package:flame/game.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/components/player.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/components/world.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/components/world_collidable.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/direction.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/map_loader.dart';
+
+import 'components/Player.dart';
+import 'components/World.dart';
+import 'components/WorldCollidable.dart';
+import 'helpers/Direction.dart';
+import 'helpers/MapLoader.dart';
 
 /**
  * Created by Loitp on 09,August,2022
@@ -14,7 +15,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/game/ray_world/helpers/ma
  * +840766040293
  * freuss47@gmail.com
  */
-class RayWorldGame extends FlameGame with HasCollidables{
+class RayWorldGame extends FlameGame with HasCollidables {
   final Player _player = Player();
   final World _world = World();
 

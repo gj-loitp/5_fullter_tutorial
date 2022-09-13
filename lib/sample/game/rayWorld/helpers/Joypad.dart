@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'direction.dart';
+import 'Direction.dart';
 
 /**
  * Created by Loitp on 05,August,2022
