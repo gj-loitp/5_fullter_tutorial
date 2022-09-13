@@ -42,7 +42,7 @@ class VideoPlayerScreen extends StatelessWidget {
                 text: "Remote",
               ),
               Tab(icon: Icon(Icons.insert_drive_file), text: "Asset"),
-              Tab(icon: Icon(Icons.list), text: "List example"),
+              Tab(icon: Icon(Icons.list), text: "List roy93group"),
             ],
           ),
         ),

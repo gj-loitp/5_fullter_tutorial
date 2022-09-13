@@ -16,39 +16,39 @@ class ContactPageScreen extends StatelessWidget {
     return <ContactModal>[
       const ContactModal(
         fullName: 'Romain Hoogmoed',
-        email: 'romain.hoogmoed@example.com',
+        email: 'romain.hoogmoed@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Emilie Olsen',
-        email: 'emilie.olsen@example.com',
+        email: 'emilie.olsen@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Nishant Srivastava',
-        email: 'nishant.srivastava@example.com',
+        email: 'nishant.srivastava@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Romain Hoogmoed',
-        email: 'romain.hoogmoed@example.com',
+        email: 'romain.hoogmoed@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Emilie Olsen',
-        email: 'emilie.olsen@example.com',
+        email: 'emilie.olsen@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Nishant Srivastava',
-        email: 'nishant.srivastava@example.com',
+        email: 'nishant.srivastava@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Romain Hoogmoed',
-        email: 'romain.hoogmoed@example.com',
+        email: 'romain.hoogmoed@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Emilie Olsen',
-        email: 'emilie.olsen@example.com',
+        email: 'emilie.olsen@roy93group.com',
       ),
       const ContactModal(
         fullName: 'Nishant Srivastava',
-        email: 'nishant.srivastava@example.com',
+        email: 'nishant.srivastava@roy93group.com',
       ),
     ];
   }
