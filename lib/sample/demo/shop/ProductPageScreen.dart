@@ -4,7 +4,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/model/product.dart';
 
-import 'rating_box.dart';
+import 'RatingBox.dart';
 
 /**
  * Created by Loitp on 08,August,2022

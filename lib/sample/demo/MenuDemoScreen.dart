@@ -25,10 +25,10 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/packageInfoPlus/Pack
 import 'package:com.roy93group.flutter_tutorial/sample/demo/permissionHandler/PermissionHandlerScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/restartApp/RestartApp.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/sharePlus/SharePlusScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/shop/shop_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/theme/theme_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/tiengviet/tieng_viet_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/time_ago/time_ago_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/shop/ShopScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/theme/ThemeScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/tiengviet/TiengVietScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/timeAgo/TimeAgoScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/tip_calculator/tip_calculator_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/url_launcher/url_launcher_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/wake_lock/wake_lock_screen.dart';
