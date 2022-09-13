@@ -4,7 +4,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/share_plus/image_previews.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/sharePlus/ImagePreviews.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -81,7 +81,7 @@ class _SharePlusScreenState extends BaseStatefulState<SharePlusScreen> {
             title: Text('Add image'),
             onTap: () async {
               final imagePicker = ImagePicker();
-              final pickedFile = await imagePicker.getImage(
+              final pickedFile = await imagePicker.pickImage(
                 source: ImageSource.gallery,
               );
               if (pickedFile != null) {

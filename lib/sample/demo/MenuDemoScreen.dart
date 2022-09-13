@@ -21,10 +21,10 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/html2md/Html2MdScree
 import 'package:com.roy93group.flutter_tutorial/sample/demo/inherited/MenuInheritedScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/loadLocalJson/LoadLocalJsonScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/localAuth/LocalAuthScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/package_info_plus/package_info_plus_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/permission_handler/permission_handler_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/restart_app/restart_app.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/share_plus/share_plus_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/packageInfoPlus/PackageInfoPlusScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/permissionHandler/PermissionHandlerScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/restartApp/RestartApp.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/sharePlus/SharePlusScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/shop/shop_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/theme/theme_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/tiengviet/tieng_viet_screen.dart';
@@ -38,7 +38,7 @@ import 'package:get/get.dart';
 
 import 'focusDetector/FocusDetectorScreen.dart';
 import 'imageGallerySaver/ImageGallerySaverScreen.dart';
-import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
+import 'oneTargetMobileSdk/OneTargetMobileSdkScreen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
