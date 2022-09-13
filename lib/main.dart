@@ -147,8 +147,8 @@ void main() async {
       defaultTransition: Transition.cupertino,
       theme: ThemeData(
         backgroundColor: Colors.white,
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue)
-            .copyWith(secondary: Colors.blueAccent),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange)
+            .copyWith(secondary: Colors.deepOrange),
       ),
       home: SplashScreen(),
     ),
