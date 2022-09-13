@@ -1,14 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_advance/drag_select_grid_view_advance_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_sample/drag_select_grid_view_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/flutter_staggered_grid_view/menu_flutter_staggered_grid_view_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/grid_paper/grid_paper_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/infinite_scroll/infinite_scroll_screen.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'grid/grid_screen.dart';
+import 'DragSelectGridViewAdvance/DragSelectGridViewAdvanceScreen.dart';
+import 'dragSelectGridViewSample/DragSelectGridViewScreen.dart';
+import 'flutterStaggeredGridView/MenuFlutterStaggeredGridViewScreen.dart';
+import 'grid/GridScreen.dart';
+import 'gridPaper/GridPaperScreen.dart';
+import 'infiniteScroll/InfiniteScrollScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

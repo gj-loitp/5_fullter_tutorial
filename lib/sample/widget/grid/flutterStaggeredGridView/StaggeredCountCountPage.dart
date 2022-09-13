@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
-import 'staggered_grid_view_page.dart';
+import 'StaggeredGridViewPage.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -26,12 +26,10 @@ const List<StaggeredTile> _tiles = <StaggeredTile>[
   StaggeredTile.count(1, 1),
 ];
 
-class StaggeredExtentCountPage extends StatelessWidget {
+class StaggeredCountCountPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const StaggeredGridViewPage.extent(
-        title: 'Staggered (Extent, Count)',
-        maxCrossAxisExtent: 150,
-        tiles: _tiles);
+    return const StaggeredGridViewPage.count(
+        title: 'Staggered (Count, Count)', crossAxisCount: 2, tiles: _tiles);
   }
 }

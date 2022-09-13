@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
-import 'my_grid_view.dart';
+import 'MyGridView.dart';
 
 /**
  * Created by Loitp on 08,August,2022

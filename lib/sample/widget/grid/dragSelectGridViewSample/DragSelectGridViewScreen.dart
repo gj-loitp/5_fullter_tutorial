@@ -1,8 +1,9 @@
 import 'package:drag_select_grid_view/drag_select_grid_view.dart';
 import 'package:flutter/material.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_sample/selectable_item.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_grid_view_sample/selection_app_bar.dart';
+
+import 'SelectableItem.dart';
+import 'SelectionAppBar.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -11,15 +12,15 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/grid/drag_select_g
  * +840766040293
  * freuss47@gmail.com
  */
-class DragSelectGridViewAdvanceScreen extends StatefulWidget {
+class DragSelectGridViewSampleScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _DragSelectGridViewAdvanceScreenState();
+    return _DragSelectGridViewSampleScreenState();
   }
 }
 
-class _DragSelectGridViewAdvanceScreenState
-    extends BaseStatefulState<DragSelectGridViewAdvanceScreen> {
+class _DragSelectGridViewSampleScreenState
+    extends BaseStatefulState<DragSelectGridViewSampleScreen> {
   final controller = DragSelectGridViewController();
 
   @override
@@ -29,15 +30,17 @@ class _DragSelectGridViewAdvanceScreenState
   }
 
   @override
+  void dispose() {
+    controller.removeListener(scheduleRebuild);
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: SelectionAppBar(
         selection: controller.value,
-        title: const Text('DragSelectGridViewAdvanceScreen'),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: onPressed,
-        child: Icon(Icons.select_all),
+        title: const Text('DragSelectGridViewSampleScreen'),
       ),
       body: DragSelectGridView(
         gridController: controller,
@@ -51,7 +54,7 @@ class _DragSelectGridViewAdvanceScreenState
           );
         },
         gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-          maxCrossAxisExtent: 80,
+          maxCrossAxisExtent: 150,
           crossAxisSpacing: 8,
           mainAxisSpacing: 8,
         ),
@@ -59,9 +62,5 @@ class _DragSelectGridViewAdvanceScreenState
     );
   }
 
-  void onPressed() {
-    controller.value = Selection({15, 20, 25, 21, 22, 17, 27, 19, 24, 29});
-  }
-
-  void scheduleRebuild() => setState(() {});
+  scheduleRebuild() => setState(() {});
 }
