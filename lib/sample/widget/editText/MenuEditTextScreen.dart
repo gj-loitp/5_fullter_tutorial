@@ -1,13 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/pin_code_fields/pin_code_fields_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/search_delegate/search_delegate_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/text_field/text_field_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/editText/pinCodeFields/PinCodeFieldsScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/editText/searchDelegate/SearchDelegateScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/editText/textField/TextFieldScreen.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'edit_text_screen.dart';
-import 'form_field_screen.dart';
+import 'EditTextScreen.dart';
+import 'FormFieldScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

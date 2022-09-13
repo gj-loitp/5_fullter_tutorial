@@ -23,6 +23,7 @@ import 'MenuScreen.dart';
  * freuss47@gmail.com
  */
 //TODO google config show isFullData
+//TODO change iv of splash screen
 //TODO app name, ic launcher
 //TODO change background_image: "assets/images/splash.png"
 //TODO change keystore
