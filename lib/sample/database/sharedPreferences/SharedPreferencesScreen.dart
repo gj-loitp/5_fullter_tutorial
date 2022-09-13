@@ -83,7 +83,7 @@ class SharedPreferencesScreenState extends State<SharedPreferencesScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/sharedPreferences");
+              "https://pub.dev/packages/shared_preferences");
         },
       ),
       // Body

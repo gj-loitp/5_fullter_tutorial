@@ -80,7 +80,7 @@ class _ConnectivityPlusScreenState
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/connectivityPlus");
+              "https://pub.dev/packages/connectivity_plus");
         },
       ),
       body: ListView(

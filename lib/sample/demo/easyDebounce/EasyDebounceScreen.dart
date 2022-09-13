@@ -42,7 +42,7 @@ class EasyDebounceScreenState extends BaseStatefulState<EasyDebounceScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/easyDebounce");
+              "https://pub.dev/packages/easy_debounce");
         },
       ),
       body: CupertinoScrollbar(

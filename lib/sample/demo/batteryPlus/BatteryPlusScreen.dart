@@ -54,7 +54,7 @@ class _BatteryPlusScreenState extends BaseStatefulState<BatteryPlusScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/batteryPlus");
+              "https://pub.dev/packages/battery_plus");
         },
       ),
       body: ListView(

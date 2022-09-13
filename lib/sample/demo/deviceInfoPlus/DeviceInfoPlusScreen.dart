@@ -200,7 +200,7 @@ class _DeviceInfoPlusScreenState
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/deviceInfoPlus");
+              "https://pub.dev/packages/device_info_plus");
         },
       ),
       body: ListView(

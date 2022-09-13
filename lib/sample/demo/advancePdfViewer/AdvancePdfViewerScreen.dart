@@ -91,7 +91,7 @@ class _AdvancePDFViewerScreenState extends State<AdvancePDFViewerScreen> {
               ),
               onPressed: () {
                 UrlLauncherUtils.launchInWebViewWithJavaScript(
-                    "https://pub.dev/packages/advancePdfViewer");
+                    "https://pub.dev/packages/advance_pdf_viewer");
               },
             ),
           ],

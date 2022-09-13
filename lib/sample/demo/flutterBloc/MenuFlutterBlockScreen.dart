@@ -25,7 +25,7 @@ class MenuFlutterBlockScreen extends StatelessWidget {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/flutterBloc");
+              "https://pub.dev/packages/flutter_bloc");
         },
       ),
       body: ListView(

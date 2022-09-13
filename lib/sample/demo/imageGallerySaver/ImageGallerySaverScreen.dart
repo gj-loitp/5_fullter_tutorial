@@ -53,7 +53,7 @@ class _ImageGallerySaverScreenState
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/imageGallerySaver");
+              "https://pub.dev/packages/image_gallery_saver");
         },
       ),
       body: ListView(

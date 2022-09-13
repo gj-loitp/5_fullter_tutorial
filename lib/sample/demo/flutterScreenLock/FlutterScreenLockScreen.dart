@@ -39,13 +39,13 @@ class _FlutterScreenLockScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "https://pub.dev/packages/flutterScreenLock",
+        "flutter_screen_lock: ^7.0.4",
         () {
           Get.back();
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://github.com/tplloi/fullter_hello_word");
+              "https://pub.dev/packages/flutter_screen_lock");
         },
       ),
       body: SizedBox(

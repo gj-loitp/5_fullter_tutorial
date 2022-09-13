@@ -58,7 +58,7 @@ class EventBusScreenState extends BaseStatefulState<EventBusScreen> {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/eventBus");
+              "https://pub.dev/packages/event_bus");
         },
       ),
       body: CupertinoScrollbar(

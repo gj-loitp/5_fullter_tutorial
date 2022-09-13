@@ -25,7 +25,7 @@ class CryptoScreen extends StatelessWidget {
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/crypto/install");
+              "https://pub.dev/packages/crypto");
         },
       ),
       body: Center(
