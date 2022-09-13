@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/avatar.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/avatar_overview.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/avatar_widget.dart';

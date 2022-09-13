@@ -1,5 +1,5 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/button/flutter_speed_dial/flutter_speed_dial_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/button/like_button_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/button/progress_state_button/progress_state_screen.dart';

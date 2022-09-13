@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/uI_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/pin_code_fields/pin_code_fields_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/search_delegate/search_delegate_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/text_field/text_field_screen.dart';

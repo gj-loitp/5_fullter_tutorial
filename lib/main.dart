@@ -11,9 +11,9 @@ import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-import 'lib/common/const/dimen_constants.dart';
-import 'lib/util/log_dog_utils.dart';
-import 'menu_screen.dart';
+import 'lib/common/const/DimenConstants.dart';
+import 'lib/util/LogDogUtils.dart';
+import 'MenuScreen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -24,10 +24,11 @@ import 'menu_screen.dart';
  */
 //TODO google config show isFullData
 //TODO app name, ic launcher
-//TODO rate app, more app dang bi
 //TODO change background_image: "assets/images/splash.png"
 //TODO change keystore
 
+//done
+//rate app, more app
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
@@ -67,8 +68,7 @@ void main() async {
     SystemUiOverlayStyle(
       // statusBarColor: Colors.blue, // status bar color
       // statusBarIconBrightness: Brightness.light, // status bar icons' color
-
-      systemNavigationBarColor: Colors.blue, // navigation bar color
+      systemNavigationBarColor: Colors.deepOrange, // navigation bar color
       systemNavigationBarIconBrightness:
           Brightness.light, //navigation bar icons' color
     ),
@@ -147,8 +147,8 @@ void main() async {
       defaultTransition: Transition.cupertino,
       theme: ThemeData(
         backgroundColor: Colors.white,
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.blue)
-            .copyWith(secondary: Colors.blueAccent),
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange)
+            .copyWith(secondary: Colors.deepOrange),
       ),
       home: SplashScreen(),
     ),
