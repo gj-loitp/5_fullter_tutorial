@@ -1,14 +1,14 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/imageview360/imageview360_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/photo_view_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/menuImage/photoView/PhotoViewScreen.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'avatar_glow_screen.dart';
-import 'cache_network_image_screen.dart';
-import 'gradient_screen.dart';
-import 'image_screen.dart';
+import 'AvatarGlowScreen.dart';
+import 'CacheNetworkImageScreen.dart';
+import 'GradientScreen.dart';
+import 'ImageScreen.dart';
+import 'imageView360/ImageView360Screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

@@ -1,17 +1,17 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/common_use_cases_examples.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/controller_example.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/custom_child_examples.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/dialog_example.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/gallery/gallery_example.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/hero_example.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/inline_examples.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/examples/rotation_examples.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-import 'examples/network_images.dart';
+import 'examples/CommonUseCasesExamples.dart';
+import 'examples/ControllerExample.dart';
+import 'examples/CustomChildExamples.dart';
+import 'examples/DialogExample.dart';
+import 'examples/HeroExample.dart';
+import 'examples/InlineExamples.dart';
+import 'examples/NetworkImages.dart';
+import 'examples/RotationExamples.dart';
+import 'examples/gallery/GalleryExample.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -28,7 +28,7 @@ class PhotoViewScreen extends StatelessWidget {
         Get.back();
       }, () {
         UrlLauncherUtils.launchInWebViewWithJavaScript(
-            "https://pub.dev/packages/photo_view");
+            "https://pub.dev/packages/photoView");
       }),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,

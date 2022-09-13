@@ -1,9 +1,10 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/common/common_example_wrapper.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/menu_image/photo_view/common/example_button.dart';
+
+import '../common/CommonExampleWrapper.dart';
+import '../common/ExampleButton.dart';
 
 /**
  * Created by Loitp on 08,August,2022

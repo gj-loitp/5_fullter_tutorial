@@ -1,8 +1,8 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/Constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -38,8 +38,12 @@ class CacheNetworkImageScreen extends StatelessWidget {
                   ColorFilter.mode(Colors.transparent, BlendMode.colorBurn)),
         ),
       ),
-      placeholder: (context, url) => CircularProgressIndicator(),
-      errorWidget: (context, url, error) => Icon(Icons.error),
+      placeholder: (context, url) => Center(
+        child: CircularProgressIndicator(),
+      ),
+      errorWidget: (context, url, error) => Center(
+        child: Icon(Icons.error),
+      ),
     );
   }
 }
