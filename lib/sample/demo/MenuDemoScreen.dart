@@ -19,8 +19,8 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterScreenLock/Fl
 import 'package:com.roy93group.flutter_tutorial/sample/demo/getx/GetXScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/html2md/Html2MdScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/inherited/MenuInheritedScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/load_local_json/load_local_json_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/local_auth/local_auth_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/loadLocalJson/LoadLocalJsonScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/localAuth/LocalAuthScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/package_info_plus/package_info_plus_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/permission_handler/permission_handler_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/restart_app/restart_app.dart';
