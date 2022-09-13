@@ -61,7 +61,7 @@ class FocusDetectorScreen extends StatelessWidget {
       onForegroundLost: () {
         print(
           '---------------------Foreground Lost.'
-          '\nIt means, for example, that the user sent your app to the background by opening '
+          '\nIt means, for roy93group, that the user sent your app to the background by opening '
           'another app or turned off the device\'s screen while your '
           'widget was visible.',
         );
@@ -69,7 +69,7 @@ class FocusDetectorScreen extends StatelessWidget {
       onForegroundGained: () {
         print(
           '---------------------Foreground Gained.'
-          '\nIt means, for example, that the user switched back to your app or turned the '
+          '\nIt means, for roy93group, that the user switched back to your app or turned the '
           'device\'s screen back on while your widget was visible.',
         );
       },

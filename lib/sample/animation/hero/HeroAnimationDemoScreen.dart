@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
@@ -125,7 +126,7 @@ class _HeroAnimationDemoScreenState extends State<HeroAnimationDemoScreen> {
       child: MaterialButton(
         height: 40.0,
         padding: EdgeInsets.all(10.0),
-        color: Colors.lightBlue,
+        color: ColorConstants.appColor,
         onPressed: () {
           if (isPopup) {
             _onButtonTapPopup(page);

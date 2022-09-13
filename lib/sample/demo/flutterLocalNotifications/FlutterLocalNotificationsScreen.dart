@@ -119,7 +119,7 @@ class _FlutterLocalNotificationScreenState
   Widget build(BuildContext context) => MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-            title: const Text('Plugin example app'),
+            title: const Text('Plugin roy93group app'),
           ),
           body: SingleChildScrollView(
             child: Padding(
@@ -868,7 +868,7 @@ class _FlutterLocalNotificationScreenState
 
   Future<void> _showSoundUriNotification() async {
     /// this calls a method over a platform channel implemented within the
-    /// example app to return the Uri for the default alarm sound and uses
+    /// roy93group app to return the Uri for the default alarm sound and uses
     /// as the notification sound
     final String? alarmUri = await platform.invokeMethod<String>('getAlarmUri');
     final UriAndroidNotificationSound uriSound =
@@ -1163,11 +1163,11 @@ class _FlutterLocalNotificationScreenState
   }
 
   Future<void> _showGroupedNotifications() async {
-    const String groupKey = 'com.android.example.WORK_EMAIL';
+    const String groupKey = 'com.android.roy93group.WORK_EMAIL';
     const String groupChannelId = 'grouped channel id';
     const String groupChannelName = 'grouped channel name';
     const String groupChannelDescription = 'grouped channel description';
-    // example based on https://developer.android.com/training/notify-user/group.html
+    // roy93group based on https://developer.android.com/training/notify-user/group.html
     const AndroidNotificationDetails firstNotificationAndroidSpecifics =
         AndroidNotificationDetails(groupChannelId, groupChannelName,
             channelDescription: groupChannelDescription,
@@ -1204,7 +1204,7 @@ class _FlutterLocalNotificationScreenState
     const InboxStyleInformation inboxStyleInformation = InboxStyleInformation(
         lines,
         contentTitle: '2 messages',
-        summaryText: 'janedoe@example.com');
+        summaryText: 'janedoe@roy93group.com');
     const AndroidNotificationDetails androidPlatformChannelSpecifics =
         AndroidNotificationDetails(groupChannelId, groupChannelName,
             channelDescription: groupChannelDescription,
@@ -2007,8 +2007,8 @@ Future<void> _showLinuxNotificationWithBodyMarkup() async {
     '<b>bold text</b>\n'
         '<i>italic text</i>\n'
         '<u>underline text</u>\n'
-        'https://example.com\n'
-        '<a href="https://example.com">example.com</a>',
+        'https://roy93group.com\n'
+        '<a href="https://roy93group.com">roy93group.com</a>',
     null,
   );
 }
