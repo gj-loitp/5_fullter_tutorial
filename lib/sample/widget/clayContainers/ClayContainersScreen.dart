@@ -1,11 +1,11 @@
 import 'package:clay_containers/constants.dart';
 import 'package:clay_containers/widgets/clay_container.dart';
 import 'package:clay_containers/widgets/clay_text.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -90,16 +90,16 @@ class ClayContainersScreen extends StatelessWidget {
             children: <Widget>[
               ClayContainer(
                 color: baseColor,
-                height: 150,
-                width: 150,
+                height: 50,
+                width: 50,
                 borderRadius: 75,
                 curveType: CurveType.concave,
               ),
               SizedBox(width: 50),
               ClayContainer(
                 color: baseColor,
-                height: 150,
-                width: 150,
+                height: 70,
+                width: 70,
                 borderRadius: 75,
                 curveType: CurveType.none,
               ),

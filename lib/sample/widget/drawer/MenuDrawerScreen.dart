@@ -3,10 +3,8 @@ import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
-import 'cupertino_action_sheet_screen.dart';
-import 'cupertino_segmented_control_screen.dart';
-import 'cupertino_timer_picker_screen.dart';
-import 'cupertino_widget_screen.dart';
+import 'drawer/DrawerScreen.dart';
+import 'navigationDrawer/NavigationDrawerScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -15,12 +13,12 @@ import 'cupertino_widget_screen.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-class MenuCupertinoScreen extends StatelessWidget {
+class MenuDrawerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "MenuCupertinoScreen",
+        "MenuDrawerScreen",
         () {
           Get.back();
         },
@@ -33,27 +31,15 @@ class MenuCupertinoScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             UIUtils.getButton(
-              "CupertinoActionSheetScreen",
+              "DrawerScreen",
               () {
-                Get.to(CupertinoActionSheetScreen());
+                Get.to(DrawerScreen());
               },
             ),
             UIUtils.getButton(
-              "CupertinoSegmentedControlScreen",
+              "NavigationDrawerScreen",
               () {
-                Get.to(CupertinoSegmentedControlScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "CupertinoTimerPickerScreen",
-              () {
-                Get.to(CupertinoTimerPickerScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "CupertinoWidgetScreen",
-              () {
-                Get.to(CupertinoWidgetScreen());
+                Get.to(NavigationDrawerScreen());
               },
             ),
           ],

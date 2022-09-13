@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'account_screen.dart';
-import 'settings_screen.dart';
+import 'AccountScreen.dart';
+import 'SettingsScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
