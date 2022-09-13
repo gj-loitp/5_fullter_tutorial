@@ -30,6 +30,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/theme/ThemeScreen.da
 import 'package:com.roy93group.flutter_tutorial/sample/demo/tiengviet/TiengVietScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/timeAgo/TimeAgoScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/tipCalculator/TipCalculatorScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/screen/ToDoMainScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/urlLauncher/UrlLauncherScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/wakeLock/WakeLockScreen.dart';
 import 'package:flutter/material.dart';
@@ -256,6 +257,12 @@ class MenuDemoScreen extends StatelessWidget {
             "Tip calculator",
             () {
               Get.to(TipCalculatorScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "ToDoMainScreen",
+            () {
+              Get.to(() => ToDoMainScreen());
             },
           ),
           UIUtils.getButton(

@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/ControllerNote.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -50,7 +51,7 @@ class ToDoMainScreenState extends State<ToDoMainScreen>
         controller: _tabController,
       ),
       bottomNavigationBar: Material(
-        color: Colors.blue,
+        color: ColorConstants.appColor,
         child: TabBar(
           indicatorColor: Colors.white,
           labelColor: Colors.white,

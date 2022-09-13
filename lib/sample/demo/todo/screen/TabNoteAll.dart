@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -22,7 +23,7 @@ class TabNoteAll extends GetWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: ColorConstants.appColor,
         centerTitle: false,
         title: Text(
           "All",

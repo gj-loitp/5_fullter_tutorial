@@ -20,7 +20,7 @@ class TabNoteIncomplete extends GetWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.pinkAccent,
         centerTitle: false,
         title: Text(
           "Incomplete",

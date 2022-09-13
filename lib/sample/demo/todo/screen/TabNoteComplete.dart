@@ -20,7 +20,7 @@ class TabNoteComplete extends GetWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.deepPurple,
         centerTitle: false,
         title: Text(
           "Complete",
