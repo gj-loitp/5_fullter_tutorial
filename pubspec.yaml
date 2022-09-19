@@ -10,10 +10,16 @@ dependencies:
   flutter:
     sdk: flutter
 
-  advance_pdf_viewer: ^2.0.1 #https://pub.dev/packages/advance_pdf_viewer
-  animated_background: ^2.0.0 #https://pub.dev/packages/animated_background
-  animated_text_kit: ^4.2.2 #https://pub.dev/packages/animated_text_kit
-  avatar_glow: ^2.0.2 #https://pub.dev/packages/avatar_glow
+  #https://pub.dev/packages/advance_pdf_viewer
+  advance_pdf_viewer: ^2.0.1
+  #https://pub.dev/packages/animated_background
+  animated_background: ^2.0.0
+  #https://pub.dev/packages/animated_text_kit
+  animated_text_kit: ^4.2.2
+  #https://pub.dev/packages/avatar_glow
+  avatar_glow: ^2.0.2
+  #https://pubdev/packages/awesome_dialog
+  awesome_dialog: ^3.0.1
 
   #https://pub.dev/packages/battery_plus
   battery_plus: ^2.1.4+1

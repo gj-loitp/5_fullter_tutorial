@@ -27,7 +27,7 @@ import 'clayContainers/ClayContainersScreen.dart';
 import 'cupertino/MenuCupertinoScreen.dart';
 import 'dataTable/DataTableScreen.dart';
 import 'delayedDisplay/DelayedDisplayScreen.dart';
-import 'dialog/DialogScreen.dart';
+import 'dialog/menu_dialog_screen.dart';
 import 'dottedBorder/DottedBorderScreen.dart';
 import 'drawer/MenuDrawerScreen.dart';
 import 'easyLoading/EasyLoadingScreen.dart';
@@ -173,9 +173,9 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "DialogScreen",
+              "MenuDialogScreen",
               () {
-                Get.to(() => DialogScreen());
+                Get.to(() => MenuDialogScreen());
               },
             ),
             UIUtils.getButton(
