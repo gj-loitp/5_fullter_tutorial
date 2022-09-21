@@ -5,6 +5,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/MenuBott
 import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/ChartScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/overflow_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/menu_picker_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/scrollable_table_view/scrollable_table_view_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/simple_url_preview/simple_url_preview_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/tab_page_selector/tab_page_selector_sreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/text_view/menu_text_screen.dart';
@@ -308,6 +309,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "MenuProgressScreen",
               () {
                 Get.to(() => MenuProgressScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "scrollable_table_view",
+              () {
+                Get.to(() => ScrollableTableViewScreen());
               },
             ),
             UIUtils.getButton(
