@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -32,51 +32,77 @@ class _DataTableExample extends State<TableScreen> {
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           children: <Widget>[
             Center(
-                child: Text(
-              'People-Chart',
-              style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            )),
+              child: Text(
+                'People-Chart',
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+              ),
+            ),
             DataTable(
               columns: [
-                DataColumn(
-                    label: Text('ID',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold))),
-                DataColumn(
-                    label: Text('Name',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold))),
-                DataColumn(
-                    label: Text('Profession',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold))),
+                _genDataColumn('Id'),
+                _genDataColumn('Name'),
+                _genDataColumn('Profession'),
+                _genDataColumn('Column1'),
+                _genDataColumn('Column2'),
+                _genDataColumn('Column3'),
+                _genDataColumn('Column4'),
+                _genDataColumn('Column5'),
               ],
               rows: [
-                DataRow(cells: [
-                  DataCell(Text('1')),
-                  DataCell(Text('Stephen')),
-                  DataCell(Text('Actor')),
-                ]),
-                DataRow(cells: [
-                  DataCell(Text('5')),
-                  DataCell(Text('John')),
-                  DataCell(Text('Student')),
-                ]),
-                DataRow(cells: [
-                  DataCell(Text('10')),
-                  DataCell(Text('Harry')),
-                  DataCell(Text('Leader')),
-                ]),
-                DataRow(cells: [
-                  DataCell(Text('15')),
-                  DataCell(Text('Peter')),
-                  DataCell(Text('Scientist')),
-                ]),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
+                _genDataRow('1', 'Loi1', "Profession", "1", "2", "3", "4", "5"),
               ],
             ),
           ],
         ),
       ),
     );
+  }
+
+  DataColumn _genDataColumn(String label) {
+    return DataColumn(
+      label: Text(
+        label,
+        style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+      ),
+    );
+  }
+
+  DataRow _genDataRow(
+    String id,
+    String name,
+    String profession,
+    String c1,
+    String c2,
+    String c3,
+    String c4,
+    String c5,
+  ) {
+    return DataRow(cells: [
+      DataCell(Text(id)),
+      DataCell(Text(name)),
+      DataCell(Text(profession)),
+      DataCell(Text(c1)),
+      DataCell(Text(c2)),
+      DataCell(Text(c3)),
+      DataCell(Text(c4)),
+      DataCell(Text(c5)),
+    ]);
   }
 }
