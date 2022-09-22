@@ -44,6 +44,7 @@ class _DChartScreenState extends BaseStatefulState<DChartScreen> {
         },
       ),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           children: [
             ListTile(
