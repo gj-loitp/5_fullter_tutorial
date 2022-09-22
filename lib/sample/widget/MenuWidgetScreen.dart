@@ -27,6 +27,7 @@ import 'checkBox/RadioButtonScreen2.dart';
 import 'clayContainers/ClayContainersScreen.dart';
 import 'cupertino/MenuCupertinoScreen.dart';
 import 'dataTable/DataTableScreen.dart';
+import 'dchart/DChartScreen.dart';
 import 'delayedDisplay/DelayedDisplayScreen.dart';
 import 'dialog/menu_dialog_screen.dart';
 import 'dottedBorder/DottedBorderScreen.dart';
@@ -165,6 +166,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "DataTableScreen",
               () {
                 Get.to(() => DataTableScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "d_chart",
+                  () {
+                Get.to(() => DChartScreen());
               },
             ),
             UIUtils.getButton(

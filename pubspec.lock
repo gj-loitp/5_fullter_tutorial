@@ -162,6 +162,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.1"
+  charts_common:
+    dependency: transitive
+    description:
+      name: charts_common
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.12.0"
+  charts_flutter:
+    dependency: transitive
+    description:
+      name: charts_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.12.0"
   clay_containers:
     dependency: "direct main"
     description:
@@ -267,6 +281,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  d_chart:
+    dependency: "direct main"
+    description:
+      name: d_chart
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.4"
   dbus:
     dependency: transitive
     description:
