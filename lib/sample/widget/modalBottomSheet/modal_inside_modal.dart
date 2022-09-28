@@ -17,17 +17,19 @@ class ModalInsideModal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-        child: CupertinoPageScaffold(
-      navigationBar: CupertinoNavigationBar(
-          leading: Container(), middle: Text('Modal Page')),
-      child: SafeArea(
-        bottom: false,
-        child: ListView(
-          reverse: reverse,
-          shrinkWrap: true,
-          controller: ModalScrollController.of(context),
-          physics: ClampingScrollPhysics(),
-          children: ListTile.divideTiles(
+      child: CupertinoPageScaffold(
+        navigationBar: CupertinoNavigationBar(
+          leading: Container(),
+          middle: Text('Modal Page'),
+        ),
+        child: SafeArea(
+          bottom: false,
+          child: ListView(
+            reverse: reverse,
+            shrinkWrap: true,
+            controller: ModalScrollController.of(context),
+            physics: ClampingScrollPhysics(),
+            children: ListTile.divideTiles(
               context: context,
               tiles: List.generate(
                 100,
@@ -41,9 +43,11 @@ class ModalInsideModal extends StatelessWidget {
                           builder: (context) =>
                               ModalInsideModal(reverse: reverse),
                         )),
-              )).toList(),
+              ),
+            ).toList(),
+          ),
         ),
       ),
-    ));
+    );
   }
 }

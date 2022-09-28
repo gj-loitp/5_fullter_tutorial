@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
@@ -15,7 +16,7 @@ class CustomModal extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     var list = <String>[];
-    for (int i = 0; i < 7; i++) {
+    for (int i = 0; i < 5; i++) {
       list.add("Loitp $i");
     }
 
@@ -36,8 +37,10 @@ class CustomModal extends StatelessWidget {
         controller: ModalScrollController.of(context),
         itemBuilder: (context, index) {
           return Container(
+            alignment: Alignment.center,
             height: heightRow,
             color: index.isOdd ? Colors.green : Colors.orange,
+            child: UIUtils.getText(list[index]),
           );
         },
         itemCount: list.length,

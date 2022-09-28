@@ -182,7 +182,7 @@ class ModelBottomSheetScreen extends StatelessWidget {
             UIUtils.getButton(
               "Modal Custom",
               () {
-                showCupertinoModalBottomSheet(
+                showBarModalBottomSheet(
                   expand: false,
                   context: context,
                   builder: (context) => CustomModal(),
