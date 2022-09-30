@@ -19,7 +19,7 @@ dependencies:
   #https://pub.dev/packages/avatar_glow
   avatar_glow: ^2.0.2
   #https://pubdev/packages/awesome_dialog
-  awesome_dialog: ^3.0.1
+  awesome_dialog: ^3.0.2
 
   #https://pub.dev/packages/battery_plus
   battery_plus: ^2.1.4+1
