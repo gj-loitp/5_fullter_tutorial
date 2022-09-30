@@ -25,7 +25,8 @@ dependencies:
   battery_plus: ^2.1.4+1
   #https://pub.dev/packages/basic_utils
   basic_utils: ^5.2.2
-  blur: ^3.1.0 #https://pub.dev/packages/blur
+  #https://pub.dev/packages/blur
+  blur: ^3.1.0
   bloc: ^8.1.0
 
   #https://pub.dev/packages/cached_network_image
@@ -34,13 +35,17 @@ dependencies:
   connectivity_plus: ^2.3.6+1
   #https://pub.dev/packages/country_picker
   country_picker: ^2.0.16
-  clay_containers: ^0.3.2 #https://pub.dev/packages/clay_containers
-  cupertino_icons: ^1.0.5 #https://pub.dev/packages/cupertino_icons
-  crypto: ^3.0.2 #https://pub.dev/packages/crypto/install
+  #https://pub.dev/packages/clay_containers
+  clay_containers: ^0.3.2
+  #https://pub.dev/packages/cupertino_icons
+  cupertino_icons: ^1.0.5
+  #https://pub.dev/packages/crypto/install
+  crypto: ^3.0.2
 
   #https://pub.dev/packages/d_chart
   d_chart: ^0.0.4
-  drag_select_grid_view: ^0.6.1 #https://pub.dev/packages/drag_select_grid_view
+  #https://pub.dev/packages/drag_select_grid_view
+  drag_select_grid_view: ^0.6.1
   #https://pub.dev/packages/device_info_plus
   device_info_plus: ^4.1.2
   delayed_display: ^2.0.0 #https://pub.dev/packages/delayed_display
@@ -55,15 +60,20 @@ dependencies:
   #https://pub.dev/packages/equatable
   equatable: ^2.0.5
 
-  focus_detector: ^2.0.1 #https://pub.dev/packages/focus_detector
+  #https://pub.dev/packages/focus_detector
+  focus_detector: ^2.0.1
+  #https://pub:dev/packages/file_picker:
+  file_picker: ^5.2.0+1
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.45.0
   #https://pub.dev/packages/flutter_bloc
   flutter_bloc: ^8.1.1
-  flutter_easyloading: ^3.0.5 #https://pub.dev/packages/flutter_easyloading
+  #https://pub.dev/packages/flutter_easyloading
+  flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_local_notifications
   flutter_local_notifications: ^9.9.1
-  flutter_native_timezone: ^2.0.0 #https://pub.dev/packages/flutter_native_timezone
+  #https://pub.dev/packages/flutter_native_timezone
+  flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
   flutter_native_splash: ^2.2.9
   #https://pub.dev/packages/flutter_reaction_button
@@ -81,8 +91,10 @@ dependencies:
   #https://pub.dev/packages/flutter_screen_lock
   flutter_screen_lock: ^5.0.5
 
-  horizontal_card_pager: ^1.1.1 #https://pub.dev/packages/horizontal_card_pager
-  html2md: ^1.2.6 #https://pub.dev/packages/html2md
+  #https://pub.dev/packages/horizontal_card_pager
+  horizontal_card_pager: ^1.1.1
+  #https://pub.dev/packages/html2md
+  html2md: ^1.2.6
 
   #https://pub.dev/packages/local_auth
   local_auth: ^1.1.11
