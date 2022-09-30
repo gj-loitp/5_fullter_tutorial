@@ -98,9 +98,12 @@ dependencies:
 
   #https://pub.dev/packages/local_auth
   local_auth: ^1.1.11
-  logger: ^1.1.0 #https://pub.dev/packages/logger
-  lazy_load_scrollview: ^1.3.0 #https://pub.dev/packages/lazy_load_scrollview
-  like_button: ^2.0.4 #https://pub.dev/packages/like_button
+  #https://pub.dev/packages/logger
+  logger: ^1.1.0
+  #https://pub.dev/packages/lazy_load_scrollview
+  lazy_load_scrollview: ^1.3.0
+  #https://pub.dev/packages/like_button
+  like_button: ^2.0.4
   #https://pub.dev/packages/lottie
   lottie: ^1.4.2
 
