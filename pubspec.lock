@@ -771,7 +771,7 @@ packages:
       name: like_button
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.0.4"
+    version: "2.0.5"
   local_auth:
     dependency: "direct main"
     description:
@@ -799,7 +799,7 @@ packages:
       name: lottie
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.4.2"
+    version: "1.4.3"
   marquee:
     dependency: "direct main"
     description:
