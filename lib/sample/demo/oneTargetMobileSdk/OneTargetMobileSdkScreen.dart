@@ -1,10 +1,12 @@
-import 'package:flutter/foundation.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:one_target_mobile_sdk/one_target_mobile_sdk.dart';
+
+import 'constant.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -26,8 +28,8 @@ class _OneTargetMobileSDKScreenState
 
   @override
   void initState() {
-    super.initState();
     _setupTracking();
+    super.initState();
   }
 
   void _log(String msg) {
@@ -37,17 +39,15 @@ class _OneTargetMobileSDKScreenState
   }
 
   void _setupTracking() {
-    //chọn môi trường để tracking, nếu set true thì sẽ tracking ở dev, false sẽ tracking ở prod.
-    //Riêng đối với ios chỉ thực hiện tracking ở dev. Sẽ sớm bổ sung thêm prod ở next release.
-    bool isEnvironmentDev = true;
-    String writeKey = "490bf1f1-2e88-4d6d-8ec4-2bb7de74f9a8";
-    //isShowLog dùng để hiển thị log của sdk
-    bool isShowLog = false;
-    Analytics.setupTracking(
-      isEnvironmentDev,
-      writeKey,
-      isShowLog: isShowLog,
-    ).then((isSetupSuccess) {
+    Constant.setEnv(Constant.ENV_DEV);
+    G1SDK
+        .setupSDK(
+      Constant.getEnv(),
+      Constant.getWorkSpaceId(),
+      isShowLog: false,
+      isEnableIAM: true,
+    )
+        .then((isSetupSuccess) {
       _log("_setupTracking isSetupSuccess $isSetupSuccess");
     });
   }
@@ -76,7 +76,7 @@ class _OneTargetMobileSDKScreenState
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FutureBuilder<String?>(
-              future: Analytics.platformVersion,
+              future: G1SDK.platformVersion,
               builder: (_, snapshot) {
                 return Text(snapshot.data ?? '');
               },
@@ -112,18 +112,22 @@ class _OneTargetMobileSDKScreenState
 
   void _trackEvent1() {
     _displayResponse(null);
-    Analytics.trackEvent(
-      "490bf1f1-2e88-4d6d-8ec4-2bb7de74f9a8",
+    var profile = <Map>[];
+    profile.add({
+      "name": "Loitp Flutter",
+      "email": "Loi123@galaxy.one",
+    });
+    G1SDK.trackEvent(
+      Constant.getWorkSpaceId(),
       {
-        "user_id": "U1${DateTime.now().millisecondsSinceEpoch}",
-        "phone": "0123456789",
-        "email": "loitp@galaxy.one",
-        "deviceId": "999999999",
+        "phone": "0766040293",
+        "email": "Loi123@galaxy.one",
       },
+      profile,
       "event_name",
       DateTime.now().millisecondsSinceEpoch,
       {
-        "pageTitle": "Passenger Information",
+        "pageTitle": "Passenger Information from Flutter",
         "pagePath": "/home",
       },
       onResponse: (value) {
@@ -139,18 +143,30 @@ class _OneTargetMobileSDKScreenState
 
   void _trackEvent2() {
     _displayResponse(null);
-    Analytics.trackEvent(
-      "490bf1f1-2e88-4d6d-8ec4-2bb7de74f9a8",
+    var profile = <Map>[];
+    profile.add({
+      "name": "Loi222 Flutter",
+      "email": "Loi222@galaxy.one",
+    });
+    profile.add({
+      "name": "Loi333 Flutter",
+      "email": "Loi333@galaxy.one",
+    });
+    profile.add({
+      "name": "Loi444 Flutter",
+      "email": "Loi444@galaxy.one",
+    });
+    G1SDK.trackEvent(
+      Constant.getWorkSpaceId(),
       {
-        "user_id": "U2${DateTime.now().millisecondsSinceEpoch}",
-        "phone": "000111222",
+        "phone": "0766040293",
         "email": "loitp@galaxy.one",
-        "deviceId": "8888888888",
       },
+      profile,
       "track_now_event",
       DateTime.now().millisecondsSinceEpoch,
       {
-        "name": "Loitp",
+        "name": "Loitp Flutter",
         "bod": "01/01/2000",
         "player_id": 123456,
       },
