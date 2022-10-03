@@ -67,7 +67,8 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                             ? (Expanded(
                                 child: TextButton(
                                   style: TextButton.styleFrom(
-                                    foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
+                                    foregroundColor: Color(0xff0A79F8),
+                                    padding: EdgeInsets.fromLTRB(
                                       DimenConstants.marginPaddingMedium,
                                       DimenConstants.marginPaddingMedium *
                                           2 /
@@ -100,7 +101,8 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                               ))
                             : (TextButton(
                                 style: TextButton.styleFrom(
-                                  foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
+                                  foregroundColor: Color(0xff0A79F8),
+                                  padding: EdgeInsets.fromLTRB(
                                     DimenConstants.marginPaddingMedium,
                                     DimenConstants.marginPaddingMedium * 2 / 3,
                                     DimenConstants.marginPaddingMedium,
@@ -137,7 +139,8 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                         child: Expanded(
                           child: TextButton(
                             style: TextButton.styleFrom(
-                              foregroundColor: Color(0xffffffff), padding: EdgeInsets.fromLTRB(
+                              foregroundColor: Color(0xffffffff),
+                              padding: EdgeInsets.fromLTRB(
                                 DimenConstants.marginPaddingMedium,
                                 DimenConstants.marginPaddingMedium * 2 / 3,
                                 DimenConstants.marginPaddingMedium,
@@ -197,94 +200,62 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
     VoidCallback? okAction,
   ) {
     showGeneralDialog(
+      barrierDismissible: barrierDismissible,
+      barrierLabel: "",
       barrierColor: Colors.black.withOpacity(0.5),
       context: context,
       pageBuilder: (_, __, ___) {
-        return WillPopScope(
-          onWillPop: () async => barrierDismissible,
-          child: Center(
-            child: Container(
-              width: Get.width,
-              margin: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-              padding: EdgeInsets.fromLTRB(
-                DimenConstants.marginPaddingMedium,
-                DimenConstants.marginPaddingMedium,
-                DimenConstants.marginPaddingMedium,
-                DimenConstants.marginPaddingMedium,
-              ),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    title,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w700,
-                      color: Color(0xff232426),
-                      decoration: TextDecoration.none,
-                    ),
+        return Center(
+          child: Container(
+            width: Get.width,
+            margin: EdgeInsets.all(DimenConstants.marginPaddingMedium),
+            padding: EdgeInsets.fromLTRB(
+              DimenConstants.marginPaddingMedium,
+              DimenConstants.marginPaddingMedium,
+              DimenConstants.marginPaddingMedium,
+              DimenConstants.marginPaddingMedium,
+            ),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(15),
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  title,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.w700,
+                    color: Color(0xff232426),
+                    decoration: TextDecoration.none,
                   ),
-                  SizedBox(height: DimenConstants.marginPaddingMedium),
-                  Text(
-                    message,
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w400,
-                      color: Color(0xff232426),
-                      decoration: TextDecoration.none,
-                    ),
+                ),
+                SizedBox(height: DimenConstants.marginPaddingMedium),
+                Text(
+                  message,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xff232426),
+                    decoration: TextDecoration.none,
                   ),
-                  SizedBox(height: 28),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Visibility(
-                        visible: cancelTitle != null &&
-                            cancelTitle.isNotEmpty == true,
-                        child: (okTitle != null && okTitle.isNotEmpty == true)
-                            ? (Expanded(
-                                child: TextButton(
-                                  style: TextButton.styleFrom(
-                                    foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
-                                      DimenConstants.marginPaddingMedium,
-                                      DimenConstants.marginPaddingMedium *
-                                          2 /
-                                          3,
-                                      DimenConstants.marginPaddingMedium,
-                                      DimenConstants.marginPaddingMedium *
-                                          2 /
-                                          3,
-                                    ),
-                                    backgroundColor: Color(0xffffffff),
-                                    textStyle: TextStyle(
-                                      fontSize: 14,
-                                      fontWeight: FontWeight.w500,
-                                    ),
-                                    shape: const RoundedRectangleBorder(
-                                      borderRadius:
-                                          BorderRadius.all(Radius.circular(15)),
-                                      side: BorderSide(
-                                          color: Color(0xffDEE1EB), width: 1.0),
-                                    ),
-                                  ),
-                                  onPressed: () {
-                                    Get.back();
-                                    cancelAction?.call();
-                                  },
-                                  child: Text(
-                                    cancelTitle ?? "",
-                                  ),
-                                ),
-                              ))
-                            : (TextButton(
+                ),
+                SizedBox(height: 28),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Visibility(
+                      visible:
+                          cancelTitle != null && cancelTitle.isNotEmpty == true,
+                      child: (okTitle != null && okTitle.isNotEmpty == true)
+                          ? (Expanded(
+                              child: TextButton(
                                 style: TextButton.styleFrom(
-                                  foregroundColor: Color(0xff0A79F8), padding: EdgeInsets.fromLTRB(
+                                  foregroundColor: Color(0xff0A79F8),
+                                  padding: EdgeInsets.fromLTRB(
                                     DimenConstants.marginPaddingMedium,
                                     DimenConstants.marginPaddingMedium * 2 / 3,
                                     DimenConstants.marginPaddingMedium,
@@ -309,50 +280,79 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                                 child: Text(
                                   cancelTitle ?? "",
                                 ),
-                              )),
-                      ),
-                      Visibility(
-                        visible: okTitle != null && okTitle.isNotEmpty == true,
-                        child:
-                            SizedBox(width: DimenConstants.marginPaddingSmall),
-                      ),
-                      Visibility(
-                        visible: okTitle != null && okTitle.isNotEmpty == true,
-                        child: Expanded(
-                          child: TextButton(
-                            style: TextButton.styleFrom(
-                              foregroundColor: Color(0xffffffff), padding: EdgeInsets.fromLTRB(
-                                DimenConstants.marginPaddingMedium,
-                                DimenConstants.marginPaddingMedium * 2 / 3,
-                                DimenConstants.marginPaddingMedium,
-                                DimenConstants.marginPaddingMedium * 2 / 3,
                               ),
-                              backgroundColor: Color(0xff2B67F6),
-                              textStyle: TextStyle(
-                                fontSize: 14,
-                                fontWeight: FontWeight.w500,
+                            ))
+                          : (TextButton(
+                              style: TextButton.styleFrom(
+                                foregroundColor: Color(0xff0A79F8),
+                                padding: EdgeInsets.fromLTRB(
+                                  DimenConstants.marginPaddingMedium,
+                                  DimenConstants.marginPaddingMedium * 2 / 3,
+                                  DimenConstants.marginPaddingMedium,
+                                  DimenConstants.marginPaddingMedium * 2 / 3,
+                                ),
+                                backgroundColor: Color(0xffffffff),
+                                textStyle: TextStyle(
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                                shape: const RoundedRectangleBorder(
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(15)),
+                                  side: BorderSide(
+                                      color: Color(0xffDEE1EB), width: 1.0),
+                                ),
                               ),
-                              shape: const RoundedRectangleBorder(
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(15)),
-                                side: BorderSide(
-                                    color: Color(0xff2B67F6), width: 1.0),
+                              onPressed: () {
+                                Get.back();
+                                cancelAction?.call();
+                              },
+                              child: Text(
+                                cancelTitle ?? "",
                               ),
+                            )),
+                    ),
+                    Visibility(
+                      visible: okTitle != null && okTitle.isNotEmpty == true,
+                      child: SizedBox(width: DimenConstants.marginPaddingSmall),
+                    ),
+                    Visibility(
+                      visible: okTitle != null && okTitle.isNotEmpty == true,
+                      child: Expanded(
+                        child: TextButton(
+                          style: TextButton.styleFrom(
+                            foregroundColor: Color(0xffffffff),
+                            padding: EdgeInsets.fromLTRB(
+                              DimenConstants.marginPaddingMedium,
+                              DimenConstants.marginPaddingMedium * 2 / 3,
+                              DimenConstants.marginPaddingMedium,
+                              DimenConstants.marginPaddingMedium * 2 / 3,
                             ),
-                            onPressed: () {
-                              Get.back();
-                              okAction?.call();
-                            },
-                            child: Text(
-                              okTitle ?? "",
+                            backgroundColor: Color(0xff2B67F6),
+                            textStyle: TextStyle(
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
                             ),
+                            shape: const RoundedRectangleBorder(
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(15)),
+                              side: BorderSide(
+                                  color: Color(0xff2B67F6), width: 1.0),
+                            ),
+                          ),
+                          onPressed: () {
+                            Get.back();
+                            okAction?.call();
+                          },
+                          child: Text(
+                            okTitle ?? "",
                           ),
                         ),
                       ),
-                    ],
-                  ),
-                ],
-              ),
+                    ),
+                  ],
+                ),
+              ],
             ),
           ),
         );
@@ -395,7 +395,7 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
     VoidCallback okCallback,
   ) {
     showAlertDialog(
-      false,
+      true,
       title,
       message,
       null,
@@ -460,7 +460,8 @@ abstract class BaseStatefulState<T extends StatefulWidget> extends State<T> {
                     height: 40,
                     child: TextButton(
                       style: TextButton.styleFrom(
-                        foregroundColor: Color(0xff2B67F6), padding: EdgeInsets.fromLTRB(
+                        foregroundColor: Color(0xff2B67F6),
+                        padding: EdgeInsets.fromLTRB(
                           DimenConstants.marginPaddingMedium * 5 / 2,
                           0,
                           DimenConstants.marginPaddingMedium * 5 / 2,

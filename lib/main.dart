@@ -11,9 +11,9 @@ import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
+import 'MenuScreen.dart';
 import 'lib/common/const/DimenConstants.dart';
 import 'lib/util/LogDogUtils.dart';
-import 'MenuScreen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -26,10 +26,11 @@ import 'MenuScreen.dart';
 //TODO change iv of splash screen
 //TODO app name, ic launcher
 //TODO change background_image: "assets/images/splash.png"
-//TODO change keystore
 
 //done
 //rate app, more app
+//TODO change keystore 2022.10.03
+
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
 
