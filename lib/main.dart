@@ -23,12 +23,12 @@ import 'lib/util/LogDogUtils.dart';
  * freuss47@gmail.com
  */
 //TODO google config show isFullData
-//TODO app name, ic launcher
 
 //done
 //rate app, more app
 //change keystore 2022.10.03
 //change background_image: "assets/images/splash.jpg"
+//app name, ic launcher
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();

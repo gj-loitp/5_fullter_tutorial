@@ -79,7 +79,7 @@
 
     <application
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher_icon"
         android:label="Flutter Demo"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"
