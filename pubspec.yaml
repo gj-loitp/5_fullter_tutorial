@@ -62,7 +62,7 @@ dependencies:
 
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
-  #https://pub:dev/packages/file_picker:
+  #https://pub:dev/packages/file_picker
   file_picker: ^5.2.0+1
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.45.0
