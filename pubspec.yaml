@@ -131,7 +131,7 @@ dependencies:
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
   #https://pub.dev/packages/sqflite
-  sqflite: ^2.1.0
+  sqflite: ^2.1.0+1
 
   #https://pub.dev/packages/marquee
   marquee: ^2.2.3
@@ -147,7 +147,7 @@ dependencies:
   #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^1.7.1
   #https://pub.dev/packages/image_picker
-  image_picker: ^0.8.5+3
+  image_picker: ^0.8.6
   #https://pub.dev/packages/in_app_review
   in_app_review: ^2.0.4
   #https://pub.dev/packages/intl
