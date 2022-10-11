@@ -65,7 +65,7 @@ dependencies:
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.0+1
   #https://pub.dev/packages/fl_chart
-  fl_chart: ^0.45.0
+  fl_chart: ^0.55.2
   #https://pub.dev/packages/flutter_bloc
   flutter_bloc: ^8.1.1
   #https://pub.dev/packages/flutter_easyloading
