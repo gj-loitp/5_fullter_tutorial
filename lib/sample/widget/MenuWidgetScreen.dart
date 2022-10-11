@@ -2,7 +2,6 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/BlurScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/MenuBottomBarScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/ChartScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/overflow_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/menu_picker_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/scrollable_table_view/scrollable_table_view_screen.dart';
@@ -21,6 +20,7 @@ import 'appbar/SliverAppBarScreen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'card/CardScreen.dart';
+import 'chart/fl_chart/ChartScreen.dart';
 import 'checkBox/CheckBoxScreen.dart';
 import 'checkBox/RadioButtonScreen.dart';
 import 'checkBox/RadioButtonScreen2.dart';

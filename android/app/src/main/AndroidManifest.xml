@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.roy93group">
 
     <uses-permission android:name="android.permission.USE_FINGERPRINT" />
 
@@ -78,7 +79,7 @@
 
     <application
         android:name="${applicationName}"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/launcher_icon"
         android:label="Flutter Demo"
         android:requestLegacyExternalStorage="true"
         android:usesCleartextTraffic="true"

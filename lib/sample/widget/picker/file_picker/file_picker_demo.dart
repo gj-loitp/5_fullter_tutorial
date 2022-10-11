@@ -1,3 +1,5 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/LogDogUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -295,6 +297,18 @@ class _FilePickerDemoState extends State<FilePickerDemo> {
                                             subtitle: Text(_saveAsFileName!),
                                           )
                                         : const SizedBox(),
+                  ),
+                  UIUtils.getButton(
+                    "Test extension filter ['jpg', 'png', 'pdf', 'jpeg']",
+                    () async {
+                      FilePickerResult? result =
+                          await FilePicker.platform.pickFiles(
+                        type: FileType.custom,
+                        allowMultiple: true,
+                        allowedExtensions: ['jpg', 'png', 'pdf', 'jpeg'],
+                      );
+                      Dog.e(">>>result $result");
+                    },
                   ),
                 ],
               ),

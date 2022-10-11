@@ -40,7 +40,7 @@ class _OneTargetMobileSDKScreenState
 
   void _setupTracking() {
     Constant.setEnv(Constant.ENV_DEV);
-    G1SDK
+    G1SDK.instance
         .setupSDK(
       Constant.getEnv(),
       Constant.getWorkSpaceId(),
@@ -76,7 +76,7 @@ class _OneTargetMobileSDKScreenState
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FutureBuilder<String?>(
-              future: G1SDK.platformVersion,
+              future: G1SDK.instance.platformVersion,
               builder: (_, snapshot) {
                 return Text(snapshot.data ?? '');
               },
@@ -117,7 +117,7 @@ class _OneTargetMobileSDKScreenState
       "name": "Loitp Flutter",
       "email": "Loi123@galaxy.one",
     });
-    G1SDK.trackEvent(
+    G1SDK.instance.trackEvent(
       Constant.getWorkSpaceId(),
       {
         "phone": "0766040293",
@@ -156,7 +156,7 @@ class _OneTargetMobileSDKScreenState
       "name": "Loi444 Flutter",
       "email": "Loi444@galaxy.one",
     });
-    G1SDK.trackEvent(
+    G1SDK.instance.trackEvent(
       Constant.getWorkSpaceId(),
       {
         "phone": "0766040293",
