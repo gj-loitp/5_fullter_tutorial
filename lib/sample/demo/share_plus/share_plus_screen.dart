@@ -1,12 +1,13 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/sharePlus/ImagePreviews.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:share_plus/share_plus.dart';
+
+import 'image_previews.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -41,7 +42,7 @@ class _SharePlusScreenState extends BaseStatefulState<SharePlusScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "SharePlusScreen",
+        "share_plus",
         () {
           Get.back();
         },

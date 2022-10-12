@@ -1,11 +1,11 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/ControllerNote.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/controller_note.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'TabNoteAll.dart';
-import 'TabNoteComplete.dart';
-import 'TabNoteIncomplete.dart';
+import 'tab_note_all.dart';
+import 'tab_note_complete.dart';
+import 'tab_note_incomplete.dart';
 
 /**
  * Created by Loitp on 08,August,2022

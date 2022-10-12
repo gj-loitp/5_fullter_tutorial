@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/model/Product.dart';
+import 'package:flutter/material.dart';
 
-import 'RatingBox.dart';
+import 'rating_box.dart';
 
 /**
  * Created by Loitp on 08,August,2022

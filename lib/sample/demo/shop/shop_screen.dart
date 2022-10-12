@@ -1,10 +1,10 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
-import 'db/DbShop.dart';
-import 'ProductBox.dart';
-import 'ProductPageScreen.dart';
+import 'db/db_shop.dart';
+import 'product_box.dart';
+import 'product_page_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

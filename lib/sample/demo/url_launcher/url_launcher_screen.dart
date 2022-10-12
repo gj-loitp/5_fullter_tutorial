@@ -19,7 +19,7 @@ class UrlLauncherScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "UrlLauncherScreen",
+        "url_launcher",
         () => {
           Get.back(),
         },

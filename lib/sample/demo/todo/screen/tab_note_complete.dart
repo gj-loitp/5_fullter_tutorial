@@ -1,13 +1,10 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/TimeUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/controller_note.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/model/note.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/TimeUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/controller/ControllerNote.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/todo/model/note.dart';
-
-import 'AddNoteScreen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -16,40 +13,35 @@ import 'AddNoteScreen.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-class TabNoteAll extends GetWidget {
+class TabNoteComplete extends GetWidget {
   final ControllerNote _controllerNote = Get.find();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: ColorConstants.appColor,
+        backgroundColor: Colors.deepPurple,
         centerTitle: false,
         title: Text(
-          "All",
+          "Complete",
           style: TextStyle(
             color: Colors.white,
             fontSize: DimenConstants.txtMedium,
           ),
-        ), systemOverlayStyle: SystemUiOverlayStyle.light,
+        ),
+        systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       body: Container(
         width: double.infinity,
         padding: EdgeInsets.all(DimenConstants.marginPaddingLarge),
         child: _buildList(),
       ),
-      floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
-        onPressed: () {
-          _addNote();
-        },
-      ),
     );
   }
 
   Widget _buildList() {
     return Obx(() {
-      int length = _controllerNote.listNote.length;
+      int length = _controllerNote.listNoteComplete.length;
       if (length == 0) {
         return Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -62,7 +54,7 @@ class TabNoteAll extends GetWidget {
             ),
             SizedBox(height: DimenConstants.marginPaddingMedium),
             Text(
-              "You have no task.\nPlease click Add button below to add some task.",
+              "You have no task completed",
               textAlign: TextAlign.center,
               style: TextStyle(
                 color: Colors.grey,
@@ -74,9 +66,9 @@ class TabNoteAll extends GetWidget {
       } else {
         return ListView.builder(
           physics: BouncingScrollPhysics(),
-          itemCount: _controllerNote.listNote.length,
+          itemCount: _controllerNote.listNoteComplete.length,
           itemBuilder: (context, index) {
-            return _buildRow(_controllerNote.listNote[index], index);
+            return _buildRow(_controllerNote.listNoteComplete[index], index);
           },
         );
       }
@@ -165,9 +157,5 @@ class TabNoteAll extends GetWidget {
       width: double.maxFinite,
       color: Color(0xffECECEC),
     );
-  }
-
-  void _addNote() {
-    Get.to(AddNoteScreen());
   }
 }
