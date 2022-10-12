@@ -7,6 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
 import 'file_picker/file_picker_demo.dart';
 
 /**
@@ -37,6 +38,12 @@ class MenuPickerScreen extends StatelessWidget {
               "CountryPickerScreen",
               () {
                 Get.to(() => CountryPickerScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "date_picker_timeline_fixed",
+              () {
+                Get.to(() => DatePickerTimeLineFixedScreen());
               },
             ),
             UIUtils.getButton(
