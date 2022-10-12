@@ -4,12 +4,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'screen/FadeScreen.dart';
-import 'screen/RandomScreen.dart';
-import 'screen/RotationScreen.dart';
-import 'screen/ScaleScreen.dart';
-import 'screen/SizeScreen.dart';
-import 'screen/SlideScreen.dart';
+import 'screen/fade_screen.dart';
+import 'screen/random_screen.dart';
+import 'screen/rotation_screen.dart';
+import 'screen/scale_screen.dart';
+import 'screen/size_screen.dart';
+import 'screen/slide_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022

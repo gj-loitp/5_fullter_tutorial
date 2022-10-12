@@ -1,10 +1,10 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/database/sharedPreferences/SharedPreferencesScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'sqlite/SqliteDemoScreen.dart';
+import 'shared_preferences/shared_preferences_screen.dart';
+import 'sqflite/sqlite_demo_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -35,7 +35,7 @@ class MenuDatabaseScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "SQLiteDemoScreen",
+            "sqflite",
             () => {
               Get.to(() => SQLiteDemoScreen()),
             },

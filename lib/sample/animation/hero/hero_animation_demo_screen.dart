@@ -1,12 +1,12 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
 import '../../../lib/animation/hero/HeroDialogRoute.dart';
-import 'CustomLogo.dart';
-import 'Page1.dart';
-import 'Page2.dart';
+import 'custom_logo.dart';
+import 'page_1.dart';
+import 'page_2.dart';
 
 /**
  * Created by Loitp on 05,August,2022
