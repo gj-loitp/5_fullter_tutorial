@@ -3,8 +3,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'DialogScreen.dart';
 import 'awesome_dialog/awesome_dialog_screen.dart';
+import 'dialog/dialog_screen.dart';
+import 'panara_dialogs/panara_dialog_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -24,26 +25,29 @@ class MenuDialogScreen extends StatelessWidget {
         },
         null,
       ),
-      body: SingleChildScrollView(
+      body: ListView(
         physics: BouncingScrollPhysics(),
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            UIUtils.getButton(
-              "AwesomeDialogScreen",
-              () {
-                Get.to(() => AwesomeDialogScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "DialogScreen",
-              () {
-                Get.to(() => DialogScreen());
-              },
-            ),
-          ],
-        ),
+        children: [
+          UIUtils.getButton(
+            "AwesomeDialogScreen",
+            () {
+              Get.to(() => AwesomeDialogScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "DialogScreen",
+            () {
+              Get.to(() => DialogScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "panara_dialogs",
+            () {
+              Get.to(() => PanaraDialogScreen());
+            },
+          ),
+        ],
       ),
     );
   }
