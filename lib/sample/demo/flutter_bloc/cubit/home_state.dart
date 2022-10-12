@@ -1,4 +1,4 @@
-part of 'HomeCubit.dart';
+part of 'home_cubit.dart';
 
 /**
  * Created by Loitp on 08,August,2022

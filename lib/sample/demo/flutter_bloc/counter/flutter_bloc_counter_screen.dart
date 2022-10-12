@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get/get.dart';
 
-import 'CounterCubit.dart';
-import 'CounterView.dart';
+import 'counter_cubit.dart';
+import 'counter_view.dart';
 
 /**
  * Created by Loitp on 08,August,2022

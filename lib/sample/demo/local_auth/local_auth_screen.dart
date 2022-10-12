@@ -48,7 +48,7 @@ class _LocalAuthScreenState extends BaseStatefulState<LocalAuthScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "LocalAuthScreen",
+        "local_auth",
         () {
           Get.back();
         },

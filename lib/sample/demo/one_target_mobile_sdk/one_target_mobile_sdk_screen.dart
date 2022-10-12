@@ -61,7 +61,7 @@ class _OneTargetMobileSDKScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "OneTargetMobileSDKScreen",
+        "one_target_mobile_sdk",
         () {
           Get.back();
         },

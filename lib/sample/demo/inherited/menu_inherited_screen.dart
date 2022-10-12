@@ -3,8 +3,8 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'InheritedModelScreen.dart';
-import 'InheritedWidgetScreen.dart';
+import 'inherited_model_screen.dart';
+import 'inherited_widget_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022

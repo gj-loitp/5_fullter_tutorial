@@ -7,16 +7,10 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/counter/counter_scre
 import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/crypto_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/dio_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/encrypt_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterBloc/MenuFlutterBlockScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterLocalNotifications/FlutterLocalNotificationsScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterScreenLock/FlutterScreenLockScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/getx/GetXScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/html2md/Html2MdScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/inherited/MenuInheritedScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/loadLocalJson/LoadLocalJsonScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/localAuth/LocalAuthScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/packageInfoPlus/PackageInfoPlusScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/permissionHandler/PermissionHandlerScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/getx/get_x_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/html2md/html2md_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/inherited/menu_inherited_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/permission_handler/permission_handler_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/restartApp/RestartApp.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/sharePlus/SharePlusScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/shop/ShopScreen.dart';
@@ -38,9 +32,15 @@ import 'device_info_plus/device_info_plus_screen.dart';
 import 'diacritic/diacritic_screen.dart';
 import 'easy_debounce/easy_debounce_screen.dart';
 import 'event_bus/event_bus_screen.dart';
-import 'focusDetector/FocusDetectorScreen.dart';
-import 'imageGallerySaver/ImageGallerySaverScreen.dart';
-import 'oneTargetMobileSdk/OneTargetMobileSdkScreen.dart';
+import 'flutter_bloc/menu_flutter_block_screen.dart';
+import 'flutter_local_notifications/flutter_local_notifications_screen.dart';
+import 'flutter_screen_lock/flutter_screen_lock_screen.dart';
+import 'focus_detector/focus_detector_screen.dart';
+import 'image_gallery_saver/image_gallery_saver_screen.dart';
+import 'load_local_json/load_local_json_screen.dart';
+import 'local_auth/local_auth_screen.dart';
+import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
+import 'package_info_plus/package_info_plus_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -126,13 +126,13 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "easy_debounce",
-                () {
+            () {
               Get.to(EasyDebounceScreen());
             },
           ),
           UIUtils.getButton(
             "encrypt",
-                () {
+            () {
               Get.to(EncryptScreen());
             },
           ),
@@ -143,7 +143,7 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "MenuFlutterBlockScreen",
+            "flutter_bloc",
             () {
               Get.to(MenuFlutterBlockScreen());
             },
@@ -159,31 +159,31 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "FlutterScreenLockScreen",
+            "flutter_screen_lock",
             () {
               Get.to(FlutterScreenLockScreen());
             },
           ),
           UIUtils.getButton(
-            "FocusDetectorScreen",
+            "focus_detector",
             () {
               Get.to(FocusDetectorScreen());
             },
           ),
           UIUtils.getButton(
-            "GetXScreen",
+            "get",
             () {
               Get.to(GetXScreen());
             },
           ),
           UIUtils.getButton(
-            "Html2MdScreen",
+            "html2md",
             () {
               Get.to(Html2MdScreen());
             },
           ),
           UIUtils.getButton(
-            "ImageGallerySaverScreen",
+            "image_gallery_saver",
             () {
               Get.to(ImageGallerySaverScreen());
             },
@@ -201,25 +201,25 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "Local Auth",
+            "local_auth",
             () {
               Get.to(LocalAuthScreen());
             },
           ),
           UIUtils.getButton(
-            "OneTargetMobileSDKScreen",
+            "one_target_mobile_sdk",
             () {
               Get.to(OneTargetMobileSDKScreen());
             },
           ),
           UIUtils.getButton(
-            "PackageInforPlusScreen",
+            "package_info_plus",
             () {
               Get.to(PackageInforPlusScreen());
             },
           ),
           UIUtils.getButton(
-            "PermissionHandlerScreen",
+            "permission_handler",
             () {
               Get.to(PermissionHandlerScreen());
             },

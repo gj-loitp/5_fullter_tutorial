@@ -40,7 +40,7 @@ class _FlutterScreenLockScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "FlutterScreenLockScreen",
+        "flutter_screen_lock",
         () {
           Get.back();
         },

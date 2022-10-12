@@ -5,8 +5,8 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'Controller.dart';
-import 'SecondScreen.dart';
+import 'controller.dart';
+import 'second_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -32,7 +32,7 @@ class GetXScreen extends GetWidget with WidgetsBindingObserver {
     _testListen();
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "GetXScreen",
+        "get",
         () => {
           Get.back(),
         },

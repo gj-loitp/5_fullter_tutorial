@@ -4,8 +4,8 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'counter/FlutterBlocCounterScreen.dart';
-import 'cubit/CubitScreen.dart';
+import 'counter/flutter_bloc_counter_screen.dart';
+import 'cubit/cubit_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -19,7 +19,7 @@ class MenuFlutterBlockScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "MenuFlutterBlockScreen",
+        "flutter_bloc",
         () {
           Get.back();
         },

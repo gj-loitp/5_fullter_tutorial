@@ -3,10 +3,10 @@ import 'dart:convert';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'Repository.dart';
-import 'User.dart';
+import 'repository.dart';
+import 'user.dart';
 
-part 'HomeState.dart';
+part 'home_state.dart';
 
 /**
  * Created by Loitp on 08,August,2022

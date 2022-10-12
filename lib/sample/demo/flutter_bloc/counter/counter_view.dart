@@ -2,7 +2,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import 'CounterCubit.dart';
+import 'counter_cubit.dart';
 
 /**
  * Created by Loitp on 08,August,2022
