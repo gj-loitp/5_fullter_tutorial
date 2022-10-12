@@ -274,6 +274,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.4"
+  date_picker_timeline_fixed:
+    dependency: "direct main"
+    description:
+      name: date_picker_timeline_fixed
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   dbus:
     dependency: transitive
     description:

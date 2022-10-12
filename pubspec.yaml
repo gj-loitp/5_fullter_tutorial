@@ -42,6 +42,8 @@ dependencies:
   #https://pub.dev/packages/crypto/install
   crypto: ^3.0.2
 
+  #https://pub.dev/packages/date_picker_timeline_fixed
+  date_picker_timeline_fixed: ^2.0.0
   #https://pub.dev/packages/d_chart
   d_chart: ^0.0.4
   #https://pub.dev/packages/drag_select_grid_view
