@@ -39,6 +39,7 @@ import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutterReactionButton/FlutterReactionButtonScreen.dart';
+import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
 import 'horizontalCardPager/HorizontalCardPager.dart';
@@ -234,6 +235,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "floating_bubbles",
               () {
                 Get.to(() => FloatingBubblesScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "flutter_simple_treeview",
+              () {
+                Get.to(() => FlutterSimpleTreeViewScreen());
               },
             ),
             UIUtils.getButton(

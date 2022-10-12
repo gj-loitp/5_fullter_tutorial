@@ -94,6 +94,8 @@ dependencies:
   flutter_offline: ^2.1.0
   #https://pub.dev/packages/flutter_reaction_button
   flutter_reaction_button: ^1.0.8
+  #https://pub.dev/packages/flutter_simple_treeview
+  flutter_simple_treeview: ^3.0.1
   #https://pub.dev/packages/flutter_slidable
   flutter_slidable: ^0.6.0
   #https://pub.dev/packages/flutter_staggered_grid_view
