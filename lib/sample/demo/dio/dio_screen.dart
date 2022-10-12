@@ -37,7 +37,7 @@ class _DioScreenState extends BaseStatefulState<DioScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "DioScreen",
+        "dio",
         () {
           Get.back();
         },

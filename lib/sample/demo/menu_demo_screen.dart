@@ -2,17 +2,11 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/advancePdfViewer/AdvancePdfViewerScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/async/MenuAsyncScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/batteryPlus/BatteryPlusScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/communicationBetweenWidget/CommunicationBetweenWidgetScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/connectivityPlus/ConnectivityPlusScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/counter/CounterScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/CryptoScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/deviceInfoPlus/DeviceInfoPlusScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/async/menu_async_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/counter/counter_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/crypto_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/dio_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/easyDebounce/EasyDebounceScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/EncryptScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/eventBus/EventBusScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/encrypt_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterBloc/MenuFlutterBlockScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterLocalNotifications/FlutterLocalNotificationsScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutterScreenLock/FlutterScreenLockScreen.dart';
@@ -37,7 +31,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 
+import 'battery_plus/battery_plus_screen.dart';
+import 'communication_between_widget/communication_between_widget_screen.dart';
+import 'connectivity_plus/connectivity_plus_screen.dart';
+import 'device_info_plus/device_info_plus_screen.dart';
 import 'diacritic/diacritic_screen.dart';
+import 'easy_debounce/easy_debounce_screen.dart';
+import 'event_bus/event_bus_screen.dart';
 import 'focusDetector/FocusDetectorScreen.dart';
 import 'imageGallerySaver/ImageGallerySaverScreen.dart';
 import 'oneTargetMobileSdk/OneTargetMobileSdkScreen.dart';
@@ -77,7 +77,7 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "BatteryPlusScreen",
+            "battery_plus",
             () {
               Get.to(BatteryPlusScreen());
             },
@@ -89,7 +89,7 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "ConnectivityPlusScreen",
+            "connectivity_plus",
             () {
               Get.to(ConnectivityPlusScreen());
             },
@@ -101,13 +101,13 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "CryptoScreen",
+            "crypto",
             () {
               Get.to(CryptoScreen());
             },
           ),
           UIUtils.getButton(
-            "DeviceInfoPlusScreen",
+            "device_info_plus",
             () {
               Get.to(DeviceInfoPlusScreen());
             },
@@ -125,7 +125,19 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "EventBusScreen",
+            "easy_debounce",
+                () {
+              Get.to(EasyDebounceScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "encrypt",
+                () {
+              Get.to(EncryptScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "event_bus",
             () {
               Get.to(EventBusScreen());
             },
@@ -134,18 +146,6 @@ class MenuDemoScreen extends StatelessWidget {
             "MenuFlutterBlockScreen",
             () {
               Get.to(MenuFlutterBlockScreen());
-            },
-          ),
-          UIUtils.getButton(
-            "EasyDebounceScreen",
-            () {
-              Get.to(EasyDebounceScreen());
-            },
-          ),
-          UIUtils.getButton(
-            "EncryptScreen",
-            () {
-              Get.to(EncryptScreen());
             },
           ),
           UIUtils.getButton(

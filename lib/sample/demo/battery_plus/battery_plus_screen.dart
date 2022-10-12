@@ -48,7 +48,7 @@ class _BatteryPlusScreenState extends BaseStatefulState<BatteryPlusScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "BatteryPlusScreen",
+        "battery_plus",
         () {
           Get.back();
         },

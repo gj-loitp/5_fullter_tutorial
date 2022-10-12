@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
+import 'package:flutter/material.dart';
 
-import 'ParentPage.dart';
+import 'parent_page.dart';
 
 /**
  * Created by Loitp on 08,August,2022

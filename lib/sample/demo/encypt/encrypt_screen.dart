@@ -1,8 +1,8 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:encrypt/encrypt.dart' as Encrypted;
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -17,7 +17,7 @@ class EncryptScreen extends StatelessWidget {
     _test();
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "EncryptScreen",
+        "encrypt",
         () {
           Get.back();
         },

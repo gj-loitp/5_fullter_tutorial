@@ -1,5 +1,5 @@
-import 'package:event_bus/event_bus.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/model/People.dart';
+import 'package:event_bus/event_bus.dart';
 
 /**
  * Created by Loitp on 08,August,2022

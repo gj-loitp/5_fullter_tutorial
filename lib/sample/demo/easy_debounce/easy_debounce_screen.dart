@@ -36,7 +36,7 @@ class EasyDebounceScreenState extends BaseStatefulState<EasyDebounceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "EasyDebounceScreen",
+        "easy_debounce",
         () {
           Get.back();
         },

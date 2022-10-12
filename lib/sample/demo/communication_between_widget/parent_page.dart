@@ -1,8 +1,8 @@
-import 'package:flutter/material.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:flutter/material.dart';
 
-import 'Child1Page.dart';
-import 'Child2Page.dart';
+import 'child_1_page.dart';
+import 'child_2_page.dart';
 
 /**
  * Created by Loitp on 08,August,2022

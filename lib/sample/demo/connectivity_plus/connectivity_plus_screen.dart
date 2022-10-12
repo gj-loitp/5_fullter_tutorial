@@ -74,7 +74,7 @@ class _ConnectivityPlusScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "ConnectivityPlusScreen",
+        "connectivity_plus",
         () {
           Get.back();
         },
