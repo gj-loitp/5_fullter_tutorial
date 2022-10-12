@@ -5,8 +5,8 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'bloc/ClientsBloc.dart';
-import 'model/ClientModel.dart';
+import 'bloc/clients_bloc.dart';
+import 'model/client_model.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -43,7 +43,7 @@ class _SQLiteDemoScreenState extends State<SQLiteDemoScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "SQLiteDemoScreen",
+        "sqflite",
         () {
           Get.back();
         },

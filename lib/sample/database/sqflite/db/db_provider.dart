@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
 
-import '../model/ClientModel.dart';
+import '../model/client_model.dart';
 
 /**
  * Created by Loitp on 05,August,2022
