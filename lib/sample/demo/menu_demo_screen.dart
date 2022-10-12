@@ -20,6 +20,7 @@ import 'encypt/encrypt_screen.dart';
 import 'event_bus/event_bus_screen.dart';
 import 'flutter_bloc/menu_flutter_block_screen.dart';
 import 'flutter_local_notifications/flutter_local_notifications_screen.dart';
+import 'flutter_offline/flutter_offline_screen.dart';
 import 'flutter_screen_lock/flutter_screen_lock_screen.dart';
 import 'focus_detector/focus_detector_screen.dart';
 import 'getx/get_x_screen.dart';
@@ -156,6 +157,12 @@ class MenuDemoScreen extends StatelessWidget {
                       .getNotificationAppLaunchDetails();
               Get.to(
                   FlutterLocalNotificationScreen(notificationAppLaunchDetails));
+            },
+          ),
+          UIUtils.getButton(
+            "flutter_offline",
+                () {
+              Get.to(FlutterOfflineScreen());
             },
           ),
           UIUtils.getButton(
