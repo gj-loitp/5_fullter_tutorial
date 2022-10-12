@@ -1,10 +1,10 @@
-import 'package:dio/dio.dart';
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:diacritic/diacritic.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -13,16 +13,14 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-class DioScreen extends StatefulWidget {
+class DiacriticScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _DioScreenState();
+    return _DiacriticScreenState();
   }
 }
 
-class _DioScreenState extends BaseStatefulState<DioScreen> {
-  String _responseThichTruyen = "";
-
+class _DiacriticScreenState extends BaseStatefulState<DiacriticScreen> {
   @override
   void initState() {
     super.initState();
@@ -37,13 +35,13 @@ class _DioScreenState extends BaseStatefulState<DioScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "DioScreen",
+        "diacritic",
         () {
           Get.back();
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/dio");
+              "https://pub.dev/packages/diacritic");
         },
       ),
       body: ListView(
@@ -51,26 +49,15 @@ class _DioScreenState extends BaseStatefulState<DioScreen> {
         physics: BouncingScrollPhysics(),
         children: [
           UIUtils.getText(
-              "A powerful Http client for Dart, which supports Interceptors, Global configuration, FormData, Request Cancellation, File downloading, Timeout etc."),
-          UIUtils.getButton("Get Google", () {
-            _getHttp();
-          }),
-          UIUtils.getText(_responseThichTruyen),
-          //TODO loitpp https://pub.dev/packages/web_scraper
+              "Removes common accents and diacritical signs from a string by replacing them with an equivalent character"),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
+          UIUtils.getText("árvíztűrő tükörfúrógép"),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
+          UIUtils.getText("=>"),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
+          UIUtils.getText(removeDiacritics('árvíztűrő tükörfúrógép')),
         ],
       ),
     );
-  }
-
-  void _getHttp() async {
-    try {
-      var response = await Dio().get('http://www.thichtruyen.vn');
-      print(response);
-      setState(() {
-        _responseThichTruyen = response.data;
-      });
-    } catch (e) {
-      print(e);
-    }
   }
 }

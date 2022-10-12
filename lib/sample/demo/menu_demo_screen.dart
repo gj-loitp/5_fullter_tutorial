@@ -9,7 +9,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/demo/connectivityPlus/Con
 import 'package:com.roy93group.flutter_tutorial/sample/demo/counter/CounterScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/crypto/CryptoScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/deviceInfoPlus/DeviceInfoPlusScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/DioScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/dio/dio_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/easyDebounce/EasyDebounceScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/encypt/EncryptScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/eventBus/EventBusScreen.dart';
@@ -37,6 +37,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 
+import 'diacritic/diacritic_screen.dart';
 import 'focusDetector/FocusDetectorScreen.dart';
 import 'imageGallerySaver/ImageGallerySaverScreen.dart';
 import 'oneTargetMobileSdk/OneTargetMobileSdkScreen.dart';
@@ -112,7 +113,13 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "DioScreen",
+            "diacritic",
+            () {
+              Get.to(DiacriticScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "dio",
             () {
               Get.to(DioScreen());
             },

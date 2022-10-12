@@ -50,10 +50,16 @@ dependencies:
   drag_select_grid_view: ^0.6.1
   #https://pub.dev/packages/device_info_plus
   device_info_plus: ^6.0.0
-  delayed_display: ^2.0.0 #https://pub.dev/packages/delayed_display
-  dio: ^4.0.6 #https://pub.dev/packages/dio
-  dotted_border: ^2.0.0+2 #https://pub.dev/packages/dotted_border
-  draggable_scrollbar: ^0.1.0 #https://pub.dev/packages/draggable_scrollbar
+  #https://pub.dev/packages/delayed_display
+  delayed_display: ^2.0.0
+  #https://pub.dev/packages/diacritic
+  diacritic: ^0.1.3
+  #https://pub.dev/packages/dio
+  dio: ^4.0.6
+  #https://pub.dev/packages/dotted_border
+  dotted_border: ^2.0.0+2
+  #https://pub.dev/packages/draggable_scrollbar
+  draggable_scrollbar: ^0.1.0
 
   easy_debounce: ^2.0.2+1 #https://pub.dev/packages/easy_debounce
   encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
