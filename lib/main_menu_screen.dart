@@ -13,7 +13,7 @@ import 'sample/animation/MenuAnimationScreen.dart';
 import 'sample/database/MenuDatabaseScreen.dart';
 import 'sample/demo/menu_demo_screen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';
-import 'sample/widget/MenuWidgetScreen.dart';
+import 'sample/widget/menu_widget_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022

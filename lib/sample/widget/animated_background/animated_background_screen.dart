@@ -8,9 +8,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-import 'ParticleType.dart';
-import 'RainParticleBehaviour.dart';
-import 'SpaceSplash.dart';
+import 'particle_type.dart';
+import 'rain_particle_behaviour.dart';
+import 'space_splash.dart';
 
 /**
  * Created by Loitp on 08,August,2022

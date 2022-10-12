@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 
 import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
 import 'file_picker/file_picker_demo.dart';
+import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -35,7 +36,7 @@ class MenuPickerScreen extends StatelessWidget {
           physics: BouncingScrollPhysics(),
           children: [
             UIUtils.getButton(
-              "CountryPickerScreen",
+              "country_picker",
               () {
                 Get.to(() => CountryPickerScreen());
               },
@@ -47,15 +48,21 @@ class MenuPickerScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
+              "DayPickerScreen",
+                  () {
+                Get.to(() => DayPickerScreen());
+              },
+            ),
+            UIUtils.getButton(
               "FilePickerDemo",
               () {
                 Get.to(() => FilePickerDemo());
               },
             ),
             UIUtils.getButton(
-              "DayPickerScreen",
+              "flutter_colorpicker",
               () {
-                Get.to(() => DayPickerScreen());
+                Get.to(() => FlutterColorPickerScreen());
               },
             ),
             UIUtils.getButton(

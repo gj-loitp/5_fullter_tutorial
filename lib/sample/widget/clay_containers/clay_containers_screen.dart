@@ -20,7 +20,7 @@ class ClayContainersScreen extends StatelessWidget {
     Color baseColor = Color(0xFFF2F2F2);
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "ClayContainersScreen",
+        "clay_containers",
         () {
           Get.back();
         },

@@ -31,6 +31,8 @@ dependencies:
 
   #https://pub.dev/packages/cached_network_image
   cached_network_image: ^3.2.2
+  #https://pub.dev/packages/calendar_view
+  calendar_view: ^1.0.0
   #https://pub.dev/packages/connectivity_plus
   connectivity_plus: ^2.3.9
   #https://pub.dev/packages/country_picker
@@ -76,6 +78,8 @@ dependencies:
   fl_chart: ^0.55.2
   #https://pub.dev/packages/flutter_bloc
   flutter_bloc: ^8.1.1
+  #https://pub.dev/packages/flutter_colorpicker
+  flutter_colorpicker: ^1.0.3
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_local_notifications
