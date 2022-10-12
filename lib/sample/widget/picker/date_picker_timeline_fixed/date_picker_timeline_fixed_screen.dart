@@ -35,7 +35,7 @@ class _DatePickerTimeLineFixedScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "DatePickerTimeLineFixedScreen",
+        "date_picker_timeline_fixed",
         () {
           Get.back();
         },
