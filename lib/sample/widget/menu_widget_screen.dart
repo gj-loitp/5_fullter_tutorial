@@ -37,6 +37,7 @@ import 'easyLoading/EasyLoadingScreen.dart';
 import 'editText/MenuEditTextScreen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
+import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutterReactionButton/FlutterReactionButtonScreen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
@@ -123,7 +124,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "calendar_view",
-                  () {
+              () {
                 Get.to(() => CalendarViewScreen());
               },
             ),
@@ -177,7 +178,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "d_chart",
-                  () {
+              () {
                 Get.to(() => DChartScreen());
               },
             ),
@@ -227,6 +228,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "MenuExpansionScreen",
               () {
                 Get.to(() => MenuExpansionScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "floating_bubbles",
+              () {
+                Get.to(() => FloatingBubblesScreen());
               },
             ),
             UIUtils.getButton(
