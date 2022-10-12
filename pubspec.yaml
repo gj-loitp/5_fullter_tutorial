@@ -1,7 +1,7 @@
 name: com.roy93group.flutter_tutorial
 description: A new Flutter project.
 publish_to: 'none'
-version: 1.0.20220906+20220906
+version: 2022.10.12+20221012
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -163,6 +163,8 @@ dependencies:
 
   #https://pub.dev/packages/package_info_plus
   package_info_plus: ^2.0.0
+  #https://pub.dev/packages/panara_dialogs
+  panara_dialogs: ^0.1.2
   #https://pub.dev/packages/path_provider
   path_provider: ^2.0.11
   #https://pub.dev/packages/permission_handler
@@ -206,15 +208,7 @@ flutter_icons:
   image_path: "assets/images/coding.png"
 #  flutter pub run flutter_launcher_icons:main
 
-# For information on the generic Dart part of this file, see the
-# following page: https://dart.dev/tools/pub/pubspec
-
-# The following section is specific to Flutter.
 flutter:
-
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
   uses-material-design: true
 
   fonts:
