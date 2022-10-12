@@ -15,16 +15,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'animatedBackground/AnimatedBackgroundScreen.dart';
+import 'animated_background/animated_background_screen.dart';
 import 'appbar/SliverAppBarScreen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
 import 'button/MenuButtonScreen.dart';
-import 'card/CardScreen.dart';
+import 'calendar_view/calendar_view_screen.dart';
+import 'card/card_screen.dart';
 import 'chart/fl_chart/ChartScreen.dart';
 import 'checkBox/CheckBoxScreen.dart';
 import 'checkBox/RadioButtonScreen.dart';
 import 'checkBox/RadioButtonScreen2.dart';
-import 'clayContainers/ClayContainersScreen.dart';
+import 'clay_containers/clay_containers_screen.dart';
 import 'cupertino/MenuCupertinoScreen.dart';
 import 'dataTable/DataTableScreen.dart';
 import 'dchart/DChartScreen.dart';
@@ -121,6 +122,12 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
+              "calendar_view",
+                  () {
+                Get.to(() => CalendarViewScreen());
+              },
+            ),
+            UIUtils.getButton(
               "CardScreen",
               () {
                 Get.to(() => CardScreen());
@@ -139,7 +146,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "ClayContainersScreen",
+              "clay_containers",
               () {
                 Get.to(() => ClayContainersScreen());
               },
