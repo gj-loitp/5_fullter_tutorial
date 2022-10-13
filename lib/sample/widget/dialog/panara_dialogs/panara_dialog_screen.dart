@@ -1,11 +1,11 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:panara_dialogs/panara_dialogs.dart';
 
-import '../../../../lib/util/UrlLauncherUtils.dart';
+import '../../../../lib/util/url_launcher_utils.dart';
 
 /**
  * Created by Loitp on 08,August,2022

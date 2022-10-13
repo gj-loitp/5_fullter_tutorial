@@ -1,5 +1,5 @@
-import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/fl_chart/pie_chart/pie_chart_page.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/fl_chart/radar_chart/radar_chart_page.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/fl_chart/scatter_chart/scatter_chart_page.dart';
@@ -7,7 +7,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/chart/fl_chart/uti
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../../lib/util/UrlLauncherUtils.dart';
+import '../../../../lib/util/url_launcher_utils.dart';
 import 'bar_chart/bar_chart_page.dart';
 import 'bar_chart/bar_chart_page2.dart';
 import 'bar_chart/bar_chart_page3.dart';

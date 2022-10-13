@@ -1,9 +1,9 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../lib/animation/hero/HeroDialogRoute.dart';
+import '../../../lib/animation/hero/hero_dialog_route.dart';
 import 'custom_logo.dart';
 import 'page_1.dart';
 import 'page_2.dart';

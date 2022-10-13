@@ -11,7 +11,7 @@ import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-import 'lib/util/LogDogUtils.dart';
+import 'lib/util/log_dog_utils.dart';
 import 'splash_screen.dart';
 
 /**

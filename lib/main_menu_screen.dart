@@ -1,5 +1,5 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
 import 'package:flame/flame.dart';
 import 'package:flutter/foundation.dart';
@@ -7,7 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
-import 'lib/util/UIUtils.dart';
+import 'lib/util/ui_utils.dart';
 import 'sample/animation/menu_animation_screen.dart';
 import 'sample/database/menu_database_screen.dart';
 import 'sample/demo/menu_demo_screen.dart';

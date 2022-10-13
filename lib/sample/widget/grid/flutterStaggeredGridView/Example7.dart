@@ -1,8 +1,8 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/StringConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 
 /**
  * Created by Loitp on 08,August,2022

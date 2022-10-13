@@ -1,4 +1,4 @@
-import 'package:com.roy93group.flutter_tutorial/lib/core/BaseController.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_controller.dart';
 import 'package:get/get.dart';
 
 /**

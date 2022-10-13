@@ -1,13 +1,13 @@
 import 'dart:convert';
 
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/StringConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'lib/app_constant.dart';
-import 'lib/common/const/DimenConstants.dart';
+import 'lib/common/const/dimen_constants.dart';
 import 'main_menu_screen.dart';
 import 'sample/model/gg.dart';
 

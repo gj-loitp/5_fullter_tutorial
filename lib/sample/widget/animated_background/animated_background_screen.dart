@@ -1,9 +1,9 @@
 import 'dart:math' as math;
 
 import 'package:animated_background/animated_background.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/ColorConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
