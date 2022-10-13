@@ -11,9 +11,8 @@ import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
 
-import 'lib/common/const/DimenConstants.dart';
 import 'lib/util/LogDogUtils.dart';
-import 'main_menu_screen.dart';
+import 'splash_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -171,60 +170,4 @@ void testLogger() {
   Dog.e("testLogger");
   Dog.v("testLogger");
   Dog.i("testLogger");
-}
-
-class SplashScreen extends StatefulWidget {
-  @override
-  State<StatefulWidget> createState() {
-    return SplashScreenState();
-  }
-}
-
-class SplashScreenState extends State<SplashScreen> {
-  @override
-  void initState() {
-    super.initState();
-
-    startTime();
-  }
-
-  startTime() async {
-    var duration = new Duration(seconds: 2);
-    return new Timer(duration, route);
-  }
-
-  route() {
-    print("delay finish route");
-    Get.off(MenuScreen());
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Container(
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(150.0),
-                child: Image.asset(
-                  "assets/images/loitp.JPG",
-                  width: 300,
-                  height: 300,
-                ),
-              ),
-            ),
-            Padding(
-                padding:
-                    EdgeInsets.only(top: DimenConstants.marginPaddingMedium)),
-            CircularProgressIndicator(
-              backgroundColor: Colors.white,
-              strokeWidth: 3,
-            )
-          ],
-        ),
-      ),
-    );
-  }
 }
