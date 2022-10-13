@@ -7,8 +7,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
+import 'lib/core/base_stateful_state.dart';
 import 'lib/util/ui_utils.dart';
 import 'sample/animation/menu_animation_screen.dart';
+import 'sample/controller/menu_controller.dart';
 import 'sample/database/menu_database_screen.dart';
 import 'sample/demo/menu_demo_screen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';
@@ -22,7 +24,29 @@ import 'sample/widget/menu_widget_screen.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-class MenuScreen extends StatelessWidget {
+class MenuScreen extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MenuScreenState();
+  }
+}
+
+class _MenuScreenState extends BaseStatefulState<MenuScreen> {
+  var _cMenu = Get.put(MenuController());
+
+  @override
+  void initState() {
+    super.initState();
+
+    _cMenu.setupData();
+  }
+
+  @override
+  void dispose() {
+    _cMenu.clearOnDispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,82 +57,89 @@ class MenuScreen extends StatelessWidget {
         },
         null,
       ),
-      body: ListView(
-        physics: BouncingScrollPhysics(),
-        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        children: [
-          UIUtils.getButton(
-            "Animation",
-            () {
-              Get.to(MenuAnimationScreen());
-            },
-          ),
-          UIUtils.getButton(
-            "MenuDatabaseScreen",
-            () {
-              Get.to(MenuDatabaseScreen());
-            },
-          ),
-          UIUtils.getButton(
-            "Demo",
-            () {
-              Get.to(MenuDemoScreen());
-            },
-          ),
-          UIUtils.getButton(
-            "Game",
-            () async {
-              await Flame.device.fullScreen();
-              Get.to(MainGamePage());
-            },
-          ),
-          UIUtils.getButton(
-            "Syntax",
-            () {
-              Get.to(SyntaxScreen());
-            },
-          ),
-          UIUtils.getButton(
-            "Widget",
-            () {
-              Get.to(MenuWidgetScreen());
-            },
-          ),
-          if (kDebugMode)
+      body: Obx(() {
+        var isFullData = _cMenu.isFullData.value;
+        return ListView(
+          physics: BouncingScrollPhysics(),
+          padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
+          children: [
             UIUtils.getButton(
-              "Github",
+              "Animation",
               () {
-                UrlLauncherUtils.launchInWebViewWithJavaScript(
-                    "https://github.com/tplloi/fullter_tutorial");
+                Get.to(MenuAnimationScreen());
               },
             ),
-          UIUtils.getButton(
-            "Rate app",
-            () {
-              UrlLauncherUtils.rateApp(null, null);
-            },
-          ),
-          UIUtils.getButton(
-            "More app",
-            () {
-              UrlLauncherUtils.moreApp();
-            },
-          ),
-          UIUtils.getButton(
-            "Policy",
-            () {
-              UrlLauncherUtils.launchInWebViewWithJavaScript(
-                  "https://loitp.wordpress.com/2018/06/10/dieu-khoan-su-dung-chinh-sach-bao-mat-va-quyen-rieng-tu/");
-            },
-          ),
-          UIUtils.getButton(
-            "EmptyScreen",
-            () {
-              Get.to(EmptyScreen());
-            },
-          ),
-        ],
-      ),
+            UIUtils.getButton(
+              "MenuDatabaseScreen",
+              () {
+                Get.to(MenuDatabaseScreen());
+              },
+            ),
+            if (isFullData)
+              UIUtils.getButton(
+                "Demo",
+                () {
+                  Get.to(MenuDemoScreen());
+                },
+              ),
+            if (isFullData)
+              UIUtils.getButton(
+                "Game",
+                () async {
+                  await Flame.device.fullScreen();
+                  Get.to(MainGamePage());
+                },
+              ),
+            UIUtils.getButton(
+              "Syntax",
+              () {
+                Get.to(SyntaxScreen());
+              },
+            ),
+            if (isFullData)
+              UIUtils.getButton(
+                "Widget",
+                () {
+                  Get.to(MenuWidgetScreen());
+                },
+              ),
+            if (isFullData)
+              if (kDebugMode)
+                UIUtils.getButton(
+                  "Github",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript(
+                        "https://github.com/tplloi/fullter_tutorial");
+                  },
+                ),
+            UIUtils.getButton(
+              "Rate app",
+              () {
+                UrlLauncherUtils.rateApp(null, null);
+              },
+            ),
+            UIUtils.getButton(
+              "More app",
+              () {
+                UrlLauncherUtils.moreApp();
+              },
+            ),
+            UIUtils.getButton(
+              "Policy",
+              () {
+                UrlLauncherUtils.launchInWebViewWithJavaScript(
+                    "https://loitp.wordpress.com/2018/06/10/dieu-khoan-su-dung-chinh-sach-bao-mat-va-quyen-rieng-tu/");
+              },
+            ),
+            UIUtils.getButton(
+              "EmptyScreen",
+              () {
+                Get.to(EmptyScreen());
+              },
+            ),
+          ],
+        );
+      }),
     );
   }
 }
