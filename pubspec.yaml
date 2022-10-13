@@ -142,6 +142,9 @@ dependencies:
   #https://pub.dev/packages/url_launcher
   url_launcher: ^6.1.6
 
+  #https://pub.dev/packages/qr_code_scanner
+  qr_code_scanner: ^1.0.1
+
   #https://pub.dev/packages/share_plus
   share_plus: ^4.5.3
   #https://pub.dev/packages/simple_url_preview
