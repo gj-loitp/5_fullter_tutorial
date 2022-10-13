@@ -2,11 +2,11 @@ import 'dart:ui';
 
 import 'package:flame/game.dart';
 
-import 'components/Player.dart';
-import 'components/World.dart';
-import 'components/WorldCollidable.dart';
-import 'helpers/Direction.dart';
-import 'helpers/MapLoader.dart';
+import 'components/player.dart';
+import 'components/world.dart';
+import 'components/world_collidable.dart';
+import 'helpers/direction.dart';
+import 'helpers/map_loader.dart';
 
 /**
  * Created by Loitp on 09,August,2022

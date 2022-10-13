@@ -2,8 +2,8 @@ import 'package:flame/components.dart';
 import 'package:flame/geometry.dart';
 import 'package:flame/sprite.dart';
 
-import '../helpers/Direction.dart';
-import 'WorldCollidable.dart';
+import '../helpers/direction.dart';
+import 'world_collidable.dart';
 
 /**
  * Created by Loitp on 09,August,2022

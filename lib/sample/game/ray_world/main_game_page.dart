@@ -2,9 +2,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart'
 import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 
-import 'RayWorldGame.dart';
-import 'helpers/Direction.dart';
-import 'helpers/Joypad.dart';
+import 'helpers/direction.dart';
+import 'helpers/joypad.dart';
+import 'ray_world_game.dart';
 
 /**
  * Created by Loitp on 08,August,2022
