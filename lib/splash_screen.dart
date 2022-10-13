@@ -28,7 +28,8 @@ class SplashScreenState extends BaseStatefulState<SplashScreen> {
 
   void _checkGoogleDrive() async {
     bool isReady = await SharedPreferencesUtil.isReady();
-    if (isReady) {
+    bool isFullData = await SharedPreferencesUtil.isFullData();
+    if (isReady && isFullData) {
       Get.off(MenuScreen());
     } else {
       try {
