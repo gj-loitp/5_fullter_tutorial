@@ -23,6 +23,7 @@ import 'main_menu_screen.dart';
  * freuss47@gmail.com
  */
 //TODO google config show isFullData use dio demo screen
+//TODO dark mode
 
 //done
 //rate app, more app

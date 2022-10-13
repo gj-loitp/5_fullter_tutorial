@@ -10,6 +10,7 @@ import 'package:get/get.dart';
 import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
 import 'file_picker/file_picker_demo.dart';
 import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
+import 'numberpicker/numberpicker_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -69,6 +70,12 @@ class MenuPickerScreen extends StatelessWidget {
               "ImagePickerScreen",
               () {
                 Get.to(() => ImagePickerScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "numberpicker",
+                  () {
+                Get.to(() => NumberPickerScreen());
               },
             ),
           ],

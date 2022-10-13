@@ -1,7 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/game/rayWorld/MainGamePage.dart';
 import 'package:flame/flame.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +12,7 @@ import 'sample/animation/menu_animation_screen.dart';
 import 'sample/database/menu_database_screen.dart';
 import 'sample/demo/menu_demo_screen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';
+import 'sample/game/ray_world/main_game_page.dart';
 import 'sample/widget/menu_widget_screen.dart';
 
 /**

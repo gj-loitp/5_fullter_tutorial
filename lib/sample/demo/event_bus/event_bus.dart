@@ -1,4 +1,4 @@
-import 'package:com.roy93group.flutter_tutorial/sample/model/People.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/model/people.dart';
 import 'package:event_bus/event_bus.dart';
 
 /**

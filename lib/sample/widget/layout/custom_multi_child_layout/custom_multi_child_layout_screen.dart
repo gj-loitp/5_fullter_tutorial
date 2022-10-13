@@ -1,7 +1,8 @@
+import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'CustomEnum.dart';
+
+import 'custom_enum.dart';
 
 /**
  * Created by Loitp on 08,August,2022

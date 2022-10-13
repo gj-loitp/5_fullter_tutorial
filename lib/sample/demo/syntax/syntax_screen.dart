@@ -1,5 +1,5 @@
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/model/People.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/model/people.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 

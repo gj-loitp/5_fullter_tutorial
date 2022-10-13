@@ -1,10 +1,10 @@
 import 'dart:io';
 
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:in_app_review/in_app_review.dart';
 
 /**
@@ -66,13 +66,13 @@ class _InAppReviewScreenState extends State<InAppReviewScreen> {
     return MaterialApp(
       home: Scaffold(
         appBar: UIUtils.getAppBar(
-          "InAppReviewScreen",
+          "in_app_review",
           () {
             Get.back();
           },
           () {
             UrlLauncherUtils.launchInWebViewWithJavaScript(
-                "https://pub.dev/packages/inAppReview");
+                "https://pub.dev/packages/in_app_review");
           },
         ),
         body: ListView(

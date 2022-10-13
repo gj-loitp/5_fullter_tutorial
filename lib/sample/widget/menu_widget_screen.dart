@@ -17,6 +17,7 @@ import 'package:get/get.dart';
 
 import 'animated_background/animated_background_screen.dart';
 import 'appbar/SliverAppBarScreen.dart';
+import 'badges/badges_screen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'calendar_view/calendar_view_screen.dart';
@@ -39,13 +40,15 @@ import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutterReactionButton/FlutterReactionButtonScreen.dart';
+import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
-import 'horizontalCardPager/HorizontalCardPager.dart';
-import 'inAppReview/InAppReviewScreen.dart';
-import 'inkwell/InkwellScreen.dart';
-import 'interactiveViewer/UsingInteractiveViewerScreen.dart';
-import 'layout/MenuLayoutScreen.dart';
+import 'horizontal_calendar/horizontal_calendar_screen.dart';
+import 'horizontal_card_pager/horizontal_card_pager.dart';
+import 'in_app_review/in_app_review_screen.dart';
+import 'inkwell/inkwell_screen.dart';
+import 'interactive_viewer/using_interactive_viewer_screen.dart';
+import 'layout/menu_layout_screen.dart';
 import 'list/MenuListScreen.dart';
 import 'md2TabIndicator/Md2TabIndicatorScreen.dart';
 import 'menuHorizontalDataTable/MenuHorizontalDataTableScreen.dart';
@@ -61,6 +64,7 @@ import 'stepper/stepper_screen.dart';
 import 'switch/switch_screen.dart';
 import 'table/table_screen.dart';
 import 'tooltip/tooltip_screen.dart';
+import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -99,8 +103,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "BlurScreen",
+              "badges",
               () {
+                Get.to(() => BadgesScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "BlurScreen",
+                  () {
                 Get.to(() => BlurScreen());
               },
             ),
@@ -237,6 +247,12 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
+              "flutter_simple_treeview",
+              () {
+                Get.to(() => FlutterSimpleTreeViewScreen());
+              },
+            ),
+            UIUtils.getButton(
               "FlutterReactionButtonScreen",
               () {
                 Get.to(() => FlutterReactionButtonScreen());
@@ -252,6 +268,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "MenuGridScreen",
               () {
                 Get.to(() => MenuGridScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "horizontal_calendar",
+              () {
+                Get.to(() => HorizontalCalendarScreen());
               },
             ),
             UIUtils.getButton(
@@ -377,55 +399,61 @@ class MenuWidgetScreen extends StatelessWidget {
             UIUtils.getButton(
               "StepperScreen",
               () {
-                Get.to(StepperScreen());
+                Get.to(() => StepperScreen());
               },
             ),
             UIUtils.getButton(
               "SwitchScreen",
               () {
-                Get.to(SwitchScreen());
+                Get.to(() => SwitchScreen());
               },
             ),
             UIUtils.getButton(
               "TabPageSelectorScreen",
               () {
-                Get.to(TabPageSelectorScreen());
+                Get.to(() => TabPageSelectorScreen());
               },
             ),
             UIUtils.getButton(
               "TableScreen",
               () {
-                Get.to(TableScreen());
+                Get.to(() => TableScreen());
               },
             ),
             UIUtils.getButton(
               "MenuTextScreen",
               () {
-                Get.to(MenuTextScreen());
+                Get.to(() => MenuTextScreen());
               },
             ),
             UIUtils.getButton(
               "TooltipScreen",
               () {
-                Get.to(TooltipScreen());
+                Get.to(() => TooltipScreen());
               },
             ),
             UIUtils.getButton(
               "VideoPlayerScreen",
               () {
-                Get.to(VideoPlayerScreen());
+                Get.to(() => VideoPlayerScreen());
               },
             ),
             UIUtils.getButton(
               "WaveScreen",
               () {
-                Get.to(WaveScreen());
+                Get.to(() => WaveScreen());
               },
             ),
             UIUtils.getButton(
               "MenuWebviewScreen",
               () {
-                Get.to(MenuWebviewScreen());
+                Get.to(() => MenuWebviewScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "youtube_player_flutter",
+              () {
+                Get.to(() => YoutubePlayerFlutterScreen());
               },
             ),
           ],

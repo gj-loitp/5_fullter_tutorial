@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 
-import 'advancePdfViewer/AdvancePdfViewerScreen.dart';
+import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
 import 'async/menu_async_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
@@ -32,6 +32,7 @@ import 'local_auth/local_auth_screen.dart';
 import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
 import 'package_info_plus/package_info_plus_screen.dart';
 import 'permission_handler/permission_handler_screen.dart';
+import 'qr_code_scanner/qr_code_scanner_screen.dart';
 import 'restart_app/restart_app_screen.dart';
 import 'share_plus/share_plus_screen.dart';
 import 'shop/shop_screen.dart';
@@ -161,7 +162,7 @@ class MenuDemoScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "flutter_offline",
-                () {
+            () {
               Get.to(FlutterOfflineScreen());
             },
           ),
@@ -222,37 +223,43 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "package_info_plus",
             () {
-              Get.to(PackageInforPlusScreen());
+              Get.to(() => PackageInforPlusScreen());
             },
           ),
           UIUtils.getButton(
             "permission_handler",
             () {
-              Get.to(PermissionHandlerScreen());
+              Get.to(() => PermissionHandlerScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "qr_code_scanner",
+            () {
+              Get.to(() => QrCodeScannerScreen());
             },
           ),
           UIUtils.getButton(
             "restart_app",
             () {
-              Get.to(RestartAppScreen());
+              Get.to(() => RestartAppScreen());
             },
           ),
           UIUtils.getButton(
             "share_plus",
             () {
-              Get.to(SharePlusScreen());
+              Get.to(() => SharePlusScreen());
             },
           ),
           UIUtils.getButton(
             "Shop",
             () {
-              Get.to(ShopScreen());
+              Get.to(() => ShopScreen());
             },
           ),
           UIUtils.getButton(
             "Theme",
             () {
-              Get.to(ThemeScreen());
+              Get.to(() => ThemeScreen());
             },
           ),
           UIUtils.getButton(

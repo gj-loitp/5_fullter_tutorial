@@ -62,7 +62,7 @@ class _HorizontalCardPagerScreenState
     ];
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "HorizontalCardPagerScreen",
+        "horizontal_card_pager",
         () {
           Get.back();
         },
