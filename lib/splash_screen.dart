@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
@@ -39,13 +40,12 @@ class SplashScreenState extends BaseStatefulState<SplashScreen> {
       if (AppConstant.isReady()) {
         Get.off(MenuScreen());
       } else {
-        await Future.delayed(const Duration(milliseconds: 2000));
         showErrorDialog(
           StringConstants.warning,
           "500 Internal Server Error",
-          "Retry",
+          "Exit",
           () {
-            _checkGoogleDrive();
+            exit(0);
           },
         );
       }
