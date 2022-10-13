@@ -42,6 +42,7 @@ import 'flutterReactionButton/FlutterReactionButtonScreen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
+import 'horizontal_calendar/horizontal_calendar_screen.dart';
 import 'horizontal_card_pager/horizontal_card_pager.dart';
 import 'in_app_review/in_app_review_screen.dart';
 import 'inkwell/inkwell_screen.dart';
@@ -259,6 +260,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "MenuGridScreen",
               () {
                 Get.to(() => MenuGridScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "horizontal_calendar",
+                  () {
+                Get.to(() => HorizontalCalendarScreen());
               },
             ),
             UIUtils.getButton(
