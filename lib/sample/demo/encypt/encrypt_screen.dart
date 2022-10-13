@@ -1,5 +1,5 @@
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:encrypt/encrypt.dart' as Encrypted;
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';

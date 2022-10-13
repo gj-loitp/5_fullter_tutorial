@@ -1,7 +1,7 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/core/BaseStatefulState.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -21,7 +21,7 @@ class DioScreen extends StatefulWidget {
 }
 
 class _DioScreenState extends BaseStatefulState<DioScreen> {
-  String _responseThichTruyen = "";
+  String _response = "";
 
   @override
   void initState() {
@@ -55,7 +55,7 @@ class _DioScreenState extends BaseStatefulState<DioScreen> {
           UIUtils.getButton("Get Google", () {
             _getHttp();
           }),
-          UIUtils.getText(_responseThichTruyen),
+          UIUtils.getText(_response),
           //TODO loitpp https://pub.dev/packages/web_scraper
         ],
       ),
@@ -65,9 +65,10 @@ class _DioScreenState extends BaseStatefulState<DioScreen> {
   void _getHttp() async {
     try {
       var response = await Dio().get('http://www.thichtruyen.vn');
+      // var response = await Dio().get('https://drive.google.com/uc?export=download&id=1bjIaEuvDJhrdlP__LNEf43__pkEVV75D');
       print(response);
       setState(() {
-        _responseThichTruyen = response.data;
+        _response = response.data;
       });
     } catch (e) {
       print(e);

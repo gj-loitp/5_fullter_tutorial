@@ -1,7 +1,7 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/DimenConstants.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/SharedPreferencesUtil.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UIUtils.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/util/UrlLauncherUtils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/shared_preferences_util.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
