@@ -109,6 +109,8 @@ dependencies:
   #https://pub.dev/packages/flutter_screen_lock
   flutter_screen_lock: ^5.0.5
 
+  #https://pub.dev/packages/horizontal_calendar
+  horizontal_calendar: ^1.0.1
   #https://pub.dev/packages/horizontal_card_pager
   horizontal_card_pager: ^1.1.1
   #https://pub.dev/packages/html2md

@@ -660,6 +660,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  horizontal_calendar:
+    dependency: "direct main"
+    description:
+      name: horizontal_calendar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   horizontal_card_pager:
     dependency: "direct main"
     description:
@@ -877,6 +884,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
+  nepali_utils:
+    dependency: transitive
+    description:
+      name: nepali_utils
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.3"
   nested:
     dependency: transitive
     description:
