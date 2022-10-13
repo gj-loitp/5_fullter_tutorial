@@ -21,6 +21,8 @@ dependencies:
   #https://pubdev/packages/awesome_dialog
   awesome_dialog: ^3.0.2
 
+  #https://pub.dev/packages/badges
+  badges: ^2.0.3
   #https://pub.dev/packages/battery_plus
   battery_plus: ^3.0.0
   #https://pub.dev/packages/basic_utils

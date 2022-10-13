@@ -17,6 +17,7 @@ import 'package:get/get.dart';
 
 import 'animated_background/animated_background_screen.dart';
 import 'appbar/SliverAppBarScreen.dart';
+import 'badges/badges_screen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'calendar_view/calendar_view_screen.dart';
@@ -102,8 +103,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "BlurScreen",
+              "badges",
               () {
+                Get.to(() => BadgesScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "BlurScreen",
+                  () {
                 Get.to(() => BlurScreen());
               },
             ),
