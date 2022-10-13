@@ -63,6 +63,7 @@ import 'stepper/stepper_screen.dart';
 import 'switch/switch_screen.dart';
 import 'table/table_screen.dart';
 import 'tooltip/tooltip_screen.dart';
+import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -264,7 +265,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "horizontal_calendar",
-                  () {
+              () {
                 Get.to(() => HorizontalCalendarScreen());
               },
             ),
@@ -391,55 +392,61 @@ class MenuWidgetScreen extends StatelessWidget {
             UIUtils.getButton(
               "StepperScreen",
               () {
-                Get.to(StepperScreen());
+                Get.to(() => StepperScreen());
               },
             ),
             UIUtils.getButton(
               "SwitchScreen",
               () {
-                Get.to(SwitchScreen());
+                Get.to(() => SwitchScreen());
               },
             ),
             UIUtils.getButton(
               "TabPageSelectorScreen",
               () {
-                Get.to(TabPageSelectorScreen());
+                Get.to(() => TabPageSelectorScreen());
               },
             ),
             UIUtils.getButton(
               "TableScreen",
               () {
-                Get.to(TableScreen());
+                Get.to(() => TableScreen());
               },
             ),
             UIUtils.getButton(
               "MenuTextScreen",
               () {
-                Get.to(MenuTextScreen());
+                Get.to(() => MenuTextScreen());
               },
             ),
             UIUtils.getButton(
               "TooltipScreen",
               () {
-                Get.to(TooltipScreen());
+                Get.to(() => TooltipScreen());
               },
             ),
             UIUtils.getButton(
               "VideoPlayerScreen",
               () {
-                Get.to(VideoPlayerScreen());
+                Get.to(() => VideoPlayerScreen());
               },
             ),
             UIUtils.getButton(
               "WaveScreen",
               () {
-                Get.to(WaveScreen());
+                Get.to(() => WaveScreen());
               },
             ),
             UIUtils.getButton(
               "MenuWebviewScreen",
               () {
-                Get.to(MenuWebviewScreen());
+                Get.to(() => MenuWebviewScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "youtube_player_flutter",
+              () {
+                Get.to(() => YoutubePlayerFlutterScreen());
               },
             ),
           ],

@@ -213,6 +213,9 @@ dependencies:
   #https://pub.dev/packages/web_scraper
   web_scraper: ^0.1.4
 
+  #https://pub.dev/packages/youtube_player_flutter
+  youtube_player_flutter: ^8.1.1
+
   #https://pub.dev/packages/flame
   flame: 1.0.0-releasecandidate.15
   #https://pub.dev/packages/tiledjsonreader
