@@ -24,25 +24,25 @@ class GG {
 }
 
 class Config {
-  bool? isReady;
+  List<String>? vs;
   bool? isFullData;
   String? msg;
 
   Config({
-    this.isReady,
+    this.vs,
     this.isFullData,
     this.msg,
   });
 
   Config.fromJson(Map<String, dynamic> json) {
-    isReady = json['isReady'];
+    vs = json['vs'].cast<String>();
     isFullData = json['isFullData'];
     msg = json['msg'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
-    data['isReady'] = this.isReady;
+    data['vs'] = this.vs;
     data['isFullData'] = this.isFullData;
     data['msg'] = this.msg;
     return data;

@@ -1,3 +1,7 @@
+import 'dart:convert';
+
+import 'package:com.roy93group.flutter_tutorial/sample/model/gg.dart';
+import 'package:package_info_plus/package_info_plus.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 /**
@@ -8,7 +12,7 @@ import 'package:shared_preferences/shared_preferences.dart';
  * freuss47@gmail.com
  */
 class SharedPreferencesUtil {
-  // static const KEY_USER = "KEY_USER";
+  static const KEY_GG = "KEY_GG";
   static const KEY_TEST_BOOL = "KEY_TEST_BOOL";
 
   static Future<void> setInt(String key, int value) async {
@@ -31,21 +35,43 @@ class SharedPreferencesUtil {
     return prefs.getBool(key);
   }
 
-// static void setUser(User user) async {
-//   SharedPreferences prefs = await SharedPreferences.getInstance();
-//   await prefs.setString(KEY_USER, jsonEncode(user));
-// }
-//
-// static Future<User> getUser() async {
-//   SharedPreferences prefs = await SharedPreferences.getInstance();
-//   String jsonString = prefs.getString(KEY_USER);
-//   if (jsonString == null) {
-//     return null;
-//   }
-//   try {
-//     return User.fromJson(jsonDecode(jsonString));
-//   } catch (e) {
-//     return null;
-//   }
-// }
+  static Future<void> setGG(GG gg) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.setString(KEY_GG, jsonEncode(gg));
+  }
+
+  static Future<GG?> getGG() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    String? jsonString = prefs.getString(KEY_GG);
+    if (jsonString == null) {
+      return null;
+    }
+    try {
+      return GG.fromJson(jsonDecode(jsonString));
+    } catch (e) {
+      return null;
+    }
+  }
+
+  static Future<bool> isReady() async {
+    GG? gg = await getGG();
+    var vs = gg?.config?.vs;
+
+    final info = await PackageInfo.fromPlatform();
+    var buildNumber = info.buildNumber;
+
+    bool isReady = false;
+    vs?.forEach((element) {
+      if (element == buildNumber) {
+        isReady = true;
+      }
+    });
+
+    return isReady;
+  }
+
+  static Future<bool> isFullData() async {
+    GG? gg = await getGG();
+    return gg?.config?.isFullData ?? false;
+  }
 }
