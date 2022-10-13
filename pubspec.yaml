@@ -131,6 +131,8 @@ dependencies:
 
   #https://pub.dev/packages/network_info_plus
   network_info_plus: ^2.3.2
+  #https://pub.dev/packages/numberpicker
+  numberpicker: ^2.1.1
 
   #https://pub.dev/packages/one_target_mobile_sdk
   one_target_mobile_sdk: ^0.0.17

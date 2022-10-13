@@ -955,7 +955,7 @@ packages:
     source: hosted
     version: "0.5.0"
   numberpicker:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: numberpicker
       url: "https://pub.dartlang.org"
