@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:get/get.dart';
 
-import 'CustomAnimation.dart';
-import 'TestPage.dart';
+import 'custom_animation.dart';
+import 'test_page.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -104,7 +104,7 @@ class _EasyLoadingHomePageState extends State<EasyLoadingHomePage> {
                 children: <Widget>[
                   UIUtils.getButton(
                     "open test page",
-                    ()  {
+                    () {
                       _timer?.cancel();
                       Get.to(TestPageScreen());
                     },

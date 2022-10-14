@@ -35,7 +35,7 @@ class _DottedBorderScreenState extends BaseStatefulState<DottedBorderScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "DottedBorderScreen",
+        "dotted_border",
         () {
           Get.back();
         },
