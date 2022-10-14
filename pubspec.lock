@@ -113,6 +113,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  bottom_bar_with_sheet:
+    dependency: "direct main"
+    description:
+      name: bottom_bar_with_sheet
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.4.0"
   cached_network_image:
     dependency: "direct main"
     description:
@@ -134,6 +141,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.2"
+  calendar_appbar:
+    dependency: "direct main"
+    description:
+      name: calendar_appbar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.6"
   calendar_view:
     dependency: "direct main"
     description:
@@ -1477,6 +1491,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.5"
+  time_planner:
+    dependency: "direct main"
+    description:
+      name: time_planner
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.1.1"
   timeago:
     dependency: "direct main"
     description:

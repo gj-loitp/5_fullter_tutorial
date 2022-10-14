@@ -81,7 +81,7 @@ class _AnimatedBackgroundScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("AnimatedBackgroundScreen"),
+        title: Text("animated_background"),
         centerTitle: false,
         leading: IconButton(
           icon: Icon(

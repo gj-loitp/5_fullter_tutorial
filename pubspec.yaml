@@ -27,12 +27,16 @@ dependencies:
   battery_plus: ^3.0.0
   #https://pub.dev/packages/basic_utils
   basic_utils: ^5.3.0
+  #https://pub.dev/packages/bottom_bar_with_sheet
+  bottom_bar_with_sheet: ^2.4.0
   #https://pub.dev/packages/blur
   blur: ^3.1.0
   bloc: ^8.1.0
 
   #https://pub.dev/packages/cached_network_image
   cached_network_image: ^3.2.2
+  #https://pub.dev/packages/calendar_appbar
+  calendar_appbar: ^0.0.6
   #https://pub.dev/packages/calendar_view
   calendar_view: ^1.0.0
   #https://pub.dev/packages/connectivity_plus
@@ -141,6 +145,8 @@ dependencies:
   #https://pub.dev/packages/overflow_view
   overflow_view: ^0.3.1
 
+  #https://pub.dev/packages/time_planner
+  time_planner: ^0.1.1
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
   #https://pub.dev/packages/url_launcher

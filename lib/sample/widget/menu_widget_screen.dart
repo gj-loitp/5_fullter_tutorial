@@ -19,7 +19,9 @@ import 'animated_background/animated_background_screen.dart';
 import 'appbar/SliverAppBarScreen.dart';
 import 'badges/badges_screen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
+import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'button/MenuButtonScreen.dart';
+import 'calendar_appbar/calendar_appbar_screen.dart';
 import 'calendar_view/calendar_view_screen.dart';
 import 'card/card_screen.dart';
 import 'chart/fl_chart/ChartScreen.dart';
@@ -32,9 +34,9 @@ import 'dataTable/DataTableScreen.dart';
 import 'dchart/DChartScreen.dart';
 import 'delayedDisplay/DelayedDisplayScreen.dart';
 import 'dialog/menu_dialog_screen.dart';
-import 'dottedBorder/DottedBorderScreen.dart';
+import 'dotted_border/dotted_border_screen.dart';
 import 'drawer/MenuDrawerScreen.dart';
-import 'easyLoading/EasyLoadingScreen.dart';
+import 'easy_loading/easy_loading_screen.dart';
 import 'editText/MenuEditTextScreen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
@@ -63,6 +65,7 @@ import 'state/stateless_widget_demo_screen.dart';
 import 'stepper/stepper_screen.dart';
 import 'switch/switch_screen.dart';
 import 'table/table_screen.dart';
+import 'time_planner/time_planner_screen.dart';
 import 'tooltip/tooltip_screen.dart';
 import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
@@ -91,7 +94,7 @@ class MenuWidgetScreen extends StatelessWidget {
           physics: BouncingScrollPhysics(),
           children: [
             UIUtils.getButton(
-              "AnimatedBackgroundScreen",
+              "animated_background",
               () {
                 Get.to(() => AnimatedBackgroundScreen());
               },
@@ -109,9 +112,15 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "BlurScreen",
+              "blur",
                   () {
                 Get.to(() => BlurScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "bottom_bar_with_sheet",
+                  () {
+                Get.to(() => BottomBarWithSheetScreen());
               },
             ),
             UIUtils.getButton(
@@ -133,8 +142,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "calendar_view",
+              "calendar_appbar",
               () {
+                Get.to(() => CalendarAppbarScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "calendar_view",
+                  () {
                 Get.to(() => CalendarViewScreen());
               },
             ),
@@ -427,8 +442,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "TooltipScreen",
+              "time_planner",
               () {
+                Get.to(() => TimePlannerScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "TooltipScreen",
+                  () {
                 Get.to(() => TooltipScreen());
               },
             ),
