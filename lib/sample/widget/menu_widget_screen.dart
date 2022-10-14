@@ -19,6 +19,7 @@ import 'animated_background/animated_background_screen.dart';
 import 'appbar/SliverAppBarScreen.dart';
 import 'badges/badges_screen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
+import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'calendar_view/calendar_view_screen.dart';
 import 'card/card_screen.dart';
@@ -91,7 +92,7 @@ class MenuWidgetScreen extends StatelessWidget {
           physics: BouncingScrollPhysics(),
           children: [
             UIUtils.getButton(
-              "AnimatedBackgroundScreen",
+              "animated_background",
               () {
                 Get.to(() => AnimatedBackgroundScreen());
               },
@@ -109,9 +110,15 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "BlurScreen",
+              "blur",
                   () {
                 Get.to(() => BlurScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "bottom_bar_with_sheet",
+                  () {
+                Get.to(() => BottomBarWithSheetScreen());
               },
             ),
             UIUtils.getButton(

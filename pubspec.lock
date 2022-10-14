@@ -113,6 +113,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
+  bottom_bar_with_sheet:
+    dependency: "direct main"
+    description:
+      name: bottom_bar_with_sheet
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.4.0"
   cached_network_image:
     dependency: "direct main"
     description:

@@ -38,7 +38,7 @@ class _BlurScreenState extends BaseStatefulState<BlurScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "BlurScreen",
+        "blur",
         () {
           Get.back();
         },
