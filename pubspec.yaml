@@ -143,6 +143,8 @@ dependencies:
   #https://pub.dev/packages/overflow_view
   overflow_view: ^0.3.1
 
+  #https://pub.dev/packages/time_planner
+  time_planner: ^0.1.1
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
   #https://pub.dev/packages/url_launcher

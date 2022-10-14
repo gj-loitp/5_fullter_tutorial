@@ -64,6 +64,7 @@ import 'state/stateless_widget_demo_screen.dart';
 import 'stepper/stepper_screen.dart';
 import 'switch/switch_screen.dart';
 import 'table/table_screen.dart';
+import 'time_planner/time_planner_screen.dart';
 import 'tooltip/tooltip_screen.dart';
 import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
@@ -434,8 +435,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "TooltipScreen",
+              "time_planner",
               () {
+                Get.to(() => TimePlannerScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "TooltipScreen",
+                  () {
                 Get.to(() => TooltipScreen());
               },
             ),
