@@ -35,6 +35,8 @@ dependencies:
 
   #https://pub.dev/packages/cached_network_image
   cached_network_image: ^3.2.2
+  #https://pub.dev/packages/calendar_appbar
+  calendar_appbar: ^0.0.6
   #https://pub.dev/packages/calendar_view
   calendar_view: ^1.0.0
   #https://pub.dev/packages/connectivity_plus

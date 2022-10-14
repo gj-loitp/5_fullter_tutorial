@@ -21,6 +21,7 @@ import 'badges/badges_screen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
 import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'button/MenuButtonScreen.dart';
+import 'calendar_appbar/calendar_appbar_screen.dart';
 import 'calendar_view/calendar_view_screen.dart';
 import 'card/card_screen.dart';
 import 'chart/fl_chart/ChartScreen.dart';
@@ -141,8 +142,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "calendar_view",
+              "calendar_appbar",
               () {
+                Get.to(() => CalendarAppbarScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "calendar_view",
+                  () {
                 Get.to(() => CalendarViewScreen());
               },
             ),
