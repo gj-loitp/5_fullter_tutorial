@@ -29,7 +29,7 @@ import 'splash_screen.dart';
 //change keystore 2022.10.03
 //change background_image: "assets/images/splash.jpg"
 //app name, ic launcher
-//TODO google config show isFullData use dio demo screen 2022.10.13
+//google config show isFullData use dio demo screen 2022.10.13
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
