@@ -78,6 +78,8 @@ dependencies:
 
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
+  #https://pub.dev/packages/folding_cell
+  folding_cell: ^1.0.2
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.2
   #https://pub.dev/packages/fl_chart
@@ -114,6 +116,9 @@ dependencies:
   flutter_sticky_header: ^0.6.4
   #https://pub.dev/packages/flutter_screen_lock
   flutter_screen_lock: ^5.0.5
+
+  #https://pub.dev/packages/google_fonts
+  google_fonts: ^3.0.1
 
   #https://pub.dev/packages/horizontal_calendar
   horizontal_calendar: ^1.0.1

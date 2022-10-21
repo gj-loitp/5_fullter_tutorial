@@ -41,8 +41,9 @@ import 'editText/MenuEditTextScreen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
-import 'flutterReactionButton/FlutterReactionButtonScreen.dart';
+import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
+import 'folding_cell/folding_cell_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
 import 'horizontal_calendar/horizontal_calendar_screen.dart';
@@ -266,6 +267,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "flutter_simple_treeview",
               () {
                 Get.to(() => FlutterSimpleTreeViewScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "folding_cell",
+                  () {
+                Get.to(() => FoldingCellScreen());
               },
             ),
             UIUtils.getButton(
