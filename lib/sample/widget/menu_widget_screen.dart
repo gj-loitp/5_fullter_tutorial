@@ -57,6 +57,7 @@ import 'menuHorizontalDataTable/MenuHorizontalDataTableScreen.dart';
 import 'menuImage/MenuImageScreen.dart';
 import 'modalBottomSheet/model_bottom_sheet_screen.dart';
 import 'progress/menu_progress_screen.dart';
+import 'shape_of_view/shape_of_view_screen.dart';
 import 'shimmer/shimmer_screen.dart';
 import 'slider/menu_slider_screen.dart';
 import 'stack/stack_screen.dart';
@@ -373,6 +374,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "scrollable_table_view",
               () {
                 Get.to(() => ScrollableTableViewScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "shape_of_view",
+                  () {
+                Get.to(ShapeOfViewScreen());
               },
             ),
             UIUtils.getButton(

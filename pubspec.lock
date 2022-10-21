@@ -828,6 +828,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.6.0"
+  kenburns_nullsafety:
+    dependency: "direct main"
+    description:
+      name: kenburns_nullsafety
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.0"
   lazy_load_scrollview:
     dependency: "direct main"
     description:
@@ -1283,6 +1290,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0"
+  shape_of_view_null_safe:
+    dependency: "direct main"
+    description:
+      name: shape_of_view_null_safe
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.0"
   share_plus:
     dependency: "direct main"
     description:
