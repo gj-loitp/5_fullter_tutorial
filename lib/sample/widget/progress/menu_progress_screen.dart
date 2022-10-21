@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import 'circular_progress_indicator_app.dart';
 import 'linear_progress_indicator_app.dart';
+import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
 
 /**
@@ -31,6 +32,12 @@ class MenuProgressScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            UIUtils.getButton(
+              "percent_indicator",
+              () {
+                Get.to(PercentIndicatorScreen());
+              },
+            ),
             UIUtils.getButton(
               "CircularProgressIndicatorApp",
               () {

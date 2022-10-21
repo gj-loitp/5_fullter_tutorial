@@ -203,6 +203,8 @@ dependencies:
   panara_dialogs: ^0.1.2
   #https://pub.dev/packages/path_provider
   path_provider: ^2.0.11
+  #https://pub.dev/packages/percent_indicator
+  percent_indicator: ^4.2.2
   #https://pub.dev/packages/permission_handler
   permission_handler: ^10.1.0
   #https://pub.dev/packages/photo_view
