@@ -119,6 +119,8 @@ dependencies:
   horizontal_calendar: ^1.0.1
   #https://pub.dev/packages/horizontal_card_pager
   horizontal_card_pager: ^1.1.1
+  #https://pub.dev/packages/horizontal_picker
+  horizontal_picker: ^1.2.0
   #https://pub.dev/packages/html2md
   html2md: ^1.2.6
 
