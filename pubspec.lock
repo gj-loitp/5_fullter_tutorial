@@ -77,21 +77,21 @@ packages:
       name: basic_utils
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "5.3.0"
+    version: "5.4.0"
   battery_plus:
     dependency: "direct main"
     description:
       name: battery_plus
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.0.0"
+    version: "3.0.2"
   battery_plus_platform_interface:
     dependency: transitive
     description:
       name: battery_plus_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.2.1"
+    version: "1.2.2"
   bloc:
     dependency: "direct main"
     description:

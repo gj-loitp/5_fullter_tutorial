@@ -24,9 +24,9 @@ dependencies:
   #https://pub.dev/packages/badges
   badges: ^2.0.3
   #https://pub.dev/packages/battery_plus
-  battery_plus: ^3.0.0
+  battery_plus: ^3.0.2
   #https://pub.dev/packages/basic_utils
-  basic_utils: ^5.3.0
+  basic_utils: ^5.4.0
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
   #https://pub.dev/packages/blur
