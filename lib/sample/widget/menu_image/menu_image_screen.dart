@@ -3,11 +3,12 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'avatar_glow_screen.dart';
-import 'cache_network_image_screen.dart';
-import 'gradient_screen.dart';
+import 'avatar_glow/avatar_glow_screen.dart';
+import 'cache_network_image/cache_network_image_screen.dart';
+import 'gradient/gradient_screen.dart';
 import 'image_screen.dart';
 import 'image_view_360/image_view_360_screen.dart';
+import 'kenburn/kenburns_nullsafety_screen.dart';
 import 'photo_view/photo_view_screen.dart';
 
 /**
@@ -35,12 +36,6 @@ class MenuImageScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             UIUtils.getButton(
-              "ImageView360Screen",
-              () {
-                Get.to(ImageView360Screen());
-              },
-            ),
-            UIUtils.getButton(
               "AvatarGlowScreen",
               () {
                 Get.to(AvatarGlowScreen());
@@ -56,6 +51,18 @@ class MenuImageScreen extends StatelessWidget {
               "GradientScreen",
               () {
                 Get.to(GradientScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "ImageView360Screen",
+              () {
+                Get.to(ImageView360Screen());
+              },
+            ),
+            UIUtils.getButton(
+              "kenburns_nullsafety",
+              () {
+                Get.to(KenburnsNullSafetyScreen());
               },
             ),
             UIUtils.getButton(
