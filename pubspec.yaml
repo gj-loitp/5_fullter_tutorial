@@ -79,7 +79,7 @@ dependencies:
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
   #https://pub:dev/packages/file_picker
-  file_picker: ^5.2.1
+  file_picker: ^5.2.2
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.55.2
   #https://pub.dev/packages/floating_bubbles
