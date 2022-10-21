@@ -120,8 +120,73 @@ class _ShapeOfViewScreenState extends BaseStatefulState<ShapeOfViewScreen> {
               ),
             ],
           ),
+          ShapeOfView(
+              shape: CircleShape(
+                borderColor: Colors.white, //optional
+                borderWidth: 2, //optional
+              ),
+              child: child()),
+          ShapeOfView(
+            shape: RoundRectShape(
+              borderRadius: BorderRadius.circular(12),
+              borderColor: Colors.white, //optional
+              borderWidth: 2, //optional
+            ),
+            child: child(),
+          ),
+          ShapeOfView(
+            shape: CutCornerShape(
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: child(),
+          ),
+          ShapeOfView(
+            shape: ArcShape(
+                direction: ArcDirection.Outside,
+                height: 20,
+                position: ArcPosition.Bottom),
+            child: child(),
+          ),
+          ShapeOfView(
+            elevation: 4,
+            height: 300,
+            shape: DiagonalShape(
+                position: DiagonalPosition.Bottom,
+                direction: DiagonalDirection.Right,
+                angle: DiagonalAngle.deg(angle: 10)),
+            child: child(),
+          ),
+          ShapeOfView(
+            shape: TriangleShape(
+                percentBottom: 0.5, percentLeft: 0, percentRight: 0),
+            child: child(),
+          ),
+          ShapeOfView(
+            shape: BubbleShape(
+                position: BubblePosition.Bottom,
+                arrowPositionPercent: 0.5,
+                borderRadius: 20,
+                arrowHeight: 10,
+                arrowWidth: 10),
+            child: child(),
+          ),
+          ShapeOfView(
+            shape: StarShape(noOfPoints: 5),
+            child: child(),
+          ),
+          ShapeOfView(
+            shape: PolygonShape(numberOfSides: 9),
+            child: child(),
+          ),
         ],
       ),
+    );
+  }
+
+  Widget child() {
+    return Image.asset(
+      "assets/images/loitp.JPG",
+      fit: BoxFit.cover,
     );
   }
 }
