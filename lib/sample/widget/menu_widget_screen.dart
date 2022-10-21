@@ -54,7 +54,7 @@ import 'layout/menu_layout_screen.dart';
 import 'list/MenuListScreen.dart';
 import 'md2TabIndicator/Md2TabIndicatorScreen.dart';
 import 'menuHorizontalDataTable/MenuHorizontalDataTableScreen.dart';
-import 'menuImage/MenuImageScreen.dart';
+import 'menu_image/menu_image_screen.dart';
 import 'modalBottomSheet/model_bottom_sheet_screen.dart';
 import 'progress/menu_progress_screen.dart';
 import 'shape_of_view/shape_of_view_screen.dart';
@@ -114,13 +114,13 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "blur",
-                  () {
+              () {
                 Get.to(() => BlurScreen());
               },
             ),
             UIUtils.getButton(
               "bottom_bar_with_sheet",
-                  () {
+              () {
                 Get.to(() => BottomBarWithSheetScreen());
               },
             ),
@@ -150,7 +150,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "calendar_view",
-                  () {
+              () {
                 Get.to(() => CalendarViewScreen());
               },
             ),
@@ -378,7 +378,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "shape_of_view",
-                  () {
+              () {
                 Get.to(ShapeOfViewScreen());
               },
             ),
@@ -456,7 +456,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "TooltipScreen",
-                  () {
+              () {
                 Get.to(() => TooltipScreen());
               },
             ),

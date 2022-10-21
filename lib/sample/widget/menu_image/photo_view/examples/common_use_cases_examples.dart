@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:photo_view/photo_view.dart';
 
-import '../common/CommonExampleWrapper.dart';
-import '../common/ExampleButton.dart';
+import '../common/common_example_wrapper.dart';
+import '../common/example_button.dart';
 
 /**
  * Created by Loitp on 08,August,2022

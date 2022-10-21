@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:photo_view/photo_view.dart';
 import 'package:photo_view/photo_view_gallery.dart';
 
-import 'GalleryExampleItem.dart';
+import 'gallery_example_item.dart';
 
 /**
  * Created by Loitp on 08,August,2022

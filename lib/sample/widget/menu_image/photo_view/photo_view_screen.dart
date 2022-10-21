@@ -3,15 +3,15 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'examples/CommonUseCasesExamples.dart';
-import 'examples/ControllerExample.dart';
-import 'examples/CustomChildExamples.dart';
-import 'examples/DialogExample.dart';
-import 'examples/HeroExample.dart';
-import 'examples/InlineExamples.dart';
-import 'examples/NetworkImages.dart';
-import 'examples/RotationExamples.dart';
-import 'examples/gallery/GalleryExample.dart';
+import 'examples/common_use_cases_examples.dart';
+import 'examples/controller_example.dart';
+import 'examples/custom_child_examples.dart';
+import 'examples/dialog_example.dart';
+import 'examples/gallery/gallery_example.dart';
+import 'examples/hero_example.dart';
+import 'examples/inline_examples.dart';
+import 'examples/network_images.dart';
+import 'examples/rotation_examples.dart';
 
 /**
  * Created by Loitp on 08,August,2022
