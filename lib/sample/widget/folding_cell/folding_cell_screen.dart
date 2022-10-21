@@ -44,7 +44,19 @@ class _FoldingCellScreenState extends BaseStatefulState<FoldingCellScreen> {
               "https://pub.dev/packages/folding_cell");
         },
       ),
-      body: FoldingCellSimpleDemo(),
+      body: ListView(
+        // padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
+        physics: BouncingScrollPhysics(),
+        children: [
+          FoldingCellSimpleDemo(),
+          FoldingCellMultipleCardsDemo(),
+          UIUtils.getButton("FoldingCellListViewDemo", () {
+            Get.to(
+              FoldingCellListViewDemo(),
+            );
+          }),
+        ],
+      ),
     );
   }
 }
