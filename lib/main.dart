@@ -23,6 +23,7 @@ import 'splash_screen.dart';
  */
 
 //TODO dark mode
+//TODO lan dau mo app check valid google neu ko co connection se bi treo app
 
 //done
 //rate app, more app
