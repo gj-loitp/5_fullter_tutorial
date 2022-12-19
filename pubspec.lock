@@ -544,7 +544,7 @@ packages:
       name: flutter_native_splash
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.11"
+    version: "2.2.16"
   flutter_native_timezone:
     dependency: "direct main"
     description:
@@ -586,7 +586,7 @@ packages:
       name: flutter_simple_treeview
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.0.1"
+    version: "3.0.2"
   flutter_slidable:
     dependency: "direct main"
     description:
@@ -708,7 +708,7 @@ packages:
       name: html
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.15.0"
+    version: "0.15.1"
   html2md:
     dependency: "direct main"
     description:
@@ -736,7 +736,7 @@ packages:
       name: image
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "3.2.0"
+    version: "3.2.2"
   image_gallery_saver:
     dependency: "direct main"
     description:
