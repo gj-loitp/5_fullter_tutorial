@@ -61,7 +61,12 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
         var isFullData = _cMenu.isFullData.value;
         return ListView(
           physics: BouncingScrollPhysics(),
-          padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
+          padding: EdgeInsets.fromLTRB(
+            DimenConstants.marginPaddingMedium,
+            DimenConstants.marginPaddingMedium,
+            DimenConstants.marginPaddingMedium,
+            DimenConstants.marginPaddingLarge,
+          ),
           children: [
             UIUtils.getButton(
               "Animation",
