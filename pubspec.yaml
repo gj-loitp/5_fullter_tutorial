@@ -113,7 +113,7 @@ dependencies:
   #https://pub.dev/packages/flutter_speed_dial
   flutter_speed_dial: ^6.2.0
   #https://pub.dev/packages/flutter_sticky_header
-  flutter_sticky_header: ^0.6.4
+  flutter_sticky_header: ^0.6.5
   #https://pub.dev/packages/flutter_screen_lock
   flutter_screen_lock: ^5.0.5
 
