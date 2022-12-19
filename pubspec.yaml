@@ -65,7 +65,7 @@ dependencies:
   #https://pub.dev/packages/dio
   dio: ^4.0.6
   #https://pub.dev/packages/dotted_border
-  dotted_border: ^2.0.0+2
+  dotted_border: ^2.0.0+3
   #https://pub.dev/packages/draggable_scrollbar
   draggable_scrollbar: ^0.1.0
 
@@ -81,7 +81,7 @@ dependencies:
   #https://pub.dev/packages/folding_cell
   folding_cell: ^1.0.2
   #https://pub:dev/packages/file_picker
-  file_picker: ^5.2.2
+  file_picker: ^5.2.4
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.55.2
   #https://pub.dev/packages/floating_bubbles
