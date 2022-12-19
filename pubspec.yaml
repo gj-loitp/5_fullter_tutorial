@@ -26,7 +26,7 @@ dependencies:
   #https://pub.dev/packages/battery_plus
   battery_plus: ^3.0.2
   #https://pub.dev/packages/basic_utils
-  basic_utils: ^5.4.0
+  basic_utils: ^5.4.2
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
   #https://pub.dev/packages/blur
@@ -34,15 +34,15 @@ dependencies:
   bloc: ^8.1.0
 
   #https://pub.dev/packages/cached_network_image
-  cached_network_image: ^3.2.2
+  cached_network_image: ^3.2.3
   #https://pub.dev/packages/calendar_appbar
   calendar_appbar: ^0.0.6
   #https://pub.dev/packages/calendar_view
-  calendar_view: ^1.0.0
+  calendar_view: ^1.0.1
   #https://pub.dev/packages/connectivity_plus
   connectivity_plus: ^2.3.9
   #https://pub.dev/packages/country_picker
-  country_picker: ^2.0.16
+  country_picker: ^2.0.19
   #https://pub.dev/packages/clay_containers
   clay_containers: ^0.3.2
   #https://pub.dev/packages/cupertino_icons
