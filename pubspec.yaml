@@ -40,7 +40,7 @@ dependencies:
   #https://pub.dev/packages/calendar_view
   calendar_view: ^1.0.1
   #https://pub.dev/packages/connectivity_plus
-  connectivity_plus: ^2.3.9
+  connectivity_plus: ^2.3.9 #migrate later
   #https://pub.dev/packages/country_picker
   country_picker: ^2.0.19
   #https://pub.dev/packages/clay_containers
@@ -93,7 +93,7 @@ dependencies:
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_local_notifications
-  flutter_local_notifications: ^9.9.1
+  flutter_local_notifications: ^9.9.1 #migrate later
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
