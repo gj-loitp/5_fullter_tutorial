@@ -143,12 +143,12 @@ dependencies:
   modal_bottom_sheet: ^2.1.2 #https://pub.dev/packages/modal_bottom_sheet
 
   #https://pub.dev/packages/network_info_plus
-  network_info_plus: ^2.3.2
+  network_info_plus: ^2.3.2 #migrate later
   #https://pub.dev/packages/numberpicker
   numberpicker: ^2.1.1
 
   #https://pub.dev/packages/one_target_mobile_sdk
-  one_target_mobile_sdk: ^0.0.17
+  one_target_mobile_sdk: ^0.0.28
   #https://pub.dev/packages/overflow_view
   overflow_view: ^0.3.1
 
