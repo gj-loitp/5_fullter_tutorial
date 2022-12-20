@@ -189,9 +189,9 @@ dependencies:
   #https://pub.dev/packages/image_picker
   image_picker: ^0.8.6
   #https://pub.dev/packages/in_app_review
-  in_app_review: ^2.0.4
+  in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
-  intl: ^0.17.0
+  intl: ^0.17.0 #migate later
 
   #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.1.2+2
@@ -229,7 +229,8 @@ dependencies:
   shape_of_view_null_safe: ^2.0.0
 
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
-  timeago: ^3.3.0 #https://pub.dev/packages/timeago
+  #https://pub.dev/packages/timeago
+  timeago: ^3.3.0
 
   #https://pub.dev/packages/wakelock
   wakelock: ^0.6.2
