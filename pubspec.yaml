@@ -163,7 +163,7 @@ dependencies:
   qr_code_scanner: ^1.0.1
 
   #https://pub.dev/packages/share_plus
-  share_plus: ^4.5.3
+  share_plus: ^6.3.0
   #https://pub.dev/packages/simple_url_preview
   simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
