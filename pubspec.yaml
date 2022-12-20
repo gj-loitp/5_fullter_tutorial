@@ -130,7 +130,7 @@ dependencies:
   html2md: ^1.2.6
 
   #https://pub.dev/packages/local_auth
-  local_auth: ^1.1.11
+  local_auth: ^1.1.11 #migate later
   #https://pub.dev/packages/logger
   logger: ^1.1.0
   #https://pub.dev/packages/lazy_load_scrollview
@@ -138,7 +138,7 @@ dependencies:
   #https://pub.dev/packages/like_button
   like_button: ^2.0.5
   #https://pub.dev/packages/lottie
-  lottie: ^1.4.3
+  lottie: ^2.1.0
 
   modal_bottom_sheet: ^2.1.2 #https://pub.dev/packages/modal_bottom_sheet
 
