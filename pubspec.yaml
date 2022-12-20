@@ -194,7 +194,7 @@ dependencies:
   intl: ^0.17.0 #migate later
 
   #https://pub.dev/packages/horizontal_data_table
-  horizontal_data_table: ^4.1.2+2
+  horizontal_data_table: ^4.1.4
   #https://pub.dev/packages/http
   http: ^0.13.5
 

@@ -694,7 +694,7 @@ packages:
       name: horizontal_data_table
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.1.2+2"
+    version: "4.1.4"
   horizontal_picker:
     dependency: "direct main"
     description:
@@ -1240,7 +1240,7 @@ packages:
       name: provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "6.0.3"
+    version: "6.0.5"
   pull_to_refresh:
     dependency: "direct main"
     description:
