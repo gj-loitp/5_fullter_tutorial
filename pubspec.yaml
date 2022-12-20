@@ -202,12 +202,12 @@ dependencies:
   kenburns_nullsafety: ^1.0.0
 
   #https://pub.dev/packages/video_player
-  video_player: ^2.4.7
+  video_player: ^2.4.10
 
   #https://pub.dev/packages/package_info_plus
   package_info_plus: ^2.0.0
   #https://pub.dev/packages/panara_dialogs
-  panara_dialogs: ^0.1.2
+  panara_dialogs: ^0.1.4
   #https://pub.dev/packages/path_provider
   path_provider: ^2.0.11
   #https://pub.dev/packages/percent_indicator

@@ -1058,7 +1058,7 @@ packages:
       name: panara_dialogs
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.1.2"
+    version: "0.1.4"
   path:
     dependency: transitive
     description:
@@ -1609,7 +1609,7 @@ packages:
       name: video_player
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.4.7"
+    version: "2.4.10"
   video_player_android:
     dependency: transitive
     description:
