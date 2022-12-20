@@ -213,7 +213,7 @@ dependencies:
   #https://pub.dev/packages/percent_indicator
   percent_indicator: ^4.2.2
   #https://pub.dev/packages/permission_handler
-  permission_handler: ^10.1.0
+  permission_handler: ^10.2.0
   #https://pub.dev/packages/photo_view
   photo_view: ^0.14.0
   #https://pub.dev/packages/pin_code_fields
@@ -247,7 +247,7 @@ dependencies:
   #https://pub.dev/packages/flame
   flame: 1.0.0-releasecandidate.15
   #https://pub.dev/packages/tiledjsonreader
-  tiledjsonreader: ^1.2.5
+  tiledjsonreader: ^1.2.6
 
 dev_dependencies:
   flutter_test:
