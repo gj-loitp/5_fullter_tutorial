@@ -237,7 +237,7 @@ dependencies:
   #https://pub.dev/packages/wave
   wave: ^0.2.2
   #https://pub.dev/packages/webview_flutter
-  webview_flutter: ^3.0.4
+  webview_flutter: ^3.0.4 #migate later
   #https://pub.dev/packages/web_scraper
   web_scraper: ^0.1.4
 
