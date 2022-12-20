@@ -180,9 +180,9 @@ dependencies:
   get: ^4.6.5
 
   #https://pub.dev/packages/restart_app
-  restart_app: ^1.1.0+1
+  restart_app: ^1.1.1+1
   #https://pub.dev/packages/rxdart
-  rxdart: ^0.27.5
+  rxdart: ^0.27.7
 
   #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^1.7.1
