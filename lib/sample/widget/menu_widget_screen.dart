@@ -316,6 +316,8 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => HorizontalCalendarScreen());
               },
+              description:
+                  "A flutter plugin to show horizontal view of calendar with date picker.",
             ),
             UIUtils.getButton(
               "HorizontalCardPagerScreen",
@@ -380,7 +382,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "OverflowScreen",
+              "overflow_view",
               () {
                 Get.to(() => OverflowScreen());
               },
@@ -404,12 +406,16 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => ScrollableTableViewScreen());
               },
+              description:
+                  "This is a multi axis scrollable data table, that allows you to scroll on both the vertical and horizontal axis, with the header remaining static on the vertical axis.",
             ),
             UIUtils.getButton(
               "shape_of_view",
               () {
                 Get.to(ShapeOfViewScreen());
               },
+              description:
+                  "Give a custom shape to any flutter widget, Material Design 2 ready",
             ),
             UIUtils.getButton(
               "ShimmerScreen",
@@ -418,10 +424,12 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "SimpleUrlPreviewScreen",
+              "simple_url_preview",
               () {
                 Get.to(SimpleUrlPreviewScreen());
               },
+              description:
+                  "Flutter package to show url preview. Custamizable height, background and text styles, as well as lines.",
             ),
             UIUtils.getButton(
               "MenuSliderScreen",
@@ -498,7 +506,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "WaveScreen",
+              "wave",
               () {
                 Get.to(() => WaveScreen());
               },
