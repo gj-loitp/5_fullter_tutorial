@@ -1,5 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/progress/progress_indicators/progress_indicators_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -31,6 +32,11 @@ class MenuProgressScreen extends StatelessWidget {
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         physics: BouncingScrollPhysics(),
         children: [
+          UIUtils.getButton("liquid_progress_indicator", () {
+            Get.to(MenuLiquidProgressIndicatorScreen());
+          },
+              description:
+                  "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
           UIUtils.getButton(
             "percent_indicator",
             () {
@@ -38,6 +44,14 @@ class MenuProgressScreen extends StatelessWidget {
             },
             description:
                 "Library that allows you to display progress widgets based on percentage, can be Circular or Linear, you can also customize it to your needs.",
+          ),
+          UIUtils.getButton(
+            "progress_indicators",
+            () {
+              Get.to(ProgressIndicatorsScreen());
+            },
+            description:
+                "A handful collection of some cool progress indicators and text animators.",
           ),
           UIUtils.getButton(
             "CircularProgressIndicatorApp",
@@ -51,11 +65,6 @@ class MenuProgressScreen extends StatelessWidget {
               Get.to(LinearProgressIndicatorApp());
             },
           ),
-          UIUtils.getButton("liquid_progress_indicator", () {
-            Get.to(MenuLiquidProgressIndicatorScreen());
-          },
-              description:
-                  "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
           UIUtils.getButton(
             "ProgressIndicatorScreen",
             () {
