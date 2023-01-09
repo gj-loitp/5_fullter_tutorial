@@ -83,7 +83,7 @@ class MenuWidgetScreen extends StatelessWidget {
     return Scaffold(
       appBar: UIUtils.getAppBar(
         "MenuWidgetScreen",
-        () {
+            () {
           Get.back();
         },
         null,
@@ -96,393 +96,396 @@ class MenuWidgetScreen extends StatelessWidget {
           children: [
             UIUtils.getButton(
               "animated_background",
-              () {
+                  () {
                 Get.to(() => AnimatedBackgroundScreen());
               },
             ),
             UIUtils.getButton(
               "SliverAppBarScreen",
-              () {
+                  () {
                 Get.to(() => SliverAppBarScreen());
               },
             ),
             UIUtils.getButton(
               "badges",
-              () {
+                  () {
                 Get.to(() => BadgesScreen());
               },
             ),
             UIUtils.getButton(
               "blur",
-              () {
+                  () {
                 Get.to(() => BlurScreen());
               },
             ),
             UIUtils.getButton(
               "MenuBottomBarScreen",
-              () {
+                  () {
                 Get.to(() => MenuBottomBarScreen());
               },
             ),
             UIUtils.getButton(
               "BottomSheetScreen",
-              () {
+                  () {
                 Get.to(() => BottomSheetScreen());
               },
             ),
             UIUtils.getButton(
               "MenuButtonScreen",
-              () {
+                  () {
                 Get.to(() => MenuButtonScreen());
               },
             ),
             UIUtils.getButton(
               "calendar_appbar",
-              () {
+                  () {
                 Get.to(() => CalendarAppbarScreen());
               },
             ),
             UIUtils.getButton(
               "calendar_view",
-              () {
+                  () {
                 Get.to(() => CalendarViewScreen());
               },
             ),
             UIUtils.getButton(
               "CardScreen",
-              () {
+                  () {
                 Get.to(() => CardScreen());
               },
             ),
             UIUtils.getButton(
               "ChartScreen",
-              () {
+                  () {
                 Get.to(() => ChartScreen());
               },
             ),
             UIUtils.getButton(
               "CheckBoxScreen",
-              () {
+                  () {
                 Get.to(() => CheckBoxScreen());
               },
             ),
             UIUtils.getButton(
               "clay_containers",
-              () {
+                  () {
                 Get.to(() => ClayContainersScreen());
               },
             ),
             UIUtils.getButton(
               "RadioButtonScreen",
-              () {
+                  () {
                 Get.to(() => RadioButtonScreen());
               },
             ),
             UIUtils.getButton(
               "RadioButtonScreen2",
-              () {
+                  () {
                 Get.to(() => RadioButtonScreen2());
               },
             ),
             UIUtils.getButton(
               "MenuCupertinoScreen",
-              () {
+                  () {
                 Get.to(() => MenuCupertinoScreen());
               },
             ),
             UIUtils.getButton(
               "DataTableScreen",
-              () {
+                  () {
                 Get.to(() => DataTableScreen());
               },
             ),
             UIUtils.getButton(
               "d_chart",
-              () {
+                  () {
                 Get.to(() => DChartScreen());
               },
             ),
             UIUtils.getButton(
               "DelayedDisplayScreen",
-              () {
+                  () {
                 Get.to(() => DelayedDisplayScreen());
               },
             ),
             UIUtils.getButton(
               "MenuDialogScreen",
-              () {
+                  () {
                 Get.to(() => MenuDialogScreen());
               },
             ),
             UIUtils.getButton(
               "DottedBorderScreen",
-              () {
+                  () {
                 Get.to(() => DottedBorderScreen());
               },
             ),
             UIUtils.getButton(
               "MenuDrawerScreen",
-              () {
+                  () {
                 Get.to(() => MenuDrawerScreen());
               },
             ),
             UIUtils.getButton(
               "EasyLoadingScreen",
-              () {
+                  () {
                 Get.to(() => EasyLoadingScreen());
               },
             ),
             UIUtils.getButton(
               "MenuEditTextScreen",
-              () {
+                  () {
                 Get.to(() => MenuEditTextScreen());
               },
             ),
             UIUtils.getButton(
               "ExpandedScreen",
-              () {
+                  () {
                 Get.to(() => ExpandedScreen());
               },
             ),
             UIUtils.getButton(
               "MenuExpansionScreen",
-              () {
+                  () {
                 Get.to(() => MenuExpansionScreen());
               },
             ),
             UIUtils.getButton(
               "floating_bubbles",
-              () {
+                  () {
                 Get.to(() => FloatingBubblesScreen());
               },
             ),
             UIUtils.getButton(
               "flutter_simple_treeview",
-              () {
+                  () {
                 Get.to(() => FlutterSimpleTreeViewScreen());
               },
             ),
             UIUtils.getButton(
               "folding_cell",
-              () {
+                  () {
                 Get.to(() => FoldingCellScreen());
               },
             ),
             UIUtils.getButton(
               "FlutterReactionButtonScreen",
-              () {
+                  () {
                 Get.to(() => FlutterReactionButtonScreen());
               },
             ),
             UIUtils.getButton(
               "GestureScreen",
-              () {
+                  () {
                 Get.to(() => GestureScreen());
               },
             ),
             UIUtils.getButton(
               "MenuGridScreen",
-              () {
+                  () {
                 Get.to(() => MenuGridScreen());
               },
             ),
             UIUtils.getButton(
               "horizontal_calendar",
-              () {
+                  () {
                 Get.to(() => HorizontalCalendarScreen());
               },
             ),
             UIUtils.getButton(
               "HorizontalCardPagerScreen",
-              () {
+                  () {
                 Get.to(() => HorizontalCardPagerScreen());
               },
             ),
             UIUtils.getButton(
               "InAppReviewScreen",
-              () {
+                  () {
                 Get.to(() => InAppReviewScreen());
               },
             ),
             UIUtils.getButton(
               "InkwellScreen",
-              () {
+                  () {
                 Get.to(() => InkwellScreen());
               },
             ),
             UIUtils.getButton(
               "UsingInteractiveViewerScreen",
-              () {
+                  () {
                 Get.to(() => UsingInteractiveViewerScreen());
               },
             ),
             UIUtils.getButton(
               "MenuLayoutScreen",
-              () {
+                  () {
                 Get.to(() => MenuLayoutScreen());
               },
             ),
             UIUtils.getButton(
               "MenuListScreen",
-              () {
+                  () {
                 Get.to(() => MenuListScreen());
               },
             ),
             UIUtils.getButton(
               "MD2TabIndicatorScreen",
-              () {
+                  () {
                 Get.to(() => MD2TabIndicatorScreen());
               },
             ),
             UIUtils.getButton(
               "MenuHorizontalDataTableScreen",
-              () {
+                  () {
                 Get.to(() => MenuHorizontalDataTableScreen());
               },
             ),
             UIUtils.getButton(
               "MenuImageScreen",
-              () {
+                  () {
                 Get.to(() => MenuImageScreen());
               },
             ),
             UIUtils.getButton(
               "ModelBottomSheetScreen",
-              () {
+                  () {
                 Get.to(() => ModelBottomSheetScreen());
               },
             ),
             UIUtils.getButton(
               "OverflowScreen",
-              () {
+                  () {
                 Get.to(() => OverflowScreen());
               },
             ),
             UIUtils.getButton(
               "MenuPickerScreen",
-              () {
+                  () {
                 Get.to(() => MenuPickerScreen());
               },
             ),
             UIUtils.getButton(
               "MenuProgressScreen",
-              () {
+                  () {
                 Get.to(() => MenuProgressScreen());
               },
             ),
             UIUtils.getButton(
               "scrollable_table_view",
-              () {
+                  () {
                 Get.to(() => ScrollableTableViewScreen());
               },
             ),
             UIUtils.getButton(
               "shape_of_view",
-              () {
+                  () {
                 Get.to(ShapeOfViewScreen());
               },
             ),
             UIUtils.getButton(
               "ShimmerScreen",
-              () {
+                  () {
                 Get.to(ShimmerScreen());
               },
             ),
             UIUtils.getButton(
               "SimpleUrlPreviewScreen",
-              () {
+                  () {
                 Get.to(SimpleUrlPreviewScreen());
               },
             ),
             UIUtils.getButton(
               "MenuSliderScreen",
-              () {
+                  () {
                 Get.to(MenuSliderScreen());
               },
             ),
             UIUtils.getButton(
               "StackScreen",
-              () {
+                  () {
                 Get.to(StackScreen());
               },
             ),
             UIUtils.getButton(
               "StatelessWidgetDemoScreen",
-              () {
+                  () {
                 Get.to(StatelessWidgetDemoScreen());
               },
             ),
             UIUtils.getButton(
               "StatefulWidgetDemoScreen",
-              () {
+                  () {
                 Get.to(StatefulWidgetDemoScreen());
               },
             ),
             UIUtils.getButton(
               "StepperScreen",
-              () {
+                  () {
                 Get.to(() => StepperScreen());
               },
             ),
             UIUtils.getButton(
               "SwitchScreen",
-              () {
+                  () {
                 Get.to(() => SwitchScreen());
               },
             ),
             UIUtils.getButton(
               "TabPageSelectorScreen",
-              () {
+                  () {
                 Get.to(() => TabPageSelectorScreen());
               },
             ),
             UIUtils.getButton(
               "TableScreen",
-              () {
+                  () {
                 Get.to(() => TableScreen());
               },
             ),
             UIUtils.getButton(
               "MenuTextScreen",
-              () {
+                  () {
                 Get.to(() => MenuTextScreen());
               },
             ),
             UIUtils.getButton(
               "time_planner",
-              () {
+                  () {
                 Get.to(() => TimePlannerScreen());
               },
             ),
             UIUtils.getButton(
               "TooltipScreen",
-              () {
+                  () {
                 Get.to(() => TooltipScreen());
               },
             ),
             UIUtils.getButton(
               "VideoPlayerScreen",
-              () {
+                  () {
                 Get.to(() => VideoPlayerScreen());
               },
             ),
             UIUtils.getButton(
-              "WaveScreen",
-              () {
-                Get.to(() => WaveScreen());
-              },
+                "WaveScreen",
+                    () {
+                  Get.to(() => WaveScreen());
+                },
+                description: "Widget for displaying waves with custom color, duration, floating and blur effects.",
             ),
             UIUtils.getButton(
               "MenuWebviewScreen",
-              () {
+                  () {
                 Get.to(() => MenuWebviewScreen());
               },
             ),
             UIUtils.getButton(
               "youtube_player_flutter",
-              () {
+                  () {
                 Get.to(() => YoutubePlayerFlutterScreen());
               },
+              description:
+              "Flutter plugin for playing or streaming inline YouTube videos using the official iFrame player API. This plugin supports both Android and iOS.",
             ),
           ],
         ),
