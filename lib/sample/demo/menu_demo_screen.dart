@@ -219,12 +219,16 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(Html2MdScreen());
             },
+            description:
+                "A library for converting HTML to Markdown. It supports CommonMark, simple table and custom converting rules.",
           ),
           UIUtils.getButton(
             "image_gallery_saver",
             () {
               Get.to(ImageGallerySaverScreen());
             },
+            description:
+                "A new flutter plugin project for save image to gallery, iOS need to add the following keys to your Info.plist file.",
           ),
           UIUtils.getButton(
             "Inherited",
@@ -243,12 +247,15 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(LocalAuthScreen());
             },
+            description:
+                "Flutter plugin for Android and iOS devices to allow local authentication via fingerprint, touch ID, face ID, passcode, pin, or pattern.",
           ),
           UIUtils.getButton(
             "one_target_mobile_sdk",
             () {
               Get.to(OneTargetMobileSDKScreen());
             },
+            description: "G1 tracking's plugin",
           ),
           UIUtils.getButton(
             "package_info_plus",
