@@ -4,6 +4,8 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../../lib/util/url_launcher_utils.dart';
+
 /**
  * Created by Loitp on 08,August,2022
  * Galaxy One company,
@@ -16,11 +18,14 @@ class CacheNetworkImageScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "CacheNetworkImageScreen",
+        "cached_network_image",
         () {
           Get.back();
         },
-        null,
+        () {
+          UrlLauncherUtils.launchInWebViewWithJavaScript(
+              "https://pub.dev/packages/cached_network_image");
+        },
       ),
       body: _buildWidget(),
     );
