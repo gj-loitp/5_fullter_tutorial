@@ -274,18 +274,24 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => FloatingBubblesScreen());
               },
+              description:
+                  "A Flutter Package for adding Floating bubbles on the Foreground to any Flutter widget.",
             ),
             UIUtils.getButton(
               "flutter_simple_treeview",
               () {
                 Get.to(() => FlutterSimpleTreeViewScreen());
               },
+              description:
+                  "A widget, that visualises a tree structure, where a node can be any widget.",
             ),
             UIUtils.getButton(
               "folding_cell",
               () {
                 Get.to(() => FoldingCellScreen());
               },
+              description:
+                  "Simple folding cell widget, pass frontWidget and innerWidget to fold and unfold.",
             ),
             UIUtils.getButton(
               "FlutterReactionButtonScreen",
