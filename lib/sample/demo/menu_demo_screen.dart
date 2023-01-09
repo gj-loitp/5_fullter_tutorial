@@ -237,6 +237,8 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(() => QrCodeScannerScreen());
             },
+            description:
+                "QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS.",
           ),
           UIUtils.getButton(
             "restart_app",
