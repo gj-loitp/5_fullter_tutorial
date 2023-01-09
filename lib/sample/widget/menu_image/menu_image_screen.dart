@@ -36,10 +36,12 @@ class MenuImageScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             UIUtils.getButton(
-              "AvatarGlowScreen",
+              "avatar_glow",
               () {
                 Get.to(AvatarGlowScreen());
               },
+              description:
+                  "A Flutter package providing a Avatar Glow Widget with cool background glowing animation.",
             ),
             UIUtils.getButton(
               "CacheNetworkImageScreen +++",
