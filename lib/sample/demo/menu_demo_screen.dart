@@ -338,7 +338,8 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(TimeAgoScreen());
             },
-            description: "A library useful for creating fuzzy timestamps. (e.g. '15 minutes ago')",
+            description:
+                "A library useful for creating fuzzy timestamps. (e.g. '15 minutes ago')",
           ),
           UIUtils.getButton(
             "Tip calculator",
@@ -357,12 +358,16 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(UrlLauncherScreen());
             },
+            description:
+                "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
           ),
           UIUtils.getButton(
             "wakelock",
             () {
               Get.to(WakeLockScreen());
             },
+            description:
+                "Plugin that allows you to keep the device screen awake, i.e. prevent the screen from sleeping on Android, iOS, macOS, Windows, and web.",
           ),
         ],
       ),
