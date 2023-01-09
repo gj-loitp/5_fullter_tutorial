@@ -9,6 +9,7 @@ import 'gradient/gradient_screen.dart';
 import 'image_screen.dart';
 import 'image_view_360/image_view_360_screen.dart';
 import 'kenburn/kenburns_nullsafety_screen.dart';
+import 'octo_image/octo_image_screen.dart';
 import 'photo_view/photo_view_screen.dart';
 
 /**
@@ -70,6 +71,14 @@ class MenuImageScreen extends StatelessWidget {
             },
             description:
                 "The migration of the kenburns effect plugin to null-safety. The Ken Burns effect is a type of panning and zooming effect used in video production from still imagery.",
+          ),
+          UIUtils.getButton(
+            "octo_image",
+            () {
+              Get.to(OctoImageScreen());
+            },
+            description:
+                "A multifunctional Flutter image widget. Supports placeholders, error widgets and image transformers with fading",
           ),
           UIUtils.getButton(
             "ImageScreen",

@@ -1011,7 +1011,7 @@ packages:
     source: hosted
     version: "2.1.1"
   octo_image:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: octo_image
       url: "https://pub.dartlang.org"
