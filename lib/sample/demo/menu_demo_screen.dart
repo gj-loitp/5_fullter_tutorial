@@ -262,12 +262,16 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(() => PackageInforPlusScreen());
             },
+            description:
+                "Flutter plugin for querying information about the application package, such as CFBundleVersion on iOS or versionCode on Android.",
           ),
           UIUtils.getButton(
             "permission_handler",
             () {
               Get.to(() => PermissionHandlerScreen());
             },
+            description:
+                "Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API to request and check permissions.",
           ),
           UIUtils.getButton(
             "qr_code_scanner",
@@ -298,12 +302,16 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(() => RestartAppScreen());
             },
+            description:
+                "A simple package that helps you to restart the whole android app with a single function call.",
           ),
           UIUtils.getButton(
             "share_plus",
             () {
               Get.to(() => SharePlusScreen());
             },
+            description:
+                "Flutter plugin for sharing content via the platform share UI, using the ACTION_SEND intent on Android and UIActivityViewController on iOS.",
           ),
           UIUtils.getButton(
             "Shop",
@@ -322,12 +330,15 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(TiengVietScreen());
             },
+            description:
+                "🇻🇳 Converts vietnamese language sign to unsigned easily. 😍 Give me a string vietnamese language, i will respond you string vietnamese unsigned. 👍",
           ),
           UIUtils.getButton(
             "timeago",
             () {
               Get.to(TimeAgoScreen());
             },
+            description: "A library useful for creating fuzzy timestamps. (e.g. '15 minutes ago')",
           ),
           UIUtils.getButton(
             "Tip calculator",
