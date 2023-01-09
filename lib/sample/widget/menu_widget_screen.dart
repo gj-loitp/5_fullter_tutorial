@@ -40,6 +40,7 @@ import 'editText/MenuEditTextScreen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
+import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
 import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
 import 'folding_cell/folding_cell_screen.dart';
@@ -292,6 +293,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "Simple folding cell widget, pass frontWidget and innerWidget to fold and unfold.",
+            ),
+            UIUtils.getButton(
+              "flutter_drawing_board",
+              () {
+                Get.to(() => FlutterDrawingBoardScreen());
+              },
+              description:
+                  "A Flutter package of drawing board, provides basic drawing tools, canvas operations, and image data acquisition.",
             ),
             UIUtils.getButton(
               "FlutterReactionButtonScreen",
