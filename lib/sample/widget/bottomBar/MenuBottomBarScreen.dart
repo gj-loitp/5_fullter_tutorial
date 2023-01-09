@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 
 import 'TabBar2/TabBarScreen2.dart';
 import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
+import 'curved_navigation_bar/curved_navigation_bar_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -45,6 +46,14 @@ class MenuBottomBarScreen extends StatelessWidget {
               () {
                 Get.to(BottomAppBarScreen());
               },
+            ),
+            UIUtils.getButton(
+              "curved_navigation_bar",
+              () {
+                Get.to(CurvedNavigationBarScreen());
+              },
+              description:
+                  "Stunning Animating Curved Shape Navigation Bar. Adjustable color, background color, animation curve, animation duration.",
             ),
             UIUtils.getButton(
               "TabBarScreen",
