@@ -49,6 +49,8 @@ dependencies:
   cupertino_icons: ^1.0.5
   #https://pub.dev/packages/crypto/install
   crypto: ^3.0.2
+  #https://pub.dev/packages/curved_navigation_bar
+  curved_navigation_bar: ^1.0.3
 
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0

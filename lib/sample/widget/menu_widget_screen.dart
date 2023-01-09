@@ -19,7 +19,6 @@ import 'animated_background/animated_background_screen.dart';
 import 'appbar/SliverAppBarScreen.dart';
 import 'badges/badges_screen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
-import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'calendar_appbar/calendar_appbar_screen.dart';
 import 'calendar_view/calendar_view_screen.dart';
@@ -117,12 +116,6 @@ class MenuWidgetScreen extends StatelessWidget {
               "blur",
               () {
                 Get.to(() => BlurScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "bottom_bar_with_sheet",
-              () {
-                Get.to(() => BottomBarWithSheetScreen());
               },
             ),
             UIUtils.getButton(
@@ -271,7 +264,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "folding_cell",
-                  () {
+              () {
                 Get.to(() => FoldingCellScreen());
               },
             ),

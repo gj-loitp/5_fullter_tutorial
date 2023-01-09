@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'TabBar2/TabBarScreen2.dart';
+import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -31,6 +32,14 @@ class MenuBottomBarScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            UIUtils.getButton(
+              "bottom_bar_with_sheet",
+              () {
+                Get.to(() => BottomBarWithSheetScreen());
+              },
+              description:
+                  "This package help you to create bottom bar with FloatingActionButton which buld BottomSheet widget on every page.",
+            ),
             UIUtils.getButton(
               "BottomAppBarScreen",
               () {
