@@ -15,6 +15,7 @@ import 'listRandomWords/RandomWordsScreen.dart';
 import 'listSearch/ListViewSearchScreen.dart';
 import 'listTitleWidget/ListTileScreen.dart';
 import 'loadMore/ListViewLoadMoreScreen.dart';
+import 'scroll_to_index/scroll_to_index_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -117,6 +118,14 @@ class MenuListScreen extends StatelessWidget {
             },
             description:
                 "a widget provided to the flutter scroll component drop-down refresh and pull up load.",
+          ),
+          UIUtils.getButton(
+            "scroll_to_index",
+            () {
+              Get.to(() => ScrollToIndexScreen());
+            },
+            description:
+                "Scroll to a specific child of any scrollable widget in Flutter",
           ),
         ],
       ),

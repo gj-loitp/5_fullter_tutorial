@@ -55,7 +55,7 @@ import 'in_app_review/in_app_review_screen.dart';
 import 'inkwell/inkwell_screen.dart';
 import 'interactive_viewer/using_interactive_viewer_screen.dart';
 import 'layout/menu_layout_screen.dart';
-import 'list/MenuListScreen.dart';
+import 'list/menu_list_screen.dart';
 import 'md2TabIndicator/Md2TabIndicatorScreen.dart';
 import 'menuHorizontalDataTable/MenuHorizontalDataTableScreen.dart';
 import 'menu_image/menu_image_screen.dart';
