@@ -4,6 +4,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/list/pullToRefresh
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'carousel_slider/carousel_slider_screen.dart';
 import 'contactPageScreen/ContactPageScreen.dart';
 import 'draggableScrollbarDemo/DraggableScrollbarDemoScreen.dart';
 import 'flutterStickyHeader/FlutterStickyHeaderScreen.dart';
@@ -33,86 +34,91 @@ class MenuListScreen extends StatelessWidget {
         },
         null,
       ),
-      body: SingleChildScrollView(
+      body: ListView(
         physics: BouncingScrollPhysics(),
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            UIUtils.getButton(
-              "ContactPageScreen",
-              () {
-                Get.to(() => ContactPageScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "DraggableScrollBarDemo",
-              () {
-                Get.to(() => DraggableScrollBarDemo());
-              },
-            ),
-            UIUtils.getButton(
-              "FlutterStickyHeaderScreen",
-              () {
-                Get.to(() => FlutterStickyHeaderScreen());
-              },
-              description:
-                  "Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.",
-            ),
-            UIUtils.getButton(
-              "HeaderBodyFooterScreen",
-              () {
-                Get.to(() => HeaderBodyFooterScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "RandomWordsScreen",
-              () {
-                Get.to(() => RandomWordsScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "ListViewSearchScreen",
-              () {
-                Get.to(() => ListViewSearchScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "lazy_load_scrollview",
-              () {
-                Get.to(() => LazyLoadScrollViewScreen());
-              },
-              description:
-                  "A wrapper for a ScrollView that will trigger a callback when the bottom of the page is reached",
-            ),
-            UIUtils.getButton(
-              "ListBodyScreen",
-              () {
-                Get.to(() => ListBodyScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "ListTileScreen",
-              () {
-                Get.to(() => ListTileScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "ListViewLoadMoreScreen",
-              () {
-                Get.to(() => ListViewLoadMoreScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "pull_to_refresh",
-              () {
-                Get.to(() => PullToRefreshScreen());
-              },
-              description:
-                  "a widget provided to the flutter scroll component drop-down refresh and pull up load.",
-            ),
-          ],
-        ),
+        children: [
+          UIUtils.getButton(
+            "carousel_slider",
+            () {
+              Get.to(() => CarouselSliderScreen());
+            },
+            description:
+                "A carousel slider widget, support infinite scroll and custom child widget.",
+          ),
+          UIUtils.getButton(
+            "ContactPageScreen",
+            () {
+              Get.to(() => ContactPageScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "DraggableScrollBarDemo",
+            () {
+              Get.to(() => DraggableScrollBarDemo());
+            },
+          ),
+          UIUtils.getButton(
+            "FlutterStickyHeaderScreen",
+            () {
+              Get.to(() => FlutterStickyHeaderScreen());
+            },
+            description:
+                "Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.",
+          ),
+          UIUtils.getButton(
+            "HeaderBodyFooterScreen",
+            () {
+              Get.to(() => HeaderBodyFooterScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "RandomWordsScreen",
+            () {
+              Get.to(() => RandomWordsScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "ListViewSearchScreen",
+            () {
+              Get.to(() => ListViewSearchScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "lazy_load_scrollview",
+            () {
+              Get.to(() => LazyLoadScrollViewScreen());
+            },
+            description:
+                "A wrapper for a ScrollView that will trigger a callback when the bottom of the page is reached",
+          ),
+          UIUtils.getButton(
+            "ListBodyScreen",
+            () {
+              Get.to(() => ListBodyScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "ListTileScreen",
+            () {
+              Get.to(() => ListTileScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "ListViewLoadMoreScreen",
+            () {
+              Get.to(() => ListViewLoadMoreScreen());
+            },
+          ),
+          UIUtils.getButton(
+            "pull_to_refresh",
+            () {
+              Get.to(() => PullToRefreshScreen());
+            },
+            description:
+                "a widget provided to the flutter scroll component drop-down refresh and pull up load.",
+          ),
+        ],
       ),
     );
   }
