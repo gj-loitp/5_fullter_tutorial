@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'switch_screen.dart';
+import 'toggle_switch/toggle_switch_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -30,6 +31,14 @@ class MenuSwitchScreen extends StatelessWidget {
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),
           children: [
+            UIUtils.getButton(
+              "toggle_switch",
+              () {
+                Get.to(() => ToggleSwitchScreen());
+              },
+              description:
+                  "Toggle Switch - A simple toggle switch widget. It can be fully customized with desired icons, width, colors, text, corner radius etc. It also maintains selection state.",
+            ),
             UIUtils.getButton(
               "SwitchScreen",
               () {
