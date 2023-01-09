@@ -6,6 +6,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/over
 import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/menu_picker_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/scrollable_table_view/scrollable_table_view_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/simple_url_preview/simple_url_preview_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/super_circle/super_circle_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/tab_page_selector/tab_page_selector_sreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/text_view/menu_text_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/video_player_screen.dart';
@@ -478,6 +479,14 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => StepperScreen());
               },
+            ),
+            UIUtils.getButton(
+              "super_circle",
+              () {
+                Get.to(() => SuperCircleScreen());
+              },
+              description:
+                  "Amazing animated colored circular widget , you can use it to your profile , loading screen or any widget you want.",
             ),
             UIUtils.getButton(
               "MenuSwitchScreen",

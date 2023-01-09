@@ -249,6 +249,8 @@ dependencies:
   scrollable_table_view: ^1.0.0
   #https://pub.dev/packages/shape_of_view_null_safe
   shape_of_view_null_safe: ^2.0.0
+  #https://pub.dev/packages/super_circle
+  super_circle: ^1.0.0
 
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
   #https://pub.dev/packages/timeago
