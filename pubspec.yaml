@@ -96,6 +96,8 @@ dependencies:
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_local_notifications
   flutter_local_notifications: ^9.9.1 #migrate later
+  #https://pub.dev/packages/flutter_linkify
+  flutter_linkify: ^5.0.2
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash

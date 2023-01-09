@@ -7,6 +7,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'flutter_linkify/flutter_linkify_screen.dart';
+
 /**
  * Created by Loitp on 08,August,2022
  * Galaxy One company,
@@ -31,6 +33,14 @@ class MenuTextScreen extends StatelessWidget {
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),
           children: [
+            UIUtils.getButton(
+              "flutter_linkify",
+              () {
+                Get.to(FlutterLinkifyScreen());
+              },
+              description:
+                  "Turns text URLs and emails into clickable inline links in text for Flutter.",
+            ),
             UIUtils.getButton(
               "MarqueeScreen",
               () {
