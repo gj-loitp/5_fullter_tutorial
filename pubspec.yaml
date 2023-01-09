@@ -189,6 +189,8 @@ dependencies:
   #https://pub.dev/packages/get
   get: ^4.6.5
 
+  #https://pub.dev/packages/remove_emoji
+  remove_emoji: ^0.0.7
   #https://pub.dev/packages/restart_app
   restart_app: ^1.1.1+1
   #https://pub.dev/packages/rxdart

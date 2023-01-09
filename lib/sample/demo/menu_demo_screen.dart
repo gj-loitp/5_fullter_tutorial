@@ -1,6 +1,7 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/remove_emoji/remove_emoji_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
@@ -239,6 +240,14 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS.",
+          ),
+          UIUtils.getButton(
+            "remove_emoji",
+            () {
+              Get.to(() => RemoveEmojiScreen());
+            },
+            description:
+                "Dart and flutter package accurately replace/remove emojis in text",
           ),
           UIUtils.getButton(
             "restart_app",
