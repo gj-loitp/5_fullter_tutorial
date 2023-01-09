@@ -3,6 +3,7 @@ import 'dart:io';
 
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -56,6 +57,21 @@ class SplashScreenState extends BaseStatefulState<SplashScreen> {
         }
       } catch (e) {
         print(e);
+        var connectivityResult = await (Connectivity().checkConnectivity());
+        if (connectivityResult == ConnectivityResult.mobile) {
+          // I am connected to a mobile network.
+        } else if (connectivityResult == ConnectivityResult.wifi) {
+          // I am connected to a wifi network.
+        } else {
+          showErrorDialog(
+            StringConstants.warning,
+            "No internet connection",
+            "Retry",
+            () {
+              _checkGoogleDrive();
+            },
+          );
+        }
       }
     }
   }

@@ -22,8 +22,9 @@ import 'splash_screen.dart';
  * freuss47@gmail.com
  */
 
+//drive config
+//https://drive.google.com/drive/u/0/folders/1kevDB8a5a-POwkGupg3xOiZByoGjAe3B
 //TODO dark mode
-//TODO lan dau mo app check valid google neu ko co connection se bi treo app
 
 //done
 //rate app, more app
@@ -31,6 +32,7 @@ import 'splash_screen.dart';
 //change background_image: "assets/images/splash.jpg"
 //app name, ic launcher
 //google config show isFullData use dio demo screen 2022.10.13
+//lan dau mo app check valid google neu ko co connection se bi treo app
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
