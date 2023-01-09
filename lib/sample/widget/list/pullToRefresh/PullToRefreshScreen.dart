@@ -56,13 +56,13 @@ class _PullToRefreshScreenState extends BaseStatefulState<PullToRefreshScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "PullToRefreshScreen",
+        "pull_to_refresh",
         () {
           Get.back();
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/pullToRefresh");
+              "https://pub.dev/packages/pull_to_refresh");
         },
       ),
       body: SmartRefresher(

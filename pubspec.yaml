@@ -51,6 +51,8 @@ dependencies:
   crypto: ^3.0.2
   #https://pub.dev/packages/curved_navigation_bar
   curved_navigation_bar: ^1.0.3
+  #https://pub.dev/packages/carousel_slider
+  carousel_slider: ^4.2.1
 
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0

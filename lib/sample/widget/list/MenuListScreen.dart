@@ -56,6 +56,8 @@ class MenuListScreen extends StatelessWidget {
               () {
                 Get.to(() => FlutterStickyHeaderScreen());
               },
+              description:
+                  "Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.",
             ),
             UIUtils.getButton(
               "HeaderBodyFooterScreen",
@@ -76,10 +78,12 @@ class MenuListScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "LazyLoadScrollViewScreen",
+              "lazy_load_scrollview",
               () {
                 Get.to(() => LazyLoadScrollViewScreen());
               },
+              description:
+                  "A wrapper for a ScrollView that will trigger a callback when the bottom of the page is reached",
             ),
             UIUtils.getButton(
               "ListBodyScreen",
@@ -100,10 +104,12 @@ class MenuListScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "PullToRefreshScreen",
+              "pull_to_refresh",
               () {
                 Get.to(() => PullToRefreshScreen());
               },
+              description:
+                  "a widget provided to the flutter scroll component drop-down refresh and pull up load.",
             ),
           ],
         ),

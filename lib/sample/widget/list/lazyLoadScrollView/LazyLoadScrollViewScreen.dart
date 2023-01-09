@@ -86,13 +86,13 @@ class _LazyLoadScrollViewScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "LazyLoadScrollViewScreen",
+        "lazy_load_scrollview",
         () {
           Get.back();
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/lazyLoadScrollView");
+              "https://pub.dev/packages/lazy_load_scrollview");
         },
       ),
       body: LazyLoadScrollView(
