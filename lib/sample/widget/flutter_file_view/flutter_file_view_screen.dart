@@ -78,7 +78,7 @@ class _MyAppState extends State<MyApp> {
       ],
       supportedLocales: <Locale>[
         Locale('en', 'US'),
-        // Locale('zh', 'CN'),
+        Locale('zh', 'CN'),
       ],
       debugShowCheckedModeBanner: true,
       home: HomePage(),

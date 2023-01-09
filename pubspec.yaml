@@ -299,6 +299,7 @@ flutter:
           weight: 400
 
   assets:
+    - assets/files/
     - assets/videos/
     - assets/images/
     - assets/pdf/
