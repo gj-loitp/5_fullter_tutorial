@@ -35,6 +35,7 @@ import 'delayedDisplay/DelayedDisplayScreen.dart';
 import 'dialog/menu_dialog_screen.dart';
 import 'dotted_border/dotted_border_screen.dart';
 import 'drawer/MenuDrawerScreen.dart';
+import 'drop_shadow/drop_shadow_screen.dart';
 import 'easy_loading/easy_loading_screen.dart';
 import 'editText/MenuEditTextScreen.dart';
 import 'expanded/ExpandedScreen.dart';
@@ -245,6 +246,14 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => MenuDrawerScreen());
               },
+            ),
+            UIUtils.getButton(
+              "drop_shadow",
+              () {
+                Get.to(() => DropShadowScreen());
+              },
+              description:
+                  "Add highly customizable drop shadow effect for any widgets in flutter",
             ),
             UIUtils.getButton(
               "EasyLoadingScreen",
