@@ -64,7 +64,7 @@ import 'stack/stack_screen.dart';
 import 'state/stateful_widget_demo_screen.dart';
 import 'state/stateless_widget_demo_screen.dart';
 import 'stepper/stepper_screen.dart';
-import 'switch/switch_screen.dart';
+import 'switch/menu_switch_screen.dart';
 import 'table/table_screen.dart';
 import 'time_planner/time_planner_screen.dart';
 import 'tooltip/tooltip_screen.dart';
@@ -429,9 +429,9 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "SwitchScreen",
+              "MenuSwitchScreen",
               () {
-                Get.to(() => SwitchScreen());
+                Get.to(() => MenuSwitchScreen());
               },
             ),
             UIUtils.getButton(
