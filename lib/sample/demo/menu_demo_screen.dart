@@ -167,6 +167,8 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(MenuFlutterBlockScreen());
             },
+            description:
+                "Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package.",
           ),
           UIUtils.getButton(
             "FlutterLocalNotificationScreen",
@@ -177,24 +179,32 @@ class MenuDemoScreen extends StatelessWidget {
               Get.to(
                   FlutterLocalNotificationScreen(notificationAppLaunchDetails));
             },
+            description:
+                "A cross platform plugin for displaying and scheduling local notifications for Flutter applications with the ability to customise for each platform.",
           ),
           UIUtils.getButton(
             "flutter_offline",
             () {
               Get.to(FlutterOfflineScreen());
             },
+            description:
+                "A tidy utility to handle offline/online connectivity like a Boss.",
           ),
           UIUtils.getButton(
             "flutter_screen_lock",
             () {
               Get.to(FlutterScreenLockScreen());
             },
+            description:
+                "Provides the ability to lock the screen on ios and android. Biometric authentication can be used in addition to passcode.",
           ),
           UIUtils.getButton(
             "focus_detector",
             () {
               Get.to(FocusDetectorScreen());
             },
+            description:
+                "Detects when your widget appears or disappears from the screen",
           ),
           UIUtils.getButton(
             "get",
