@@ -189,6 +189,8 @@ dependencies:
   #https://pub.dev/packages/get
   get: ^4.6.5
 
+  #https://pub.dev/packages/recase
+  recase: ^4.1.0
   #https://pub.dev/packages/remove_emoji
   remove_emoji: ^0.0.7
   #https://pub.dev/packages/restart_app
