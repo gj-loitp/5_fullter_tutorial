@@ -43,6 +43,7 @@ import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
+import 'flutter_file_view/flutter_file_view_screen.dart';
 import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
 import 'folding_cell/folding_cell_screen.dart';
@@ -311,6 +312,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "A Flutter package of drawing board, provides basic drawing tools, canvas operations, and image data acquisition.",
+            ),
+            UIUtils.getButton(
+              "flutter_file_view",
+                  () {
+                Get.to(() => FlutterFileViewScreen());
+              },
+              description:
+              "A file viewer plugin for Flutter, support local file and network link of Android, iOS.",
             ),
             UIUtils.getButton(
               "FlutterReactionButtonScreen",
