@@ -36,7 +36,7 @@ class _PanaraDialogScreenState extends BaseStatefulState {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "PanaraDialogScreen",
+        "panara_dialogs",
         () {
           Get.back();
         },

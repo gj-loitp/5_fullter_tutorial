@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import 'awesome_dialog/awesome_dialog_screen.dart';
 import 'dialog/dialog_screen.dart';
+import 'flutter_smart_dialog/flutter_smart_dialog_screen.dart';
 import 'panara_dialogs/panara_dialog_screen.dart';
 
 /**
@@ -30,10 +31,12 @@ class MenuDialogScreen extends StatelessWidget {
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         children: [
           UIUtils.getButton(
-            "AwesomeDialogScreen",
+            "awesome_dialog",
             () {
               Get.to(() => AwesomeDialogScreen());
             },
+            description:
+                "Flutter package to show beautiful dialogs(INFO,QUESTION,WARNING,SUCCESS,ERROR) with animations as simply as possible.",
           ),
           UIUtils.getButton(
             "DialogScreen",
@@ -42,10 +45,20 @@ class MenuDialogScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
+            "flutter_smart_dialog",
+            () {
+              Get.to(() => FlutterSmartDialogScreen());
+            },
+            description:
+                "An elegant Flutter Dialog solution, Easily implement Toast, Loading and custom Dialog, Make the use of the dialog easier!",
+          ),
+          UIUtils.getButton(
             "panara_dialogs",
             () {
               Get.to(() => PanaraDialogScreen());
             },
+            description:
+                "PanaraDialogs is a Dialog UI Kit. A minimal but beautiful design for Flutter Dialogs.",
           ),
         ],
       ),
