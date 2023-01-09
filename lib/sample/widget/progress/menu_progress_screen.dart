@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import 'circular_progress_indicator_app.dart';
 import 'linear_progress_indicator_app.dart';
+import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
 import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
 
@@ -51,7 +52,7 @@ class MenuProgressScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton("liquid_progress_indicator", () {
-              Get.to(LinearProgressIndicatorApp());
+              Get.to(MenuLiquidProgressIndicatorScreen());
             },
                 description:
                     "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
