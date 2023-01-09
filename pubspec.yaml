@@ -31,6 +31,8 @@ dependencies:
   basic_utils: ^5.4.2
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
+  #https://pub.dev/packages/bottom_navy_bar
+  bottom_navy_bar: ^6.0.0
   #https://pub.dev/packages/blur
   blur: ^3.1.0
   bloc: ^8.1.0
