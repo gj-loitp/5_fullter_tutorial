@@ -56,13 +56,13 @@ class _PinCodeFieldsScreenState extends BaseStatefulState<PinCodeFieldsScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "PinCodeFieldsScreen",
+        "pin_code_fields",
         () {
           Get.back();
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/pinCodeFields");
+              "https://pub.dev/packages/pin_code_fields");
         },
       ),
       body: GestureDetector(

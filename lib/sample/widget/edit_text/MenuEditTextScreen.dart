@@ -1,13 +1,14 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/editText/pinCodeFields/PinCodeFieldsScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/editText/searchDelegate/SearchDelegateScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/editText/textField/TextFieldScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/pin_code_fields/PinCodeFieldsScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/search_delegate/SearchDelegateScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/text_field/TextFieldScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'EditTextScreen.dart';
 import 'FormFieldScreen.dart';
+import 'mask_text_input_formatter/mask_text_input_formatter_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -34,10 +35,20 @@ class MenuEditTextScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             UIUtils.getButton(
-              "PinCodeFieldsScreen",
+              "mask_text_input_formatter",
+              () {
+                Get.to(MaskTextInputFormatterScreen());
+              },
+              description:
+                  "The package provides TextInputFormatter for TextField aeld and TextFormField which format the input by a given mask.",
+            ),
+            UIUtils.getButton(
+              "pin_code_fields",
               () {
                 Get.to(PinCodeFieldsScreen());
               },
+              description:
+                  "A flutter package which will help you to generate pin code fields. Can be useful for OTP for example.",
             ),
             UIUtils.getButton(
               "EditTextScreen",

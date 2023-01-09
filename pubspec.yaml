@@ -162,6 +162,8 @@ dependencies:
   #https://pub.dev/packages/lottie
   lottie: ^2.1.0
 
+  #https://pub.dev/packages/mask_text_input_formatter
+  mask_text_input_formatter: ^2.4.0
   modal_bottom_sheet: ^2.1.2 #https://pub.dev/packages/modal_bottom_sheet
 
   #https://pub.dev/packages/network_info_plus

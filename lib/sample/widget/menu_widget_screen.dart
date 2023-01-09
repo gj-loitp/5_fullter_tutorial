@@ -38,7 +38,7 @@ import 'dotted_border/dotted_border_screen.dart';
 import 'drawer/MenuDrawerScreen.dart';
 import 'drop_shadow/drop_shadow_screen.dart';
 import 'easy_loading/easy_loading_screen.dart';
-import 'editText/MenuEditTextScreen.dart';
+import 'edit_text/MenuEditTextScreen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
