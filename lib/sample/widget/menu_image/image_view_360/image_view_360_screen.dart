@@ -47,13 +47,13 @@ class _ImageView360ScreenState extends BaseStatefulState<ImageView360Screen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "ImageView360Screen",
+        "imageview360",
         () {
           Get.back();
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/imageView360");
+              "https://pub.dev/packages/imageview360");
         },
       ),
       body: SingleChildScrollView(

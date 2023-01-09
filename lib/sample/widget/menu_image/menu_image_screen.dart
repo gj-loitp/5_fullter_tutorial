@@ -56,16 +56,20 @@ class MenuImageScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "ImageView360Screen",
+            "imageview360",
             () {
               Get.to(ImageView360Screen());
             },
+            description:
+                "A Flutter package which provides 360 view of the images with rotation and gesture customisations.",
           ),
           UIUtils.getButton(
             "kenburns_nullsafety",
             () {
               Get.to(KenburnsNullSafetyScreen());
             },
+            description:
+                "The migration of the kenburns effect plugin to null-safety. The Ken Burns effect is a type of panning and zooming effect used in video production from still imagery.",
           ),
           UIUtils.getButton(
             "ImageScreen",
@@ -78,6 +82,8 @@ class MenuImageScreen extends StatelessWidget {
             () {
               Get.to(PhotoViewScreen());
             },
+            description:
+                "Photo View provides a gesture sensitive zoomable widget. Photo View is largely used to show interactive images and other stuff such as SVG.",
           ),
         ],
       ),

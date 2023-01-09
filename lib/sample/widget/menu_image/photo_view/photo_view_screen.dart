@@ -24,11 +24,11 @@ class PhotoViewScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: UIUtils.getAppBar("PhotoViewScreen", () {
+      appBar: UIUtils.getAppBar("photo_view", () {
         Get.back();
       }, () {
         UrlLauncherUtils.launchInWebViewWithJavaScript(
-            "https://pub.dev/packages/photoView");
+            "https://pub.dev/packages/photo_view");
       }),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
