@@ -185,6 +185,8 @@ dependencies:
 
   #https://pub.dev/packages/qr_code_scanner
   qr_code_scanner: ^1.0.1
+  #https://pub.dev/packages/qr_flutter
+  qr_flutter: ^4.0.0
 
   #https://pub.dev/packages/share_plus
   share_plus: ^6.3.0

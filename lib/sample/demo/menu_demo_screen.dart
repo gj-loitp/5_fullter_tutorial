@@ -1,6 +1,7 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/qr_flutter/qr_flutter_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/recase/recase_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/remove_emoji/remove_emoji_screen.dart';
 import 'package:flutter/material.dart';
@@ -280,6 +281,14 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS.",
+          ),
+          UIUtils.getButton(
+            "qr_flutter",
+                () {
+              Get.to(() => QrFlutterScreen());
+            },
+            description:
+            "QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter.",
           ),
           UIUtils.getButton(
             "recase",
