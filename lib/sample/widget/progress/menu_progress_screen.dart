@@ -31,7 +31,7 @@ class MenuProgressScreen extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
+          children: [
             UIUtils.getButton(
               "percent_indicator",
               () {
@@ -50,6 +50,11 @@ class MenuProgressScreen extends StatelessWidget {
                 Get.to(LinearProgressIndicatorApp());
               },
             ),
+            UIUtils.getButton("liquid_progress_indicator", () {
+              Get.to(LinearProgressIndicatorApp());
+            },
+                description:
+                    "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
             UIUtils.getButton(
               "ProgressIndicatorScreen",
               () {
