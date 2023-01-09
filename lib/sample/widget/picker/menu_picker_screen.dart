@@ -10,6 +10,7 @@ import 'package:get/get.dart';
 import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
 import 'file_picker/file_picker_demo.dart';
 import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
+import 'horizontal_picker/horizontal_picker_screen.dart';
 import 'numberpicker/numberpicker_screen.dart';
 
 /**
@@ -64,6 +65,12 @@ class MenuPickerScreen extends StatelessWidget {
               "flutter_colorpicker",
               () {
                 Get.to(() => FlutterColorPickerScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "horizontal_picker",
+                  () {
+                Get.to(() => HorizontalPickerScreen());
               },
             ),
             UIUtils.getButton(

@@ -43,7 +43,7 @@ class _FlutterStickyHeaderScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "FlutterStickyHeaderScreen",
+        "flutter_sticky_header",
         () {
           Get.back();
         },

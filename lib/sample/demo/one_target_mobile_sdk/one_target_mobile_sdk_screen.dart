@@ -39,15 +39,19 @@ class _OneTargetMobileSDKScreenState
   }
 
   void _setupTracking() {
-    Constant.setEnv(Constant.ENV_DEV);
-    G1SDK.instance
-        .setupSDK(
-      Constant.getEnv(),
+    // Constant.setEnv(Constant.environmentDev);
+    // Constant.setEnv(Constant.environmentStag);
+    Constant.setEnv(Constant.environmentProd);
+    G1SDK.instance.setupSDK(
       Constant.getWorkSpaceId(),
-      isShowLog: false,
-      isEnableIAM: true,
-    )
-        .then((isSetupSuccess) {
+      Constant.getOneTargetAppPushID(),
+      isShowLog: kDebugMode,
+      isEnableIAM: false,
+      onLog: (String log) {
+        _log("onLog $log");
+      },
+      env: Constant.getEnv(),
+    ).then((isSetupSuccess) {
       _log("_setupTracking isSetupSuccess $isSetupSuccess");
     });
   }
@@ -118,14 +122,12 @@ class _OneTargetMobileSDKScreenState
       "email": "Loi123@galaxy.one",
     });
     G1SDK.instance.trackEvent(
-      Constant.getWorkSpaceId(),
       {
         "phone": "0766040293",
         "email": "Loi123@galaxy.one",
       },
       profile,
       "event_name",
-      DateTime.now().millisecondsSinceEpoch,
       {
         "pageTitle": "Passenger Information from Flutter",
         "pagePath": "/home",
@@ -157,14 +159,12 @@ class _OneTargetMobileSDKScreenState
       "email": "Loi444@galaxy.one",
     });
     G1SDK.instance.trackEvent(
-      Constant.getWorkSpaceId(),
       {
         "phone": "0766040293",
         "email": "loitp@galaxy.one",
       },
       profile,
       "track_now_event",
-      DateTime.now().millisecondsSinceEpoch,
       {
         "name": "Loitp Flutter",
         "bod": "01/01/2000",

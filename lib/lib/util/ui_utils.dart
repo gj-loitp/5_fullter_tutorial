@@ -57,6 +57,7 @@ class UIUtils {
     String text,
     VoidCallback? onPressed, {
     double marginTop = DimenConstants.marginPaddingMedium,
+    String description = "",
   }) {
     return Container(
       margin: EdgeInsets.only(top: marginTop),
@@ -77,12 +78,26 @@ class UIUtils {
         child: Row(
           children: [
             Expanded(
-              child: Text(
-                text,
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: DimenConstants.txtMedium,
-                ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    text,
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: DimenConstants.txtMedium,
+                    ),
+                  ),
+                  if (description.isNotEmpty == true)
+                    Text(
+                      description,
+                      style: TextStyle(
+                        color: Colors.grey,
+                        fontSize: DimenConstants.txtSmall,
+                      ),
+                    ),
+                ],
               ),
             ),
             SizedBox(width: DimenConstants.marginPaddingMedium),

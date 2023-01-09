@@ -36,7 +36,7 @@ class _WaveScreenState extends BaseStatefulState<WaveScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "WaveScreen",
+        "wave",
         () {
           Get.back();
         },

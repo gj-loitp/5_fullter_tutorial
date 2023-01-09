@@ -9,6 +9,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
 
   #https://pub.dev/packages/advance_pdf_viewer
   advance_pdf_viewer: ^2.0.1
@@ -24,40 +26,46 @@ dependencies:
   #https://pub.dev/packages/badges
   badges: ^2.0.3
   #https://pub.dev/packages/battery_plus
-  battery_plus: ^3.0.0
+  battery_plus: ^3.0.2
   #https://pub.dev/packages/basic_utils
-  basic_utils: ^5.3.0
+  basic_utils: ^5.4.2
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
+  #https://pub.dev/packages/bottom_navy_bar
+  bottom_navy_bar: ^6.0.0
   #https://pub.dev/packages/blur
   blur: ^3.1.0
   bloc: ^8.1.0
 
   #https://pub.dev/packages/cached_network_image
-  cached_network_image: ^3.2.2
+  cached_network_image: ^3.2.3
   #https://pub.dev/packages/calendar_appbar
   calendar_appbar: ^0.0.6
   #https://pub.dev/packages/calendar_view
-  calendar_view: ^1.0.0
+  calendar_view: ^1.0.1
   #https://pub.dev/packages/connectivity_plus
-  connectivity_plus: ^2.3.9
+  connectivity_plus: ^2.3.9 #migrate later
   #https://pub.dev/packages/country_picker
-  country_picker: ^2.0.16
+  country_picker: ^2.0.19
   #https://pub.dev/packages/clay_containers
   clay_containers: ^0.3.2
   #https://pub.dev/packages/cupertino_icons
   cupertino_icons: ^1.0.5
   #https://pub.dev/packages/crypto/install
   crypto: ^3.0.2
+  #https://pub.dev/packages/curved_navigation_bar
+  curved_navigation_bar: ^1.0.3
+  #https://pub.dev/packages/carousel_slider
+  carousel_slider: ^4.2.1
 
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0
   #https://pub.dev/packages/d_chart
-  d_chart: ^0.0.4
+  d_chart: ^1.0.0
   #https://pub.dev/packages/drag_select_grid_view
   drag_select_grid_view: ^0.6.1
   #https://pub.dev/packages/device_info_plus
-  device_info_plus: ^6.0.0
+  device_info_plus: ^8.0.0
   #https://pub.dev/packages/delayed_display
   delayed_display: ^2.0.0
   #https://pub.dev/packages/diacritic
@@ -65,11 +73,13 @@ dependencies:
   #https://pub.dev/packages/dio
   dio: ^4.0.6
   #https://pub.dev/packages/dotted_border
-  dotted_border: ^2.0.0+2
+  dotted_border: ^2.0.0+3
   #https://pub.dev/packages/draggable_scrollbar
   draggable_scrollbar: ^0.1.0
+  #https://pub.dev/packages/drop_shadow
+  drop_shadow: ^0.0.2+1
 
-  easy_debounce: ^2.0.2+1 #https://pub.dev/packages/easy_debounce
+  easy_debounce: ^2.0.3 #https://pub.dev/packages/easy_debounce
   encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
   english_words: ^4.0.0 #https://pub.dev/packages/english_words
   event_bus: ^2.0.0 #https://pub.dev/packages/event_bus
@@ -78,8 +88,12 @@ dependencies:
 
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
+  #https://pub.dev/packages/folding_cell
+  folding_cell: ^1.0.2
+  #https://pub.dev/packages/font_awesome_flutter
+  font_awesome_flutter: ^10.3.0
   #https://pub:dev/packages/file_picker
-  file_picker: ^5.2.1
+  file_picker: ^5.2.4
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.55.2
   #https://pub.dev/packages/floating_bubbles
@@ -88,60 +102,75 @@ dependencies:
   flutter_bloc: ^8.1.1
   #https://pub.dev/packages/flutter_colorpicker
   flutter_colorpicker: ^1.0.3
+  #https://pub.dev/packages/flutter_drawing_board
+  flutter_drawing_board: ^0.4.2
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
+  #https://pub.dev/packages/flutter_file_view
+  flutter_file_view: ^2.1.2
   #https://pub.dev/packages/flutter_local_notifications
-  flutter_local_notifications: ^9.9.1
+  flutter_local_notifications: ^9.9.1 #migrate later
+  #https://pub.dev/packages/flutter_linkify
+  flutter_linkify: ^5.0.2
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
-  flutter_native_splash: ^2.2.11
+  flutter_native_splash: ^2.2.16
   #https://pub.dev/packages/flutter_offline
   flutter_offline: ^2.1.0
   #https://pub.dev/packages/flutter_reaction_button
-  flutter_reaction_button: ^1.0.8
+  flutter_reaction_button: ^1.0.8 #migrate later
   #https://pub.dev/packages/flutter_simple_treeview
-  flutter_simple_treeview: ^3.0.1
+  flutter_simple_treeview: ^3.0.2
   #https://pub.dev/packages/flutter_slidable
-  flutter_slidable: ^0.6.0
+  flutter_slidable: ^0.6.0 #migrate later
   #https://pub.dev/packages/flutter_staggered_grid_view
-  flutter_staggered_grid_view: ^0.4.0
+  flutter_staggered_grid_view: ^0.4.1 #migrate later
   #https://pub.dev/packages/flutter_svg
-  flutter_svg: ^1.1.5
+  flutter_svg: ^1.1.6
   #https://pub.dev/packages/flutter_speed_dial
-  flutter_speed_dial: ^6.1.0+1
+  flutter_speed_dial: ^6.2.0
   #https://pub.dev/packages/flutter_sticky_header
-  flutter_sticky_header: ^0.6.4
+  flutter_sticky_header: ^0.6.5
   #https://pub.dev/packages/flutter_screen_lock
-  flutter_screen_lock: ^5.0.5
+  flutter_screen_lock: ^5.0.12 #migrate later
+
+  #https://pub.dev/packages/google_fonts
+  google_fonts: ^3.0.1
 
   #https://pub.dev/packages/horizontal_calendar
   horizontal_calendar: ^1.0.1
   #https://pub.dev/packages/horizontal_card_pager
   horizontal_card_pager: ^1.1.1
+  #https://pub.dev/packages/horizontal_picker
+  horizontal_picker: ^1.2.0
   #https://pub.dev/packages/html2md
   html2md: ^1.2.6
 
   #https://pub.dev/packages/local_auth
-  local_auth: ^1.1.11
+  local_auth: ^1.1.11 #migate later
   #https://pub.dev/packages/logger
   logger: ^1.1.0
   #https://pub.dev/packages/lazy_load_scrollview
   lazy_load_scrollview: ^1.3.0
   #https://pub.dev/packages/like_button
   like_button: ^2.0.5
+  #https://pub.dev/packages/liquid_progress_indicator
+  liquid_progress_indicator: ^0.4.0
   #https://pub.dev/packages/lottie
-  lottie: ^1.4.3
+  lottie: ^2.1.0
 
   modal_bottom_sheet: ^2.1.2 #https://pub.dev/packages/modal_bottom_sheet
 
   #https://pub.dev/packages/network_info_plus
-  network_info_plus: ^2.3.2
+  network_info_plus: ^2.3.2 #migrate later
   #https://pub.dev/packages/numberpicker
   numberpicker: ^2.1.1
 
+  #https://pub.dev/packages/octo_image
+  octo_image: ^1.0.2
   #https://pub.dev/packages/one_target_mobile_sdk
-  one_target_mobile_sdk: ^0.0.17
+  one_target_mobile_sdk: ^0.0.28
   #https://pub.dev/packages/overflow_view
   overflow_view: ^0.3.1
 
@@ -150,13 +179,13 @@ dependencies:
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
   #https://pub.dev/packages/url_launcher
-  url_launcher: ^6.1.6
+  url_launcher: ^6.1.7
 
   #https://pub.dev/packages/qr_code_scanner
   qr_code_scanner: ^1.0.1
 
   #https://pub.dev/packages/share_plus
-  share_plus: ^4.5.3
+  share_plus: ^6.3.0
   #https://pub.dev/packages/simple_url_preview
   simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
@@ -164,7 +193,7 @@ dependencies:
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
   #https://pub.dev/packages/sqflite
-  sqflite: ^2.1.0+1
+  sqflite: ^2.2.2
 
   #https://pub.dev/packages/marquee
   marquee: ^2.2.3
@@ -172,40 +201,51 @@ dependencies:
   #https://pub.dev/packages/get
   get: ^4.6.5
 
+  #https://pub.dev/packages/recase
+  recase: ^4.1.0
+  #https://pub.dev/packages/remove_emoji
+  remove_emoji: ^0.0.7
   #https://pub.dev/packages/restart_app
-  restart_app: ^1.1.0+1
+  restart_app: ^1.1.1+1
   #https://pub.dev/packages/rxdart
-  rxdart: ^0.27.5
+  rxdart: ^0.27.7
 
   #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^1.7.1
   #https://pub.dev/packages/image_picker
   image_picker: ^0.8.6
   #https://pub.dev/packages/in_app_review
-  in_app_review: ^2.0.4
+  in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
-  intl: ^0.17.0
+  intl: ^0.17.0 #migate later
 
   #https://pub.dev/packages/horizontal_data_table
-  horizontal_data_table: ^4.1.2+2
+  horizontal_data_table: ^4.1.4
   #https://pub.dev/packages/http
   http: ^0.13.5
 
+  #https://pub.dev/packages/kenburns_nullsafety
+  kenburns_nullsafety: ^1.0.0
+
   #https://pub.dev/packages/video_player
-  video_player: ^2.4.7
+  video_player: ^2.4.10
 
   #https://pub.dev/packages/package_info_plus
-  package_info_plus: ^2.0.0
+  package_info_plus: ^3.0.2
   #https://pub.dev/packages/panara_dialogs
-  panara_dialogs: ^0.1.2
+  panara_dialogs: ^0.1.4
   #https://pub.dev/packages/path_provider
   path_provider: ^2.0.11
+  #https://pub.dev/packages/percent_indicator
+  percent_indicator: ^4.2.2
   #https://pub.dev/packages/permission_handler
-  permission_handler: ^10.1.0
+  permission_handler: ^10.2.0
   #https://pub.dev/packages/photo_view
   photo_view: ^0.14.0
   #https://pub.dev/packages/pin_code_fields
   pin_code_fields: ^7.4.0
+  #https://pub.dev/packages/progress_indicators
+  progress_indicators: ^1.0.0
   #https://pub.dev/packages/progress_state_button
   progress_state_button: ^1.0.4
   #https://pub.dev/packages/pull_to_refresh
@@ -213,26 +253,33 @@ dependencies:
 
   #https://pub.dev/packages/scrollable_table_view
   scrollable_table_view: ^1.0.0
+  #https://pub.dev/packages/shape_of_view_null_safe
+  shape_of_view_null_safe: ^2.0.0
+  #https://pub.dev/packages/super_circle
+  super_circle: ^1.0.0
 
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
-  timeago: ^3.3.0 #https://pub.dev/packages/timeago
+  #https://pub.dev/packages/timeago
+  timeago: ^3.3.0
+  #https://pub.dev/packages/toggle_switch
+  toggle_switch: ^2.0.1
 
   #https://pub.dev/packages/wakelock
   wakelock: ^0.6.2
   #https://pub.dev/packages/wave
   wave: ^0.2.2
   #https://pub.dev/packages/webview_flutter
-  webview_flutter: ^3.0.4
+  webview_flutter: ^3.0.4 #migate later
   #https://pub.dev/packages/web_scraper
   web_scraper: ^0.1.4
 
   #https://pub.dev/packages/youtube_player_flutter
-  youtube_player_flutter: ^8.1.1
+  youtube_player_flutter: ^8.1.2
 
   #https://pub.dev/packages/flame
   flame: 1.0.0-releasecandidate.15
   #https://pub.dev/packages/tiledjsonreader
-  tiledjsonreader: ^1.2.5
+  tiledjsonreader: ^1.2.6
 
 dev_dependencies:
   flutter_test:
@@ -254,6 +301,7 @@ flutter:
           weight: 400
 
   assets:
+    - assets/files/
     - assets/videos/
     - assets/images/
     - assets/pdf/

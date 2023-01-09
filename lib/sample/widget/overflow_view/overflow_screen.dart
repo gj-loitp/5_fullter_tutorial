@@ -47,7 +47,7 @@ class _OverflowScreenState extends BaseStatefulState<OverflowScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "OverflowScreen",
+        "overflow_view",
         () {
           Get.back();
         },

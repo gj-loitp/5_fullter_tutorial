@@ -1,10 +1,13 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/progress/progress_indicators/progress_indicators_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'circular_progress_indicator_app.dart';
 import 'linear_progress_indicator_app.dart';
+import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
+import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
 
 /**
@@ -25,32 +28,50 @@ class MenuProgressScreen extends StatelessWidget {
         },
         null,
       ),
-      body: SingleChildScrollView(
+      body: ListView(
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         physics: BouncingScrollPhysics(),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[
-            UIUtils.getButton(
-              "CircularProgressIndicatorApp",
-              () {
-                Get.to(CircularProgressIndicatorApp());
-              },
-            ),
-            UIUtils.getButton(
-              "LinearProgressIndicatorApp",
-              () {
-                Get.to(LinearProgressIndicatorApp());
-              },
-            ),
-            UIUtils.getButton(
-              "ProgressIndicatorScreen",
-              () {
-                Get.to(ProgressIndicatorScreen());
-              },
-            ),
-          ],
-        ),
+        children: [
+          UIUtils.getButton("liquid_progress_indicator", () {
+            Get.to(MenuLiquidProgressIndicatorScreen());
+          },
+              description:
+                  "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
+          UIUtils.getButton(
+            "percent_indicator",
+            () {
+              Get.to(PercentIndicatorScreen());
+            },
+            description:
+                "Library that allows you to display progress widgets based on percentage, can be Circular or Linear, you can also customize it to your needs.",
+          ),
+          UIUtils.getButton(
+            "progress_indicators",
+            () {
+              Get.to(ProgressIndicatorsScreen());
+            },
+            description:
+                "A handful collection of some cool progress indicators and text animators.",
+          ),
+          UIUtils.getButton(
+            "CircularProgressIndicatorApp",
+            () {
+              Get.to(CircularProgressIndicatorApp());
+            },
+          ),
+          UIUtils.getButton(
+            "LinearProgressIndicatorApp",
+            () {
+              Get.to(LinearProgressIndicatorApp());
+            },
+          ),
+          UIUtils.getButton(
+            "ProgressIndicatorScreen",
+            () {
+              Get.to(ProgressIndicatorScreen());
+            },
+          ),
+        ],
       ),
     );
   }

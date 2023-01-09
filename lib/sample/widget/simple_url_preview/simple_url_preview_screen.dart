@@ -44,7 +44,7 @@ class _SimpleUrlPreviewScreenState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "SimpleUrlPreviewScreen",
+        "simple_url_preview",
         () {
           Get.back();
         },
