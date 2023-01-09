@@ -69,7 +69,7 @@ dependencies:
   #https://pub.dev/packages/draggable_scrollbar
   draggable_scrollbar: ^0.1.0
 
-  easy_debounce: ^2.0.2+1 #https://pub.dev/packages/easy_debounce
+  easy_debounce: ^2.0.3 #https://pub.dev/packages/easy_debounce
   encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
   english_words: ^4.0.0 #https://pub.dev/packages/english_words
   event_bus: ^2.0.0 #https://pub.dev/packages/event_bus
