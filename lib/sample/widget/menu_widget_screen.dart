@@ -99,6 +99,8 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => AnimatedBackgroundScreen());
               },
+              description:
+                  "Animated Backgrounds for Flutter. Easily extended to paint whatever you want on the canvas.",
             ),
             UIUtils.getButton(
               "SliverAppBarScreen",
@@ -111,12 +113,16 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => BadgesScreen());
               },
+              description:
+                  "A flutter package for creating badges. Badges can be used for an additional marker for any widget, e.g. show a number of items in a shopping cart.",
             ),
             UIUtils.getButton(
               "blur",
               () {
                 Get.to(() => BlurScreen());
               },
+              description:
+                  "Blur is a wrapper widget that blur it's child. There are ImageBlur.asset and ImageBlur.network that blur the image. Frost is another wrapper which blurs the background.",
             ),
             UIUtils.getButton(
               "MenuBottomBarScreen",
@@ -141,12 +147,16 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => CalendarAppbarScreen());
               },
+              description:
+                  "Flutter package for custom AppBar with full calendar view with many new features!",
             ),
             UIUtils.getButton(
               "calendar_view",
               () {
                 Get.to(() => CalendarViewScreen());
               },
+              description:
+                  "A Flutter package allows you to easily implement all calendar UI and calendar event functionality.",
             ),
             UIUtils.getButton(
               "CardScreen",
@@ -155,10 +165,12 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "ChartScreen",
+              "fl_chart",
               () {
                 Get.to(() => ChartScreen());
               },
+              description:
+                  "A powerful Flutter chart library, currently supporting Line Chart, Bar Chart and Pie Chart.",
             ),
             UIUtils.getButton(
               "CheckBoxScreen",
@@ -171,6 +183,8 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => ClayContainersScreen());
               },
+              description:
+                  "Easily create custom neumorphic container widgets for your own unique design.",
             ),
             UIUtils.getButton(
               "RadioButtonScreen",
@@ -201,12 +215,15 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => DChartScreen());
               },
+              description: "D'Chart is a package for compact chart widgets.",
             ),
             UIUtils.getButton(
-              "DelayedDisplayScreen",
+              "delayed_display",
               () {
                 Get.to(() => DelayedDisplayScreen());
               },
+              description:
+                  "A widget that enables you to display a child after a delay and with beautiful fading and sliding animation.",
             ),
             UIUtils.getButton(
               "MenuDialogScreen",
@@ -215,10 +232,12 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "DottedBorderScreen",
+              "dotted_border",
               () {
                 Get.to(() => DottedBorderScreen());
               },
+              description:
+                  "A flutter package to let users easily add a dashed border around any widget.",
             ),
             UIUtils.getButton(
               "MenuDrawerScreen",

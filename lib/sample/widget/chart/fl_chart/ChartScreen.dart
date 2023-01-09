@@ -70,7 +70,7 @@ class _ChartScreenState extends BaseStatefulState<ChartScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "ChartScreen",
+        "fl_chart",
         () {
           Get.back();
         },

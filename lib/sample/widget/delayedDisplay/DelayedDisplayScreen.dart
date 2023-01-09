@@ -39,7 +39,7 @@ class _DelayedDisplayScreenState
     return Scaffold(
       backgroundColor: Colors.amber,
       appBar: UIUtils.getAppBar(
-        "DelayedDisplayScreen",
+        "delayed_display",
         () {
           Get.back();
         },
