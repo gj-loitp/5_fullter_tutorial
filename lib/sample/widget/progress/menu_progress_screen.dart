@@ -27,43 +27,42 @@ class MenuProgressScreen extends StatelessWidget {
         },
         null,
       ),
-      body: SingleChildScrollView(
+      body: ListView(
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         physics: BouncingScrollPhysics(),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            UIUtils.getButton(
-              "percent_indicator",
-              () {
-                Get.to(PercentIndicatorScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "CircularProgressIndicatorApp",
-              () {
-                Get.to(CircularProgressIndicatorApp());
-              },
-            ),
-            UIUtils.getButton(
-              "LinearProgressIndicatorApp",
-              () {
-                Get.to(LinearProgressIndicatorApp());
-              },
-            ),
-            UIUtils.getButton("liquid_progress_indicator", () {
-              Get.to(MenuLiquidProgressIndicatorScreen());
+        children: [
+          UIUtils.getButton(
+            "percent_indicator",
+            () {
+              Get.to(PercentIndicatorScreen());
             },
-                description:
-                    "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
-            UIUtils.getButton(
-              "ProgressIndicatorScreen",
-              () {
-                Get.to(ProgressIndicatorScreen());
-              },
-            ),
-          ],
-        ),
+            description:
+                "Library that allows you to display progress widgets based on percentage, can be Circular or Linear, you can also customize it to your needs.",
+          ),
+          UIUtils.getButton(
+            "CircularProgressIndicatorApp",
+            () {
+              Get.to(CircularProgressIndicatorApp());
+            },
+          ),
+          UIUtils.getButton(
+            "LinearProgressIndicatorApp",
+            () {
+              Get.to(LinearProgressIndicatorApp());
+            },
+          ),
+          UIUtils.getButton("liquid_progress_indicator", () {
+            Get.to(MenuLiquidProgressIndicatorScreen());
+          },
+              description:
+                  "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
+          UIUtils.getButton(
+            "ProgressIndicatorScreen",
+            () {
+              Get.to(ProgressIndicatorScreen());
+            },
+          ),
+        ],
       ),
     );
   }
