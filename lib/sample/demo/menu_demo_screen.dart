@@ -85,6 +85,8 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(BatteryPlusScreen());
             },
+            description:
+                "Flutter plugin for accessing information about the battery state(full, charging, discharging).",
           ),
           UIUtils.getButton(
             "CommunicationBetweenWidgetScreen",
@@ -97,6 +99,8 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(ConnectivityPlusScreen());
             },
+            description:
+                "Flutter plugin for discovering the state of the network (WiFi & mobile/cellular) connectivity on Android and iOS.",
           ),
           UIUtils.getButton(
             "Counter",
@@ -115,36 +119,48 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(DeviceInfoPlusScreen());
             },
+            description:
+                "Flutter plugin providing detailed information about the device (make, model, etc.), and Android or iOS version the app is running on.",
           ),
           UIUtils.getButton(
             "diacritic",
             () {
               Get.to(DiacriticScreen());
             },
+            description:
+                "Removes common accents and diacritical signs from a string by replacing them with an equivalent character.",
           ),
           UIUtils.getButton(
             "dio",
             () {
               Get.to(DioScreen());
             },
+            description:
+                "A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.",
           ),
           UIUtils.getButton(
             "easy_debounce",
             () {
               Get.to(EasyDebounceScreen());
             },
+            description:
+                "An extremely easy-to-use method call debouncer package for Dart/Flutter.",
           ),
           UIUtils.getButton(
             "encrypt",
             () {
               Get.to(EncryptScreen());
             },
+            description:
+                "A set of high-level APIs over PointyCastle for two-way cryptography.",
           ),
           UIUtils.getButton(
             "event_bus",
             () {
               Get.to(EventBusScreen());
             },
+            description:
+                "A simple Event Bus using Dart Streams for decoupling applications",
           ),
           UIUtils.getButton(
             "flutter_bloc",
@@ -185,6 +201,8 @@ class MenuDemoScreen extends StatelessWidget {
             () {
               Get.to(GetXScreen());
             },
+            description:
+                "Open screens/snackbars/dialogs without context, manage states and inject dependencies easily with GetX.",
           ),
           UIUtils.getButton(
             "html2md",
