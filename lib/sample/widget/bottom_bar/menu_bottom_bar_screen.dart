@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'bottom_bar/bottom_app_bar_screen.dart';
 import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'bottom_navy_bar/bottom_navy_bar_screen.dart';
+import 'circular_bottom_navigation/circular_bottom_navigation_screen.dart';
 import 'curved_navigation_bar/curved_navigation_bar_screen.dart';
 import 'tab_bar/tab_bar_screen.dart';
 import 'tab_bar2/tab_bar_screen2.dart';
@@ -47,6 +48,13 @@ class MenuBottomBarScreen extends StatelessWidget {
             },
             description:
                 "A beautiful and animated bottom navigation. The navigation bar use your current theme, but you are free to customize it.",
+          ),
+          UIUtils.getButton(
+            "circular_bottom_navigation",
+            () {
+              Get.to(CircularBottomNavigationScreen());
+            },
+            description: "Circular Bottom Navigation (or maybe a tab bar)",
           ),
           UIUtils.getButton(
             "BottomAppBarScreen",

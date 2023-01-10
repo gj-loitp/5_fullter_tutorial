@@ -45,6 +45,8 @@ dependencies:
   calendar_view: ^1.0.1
   #https://pub.dev/packages/carousel_slider
   carousel_slider: ^4.2.1
+  #https://pub.dev/packages/circular_bottom_navigation
+  circular_bottom_navigation: ^2.3.0
   #https://pub.dev/packages/confetti
   confetti: ^0.7.0
   #https://pub.dev/packages/connectivity_plus
