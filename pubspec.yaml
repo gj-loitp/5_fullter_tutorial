@@ -192,6 +192,8 @@ dependencies:
   #https://pub.dev/packages/qr_flutter
   qr_flutter: ^4.0.0
 
+  #https://pub.dev/packages/scrollable_positioned_list
+  scrollable_positioned_list: ^0.3.5
   #https://pub.dev/packages/share_plus
   share_plus: ^6.3.0
   #https://pub.dev/packages/simple_url_preview

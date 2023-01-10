@@ -16,6 +16,7 @@ import 'list_title_widget/ListTileScreen.dart';
 import 'load_more/ListViewLoadMoreScreen.dart';
 import 'pull_to_refresh/pull_to_refresh_screen.dart';
 import 'scroll_to_index/scroll_to_index_screen.dart';
+import 'scrollable_positioned_list/scrollable_positioned_list_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -126,6 +127,14 @@ class MenuListScreen extends StatelessWidget {
             },
             description:
                 "Scroll to a specific child of any scrollable widget in Flutter",
+          ),
+          UIUtils.getButton(
+            "scrollable_positioned_list",
+            () {
+              Get.to(() => ScrollablePositionedListScreen());
+            },
+            description:
+                "A list with helper methods to programmatically scroll to an item.",
           ),
         ],
       ),
