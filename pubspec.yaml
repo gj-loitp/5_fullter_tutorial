@@ -98,8 +98,12 @@ dependencies:
   folding_cell: ^1.0.2
   #https://pub.dev/packages/font_awesome_flutter
   font_awesome_flutter: ^10.3.0
+  firebase_core: ^2.4.1
+  firebase_analytics: ^10.1.0
+  firebase_crashlytics: ^3.0.9
+  firebase_remote_config: ^3.0.9
   #https://pub:dev/packages/file_picker
-  file_picker: ^5.2.4
+  file_picker: ^5.2.5
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.55.2
   #https://pub.dev/packages/floating_bubbles

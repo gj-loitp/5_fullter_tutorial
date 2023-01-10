@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -13,7 +14,6 @@ import 'package:timezone/timezone.dart' as tz;
 
 import 'lib/util/log_dog_utils.dart';
 import 'splash_screen.dart';
-
 /**
  * Created by Loitp on 05,August,2022
  * Galaxy One company,
@@ -22,10 +22,10 @@ import 'splash_screen.dart';
  * freuss47@gmail.com
  */
 
+//https://console.firebase.google.com/u/0/project/roy-flutter-tutorial/overview
 //drive config
 //https://drive.google.com/drive/u/0/folders/1kevDB8a5a-POwkGupg3xOiZByoGjAe3B
 //TODO dark mode
-//TODO firebase
 
 //done
 //rate app, more app
@@ -34,6 +34,7 @@ import 'splash_screen.dart';
 //app name, ic launcher
 //google config show isFullData use dio demo screen 2022.10.13
 //lan dau mo app check valid google neu ko co connection se bi treo app
+//firebase
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
     FlutterLocalNotificationsPlugin();
@@ -84,6 +85,18 @@ void main() async {
   //for flutter local notifications
   // needed if you intend to initialize in the `main` function
   WidgetsFlutterBinding.ensureInitialized();
+
+  // if (Platform.isIOS) {
+  //   await Firebase.initializeApp(
+  //       options: FirebaseOptions(
+  //           apiKey: "your api key Found in GoogleService-info.plist",
+  //           appId: "Your app id found in Firebase",
+  //           messagingSenderId: "Your Sender id found in Firebase",
+  //           projectId: "Your Project id found in Firebase"));
+  // } else {
+  //   await Firebase.initializeApp();
+  // }
+  await Firebase.initializeApp();
 
   await _configureLocalTimeZone();
 
