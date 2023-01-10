@@ -25,6 +25,7 @@ import 'splash_screen.dart';
 //drive config
 //https://drive.google.com/drive/u/0/folders/1kevDB8a5a-POwkGupg3xOiZByoGjAe3B
 //TODO dark mode
+//TODO firebase
 
 //done
 //rate app, more app
