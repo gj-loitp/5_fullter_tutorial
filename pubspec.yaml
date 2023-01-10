@@ -20,6 +20,8 @@ dependencies:
   animated_text_kit: ^4.2.2
   #https://pub.dev/packages/avatar_glow
   avatar_glow: ^2.0.2
+  #https://pub.dev/packages/auto_size_text
+  auto_size_text: ^3.0.0
   #https://pubdev/packages/awesome_dialog
   awesome_dialog: ^3.0.2
 

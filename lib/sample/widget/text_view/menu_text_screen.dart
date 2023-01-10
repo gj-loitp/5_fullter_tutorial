@@ -7,6 +7,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'auto_size_text/auto_size_text_screen.dart';
 import 'flutter_linkify/flutter_linkify_screen.dart';
 
 /**
@@ -33,6 +34,14 @@ class MenuTextScreen extends StatelessWidget {
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),
           children: [
+            UIUtils.getButton(
+              "auto_size_text",
+              () {
+                Get.to(AutoSizeTextScreen());
+              },
+              description:
+                  "Flutter widget that automatically resizes text to fit perfectly within its bounds.",
+            ),
             UIUtils.getButton(
               "flutter_linkify",
               () {
