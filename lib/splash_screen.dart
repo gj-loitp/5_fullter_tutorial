@@ -5,6 +5,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constant
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -46,14 +47,25 @@ class SplashScreenState extends BaseStatefulState<SplashScreen> {
         if (isReady) {
           Get.off(MenuScreen());
         } else {
-          showErrorDialog(
-            StringConstants.warning,
-            "500 Internal Server Error",
-            "Exit",
-            () {
-              exit(0);
-            },
-          );
+          if (kDebugMode) {
+            showErrorDialog(
+              StringConstants.warning,
+              "Debug mode: 500 Internal Server Error",
+              "Debug mode, tap to continue",
+              () {
+                Get.off(MenuScreen());
+              },
+            );
+          } else {
+            showErrorDialog(
+              StringConstants.warning,
+              "500 Internal Server Error",
+              "Exit",
+              () {
+                exit(0);
+              },
+            );
+          }
         }
       } catch (e) {
         print(e);

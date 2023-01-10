@@ -175,7 +175,7 @@ packages:
       name: calendar_view
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   carousel_slider:
     dependency: "direct main"
     description:
@@ -643,13 +643,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.5"
-  flutter_file_view:
-    dependency: "direct main"
-    description:
-      name: flutter_file_view
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "2.1.2"
   flutter_hsvcolor_picker:
     dependency: transitive
     description:
@@ -1070,7 +1063,7 @@ packages:
       name: lottie
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.0"
+    version: "2.2.0"
   marquee:
     dependency: "direct main"
     description:

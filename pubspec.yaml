@@ -1,7 +1,7 @@
 name: com.roy93group.flutter_tutorial
 description: A new Flutter project.
 publish_to: 'none'
-version: 2023.01.10+20230110
+version: 2023.01.11+20230111
 
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -44,7 +44,7 @@ dependencies:
   #https://pub.dev/packages/calendar_appbar
   calendar_appbar: ^0.0.6
   #https://pub.dev/packages/calendar_view
-  calendar_view: ^1.0.1
+  calendar_view: ^1.0.2
   #https://pub.dev/packages/carousel_slider
   carousel_slider: ^4.2.1
   #https://pub.dev/packages/circular_bottom_navigation
@@ -117,7 +117,7 @@ dependencies:
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_file_view
-  flutter_file_view: ^2.1.2
+#  flutter_file_view: ^2.1.2 //bi gg reject vi co download manual apk -> should not use this plugin
   #https://pub.dev/packages/flutter_local_notifications
   flutter_local_notifications: ^9.9.1 #migrate later
   #https://pub.dev/packages/flutter_linkify
@@ -172,7 +172,7 @@ dependencies:
   #https://pub.dev/packages/liquid_progress_indicator
   liquid_progress_indicator: ^0.4.0
   #https://pub.dev/packages/lottie
-  lottie: ^2.1.0
+  lottie: ^2.2.0
 
   #https://pub.dev/packages/mask_text_input_formatter
   mask_text_input_formatter: ^2.4.0
