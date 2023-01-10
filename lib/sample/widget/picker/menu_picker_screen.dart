@@ -10,6 +10,7 @@ import 'package:get/get.dart';
 import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
 import 'file_picker/file_picker_demo.dart';
 import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
+import 'flutter_rounded_date_picker/flutter_rounded_date_picker_screen.dart';
 import 'horizontal_picker/horizontal_picker_screen.dart';
 import 'numberpicker/numberpicker_screen.dart';
 
@@ -72,6 +73,14 @@ class MenuPickerScreen extends StatelessWidget {
               },
               description:
                   "HSV(HSB)/HSL/RGB/Material color picker inspired by all the good design for your amazing flutter apps.",
+            ),
+            UIUtils.getButton(
+              "flutter_rounded_date_picker",
+              () {
+                Get.to(() => FlutterRoundedDatePickerScreen());
+              },
+              description:
+                  "The Flutter plugin that help you can choose dates and years with rounded calendars and customizable themes.",
             ),
             UIUtils.getButton(
               "horizontal_picker",
