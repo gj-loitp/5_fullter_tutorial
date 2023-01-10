@@ -1,14 +1,14 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/bottomBar/BottomAppBarScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/tabBar/TabBarScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'TabBar2/TabBarScreen2.dart';
+import 'bottom_bar/bottom_app_bar_screen.dart';
 import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'bottom_navy_bar/bottom_navy_bar_screen.dart';
 import 'curved_navigation_bar/curved_navigation_bar_screen.dart';
+import 'tab_bar/tab_bar_screen.dart';
+import 'tab_bar2/tab_bar_screen2.dart';
 
 /**
  * Created by Loitp on 08,August,2022

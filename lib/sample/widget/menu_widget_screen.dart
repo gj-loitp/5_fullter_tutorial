@@ -1,7 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/BlurScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/menu_bottom_bar_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/blur_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/overflow_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/menu_picker_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/scrollable_table_view/scrollable_table_view_screen.dart';
@@ -17,9 +16,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animated_background/animated_background_screen.dart';
-import 'appbar/SliverAppBarScreen.dart';
+import 'appbar/sliver_app_bar_screen.dart';
 import 'badges/badges_screen.dart';
 import 'bottomSheet/BottomSheetScreen.dart';
+import 'bottom_bar/menu_bottom_bar_screen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'calendar_appbar/calendar_appbar_screen.dart';
 import 'calendar_view/calendar_view_screen.dart';

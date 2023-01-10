@@ -1,8 +1,9 @@
 import 'package:bottom_bar_with_sheet/bottom_bar_with_sheet.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/bottom_bar_with_sheet/examples/usecases/tagselector/widgets/generated_post_page.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/bottom_bar_with_sheet/examples/usecases/tagselector/widgets/tag_button.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/bottom_bar_with_sheet/examples/usecases/tagselector/widgets/tag_selecting_page.dart';
 import 'package:flutter/material.dart';
+
+import 'widgets/generated_post_page.dart';
+import 'widgets/tag_button.dart';
+import 'widgets/tag_selecting_page.dart';
 
 class TagSelectorExample extends StatelessWidget {
   const TagSelectorExample({Key? key}) : super(key: key);

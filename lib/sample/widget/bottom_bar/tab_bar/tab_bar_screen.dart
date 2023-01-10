@@ -2,9 +2,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'Tab1.dart';
-import 'Tab2.dart';
-import 'Tab3.dart';
+import 'tab1.dart';
+import 'tab2.dart';
+import 'tab3.dart';
 
 /**
  * Created by Loitp on 08,August,2022

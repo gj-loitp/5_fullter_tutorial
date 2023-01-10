@@ -1,5 +1,6 @@
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/bottom_bar_with_sheet/examples/usecases/tagselector/widgets/tag_button.dart';
 import 'package:flutter/material.dart';
+
+import 'tag_button.dart';
 
 class TagsSelectingPage extends StatelessWidget {
   const TagsSelectingPage({
