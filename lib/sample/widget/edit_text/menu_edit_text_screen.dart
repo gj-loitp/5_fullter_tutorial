@@ -6,8 +6,8 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/edit_text/text_fie
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'EditTextScreen.dart';
-import 'FormFieldScreen.dart';
+import 'edit_text_screen.dart';
+import 'form_field_screen.dart';
 import 'mask_text_input_formatter/mask_text_input_formatter_screen.dart';
 
 /**
