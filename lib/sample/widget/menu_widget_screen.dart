@@ -18,8 +18,8 @@ import 'package:get/get.dart';
 import 'animated_background/animated_background_screen.dart';
 import 'appbar/sliver_app_bar_screen.dart';
 import 'badges/badges_screen.dart';
-import 'bottomSheet/BottomSheetScreen.dart';
 import 'bottom_bar/menu_bottom_bar_screen.dart';
+import 'bottom_sheet/bottom_sheet_screen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'calendar_appbar/calendar_appbar_screen.dart';
 import 'calendar_view/calendar_view_screen.dart';
@@ -315,11 +315,11 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "flutter_file_view",
-                  () {
+              () {
                 Get.to(() => FlutterFileViewScreen());
               },
               description:
-              "A file viewer plugin for Flutter, support local file and network link of Android, iOS.",
+                  "A file viewer plugin for Flutter, support local file and network link of Android, iOS.",
             ),
             UIUtils.getButton(
               "FlutterReactionButtonScreen",
