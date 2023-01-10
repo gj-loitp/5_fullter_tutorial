@@ -44,16 +44,21 @@ class _DatePickerTimeLineFixedScreenState
               "https://pub.dev/packages/date_picker_timeline_fixed");
         },
       ),
-      body: DatePicker(
-        DateTime.now(),
-        initialSelectedDate: DateTime.now(),
-        selectionColor: Colors.black,
-        selectedTextColor: Colors.white,
-        onDateChange: (date) {
-          setState(() {
-            showSnackBarFull("onDateChange", "date $date");
-          });
-        },
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          DatePicker(
+            DateTime.now(),
+            initialSelectedDate: DateTime.now(),
+            selectionColor: Colors.black,
+            selectedTextColor: Colors.white,
+            onDateChange: (date) {
+              setState(() {
+                showSnackBarFull("onDateChange", "date $date");
+              });
+            },
+          ),
+        ],
       ),
     );
   }

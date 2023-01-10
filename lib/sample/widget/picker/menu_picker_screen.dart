@@ -42,16 +42,20 @@ class MenuPickerScreen extends StatelessWidget {
               () {
                 Get.to(() => CountryPickerScreen());
               },
+              description:
+                  "A flutter package to select a country from a list of countries.",
             ),
             UIUtils.getButton(
               "date_picker_timeline_fixed",
               () {
                 Get.to(() => DatePickerTimeLineFixedScreen());
               },
+              description:
+                  "Flutter Date Picker Library that provides a calendar as a horizontal timeline.",
             ),
             UIUtils.getButton(
               "DayPickerScreen",
-                  () {
+              () {
                 Get.to(() => DayPickerScreen());
               },
             ),
@@ -66,24 +70,32 @@ class MenuPickerScreen extends StatelessWidget {
               () {
                 Get.to(() => FlutterColorPickerScreen());
               },
+              description:
+                  "HSV(HSB)/HSL/RGB/Material color picker inspired by all the good design for your amazing flutter apps.",
             ),
             UIUtils.getButton(
               "horizontal_picker",
-                  () {
+              () {
                 Get.to(() => HorizontalPickerScreen());
               },
+              description:
+                  "You can select your value on Horizontal Picker while scrolling on items.",
             ),
             UIUtils.getButton(
-              "ImagePickerScreen",
+              "image_picker",
               () {
                 Get.to(() => ImagePickerScreen());
               },
+              description:
+                  "Flutter plugin for selecting images from the Android and iOS image library, and taking new pictures with the camera.",
             ),
             UIUtils.getButton(
               "numberpicker",
-                  () {
+              () {
                 Get.to(() => NumberPickerScreen());
               },
+              description:
+                  "NumberPicker is a widget allowing user to choose numbers by scrolling spinners.",
             ),
           ],
         ),

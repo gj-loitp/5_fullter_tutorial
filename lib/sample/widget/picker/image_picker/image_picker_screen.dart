@@ -228,7 +228,7 @@ class _ImagePickerScreenState extends BaseStatefulState<ImagePickerScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "ImagePickerScreen",
+        "image_picker",
         () {
           Get.back();
         },
