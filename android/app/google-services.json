@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "753202550506",
+    "project_id": "roy-flutter-tutorial",
+    "storage_bucket": "roy-flutter-tutorial.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:753202550506:android:51329f6868baf633eea993",
+        "android_client_info": {
+          "package_name": "com.roy93group.fullter_tutorial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "753202550506-rn4vb814acpbhavmhsrc74uuagkfmhjc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3Yix15NM1T33kGvd7W5jdHygy3m21q3w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "753202550506-rn4vb814acpbhavmhsrc74uuagkfmhjc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,7 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/BlurScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/bottomBar/menu_bottom_bar_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/blur_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/overflow_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/menu_picker_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/scrollable_table_view/scrollable_table_view_screen.dart';
@@ -17,9 +16,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animated_background/animated_background_screen.dart';
-import 'appbar/SliverAppBarScreen.dart';
+import 'appbar/sliver_app_bar_screen.dart';
 import 'badges/badges_screen.dart';
-import 'bottomSheet/BottomSheetScreen.dart';
+import 'bottom_bar/menu_bottom_bar_screen.dart';
+import 'bottom_sheet/bottom_sheet_screen.dart';
 import 'button/MenuButtonScreen.dart';
 import 'calendar_appbar/calendar_appbar_screen.dart';
 import 'calendar_view/calendar_view_screen.dart';
@@ -38,7 +38,7 @@ import 'dotted_border/dotted_border_screen.dart';
 import 'drawer/MenuDrawerScreen.dart';
 import 'drop_shadow/drop_shadow_screen.dart';
 import 'easy_loading/easy_loading_screen.dart';
-import 'editText/MenuEditTextScreen.dart';
+import 'edit_text/menu_edit_text_screen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
@@ -55,7 +55,7 @@ import 'in_app_review/in_app_review_screen.dart';
 import 'inkwell/inkwell_screen.dart';
 import 'interactive_viewer/using_interactive_viewer_screen.dart';
 import 'layout/menu_layout_screen.dart';
-import 'list/MenuListScreen.dart';
+import 'list/menu_list_screen.dart';
 import 'md2TabIndicator/Md2TabIndicatorScreen.dart';
 import 'menuHorizontalDataTable/MenuHorizontalDataTableScreen.dart';
 import 'menu_image/menu_image_screen.dart';
@@ -129,7 +129,7 @@ class MenuWidgetScreen extends StatelessWidget {
                   "Blur is a wrapper widget that blur it's child. There are ImageBlur.asset and ImageBlur.network that blur the image. Frost is another wrapper which blurs the background.",
             ),
             UIUtils.getButton(
-              "MenuBottomBarScreen",
+              "Bottom Bar",
               () {
                 Get.to(() => MenuBottomBarScreen());
               },
@@ -141,7 +141,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuButtonScreen",
+              "Button",
               () {
                 Get.to(() => MenuButtonScreen());
               },
@@ -203,7 +203,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuCupertinoScreen",
+              "Cupertino",
               () {
                 Get.to(() => MenuCupertinoScreen());
               },
@@ -230,7 +230,7 @@ class MenuWidgetScreen extends StatelessWidget {
                   "A widget that enables you to display a child after a delay and with beautiful fading and sliding animation.",
             ),
             UIUtils.getButton(
-              "MenuDialogScreen",
+              "Dialog",
               () {
                 Get.to(() => MenuDialogScreen());
               },
@@ -244,7 +244,7 @@ class MenuWidgetScreen extends StatelessWidget {
                   "A flutter package to let users easily add a dashed border around any widget.",
             ),
             UIUtils.getButton(
-              "MenuDrawerScreen",
+              "Drawer",
               () {
                 Get.to(() => MenuDrawerScreen());
               },
@@ -264,7 +264,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuEditTextScreen",
+              "EditText",
               () {
                 Get.to(() => MenuEditTextScreen());
               },
@@ -276,7 +276,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuExpansionScreen",
+              "Expansion",
               () {
                 Get.to(() => MenuExpansionScreen());
               },
@@ -315,11 +315,11 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "flutter_file_view",
-                  () {
+              () {
                 Get.to(() => FlutterFileViewScreen());
               },
               description:
-              "A file viewer plugin for Flutter, support local file and network link of Android, iOS.",
+                  "A file viewer plugin for Flutter, support local file and network link of Android, iOS.",
             ),
             UIUtils.getButton(
               "FlutterReactionButtonScreen",
@@ -334,7 +334,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuGridScreen",
+              "Grid",
               () {
                 Get.to(() => MenuGridScreen());
               },
@@ -374,13 +374,13 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuLayoutScreen",
+              "LayoutScreen",
               () {
                 Get.to(() => MenuLayoutScreen());
               },
             ),
             UIUtils.getButton(
-              "MenuListScreen",
+              "List",
               () {
                 Get.to(() => MenuListScreen());
               },
@@ -392,13 +392,13 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuHorizontalDataTableScreen",
+              "Horizontal Data Table",
               () {
                 Get.to(() => MenuHorizontalDataTableScreen());
               },
             ),
             UIUtils.getButton(
-              "MenuImageScreen",
+              "Image",
               () {
                 Get.to(() => MenuImageScreen());
               },
@@ -418,13 +418,13 @@ class MenuWidgetScreen extends StatelessWidget {
                   "A widget displaying children in a line with an overflow indicator at the end if there is not enough space.",
             ),
             UIUtils.getButton(
-              "MenuPickerScreen",
+              "Picker",
               () {
                 Get.to(() => MenuPickerScreen());
               },
             ),
             UIUtils.getButton(
-              "MenuProgressScreen",
+              "Progress - Indicator",
               () {
                 Get.to(() => MenuProgressScreen());
               },
@@ -460,7 +460,7 @@ class MenuWidgetScreen extends StatelessWidget {
                   "Flutter package to show url preview. Custamizable height, background and text styles, as well as lines.",
             ),
             UIUtils.getButton(
-              "MenuSliderScreen",
+              "Slider",
               () {
                 Get.to(MenuSliderScreen());
               },
@@ -498,7 +498,7 @@ class MenuWidgetScreen extends StatelessWidget {
                   "Amazing animated colored circular widget , you can use it to your profile , loading screen or any widget you want.",
             ),
             UIUtils.getButton(
-              "MenuSwitchScreen",
+              "Switch - Toggle",
               () {
                 Get.to(() => MenuSwitchScreen());
               },
@@ -516,7 +516,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "MenuTextScreen",
+              "Text",
               () {
                 Get.to(() => MenuTextScreen());
               },
@@ -550,7 +550,7 @@ class MenuWidgetScreen extends StatelessWidget {
                   "Widget for displaying waves with custom color, duration, floating and blur effects.",
             ),
             UIUtils.getButton(
-              "MenuWebviewScreen",
+              "Web view",
               () {
                 Get.to(() => MenuWebviewScreen());
               },

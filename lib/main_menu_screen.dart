@@ -1,6 +1,7 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flame/flame.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -142,6 +143,13 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                 Get.to(EmptyScreen());
               },
             ),
+            if (kDebugMode)
+              UIUtils.getButton(
+                "Force a test crash",
+                () {
+                  FirebaseCrashlytics.instance.crash();
+                },
+              ),
           ],
         );
       }),

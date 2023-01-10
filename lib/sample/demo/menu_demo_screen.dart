@@ -1,6 +1,8 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/pdf_text/pdf_text_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/qr_flutter/qr_flutter_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/recase/recase_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/remove_emoji/remove_emoji_screen.dart';
 import 'package:flutter/material.dart';
@@ -266,6 +268,14 @@ class MenuDemoScreen extends StatelessWidget {
                 "Flutter plugin for querying information about the application package, such as CFBundleVersion on iOS or versionCode on Android.",
           ),
           UIUtils.getButton(
+            "pdf_text",
+            () {
+              Get.to(() => PdfTextScreen());
+            },
+            description:
+                "This plugin for Flutter allows you to read the text content of PDF documents and convert it into strings. It works on iOS and Android.",
+          ),
+          UIUtils.getButton(
             "permission_handler",
             () {
               Get.to(() => PermissionHandlerScreen());
@@ -280,6 +290,14 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS.",
+          ),
+          UIUtils.getButton(
+            "qr_flutter",
+            () {
+              Get.to(() => QrFlutterScreen());
+            },
+            description:
+                "QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter.",
           ),
           UIUtils.getButton(
             "recase",

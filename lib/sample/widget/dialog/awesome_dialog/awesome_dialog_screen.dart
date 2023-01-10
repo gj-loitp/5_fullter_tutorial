@@ -18,7 +18,7 @@ class AwesomeDialogScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "AwesomeDialogScreen",
+        "awesome_dialog",
         () {
           Get.back();
         },
