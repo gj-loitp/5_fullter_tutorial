@@ -19,6 +19,7 @@ import 'animated_positioned_screen.dart';
 import 'animated_size_screen.dart';
 import 'animated_switcher_screen.dart';
 import 'animated_theme_screen.dart';
+import 'confetti/confetti_screen.dart';
 import 'decorated_box_transition_screen.dart';
 import 'fade_in_image_screen.dart';
 import 'fade_transition_screen.dart';
@@ -50,10 +51,26 @@ class MenuAnimationScreen extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         children: [
           UIUtils.getButton(
+            "confetti",
+            () => {
+              Get.to(ConfettiScreen()),
+            },
+            description:
+                "Blast colorful confetti all over the screen. Celebrate in app achievements with style. Control the velocity, angle, gravity and amount of confetti.",
+          ),
+          UIUtils.getButton(
             "HeroAnimationDemoScreen",
             () => {
               Get.to(HeroAnimationDemoScreen()),
             },
+          ),
+          UIUtils.getButton(
+            "lottie",
+            () => {
+              Get.to(LottieScreen()),
+            },
+            description:
+                "Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player.",
           ),
           UIUtils.getButton(
             "RouteTransitionScreen",
@@ -179,12 +196,6 @@ class MenuAnimationScreen extends StatelessWidget {
             "RotationTransitionScreen",
             () => {
               Get.to(RotationTransitionScreen()),
-            },
-          ),
-          UIUtils.getButton(
-            "LottieScreen",
-            () => {
-              Get.to(LottieScreen()),
             },
           ),
         ],
