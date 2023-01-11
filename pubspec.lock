@@ -589,6 +589,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.0-releasecandidate.15"
+  flexible_calendar:
+    dependency: "direct main"
+    description:
+      name: flexible_calendar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.1"
   floating_bubbles:
     dependency: "direct main"
     description:
