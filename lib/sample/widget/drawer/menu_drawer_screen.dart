@@ -1,5 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/drawer/sidebarx/sidebarx_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -59,6 +60,14 @@ class MenuDrawerScreen extends StatelessWidget {
               () {
                 Get.to(NavigationDrawerScreen());
               },
+            ),
+            UIUtils.getButton(
+              "sidebarx",
+              () {
+                Get.to(SidebarxScreen());
+              },
+              description:
+                  "flutter multiplatform navigation sidebar / side navigationbar / drawer widget",
             ),
           ],
         ),

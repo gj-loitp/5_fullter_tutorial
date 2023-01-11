@@ -1631,6 +1631,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
+  sidebarx:
+    dependency: "direct main"
+    description:
+      name: sidebarx
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.14.0"
   simple_animations:
     dependency: transitive
     description:

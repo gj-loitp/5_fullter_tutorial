@@ -293,6 +293,8 @@ dependencies:
   shape_of_view_null_safe: ^2.0.0
   #https://pub.dev/packages/smooth_page_indicator
   smooth_page_indicator: ^1.0.0+2
+  #https://pub.dev/packages/sidebarx
+  sidebarx: ^0.14.0
   #https://pub.dev/packages/super_circle
   super_circle: ^1.0.0
 
