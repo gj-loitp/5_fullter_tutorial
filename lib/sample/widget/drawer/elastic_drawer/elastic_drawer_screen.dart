@@ -61,6 +61,8 @@ class _MyHomePageState extends State<MyHomePage> {
     return ElasticDrawer(
       mainColor: Colors.white,
       drawerColor: const Color(0xff3C3F41),
+      markWidth: 10,
+      markPosition: 0.5,
       mainChild: const Center(
         child: Text(
           'MAIN page',
