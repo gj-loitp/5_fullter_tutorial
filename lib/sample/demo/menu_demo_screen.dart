@@ -46,6 +46,7 @@ import 'timeago/timeago_screen.dart';
 import 'tip_calculator/tip_calculator_screen.dart';
 import 'todo/screen/to_do_main_screen.dart';
 import 'url_launcher/url_launcher_screen.dart';
+import 'uuid/uuid_screen.dart';
 import 'wakelock/wakelock_screen.dart';
 
 /**
@@ -378,6 +379,14 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
+          ),
+          UIUtils.getButton(
+            "uuid",
+            () {
+              Get.to(UUIDScreen());
+            },
+            description:
+                "RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)",
           ),
           UIUtils.getButton(
             "wakelock",
