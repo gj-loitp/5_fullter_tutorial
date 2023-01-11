@@ -12,6 +12,7 @@ import 'package:get/get.dart';
 import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
 import 'async/menu_async_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
+import 'clipboard/clipboard_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'connectivity_plus/connectivity_plus_screen.dart';
 import 'counter/counter_screen.dart';
@@ -90,6 +91,14 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "Flutter plugin for accessing information about the battery state(full, charging, discharging).",
+          ),
+          UIUtils.getButton(
+            "clipboard",
+            () {
+              Get.to(ClipboardScreen());
+            },
+            description:
+                "A flutter package that helps copy text to clipboard and paste from clipboard.",
           ),
           UIUtils.getButton(
             "CommunicationBetweenWidgetScreen",
