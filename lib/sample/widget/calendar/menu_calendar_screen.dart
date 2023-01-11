@@ -4,9 +4,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../calendar_appbar/calendar_appbar_screen.dart';
-import '../calendar_view/calendar_view_screen.dart';
-import '../horizontal_calendar/horizontal_calendar_screen.dart';
+import 'calendar_appbar/calendar_appbar_screen.dart';
+import 'calendar_view/calendar_view_screen.dart';
+import 'flexible_calendar/flexible_calendar_screen.dart';
+import 'horizontal_calendar/horizontal_calendar_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -47,6 +48,14 @@ class MenuCalendarScreen extends StatelessWidget {
               },
               description:
                   "A Flutter package allows you to easily implement all calendar UI and calendar event functionality.",
+            ),
+            UIUtils.getButton(
+              "flexible_calendar",
+              () {
+                Get.to(() => FlexibleCalendarScreen());
+              },
+              description:
+                  "A flexible libray for Custom Calendar, you can selected one day, range days, limited dates, beautiful interface and more.",
             ),
             UIUtils.getButton(
               "horizontal_calendar",
