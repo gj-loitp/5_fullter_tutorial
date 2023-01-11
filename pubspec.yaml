@@ -146,6 +146,8 @@ dependencies:
   flutter_simple_treeview: ^3.0.2
   #https://pub.dev/packages/flutter_slidable
   flutter_slidable: ^0.6.0 #migrate later
+  #https://pub.dev/packages/flutter_slider_drawer
+  flutter_slider_drawer: ^2.1.2
   #https://pub.dev/packages/flutter_smart_dialog
   flutter_smart_dialog: ^4.8.0
   #https://pub.dev/packages/flutter_staggered_grid_view
