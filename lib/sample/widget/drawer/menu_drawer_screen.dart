@@ -3,8 +3,8 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'drawer/DrawerScreen.dart';
-import 'navigationDrawer/NavigationDrawerScreen.dart';
+import 'drawer/drawer_screen.dart';
+import 'navigation_drawer/navigation_drawer_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -18,7 +18,7 @@ class MenuDrawerScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "MenuDrawerScreen",
+        "Drawer",
         () {
           Get.back();
         },

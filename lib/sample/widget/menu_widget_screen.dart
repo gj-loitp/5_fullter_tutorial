@@ -34,7 +34,7 @@ import 'dchart/DChartScreen.dart';
 import 'delayedDisplay/DelayedDisplayScreen.dart';
 import 'dialog/menu_dialog_screen.dart';
 import 'dotted_border/dotted_border_screen.dart';
-import 'drawer/MenuDrawerScreen.dart';
+import 'drawer/menu_drawer_screen.dart';
 import 'drop_shadow/drop_shadow_screen.dart';
 import 'easy_loading/easy_loading_screen.dart';
 import 'edit_text/menu_edit_text_screen.dart';
