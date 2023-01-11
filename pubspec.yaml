@@ -87,10 +87,16 @@ dependencies:
   #https://pub.dev/packages/drop_shadow
   drop_shadow: ^0.0.2+1
 
-  easy_debounce: ^2.0.3 #https://pub.dev/packages/easy_debounce
-  encrypt: ^5.0.1 #https://pub.dev/packages/encrypt
-  english_words: ^4.0.0 #https://pub.dev/packages/english_words
-  event_bus: ^2.0.0 #https://pub.dev/packages/event_bus
+  #https://pub.dev/packages/easy_debounce
+  easy_debounce: ^2.0.3
+  #https://pub.dev/packages/elastic_drawer
+  elastic_drawer: ^2.0.2
+  #https://pub.dev/packages/encrypt
+  encrypt: ^5.0.1
+  #https://pub.dev/packages/english_words
+  english_words: ^4.0.0
+  #https://pub.dev/packages/event_bus
+  event_bus: ^2.0.0
   #https://pub.dev/packages/equatable
   equatable: ^2.0.5
 

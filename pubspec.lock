@@ -442,6 +442,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.3"
+  elastic_drawer:
+    dependency: "direct main"
+    description:
+      name: elastic_drawer
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.0.2"
   encrypt:
     dependency: "direct main"
     description:

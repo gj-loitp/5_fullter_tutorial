@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'drawer/drawer_screen.dart';
+import 'elastic_drawer/elastic_drawer_screen.dart';
 import 'navigation_drawer/navigation_drawer_screen.dart';
 
 /**
@@ -35,6 +36,14 @@ class MenuDrawerScreen extends StatelessWidget {
               () {
                 Get.to(DrawerScreen());
               },
+            ),
+            UIUtils.getButton(
+              "elastic_drawer",
+              () {
+                Get.to(ElasticDrawerScreen());
+              },
+              description:
+                  "Elastic Drawer - elastic panel that slides in horizontally to show fully customize content (navigation links, menu items, notes etc.)",
             ),
             UIUtils.getButton(
               "NavigationDrawerScreen",
