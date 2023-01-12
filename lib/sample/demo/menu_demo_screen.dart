@@ -2,9 +2,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/pdf_text/pdf_text_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/qr_flutter/qr_flutter_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/recase/recase_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/remove_emoji/remove_emoji_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/scanner/menu_scanner_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
@@ -34,11 +34,9 @@ import 'image_gallery_saver/image_gallery_saver_screen.dart';
 import 'inherited/menu_inherited_screen.dart';
 import 'load_local_json/load_local_json_screen.dart';
 import 'local_auth/local_auth_screen.dart';
-import 'mobile_scanner/mobile_scanner_screen.dart';
 import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
 import 'package_info_plus/package_info_plus_screen.dart';
 import 'permission_handler/permission_handler_screen.dart';
-import 'qr_code_scanner/qr_code_scanner_screen.dart';
 import 'restart_app/restart_app_screen.dart';
 import 'share_plus/share_plus_screen.dart';
 import 'shop/shop_screen.dart';
@@ -264,14 +262,6 @@ class MenuDemoScreen extends StatelessWidget {
                 "Flutter plugin for Android and iOS devices to allow local authentication via fingerprint, touch ID, face ID, passcode, pin, or pattern.",
           ),
           UIUtils.getButton(
-            "mobile_scanner",
-            () {
-              Get.to(MobileScannerScreen());
-            },
-            description:
-                "A universal barcode and QR code scanner for Flutter based on MLKit. Uses CameraX on Android, AVFoundation on iOS and Apple Vision & AVFoundation on macOS.",
-          ),
-          UIUtils.getButton(
             "one_target_mobile_sdk",
             () {
               Get.to(OneTargetMobileSDKScreen());
@@ -303,22 +293,6 @@ class MenuDemoScreen extends StatelessWidget {
                 "Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API to request and check permissions.",
           ),
           UIUtils.getButton(
-            "qr_code_scanner",
-            () {
-              Get.to(() => QrCodeScannerScreen());
-            },
-            description:
-                "QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS.",
-          ),
-          UIUtils.getButton(
-            "qr_flutter",
-            () {
-              Get.to(() => QrFlutterScreen());
-            },
-            description:
-                "QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter.",
-          ),
-          UIUtils.getButton(
             "recase",
             () {
               Get.to(() => RecaseScreen());
@@ -341,6 +315,13 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "A simple package that helps you to restart the whole android app with a single function call.",
+          ),
+          UIUtils.getButton(
+            "Scanner",
+            () {
+              Get.to(() => MenuScannerScreen());
+            },
+            description: "Qr, Barcode...",
           ),
           UIUtils.getButton(
             "share_plus",
