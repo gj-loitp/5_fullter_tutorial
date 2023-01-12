@@ -1,8 +1,9 @@
 import 'dart:math';
 
-import 'package:com.roy93group.flutter_tutorial/sample/demo/mobile_scanner/ex/scanner_error_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+
+import 'scanner_error_widget.dart';
 
 class BarcodeScannerReturningImage extends StatefulWidget {
   const BarcodeScannerReturningImage({Key? key}) : super(key: key);

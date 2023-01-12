@@ -1,20 +1,21 @@
-import 'package:com.roy93group.flutter_tutorial/sample/demo/mobile_scanner/ex/scanner_error_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
-class BarcodeListScannerWithController extends StatefulWidget {
-  const BarcodeListScannerWithController({Key? key}) : super(key: key);
+import 'scanner_error_widget.dart';
+
+class BarcodeScannerWithController extends StatefulWidget {
+  const BarcodeScannerWithController({Key? key}) : super(key: key);
 
   @override
-  _BarcodeListScannerWithControllerState createState() =>
-      _BarcodeListScannerWithControllerState();
+  _BarcodeScannerWithControllerState createState() =>
+      _BarcodeScannerWithControllerState();
 }
 
-class _BarcodeListScannerWithControllerState
-    extends State<BarcodeListScannerWithController>
+class _BarcodeScannerWithControllerState
+    extends State<BarcodeScannerWithController>
     with SingleTickerProviderStateMixin {
-  BarcodeCapture? barcodeCapture;
+  BarcodeCapture? barcode;
 
   final MobileScannerController controller = MobileScannerController(
     torchEnabled: true,
@@ -57,13 +58,10 @@ class _BarcodeListScannerWithControllerState
                   return ScannerErrorWidget(error: error);
                 },
                 fit: BoxFit.contain,
-                onDetect: (barcodeCapture) {
+                onDetect: (barcode) {
                   setState(() {
-                    this.barcodeCapture = barcodeCapture;
+                    this.barcode = barcode;
                   });
-                },
-                onScannerStarted: (arguments) {
-                  // Do something with arguments.
                 },
               ),
               Align(
@@ -75,33 +73,41 @@ class _BarcodeListScannerWithControllerState
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      IconButton(
-                        color: Colors.white,
-                        icon: ValueListenableBuilder(
-                          valueListenable: controller.torchState,
-                          builder: (context, state, child) {
-                            if (state == null) {
-                              return const Icon(
-                                Icons.flash_off,
-                                color: Colors.grey,
-                              );
-                            }
-                            switch (state as TorchState) {
-                              case TorchState.off:
-                                return const Icon(
-                                  Icons.flash_off,
-                                  color: Colors.grey,
-                                );
-                              case TorchState.on:
-                                return const Icon(
-                                  Icons.flash_on,
-                                  color: Colors.yellow,
-                                );
-                            }
-                          },
-                        ),
-                        iconSize: 32.0,
-                        onPressed: () => controller.toggleTorch(),
+                      ValueListenableBuilder(
+                        valueListenable: controller.hasTorchState,
+                        builder: (context, state, child) {
+                          if (state != true) {
+                            return const SizedBox.shrink();
+                          }
+                          return IconButton(
+                            color: Colors.white,
+                            icon: ValueListenableBuilder(
+                              valueListenable: controller.torchState,
+                              builder: (context, state, child) {
+                                if (state == null) {
+                                  return const Icon(
+                                    Icons.flash_off,
+                                    color: Colors.grey,
+                                  );
+                                }
+                                switch (state as TorchState) {
+                                  case TorchState.off:
+                                    return const Icon(
+                                      Icons.flash_off,
+                                      color: Colors.grey,
+                                    );
+                                  case TorchState.on:
+                                    return const Icon(
+                                      Icons.flash_on,
+                                      color: Colors.yellow,
+                                    );
+                                }
+                              },
+                            ),
+                            iconSize: 32.0,
+                            onPressed: () => controller.toggleTorch(),
+                          );
+                        },
                       ),
                       IconButton(
                         color: Colors.white,
@@ -117,7 +123,8 @@ class _BarcodeListScannerWithControllerState
                           height: 50,
                           child: FittedBox(
                             child: Text(
-                              '${barcodeCapture?.barcodes.map((e) => e.rawValue) ?? 'Scan something!'}',
+                              barcode?.barcodes.first.rawValue ??
+                                  'Scan something!',
                               overflow: TextOverflow.fade,
                               style: Theme.of(context)
                                   .textTheme

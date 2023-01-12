@@ -1,6 +1,7 @@
-import 'package:com.roy93group.flutter_tutorial/sample/demo/mobile_scanner/ex/scanner_error_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
+
+import 'scanner_error_widget.dart';
 
 class BarcodeScannerWithoutController extends StatefulWidget {
   const BarcodeScannerWithoutController({Key? key}) : super(key: key);
