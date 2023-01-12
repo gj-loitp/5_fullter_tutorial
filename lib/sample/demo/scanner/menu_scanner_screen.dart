@@ -3,9 +3,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../qr_code_scanner/qr_code_scanner_screen.dart';
-import '../qr_flutter/qr_flutter_screen.dart';
 import 'mobile_scanner/mobile_scanner_screen.dart';
+import 'qr_code_scanner/qr_code_scanner_screen.dart';
+import 'qr_flutter/qr_flutter_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
