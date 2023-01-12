@@ -30,7 +30,7 @@ class MenuScannerScreen extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         children: [
           UIUtils.getButton(
-            "mobile_scanner",
+            "mobile_scanner (+++)",
             () {
               Get.to(MobileScannerScreen());
             },
