@@ -1140,7 +1140,7 @@ packages:
       name: mobile_scanner
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.1.0"
+    version: "3.0.0-beta.4"
   modal_bottom_sheet:
     dependency: "direct main"
     description:
