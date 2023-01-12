@@ -287,6 +287,8 @@ dependencies:
   progress_state_button: ^1.0.4
   #https://pub.dev/packages/pull_to_refresh
   pull_to_refresh: ^2.0.0
+  #https://pub.dev/packages/pretty_qr_code
+  pretty_qr_code: ^2.0.0
 
   #https://pub.dev/packages/scrollable_table_view
   scrollable_table_view: ^1.0.0
