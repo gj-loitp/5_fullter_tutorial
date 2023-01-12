@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'mobile_scanner/mobile_scanner_screen.dart';
+import 'pretty_qr_code/pretty_qr_code_screen.dart';
 import 'qr_code_scanner/qr_code_scanner_screen.dart';
 import 'qr_flutter/qr_flutter_screen.dart';
 
@@ -36,6 +37,14 @@ class MenuScannerScreen extends StatelessWidget {
             },
             description:
                 "A universal barcode and QR code scanner for Flutter based on MLKit. Uses CameraX on Android, AVFoundation on iOS and Apple Vision & AVFoundation on macOS.",
+          ),
+          UIUtils.getButton(
+            "pretty_qr_code",
+            () {
+              Get.to(() => PrettyQrCodeScreen());
+            },
+            description:
+                "Pretty QR code for Flutter. You can round the edges with parameter or use the standard view.",
           ),
           UIUtils.getButton(
             "qr_code_scanner",
