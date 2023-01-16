@@ -12,6 +12,7 @@ import 'file_picker/file_picker_demo.dart';
 import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
 import 'flutter_rounded_date_picker/flutter_rounded_date_picker_screen.dart';
 import 'horizontal_picker/horizontal_picker_screen.dart';
+import 'hsv_color_pickers/hsv_color_pickers_screen.dart';
 import 'numberpicker/numberpicker_screen.dart';
 
 /**
@@ -89,6 +90,14 @@ class MenuPickerScreen extends StatelessWidget {
               },
               description:
                   "You can select your value on Horizontal Picker while scrolling on items.",
+            ),
+            UIUtils.getButton(
+              "hsv_color_pickers",
+              () {
+                Get.to(() => HsvColorPickersScreen());
+              },
+              description:
+                  "Flutter package for creating customisable Color pickers for HSV Colors",
             ),
             UIUtils.getButton(
               "image_picker",

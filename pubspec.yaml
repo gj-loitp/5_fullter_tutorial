@@ -172,6 +172,8 @@ dependencies:
   horizontal_picker: ^1.2.0
   #https://pub.dev/packages/html2md
   html2md: ^1.2.6
+  #https://pub.dev/packages/hsv_color_pickers
+  hsv_color_pickers: ^0.2.2
 
   #https://pub.dev/packages/local_auth
   local_auth: ^1.1.11 #migate later

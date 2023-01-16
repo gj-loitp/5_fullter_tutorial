@@ -910,6 +910,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.2.0"
+  hsv_color_pickers:
+    dependency: "direct main"
+    description:
+      name: hsv_color_pickers
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.2.2"
   html:
     dependency: transitive
     description:
