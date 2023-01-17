@@ -7,7 +7,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:package_info_plus/package_info_plus.dart';
 
 import 'lib/core/base_stateful_state.dart';
 import 'lib/util/ui_utils.dart';
@@ -35,26 +34,13 @@ class MenuScreen extends StatefulWidget {
 
 class _MenuScreenState extends BaseStatefulState<MenuScreen> {
   var _cMenu = Get.put(MenuController());
-  PackageInfo _packageInfo = PackageInfo(
-    appName: 'Unknown',
-    packageName: 'Unknown',
-    version: 'Unknown',
-    buildNumber: 'Unknown',
-  );
 
   @override
   void initState() {
     super.initState();
 
     _cMenu.setupData();
-    _initPackageInfo();
-  }
-
-  Future<void> _initPackageInfo() async {
-    final info = await PackageInfo.fromPlatform();
-    setState(() {
-      _packageInfo = info;
-    });
+    _cMenu.initPackageInfo();
   }
 
   @override
@@ -86,7 +72,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
           children: [
             Container(
               alignment: Alignment.center,
-              child: UIUtils.getText("Version ${_packageInfo.version}"),
+              child: UIUtils.getText("Version ${_cMenu.packageInfo.version}"),
             ),
             UIUtils.getButton(
               "Animation",
