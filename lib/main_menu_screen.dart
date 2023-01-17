@@ -57,7 +57,10 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
         () {
           SystemNavigator.pop();
         },
-        null,
+        () {
+          UrlLauncherUtils.launchPolicy();
+        },
+        iconData: Icons.policy,
       ),
       body: Obx(() {
         var isFullData = _cMenu.isFullData.value;
@@ -138,8 +141,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
             UIUtils.getButton(
               "Policy",
               () {
-                UrlLauncherUtils.launchInWebViewWithJavaScript(
-                    "https://loitp.wordpress.com/2018/06/10/dieu-khoan-su-dung-chinh-sach-bao-mat-va-quyen-rieng-tu/");
+                UrlLauncherUtils.launchPolicy();
               },
             ),
             UIUtils.getButton(
