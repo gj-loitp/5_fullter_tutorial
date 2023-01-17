@@ -151,7 +151,10 @@ class _MyHomePageState extends BaseStatefulState<MyHomePage> {
                         await File('${directory.path}/image.png').create();
                     var file = await imagePath.writeAsBytes(image);
                     Dog.d(">>>file ${file.path}");
-                    await Share.shareFiles([imagePath.path]);
+
+                    // await Share.shareFiles([imagePath.path]);
+                    XFile x = XFile(imagePath.path);
+                    await Share.shareXFiles([x]);
                   }
                 });
               },
