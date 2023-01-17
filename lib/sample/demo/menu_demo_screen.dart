@@ -2,9 +2,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/pdf_text/pdf_text_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/demo/qr_flutter/qr_flutter_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/recase/recase_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/remove_emoji/remove_emoji_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/scanner/menu_scanner_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
@@ -12,6 +12,7 @@ import 'package:get/get.dart';
 import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
 import 'async/menu_async_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
+import 'clipboard/clipboard_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'connectivity_plus/connectivity_plus_screen.dart';
 import 'counter/counter_screen.dart';
@@ -36,7 +37,6 @@ import 'local_auth/local_auth_screen.dart';
 import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
 import 'package_info_plus/package_info_plus_screen.dart';
 import 'permission_handler/permission_handler_screen.dart';
-import 'qr_code_scanner/qr_code_scanner_screen.dart';
 import 'restart_app/restart_app_screen.dart';
 import 'share_plus/share_plus_screen.dart';
 import 'shop/shop_screen.dart';
@@ -46,6 +46,7 @@ import 'timeago/timeago_screen.dart';
 import 'tip_calculator/tip_calculator_screen.dart';
 import 'todo/screen/to_do_main_screen.dart';
 import 'url_launcher/url_launcher_screen.dart';
+import 'uuid/uuid_screen.dart';
 import 'wakelock/wakelock_screen.dart';
 
 /**
@@ -89,6 +90,14 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "Flutter plugin for accessing information about the battery state(full, charging, discharging).",
+          ),
+          UIUtils.getButton(
+            "clipboard",
+            () {
+              Get.to(ClipboardScreen());
+            },
+            description:
+                "A flutter package that helps copy text to clipboard and paste from clipboard.",
           ),
           UIUtils.getButton(
             "CommunicationBetweenWidgetScreen",
@@ -284,22 +293,6 @@ class MenuDemoScreen extends StatelessWidget {
                 "Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API to request and check permissions.",
           ),
           UIUtils.getButton(
-            "qr_code_scanner",
-            () {
-              Get.to(() => QrCodeScannerScreen());
-            },
-            description:
-                "QR code scanner that can be embedded inside flutter. It uses zxing in Android and MTBBarcode scanner in iOS.",
-          ),
-          UIUtils.getButton(
-            "qr_flutter",
-            () {
-              Get.to(() => QrFlutterScreen());
-            },
-            description:
-                "QR.Flutter is a Flutter library for simple and fast QR code rendering via a Widget or custom painter.",
-          ),
-          UIUtils.getButton(
             "recase",
             () {
               Get.to(() => RecaseScreen());
@@ -322,6 +315,13 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "A simple package that helps you to restart the whole android app with a single function call.",
+          ),
+          UIUtils.getButton(
+            "Scanner",
+            () {
+              Get.to(() => MenuScannerScreen());
+            },
+            description: "Qr, Barcode...",
           ),
           UIUtils.getButton(
             "share_plus",
@@ -378,6 +378,14 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
+          ),
+          UIUtils.getButton(
+            "uuid",
+            () {
+              Get.to(UUIDScreen());
+            },
+            description:
+                "RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)",
           ),
           UIUtils.getButton(
             "wakelock",

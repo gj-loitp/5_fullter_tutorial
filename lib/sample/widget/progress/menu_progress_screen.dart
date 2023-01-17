@@ -9,6 +9,7 @@ import 'linear_progress_indicator_app.dart';
 import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
 import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
+import 'smooth_page_indicator/smooth_page_indicator_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -52,6 +53,14 @@ class MenuProgressScreen extends StatelessWidget {
             },
             description:
                 "A handful collection of some cool progress indicators and text animators.",
+          ),
+          UIUtils.getButton(
+            "smooth_page_indicator",
+            () {
+              Get.to(SmoothPageIndicatorScreen());
+            },
+            description:
+                "Customizable animated page indicator with a set of built-in effects.",
           ),
           UIUtils.getButton(
             "CircularProgressIndicatorApp",

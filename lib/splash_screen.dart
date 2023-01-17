@@ -1,14 +1,15 @@
 import 'dart:convert';
 import 'dart:io';
 
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'lib/common/const/dimen_constants.dart';
 import 'lib/util/shared_preferences_util.dart';
 import 'main_menu_screen.dart';
 import 'sample/model/gg.dart';
@@ -46,14 +47,25 @@ class SplashScreenState extends BaseStatefulState<SplashScreen> {
         if (isReady) {
           Get.off(MenuScreen());
         } else {
-          showErrorDialog(
-            StringConstants.warning,
-            "500 Internal Server Error",
-            "Exit",
-            () {
-              exit(0);
-            },
-          );
+          if (kDebugMode) {
+            showErrorDialog(
+              StringConstants.warning,
+              "Debug mode: 500 Internal Server Error",
+              "Debug mode, tap to continue",
+              () {
+                Get.off(MenuScreen());
+              },
+            );
+          } else {
+            showErrorDialog(
+              StringConstants.warning,
+              "500 Internal Server Error",
+              "Exit",
+              () {
+                exit(0);
+              },
+            );
+          }
         }
       } catch (e) {
         print(e);
@@ -80,26 +92,27 @@ class SplashScreenState extends BaseStatefulState<SplashScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
+        child: Stack(
+          children: [
             Container(
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(150.0),
                 child: Image.asset(
-                  "assets/images/loitp.JPG",
-                  width: 300,
-                  height: 300,
+                  "assets/images/coder.png",
+                  width: 150,
+                  height: 150,
+                  color: ColorConstants.appColor,
                 ),
               ),
             ),
-            Padding(
-                padding:
-                    EdgeInsets.only(top: DimenConstants.marginPaddingMedium)),
-            CircularProgressIndicator(
-              backgroundColor: Colors.white,
-              strokeWidth: 3,
-            )
+            Container(
+              width: 150,
+              height: 150,
+              child: CircularProgressIndicator(
+                backgroundColor: Colors.white,
+                strokeWidth: 4,
+              ),
+            ),
           ],
         ),
       ),

@@ -21,8 +21,7 @@ import 'badges/badges_screen.dart';
 import 'bottom_bar/menu_bottom_bar_screen.dart';
 import 'bottom_sheet/bottom_sheet_screen.dart';
 import 'button/MenuButtonScreen.dart';
-import 'calendar_appbar/calendar_appbar_screen.dart';
-import 'calendar_view/calendar_view_screen.dart';
+import 'calendar/menu_calendar_screen.dart';
 import 'card/card_screen.dart';
 import 'chart/fl_chart/ChartScreen.dart';
 import 'checkBox/CheckBoxScreen.dart';
@@ -35,7 +34,7 @@ import 'dchart/DChartScreen.dart';
 import 'delayedDisplay/DelayedDisplayScreen.dart';
 import 'dialog/menu_dialog_screen.dart';
 import 'dotted_border/dotted_border_screen.dart';
-import 'drawer/MenuDrawerScreen.dart';
+import 'drawer/menu_drawer_screen.dart';
 import 'drop_shadow/drop_shadow_screen.dart';
 import 'easy_loading/easy_loading_screen.dart';
 import 'edit_text/menu_edit_text_screen.dart';
@@ -43,13 +42,11 @@ import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
-import 'flutter_file_view/flutter_file_view_screen.dart';
 import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
 import 'folding_cell/folding_cell_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
-import 'horizontal_calendar/horizontal_calendar_screen.dart';
 import 'horizontal_card_pager/horizontal_card_pager.dart';
 import 'in_app_review/in_app_review_screen.dart';
 import 'inkwell/inkwell_screen.dart';
@@ -147,20 +144,10 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "calendar_appbar",
+              "Calendar",
               () {
-                Get.to(() => CalendarAppbarScreen());
+                Get.to(() => MenuCalendarScreen());
               },
-              description:
-                  "Flutter package for custom AppBar with full calendar view with many new features!",
-            ),
-            UIUtils.getButton(
-              "calendar_view",
-              () {
-                Get.to(() => CalendarViewScreen());
-              },
-              description:
-                  "A Flutter package allows you to easily implement all calendar UI and calendar event functionality.",
             ),
             UIUtils.getButton(
               "CardScreen",
@@ -314,14 +301,6 @@ class MenuWidgetScreen extends StatelessWidget {
                   "A Flutter package of drawing board, provides basic drawing tools, canvas operations, and image data acquisition.",
             ),
             UIUtils.getButton(
-              "flutter_file_view",
-              () {
-                Get.to(() => FlutterFileViewScreen());
-              },
-              description:
-                  "A file viewer plugin for Flutter, support local file and network link of Android, iOS.",
-            ),
-            UIUtils.getButton(
               "FlutterReactionButtonScreen",
               () {
                 Get.to(() => FlutterReactionButtonScreen());
@@ -338,14 +317,6 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => MenuGridScreen());
               },
-            ),
-            UIUtils.getButton(
-              "horizontal_calendar",
-              () {
-                Get.to(() => HorizontalCalendarScreen());
-              },
-              description:
-                  "A flutter plugin to show horizontal view of calendar with date picker.",
             ),
             UIUtils.getButton(
               "HorizontalCardPagerScreen",

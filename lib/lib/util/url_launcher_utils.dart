@@ -59,4 +59,10 @@ class UrlLauncherUtils {
     UrlLauncherUtils.launchInBrowser(
         "https://play.google.com/store/apps/developer?id=Roy93Group");
   }
+
+  static void launchPolicy() {
+    launchInWebViewWithJavaScript("https://loitp.wordpress.com/2018/06/10/privacy-policy/");
+    // launchInBrowser(
+    //     "https://loitp.notion.site/loitp/Privacy-Policy-319b1cd8783942fa8923d2a3c9bce60f/");
+  }
 }

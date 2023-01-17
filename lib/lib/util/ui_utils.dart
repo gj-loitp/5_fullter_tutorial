@@ -18,6 +18,7 @@ class UIUtils {
     VoidCallback? onPressed,
     VoidCallback? onPressCodeViewer, {
     Color backgroundColor = Colors.deepOrange,
+    IconData iconData = Icons.code,
   }) {
     Widget _buildActionCodeWidget() {
       if (onPressCodeViewer == null) {
@@ -25,7 +26,7 @@ class UIUtils {
       } else {
         return IconButton(
           icon: Icon(
-            Icons.code,
+            iconData,
             color: Colors.white,
           ),
           onPressed: onPressCodeViewer,
