@@ -160,6 +160,8 @@ dependencies:
   flutter_sticky_header: ^0.6.5
   #https://pub.dev/packages/flutter_screen_lock
   flutter_screen_lock: ^5.0.12 #migrate later
+  #https://pub.dev/packages/flutter_switch
+  flutter_switch: ^0.3.2
 
   #https://pub.dev/packages/google_fonts
   google_fonts: ^3.0.1

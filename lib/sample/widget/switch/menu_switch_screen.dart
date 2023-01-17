@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'flutter_switch/flutter_switch_screen.dart';
 import 'switch_screen.dart';
 import 'toggle_switch/toggle_switch_screen.dart';
 
@@ -31,6 +32,14 @@ class MenuSwitchScreen extends StatelessWidget {
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),
           children: [
+            UIUtils.getButton(
+              "flutter_switch",
+              () {
+                Get.to(() => FlutterSwitchScreen());
+              },
+              description:
+                  "A custom switch widget that can have a custom height and width, borders, border radius, colors, toggle size, custom text and icons inside the toggle.",
+            ),
             UIUtils.getButton(
               "toggle_switch",
               () {
