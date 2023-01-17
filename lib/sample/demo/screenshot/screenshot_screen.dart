@@ -1,3 +1,4 @@
+import 'dart:io';
 import 'dart:typed_data';
 
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
@@ -8,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:screenshot/screenshot.dart';
+import 'package:share_plus/share_plus.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -113,7 +115,7 @@ class _MyHomePageState extends BaseStatefulState<MyHomePage> {
             ),
             ElevatedButton(
               child: Text(
-                'Capture & save Above Widget',
+                'Saving images to Specific Location',
               ),
               onPressed: () async {
                 final directory = (await getApplicationDocumentsDirectory())
@@ -132,6 +134,25 @@ class _MyHomePageState extends BaseStatefulState<MyHomePage> {
                     .then((value) {
                   Dog.d(">>>value $value");
                   showSnackBarFull("captureAndSave", "value: $value");
+                });
+              },
+            ),
+            ElevatedButton(
+              child: Text(
+                'Sharing Captured Images',
+              ),
+              onPressed: () async {
+                await screenshotController
+                    .capture(delay: const Duration(milliseconds: 10))
+                    .then((image) async {
+                  if (image != null) {
+                    final directory = await getApplicationDocumentsDirectory();
+                    final imagePath =
+                        await File('${directory.path}/image.png').create();
+                    var file = await imagePath.writeAsBytes(image);
+                    Dog.d(">>>file ${file.path}");
+                    await Share.shareFiles([imagePath.path]);
+                  }
                 });
               },
             ),
