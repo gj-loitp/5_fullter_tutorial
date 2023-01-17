@@ -7,6 +7,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:image_gallery_saver/image_gallery_saver.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:screenshot/screenshot.dart';
 import 'package:share_plus/share_plus.dart';
@@ -134,6 +135,25 @@ class _MyHomePageState extends BaseStatefulState<MyHomePage> {
                     .then((value) {
                   Dog.d(">>>value $value");
                   showSnackBarFull("captureAndSave", "value: $value");
+                });
+              },
+            ),
+            ElevatedButton(
+              child: Text(
+                'Saving images to Gallery',
+              ),
+              onPressed: () async {
+                screenshotController
+                    .capture(delay: Duration(milliseconds: 10))
+                    .then((capturedImage) async {
+                  if (capturedImage != null) {
+                    ImageGallerySaver.saveImage(
+                      capturedImage,
+                      quality: 100,
+                    );
+                  }
+                }).catchError((onError) {
+                  print(onError);
                 });
               },
             ),
