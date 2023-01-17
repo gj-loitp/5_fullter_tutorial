@@ -69,7 +69,7 @@ dependencies:
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0
   #https://pub.dev/packages/d_chart
-  d_chart: ^1.0.0
+  d_chart: ^1.0.1
   #https://pub.dev/packages/drag_select_grid_view
   drag_select_grid_view: ^0.6.1
   #https://pub.dev/packages/device_info_plus
@@ -108,7 +108,7 @@ dependencies:
   font_awesome_flutter: ^10.3.0
   firebase_core: ^2.4.1
   firebase_analytics: ^10.1.0
-  firebase_crashlytics: ^3.0.9
+  firebase_crashlytics: ^3.0.10
   firebase_remote_config: ^3.0.9
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.5
@@ -123,7 +123,7 @@ dependencies:
   #https://pub.dev/packages/flutter_colorpicker
   flutter_colorpicker: ^1.0.3
   #https://pub.dev/packages/flutter_drawing_board
-  flutter_drawing_board: ^0.4.2
+  flutter_drawing_board: ^0.4.3+2
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_file_view
@@ -149,7 +149,7 @@ dependencies:
   #https://pub.dev/packages/flutter_slider_drawer
   flutter_slider_drawer: ^2.1.2
   #https://pub.dev/packages/flutter_smart_dialog
-  flutter_smart_dialog: ^4.8.0
+  flutter_smart_dialog: ^4.8.1
   #https://pub.dev/packages/flutter_staggered_grid_view
   flutter_staggered_grid_view: ^0.4.1 #migrate later
   #https://pub.dev/packages/flutter_svg
@@ -228,11 +228,11 @@ dependencies:
   #https://pub.dev/packages/simple_url_preview
   simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
-  shared_preferences: ^2.0.15
+  shared_preferences: ^2.0.16
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
   #https://pub.dev/packages/sqflite
-  sqflite: ^2.2.2
+  sqflite: ^2.2.3
 
   #https://pub.dev/packages/marquee
   marquee: ^2.2.3
@@ -295,7 +295,7 @@ dependencies:
   pretty_qr_code: ^2.0.2
 
   #https://pub.dev/packages/scrollable_table_view
-  scrollable_table_view: ^1.0.0
+  scrollable_table_view: ^1.0.1
   #https://pub.dev/packages/scroll_to_index
   scroll_to_index: ^3.0.1
   #https://pub.dev/packages/shape_of_view_null_safe
