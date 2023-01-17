@@ -38,6 +38,7 @@ import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
 import 'package_info_plus/package_info_plus_screen.dart';
 import 'permission_handler/permission_handler_screen.dart';
 import 'restart_app/restart_app_screen.dart';
+import 'screenshot/screenshot_screen.dart';
 import 'share_plus/share_plus_screen.dart';
 import 'shop/shop_screen.dart';
 import 'theme/theme_screen.dart';
@@ -322,6 +323,14 @@ class MenuDemoScreen extends StatelessWidget {
               Get.to(() => MenuScannerScreen());
             },
             description: "Qr, Barcode...",
+          ),
+          UIUtils.getButton(
+            "screenshot",
+            () {
+              Get.to(() => ScreenshotScreen());
+            },
+            description:
+                "Flutter Screenshot Package (Runtime). Capture any Widget as an image.",
           ),
           UIUtils.getButton(
             "share_plus",
