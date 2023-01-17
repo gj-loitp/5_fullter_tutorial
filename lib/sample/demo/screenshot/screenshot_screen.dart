@@ -1,10 +1,12 @@
 import 'dart:typed_data';
 
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/log_dog_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:screenshot/screenshot.dart';
 
 /**
@@ -59,7 +61,7 @@ class MyHomePage extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends BaseStatefulState<MyHomePage> {
   ScreenshotController screenshotController = ScreenshotController();
 
   @override
@@ -106,6 +108,30 @@ class _MyHomePageState extends State<MyHomePage> {
                   showCapturedWidget(context, capturedImage!);
                 }).catchError((onError) {
                   print(onError);
+                });
+              },
+            ),
+            ElevatedButton(
+              child: Text(
+                'Capture & save Above Widget',
+              ),
+              onPressed: () async {
+                final directory = (await getApplicationDocumentsDirectory())
+                    .path; //from path_provide package
+                String fileName =
+                    DateTime.now().microsecondsSinceEpoch.toString();
+                var path = '$directory';
+                Dog.d(">>>path $path");
+                Dog.d(">>>fileName $fileName.");
+
+                screenshotController
+                    .captureAndSave(
+                  path, //set path where screenshot will be saved
+                  fileName: fileName,
+                )
+                    .then((value) {
+                  Dog.d(">>>value $value");
+                  showSnackBarFull("captureAndSave", "value: $value");
                 });
               },
             ),
@@ -165,9 +191,4 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
-
-// _saved(File image) async {
-//   // final result = await ImageGallerySaver.save(image.readAsBytesSync());
-//   print("File Saved to Gallery");
-// }
 }
