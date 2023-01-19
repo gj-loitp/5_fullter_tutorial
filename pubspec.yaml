@@ -131,7 +131,7 @@ dependencies:
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_file_view
-#  flutter_file_view: ^2.1.2 //bi gg reject vi co download manual apk -> should not use this plugin
+  #  flutter_file_view: ^2.1.2 //bi gg reject vi co download manual apk -> should not use this plugin
   #https://pub.dev/packages/flutter_local_notifications
   flutter_local_notifications: ^9.9.1 #migrate later
   #https://pub.dev/packages/flutter_linkify
@@ -345,12 +345,19 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.10.0" #https://pub.dev/packages/flutter_launcher_icons
+  #https://pub.dev/packages/flutter_launcher_icons
+  flutter_launcher_icons: "^0.10.0"
+  #https://pub.dev/packages/flutter_app_name
+#  flutter_app_name: ^0.1.1
+
 flutter_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/images/coding.png"
 #  flutter pub run flutter_launcher_icons:main
+
+#flutter_app_name:
+#  name: "Flutter tutorials"
 
 flutter:
   uses-material-design: true
