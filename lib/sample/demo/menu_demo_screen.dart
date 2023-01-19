@@ -10,7 +10,6 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 
 import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
-import 'async/menu_async_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
 import 'clipboard/clipboard_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
@@ -76,12 +75,6 @@ class MenuDemoScreen extends StatelessWidget {
             "AdvancePDFViewerScreen",
             () {
               Get.to(AdvancePDFViewerScreen());
-            },
-          ),
-          UIUtils.getButton(
-            "Async",
-            () {
-              Get.to(MenuAsyncScreen());
             },
           ),
           UIUtils.getButton(

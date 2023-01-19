@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 
 import '../../lib/core/base_stateful_state.dart';
 import '../../lib/util/ui_utils.dart';
+import 'async/menu_async_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -54,9 +55,9 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
         ),
         children: [
           UIUtils.getButton(
-            "Animation",
+            "Async",
             () {
-              // Get.to(MenuAnimationScreen());
+              Get.to(() => MenuAsyncScreen());
             },
           ),
         ],
