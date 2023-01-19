@@ -12,7 +12,6 @@ import 'package:get/get.dart';
 import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
 import 'clipboard/clipboard_screen.dart';
-import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'connectivity_plus/connectivity_plus_screen.dart';
 import 'counter/counter_screen.dart';
 import 'crypto/crypto_screen.dart';
@@ -92,12 +91,6 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "A flutter package that helps copy text to clipboard and paste from clipboard.",
-          ),
-          UIUtils.getButton(
-            "CommunicationBetweenWidgetScreen",
-            () {
-              Get.to(CommunicationBetweenWidgetScreen());
-            },
           ),
           UIUtils.getButton(
             "connectivity_plus",
