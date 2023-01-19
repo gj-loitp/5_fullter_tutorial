@@ -34,6 +34,7 @@ import 'dchart/DChartScreen.dart';
 import 'delayedDisplay/DelayedDisplayScreen.dart';
 import 'dialog/menu_dialog_screen.dart';
 import 'dotted_border/dotted_border_screen.dart';
+import 'dotted_line/dotted_line_screen.dart';
 import 'drawer/menu_drawer_screen.dart';
 import 'drop_shadow/drop_shadow_screen.dart';
 import 'easy_loading/easy_loading_screen.dart';
@@ -229,6 +230,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "A flutter package to let users easily add a dashed border around any widget.",
+            ),
+            UIUtils.getButton(
+              "dotted_line",
+              () {
+                Get.to(() => DottedLineScreen());
+              },
+              description:
+                  "This package allows you to draw dotted lines with Flutter. You can draw a beautiful dotted line",
             ),
             UIUtils.getButton(
               "Drawer",
