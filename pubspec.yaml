@@ -18,6 +18,8 @@ dependencies:
   animated_background: ^2.0.0
   #https://pub.dev/packages/animated_text_kit
   animated_text_kit: ^4.2.2
+  #https://pub.dev/packages/animated_toggle_switch
+  animated_toggle_switch: ^0.6.1
   #https://pub.dev/packages/avatar_glow
   avatar_glow: ^2.0.2
   #https://pub.dev/packages/auto_size_text
