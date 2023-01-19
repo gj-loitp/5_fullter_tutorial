@@ -70,6 +70,15 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
           ),
           UIUtils.getButton(
+            "flutter_app_name",
+            () {
+              UrlLauncherUtils.launchInWebViewWithJavaScript(
+                  "https://pub.dev/packages/flutter_app_name");
+            },
+            description:
+                "A package that makes it easy to set your flutter app launcher name.",
+          ),
+          UIUtils.getButton(
             "uuid",
             () {
               Get.to(() => UUIDScreen());
