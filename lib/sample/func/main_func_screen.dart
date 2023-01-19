@@ -8,6 +8,7 @@ import 'package:get/get.dart';
 import '../../lib/core/base_stateful_state.dart';
 import '../../lib/util/ui_utils.dart';
 import 'async/menu_async_screen.dart';
+import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
 
@@ -63,6 +64,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             () {
               Get.to(() => MenuAsyncScreen());
             },
+          ),
+          UIUtils.getButton(
+            "characters",
+            () {
+              Get.to(() => CharactersScreen());
+            },
+            description:
+                "String replacement with operations that are Unicode/grapheme cluster aware.",
           ),
           UIUtils.getButton(
             "CommunicationBetweenWidgetScreen",
