@@ -1,6 +1,7 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/func/main_func_screen.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flame/flame.dart';
 import 'package:flutter/foundation.dart';
@@ -96,6 +97,12 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   Get.to(MenuDemoScreen());
                 },
               ),
+            UIUtils.getButton(
+              "Function",
+                  () {
+                Get.to(MenuFuncScreen());
+              },
+            ),
             if (isFullData)
               UIUtils.getButton(
                 "Game",

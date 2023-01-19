@@ -318,6 +318,9 @@ dependencies:
   #https://pub.dev/packages/uuid
   uuid: ^3.0.7
 
+  #https://pub.dev/packages/vibration
+  vibration: ^1.7.6
+
   #https://pub.dev/packages/wakelock
   wakelock: ^0.6.2
   #https://pub.dev/packages/wave
