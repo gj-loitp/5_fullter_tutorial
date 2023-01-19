@@ -65,6 +65,8 @@
     <!-- Permissions options for the `bluetooth` group -->
     <uses-permission android:name="android.permission.BLUETOOTH" />
 
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
     <!-- Provide required visibility configuration for API level 30 and above -->
     <queries>
         <intent>
