@@ -261,6 +261,8 @@ dependencies:
   in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
   intl: ^0.17.0 #migate later
+  #https://pub.dev/packages/internet_connection_checker
+  internet_connection_checker: ^1.0.0+1
 
   #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.1.4

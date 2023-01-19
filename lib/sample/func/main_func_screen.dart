@@ -9,6 +9,7 @@ import '../../lib/core/base_stateful_state.dart';
 import '../../lib/util/ui_utils.dart';
 import 'async/menu_async_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
+import 'internet_connection_checker/internet_connection_checker_screen.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -77,6 +78,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
             description:
                 "A package that makes it easy to set your flutter app launcher name.",
+          ),
+          UIUtils.getButton(
+            "internet_connection_checker",
+            () {
+              Get.to(() => InternetConnectionCheckerScreen());
+            },
+            description:
+                "A pure Dart library that checks for internet by opening a socket to a list of specified addresses, each with individual port and timeout. Defaults are provided for convenience.",
           ),
           UIUtils.getButton(
             "uuid",
