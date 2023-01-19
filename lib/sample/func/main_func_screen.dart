@@ -1,5 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/func/uuid/uuid_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -66,6 +67,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             () {
               Get.to(() => CommunicationBetweenWidgetScreen());
             },
+          ),
+          UIUtils.getButton(
+            "uuid",
+            () {
+              Get.to(() => UUIDScreen());
+            },
+            description:
+                "RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)",
           ),
         ],
       ),
