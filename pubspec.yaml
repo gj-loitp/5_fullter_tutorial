@@ -201,7 +201,12 @@ dependencies:
   #https://pub.dev/packages/mobile_scanner
   mobile_scanner: ^3.0.0-beta.4
   #https://pub.dev/packages/modal_bottom_sheet
-  modal_bottom_sheet: ^2.1.2
+#  modal_bottom_sheet: ^2.1.2 #TODO revert
+  modal_bottom_sheet:
+    git:
+      url: https://github.com/eli1stark/modal_bottom_sheet.git
+      ref: 2b3f9f84f46418c1b337968c88883995f65f47e7
+      path: modal_bottom_sheet
 
   #https://pub.dev/packages/network_info_plus
   network_info_plus: ^2.3.2 #migrate later

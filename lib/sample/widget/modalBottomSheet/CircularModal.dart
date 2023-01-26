@@ -2,7 +2,7 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
+import 'package:modal_bottom_sheet/modal_bottom_sheet.dart' as mbs;
 
 /**
  * Created by Loitp on 08,August,2022
@@ -93,7 +93,7 @@ Future<T?> showAvatarModalBottomSheet<T>({
   assert(debugCheckHasMediaQuery(context));
   assert(debugCheckHasMaterialLocalizations(context));
   final result = await Navigator.of(context, rootNavigator: useRootNavigator)
-      .push(ModalBottomSheetRoute<T>(
+      .push(mbs.ModalBottomSheetRoute<T>(
     builder: builder,
     containerBuilder: (_, animation, child) => AvatarBottomSheet(
       child: child,
