@@ -1931,6 +1931,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
+  splash:
+    dependency: "direct main"
+    description:
+      name: splash
+      sha256: "392c6aaf6452c0c3be56519d6c266793358f6361cda60643129213ce8268e136"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   sqflite:
     dependency: "direct main"
     description:
