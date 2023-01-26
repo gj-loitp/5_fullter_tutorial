@@ -141,7 +141,7 @@ dependencies:
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
-  flutter_native_splash: ^2.2.16
+  flutter_native_splash: ^2.2.17
   #https://pub.dev/packages/flutter_offline
   flutter_offline: ^2.1.0
   #https://pub.dev/packages/flutter_reaction_button
@@ -354,10 +354,13 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
   #https://pub.dev/packages/flutter_launcher_icons
-  flutter_launcher_icons: "^0.10.0"
+  #flutter_launcher_icons: "^0.10.0"
+
   #https://pub.dev/packages/flutter_app_name
 #  flutter_app_name: ^0.1.1
+
 #  qr: ^2.0.0
 
 flutter_icons:
