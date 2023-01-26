@@ -325,6 +325,8 @@ dependencies:
   sidebarx: ^0.14.0
   #https://pub.dev/packages/super_circle
   super_circle: ^1.0.0
+  #https://pub.dev/packages/swipe_cards
+  swipe_cards: ^2.0.0+1
 
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
   #https://pub.dev/packages/timeago

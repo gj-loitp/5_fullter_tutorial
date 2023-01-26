@@ -2003,6 +2003,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+  swipe_cards:
+    dependency: "direct main"
+    description:
+      name: swipe_cards
+      sha256: c34f28e71e3d4041455aaff49ac4242a79cad0e7d0ec16978f871059f3d956e3
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0+1"
   synchronized:
     dependency: transitive
     description:
