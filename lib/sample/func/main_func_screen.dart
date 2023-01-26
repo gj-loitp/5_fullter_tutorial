@@ -10,6 +10,7 @@ import '../../lib/util/ui_utils.dart';
 import 'async/menu_async_screen.dart';
 import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
+import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
 
 /**
@@ -87,6 +88,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
             description:
                 "A package that makes it easy to set your flutter app launcher name.",
+          ),
+          UIUtils.getButton(
+            "hexcolor",
+            () {
+              Get.to(() => HexcolorScreen());
+            },
+            description:
+                "Brings HexColor for your dart and flutter projects, convert material colors to hex colors",
           ),
           UIUtils.getButton(
             "internet_connection_checker",
