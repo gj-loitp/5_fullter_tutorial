@@ -225,7 +225,7 @@ dependencies:
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
   #https://pub.dev/packages/url_launcher
-  url_launcher: ^6.1.7
+  url_launcher: ^6.1.8
 
   #https://pub.dev/packages/qr_code_scanner
   qr_code_scanner: ^1.0.1
@@ -239,7 +239,7 @@ dependencies:
   #https://pub.dev/packages/simple_url_preview
   simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
-  shared_preferences: ^2.0.16
+  shared_preferences: ^2.0.17
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
   #https://pub.dev/packages/sqflite
@@ -263,7 +263,7 @@ dependencies:
   #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^1.7.1
   #https://pub.dev/packages/image_picker
-  image_picker: ^0.8.6
+  image_picker: ^0.8.6+1
   #https://pub.dev/packages/in_app_review
   in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
