@@ -28,7 +28,7 @@ dependencies:
   awesome_dialog: ^3.0.2
 
   #https://pub.dev/packages/badges
-  badges: ^2.0.3
+  badges: ^2.0.3 #migrate later
   #https://pub.dev/packages/battery_plus
   battery_plus: ^3.0.2
   #https://pub.dev/packages/basic_utils
@@ -114,7 +114,7 @@ dependencies:
   font_awesome_flutter: ^10.3.0
   firebase_core: ^2.4.1
   firebase_analytics: ^10.1.0
-  firebase_crashlytics: ^3.0.10
+  firebase_crashlytics: ^3.0.11
   firebase_remote_config: ^3.0.9
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.5
@@ -305,7 +305,7 @@ dependencies:
   #https://pub.dev/packages/pull_to_refresh
   pull_to_refresh: ^2.0.0
   #https://pub.dev/packages/pretty_qr_code
-  pretty_qr_code: ^2.0.2
+  pretty_qr_code: ^2.0.2 #migrate later
 
   #https://pub.dev/packages/screenshot
   screenshot: ^1.3.0
