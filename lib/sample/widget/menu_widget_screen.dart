@@ -64,6 +64,7 @@ import 'progress/menu_progress_screen.dart';
 import 'shape_of_view/shape_of_view_screen.dart';
 import 'shimmer/shimmer_screen.dart';
 import 'slider/menu_slider_screen.dart';
+import 'sliding_up_panel/sliding_up_panel_screen.dart';
 import 'stack/stack_screen.dart';
 import 'state/stateful_widget_demo_screen.dart';
 import 'state/stateless_widget_demo_screen.dart';
@@ -456,6 +457,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
+              "sliding_up_panel",
+              () {
+                Get.to(SlidingUpPanelScreen());
+              },
+              description:
+                  "A draggable Flutter widget that makes implementing a SlidingUpPanel much easier!",
+            ),
+            UIUtils.getButton(
               "StackScreen",
               () {
                 Get.to(StackScreen());
@@ -489,11 +498,10 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "swipe_cards",
-                  () {
+              () {
                 Get.to(() => SwipeCardsScreen());
               },
-              description:
-              "Tinder like swipe cards.",
+              description: "Tinder like swipe cards.",
             ),
             UIUtils.getButton(
               "Switch - Toggle",

@@ -140,6 +140,8 @@ dependencies:
   flutter_local_notifications: ^9.9.1 #migrate later
   #https://pub.dev/packages/flutter_linkify
   flutter_linkify: ^5.0.2
+  #https://pub.dev/packages/flutter_map
+#  flutter_map: ^3.1.0
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
@@ -189,6 +191,8 @@ dependencies:
   #https://pub.dev/packages/hsv_color_pickers
   hsv_color_pickers: ^0.2.2
 
+#  latlong: ^0.6.1
+#  latlong2: ^0.8.1
   #https://pub.dev/packages/local_auth
   local_auth: ^1.1.11 #migate later
   #https://pub.dev/packages/logger
@@ -327,6 +331,8 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
   #https://pub.dev/packages/sidebarx
   sidebarx: ^0.14.0
+  #https://pub.dev/packages/sliding_up_panel
+  sliding_up_panel: ^2.0.0+1
   #https://pub.dev/packages/super_circle
   super_circle: ^1.0.0
   #https://pub.dev/packages/swipe_cards
