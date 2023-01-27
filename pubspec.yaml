@@ -99,6 +99,8 @@ dependencies:
   easy_debounce: ^2.0.3
   #https://pub.dev/packages/elastic_drawer
   elastic_drawer: ^2.0.2
+  #https://pub.dev/packages/email_validator
+  email_validator: ^2.1.17
   #https://pub.dev/packages/encrypt
   encrypt: ^5.0.1
   #https://pub.dev/packages/english_words

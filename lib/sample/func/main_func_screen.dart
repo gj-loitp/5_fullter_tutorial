@@ -11,6 +11,7 @@ import 'app_settings/app_settings_screen.dart';
 import 'async/menu_async_screen.dart';
 import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
+import 'email_validator/email_validator_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
 
@@ -88,6 +89,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             () {
               Get.to(() => CommunicationBetweenWidgetScreen());
             },
+          ),
+          UIUtils.getButton(
+            "email_validator",
+            () {
+              Get.to(() => EmailValidatorScreen());
+            },
+            description:
+                "A simple (but correct) dart class for validating email addresses.",
           ),
           UIUtils.getButton(
             "flutter_app_name",
