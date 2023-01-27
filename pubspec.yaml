@@ -256,6 +256,8 @@ dependencies:
   shared_preferences: ^2.0.17
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
+  #https://pub.dev/packages/slide_countdown
+  slide_countdown: ^0.4.1
   #https://pub.dev/packages/sqflite
   sqflite: ^2.2.3
   #https://pub.dev/packages/splash

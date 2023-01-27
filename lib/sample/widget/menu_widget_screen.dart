@@ -63,6 +63,7 @@ import 'modalBottomSheet/model_bottom_sheet_screen.dart';
 import 'progress/menu_progress_screen.dart';
 import 'shape_of_view/shape_of_view_screen.dart';
 import 'shimmer/shimmer_screen.dart';
+import 'slide_countdown/slide_countdown_screen.dart';
 import 'slider/menu_slider_screen.dart';
 import 'sliding_up_panel/sliding_up_panel_screen.dart';
 import 'stack/stack_screen.dart';
@@ -449,6 +450,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "Flutter package to show url preview. Custamizable height, background and text styles, as well as lines.",
+            ),
+            UIUtils.getButton(
+              "slide_countdown",
+              () {
+                Get.to(SlideCountdownScreen());
+              },
+              description:
+                  "A Flutter package to create easy slide animation countdown / countup timer..",
             ),
             UIUtils.getButton(
               "Slider",
