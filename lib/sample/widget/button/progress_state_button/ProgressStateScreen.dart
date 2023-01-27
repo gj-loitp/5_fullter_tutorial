@@ -43,13 +43,13 @@ class _ProgressStateScreenState extends BaseStatefulState<ProgressStateScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "ProgressStateScreen",
+        "progress_state_button",
         () {
           Get.back();
         },
         () {
           UrlLauncherUtils.launchInWebViewWithJavaScript(
-              "https://pub.dev/packages/progressStateButton");
+              "https://pub.dev/packages/progress_state_button");
         },
       ),
       body: ListView(

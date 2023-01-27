@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 import 'back_button_screen.dart';
 import 'button_bar_screen.dart';
 import 'drop_down_screen.dart';
+import 'flutter_animated_button/flutter_animated_button_screen.dart';
 import 'icon_button_screen.dart';
 import 'outline_button_screen.dart';
 import 'popup_menu_button_screen.dart';
@@ -41,16 +42,28 @@ class MenuButtonScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             UIUtils.getButton(
-              "FlutterSpeedDialScreen",
+              "flutter_animated_button",
+              () {
+                Get.to(FlutterAnimatedButtonScreen());
+              },
+              description:
+                  "A flutter package project which contains a collection of cool and beautiful button animations.",
+            ),
+            UIUtils.getButton(
+              "flutter_speed_dial",
               () {
                 Get.to(FlutterSpeedDialScreen());
               },
+              description:
+                  "Flutter plugin to implement a beautiful and dynamic Material Design Speed Dial with labels, animated icons, multi-directional children and much more.",
             ),
             UIUtils.getButton(
-              "ProgressStateScreen",
+              "progress_state_button",
               () {
                 Get.to(ProgressStateScreen());
               },
+              description:
+                  "A customizable progress button widget for Flutter Android, IOS and Web.",
             ),
             UIUtils.getButton(
               "BackButtonScreen",
