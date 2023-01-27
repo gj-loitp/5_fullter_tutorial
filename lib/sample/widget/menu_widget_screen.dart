@@ -32,8 +32,9 @@ import 'clay_containers/clay_containers_screen.dart';
 import 'cupertino/MenuCupertinoScreen.dart';
 import 'dataTable/DataTableScreen.dart';
 import 'dchart/DChartScreen.dart';
-import 'delayedDisplay/DelayedDisplayScreen.dart';
+import 'delayed_display/delayed_display_screen.dart';
 import 'dialog/menu_dialog_screen.dart';
+import 'dots_indicator/dots_indicator_screen.dart';
 import 'dotted_border/dotted_border_screen.dart';
 import 'dotted_line/dotted_line_screen.dart';
 import 'drawer/menu_drawer_screen.dart';
@@ -226,6 +227,14 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => MenuDialogScreen());
               },
+            ),
+            UIUtils.getButton(
+              "dots_indicator",
+              () {
+                Get.to(() => DotsIndicatorScreen());
+              },
+              description:
+                  "Dots indicator to show progression of a PageView for example",
             ),
             UIUtils.getButton(
               "dotted_border",

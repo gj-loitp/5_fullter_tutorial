@@ -90,6 +90,8 @@ dependencies:
   dotted_border: ^2.0.0+3
   #https://pub.dev/packages/dotted_line
   dotted_line: ^3.1.0
+  #https://pub.dev/packages/dots_indicator
+  dots_indicator: ^2.1.0
   #https://pub.dev/packages/draggable_scrollbar
   draggable_scrollbar: ^0.1.0
   #https://pub.dev/packages/drop_shadow
