@@ -10,10 +10,8 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 
 import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
-import 'async/menu_async_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
 import 'clipboard/clipboard_screen.dart';
-import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'connectivity_plus/connectivity_plus_screen.dart';
 import 'counter/counter_screen.dart';
 import 'crypto/crypto_screen.dart';
@@ -38,6 +36,7 @@ import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
 import 'package_info_plus/package_info_plus_screen.dart';
 import 'permission_handler/permission_handler_screen.dart';
 import 'restart_app/restart_app_screen.dart';
+import 'screenshot/screenshot_screen.dart';
 import 'share_plus/share_plus_screen.dart';
 import 'shop/shop_screen.dart';
 import 'theme/theme_screen.dart';
@@ -46,7 +45,6 @@ import 'timeago/timeago_screen.dart';
 import 'tip_calculator/tip_calculator_screen.dart';
 import 'todo/screen/to_do_main_screen.dart';
 import 'url_launcher/url_launcher_screen.dart';
-import 'uuid/uuid_screen.dart';
 import 'wakelock/wakelock_screen.dart';
 
 /**
@@ -78,12 +76,6 @@ class MenuDemoScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "Async",
-            () {
-              Get.to(MenuAsyncScreen());
-            },
-          ),
-          UIUtils.getButton(
             "battery_plus",
             () {
               Get.to(BatteryPlusScreen());
@@ -98,12 +90,6 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "A flutter package that helps copy text to clipboard and paste from clipboard.",
-          ),
-          UIUtils.getButton(
-            "CommunicationBetweenWidgetScreen",
-            () {
-              Get.to(CommunicationBetweenWidgetScreen());
-            },
           ),
           UIUtils.getButton(
             "connectivity_plus",
@@ -324,6 +310,14 @@ class MenuDemoScreen extends StatelessWidget {
             description: "Qr, Barcode...",
           ),
           UIUtils.getButton(
+            "screenshot",
+            () {
+              Get.to(() => ScreenshotScreen());
+            },
+            description:
+                "Flutter Screenshot Package (Runtime). Capture any Widget as an image.",
+          ),
+          UIUtils.getButton(
             "share_plus",
             () {
               Get.to(() => SharePlusScreen());
@@ -378,14 +372,6 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
-          ),
-          UIUtils.getButton(
-            "uuid",
-            () {
-              Get.to(UUIDScreen());
-            },
-            description:
-                "RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)",
           ),
           UIUtils.getButton(
             "wakelock",

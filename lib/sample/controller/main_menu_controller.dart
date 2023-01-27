@@ -4,7 +4,7 @@ import 'package:package_info_plus/package_info_plus.dart';
 import '../../lib/core/base_controller.dart';
 import '../../lib/util/shared_preferences_util.dart';
 
-class MenuController extends BaseController {
+class MainMenuController extends BaseController {
   var isFullData = false.obs;
 
   PackageInfo packageInfo = PackageInfo(
@@ -15,7 +15,7 @@ class MenuController extends BaseController {
   );
 
   void clearOnDispose() {
-    Get.delete<MenuController>();
+    Get.delete<MainMenuController>();
   }
 
   void setupData() async {

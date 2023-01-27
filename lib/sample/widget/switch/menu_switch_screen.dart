@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'animated_toggle_switch/animated_toggle_switch_screen.dart';
 import 'flutter_switch/flutter_switch_screen.dart';
 import 'switch_screen.dart';
 import 'toggle_switch/toggle_switch_screen.dart';
@@ -32,6 +33,14 @@ class MenuSwitchScreen extends StatelessWidget {
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),
           children: [
+            UIUtils.getButton(
+              "animated_toggle_switch",
+              () {
+                Get.to(() => AnimatedToggleSwitchScreen());
+              },
+              description:
+                  "Simple and animated switch with multiple choices and smooth loading animation. It's a good alternative if you don't want to use something like a dropdown menu.",
+            ),
             UIUtils.getButton(
               "flutter_switch",
               () {

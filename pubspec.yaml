@@ -18,15 +18,19 @@ dependencies:
   animated_background: ^2.0.0
   #https://pub.dev/packages/animated_text_kit
   animated_text_kit: ^4.2.2
+  #https://pub.dev/packages/animated_toggle_switch
+  animated_toggle_switch: ^0.6.1
   #https://pub.dev/packages/avatar_glow
   avatar_glow: ^2.0.2
   #https://pub.dev/packages/auto_size_text
   auto_size_text: ^3.0.0
+  #https://pub.dev/packages/app_settings
+  app_settings: ^4.2.0
   #https://pubdev/packages/awesome_dialog
   awesome_dialog: ^3.0.2
 
   #https://pub.dev/packages/badges
-  badges: ^2.0.3
+  badges: ^2.0.3 #migrate later
   #https://pub.dev/packages/battery_plus
   battery_plus: ^3.0.2
   #https://pub.dev/packages/basic_utils
@@ -59,6 +63,8 @@ dependencies:
   country_picker: ^2.0.19
   #https://pub.dev/packages/clay_containers
   clay_containers: ^0.3.2
+  #https://pub.dev/packages/characters
+  characters: ^1.2.1
   #https://pub.dev/packages/cupertino_icons
   cupertino_icons: ^1.0.5
   #https://pub.dev/packages/crypto/install
@@ -82,6 +88,10 @@ dependencies:
   dio: ^4.0.6
   #https://pub.dev/packages/dotted_border
   dotted_border: ^2.0.0+3
+  #https://pub.dev/packages/dotted_line
+  dotted_line: ^3.1.0
+  #https://pub.dev/packages/dots_indicator
+  dots_indicator: ^2.1.0
   #https://pub.dev/packages/draggable_scrollbar
   draggable_scrollbar: ^0.1.0
   #https://pub.dev/packages/drop_shadow
@@ -91,6 +101,8 @@ dependencies:
   easy_debounce: ^2.0.3
   #https://pub.dev/packages/elastic_drawer
   elastic_drawer: ^2.0.2
+  #https://pub.dev/packages/email_validator
+  email_validator: ^2.1.17
   #https://pub.dev/packages/encrypt
   encrypt: ^5.0.1
   #https://pub.dev/packages/english_words
@@ -108,7 +120,7 @@ dependencies:
   font_awesome_flutter: ^10.3.0
   firebase_core: ^2.4.1
   firebase_analytics: ^10.1.0
-  firebase_crashlytics: ^3.0.10
+  firebase_crashlytics: ^3.0.11
   firebase_remote_config: ^3.0.9
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.5
@@ -118,6 +130,8 @@ dependencies:
   flexible_calendar: ^1.0.1
   #https://pub.dev/packages/floating_bubbles
   floating_bubbles: ^2.4.0
+  #https://pub.dev/packages/flutter_animated_button
+  flutter_animated_button: ^2.0.2
   #https://pub.dev/packages/flutter_bloc
   flutter_bloc: ^8.1.1
   #https://pub.dev/packages/flutter_colorpicker
@@ -127,17 +141,21 @@ dependencies:
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_file_view
-#  flutter_file_view: ^2.1.2 //bi gg reject vi co download manual apk -> should not use this plugin
+  #  flutter_file_view: ^2.1.2 //bi gg reject vi co download manual apk -> should not use this plugin
   #https://pub.dev/packages/flutter_local_notifications
   flutter_local_notifications: ^9.9.1 #migrate later
   #https://pub.dev/packages/flutter_linkify
   flutter_linkify: ^5.0.2
+  #https://pub.dev/packages/flutter_map
+#  flutter_map: ^3.1.0
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
-  flutter_native_splash: ^2.2.16
+  flutter_native_splash: ^2.2.17
   #https://pub.dev/packages/flutter_offline
   flutter_offline: ^2.1.0
+  #https://pub.dev/packages/flutter_rating_bar
+  flutter_rating_bar: ^4.0.1
   #https://pub.dev/packages/flutter_reaction_button
   flutter_reaction_button: ^1.0.8 #migrate later
   #https://pub.dev/packages/flutter_rounded_date_picker
@@ -149,7 +167,7 @@ dependencies:
   #https://pub.dev/packages/flutter_slider_drawer
   flutter_slider_drawer: ^2.1.2
   #https://pub.dev/packages/flutter_smart_dialog
-  flutter_smart_dialog: ^4.8.1
+  flutter_smart_dialog: ^4.8.2
   #https://pub.dev/packages/flutter_staggered_grid_view
   flutter_staggered_grid_view: ^0.4.1 #migrate later
   #https://pub.dev/packages/flutter_svg
@@ -166,6 +184,8 @@ dependencies:
   #https://pub.dev/packages/google_fonts
   google_fonts: ^3.0.1
 
+  #https://pub.dev/packages/hexcolor
+  hexcolor: ^3.0.1
   #https://pub.dev/packages/horizontal_calendar
   horizontal_calendar: ^1.0.1
   #https://pub.dev/packages/horizontal_card_pager
@@ -177,6 +197,8 @@ dependencies:
   #https://pub.dev/packages/hsv_color_pickers
   hsv_color_pickers: ^0.2.2
 
+#  latlong: ^0.6.1
+#  latlong2: ^0.8.1
   #https://pub.dev/packages/local_auth
   local_auth: ^1.1.11 #migate later
   #https://pub.dev/packages/logger
@@ -195,7 +217,12 @@ dependencies:
   #https://pub.dev/packages/mobile_scanner
   mobile_scanner: ^3.0.0-beta.4
   #https://pub.dev/packages/modal_bottom_sheet
-  modal_bottom_sheet: ^2.1.2
+#  modal_bottom_sheet: ^2.1.2 #TODO revert
+  modal_bottom_sheet:
+    git:
+      url: https://github.com/eli1stark/modal_bottom_sheet.git
+      ref: 2b3f9f84f46418c1b337968c88883995f65f47e7
+      path: modal_bottom_sheet
 
   #https://pub.dev/packages/network_info_plus
   network_info_plus: ^2.3.2 #migrate later
@@ -214,7 +241,7 @@ dependencies:
   transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
 
   #https://pub.dev/packages/url_launcher
-  url_launcher: ^6.1.7
+  url_launcher: ^6.1.8
 
   #https://pub.dev/packages/qr_code_scanner
   qr_code_scanner: ^1.0.1
@@ -228,11 +255,15 @@ dependencies:
   #https://pub.dev/packages/simple_url_preview
   simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
-  shared_preferences: ^2.0.16
+  shared_preferences: ^2.0.17
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
+  #https://pub.dev/packages/slide_countdown
+  slide_countdown: ^0.4.1
   #https://pub.dev/packages/sqflite
   sqflite: ^2.2.3
+  #https://pub.dev/packages/splash
+  splash: ^1.1.0
 
   #https://pub.dev/packages/marquee
   marquee: ^2.2.3
@@ -252,11 +283,13 @@ dependencies:
   #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^1.7.1
   #https://pub.dev/packages/image_picker
-  image_picker: ^0.8.6
+  image_picker: ^0.8.6+1
   #https://pub.dev/packages/in_app_review
   in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
   intl: ^0.17.0 #migate later
+  #https://pub.dev/packages/internet_connection_checker
+  internet_connection_checker: ^1.0.0+1
 
   #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.1.4
@@ -267,14 +300,14 @@ dependencies:
   kenburns_nullsafety: ^1.0.0
 
   #https://pub.dev/packages/video_player
-  video_player: ^2.4.10
+  video_player: ^2.5.1
 
   #https://pub.dev/packages/package_info_plus
   package_info_plus: ^3.0.2
   #https://pub.dev/packages/panara_dialogs
   panara_dialogs: ^0.1.4
   #https://pub.dev/packages/path_provider
-  path_provider: ^2.0.11
+  path_provider: ^2.0.12
   #https://pub.dev/packages/pdf_text
   pdf_text: ^0.5.0
   #https://pub.dev/packages/percent_indicator
@@ -292,8 +325,10 @@ dependencies:
   #https://pub.dev/packages/pull_to_refresh
   pull_to_refresh: ^2.0.0
   #https://pub.dev/packages/pretty_qr_code
-  pretty_qr_code: ^2.0.2
+  pretty_qr_code: ^2.0.2 #migrate later
 
+  #https://pub.dev/packages/screenshot
+  screenshot: ^1.3.0
   #https://pub.dev/packages/scrollable_table_view
   scrollable_table_view: ^1.0.1
   #https://pub.dev/packages/scroll_to_index
@@ -304,8 +339,12 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
   #https://pub.dev/packages/sidebarx
   sidebarx: ^0.14.0
+  #https://pub.dev/packages/sliding_up_panel
+  sliding_up_panel: ^2.0.0+1
   #https://pub.dev/packages/super_circle
   super_circle: ^1.0.0
+  #https://pub.dev/packages/swipe_cards
+  swipe_cards: ^2.0.0+1
 
   tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
   #https://pub.dev/packages/timeago
@@ -315,6 +354,9 @@ dependencies:
 
   #https://pub.dev/packages/uuid
   uuid: ^3.0.7
+
+  #https://pub.dev/packages/vibration
+  vibration: ^1.7.6
 
   #https://pub.dev/packages/wakelock
   wakelock: ^0.6.2
@@ -336,12 +378,23 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_launcher_icons: "^0.10.0" #https://pub.dev/packages/flutter_launcher_icons
+
+  #https://pub.dev/packages/flutter_launcher_icons
+  #flutter_launcher_icons: "^0.10.0"
+
+  #https://pub.dev/packages/flutter_app_name
+#  flutter_app_name: ^0.1.1
+
+#  qr: ^2.0.0
+
 flutter_icons:
   android: "launcher_icon"
   ios: true
   image_path: "assets/images/coding.png"
 #  flutter pub run flutter_launcher_icons:main
+
+#flutter_app_name:
+#  name: "Flutter tutorials"
 
 flutter:
   uses-material-design: true

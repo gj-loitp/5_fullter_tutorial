@@ -6,6 +6,7 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/menu_picker
 import 'package:com.roy93group.flutter_tutorial/sample/widget/scrollable_table_view/scrollable_table_view_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/simple_url_preview/simple_url_preview_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/super_circle/super_circle_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/swipe_cards/swipe_cards_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/tab_page_selector/tab_page_selector_sreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/text_view/menu_text_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/video_player_screen.dart';
@@ -20,7 +21,7 @@ import 'appbar/sliver_app_bar_screen.dart';
 import 'badges/badges_screen.dart';
 import 'bottom_bar/menu_bottom_bar_screen.dart';
 import 'bottom_sheet/bottom_sheet_screen.dart';
-import 'button/MenuButtonScreen.dart';
+import 'button/menu_button_screen.dart';
 import 'calendar/menu_calendar_screen.dart';
 import 'card/card_screen.dart';
 import 'chart/fl_chart/ChartScreen.dart';
@@ -31,9 +32,11 @@ import 'clay_containers/clay_containers_screen.dart';
 import 'cupertino/MenuCupertinoScreen.dart';
 import 'dataTable/DataTableScreen.dart';
 import 'dchart/DChartScreen.dart';
-import 'delayedDisplay/DelayedDisplayScreen.dart';
+import 'delayed_display/delayed_display_screen.dart';
 import 'dialog/menu_dialog_screen.dart';
+import 'dots_indicator/dots_indicator_screen.dart';
 import 'dotted_border/dotted_border_screen.dart';
+import 'dotted_line/dotted_line_screen.dart';
 import 'drawer/menu_drawer_screen.dart';
 import 'drop_shadow/drop_shadow_screen.dart';
 import 'easy_loading/easy_loading_screen.dart';
@@ -42,6 +45,7 @@ import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
+import 'flutter_rating_bar/flutter_rating_bar_screen.dart';
 import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
 import 'folding_cell/folding_cell_screen.dart';
@@ -60,7 +64,9 @@ import 'modalBottomSheet/model_bottom_sheet_screen.dart';
 import 'progress/menu_progress_screen.dart';
 import 'shape_of_view/shape_of_view_screen.dart';
 import 'shimmer/shimmer_screen.dart';
+import 'slide_countdown/slide_countdown_screen.dart';
 import 'slider/menu_slider_screen.dart';
+import 'sliding_up_panel/sliding_up_panel_screen.dart';
 import 'stack/stack_screen.dart';
 import 'state/stateful_widget_demo_screen.dart';
 import 'state/stateless_widget_demo_screen.dart';
@@ -223,12 +229,28 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
+              "dots_indicator",
+              () {
+                Get.to(() => DotsIndicatorScreen());
+              },
+              description:
+                  "Dots indicator to show progression of a PageView for example",
+            ),
+            UIUtils.getButton(
               "dotted_border",
               () {
                 Get.to(() => DottedBorderScreen());
               },
               description:
                   "A flutter package to let users easily add a dashed border around any widget.",
+            ),
+            UIUtils.getButton(
+              "dotted_line",
+              () {
+                Get.to(() => DottedLineScreen());
+              },
+              description:
+                  "This package allows you to draw dotted lines with Flutter. You can draw a beautiful dotted line",
             ),
             UIUtils.getButton(
               "Drawer",
@@ -299,6 +321,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "A Flutter package of drawing board, provides basic drawing tools, canvas operations, and image data acquisition.",
+            ),
+            UIUtils.getButton(
+              "flutter_rating_bar",
+              () {
+                Get.to(() => FlutterRatingBarScreen());
+              },
+              description:
+                  "A simple yet fully customizable ratingbar for flutter which also include a rating bar indicator, supporting any fraction of rating.",
             ),
             UIUtils.getButton(
               "FlutterReactionButtonScreen",
@@ -431,10 +461,26 @@ class MenuWidgetScreen extends StatelessWidget {
                   "Flutter package to show url preview. Custamizable height, background and text styles, as well as lines.",
             ),
             UIUtils.getButton(
+              "slide_countdown",
+              () {
+                Get.to(SlideCountdownScreen());
+              },
+              description:
+                  "A Flutter package to create easy slide animation countdown / countup timer..",
+            ),
+            UIUtils.getButton(
               "Slider",
               () {
                 Get.to(MenuSliderScreen());
               },
+            ),
+            UIUtils.getButton(
+              "sliding_up_panel",
+              () {
+                Get.to(SlidingUpPanelScreen());
+              },
+              description:
+                  "A draggable Flutter widget that makes implementing a SlidingUpPanel much easier!",
             ),
             UIUtils.getButton(
               "StackScreen",
@@ -467,6 +513,13 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "Amazing animated colored circular widget , you can use it to your profile , loading screen or any widget you want.",
+            ),
+            UIUtils.getButton(
+              "swipe_cards",
+              () {
+                Get.to(() => SwipeCardsScreen());
+              },
+              description: "Tinder like swipe cards.",
             ),
             UIUtils.getButton(
               "Switch - Toggle",

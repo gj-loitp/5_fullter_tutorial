@@ -1,6 +1,7 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/animation/lottie/lottie_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/animation/splash/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -71,6 +72,14 @@ class MenuAnimationScreen extends StatelessWidget {
             },
             description:
                 "Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player.",
+          ),
+          UIUtils.getButton(
+            "splash",
+                () => {
+              Get.to(SplashScreen()),
+            },
+            description:
+            "This package contains a few InkSplash and InkRipple alternatives for a better UI",
           ),
           UIUtils.getButton(
             "RouteTransitionScreen",

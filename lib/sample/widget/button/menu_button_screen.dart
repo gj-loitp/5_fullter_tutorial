@@ -1,20 +1,21 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/button/LikeButtonScreen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/button/progressStateButton/ProgressStateScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/button/flutter_speed_dial/FlutterSpeedDialScreen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/button/like_button_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/button/progress_state_button/ProgressStateScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'BackButtonScreen.dart';
-import 'ButtonBarScreen.dart';
-import 'DropDownScreen.dart';
-import 'IconButtonScreen.dart';
-import 'OutlineButtonScreen.dart';
-import 'PopupMenuButtonScreen.dart';
-import 'RawMaterialButtonScreen.dart';
-import 'TextButtonScreen.dart';
-import 'ToggleButtonScreen.dart';
-import 'flutterSpeedDial/FlutterSpeedDialScreen.dart';
+import 'back_button_screen.dart';
+import 'button_bar_screen.dart';
+import 'drop_down_screen.dart';
+import 'flutter_animated_button/flutter_animated_button_screen.dart';
+import 'icon_button_screen.dart';
+import 'outline_button_screen.dart';
+import 'popup_menu_button_screen.dart';
+import 'raw_material_button_screen.dart';
+import 'text_button_screen.dart';
+import 'toggle_button_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -41,16 +42,28 @@ class MenuButtonScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             UIUtils.getButton(
-              "FlutterSpeedDialScreen",
+              "flutter_animated_button",
+              () {
+                Get.to(FlutterAnimatedButtonScreen());
+              },
+              description:
+                  "A flutter package project which contains a collection of cool and beautiful button animations.",
+            ),
+            UIUtils.getButton(
+              "flutter_speed_dial",
               () {
                 Get.to(FlutterSpeedDialScreen());
               },
+              description:
+                  "Flutter plugin to implement a beautiful and dynamic Material Design Speed Dial with labels, animated icons, multi-directional children and much more.",
             ),
             UIUtils.getButton(
-              "ProgressStateScreen",
+              "progress_state_button",
               () {
                 Get.to(ProgressStateScreen());
               },
+              description:
+                  "A customizable progress button widget for Flutter Android, IOS and Web.",
             ),
             UIUtils.getButton(
               "BackButtonScreen",

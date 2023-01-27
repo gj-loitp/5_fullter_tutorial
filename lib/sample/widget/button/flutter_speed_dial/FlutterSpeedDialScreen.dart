@@ -2,6 +2,10 @@ import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dar
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:get/get.dart';
+
+import '../../../../lib/util/ui_utils.dart';
+import '../../../../lib/util/url_launcher_utils.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -54,8 +58,15 @@ class _FlutterSpeedDialScreenState
         return true;
       },
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text("Flutter Speed Dial Example"),
+        appBar: UIUtils.getAppBar(
+          "flutter_speed_dial",
+          () {
+            Get.back();
+          },
+          () {
+            UrlLauncherUtils.launchInWebViewWithJavaScript(
+                "https://pub.dev/packages/flutter_speed_dial");
+          },
         ),
         body: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),

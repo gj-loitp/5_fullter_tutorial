@@ -1,6 +1,7 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/func/main_func_screen.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flame/flame.dart';
 import 'package:flutter/foundation.dart';
@@ -11,7 +12,7 @@ import 'package:get/get.dart';
 import 'lib/core/base_stateful_state.dart';
 import 'lib/util/ui_utils.dart';
 import 'sample/animation/menu_animation_screen.dart';
-import 'sample/controller/menu_controller.dart';
+import 'sample/controller/main_menu_controller.dart';
 import 'sample/database/menu_database_screen.dart';
 import 'sample/demo/menu_demo_screen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';
@@ -33,7 +34,7 @@ class MenuScreen extends StatefulWidget {
 }
 
 class _MenuScreenState extends BaseStatefulState<MenuScreen> {
-  var _cMenu = Get.put(MenuController());
+  var _cMenu = Get.put(MainMenuController());
 
   @override
   void initState() {
@@ -96,6 +97,12 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   Get.to(MenuDemoScreen());
                 },
               ),
+            UIUtils.getButton(
+              "Function",
+              () {
+                Get.to(MenuFuncScreen());
+              },
+            ),
             if (isFullData)
               UIUtils.getButton(
                 "Game",
