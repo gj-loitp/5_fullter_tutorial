@@ -24,6 +24,8 @@ dependencies:
   avatar_glow: ^2.0.2
   #https://pub.dev/packages/auto_size_text
   auto_size_text: ^3.0.0
+  #https://pub.dev/packages/app_settings
+  app_settings: ^4.2.0
   #https://pubdev/packages/awesome_dialog
   awesome_dialog: ^3.0.2
 

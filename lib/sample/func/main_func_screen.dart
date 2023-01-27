@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 
 import '../../lib/core/base_stateful_state.dart';
 import '../../lib/util/ui_utils.dart';
+import 'app_settings/app_settings_screen.dart';
 import 'async/menu_async_screen.dart';
 import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
@@ -60,6 +61,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
           DimenConstants.marginPaddingLarge,
         ),
         children: [
+          UIUtils.getButton(
+            "app_settings",
+            () {
+              Get.to(() => AppSettingsScreen());
+            },
+            description:
+                "A Flutter plugin for opening iOS and Android phone settings from an app.",
+          ),
           UIUtils.getButton(
             "Async",
             () {
