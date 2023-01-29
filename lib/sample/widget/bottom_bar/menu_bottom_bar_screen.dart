@@ -3,6 +3,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'animated_bottom_navigation_bar/animated_bottom_navigation_bar_screen.dart';
 import 'bottom_bar/bottom_app_bar_screen.dart';
 import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'bottom_navy_bar/bottom_navy_bar_screen.dart';
@@ -34,6 +35,14 @@ class MenuBottomBarScreen extends StatelessWidget {
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         physics: BouncingScrollPhysics(),
         children: [
+          UIUtils.getButton(
+            "animated_bottom_navigation_bar",
+            () {
+              Get.to(() => AnimatedBottomNavigationBarScreen());
+            },
+            description:
+                "Animated Bottom Navigation Bar Widget implementation inspired by https://dribbble.com/shots/7134849-Simple-Tab-Bar-Animation",
+          ),
           UIUtils.getButton(
             "bottom_bar_with_sheet",
             () {
