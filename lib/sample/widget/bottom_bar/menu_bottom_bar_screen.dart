@@ -8,6 +8,7 @@ import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'bottom_navy_bar/bottom_navy_bar_screen.dart';
 import 'circular_bottom_navigation/circular_bottom_navigation_screen.dart';
 import 'curved_navigation_bar/curved_navigation_bar_screen.dart';
+import 'flutter_snake_navigationbar/flutter_snake_navigationbar_screen.dart';
 import 'tab_bar/tab_bar_screen.dart';
 import 'tab_bar2/tab_bar_screen2.dart';
 
@@ -69,6 +70,14 @@ class MenuBottomBarScreen extends StatelessWidget {
             },
             description:
                 "Stunning Animating Curved Shape Navigation Bar. Adjustable color, background color, animation curve, animation duration.",
+          ),
+          UIUtils.getButton(
+            "flutter_snake_navigationbar",
+            () {
+              Get.to(FlutterSnakeNavigationbarScreen());
+            },
+            description:
+                "Flutter bottom navigation bar widget with snake animation on change item.",
           ),
           UIUtils.getButton(
             "TabBarScreen",
