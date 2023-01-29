@@ -251,7 +251,7 @@ dependencies:
   qr_flutter: ^4.0.0
 
   #https://pub.dev/packages/scaffold_gradient_background
-  scaffold_gradient_background: ^1.0.3+1
+  #scaffold_gradient_background: ^1.0.3+1
   #https://pub.dev/packages/scrollable_positioned_list
   scrollable_positioned_list: ^0.3.5
   #https://pub.dev/packages/share_plus
