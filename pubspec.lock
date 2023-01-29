@@ -939,6 +939,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.8.2"
+  flutter_snake_navigationbar:
+    dependency: "direct main"
+    description:
+      name: flutter_snake_navigationbar
+      sha256: b78bd6389f95d595922704a3e9d1c5d94283eca8e7c02032c157b2d8e96ba083
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.6.1"
   flutter_speed_dial:
     dependency: "direct main"
     description:
