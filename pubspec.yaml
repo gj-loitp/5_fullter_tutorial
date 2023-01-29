@@ -1,5 +1,5 @@
 name: com.roy93group.flutter_tutorial
-description: A new Flutter project.
+description: Flutter Resources Collections.
 publish_to: 'none'
 version: 2023.01.11+20230111
 
@@ -147,7 +147,7 @@ dependencies:
   #https://pub.dev/packages/flutter_linkify
   flutter_linkify: ^5.0.2
   #https://pub.dev/packages/flutter_map
-#  flutter_map: ^3.1.0
+  #  flutter_map: ^3.1.0
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
@@ -199,8 +199,8 @@ dependencies:
   #https://pub.dev/packages/hsv_color_pickers
   hsv_color_pickers: ^0.2.2
 
-#  latlong: ^0.6.1
-#  latlong2: ^0.8.1
+  #  latlong: ^0.6.1
+  #  latlong2: ^0.8.1
   #https://pub.dev/packages/local_auth
   local_auth: ^1.1.11 #migate later
   #https://pub.dev/packages/logger
@@ -219,7 +219,7 @@ dependencies:
   #https://pub.dev/packages/mobile_scanner
   mobile_scanner: ^3.0.0-beta.4
   #https://pub.dev/packages/modal_bottom_sheet
-#  modal_bottom_sheet: ^2.1.2 #TODO revert
+  #  modal_bottom_sheet: ^2.1.2 #TODO revert
   modal_bottom_sheet:
     git:
       url: https://github.com/eli1stark/modal_bottom_sheet.git
