@@ -125,7 +125,7 @@ dependencies:
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.5
   #https://pub.dev/packages/fl_chart
-  fl_chart: ^0.55.2
+  fl_chart: ^0.60.0
   #https://pub.dev/packages/flexible_calendar
   flexible_calendar: ^1.0.1
   #https://pub.dev/packages/floating_bubbles
