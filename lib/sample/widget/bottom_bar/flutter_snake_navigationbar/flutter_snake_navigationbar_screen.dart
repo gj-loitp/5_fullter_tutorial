@@ -114,30 +114,31 @@ class _SnakeNavigationBarExampleScreenState
         color: containerColor ?? containerColors[0],
         duration: const Duration(seconds: 1),
         child: PageView(
+          physics: BouncingScrollPhysics(),
           onPageChanged: _onPageChanged,
           children: <Widget>[
             PagerPageWidget(
               text: 'This is our beloved SnakeBar.',
               description: 'Swipe right to see different styles',
-              image: Image.asset('assets/images/ic_circle_green.png'),
+              image: Image.asset('assets/images/coding.png'),
             ),
             PagerPageWidget(
               text: 'It comes in all shapes and sizes...',
               description:
                   'Change indicator and bottom bar shape at your will.',
-              image: Image.asset('assets/images/ic_circle_red.png'),
+              image: Image.asset('assets/images/ic_l.png'),
             ),
             PagerPageWidget(
               text: '...not only the ones you see here',
               description:
                   'Combine different shapes for unique and personalized style!.',
-              image: Image.asset('assets/images/ic_circle_violet.png'),
+              image: Image.asset('assets/images/iv.png'),
             ),
             PagerPageWidget(
               text: 'And it\'s all open source!',
               description:
                   'Get the Flutter library on github.com/herodotdigital',
-              image: Image.asset('assets/images/ic_success.png'),
+              image: Image.asset('assets/images/splash.png'),
             ),
           ],
         ),
