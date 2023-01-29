@@ -5,8 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_snake_navigationbar/flutter_snake_navigationbar.dart';
 import 'package:get/get.dart';
 
-import 'custom_icons.dart';
-
 /**
  * Created by Loitp on 05,August,2022
  * Galaxy One company,
