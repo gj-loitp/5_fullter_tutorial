@@ -134,6 +134,8 @@ dependencies:
   flexible_calendar: ^1.0.1
   #https://pub.dev/packages/floating_bubbles
   floating_bubbles: ^2.4.0
+  #https://pub.dev/packages/flip_card
+  flip_card: ^0.7.0
   #https://pub.dev/packages/flutter_animated_button
   flutter_animated_button: ^2.0.2
   #https://pub.dev/packages/flutter_bloc

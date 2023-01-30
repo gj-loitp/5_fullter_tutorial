@@ -43,6 +43,7 @@ import 'easy_loading/easy_loading_screen.dart';
 import 'edit_text/menu_edit_text_screen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
+import 'flip_card/flip_card_screen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
 import 'flutter_rating_bar/flutter_rating_bar_screen.dart';
@@ -289,6 +290,14 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => MenuExpansionScreen());
               },
+            ),
+            UIUtils.getButton(
+              "flip_card",
+              () {
+                Get.to(() => FlipCardScreen());
+              },
+              description:
+                  "A component that provides flip card animation. It could be used for hide and show details of a product.",
             ),
             UIUtils.getButton(
               "floating_bubbles",
