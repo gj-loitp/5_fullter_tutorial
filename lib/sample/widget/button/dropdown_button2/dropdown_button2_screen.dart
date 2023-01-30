@@ -12,6 +12,7 @@ import 'sample_3.dart';
 import 'sample_4.dart';
 import 'sample_5.dart';
 import 'sample_6.dart';
+import 'sample_7.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -69,6 +70,8 @@ class _DropdownButton2ScreenState
           CustomButtonTest(),
           SizedBox(height: DimenConstants.marginPaddingMedium),
           Sample6(),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
+          Sample7(),
         ],
       ),
     );
