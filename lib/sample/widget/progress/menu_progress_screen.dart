@@ -8,6 +8,7 @@ import 'circular_progress_indicator_app.dart';
 import 'flutter_spinkit/flutter_spinkit_screen.dart';
 import 'linear_progress_indicator_app.dart';
 import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
+import 'loading_animation_widget/loading_animation_widget_screen.dart';
 import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
 import 'smooth_page_indicator/smooth_page_indicator_screen.dart';
@@ -48,6 +49,14 @@ class MenuProgressScreen extends StatelessWidget {
           },
               description:
                   "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
+          UIUtils.getButton(
+            "loading_animation_widget",
+            () {
+              Get.to(LoadingAnimationWidgetScreen());
+            },
+            description:
+                "Loading animation or loading spiner or loader. It's used to show loading animation when the app is in loading state or something is processing for uncertain time.",
+          ),
           UIUtils.getButton(
             "percent_indicator",
             () {
