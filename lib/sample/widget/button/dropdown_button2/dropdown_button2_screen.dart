@@ -51,6 +51,7 @@ class _DropdownButton2ScreenState
         physics: BouncingScrollPhysics(),
         children: [
           MyHomePage(),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
           Sample1(),
         ],
       ),
