@@ -3,6 +3,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dar
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/button/dropdown_button2/sample_1.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/button/dropdown_button2/sample_2.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -53,6 +54,8 @@ class _DropdownButton2ScreenState
           MyHomePage(),
           SizedBox(height: DimenConstants.marginPaddingMedium),
           Sample1(),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
+          Sample2(),
         ],
       ),
     );
