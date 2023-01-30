@@ -8,6 +8,8 @@ import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'sample_3.dart';
+
 /**
  * Created by Loitp on 05,August,2022
  * Galaxy One company,
@@ -56,6 +58,8 @@ class _DropdownButton2ScreenState
           Sample1(),
           SizedBox(height: DimenConstants.marginPaddingMedium),
           Sample2(),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
+          Sample3(),
         ],
       ),
     );
