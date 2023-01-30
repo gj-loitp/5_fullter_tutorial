@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
@@ -80,7 +81,7 @@ class HomePage extends StatelessWidget {
         },
         front: Container(
           decoration: BoxDecoration(
-            color: Color(0xFF006666),
+            color: ColorConstants.appColor,
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
           child: Column(
@@ -94,7 +95,7 @@ class HomePage extends StatelessWidget {
         ),
         back: Container(
           decoration: BoxDecoration(
-            color: Color(0xFF006666),
+            color: Colors.redAccent,
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
           ),
           child: Column(
