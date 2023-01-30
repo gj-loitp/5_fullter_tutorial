@@ -202,6 +202,8 @@ dependencies:
   horizontal_card_pager: ^1.1.1
   #https://pub.dev/packages/horizontal_picker
   horizontal_picker: ^1.2.0
+  #https://pub.dev/packages/html
+  html: ^0.15.1
   #https://pub.dev/packages/html2md
   html2md: ^1.2.6
   #https://pub.dev/packages/hsv_color_pickers
