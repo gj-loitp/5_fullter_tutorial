@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'circular_progress_indicator_app.dart';
+import 'flutter_spinkit/flutter_spinkit_screen.dart';
 import 'linear_progress_indicator_app.dart';
 import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
 import 'percent_indicator/percent_indicator_screen.dart';
@@ -34,6 +35,14 @@ class MenuProgressScreen extends StatelessWidget {
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         physics: BouncingScrollPhysics(),
         children: [
+          UIUtils.getButton(
+            "flutter_spinkit",
+            () {
+              Get.to(FlutterSpinkitScreen());
+            },
+            description:
+                "A collection of loading indicators animated with flutter. Heavily inspired by @tobiasahlin's SpinKit.",
+          ),
           UIUtils.getButton("liquid_progress_indicator", () {
             Get.to(MenuLiquidProgressIndicatorScreen());
           },

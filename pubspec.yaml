@@ -144,6 +144,8 @@ dependencies:
   flutter_drawing_board: ^0.4.3+2
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
+  #https://pub.dev/packages/flutter_html
+  #flutter_html: ^2.2.1
   #https://pub.dev/packages/flutter_file_view
   #  flutter_file_view: ^2.1.2 //bi gg reject vi co download manual apk -> should not use this plugin
   #https://pub.dev/packages/flutter_local_notifications
@@ -180,6 +182,8 @@ dependencies:
   flutter_svg: ^1.1.6
   #https://pub.dev/packages/flutter_speed_dial
   flutter_speed_dial: ^6.2.0
+  #https://pub.dev/packages/flutter_spinkit
+  flutter_spinkit: ^5.1.0
   #https://pub.dev/packages/flutter_sticky_header
   flutter_sticky_header: ^0.6.5
   #https://pub.dev/packages/flutter_screen_lock
