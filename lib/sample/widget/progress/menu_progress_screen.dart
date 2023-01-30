@@ -10,6 +10,7 @@ import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
 import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
 import 'smooth_page_indicator/smooth_page_indicator_screen.dart';
+import 'syncfusion_flutter_gauges/syncfusion_flutter_gauges_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -61,6 +62,14 @@ class MenuProgressScreen extends StatelessWidget {
             },
             description:
                 "Customizable animated page indicator with a set of built-in effects.",
+          ),
+          UIUtils.getButton(
+            "syncfusion_flutter_gauges",
+            () {
+              Get.to(SyncfusionFlutterGaugesScreen());
+            },
+            description:
+                "The Flutter gauges library includes a linear gauge and radial gauge (a.k.a. circular gauge) to create modern, interactive, animated gauges and radial sliders.",
           ),
           UIUtils.getButton(
             "CircularProgressIndicatorApp",
