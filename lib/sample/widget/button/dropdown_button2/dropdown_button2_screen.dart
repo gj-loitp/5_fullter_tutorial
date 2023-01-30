@@ -1,4 +1,3 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
@@ -45,14 +44,8 @@ class _DropdownButton2ScreenState
               "https://pub.dev/packages/dropdown_button2");
         },
       ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        physics: BouncingScrollPhysics(),
-        child: Column(
-          children: [
-            MyHomePage(),
-          ],
-        ),
+      body: Center(
+        child: MyHomePage(),
       ),
     );
   }
