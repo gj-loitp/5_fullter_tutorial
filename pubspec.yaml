@@ -287,6 +287,8 @@ dependencies:
   #https://pub.dev/packages/get
   get: ^4.6.5
 
+  #https://pub.dev/packages/random_string
+  random_string: ^2.3.1
   #https://pub.dev/packages/recase
   recase: ^4.1.0
   #https://pub.dev/packages/remove_emoji
