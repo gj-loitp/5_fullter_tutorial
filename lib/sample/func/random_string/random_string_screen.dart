@@ -32,6 +32,7 @@ class _RandomStringScreenState extends BaseStatefulState<RandomStringScreen> {
   }
 
   void _test() {
+    s = "";
     print(randomBetween(10,
         20)); // some integer between 10 and 20 where 0 <= min <= max <= 999999999999999
     s += "randomBetween(10, 20): ${randomBetween(10, 20)}";
@@ -89,6 +90,9 @@ class _RandomStringScreenState extends BaseStatefulState<RandomStringScreen> {
         physics: BouncingScrollPhysics(),
         children: [
           UIUtils.getText(s),
+          UIUtils.getButton("Random", () {
+            _test();
+          }),
         ],
       ),
     );
