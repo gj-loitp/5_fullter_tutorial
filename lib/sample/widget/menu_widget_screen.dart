@@ -17,6 +17,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animated_background/animated_background_screen.dart';
+import 'another_flushbar/another_flushbar_screen.dart';
 import 'appbar/sliver_app_bar_screen.dart';
 import 'badges/badges_screen.dart';
 import 'bottom_bar/menu_bottom_bar_screen.dart';
@@ -109,6 +110,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "Animated Backgrounds for Flutter. Easily extended to paint whatever you want on the canvas.",
+            ),
+            UIUtils.getButton(
+              "another_flushbar",
+              () {
+                Get.to(() => AnotherFlushbarScreen());
+              },
+              description:
+                  "A flexible widget for user notification. Customize your text, button, duration, animations and much more. For Android devs, it is made to replace Snackbars and Toasts.",
             ),
             UIUtils.getButton(
               "SliverAppBarScreen",

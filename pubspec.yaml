@@ -22,6 +22,8 @@ dependencies:
   animated_text_kit: ^4.2.2
   #https://pub.dev/packages/animated_toggle_switch
   animated_toggle_switch: ^0.6.1
+  #https://pub.dev/packages/another_flushbar
+  another_flushbar: ^1.12.29
   #https://pub.dev/packages/avatar_glow
   avatar_glow: ^2.0.2
   #https://pub.dev/packages/auto_size_text
