@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   message:
                       "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
                   flushbarPosition: FlushbarPosition.TOP,
-                  flushbarStyle: FlushbarStyle.FLOATING,
+                  flushbarStyle: FlushbarStyle.GROUNDED,
                   reverseAnimationCurve: Curves.decelerate,
                   forwardAnimationCurve: Curves.elasticOut,
                   backgroundColor: Colors.red,
