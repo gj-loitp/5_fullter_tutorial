@@ -63,27 +63,66 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
-          //
-          // Invoke "debug painting" (press "p" in the console, choose the
-          // "Toggle Debug Paint" action from the Flutter Inspector in Android
-          // Studio, or the "Toggle Debug Paint" command in Visual Studio Code)
-          // to see the wireframe for each widget.
-          //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
-          // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
               'Hello flushbar:',
+            ),
+            FloatingActionButton(
+              onPressed: () async {
+                await Flushbar(
+                  title: "Hey Ninja",
+                  titleColor: Colors.white,
+                  message:
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry",
+                  flushbarPosition: FlushbarPosition.TOP,
+                  flushbarStyle: FlushbarStyle.FLOATING,
+                  reverseAnimationCurve: Curves.decelerate,
+                  forwardAnimationCurve: Curves.elasticOut,
+                  backgroundColor: Colors.red,
+                  boxShadows: [
+                    BoxShadow(
+                        color: Colors.blue.withOpacity(0.8),
+                        offset: Offset(0.0, 2.0),
+                        blurRadius: 3.0)
+                  ],
+                  backgroundGradient:
+                      LinearGradient(colors: [Colors.blueGrey, Colors.black]),
+                  isDismissible: false,
+                  duration: Duration(seconds: 4),
+                  icon: Icon(
+                    Icons.check,
+                    color: Colors.greenAccent,
+                  ),
+                  mainButton: TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      "CLAP",
+                      style: TextStyle(color: Colors.amber),
+                    ),
+                  ),
+                  showProgressIndicator: true,
+                  progressIndicatorBackgroundColor: Colors.blueGrey,
+                  titleText: Text(
+                    "Hello Hero",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.0,
+                        color: Colors.yellow[600],
+                        fontFamily: "ShadowsIntoLightTwo"),
+                  ),
+                  messageText: Text(
+                    "You killed that giant monster in the city. Congratulations!",
+                    style: TextStyle(
+                        fontSize: 18.0,
+                        color: Colors.green,
+                        fontFamily: "ShadowsIntoLightTwo"),
+                  ),
+                ).show(context);
+              },
+              tooltip: 'Increment',
+              child: Icon(Icons.add),
             ),
           ],
         ),
