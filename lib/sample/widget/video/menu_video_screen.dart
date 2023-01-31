@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'chewie/chewie_screen.dart';
 import 'video_player/video_player_screen.dart';
 
 /**
@@ -13,7 +14,7 @@ import 'video_player/video_player_screen.dart';
  * +840766040293
  * freuss47@gmail.com
  */
-class MenuTextScreen extends StatelessWidget {
+class MenuVideoScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,11 +31,22 @@ class MenuTextScreen extends StatelessWidget {
           padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
           physics: BouncingScrollPhysics(),
           children: [
-            UIUtils.getButton("video_player", () {
-              Get.to(() => VideoPlayerScreen());
-            },
-                description:
-                    "Flutter plugin for displaying inline video with other Flutter widgets on Android, iOS, and web."),
+            UIUtils.getButton(
+              "chewie",
+              () {
+                Get.to(() => ChewieScreen());
+              },
+              description:
+                  "A video player for Flutter with Cupertino and Material play controls",
+            ),
+            UIUtils.getButton(
+              "video_player",
+              () {
+                Get.to(() => VideoPlayerScreen());
+              },
+              description:
+                  "Flutter plugin for displaying inline video with other Flutter widgets on Android, iOS, and web.",
+            ),
           ],
         ),
       ),
