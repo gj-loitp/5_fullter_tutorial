@@ -11,6 +11,7 @@ import 'image_view_360/image_view_360_screen.dart';
 import 'kenburn/kenburns_nullsafety_screen.dart';
 import 'octo_image/octo_image_screen.dart';
 import 'photo_view/photo_view_screen.dart';
+import 'scribble/scribble_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -87,12 +88,20 @@ class MenuImageScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "PhotoViewScreen",
+            "photo_view",
             () {
               Get.to(PhotoViewScreen());
             },
             description:
                 "Photo View provides a gesture sensitive zoomable widget. Photo View is largely used to show interactive images and other stuff such as SVG.",
+          ),
+          UIUtils.getButton(
+            "scribble",
+            () {
+              Get.to(ScribbleScreen());
+            },
+            description:
+                "Scribble is a lightweight library for freehand drawing in Flutter supporting pressure, variable line width and more!",
           ),
         ],
       ),
