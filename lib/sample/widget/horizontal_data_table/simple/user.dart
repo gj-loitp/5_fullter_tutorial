@@ -1,4 +1,4 @@
-import 'UserInfo.dart';
+import 'user_info.dart';
 
 /**
  * Created by Loitp on 08,August,2022

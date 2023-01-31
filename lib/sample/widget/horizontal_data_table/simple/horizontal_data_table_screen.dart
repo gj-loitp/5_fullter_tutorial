@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:horizontal_data_table/horizontal_data_table.dart';
 
-import 'User.dart';
+import 'user.dart';
 
 /**
  * Created by Loitp on 08,August,2022

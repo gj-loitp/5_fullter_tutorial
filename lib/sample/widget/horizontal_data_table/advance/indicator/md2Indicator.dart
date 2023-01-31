@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import 'Md2IndicatorSize.dart';
+import 'md2IndicatorSize.dart';
 
 /**
  * Created by Loitp on 08,August,2022

@@ -1,10 +1,10 @@
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_controller.dart';
 import 'package:get/get.dart';
 
-import 'model/DummyFloor.dart';
-import 'model/DummyHeaderDescription.dart';
-import 'model/DummyHouse.dart';
-import 'model/DummyModelIndicator.dart';
+import 'model/dummy_floor.dart';
+import 'model/dummy_header_description.dart';
+import 'model/dummy_house.dart';
+import 'model/dummy_model_indicator.dart';
 
 /**
  * Created by Loitp on 08,August,2022

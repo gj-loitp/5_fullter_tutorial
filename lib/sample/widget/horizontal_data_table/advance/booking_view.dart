@@ -6,13 +6,13 @@ import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:horizontal_data_table/horizontal_data_table.dart';
 
-import 'ControllerBook.dart';
-import 'indicator/Md2Indicator.dart';
-import 'indicator/Md2IndicatorSize.dart';
-import 'model/DummyFloor.dart';
-import 'model/DummyHeaderDescription.dart';
-import 'model/DummyHouse.dart';
-import 'model/DummyModelIndicator.dart';
+import 'controller_book.dart';
+import 'indicator/md2Indicator.dart';
+import 'indicator/md2IndicatorSize.dart';
+import 'model/dummy_floor.dart';
+import 'model/dummy_header_description.dart';
+import 'model/dummy_house.dart';
+import 'model/dummy_model_indicator.dart';
 
 /**
  * Created by Loitp on 08,August,2022
