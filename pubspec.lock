@@ -1011,6 +1011,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.1"
+  flutter_state_notifier:
+    dependency: transitive
+    description:
+      name: flutter_state_notifier
+      sha256: "7ae8f4e8ea834af2c6b3d19c4c5946646b4dac3d2933ea4d9f02c5f60f50d5fe"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.1"
   flutter_sticky_header:
     dependency: "direct main"
     description:
@@ -1069,6 +1077,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "10.3.0"
+  freezed_annotation:
+    dependency: transitive
+    description:
+      name: freezed_annotation
+      sha256: aeac15850ef1b38ee368d4c53ba9a847e900bb2c53a4db3f6881cbb3cb684338
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   get:
     dependency: "direct main"
     description:
@@ -1101,6 +1117,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
+  history_state_notifier:
+    dependency: transitive
+    description:
+      name: history_state_notifier
+      sha256: "5f5cc4d0f689c229c8202a74b937f61a051f09da354892f0d734422b5254d45f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.5"
   horizontal_calendar:
     dependency: "direct main"
     description:
@@ -1662,6 +1686,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.2"
+  perfect_freehand:
+    dependency: transitive
+    description:
+      name: perfect_freehand
+      sha256: "77bfdd5efb223d120de5cc18c5d6e0b36a835e920521cfe67e281960bad44c9b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   permission_handler:
     dependency: "direct main"
     description:
@@ -1886,6 +1918,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.0"
+  scribble:
+    dependency: "direct main"
+    description:
+      name: scribble
+      sha256: e24d00ae57b0b643bebb265a125dadb2b871dc87ec49724a11d50c4d89ca12d4
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.9.1"
   scroll_to_index:
     dependency: "direct main"
     description:
@@ -2091,6 +2131,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.11.0"
+  state_notifier:
+    dependency: transitive
+    description:
+      name: state_notifier
+      sha256: "8fe42610f179b843b12371e40db58c9444f8757f8b69d181c97e50787caed289"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.7.2+1"
   stream_channel:
     dependency: transitive
     description:
