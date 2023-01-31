@@ -9,7 +9,6 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/super_circle/super
 import 'package:com.roy93group.flutter_tutorial/sample/widget/swipe_cards/swipe_cards_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/tab_page_selector/tab_page_selector_sreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/text_view/menu_text_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/video_player_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/wave/wave_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/webview/menu_webview_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -575,12 +574,6 @@ class MenuWidgetScreen extends StatelessWidget {
               "TooltipScreen",
               () {
                 Get.to(() => TooltipScreen());
-              },
-            ),
-            UIUtils.getButton(
-              "VideoPlayerScreen",
-              () {
-                Get.to(() => VideoPlayerScreen());
               },
             ),
             UIUtils.getButton(

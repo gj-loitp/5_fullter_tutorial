@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/controls_overlay.dart';
 import 'package:video_player/video_player.dart';
+
+import '../controls_overlay.dart';
 
 /**
  * Created by Loitp on 08,August,2022
