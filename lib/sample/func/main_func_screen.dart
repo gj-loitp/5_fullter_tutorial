@@ -14,6 +14,7 @@ import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'email_validator/email_validator_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
+import 'platform_device_id/platform_device_id_screen.dart';
 import 'random_string/random_string_screen.dart';
 
 /**
@@ -125,6 +126,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                 "A pure Dart library that checks for internet by opening a socket to a list of specified addresses, each with individual port and timeout. Defaults are provided for convenience.",
           ),
           UIUtils.getButton(
+            "platform_device_id",
+            () {
+              Get.to(() => PlatformDeviceIdScreen());
+            },
+            description:
+                "You can get device id from platform - linux/mac/windows/android/ios/web.",
+          ),
+          UIUtils.getButton(
             "random_string",
             () {
               Get.to(() => RandomStringScreen());
@@ -134,11 +143,11 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
           ),
           UIUtils.getButton(
             "uuid",
-                () {
+            () {
               Get.to(() => UUIDScreen());
             },
             description:
-            "RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)",
+                "RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)",
           ),
           UIUtils.getButton(
             "vibration",

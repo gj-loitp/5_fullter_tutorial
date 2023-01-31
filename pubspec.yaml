@@ -342,6 +342,8 @@ dependencies:
   permission_handler: ^10.2.0
   #https://pub.dev/packages/photo_view
   photo_view: ^0.14.0
+  #https://pub.dev/packages/platform_device_id
+  platform_device_id: ^1.0.1
   #https://pub.dev/packages/pin_code_fields
   pin_code_fields: ^7.4.0
   #https://pub.dev/packages/progress_indicators
