@@ -41,6 +41,7 @@ class _ThemePageState extends State<ThemePage> {
       body: Stack(
         children: [
           ListView(
+            physics: BouncingScrollPhysics(),
             padding: EdgeInsets.fromLTRB(20.0, 160.0, 20.0, 40.0),
             children: [
               Card(

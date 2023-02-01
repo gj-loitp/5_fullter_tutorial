@@ -55,6 +55,7 @@ class ShowcasePage extends StatelessWidget {
             );
           } else {
             return ListView(
+              physics: BouncingScrollPhysics(),
               padding: EdgeInsets.symmetric(vertical: 20.0),
               children: cards,
             );

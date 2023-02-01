@@ -167,10 +167,11 @@ class ExamplePage extends StatelessWidget {
         indicatorTheme: IndicatorThemeData(size: 15.0),
       ),
       child: Scaffold(
-        appBar: AppBar(
-          title: Text('Timelines Example'),
-        ),
+        // appBar: AppBar(
+        //   title: Text('Timelines Example'),
+        // ),
         body: ListView(
+          physics: BouncingScrollPhysics(),
           padding: EdgeInsets.all(20.0),
           children: [
             _NavigationCard(
