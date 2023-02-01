@@ -371,6 +371,8 @@ dependencies:
   sidebarx: ^0.14.0
   #https://pub.dev/packages/sliding_up_panel
   sliding_up_panel: ^2.0.0+1
+  #https://pub.dev/packages/sticky_headers
+  sticky_headers: ^0.3.0+2
   #https://pub.dev/packages/super_circle
   super_circle: ^1.0.0
   #https://pub.dev/packages/swipe_cards
