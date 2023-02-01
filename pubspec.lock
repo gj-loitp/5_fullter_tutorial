@@ -2134,6 +2134,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.1"
+  skeleton_loader:
+    dependency: "direct main"
+    description:
+      name: skeleton_loader
+      sha256: "49440f69c9f0187265c6579f9bddfff7a4f200467469788e1ef12c42241e72da"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0+4"
   sky_engine:
     dependency: transitive
     description: flutter

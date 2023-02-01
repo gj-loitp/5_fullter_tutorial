@@ -369,6 +369,8 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
   #https://pub.dev/packages/sidebarx
   sidebarx: ^0.14.0
+  #https://pub.dev/packages/skeleton_loader
+  skeleton_loader: ^2.0.0+4
   #https://pub.dev/packages/sliding_up_panel
   sliding_up_panel: ^2.0.0+1
   #https://pub.dev/packages/sticky_headers

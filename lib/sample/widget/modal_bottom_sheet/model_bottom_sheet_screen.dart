@@ -5,16 +5,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
-import 'CircularModal.dart';
-import 'FloatingModal.dart';
-import 'ModalComplexAll.dart';
-import 'ModalFit.dart';
-import 'ModalWillScope.dart';
-import 'ModalWithNavigator.dart';
-import 'ModalWithNestedScroll.dart';
-import 'ModalWithNestedScrollShort.dart';
-import 'ModalWithPageView.dart';
+import 'circular_modal.dart';
+import 'floating_modal.dart';
+import 'modal_complex_all.dart';
+import 'modal_fit.dart';
 import 'modal_inside_modal.dart';
+import 'modal_will_scope.dart';
+import 'modal_with_navigator.dart';
+import 'modal_with_nested_scroll.dart';
+import 'modal_with_nested_scroll_short.dart';
+import 'modal_with_page_view.dart';
 
 /**
  * Created by Loitp on 08,August,2022
