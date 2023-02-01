@@ -75,6 +75,7 @@ import 'stepper/stepper_screen.dart';
 import 'switch/menu_switch_screen.dart';
 import 'table/table_screen.dart';
 import 'time_planner/time_planner_screen.dart';
+import 'timelines/timelines_screen.dart';
 import 'tooltip/tooltip_screen.dart';
 import 'video/menu_video_screen.dart';
 import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
@@ -571,6 +572,11 @@ class MenuWidgetScreen extends StatelessWidget {
               description:
                   "A beautiful, easy to use and customizable time planner for flutter mobile, desktop and web",
             ),
+            UIUtils.getButton("timelines", () {
+              Get.to(() => TimelinesScreen());
+            },
+                description:
+                    "A powerful & easy to use timeline package for Flutter. All UI components in this package are separate widgets."),
             UIUtils.getButton(
               "Tooltip",
               () {
