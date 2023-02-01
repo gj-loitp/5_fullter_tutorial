@@ -11,6 +11,7 @@ import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
 import 'loading_animation_widget/loading_animation_widget_screen.dart';
 import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
+import 'skeleton_loader/skeleton_loader_screen.dart';
 import 'smooth_page_indicator/smooth_page_indicator_screen.dart';
 import 'syncfusion_flutter_gauges/syncfusion_flutter_gauges_screen.dart';
 
@@ -72,6 +73,14 @@ class MenuProgressScreen extends StatelessWidget {
             },
             description:
                 "A handful collection of some cool progress indicators and text animators.",
+          ),
+          UIUtils.getButton(
+            "skeleton_loader",
+                () {
+              Get.to(SkeletonLoaderScreen());
+            },
+            description:
+            "A Flutter Package which provides a fully customizable loading skeleton for your app",
           ),
           UIUtils.getButton(
             "smooth_page_indicator",
