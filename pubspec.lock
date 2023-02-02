@@ -955,6 +955,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.8"
+  flutter_reorderable_grid_view:
+    dependency: transitive
+    description:
+      name: flutter_reorderable_grid_view
+      sha256: d32931c43c48ab45c58eb8a76ac03ce0f5228684d7aa777ff4d70e61fff5dbd9
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.1.3"
   flutter_rounded_date_picker:
     dependency: "direct main"
     description:
@@ -1478,6 +1486,14 @@ packages:
       url: "https://github.com/eli1stark/modal_bottom_sheet.git"
     source: git
     version: "2.1.2"
+  multi_image_picker_view:
+    dependency: "direct main"
+    description:
+      name: multi_image_picker_view
+      sha256: e318a3c5182e9f1882cb9fef6d58d18e909d85bb910c9ffc3698e8d63a449420
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.13"
   nepali_utils:
     dependency: transitive
     description:
