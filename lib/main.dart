@@ -165,9 +165,9 @@ void main() async {
       debugShowCheckedModeBanner: true,
       defaultTransition: Transition.cupertino,
       theme: ThemeData(
-        backgroundColor: Colors.white,
         colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange)
-            .copyWith(secondary: Colors.deepOrange),
+            .copyWith(secondary: Colors.deepOrange)
+            .copyWith(background: Colors.white),
       ),
       home: SplashScreen(),
     ),
