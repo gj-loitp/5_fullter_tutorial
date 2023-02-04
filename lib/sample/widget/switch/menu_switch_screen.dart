@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 
 import 'animated_toggle_switch/animated_toggle_switch_screen.dart';
 import 'flutter_switch/flutter_switch_screen.dart';
+import 'flutter_toggle_tab/flutter_toggle_tab_screen.dart';
 import 'switch_screen.dart';
 import 'toggle_switch/toggle_switch_screen.dart';
 
@@ -48,6 +49,14 @@ class MenuSwitchScreen extends StatelessWidget {
               },
               description:
                   "A custom switch widget that can have a custom height and width, borders, border radius, colors, toggle size, custom text and icons inside the toggle.",
+            ),
+            UIUtils.getButton(
+              "flutter_toggle_tab",
+                  () {
+                Get.to(() => FlutterToggleTabScreen());
+              },
+              description:
+              "Library to create Beautiful and Customized Tab/Toggle Widget on Flutter.",
             ),
             UIUtils.getButton(
               "toggle_switch",

@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 import 'back_button_screen.dart';
 import 'button_bar_screen.dart';
 import 'drop_down_screen.dart';
+import 'dropdown_button2/dropdown_button2_screen.dart';
 import 'flutter_animated_button/flutter_animated_button_screen.dart';
 import 'icon_button_screen.dart';
 import 'outline_button_screen.dart';
@@ -41,6 +42,14 @@ class MenuButtonScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            UIUtils.getButton(
+              "dropdown_button2",
+              () {
+                Get.to(DropdownButton2Screen());
+              },
+              description:
+                  "Flutter's core Dropdown Button widget with steady dropdown menu and many options you can customize to your needs.",
+            ),
             UIUtils.getButton(
               "flutter_animated_button",
               () {

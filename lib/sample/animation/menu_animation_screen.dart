@@ -20,6 +20,7 @@ import 'animated_positioned_screen.dart';
 import 'animated_size_screen.dart';
 import 'animated_switcher_screen.dart';
 import 'animated_theme_screen.dart';
+import 'circular_reveal_animation/circular_reveal_animation_screen.dart';
 import 'confetti/confetti_screen.dart';
 import 'decorated_box_transition_screen.dart';
 import 'fade_in_image_screen.dart';
@@ -52,6 +53,14 @@ class MenuAnimationScreen extends StatelessWidget {
         physics: BouncingScrollPhysics(),
         children: [
           UIUtils.getButton(
+            "circular_reveal_animation",
+            () => {
+              Get.to(CircularRevealAnimationScreen()),
+            },
+            description:
+                "Circular Reveal Animation as Flutter widget! Inspired by Android's ViewAnimationUtils.createCircularReveal(...).",
+          ),
+          UIUtils.getButton(
             "confetti",
             () => {
               Get.to(ConfettiScreen()),
@@ -75,11 +84,11 @@ class MenuAnimationScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "splash",
-                () => {
+            () => {
               Get.to(SplashScreen()),
             },
             description:
-            "This package contains a few InkSplash and InkRipple alternatives for a better UI",
+                "This package contains a few InkSplash and InkRipple alternatives for a better UI",
           ),
           UIUtils.getButton(
             "RouteTransitionScreen",

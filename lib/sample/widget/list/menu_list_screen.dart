@@ -17,6 +17,7 @@ import 'load_more/ListViewLoadMoreScreen.dart';
 import 'pull_to_refresh/pull_to_refresh_screen.dart';
 import 'scroll_to_index/scroll_to_index_screen.dart';
 import 'scrollable_positioned_list/scrollable_positioned_list_screen.dart';
+import 'sticky_headers/sticky_headers_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -135,6 +136,14 @@ class MenuListScreen extends StatelessWidget {
             },
             description:
                 "A list with helper methods to programmatically scroll to an item.",
+          ),
+          UIUtils.getButton(
+            "sticky_headers",
+                () {
+              Get.to(() => StickyHeadersScreen());
+            },
+            description:
+            "Flutter Sticky Headers - Lets you place headers on scrollable content that will stick to the top of the container whilst the content is scrolled.",
           ),
         ],
       ),

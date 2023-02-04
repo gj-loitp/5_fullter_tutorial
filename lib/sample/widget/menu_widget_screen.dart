@@ -9,7 +9,6 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/super_circle/super
 import 'package:com.roy93group.flutter_tutorial/sample/widget/swipe_cards/swipe_cards_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/tab_page_selector/tab_page_selector_sreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/text_view/menu_text_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/video_player/video_player_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/wave/wave_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/webview/menu_webview_screen.dart';
 import 'package:flutter/cupertino.dart';
@@ -17,6 +16,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animated_background/animated_background_screen.dart';
+import 'another_flushbar/another_flushbar_screen.dart';
 import 'appbar/sliver_app_bar_screen.dart';
 import 'badges/badges_screen.dart';
 import 'bottom_bar/menu_bottom_bar_screen.dart';
@@ -43,6 +43,7 @@ import 'easy_loading/easy_loading_screen.dart';
 import 'edit_text/menu_edit_text_screen.dart';
 import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
+import 'flip_card/flip_card_screen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
 import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
 import 'flutter_rating_bar/flutter_rating_bar_screen.dart';
@@ -52,15 +53,15 @@ import 'folding_cell/folding_cell_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
 import 'horizontal_card_pager/horizontal_card_pager.dart';
+import 'horizontal_data_table/menu_horizontal_data_table_screen.dart';
+import 'image/menu_image_screen.dart';
 import 'in_app_review/in_app_review_screen.dart';
 import 'inkwell/inkwell_screen.dart';
 import 'interactive_viewer/using_interactive_viewer_screen.dart';
 import 'layout/menu_layout_screen.dart';
 import 'list/menu_list_screen.dart';
-import 'md2TabIndicator/Md2TabIndicatorScreen.dart';
-import 'menuHorizontalDataTable/MenuHorizontalDataTableScreen.dart';
-import 'menu_image/menu_image_screen.dart';
-import 'modalBottomSheet/model_bottom_sheet_screen.dart';
+import 'md2_tab_indicator/md2_tab_indicator_screen.dart';
+import 'modal_bottom_sheet/model_bottom_sheet_screen.dart';
 import 'progress/menu_progress_screen.dart';
 import 'shape_of_view/shape_of_view_screen.dart';
 import 'shimmer/shimmer_screen.dart';
@@ -74,7 +75,9 @@ import 'stepper/stepper_screen.dart';
 import 'switch/menu_switch_screen.dart';
 import 'table/table_screen.dart';
 import 'time_planner/time_planner_screen.dart';
+import 'timelines/timelines_screen.dart';
 import 'tooltip/tooltip_screen.dart';
+import 'video/menu_video_screen.dart';
 import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
 /**
@@ -108,6 +111,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "Animated Backgrounds for Flutter. Easily extended to paint whatever you want on the canvas.",
+            ),
+            UIUtils.getButton(
+              "another_flushbar",
+              () {
+                Get.to(() => AnotherFlushbarScreen());
+              },
+              description:
+                  "A flexible widget for user notification. Customize your text, button, duration, animations and much more. For Android devs, it is made to replace Snackbars and Toasts.",
             ),
             UIUtils.getButton(
               "SliverAppBarScreen",
@@ -289,6 +300,14 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => MenuExpansionScreen());
               },
+            ),
+            UIUtils.getButton(
+              "flip_card",
+              () {
+                Get.to(() => FlipCardScreen());
+              },
+              description:
+                  "A component that provides flip card animation. It could be used for hide and show details of a product.",
             ),
             UIUtils.getButton(
               "floating_bubbles",
@@ -553,16 +572,21 @@ class MenuWidgetScreen extends StatelessWidget {
               description:
                   "A beautiful, easy to use and customizable time planner for flutter mobile, desktop and web",
             ),
+            UIUtils.getButton("timelines", () {
+              Get.to(() => TimelinesScreen());
+            },
+                description:
+                    "A powerful & easy to use timeline package for Flutter. All UI components in this package are separate widgets."),
             UIUtils.getButton(
-              "TooltipScreen",
+              "Tooltip",
               () {
                 Get.to(() => TooltipScreen());
               },
             ),
             UIUtils.getButton(
-              "VideoPlayerScreen",
+              "video",
               () {
-                Get.to(() => VideoPlayerScreen());
+                Get.to(() => MenuVideoScreen());
               },
             ),
             UIUtils.getButton(

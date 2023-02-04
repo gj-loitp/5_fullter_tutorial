@@ -13,6 +13,7 @@ import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
 import 'flutter_rounded_date_picker/flutter_rounded_date_picker_screen.dart';
 import 'horizontal_picker/horizontal_picker_screen.dart';
 import 'hsv_color_pickers/hsv_color_pickers_screen.dart';
+import 'multi_image_picker_view/multi_image_picker_view_screen.dart';
 import 'numberpicker/numberpicker_screen.dart';
 
 /**
@@ -106,6 +107,14 @@ class MenuPickerScreen extends StatelessWidget {
               },
               description:
                   "Flutter plugin for selecting images from the Android and iOS image library, and taking new pictures with the camera.",
+            ),
+            UIUtils.getButton(
+              "multi_image_picker_view",
+              () {
+                Get.to(() => MultiImagePickerViewScreen());
+              },
+              description:
+                  "A complete widget which can easily pick multiple images from device and display them in UI. Also picked image can be re-ordered and removed easily.",
             ),
             UIUtils.getButton(
               "numberpicker",
