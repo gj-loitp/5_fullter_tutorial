@@ -189,7 +189,7 @@ dependencies:
   #https://pub.dev/packages/flutter_staggered_grid_view
   flutter_staggered_grid_view: ^0.4.1 #migrate later
   #https://pub.dev/packages/flutter_svg
-  flutter_svg: ^1.1.6
+  flutter_svg: ^1.1.6 #migrate later
   #https://pub.dev/packages/flutter_speed_dial
   flutter_speed_dial: ^6.2.0
   #https://pub.dev/packages/flutter_spinkit
@@ -198,6 +198,8 @@ dependencies:
   flutter_sticky_header: ^0.6.5
   #https://pub.dev/packages/flutter_screen_lock
   flutter_screen_lock: ^5.0.12 #migrate later
+  #https://pub.dev/packages/flutter_toggle_tab
+  flutter_toggle_tab: ^1.2.0
   #https://pub.dev/packages/flutter_switch
   flutter_switch: ^0.3.2
 
