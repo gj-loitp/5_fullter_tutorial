@@ -422,7 +422,7 @@ dependencies:
   tiledjsonreader: ^1.2.6
 
 dependency_overrides:
-  intl: ^0.17.0
+  intl: ^0.18.0
 #  qr: ^2.0.0
 
 dev_dependencies:
