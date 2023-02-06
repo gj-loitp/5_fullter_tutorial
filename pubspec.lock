@@ -1169,10 +1169,10 @@ packages:
     dependency: "direct main"
     description:
       name: horizontal_calendar
-      sha256: ebfb85fa50f42214e26d68184b6ac2b4c60dbe8c8914cf3d5edbb94b3f73bfec
+      sha256: f7013e43006ffa1251befe956bc284e5357ad6ed3a6c24bd39c48875f0df47cd
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "1.0.2"
   horizontal_card_pager:
     dependency: "direct main"
     description:

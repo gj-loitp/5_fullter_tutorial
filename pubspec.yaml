@@ -209,7 +209,7 @@ dependencies:
   #https://pub.dev/packages/hexcolor
   hexcolor: ^3.0.1
   #https://pub.dev/packages/horizontal_calendar
-  horizontal_calendar: ^1.0.1
+  horizontal_calendar: ^1.0.2
   #https://pub.dev/packages/horizontal_card_pager
   horizontal_card_pager: ^1.1.1
   #https://pub.dev/packages/horizontal_picker
@@ -266,7 +266,8 @@ dependencies:
 
   #https://pub.dev/packages/time_planner
   time_planner: ^0.1.1
-  transparent_image: ^2.0.0 #https://pub.dev/packages/transparent_image
+  #https://pub.dev/packages/transparent_image
+  transparent_image: ^2.0.0
 
   #https://pub.dev/packages/url_launcher
   url_launcher: ^6.1.8
@@ -319,7 +320,7 @@ dependencies:
   #https://pub.dev/packages/in_app_review
   in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
-  intl: ^0.17.0 #migate later
+  intl: ^0.18.0 #migate later
   #https://pub.dev/packages/internet_connection_checker
   internet_connection_checker: ^1.0.0+1
 
@@ -388,7 +389,8 @@ dependencies:
   #https://pub.dev/packages/syncfusion_flutter_gauges
   syncfusion_flutter_gauges: ^20.4.48
 
-  tiengviet: ^0.5.0 #https://pub.dev/packages/tiengviet
+  #https://pub.dev/packages/tiengviet
+  tiengviet: ^0.5.0
   #https://pub.dev/packages/timeago
   timeago: ^3.3.0
   #https://pub.dev/packages/timelines
@@ -418,6 +420,9 @@ dependencies:
   flame: 1.0.0-releasecandidate.15
   #https://pub.dev/packages/tiledjsonreader
   tiledjsonreader: ^1.2.6
+
+dependency_overrides:
+  intl: ^0.17.0
 
 dev_dependencies:
   flutter_test:
