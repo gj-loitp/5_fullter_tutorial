@@ -1598,6 +1598,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  o_color_picker:
+    dependency: "direct main"
+    description:
+      name: o_color_picker
+      sha256: "9f731d1d62401fb7ab762182e24f036ac55876b627309fee08342302c6b89c76"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   octo_image:
     dependency: "direct main"
     description:

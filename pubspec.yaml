@@ -261,6 +261,8 @@ dependencies:
   #https://pub.dev/packages/numberpicker
   numberpicker: ^2.1.1
 
+  #https://pub.dev/packages/o_color_picker
+  o_color_picker: ^1.0.2
   #https://pub.dev/packages/octo_image
   octo_image: ^1.0.2
   #https://pub.dev/packages/one_target_mobile_sdk

@@ -16,6 +16,7 @@ import 'horizontal_picker/horizontal_picker_screen.dart';
 import 'hsv_color_pickers/hsv_color_pickers_screen.dart';
 import 'multi_image_picker_view/multi_image_picker_view_screen.dart';
 import 'numberpicker/numberpicker_screen.dart';
+import 'o_color_picker/o_color_picker_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -132,6 +133,14 @@ class MenuPickerScreen extends StatelessWidget {
               },
               description:
                   "NumberPicker is a widget allowing user to choose numbers by scrolling spinners.",
+            ),
+            UIUtils.getButton(
+              "o_color_picker",
+              () {
+                Get.to(() => OColorPickerScreen());
+              },
+              description:
+                  "Simple and fast 2-step color picker, which supports shades and colors customization.",
             ),
           ],
         ),
