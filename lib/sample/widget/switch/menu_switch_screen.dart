@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animated_toggle_switch/animated_toggle_switch_screen.dart';
+import 'fk_toggle/fk_toggle_screen.dart';
 import 'flutter_switch/flutter_switch_screen.dart';
 import 'flutter_toggle_tab/flutter_toggle_tab_screen.dart';
 import 'switch_screen.dart';
@@ -43,6 +44,14 @@ class MenuSwitchScreen extends StatelessWidget {
                   "Simple and animated switch with multiple choices and smooth loading animation. It's a good alternative if you don't want to use something like a dropdown menu.",
             ),
             UIUtils.getButton(
+              "fk_toggle",
+              () {
+                Get.to(() => FkToggleScreen());
+              },
+              description:
+                  "This is simple flutter toggle button widget. Possible set multiple value to toggle ui, not only 2 values. Also you can customize size and colors as you like.",
+            ),
+            UIUtils.getButton(
               "flutter_switch",
               () {
                 Get.to(() => FlutterSwitchScreen());
@@ -52,11 +61,11 @@ class MenuSwitchScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "flutter_toggle_tab",
-                  () {
+              () {
                 Get.to(() => FlutterToggleTabScreen());
               },
               description:
-              "Library to create Beautiful and Customized Tab/Toggle Widget on Flutter.",
+                  "Library to create Beautiful and Customized Tab/Toggle Widget on Flutter.",
             ),
             UIUtils.getButton(
               "toggle_switch",

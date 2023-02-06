@@ -753,6 +753,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.18"
+  fk_toggle:
+    dependency: "direct main"
+    description:
+      name: fk_toggle
+      sha256: "1db67707c46a4c962f43ede96c8828118edad3801d4d5fab44d077fdaad76f9f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.4"
   fl_chart:
     dependency: "direct main"
     description:

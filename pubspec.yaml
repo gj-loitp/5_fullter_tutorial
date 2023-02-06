@@ -128,6 +128,8 @@ dependencies:
   focus_detector: ^2.0.1
   #https://pub.dev/packages/folding_cell
   folding_cell: ^1.0.2
+  #https://pub.dev/packages/fk_toggle
+  fk_toggle: ^0.1.4
   #https://pub.dev/packages/font_awesome_flutter
   font_awesome_flutter: ^10.3.0
   firebase_core: ^2.4.1
