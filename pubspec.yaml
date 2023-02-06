@@ -320,7 +320,7 @@ dependencies:
   #https://pub.dev/packages/in_app_review
   in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
-  intl: ^0.18.0 #migate later
+  intl: ^0.18.0
   #https://pub.dev/packages/internet_connection_checker
   internet_connection_checker: ^1.0.0+1
 
@@ -423,6 +423,7 @@ dependencies:
 
 dependency_overrides:
   intl: ^0.17.0
+#  qr: ^2.0.0
 
 dev_dependencies:
   flutter_test:
