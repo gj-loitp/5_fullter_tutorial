@@ -9,6 +9,7 @@ import 'package:get/get.dart';
 
 import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
 import 'file_picker/file_picker_demo.dart';
+import 'flutter_circle_color_picker/flutter_circle_color_picker_screen.dart';
 import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
 import 'flutter_rounded_date_picker/flutter_rounded_date_picker_screen.dart';
 import 'horizontal_picker/horizontal_picker_screen.dart';
@@ -67,6 +68,14 @@ class MenuPickerScreen extends StatelessWidget {
               () {
                 Get.to(() => FilePickerDemo());
               },
+            ),
+            UIUtils.getButton(
+              "flutter_circle_color_picker",
+              () {
+                Get.to(() => FlutterCircleColorPickerScreen());
+              },
+              description:
+                  "A beatiful circle color picker which picks hsl color for flutter..",
             ),
             UIUtils.getButton(
               "flutter_colorpicker",

@@ -830,6 +830,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.3.0"
+  flutter_circle_color_picker:
+    dependency: "direct main"
+    description:
+      name: flutter_circle_color_picker
+      sha256: cf3e3fd295c9db89f8650dc72ee7bd1d7f33fcb22e3822c3c1c270877038af7f
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.3.0"
   flutter_colorpicker:
     dependency: "direct main"
     description:

@@ -148,6 +148,8 @@ dependencies:
   flutter_animated_button: ^2.0.3
   #https://pub.dev/packages/flutter_bloc
   flutter_bloc: ^8.1.1
+  #https://pub.dev/packages/flutter_circle_color_picker
+  flutter_circle_color_picker: ^0.3.0
   #https://pub.dev/packages/flutter_colorpicker
   flutter_colorpicker: ^1.0.3
   #https://pub.dev/packages/flutter_drawing_board
