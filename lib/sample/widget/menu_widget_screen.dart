@@ -45,6 +45,7 @@ import 'expanded/ExpandedScreen.dart';
 import 'expansion/MenuExpansionScreen.dart';
 import 'flip_card/flip_card_screen.dart';
 import 'floating_bubbles/floating_bubbles_screen.dart';
+import 'flutter_credit_card/flutter_credit_card_screen.dart';
 import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
 import 'flutter_rating_bar/flutter_rating_bar_screen.dart';
 import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
@@ -332,6 +333,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "Simple folding cell widget, pass frontWidget and innerWidget to fold and unfold.",
+            ),
+            UIUtils.getButton(
+              "flutter_credit_card",
+              () {
+                Get.to(() => FlutterCreditCardScreen());
+              },
+              description:
+                  "A Credit Card widget package, support entering card details, card flip animation.",
             ),
             UIUtils.getButton(
               "flutter_drawing_board",
