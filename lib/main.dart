@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
+import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:get/get.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
@@ -160,16 +161,18 @@ void main() async {
   });
 
   runApp(
-    GetMaterialApp(
-      enableLog: true,
-      debugShowCheckedModeBanner: true,
-      defaultTransition: Transition.cupertino,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange)
-            .copyWith(secondary: Colors.deepOrange)
-            .copyWith(background: Colors.white),
+    Phoenix(
+      child: GetMaterialApp(
+        enableLog: true,
+        debugShowCheckedModeBanner: true,
+        defaultTransition: Transition.cupertino,
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange)
+              .copyWith(secondary: Colors.deepOrange)
+              .copyWith(background: Colors.white),
+        ),
+        home: SplashScreen(),
       ),
-      home: SplashScreen(),
     ),
   );
 }

@@ -12,6 +12,7 @@ import 'async/menu_async_screen.dart';
 import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'email_validator/email_validator_screen.dart';
+import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
 import 'platform_device_id/platform_device_id_screen.dart';
@@ -108,6 +109,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
             description:
                 "A package that makes it easy to set your flutter app launcher name.",
+          ),
+          UIUtils.getButton(
+            "flutter_phoenix",
+            () {
+              Get.to(() => FlutterPhoenixScreen());
+            },
+            description:
+                "Easily restart your application from scratch, losing any previous state.",
           ),
           UIUtils.getButton(
             "hexcolor",
