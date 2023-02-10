@@ -437,10 +437,10 @@ packages:
     dependency: "direct main"
     description:
       name: d_chart
-      sha256: b65909295af821d7797323293ffb9f6741ae3e457f6a63450487cb792f5afb77
+      sha256: "2dc0fc136bdd322877851ad5e15679ff784d6b3170ab4ab906abf46ed94812bc"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "2.0.2"
   date_picker_timeline_fixed:
     dependency: "direct main"
     description:
@@ -485,10 +485,10 @@ packages:
     dependency: "direct main"
     description:
       name: device_info_plus
-      sha256: "7ff671ed0a6356fa8f2e1ae7d3558d3fb7b6a41e24455e4f8df75b811fb8e4ab"
+      sha256: "1d6e5a61674ba3a68fb048a7c7b4ff4bebfed8d7379dbe8f2b718231be9a7c95"
       url: "https://pub.dev"
     source: hosted
-    version: "8.0.0"
+    version: "8.1.0"
   device_info_plus_platform_interface:
     dependency: transitive
     description:

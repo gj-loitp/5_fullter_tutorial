@@ -85,11 +85,11 @@ dependencies:
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0
   #https://pub.dev/packages/d_chart
-  d_chart: ^1.0.1
+  d_chart: ^2.0.2
   #https://pub.dev/packages/drag_select_grid_view
   drag_select_grid_view: ^0.6.1
   #https://pub.dev/packages/device_info_plus
-  device_info_plus: ^8.0.0
+  device_info_plus: ^8.1.0
   #https://pub.dev/packages/delayed_display
   delayed_display: ^2.0.0
   #https://pub.dev/packages/diacritic
