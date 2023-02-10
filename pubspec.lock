@@ -1031,10 +1031,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_smart_dialog
-      sha256: "90aea9db9f2a4ce71c5909e2da894505c4e61a7c1c8d1f4089890a5c93ad0e1d"
+      sha256: ab1dccf481ab0a353861e46a841fe47228cf4dc0c211d9cb8ebac007cfdcd29a
       url: "https://pub.dev"
     source: hosted
-    version: "4.8.2+2"
+    version: "4.8.2+4"
   flutter_snake_navigationbar:
     dependency: "direct main"
     description:
