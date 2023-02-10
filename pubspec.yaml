@@ -204,6 +204,8 @@ dependencies:
   flutter_sticky_header: ^0.6.5
   #https://pub.dev/packages/flutter_screen_lock
   flutter_screen_lock: ^5.0.12 #migrate later
+  #https://pub.dev/packages/flutter_phoenix
+  flutter_phoenix: ^1.1.0
   #https://pub.dev/packages/flutter_toggle_tab
   flutter_toggle_tab: ^1.2.0
   #https://pub.dev/packages/flutter_switch
