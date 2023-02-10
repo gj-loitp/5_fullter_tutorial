@@ -432,7 +432,7 @@ dependencies:
 dependency_overrides:
   intl: ^0.18.0
 #  qr: ^2.0.0
-  connectivity_plus: ^2.2.0
+  connectivity_plus: ^3.0.3
 
 dev_dependencies:
   flutter_test:
