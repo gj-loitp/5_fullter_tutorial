@@ -280,7 +280,7 @@ dependencies:
   transparent_image: ^2.0.0
 
   #https://pub.dev/packages/url_launcher
-  url_launcher: ^6.1.8
+  url_launcher: ^6.1.9
 
   #https://pub.dev/packages/qr_code_scanner
   qr_code_scanner: ^1.0.1
@@ -292,7 +292,7 @@ dependencies:
   #https://pub.dev/packages/scrollable_positioned_list
   scrollable_positioned_list: ^0.3.5
   #https://pub.dev/packages/share_plus
-  share_plus: ^6.3.0
+  share_plus: ^6.3.1
   #https://pub.dev/packages/simple_url_preview
   simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
@@ -300,7 +300,7 @@ dependencies:
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
   #https://pub.dev/packages/slide_countdown
-  slide_countdown: ^0.4.1
+  slide_countdown: ^0.5.0
   #https://pub.dev/packages/sqflite
   sqflite: ^2.2.4+1
   #https://pub.dev/packages/splash
@@ -346,7 +346,7 @@ dependencies:
   video_player: ^2.5.1
 
   #https://pub.dev/packages/package_info_plus
-  package_info_plus: ^3.0.2
+  package_info_plus: ^3.0.3
   #https://pub.dev/packages/panara_dialogs
   panara_dialogs: ^0.1.4
   #https://pub.dev/packages/path_provider
@@ -397,7 +397,7 @@ dependencies:
   #https://pub.dev/packages/swipe_cards
   swipe_cards: ^2.0.0+1
   #https://pub.dev/packages/syncfusion_flutter_gauges
-  syncfusion_flutter_gauges: ^20.4.48
+  syncfusion_flutter_gauges: ^20.4.49
 
   #https://pub.dev/packages/tiengviet
   tiengviet: ^0.5.0
