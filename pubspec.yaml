@@ -64,7 +64,7 @@ dependencies:
   #https://pub.dev/packages/confetti
   confetti: ^0.7.0
   #https://pub.dev/packages/connectivity_plus
-  connectivity_plus: ^2.3.9 #migrate later
+  connectivity_plus: ^3.0.3
   #https://pub.dev/packages/country_picker
   country_picker: ^2.0.19
   #https://pub.dev/packages/clay_containers
@@ -432,6 +432,7 @@ dependencies:
 dependency_overrides:
   intl: ^0.18.0
 #  qr: ^2.0.0
+  connectivity_plus: ^2.2.0
 
 dev_dependencies:
   flutter_test:
