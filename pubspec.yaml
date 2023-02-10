@@ -132,10 +132,10 @@ dependencies:
   fk_toggle: ^0.1.4
   #https://pub.dev/packages/font_awesome_flutter
   font_awesome_flutter: ^10.3.0
-  firebase_core: ^2.4.1
-  firebase_analytics: ^10.1.0
-  firebase_crashlytics: ^3.0.11
-  firebase_remote_config: ^3.0.9
+  firebase_core: ^2.5.0
+  firebase_analytics: ^10.1.1
+  firebase_crashlytics: ^3.0.12
+  firebase_remote_config: ^3.0.10
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.5
   #https://pub.dev/packages/fl_chart
@@ -149,7 +149,7 @@ dependencies:
   #https://pub.dev/packages/flutter_animated_button
   flutter_animated_button: ^2.0.3
   #https://pub.dev/packages/flutter_bloc
-  flutter_bloc: ^8.1.1
+  flutter_bloc: ^8.1.2
   #https://pub.dev/packages/flutter_circle_color_picker
   flutter_circle_color_picker: ^0.3.0
   #https://pub.dev/packages/flutter_colorpicker
