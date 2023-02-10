@@ -261,7 +261,7 @@ dependencies:
   multi_image_picker_view: ^0.0.13
 
   #https://pub.dev/packages/network_info_plus
-  network_info_plus: ^2.3.2 #migrate later
+  network_info_plus: ^3.0.2
   #https://pub.dev/packages/numberpicker
   numberpicker: ^2.1.1
 
@@ -435,6 +435,7 @@ dependency_overrides:
   intl: ^0.18.0
 #  qr: ^2.0.0
   connectivity_plus: ^3.0.3
+  network_info_plus: ^3.0.2
 
 dev_dependencies:
   flutter_test:
