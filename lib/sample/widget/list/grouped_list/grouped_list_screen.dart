@@ -5,6 +5,8 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'chat_example.dart';
+
 /**
  * Created by Loitp on 05,August,2022
  * Galaxy One company,
@@ -46,7 +48,14 @@ class _GroupedListScreenState extends BaseStatefulState<GroupedListScreen> {
       body: ListView(
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         physics: BouncingScrollPhysics(),
-        children: [],
+        children: [
+          UIUtils.getButton(
+            "chat_example",
+            () {
+              Get.to(() => ChatExample());
+            },
+          ),
+        ],
       ),
     );
   }
