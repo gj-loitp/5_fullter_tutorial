@@ -58,6 +58,7 @@ class MyApp extends StatelessWidget {
 
   GroupedListView<dynamic, int> _createList(List<Element> elements) {
     return GroupedListView<Element, int>(
+      physics: BouncingScrollPhysics(),
       elements: elements,
       groupBy: (element) => element.index,
       groupComparator: (value1, value2) => value2.compareTo(value1),
