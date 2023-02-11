@@ -7,6 +7,7 @@ import 'carousel_slider/carousel_slider_screen.dart';
 import 'contact_page_screen/ContactPageScreen.dart';
 import 'draggable_scrollbar_demo/DraggableScrollbarDemoScreen.dart';
 import 'flutter_sticky_header/FlutterStickyHeaderScreen.dart';
+import 'grouped_list/grouped_list_screen.dart';
 import 'header_body_footer/HeaderBodyFooterScreen.dart';
 import 'lazy_load_scroll_view/LazyLoadScrollViewScreen.dart';
 import 'list_body_widget/ListBodyScreen.dart';
@@ -62,12 +63,20 @@ class MenuListScreen extends StatelessWidget {
             },
           ),
           UIUtils.getButton(
-            "FlutterStickyHeaderScreen",
+            "flutter_sticky_header",
             () {
               Get.to(() => FlutterStickyHeaderScreen());
             },
             description:
                 "Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.",
+          ),
+          UIUtils.getButton(
+            "grouped_list",
+            () {
+              Get.to(() => GroupedListScreen());
+            },
+            description:
+                "A Flutter ListView where the list items can be grouped into sections.",
           ),
           UIUtils.getButton(
             "HeaderBodyFooterScreen",
@@ -139,11 +148,11 @@ class MenuListScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "sticky_headers",
-                () {
+            () {
               Get.to(() => StickyHeadersScreen());
             },
             description:
-            "Flutter Sticky Headers - Lets you place headers on scrollable content that will stick to the top of the container whilst the content is scrolled.",
+                "Flutter Sticky Headers - Lets you place headers on scrollable content that will stick to the top of the container whilst the content is scrolled.",
           ),
         ],
       ),
