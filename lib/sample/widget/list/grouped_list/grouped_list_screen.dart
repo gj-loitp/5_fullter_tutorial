@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 
 import 'chat_example.dart';
 import 'example.dart';
+import 'silver_example.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -60,6 +61,12 @@ class _GroupedListScreenState extends BaseStatefulState<GroupedListScreen> {
             "example",
             () {
               Get.to(() => Example());
+            },
+          ),
+          UIUtils.getButton(
+            "silver_example",
+            () {
+              Get.to(() => SilverExample());
             },
           ),
         ],
