@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'chat_example.dart';
+import 'example.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -53,6 +54,12 @@ class _GroupedListScreenState extends BaseStatefulState<GroupedListScreen> {
             "chat_example",
             () {
               Get.to(() => ChatExample());
+            },
+          ),
+          UIUtils.getButton(
+            "example",
+            () {
+              Get.to(() => Example());
             },
           ),
         ],
