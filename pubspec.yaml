@@ -213,6 +213,8 @@ dependencies:
 
   #https://pub.dev/packages/google_fonts
   google_fonts: ^4.0.3
+  #https://pub.dev/packages/grouped_list
+  grouped_list: ^5.1.2
 
   #https://pub.dev/packages/hexcolor
   hexcolor: ^3.0.1
