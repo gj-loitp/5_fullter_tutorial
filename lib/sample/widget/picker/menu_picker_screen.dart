@@ -8,13 +8,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
+import 'fast_color_picker/fast_color_picker_screen.dart';
 import 'file_picker/file_picker_demo.dart';
+import 'flutter_circle_color_picker/flutter_circle_color_picker_screen.dart';
 import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
 import 'flutter_rounded_date_picker/flutter_rounded_date_picker_screen.dart';
 import 'horizontal_picker/horizontal_picker_screen.dart';
 import 'hsv_color_pickers/hsv_color_pickers_screen.dart';
 import 'multi_image_picker_view/multi_image_picker_view_screen.dart';
 import 'numberpicker/numberpicker_screen.dart';
+import 'o_color_picker/o_color_picker_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -63,10 +66,26 @@ class MenuPickerScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
+              "fast_color_picker",
+              () {
+                Get.to(() => FastColorPickerScreen());
+              },
+              description:
+                  "This package provides a color picker like in story editor of Instagram.",
+            ),
+            UIUtils.getButton(
               "FilePickerDemo",
               () {
                 Get.to(() => FilePickerDemo());
               },
+            ),
+            UIUtils.getButton(
+              "flutter_circle_color_picker",
+              () {
+                Get.to(() => FlutterCircleColorPickerScreen());
+              },
+              description:
+                  "A beatiful circle color picker which picks hsl color for flutter..",
             ),
             UIUtils.getButton(
               "flutter_colorpicker",
@@ -123,6 +142,14 @@ class MenuPickerScreen extends StatelessWidget {
               },
               description:
                   "NumberPicker is a widget allowing user to choose numbers by scrolling spinners.",
+            ),
+            UIUtils.getButton(
+              "o_color_picker",
+              () {
+                Get.to(() => OColorPickerScreen());
+              },
+              description:
+                  "Simple and fast 2-step color picker, which supports shades and colors customization.",
             ),
           ],
         ),
