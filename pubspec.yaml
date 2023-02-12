@@ -124,6 +124,8 @@ dependencies:
   #https://pub.dev/packages/equatable
   equatable: ^2.0.5
 
+  #https://pub.dev/packages/fast_color_picker
+  fast_color_picker: ^0.1.1
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
   #https://pub.dev/packages/folding_cell
