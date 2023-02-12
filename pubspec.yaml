@@ -133,7 +133,7 @@ dependencies:
   #https://pub.dev/packages/fk_toggle
   fk_toggle: ^0.1.4
   #https://pub.dev/packages/font_awesome_flutter
-  font_awesome_flutter: ^10.3.0
+  font_awesome_flutter: ^10.4.0
   firebase_core: ^2.5.0
   firebase_analytics: ^10.1.1
   firebase_crashlytics: ^3.0.12

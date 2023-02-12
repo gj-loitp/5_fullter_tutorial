@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'date_picker_timeline_fixed/date_picker_timeline_fixed_screen.dart';
+import 'fast_color_picker/fast_color_picker_screen.dart';
 import 'file_picker/file_picker_demo.dart';
 import 'flutter_circle_color_picker/flutter_circle_color_picker_screen.dart';
 import 'flutter_colorpicker/flutter_colorpicker_screen.dart';
@@ -63,6 +64,14 @@ class MenuPickerScreen extends StatelessWidget {
               () {
                 Get.to(() => DayPickerScreen());
               },
+            ),
+            UIUtils.getButton(
+              "fast_color_picker",
+              () {
+                Get.to(() => FastColorPickerScreen());
+              },
+              description:
+                  "This package provides a color picker like in story editor of Instagram.",
             ),
             UIUtils.getButton(
               "FilePickerDemo",
