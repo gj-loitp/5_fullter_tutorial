@@ -18,6 +18,7 @@ import 'hsv_color_pickers/hsv_color_pickers_screen.dart';
 import 'multi_image_picker_view/multi_image_picker_view_screen.dart';
 import 'numberpicker/numberpicker_screen.dart';
 import 'o_color_picker/o_color_picker_screen.dart';
+import 'wechat_camera_picker/wechat_camera_picker_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -150,6 +151,14 @@ class MenuPickerScreen extends StatelessWidget {
               },
               description:
                   "Simple and fast 2-step color picker, which supports shades and colors customization.",
+            ),
+            UIUtils.getButton(
+              "wechat_camera_picker",
+              () {
+                Get.to(() => WechatCameraPickerScreen());
+              },
+              description:
+                  "A camera picker based on WeChat's UI which is a separate runnable extension to wechat_assets_picker.",
             ),
           ],
         ),
