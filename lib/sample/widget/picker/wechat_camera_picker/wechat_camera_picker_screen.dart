@@ -1,7 +1,7 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/wechat_camera_picker/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,6 +12,8 @@ import 'package:get/get.dart';
  * +840766040293
  * freuss47@gmail.com
  */
+String? packageVersion;
+
 class WechatCameraPickerScreen extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
@@ -44,11 +46,7 @@ class _WechatCameraPickerScreenState
               "https://pub.dev/packages/wechat_camera_picker");
         },
       ),
-      body: ListView(
-        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        physics: BouncingScrollPhysics(),
-        children: [],
-      ),
+      body: SplashPage(),
     );
   }
 }
