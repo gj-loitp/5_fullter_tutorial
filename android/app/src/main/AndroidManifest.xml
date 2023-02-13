@@ -70,6 +70,11 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
+    <!-- Add this if you need to take photos. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <!-- Add this if you need to take videos. -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
     <!-- Provide required visibility configuration for API level 30 and above -->
     <queries>
         <intent>
