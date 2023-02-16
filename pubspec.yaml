@@ -95,7 +95,7 @@ dependencies:
   #https://pub.dev/packages/diacritic
   diacritic: ^0.1.3
   #https://pub.dev/packages/dio
-  dio: ^4.0.6
+  dio: ^5.0.0
   #https://pub.dev/packages/dotted_border
   dotted_border: ^2.0.0+3
   #https://pub.dev/packages/dotted_line
