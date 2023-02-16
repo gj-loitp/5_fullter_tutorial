@@ -133,10 +133,10 @@ packages:
     dependency: "direct main"
     description:
       name: basic_utils
-      sha256: "3e86a17d2aafbd52ef69c0dc8936b1bc7bd91bcd8fa1c0d222d13ca2f6d000bb"
+      sha256: eb424482531df5d5576da64f039fe49f12c9ab979d9a64a0f4385da8a6e2751d
       url: "https://pub.dev"
     source: hosted
-    version: "5.4.2"
+    version: "5.5.0"
   battery_plus:
     dependency: "direct main"
     description:
@@ -1473,10 +1473,10 @@ packages:
     dependency: transitive
     description:
       name: logging
-      sha256: c0bbfe94d46aedf9b8b3e695cf3bd48c8e14b35e3b2c639e0aa7755d589ba946
+      sha256: "04094f2eb032cbb06c6f6e8d3607edcfcb0455e2bb6cbc010cb01171dcb64e6d"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.1"
   lottie:
     dependency: "direct main"
     description:

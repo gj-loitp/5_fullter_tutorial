@@ -38,7 +38,7 @@ dependencies:
   #https://pub.dev/packages/battery_plus
   battery_plus: ^3.0.3
   #https://pub.dev/packages/basic_utils
-  basic_utils: ^5.4.2
+  basic_utils: ^5.5.0
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
   #https://pub.dev/packages/bottom_navy_bar
