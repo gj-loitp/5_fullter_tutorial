@@ -262,7 +262,7 @@ dependencies:
       ref: 2b3f9f84f46418c1b337968c88883995f65f47e7
       path: modal_bottom_sheet
   #https://pub.dev/packages/multi_image_picker_view
-  multi_image_picker_view: ^0.0.13
+  multi_image_picker_view: ^0.0.14
 
   #https://pub.dev/packages/network_info_plus
   network_info_plus: ^3.0.2
@@ -339,7 +339,7 @@ dependencies:
   internet_connection_checker: ^1.0.0+1
 
   #https://pub.dev/packages/horizontal_data_table
-  horizontal_data_table: ^4.1.4
+  horizontal_data_table: ^4.1.4+1
   #https://pub.dev/packages/http
   http: ^0.13.5
 
@@ -387,7 +387,7 @@ dependencies:
   #https://pub.dev/packages/shape_of_view_null_safe
   shape_of_view_null_safe: ^2.0.0
   #https://pub.dev/packages/smooth_page_indicator
-  smooth_page_indicator: ^1.0.0+2
+  smooth_page_indicator: ^1.0.1
   #https://pub.dev/packages/sidebarx
   sidebarx: ^0.14.0
   #https://pub.dev/packages/skeleton_loader
@@ -401,7 +401,7 @@ dependencies:
   #https://pub.dev/packages/swipe_cards
   swipe_cards: ^2.0.0+1
   #https://pub.dev/packages/syncfusion_flutter_gauges
-  syncfusion_flutter_gauges: ^20.4.49
+  syncfusion_flutter_gauges: ^20.4.50
 
   #https://pub.dev/packages/tiengviet
   tiengviet: ^0.5.0

@@ -1241,10 +1241,10 @@ packages:
     dependency: "direct main"
     description:
       name: horizontal_data_table
-      sha256: bee01e4bcc146febfff38c828f6dcb5968cc6160b95a4de6d91d87584f163eca
+      sha256: eee304c89efab944c2620b8277bfdc2f930c10b981b5aa50daf0f969a3260977
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.4"
+    version: "4.1.4+1"
   horizontal_picker:
     dependency: "direct main"
     description:
@@ -1554,10 +1554,10 @@ packages:
     dependency: "direct main"
     description:
       name: multi_image_picker_view
-      sha256: e318a3c5182e9f1882cb9fef6d58d18e909d85bb910c9ffc3698e8d63a449420
+      sha256: "707fd6100514b5384fb7856cfbff097b1321ce97e899094d6d640b9cfba94263"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.13"
+    version: "0.0.14"
   nepali_utils:
     dependency: transitive
     description:
@@ -2239,10 +2239,10 @@ packages:
     dependency: "direct main"
     description:
       name: smooth_page_indicator
-      sha256: "49e9b6a265790454c39bd4a447a02f398c02b44b2602e7c5e3a381dc2e3b4102"
+      sha256: "8c301bc686892306cd41672c1880167f140c16be305d5ede8201fefd9fcda829"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0+2"
+    version: "1.0.1"
   source_span:
     dependency: transitive
     description:
@@ -2367,18 +2367,18 @@ packages:
     dependency: transitive
     description:
       name: syncfusion_flutter_core
-      sha256: b5cb2525beb38fae36a363f72f8a2db92ed3995d6f0695968412cc6836e3a7b7
+      sha256: "33141f9073c607bd113898d241aa6a03ccc1856a314bd061015180c35d47012f"
       url: "https://pub.dev"
     source: hosted
-    version: "20.4.49"
+    version: "20.4.50"
   syncfusion_flutter_gauges:
     dependency: "direct main"
     description:
       name: syncfusion_flutter_gauges
-      sha256: "9386dd211d57b83a0bdd0e65a66b742501ed128fad5680ac04293fac3edf251a"
+      sha256: a27244f63a0553880be385435ed7a5bc367a010830161069d56cc26e863c5797
       url: "https://pub.dev"
     source: hosted
-    version: "20.4.49"
+    version: "20.4.50"
   synchronized:
     dependency: transitive
     description:
