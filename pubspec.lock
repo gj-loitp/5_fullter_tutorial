@@ -281,6 +281,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.2.1"
+  change_app_package_name:
+    dependency: "direct dev"
+    description:
+      name: change_app_package_name
+      sha256: f9ebaf68a4b5a68c581492579bb68273c523ef325fbf9ce2f1b57fb136ad023b
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
   characters:
     dependency: "direct main"
     description:
@@ -445,10 +453,10 @@ packages:
     dependency: "direct main"
     description:
       name: d_chart
-      sha256: "71927209eae94a7477745b5ad3eb6c4ea0d40c709030100d985673f10d4cddbf"
+      sha256: da1e1155dcd5082690890a276da38b36f74bdd834082a0aa7f3159532d691e0c
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.10"
+    version: "2.2.11"
   date_picker_timeline_fixed:
     dependency: "direct main"
     description:
