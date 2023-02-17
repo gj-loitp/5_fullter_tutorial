@@ -322,6 +322,8 @@ dependencies:
 
   #https://pub.dev/packages/random_string
   random_string: ^2.3.1
+  #https://pub.dev/packages/rating_dialog
+  rating_dialog: ^2.0.4
   #https://pub.dev/packages/recase
   recase: ^4.1.0
   #https://pub.dev/packages/remove_emoji
