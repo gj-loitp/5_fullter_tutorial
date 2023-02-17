@@ -50,6 +50,7 @@ import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
 import 'flutter_rating_bar/flutter_rating_bar_screen.dart';
 import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
+import 'fluttertoast/fluttertoast_screen.dart';
 import 'folding_cell/folding_cell_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
@@ -325,6 +326,14 @@ class MenuWidgetScreen extends StatelessWidget {
               },
               description:
                   "A widget, that visualises a tree structure, where a node can be any widget.",
+            ),
+            UIUtils.getButton(
+              "fluttertoast",
+                  () {
+                Get.to(() => FluttertoastScreen());
+              },
+              description:
+              "Toast Library for Flutter, Easily create toast messages in single line of code",
             ),
             UIUtils.getButton(
               "folding_cell",
