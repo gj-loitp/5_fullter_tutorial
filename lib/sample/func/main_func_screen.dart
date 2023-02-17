@@ -79,6 +79,12 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
               Get.to(() => MenuAsyncScreen());
             },
           ),
+          UIUtils.getButton("change_app_package_name", () {
+            UrlLauncherUtils.launchInWebViewWithJavaScript(
+                "https://pub.dev/packages/change_app_package_name");
+          },
+              description:
+                  "Change App Package Name with single command. Update AndroidManifest, build.gradle, MainActivity files & move MainActivity file to new directory structure automatically."),
           UIUtils.getButton(
             "characters",
             () {
