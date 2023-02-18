@@ -15,9 +15,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'animated_background/animated_background_screen.dart';
 import 'another_flushbar/another_flushbar_screen.dart';
 import 'appbar/sliver_app_bar_screen.dart';
+import 'background/menu_background_screen.dart';
 import 'badges/badges_screen.dart';
 import 'bottom_bar/menu_bottom_bar_screen.dart';
 import 'bottom_sheet/bottom_sheet_screen.dart';
@@ -107,14 +107,6 @@ class MenuWidgetScreen extends StatelessWidget {
           physics: BouncingScrollPhysics(),
           children: [
             UIUtils.getButton(
-              "animated_background",
-              () {
-                Get.to(() => AnimatedBackgroundScreen());
-              },
-              description:
-                  "Animated Backgrounds for Flutter. Easily extended to paint whatever you want on the canvas.",
-            ),
-            UIUtils.getButton(
               "another_flushbar",
               () {
                 Get.to(() => AnotherFlushbarScreen());
@@ -126,6 +118,12 @@ class MenuWidgetScreen extends StatelessWidget {
               "SliverAppBarScreen",
               () {
                 Get.to(() => SliverAppBarScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "background",
+              () {
+                Get.to(() => MenuBackgroundScreen());
               },
             ),
             UIUtils.getButton(
