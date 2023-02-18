@@ -61,6 +61,8 @@ dependencies:
   chewie: ^1.4.0
   #https://pub.dev/packages/clipboard
   clipboard: ^0.1.3
+  #https://pub.dev/packages/colorful_background
+  colorful_background: ^0.0.4
   #https://pub.dev/packages/confetti
   confetti: ^0.7.0
   #https://pub.dev/packages/connectivity_plus

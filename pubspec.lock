@@ -345,6 +345,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.17.0"
+  colorful_background:
+    dependency: "direct main"
+    description:
+      name: colorful_background
+      sha256: "5d8655142633fe76dd6a0ec80854496b38d4a8d5de17d91608865e83cea2975b"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.4"
   community_charts_common:
     dependency: transitive
     description:
