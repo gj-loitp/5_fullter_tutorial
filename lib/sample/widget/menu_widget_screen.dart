@@ -15,7 +15,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'another_flushbar/another_flushbar_screen.dart';
+import 'alert/menu_alert_screen.dart';
 import 'appbar/sliver_app_bar_screen.dart';
 import 'background/menu_background_screen.dart';
 import 'badges/badges_screen.dart';
@@ -107,12 +107,10 @@ class MenuWidgetScreen extends StatelessWidget {
           physics: BouncingScrollPhysics(),
           children: [
             UIUtils.getButton(
-              "another_flushbar",
+              "Alert",
               () {
-                Get.to(() => AnotherFlushbarScreen());
+                Get.to(() => MenuAlertScreen());
               },
-              description:
-                  "A flexible widget for user notification. Customize your text, button, duration, animations and much more. For Android devs, it is made to replace Snackbars and Toasts.",
             ),
             UIUtils.getButton(
               "SliverAppBarScreen",
@@ -121,7 +119,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "background",
+              "Background",
               () {
                 Get.to(() => MenuBackgroundScreen());
               },
