@@ -1,7 +1,10 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:device_preview/device_preview.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flash/flash.dart';
+import 'package:flash/flash_helper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -160,18 +163,36 @@ void main() async {
     selectNotificationSubject.add(payload);
   });
 
+  final navigatorKey = GlobalKey<NavigatorState>();
+
   runApp(
-    Phoenix(
-      child: GetMaterialApp(
-        enableLog: true,
-        debugShowCheckedModeBanner: true,
-        defaultTransition: Transition.cupertino,
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange)
-              .copyWith(secondary: Colors.deepOrange)
-              .copyWith(background: Colors.white),
+    DevicePreview(
+      enabled: kIsWeb,
+      builder: (context) => Phoenix(
+        child: GetMaterialApp(
+          enableLog: true,
+          debugShowCheckedModeBanner: true,
+          defaultTransition: Transition.cupertino,
+          // theme: ThemeData(
+          //   colorScheme:
+          //       ColorScheme.fromSwatch(primarySwatch: Colors.deepOrange)
+          //           .copyWith(secondary: Colors.deepOrange)
+          //           .copyWith(background: Colors.white),
+          // ),
+          home: SplashScreen(),
+          navigatorKey: navigatorKey,
+          builder: (context, _) {
+            var child = _!;
+            child = DevicePreview.appBuilder(context, _);
+            child = Toast(child: child, navigatorKey: navigatorKey);
+            return child;
+          },
+          locale: DevicePreview.locale(context),
+          theme: ThemeData.light()
+              .copyWith(extensions: [FlashToastTheme(), FlashBarTheme()]),
+          darkTheme: ThemeData.dark(),
+          themeMode: ThemeMode.light,
         ),
-        home: SplashScreen(),
       ),
     ),
   );

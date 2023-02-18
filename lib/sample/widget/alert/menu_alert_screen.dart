@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'another_flushbar/another_flushbar_screen.dart';
+import 'flash/flash_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -37,6 +38,14 @@ class MenuAlertScreen extends StatelessWidget {
               },
               description:
                   "A flexible widget for user notification. Customize your text, button, duration, animations and much more. For Android devs, it is made to replace Snackbars and Toasts.",
+            ),
+            UIUtils.getButton(
+              "flash",
+              () {
+                Get.to(() => FlashScreen());
+              },
+              description:
+                  "A highly customizable, powerful and easy-to-use alerting library for Flutter.",
             ),
           ],
         ),
