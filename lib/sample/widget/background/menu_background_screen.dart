@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'animated_background/animated_background_screen.dart';
+import 'colorful_background/colorful_background_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -37,6 +38,14 @@ class MenuBackgroundScreen extends StatelessWidget {
               },
               description:
                   "Animated Backgrounds for Flutter. Easily extended to paint whatever you want on the canvas.",
+            ),
+            UIUtils.getButton(
+              "colorful_background",
+                  () => {
+                Get.to(() => ColorfulBackgroundScreen()),
+              },
+              description:
+              "Flutter package for custom changing gradient background colors.",
             ),
           ],
         ),
