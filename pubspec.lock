@@ -890,10 +890,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_drawing_board
-      sha256: "568a639734099ca44c2c6a9fe7c42e10a7b3cfa2457ac4fbac39f09403dcd562"
+      sha256: "46c82e478412b7b4bf816e9237987bceed3e2afcea0641691a321b2f1ec9d14f"
       url: "https://pub.dev"
     source: hosted
-    version: "0.4.3+2"
+    version: "0.4.4+1"
   flutter_easyloading:
     dependency: "direct main"
     description:
@@ -1063,10 +1063,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_smart_dialog
-      sha256: ab1dccf481ab0a353861e46a841fe47228cf4dc0c211d9cb8ebac007cfdcd29a
+      sha256: "2f2f3ed0dbd6c924b24e27b681bef44e36e7e5e3e78486706a7562088395f9fa"
       url: "https://pub.dev"
     source: hosted
-    version: "4.8.2+4"
+    version: "4.8.2+5"
   flutter_snake_navigationbar:
     dependency: "direct main"
     description:
@@ -1329,10 +1329,10 @@ packages:
     dependency: "direct main"
     description:
       name: image_picker
-      sha256: f98d76672d309c8b7030c323b3394669e122d52b307d2bbd8d06bd70f5b2aabe
+      sha256: d39cc12402dab8365fe5b5370e64694ae0223d675c36b15ff0490b7cc3d32551
       url: "https://pub.dev"
     source: hosted
-    version: "0.8.6+1"
+    version: "0.8.6+2"
   image_picker_android:
     dependency: transitive
     description:
@@ -2495,10 +2495,10 @@ packages:
     dependency: "direct main"
     description:
       name: transparent_image
-      sha256: e566a616922a781489f4d91cc939b1b3203b6e4a093317805f2f82f0bb0f8dec
+      sha256: e8991d955a2094e197ca24c645efec2faf4285772a4746126ca12875e54ca02f
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.0"
+    version: "2.0.1"
   typed_data:
     dependency: transitive
     description:
