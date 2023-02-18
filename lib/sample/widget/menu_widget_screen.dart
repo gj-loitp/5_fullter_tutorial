@@ -80,7 +80,6 @@ import 'time_planner/time_planner_screen.dart';
 import 'timelines/timelines_screen.dart';
 import 'tooltip/tooltip_screen.dart';
 import 'video/menu_video_screen.dart';
-import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -616,14 +615,6 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => MenuWebviewScreen());
               },
-            ),
-            UIUtils.getButton(
-              "youtube_player_flutter",
-              () {
-                Get.to(() => YoutubePlayerFlutterScreen());
-              },
-              description:
-                  "Flutter plugin for playing or streaming inline YouTube videos using the official iFrame player API. This plugin supports both Android and iOS.",
             ),
           ],
         ),
