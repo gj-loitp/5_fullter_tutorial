@@ -801,6 +801,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0-releasecandidate.15"
+  flash:
+    dependency: "direct main"
+    description:
+      name: flash
+      sha256: f110b161dc67e8cf78d3b7ed29a7ea9575a4f97c8725510c3b08b0a1fb3bbda8
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.5+1"
   flexible_calendar:
     dependency: "direct main"
     description:

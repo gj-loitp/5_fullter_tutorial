@@ -142,6 +142,8 @@ dependencies:
   firebase_remote_config: ^3.0.12
   #https://pub:dev/packages/file_picker
   file_picker: ^5.2.5
+  #https://pub.dev/packages/flash
+  flash: ^2.0.5+1
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.60.0
   #https://pub.dev/packages/flexible_calendar

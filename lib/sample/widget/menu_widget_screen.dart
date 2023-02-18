@@ -30,7 +30,7 @@ import 'check_box/radio_button_screen.dart';
 import 'check_box/radio_button_screen2.dart';
 import 'clay_containers/clay_containers_screen.dart';
 import 'cupertino/MenuCupertinoScreen.dart';
-import 'dataTable/DataTableScreen.dart';
+import 'data_table/data_table_screen.dart';
 import 'dchart/DChartScreen.dart';
 import 'delayed_display/delayed_display_screen.dart';
 import 'dialog/menu_dialog_screen.dart';
@@ -329,11 +329,11 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
             UIUtils.getButton(
               "fluttertoast",
-                  () {
+              () {
                 Get.to(() => FluttertoastScreen());
               },
               description:
-              "Toast Library for Flutter, Easily create toast messages in single line of code",
+                  "Toast Library for Flutter, Easily create toast messages in single line of code",
             ),
             UIUtils.getButton(
               "folding_cell",
