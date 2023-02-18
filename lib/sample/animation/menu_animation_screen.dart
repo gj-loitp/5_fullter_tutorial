@@ -21,6 +21,7 @@ import 'animated_size_screen.dart';
 import 'animated_switcher_screen.dart';
 import 'animated_theme_screen.dart';
 import 'circular_reveal_animation/circular_reveal_animation_screen.dart';
+import 'colorful_background/colorful_background_screen.dart';
 import 'confetti/confetti_screen.dart';
 import 'decorated_box_transition_screen.dart';
 import 'fade_in_image_screen.dart';
@@ -55,15 +56,23 @@ class MenuAnimationScreen extends StatelessWidget {
           UIUtils.getButton(
             "circular_reveal_animation",
             () => {
-              Get.to(CircularRevealAnimationScreen()),
+              Get.to(() => CircularRevealAnimationScreen()),
             },
             description:
                 "Circular Reveal Animation as Flutter widget! Inspired by Android's ViewAnimationUtils.createCircularReveal(...).",
           ),
           UIUtils.getButton(
+            "colorful_background",
+            () => {
+              Get.to(() => ColorfulBackgroundScreen()),
+            },
+            description:
+                "Flutter package for custom changing gradient background colors.",
+          ),
+          UIUtils.getButton(
             "confetti",
             () => {
-              Get.to(ConfettiScreen()),
+              Get.to(() => ConfettiScreen()),
             },
             description:
                 "Blast colorful confetti all over the screen. Celebrate in app achievements with style. Control the velocity, angle, gravity and amount of confetti.",
@@ -71,13 +80,13 @@ class MenuAnimationScreen extends StatelessWidget {
           UIUtils.getButton(
             "HeroAnimationDemoScreen",
             () => {
-              Get.to(HeroAnimationDemoScreen()),
+              Get.to(() => HeroAnimationDemoScreen()),
             },
           ),
           UIUtils.getButton(
             "lottie",
             () => {
-              Get.to(LottieScreen()),
+              Get.to(() => LottieScreen()),
             },
             description:
                 "Render After Effects animations natively on Flutter. This package is a pure Dart implementation of a Lottie player.",
@@ -85,7 +94,7 @@ class MenuAnimationScreen extends StatelessWidget {
           UIUtils.getButton(
             "splash",
             () => {
-              Get.to(SplashScreen()),
+              Get.to(() => SplashScreen()),
             },
             description:
                 "This package contains a few InkSplash and InkRipple alternatives for a better UI",
@@ -93,127 +102,127 @@ class MenuAnimationScreen extends StatelessWidget {
           UIUtils.getButton(
             "RouteTransitionScreen",
             () => {
-              Get.to(RouteTransitionScreen()),
+              Get.to(() => RouteTransitionScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedAlignScreen",
             () => {
-              Get.to(AnimatedAlignScreen()),
+              Get.to(() => AnimatedAlignScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedBuilder",
             () => {
-              Get.to(AnimatedBuilderScreen()),
+              Get.to(() => AnimatedBuilderScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedContainerScreen",
             () => {
-              Get.to(AnimatedContainerScreen()),
+              Get.to(() => AnimatedContainerScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedCrossFadeScreen",
             () => {
-              Get.to(AnimatedCrossFadeScreen()),
+              Get.to(() => AnimatedCrossFadeScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedDefaultTextStyleScreen",
             () => {
-              Get.to(AnimatedDefaultTextStyleScreen()),
+              Get.to(() => AnimatedDefaultTextStyleScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedIconScreen",
             () => {
-              Get.to(AnimatedIconScreen()),
+              Get.to(() => AnimatedIconScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedListScreen",
             () => {
-              Get.to(AnimatedListScreen()),
+              Get.to(() => AnimatedListScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedModalBarrierScreen",
             () => {
-              Get.to(AnimatedModalBarrierScreen()),
+              Get.to(() => AnimatedModalBarrierScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedOpacityScreen",
             () => {
-              Get.to(AnimatedOpacityScreen()),
+              Get.to(() => AnimatedOpacityScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedPaddingScreen",
             () => {
-              Get.to(AnimatedPaddingScreen()),
+              Get.to(() => AnimatedPaddingScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedPhysicalModelScreen",
             () => {
-              Get.to(AnimatedPhysicalModelScreen()),
+              Get.to(() => AnimatedPhysicalModelScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedPositionedScreen",
             () => {
-              Get.to(AnimatedPositionedScreen()),
+              Get.to(() => AnimatedPositionedScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedSizeScreen",
             () => {
-              Get.to(AnimatedSizeScreen()),
+              Get.to(() => AnimatedSizeScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedSwitcherScreen",
             () => {
-              Get.to(AnimatedSwitcherScreen()),
+              Get.to(() => AnimatedSwitcherScreen()),
             },
           ),
           UIUtils.getButton(
             "AnimatedThemeScreen",
             () => {
-              Get.to(AnimatedThemeScreen()),
+              Get.to(() => AnimatedThemeScreen()),
             },
           ),
           UIUtils.getButton(
             "DecoratedBoxTransitionScreen",
             () => {
-              Get.to(DecoratedBoxTransitionScreen()),
+              Get.to(() => DecoratedBoxTransitionScreen()),
             },
           ),
           UIUtils.getButton(
             "FadeInImageScreen",
             () => {
-              Get.to(FadeInImageScreen()),
+              Get.to(() => FadeInImageScreen()),
             },
           ),
           UIUtils.getButton(
             "FadeTransitionScreen",
             () => {
-              Get.to(FadeTransitionScreen()),
+              Get.to(() => FadeTransitionScreen()),
             },
           ),
           UIUtils.getButton(
             "PositionedTransitionScreen",
             () => {
-              Get.to(PositionedTransitionScreen()),
+              Get.to(() => PositionedTransitionScreen()),
             },
           ),
           UIUtils.getButton(
             "RotationTransitionScreen",
             () => {
-              Get.to(RotationTransitionScreen()),
+              Get.to(() => RotationTransitionScreen()),
             },
           ),
         ],
