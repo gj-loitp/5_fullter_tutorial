@@ -1485,6 +1485,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.4.0"
+  live_background:
+    dependency: "direct main"
+    description:
+      name: live_background
+      sha256: "951a8bc326534a41c510335744a8025604d98b84835a12fb993638142dbc5468"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.2"
   loading_animation_widget:
     dependency: "direct main"
     description:

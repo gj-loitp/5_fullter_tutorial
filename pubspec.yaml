@@ -253,6 +253,8 @@ dependencies:
   like_button: ^2.0.5
   #https://pub.dev/packages/liquid_progress_indicator
   liquid_progress_indicator: ^0.4.0
+  #https://pub.dev/packages/live_background
+  live_background: ^0.1.2
   #https://pub.dev/packages/loading_animation_widget
   loading_animation_widget: ^1.2.0+4
   #https://pub.dev/packages/lottie
