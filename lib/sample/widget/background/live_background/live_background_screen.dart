@@ -1,9 +1,10 @@
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'ex/main.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -44,11 +45,7 @@ class _LiveBackgroundScreenState
               "https://pub.dev/packages/live_background");
         },
       ),
-      body: ListView(
-        padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
-        physics: BouncingScrollPhysics(),
-        children: [],
-      ),
+      body: LiveBackgroundEx(),
     );
   }
 }
