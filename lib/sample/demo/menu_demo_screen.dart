@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:get/get.dart';
 
+import '../../lib/util/url_launcher_utils.dart';
 import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
 import 'clipboard/clipboard_screen.dart';
@@ -372,6 +373,15 @@ class MenuDemoScreen extends StatelessWidget {
             },
             description:
                 "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
+          ),
+          UIUtils.getButton(
+            "velocity_x",
+            () {
+              UrlLauncherUtils.launchInWebViewWithJavaScript(
+                  "https://pub.dev/packages/velocity_x");
+            },
+            description:
+                "A minimalist Flutter framework for rapidly building custom designs..",
           ),
           UIUtils.getButton(
             "wakelock",
