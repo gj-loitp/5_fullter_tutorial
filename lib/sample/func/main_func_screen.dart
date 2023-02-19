@@ -11,6 +11,7 @@ import 'app_settings/app_settings_screen.dart';
 import 'async/menu_async_screen.dart';
 import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
+import 'device_preview/device_preview_screen.dart';
 import 'email_validator/email_validator_screen.dart';
 import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
@@ -98,6 +99,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             () {
               Get.to(() => CommunicationBetweenWidgetScreen());
             },
+          ),
+          UIUtils.getButton(
+            "device_preview",
+            () {
+              Get.to(() => DevicePreviewScreen());
+            },
+            description:
+                "Approximate how your Flutter app looks and performs on another device.",
           ),
           UIUtils.getButton(
             "email_validator",
