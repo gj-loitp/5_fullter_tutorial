@@ -16,6 +16,7 @@ import 'email_validator/email_validator_screen.dart';
 import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
+import 'nav/nav_screen.dart';
 import 'platform_device_id/platform_device_id_screen.dart';
 import 'random_string/random_string_screen.dart';
 
@@ -148,6 +149,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
             description:
                 "A pure Dart library that checks for internet by opening a socket to a list of specified addresses, each with individual port and timeout. Defaults are provided for convenience.",
+          ),
+          UIUtils.getButton(
+            "nav",
+            () {
+              Get.to(() => NavScreen());
+            },
+            description:
+                "Provide easy way to navigate. Includes lots of routers. You can use this library on Android & iOS.",
           ),
           UIUtils.getButton(
             "platform_device_id",
