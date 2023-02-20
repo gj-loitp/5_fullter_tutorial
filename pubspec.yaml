@@ -167,7 +167,7 @@ dependencies:
   #https://pub.dev/packages/flutter_credit_card
   flutter_credit_card: ^3.0.5
   #https://pub.dev/packages/flutter_drawing_board
-  flutter_drawing_board: ^0.4.4+1
+  flutter_drawing_board: ^0.4.4+2
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_html
@@ -183,7 +183,7 @@ dependencies:
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
-  flutter_native_splash: ^2.2.17
+  flutter_native_splash: ^2.2.18
   #https://pub.dev/packages/flutter_offline
   flutter_offline: ^2.1.0
   #https://pub.dev/packages/flutter_rating_bar
