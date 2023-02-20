@@ -613,10 +613,10 @@ packages:
     dependency: "direct main"
     description:
       name: dropdown_button2
-      sha256: "580bfe26a91e822a95d96e227ac02c1e14a7d5eea32501d0fbc6fe8d5c5606e5"
+      sha256: "2d03393779e8592316b7679e978b964cadd7ea20b626b02847ed6109450aa208"
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.2"
+    version: "1.9.3"
   easy_debounce:
     dependency: "direct main"
     description:
