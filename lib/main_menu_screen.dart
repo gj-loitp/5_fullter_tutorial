@@ -79,6 +79,13 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
               child: UIUtils.getText("Version ${_cMenu.packageInfo.version}"),
             ),
             UIUtils.getButton(
+              "Android Native Tutorial (Kotlin/Java)",
+              () {
+                UrlLauncherUtils.launchInBrowser(
+                    "https://play.google.com/store/apps/details?id=com.roygroup.base");
+              },
+            ),
+            UIUtils.getButton(
               "Animation",
               () {
                 Get.to(MenuAnimationScreen());

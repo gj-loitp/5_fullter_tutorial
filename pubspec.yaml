@@ -15,7 +15,7 @@ dependencies:
   #https://pub.dev/packages/advance_pdf_viewer
   advance_pdf_viewer: ^2.0.1
   #https://pub.dev/packages/after_layout
-  after_layout: ^1.1.0
+  after_layout: ^1.2.0
   #https://pub.dev/packages/animated_background
   animated_background: ^2.0.0
   #https://pub.dev/packages/animated_bottom_navigation_bar
