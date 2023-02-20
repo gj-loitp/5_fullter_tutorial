@@ -407,7 +407,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "LayoutScreen",
+              "Layout",
               () {
                 Get.to(() => MenuLayoutScreen());
               },
