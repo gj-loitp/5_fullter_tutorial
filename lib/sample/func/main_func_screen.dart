@@ -13,6 +13,7 @@ import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'device_preview/device_preview_screen.dart';
 import 'email_validator/email_validator_screen.dart';
+import 'flutter_image_compress/flutter_image_compress_screen.dart';
 import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
@@ -125,6 +126,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
             description:
                 "A package that makes it easy to set your flutter app launcher name.",
+          ),
+          UIUtils.getButton(
+            "flutter_image_compress",
+            () {
+              Get.to(() => FlutterImageCompressScreen());
+            },
+            description:
+                "Compress image with native (Objective-C/Kotlin) with faster speed. Support Android/iOS.",
           ),
           UIUtils.getButton(
             "flutter_phoenix",
