@@ -80,6 +80,7 @@ import 'table/table_screen.dart';
 import 'time_planner/time_planner_screen.dart';
 import 'timelines/timelines_screen.dart';
 import 'tooltip/tooltip_screen.dart';
+import 'vertical_card_pager/vertical_card_pager_screen.dart';
 import 'video/menu_video_screen.dart';
 
 /**
@@ -602,6 +603,11 @@ class MenuWidgetScreen extends StatelessWidget {
                 Get.to(() => TooltipScreen());
               },
             ),
+            UIUtils.getButton("vertical_card_pager", () {
+              Get.to(() => VerticalCardPagerScreen());
+            },
+                description:
+                    "Use dynamic and beautiful card view pagers to help you create great apps."),
             UIUtils.getButton(
               "video",
               () {

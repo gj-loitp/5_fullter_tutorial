@@ -439,6 +439,8 @@ dependencies:
 
   #https://pub.dev/packages/velocity_x
   velocity_x: ^3.6.0
+  #https://pub.dev/packages/vertical_card_pager
+  vertical_card_pager: ^1.5.0
   #https://pub.dev/packages/vibration
   vibration: ^1.7.6
 
