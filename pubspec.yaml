@@ -221,7 +221,7 @@ dependencies:
   #https://pub.dev/packages/flutter_phoenix
   flutter_phoenix: ^1.1.0
   #https://pub.dev/packages/fluttertoast
-  fluttertoast: ^8.2.0
+  fluttertoast: ^8.2.1
   #https://pub.dev/packages/flutter_toggle_tab
   flutter_toggle_tab: ^1.2.0
 
