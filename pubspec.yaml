@@ -435,10 +435,10 @@ dependencies:
   #https://pub.dev/packages/uuid
   uuid: ^3.0.7
 
-  #https://pub.dev/packages/vibration
-  vibration: ^1.7.6
   #https://pub.dev/packages/velocity_x
   velocity_x: ^3.6.0
+  #https://pub.dev/packages/vibration
+  vibration: ^1.7.6
 
   #https://pub.dev/packages/wakelock
   wakelock: ^0.6.2
