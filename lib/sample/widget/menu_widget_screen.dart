@@ -64,6 +64,7 @@ import 'layout/menu_layout_screen.dart';
 import 'list/menu_list_screen.dart';
 import 'md2_tab_indicator/md2_tab_indicator_screen.dart';
 import 'modal_bottom_sheet/model_bottom_sheet_screen.dart';
+import 'pip_view/pip_view_screen.dart';
 import 'progress/menu_progress_screen.dart';
 import 'shape_of_view/shape_of_view_screen.dart';
 import 'shimmer/shimmer_screen.dart';
@@ -456,6 +457,11 @@ class MenuWidgetScreen extends StatelessWidget {
                 Get.to(() => MenuPickerScreen());
               },
             ),
+            UIUtils.getButton("pip_view", () {
+              Get.to(() => PipViewScreen());
+            },
+                description:
+                    "Widget to allow the presentation of a widget below a floating one. It supports moving the floating widget around which sticks to the corners."),
             UIUtils.getButton(
               "Progress - Indicator",
               () {

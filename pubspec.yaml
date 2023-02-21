@@ -387,6 +387,8 @@ dependencies:
   platform_device_id: ^1.0.1
   #https://pub.dev/packages/pin_code_fields
   pin_code_fields: ^7.4.0
+  #https://pub.dev/packages/pip_view
+  pip_view: ^0.9.7
   #https://pub.dev/packages/progress_indicators
   progress_indicators: ^1.0.0
   #https://pub.dev/packages/progress_state_button
