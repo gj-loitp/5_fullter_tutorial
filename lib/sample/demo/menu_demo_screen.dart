@@ -22,6 +22,7 @@ import 'dio/dio_screen.dart';
 import 'easy_debounce/easy_debounce_screen.dart';
 import 'encypt/encrypt_screen.dart';
 import 'event_bus/event_bus_screen.dart';
+import 'firebase_remote_config/firebase_remote_config_screen.dart';
 import 'flutter_bloc/menu_flutter_block_screen.dart';
 import 'flutter_local_notifications/flutter_local_notifications_screen.dart';
 import 'flutter_offline/flutter_offline_screen.dart';
@@ -73,13 +74,13 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "AdvancePDFViewerScreen",
             () {
-              Get.to(AdvancePDFViewerScreen());
+              Get.to(() => AdvancePDFViewerScreen());
             },
           ),
           UIUtils.getButton(
             "battery_plus",
             () {
-              Get.to(BatteryPlusScreen());
+              Get.to(() => BatteryPlusScreen());
             },
             description:
                 "Flutter plugin for accessing information about the battery state(full, charging, discharging).",
@@ -87,7 +88,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "clipboard",
             () {
-              Get.to(ClipboardScreen());
+              Get.to(() => ClipboardScreen());
             },
             description:
                 "A flutter package that helps copy text to clipboard and paste from clipboard.",
@@ -95,7 +96,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "connectivity_plus",
             () {
-              Get.to(ConnectivityPlusScreen());
+              Get.to(() => ConnectivityPlusScreen());
             },
             description:
                 "Flutter plugin for discovering the state of the network (WiFi & mobile/cellular) connectivity on Android and iOS.",
@@ -103,19 +104,19 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "Counter",
             () {
-              Get.to(CounterScreen());
+              Get.to(() => CounterScreen());
             },
           ),
           UIUtils.getButton(
             "crypto",
             () {
-              Get.to(CryptoScreen());
+              Get.to(() => CryptoScreen());
             },
           ),
           UIUtils.getButton(
             "device_info_plus",
             () {
-              Get.to(DeviceInfoPlusScreen());
+              Get.to(() => DeviceInfoPlusScreen());
             },
             description:
                 "Flutter plugin providing detailed information about the device (make, model, etc.), and Android or iOS version the app is running on.",
@@ -123,7 +124,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "diacritic",
             () {
-              Get.to(DiacriticScreen());
+              Get.to(() => DiacriticScreen());
             },
             description:
                 "Removes common accents and diacritical signs from a string by replacing them with an equivalent character.",
@@ -131,7 +132,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "dio",
             () {
-              Get.to(DioScreen());
+              Get.to(() => DioScreen());
             },
             description:
                 "A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.",
@@ -139,7 +140,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "easy_debounce",
             () {
-              Get.to(EasyDebounceScreen());
+              Get.to(() => EasyDebounceScreen());
             },
             description:
                 "An extremely easy-to-use method call debouncer package for Dart/Flutter.",
@@ -147,7 +148,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "encrypt",
             () {
-              Get.to(EncryptScreen());
+              Get.to(() => EncryptScreen());
             },
             description:
                 "A set of high-level APIs over PointyCastle for two-way cryptography.",
@@ -155,15 +156,23 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "event_bus",
             () {
-              Get.to(EventBusScreen());
+              Get.to(() => EventBusScreen());
             },
             description:
                 "A simple Event Bus using Dart Streams for decoupling applications",
           ),
           UIUtils.getButton(
+            "firebase_remote_config",
+            () {
+              Get.to(() => FirebaseRemoteConfigScreen());
+            },
+            description:
+                "Flutter plugin for Firebase Remote Config. Update your application look and feel and behavior without re-releasing.",
+          ),
+          UIUtils.getButton(
             "flutter_bloc",
             () {
-              Get.to(MenuFlutterBlockScreen());
+              Get.to(() => MenuFlutterBlockScreen());
             },
             description:
                 "Flutter Widgets that make it easy to implement the BLoC (Business Logic Component) design pattern. Built to be used with the bloc state management package.",
@@ -174,7 +183,7 @@ class MenuDemoScreen extends StatelessWidget {
               final NotificationAppLaunchDetails? notificationAppLaunchDetails =
                   await flutterLocalNotificationsPlugin
                       .getNotificationAppLaunchDetails();
-              Get.to(
+              Get.to(() =>
                   FlutterLocalNotificationScreen(notificationAppLaunchDetails));
             },
             description:
@@ -183,7 +192,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "flutter_offline",
             () {
-              Get.to(FlutterOfflineScreen());
+              Get.to(() => FlutterOfflineScreen());
             },
             description:
                 "A tidy utility to handle offline/online connectivity like a Boss.",
@@ -191,7 +200,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "flutter_screen_lock",
             () {
-              Get.to(FlutterScreenLockScreen());
+              Get.to(() => FlutterScreenLockScreen());
             },
             description:
                 "Provides the ability to lock the screen on ios and android. Biometric authentication can be used in addition to passcode.",
@@ -199,7 +208,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "focus_detector",
             () {
-              Get.to(FocusDetectorScreen());
+              Get.to(() => FocusDetectorScreen());
             },
             description:
                 "Detects when your widget appears or disappears from the screen",
@@ -207,7 +216,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "get",
             () {
-              Get.to(GetXScreen());
+              Get.to(() => GetXScreen());
             },
             description:
                 "Open screens/snackbars/dialogs without context, manage states and inject dependencies easily with GetX.",
@@ -215,7 +224,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "html2md",
             () {
-              Get.to(Html2MdScreen());
+              Get.to(() => Html2MdScreen());
             },
             description:
                 "A library for converting HTML to Markdown. It supports CommonMark, simple table and custom converting rules.",
@@ -223,7 +232,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "image_gallery_saver",
             () {
-              Get.to(ImageGallerySaverScreen());
+              Get.to(() => ImageGallerySaverScreen());
             },
             description:
                 "A new flutter plugin project for save image to gallery, iOS need to add the following keys to your Info.plist file.",
@@ -231,19 +240,19 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "Inherited",
             () {
-              Get.to(MenuInheritedScreen());
+              Get.to(() => MenuInheritedScreen());
             },
           ),
           UIUtils.getButton(
             "Load Local Json",
             () {
-              Get.to(LoadLocalJsonScreen());
+              Get.to(() => LoadLocalJsonScreen());
             },
           ),
           UIUtils.getButton(
             "local_auth",
             () {
-              Get.to(LocalAuthScreen());
+              Get.to(() => LocalAuthScreen());
             },
             description:
                 "Flutter plugin for Android and iOS devices to allow local authentication via fingerprint, touch ID, face ID, passcode, pin, or pattern.",
@@ -251,7 +260,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "one_target_mobile_sdk",
             () {
-              Get.to(OneTargetMobileSDKScreen());
+              Get.to(() => OneTargetMobileSDKScreen());
             },
             description: "G1 tracking's plugin",
           ),
@@ -341,7 +350,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "tiengviet",
             () {
-              Get.to(TiengVietScreen());
+              Get.to(() => TiengVietScreen());
             },
             description:
                 "🇻🇳 Converts vietnamese language sign to unsigned easily. 😍 Give me a string vietnamese language, i will respond you string vietnamese unsigned. 👍",
@@ -349,7 +358,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "timeago",
             () {
-              Get.to(TimeAgoScreen());
+              Get.to(() => TimeAgoScreen());
             },
             description:
                 "A library useful for creating fuzzy timestamps. (e.g. '15 minutes ago')",
@@ -357,7 +366,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "Tip calculator",
             () {
-              Get.to(TipCalculatorScreen());
+              Get.to(() => TipCalculatorScreen());
             },
           ),
           UIUtils.getButton(
@@ -369,7 +378,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "url_launcher",
             () {
-              Get.to(UrlLauncherScreen());
+              Get.to(() => UrlLauncherScreen());
             },
             description:
                 "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
@@ -386,7 +395,7 @@ class MenuDemoScreen extends StatelessWidget {
           UIUtils.getButton(
             "wakelock",
             () {
-              Get.to(WakeLockScreen());
+              Get.to(() => WakeLockScreen());
             },
             description:
                 "Plugin that allows you to keep the device screen awake, i.e. prevent the screen from sleeping on Android, iOS, macOS, Windows, and web.",
