@@ -149,10 +149,10 @@ packages:
     dependency: "direct main"
     description:
       name: basic_utils
-      sha256: eb424482531df5d5576da64f039fe49f12c9ab979d9a64a0f4385da8a6e2751d
+      sha256: "9d3dcb8eaba8b1578a720c23988e98fde2ef21da40ae34e9e8f6fe84cee86a65"
       url: "https://pub.dev"
     source: hosted
-    version: "5.5.0"
+    version: "5.5.1"
   battery_plus:
     dependency: "direct main"
     description:
@@ -605,18 +605,18 @@ packages:
     dependency: "direct main"
     description:
       name: drop_shadow
-      sha256: "97778284594130857cc9112ea2e5b140e7242f54d696676bcee37d2cf9af6584"
+      sha256: "1fa552baeb7c6a3c36a7ff77186a2302a7bf53c93914f46328a9c4eb68ec6b08"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.2+1"
+    version: "0.1.0"
   dropdown_button2:
     dependency: "direct main"
     description:
       name: dropdown_button2
-      sha256: "2d03393779e8592316b7679e978b964cadd7ea20b626b02847ed6109450aa208"
+      sha256: "604b87283e251e0e4a0cb1d0fdfa91fd527702b06e80999c4054cecc603e10e7"
       url: "https://pub.dev"
     source: hosted
-    version: "1.9.3"
+    version: "1.9.4"
   easy_debounce:
     dependency: "direct main"
     description:

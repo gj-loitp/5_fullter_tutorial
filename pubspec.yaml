@@ -40,7 +40,7 @@ dependencies:
   #https://pub.dev/packages/battery_plus
   battery_plus: ^3.0.3
   #https://pub.dev/packages/basic_utils
-  basic_utils: ^5.5.0
+  basic_utils: ^5.5.1
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
   #https://pub.dev/packages/bottom_navy_bar
@@ -111,9 +111,9 @@ dependencies:
   #https://pub.dev/packages/draggable_scrollbar
   draggable_scrollbar: ^0.1.0
   #https://pub.dev/packages/dropdown_button2
-  dropdown_button2: ^1.9.3
+  dropdown_button2: ^1.9.4
   #https://pub.dev/packages/drop_shadow
-  drop_shadow: ^0.0.2+1
+  drop_shadow: ^0.1.0
 
   #https://pub.dev/packages/easy_debounce
   easy_debounce: ^2.0.3
