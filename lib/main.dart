@@ -26,7 +26,9 @@ import 'splash_screen.dart';
  * freuss47@gmail.com
  */
 
+//firebase console
 //https://console.firebase.google.com/u/0/project/roy-flutter-tutorial/overview
+
 //drive config
 //https://drive.google.com/drive/u/0/folders/1kevDB8a5a-POwkGupg3xOiZByoGjAe3B
 //TODO dark mode

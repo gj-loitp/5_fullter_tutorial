@@ -1,7 +1,7 @@
 name: com.roy93group.flutter_tutorial
 description: Flutter Resources Collections.
 publish_to: 'none'
-version: 2023.02.04+20230204
+version: 2023.02.23+20230223
 
 environment:
   sdk: '>=2.17.6 <3.0.0'
