@@ -239,7 +239,7 @@ dependencies:
   #https://pub.dev/packages/horizontal_picker
   horizontal_picker: ^1.2.0
   #https://pub.dev/packages/html
-  html: ^0.15.1
+  html: ^0.15.2
   #https://pub.dev/packages/html2md
   html2md: ^1.2.6
   #https://pub.dev/packages/hsv_color_pickers
@@ -324,7 +324,7 @@ dependencies:
   #https://pub.dev/packages/slide_countdown
   slide_countdown: ^0.5.0
   #https://pub.dev/packages/sqflite
-  sqflite: ^2.2.4+1
+  sqflite: ^2.2.5
   #https://pub.dev/packages/splash
   splash: ^1.1.0
 
