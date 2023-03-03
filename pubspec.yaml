@@ -279,7 +279,7 @@ dependencies:
   multi_image_picker_view: ^0.0.15
 
   #https://pub.dev/packages/nav
-  nav: ^1.1.8
+  nav: ^1.2.0
   #https://pub.dev/packages/network_info_plus
   network_info_plus: ^3.0.2
   #https://pub.dev/packages/numberpicker

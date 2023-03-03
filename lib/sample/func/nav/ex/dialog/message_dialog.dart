@@ -19,7 +19,7 @@ class MessgaeDialog extends DialogWidget {
 }
 
 class _DialogState extends DialogState<MessgaeDialog> {
-  _DialogState(Function() onHide) : super(onHide);
+  _DialogState(Function() onHide) : super();
 
   @override
   Widget build(BuildContext context) {

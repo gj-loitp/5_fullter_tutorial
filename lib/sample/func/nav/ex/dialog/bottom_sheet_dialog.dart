@@ -37,7 +37,7 @@ class _DialogState extends DialogState<BottomSheetDialog> {
   var isChecked = false;
   String? selectedTitle;
 
-  _DialogState(Function() onHide) : super(onHide);
+  _DialogState(Function() onHide) : super();
 
   @override
   Widget build(BuildContext context) {

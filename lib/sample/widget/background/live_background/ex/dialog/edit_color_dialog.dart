@@ -28,7 +28,7 @@ class EditColorListDialog extends DialogWidget {
 class _DialogState extends DialogState<EditColorListDialog> {
   var isChecked = false;
 
-  _DialogState(Function() onHide) : super(onHide);
+  _DialogState(Function() onHide) : super();
   List<Color> editedColorList = [];
   Color pickerColor = Colors.white;
 
