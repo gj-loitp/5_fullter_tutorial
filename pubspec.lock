@@ -1626,10 +1626,10 @@ packages:
     dependency: "direct main"
     description:
       name: multi_image_picker_view
-      sha256: "707fd6100514b5384fb7856cfbff097b1321ce97e899094d6d640b9cfba94263"
+      sha256: "669710cca5ba98fb5b85dd8e122a6917da6965b55945c4fc340521eb96acf6da"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.14"
+    version: "0.0.15"
   nav:
     dependency: "direct main"
     description:
