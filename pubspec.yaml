@@ -324,7 +324,7 @@ dependencies:
   #https://pub.dev/packages/slide_countdown
   slide_countdown: ^0.5.0
   #https://pub.dev/packages/sqflite
-  sqflite: ^2.2.5
+  sqflite: ^2.2.6
   #https://pub.dev/packages/splash
   splash: ^1.1.0
 
