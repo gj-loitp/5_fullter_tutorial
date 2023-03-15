@@ -350,7 +350,7 @@ dependencies:
   #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^1.7.1
   #https://pub.dev/packages/image_picker
-  image_picker: ^0.8.6+4
+  image_picker: ^0.8.7
   #https://pub.dev/packages/in_app_review
   in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
@@ -367,7 +367,7 @@ dependencies:
   kenburns_nullsafety: ^1.0.0
 
   #https://pub.dev/packages/video_player
-  video_player: ^2.5.3
+  video_player: ^2.6.0
 
   #https://pub.dev/packages/package_info_plus
   package_info_plus: ^3.0.3
@@ -378,7 +378,7 @@ dependencies:
   #https://pub.dev/packages/pdf_text
   pdf_text: ^0.5.0
   #https://pub.dev/packages/percent_indicator
-  percent_indicator: ^4.2.2
+  percent_indicator: ^4.2.3
   #https://pub.dev/packages/permission_handler
   permission_handler: ^10.2.0
   #https://pub.dev/packages/photo_view
