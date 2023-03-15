@@ -1007,10 +1007,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_native_splash
-      sha256: e301ae206ff0fb09b67d3716009c6c28c2da57a0ad164827b178421bb9d601f7
+      sha256: af665ef80a213a9ed502845a3d7a61b9acca4100ee7e9f067a7440bc3acd6730
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.18"
+    version: "2.2.19"
   flutter_native_timezone:
     dependency: "direct main"
     description:
@@ -1111,10 +1111,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_smart_dialog
-      sha256: "2f2f3ed0dbd6c924b24e27b681bef44e36e7e5e3e78486706a7562088395f9fa"
+      sha256: a477c9e5b5b93b481b7d565413858d038b2c1a5b3583db84f8627be7223d5ed7
       url: "https://pub.dev"
     source: hosted
-    version: "4.8.2+5"
+    version: "4.9.0+3"
   flutter_snake_navigationbar:
     dependency: "direct main"
     description:
