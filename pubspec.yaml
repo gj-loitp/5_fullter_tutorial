@@ -411,7 +411,7 @@ dependencies:
   #https://pub.dev/packages/smooth_page_indicator
   smooth_page_indicator: ^1.0.1
   #https://pub.dev/packages/sidebarx
-  sidebarx: ^0.14.0
+  sidebarx: ^0.15.0
   #https://pub.dev/packages/skeleton_loader
   skeleton_loader: ^2.0.0+4
   #https://pub.dev/packages/sliding_up_panel
@@ -423,7 +423,7 @@ dependencies:
   #https://pub.dev/packages/swipe_cards
   swipe_cards: ^2.0.0+1
   #https://pub.dev/packages/syncfusion_flutter_gauges
-  syncfusion_flutter_gauges: ^20.4.52
+  syncfusion_flutter_gauges: ^20.4.54
 
   #https://pub.dev/packages/tiengviet
   tiengviet: ^0.5.0
