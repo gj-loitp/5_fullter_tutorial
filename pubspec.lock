@@ -717,10 +717,10 @@ packages:
     dependency: "direct main"
     description:
       name: file_picker
-      sha256: d090ae03df98b0247b82e5928f44d1b959867049d18d73635e2e0bc3f49542b9
+      sha256: d8e9ca7e5d1983365c277f12c21b4362df6cf659c99af146ad4d04eb33033013
       url: "https://pub.dev"
     source: hosted
-    version: "5.2.5"
+    version: "5.2.6"
   firebase_analytics:
     dependency: "direct main"
     description:
@@ -922,10 +922,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_credit_card
-      sha256: "0fc71e8bfb0e126d2c4247830c04e2acf2b831161411a361e9fa9dc1cc41e605"
+      sha256: "1319687c72d124ce6c902c9e29cbc34f4472fe406a59fa2701d25313e70ba8c7"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.5"
+    version: "3.0.6"
   flutter_drawing_board:
     dependency: "direct main"
     description:
