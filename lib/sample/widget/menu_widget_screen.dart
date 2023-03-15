@@ -15,9 +15,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'animated_background/animated_background_screen.dart';
-import 'another_flushbar/another_flushbar_screen.dart';
+import 'alert/menu_alert_screen.dart';
 import 'appbar/sliver_app_bar_screen.dart';
+import 'background/menu_background_screen.dart';
 import 'badges/badges_screen.dart';
 import 'bottom_bar/menu_bottom_bar_screen.dart';
 import 'bottom_sheet/bottom_sheet_screen.dart';
@@ -25,12 +25,12 @@ import 'button/menu_button_screen.dart';
 import 'calendar/menu_calendar_screen.dart';
 import 'card/card_screen.dart';
 import 'chart/fl_chart/ChartScreen.dart';
-import 'checkBox/CheckBoxScreen.dart';
-import 'checkBox/RadioButtonScreen.dart';
-import 'checkBox/RadioButtonScreen2.dart';
+import 'check_box/check_box_screen.dart';
+import 'check_box/radio_button_screen.dart';
+import 'check_box/radio_button_screen2.dart';
 import 'clay_containers/clay_containers_screen.dart';
 import 'cupertino/MenuCupertinoScreen.dart';
-import 'dataTable/DataTableScreen.dart';
+import 'data_table/data_table_screen.dart';
 import 'dchart/DChartScreen.dart';
 import 'delayed_display/delayed_display_screen.dart';
 import 'dialog/menu_dialog_screen.dart';
@@ -50,6 +50,7 @@ import 'flutter_drawing_board/flutter_drawing_board_screen.dart';
 import 'flutter_rating_bar/flutter_rating_bar_screen.dart';
 import 'flutter_reaction_button/flutter_reaction_button_screen.dart';
 import 'flutter_simple_treeview/flutter_simple_treeview_screen.dart';
+import 'fluttertoast/fluttertoast_screen.dart';
 import 'folding_cell/folding_cell_screen.dart';
 import 'gesture/GestureScreen.dart';
 import 'grid/MenuGridScreen.dart';
@@ -63,6 +64,7 @@ import 'layout/menu_layout_screen.dart';
 import 'list/menu_list_screen.dart';
 import 'md2_tab_indicator/md2_tab_indicator_screen.dart';
 import 'modal_bottom_sheet/model_bottom_sheet_screen.dart';
+import 'pip_view/pip_view_screen.dart';
 import 'progress/menu_progress_screen.dart';
 import 'shape_of_view/shape_of_view_screen.dart';
 import 'shimmer/shimmer_screen.dart';
@@ -78,8 +80,8 @@ import 'table/table_screen.dart';
 import 'time_planner/time_planner_screen.dart';
 import 'timelines/timelines_screen.dart';
 import 'tooltip/tooltip_screen.dart';
+import 'vertical_card_pager/vertical_card_pager_screen.dart';
 import 'video/menu_video_screen.dart';
-import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -106,25 +108,21 @@ class MenuWidgetScreen extends StatelessWidget {
           physics: BouncingScrollPhysics(),
           children: [
             UIUtils.getButton(
-              "animated_background",
+              "Alert",
               () {
-                Get.to(() => AnimatedBackgroundScreen());
+                Get.to(() => MenuAlertScreen());
               },
-              description:
-                  "Animated Backgrounds for Flutter. Easily extended to paint whatever you want on the canvas.",
-            ),
-            UIUtils.getButton(
-              "another_flushbar",
-              () {
-                Get.to(() => AnotherFlushbarScreen());
-              },
-              description:
-                  "A flexible widget for user notification. Customize your text, button, duration, animations and much more. For Android devs, it is made to replace Snackbars and Toasts.",
             ),
             UIUtils.getButton(
               "SliverAppBarScreen",
               () {
                 Get.to(() => SliverAppBarScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "Background",
+              () {
+                Get.to(() => MenuBackgroundScreen());
               },
             ),
             UIUtils.getButton(
@@ -327,6 +325,14 @@ class MenuWidgetScreen extends StatelessWidget {
                   "A widget, that visualises a tree structure, where a node can be any widget.",
             ),
             UIUtils.getButton(
+              "fluttertoast",
+              () {
+                Get.to(() => FluttertoastScreen());
+              },
+              description:
+                  "Toast Library for Flutter, Easily create toast messages in single line of code",
+            ),
+            UIUtils.getButton(
               "folding_cell",
               () {
                 Get.to(() => FoldingCellScreen());
@@ -403,7 +409,7 @@ class MenuWidgetScreen extends StatelessWidget {
               },
             ),
             UIUtils.getButton(
-              "LayoutScreen",
+              "Layout",
               () {
                 Get.to(() => MenuLayoutScreen());
               },
@@ -452,6 +458,11 @@ class MenuWidgetScreen extends StatelessWidget {
                 Get.to(() => MenuPickerScreen());
               },
             ),
+            UIUtils.getButton("pip_view", () {
+              Get.to(() => PipViewScreen());
+            },
+                description:
+                    "Widget to allow the presentation of a widget below a floating one. It supports moving the floating widget around which sticks to the corners."),
             UIUtils.getButton(
               "Progress - Indicator",
               () {
@@ -592,6 +603,11 @@ class MenuWidgetScreen extends StatelessWidget {
                 Get.to(() => TooltipScreen());
               },
             ),
+            UIUtils.getButton("vertical_card_pager", () {
+              Get.to(() => VerticalCardPagerScreen());
+            },
+                description:
+                    "Use dynamic and beautiful card view pagers to help you create great apps."),
             UIUtils.getButton(
               "video",
               () {
@@ -611,14 +627,6 @@ class MenuWidgetScreen extends StatelessWidget {
               () {
                 Get.to(() => MenuWebviewScreen());
               },
-            ),
-            UIUtils.getButton(
-              "youtube_player_flutter",
-              () {
-                Get.to(() => YoutubePlayerFlutterScreen());
-              },
-              description:
-                  "Flutter plugin for playing or streaming inline YouTube videos using the official iFrame player API. This plugin supports both Android and iOS.",
             ),
           ],
         ),

@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 
 import 'chewie/chewie_screen.dart';
 import 'video_player/video_player_screen.dart';
+import 'youtube_player_flutter/youtube_player_flutter_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -46,6 +47,14 @@ class MenuVideoScreen extends StatelessWidget {
               },
               description:
                   "Flutter plugin for displaying inline video with other Flutter widgets on Android, iOS, and web.",
+            ),
+            UIUtils.getButton(
+              "youtube_player_flutter",
+              () {
+                Get.to(() => YoutubePlayerFlutterScreen());
+              },
+              description:
+                  "Flutter plugin for playing or streaming inline YouTube videos using the official iFrame player API. This plugin supports both Android and iOS.",
             ),
           ],
         ),

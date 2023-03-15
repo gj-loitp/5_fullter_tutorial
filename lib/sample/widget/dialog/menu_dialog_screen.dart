@@ -7,6 +7,7 @@ import 'awesome_dialog/awesome_dialog_screen.dart';
 import 'dialog/dialog_screen.dart';
 import 'flutter_smart_dialog/flutter_smart_dialog_screen.dart';
 import 'panara_dialogs/panara_dialog_screen.dart';
+import 'rating_dialog/rating_dialog_screen.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -59,6 +60,14 @@ class MenuDialogScreen extends StatelessWidget {
             },
             description:
                 "PanaraDialogs is a Dialog UI Kit. A minimal but beautiful design for Flutter Dialogs.",
+          ),
+          UIUtils.getButton(
+            "rating_dialog",
+            () {
+              Get.to(() => RatingDialogScreen());
+            },
+            description:
+                "A beautiful and customizable Star Rating Dialog package for Flutter",
           ),
         ],
       ),

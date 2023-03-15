@@ -3,6 +3,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'after_layout/after_layout_screen.dart';
 import 'custom_multi_child_layout/custom_multi_child_layout_screen.dart';
 import 'layout_builder_screen.dart';
 import 'layout_multiple_screen/layout_multiple_screen.dart';
@@ -32,6 +33,14 @@ class MenuLayoutScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            UIUtils.getButton(
+              "after_layout",
+              () {
+                Get.to(() => AfterLayoutScreen());
+              },
+              description:
+                  "Execute code after the first layout of your widget has been performed, i.e. after the first frame has been displayed.",
+            ),
             UIUtils.getButton(
               "CustomMultiChildLayoutScreen",
               () {

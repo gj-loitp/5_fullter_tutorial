@@ -11,10 +11,13 @@ import 'app_settings/app_settings_screen.dart';
 import 'async/menu_async_screen.dart';
 import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
+import 'device_preview/device_preview_screen.dart';
 import 'email_validator/email_validator_screen.dart';
+import 'flutter_image_compress/flutter_image_compress_screen.dart';
 import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
+import 'nav/nav_screen.dart';
 import 'platform_device_id/platform_device_id_screen.dart';
 import 'random_string/random_string_screen.dart';
 
@@ -79,6 +82,12 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
               Get.to(() => MenuAsyncScreen());
             },
           ),
+          UIUtils.getButton("change_app_package_name", () {
+            UrlLauncherUtils.launchInWebViewWithJavaScript(
+                "https://pub.dev/packages/change_app_package_name");
+          },
+              description:
+                  "Change App Package Name with single command. Update AndroidManifest, build.gradle, MainActivity files & move MainActivity file to new directory structure automatically."),
           UIUtils.getButton(
             "characters",
             () {
@@ -92,6 +101,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             () {
               Get.to(() => CommunicationBetweenWidgetScreen());
             },
+          ),
+          UIUtils.getButton(
+            "device_preview",
+            () {
+              Get.to(() => DevicePreviewScreen());
+            },
+            description:
+                "Approximate how your Flutter app looks and performs on another device.",
           ),
           UIUtils.getButton(
             "email_validator",
@@ -109,6 +126,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
             description:
                 "A package that makes it easy to set your flutter app launcher name.",
+          ),
+          UIUtils.getButton(
+            "flutter_image_compress",
+            () {
+              Get.to(() => FlutterImageCompressScreen());
+            },
+            description:
+                "Compress image with native (Objective-C/Kotlin) with faster speed. Support Android/iOS.",
           ),
           UIUtils.getButton(
             "flutter_phoenix",
@@ -133,6 +158,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             },
             description:
                 "A pure Dart library that checks for internet by opening a socket to a list of specified addresses, each with individual port and timeout. Defaults are provided for convenience.",
+          ),
+          UIUtils.getButton(
+            "nav",
+            () {
+              Get.to(() => NavScreen());
+            },
+            description:
+                "Provide easy way to navigate. Includes lots of routers. You can use this library on Android & iOS.",
           ),
           UIUtils.getButton(
             "platform_device_id",
