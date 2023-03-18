@@ -25,7 +25,7 @@ class BottomSheetDialog extends DialogWidget {
       {this.showCancel = false,
       this.title,
       this.mainAxisAlignment = MainAxisAlignment.start})
-      : super(context);
+      : super();
 
   @override
   State<StatefulWidget> createState() {
