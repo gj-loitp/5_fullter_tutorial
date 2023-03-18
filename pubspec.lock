@@ -1111,10 +1111,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_smart_dialog
-      sha256: a477c9e5b5b93b481b7d565413858d038b2c1a5b3583db84f8627be7223d5ed7
+      sha256: de4c4ff47ee2c859df5bdcbf607ef9251ff1e8e698aaa533efb6de5ea4a56323
       url: "https://pub.dev"
     source: hosted
-    version: "4.9.0+3"
+    version: "4.9.0+4"
   flutter_snake_navigationbar:
     dependency: "direct main"
     description:
@@ -1609,10 +1609,10 @@ packages:
     dependency: "direct main"
     description:
       name: mobile_scanner
-      sha256: "4045e8441e21f1fb8998a76fbffd054510dd3a3b1dee55c7c9a2083eee687345"
+      sha256: "441ac8d39742c221b19519ed6469909687619405c593004b6332c97d908f838a"
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0"
+    version: "3.1.0"
   modal_bottom_sheet:
     dependency: "direct main"
     description:
