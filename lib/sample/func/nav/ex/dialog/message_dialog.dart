@@ -10,7 +10,7 @@ class MessgaeDialog extends DialogWidget {
   final bool barrierDismissible = false;
   final bool isCancelOnBack = false;
 
-  MessgaeDialog(BuildContext context) : super(context);
+  MessgaeDialog(BuildContext context) : super();
 
   @override
   State<StatefulWidget> createState() {

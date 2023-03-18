@@ -14,8 +14,7 @@ class EditColorListDialog extends DialogWidget {
   static final data = "data";
   final List<Color>? colorList;
 
-  EditColorListDialog(BuildContext buildContext, this.colorList)
-      : super(buildContext);
+  EditColorListDialog(BuildContext buildContext, this.colorList) : super();
 
   final NavAni ani = NavAni.Bottom;
 
