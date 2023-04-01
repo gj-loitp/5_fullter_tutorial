@@ -1031,10 +1031,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_phoenix
-      sha256: "56247b4580d465dc6406de618b6be9a5860bc45d1c478f0f6a488310f0f39e9a"
+      sha256: "39589dac934ea476d0e43fb60c1ddfba58f14960743640c8250dea11c4333378"
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.1"
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -1553,10 +1553,10 @@ packages:
     dependency: "direct main"
     description:
       name: lottie
-      sha256: "0cf78e7a3dd3431523a7debcf33ce4c41ecbfa113e2d10c24c3fe6667d55b556"
+      sha256: "14b489bf93af84727a07c87c73580a9413f9cbffa4ea2342f3f71447a674a3fb"
       url: "https://pub.dev"
     source: hosted
-    version: "2.3.0"
+    version: "2.3.1"
   marquee:
     dependency: "direct main"
     description:
@@ -2908,5 +2908,5 @@ packages:
     source: hosted
     version: "8.1.2"
 sdks:
-  dart: ">=2.19.0 <3.0.0"
+  dart: ">=2.19.4 <3.0.0"
   flutter: ">=3.7.0-1.4.pre"
