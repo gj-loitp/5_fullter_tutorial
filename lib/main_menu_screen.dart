@@ -1,5 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/func/main_func_screen.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
@@ -88,26 +89,32 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
             UIUtils.getButton(
               "Animation",
               () {
-                Get.to(MenuAnimationScreen());
+                Get.to(() => MenuAnimationScreen());
+              },
+            ),
+            UIUtils.getButton(
+              "Applovin",
+              () {
+                Get.to(() => ApplovinScreen());
               },
             ),
             UIUtils.getButton(
               "MenuDatabaseScreen",
               () {
-                Get.to(MenuDatabaseScreen());
+                Get.to(() => MenuDatabaseScreen());
               },
             ),
             if (isFullData)
               UIUtils.getButton(
                 "Demo",
                 () {
-                  Get.to(MenuDemoScreen());
+                  Get.to(() => MenuDemoScreen());
                 },
               ),
             UIUtils.getButton(
               "Function",
               () {
-                Get.to(MenuFuncScreen());
+                Get.to(() => MenuFuncScreen());
               },
             ),
             if (isFullData)
@@ -115,20 +122,20 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                 "Game",
                 () async {
                   await Flame.device.fullScreen();
-                  Get.to(MainGamePage());
+                  Get.to(() => MainGamePage());
                 },
               ),
             UIUtils.getButton(
               "Syntax",
               () {
-                Get.to(SyntaxScreen());
+                Get.to(() => SyntaxScreen());
               },
             ),
             if (isFullData)
               UIUtils.getButton(
                 "Widget",
                 () {
-                  Get.to(MenuWidgetScreen());
+                  Get.to(() => MenuWidgetScreen());
                 },
               ),
             if (isFullData)
@@ -161,7 +168,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
             UIUtils.getButton(
               "EmptyScreen",
               () {
-                Get.to(EmptyScreen());
+                Get.to(() => EmptyScreen());
               },
             ),
             if (kDebugMode)
