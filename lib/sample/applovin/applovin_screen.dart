@@ -20,7 +20,7 @@ import 'package:get/get.dart';
 
 enum AdLoadState { notLoaded, loading, loaded }
 
-const String _sdkKey =
+const String sdkKey =
     "e75FnQfS9XTTqM1Kne69U7PW_MBgAnGQTFvtwVVui6kRPKs5L7ws9twr5IQWwVfzPKZ5pF2IfDa7lguMgGlCyt";
 
 final String interstitialAdUnitId =
@@ -219,7 +219,7 @@ Incomplete, if not for you.""",
   Future<void> initializePlugin() async {
     logStatus("Initializing SDK...");
 
-    Map? configuration = await AppLovinMAX.initialize(_sdkKey);
+    Map? configuration = await AppLovinMAX.initialize(sdkKey);
     if (configuration != null) {
       _isInitialized = true;
 
