@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/util/duration_util.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
@@ -25,7 +26,11 @@ class SplashScreenState extends BaseStatefulState<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    _checkGoogleDrive();
+
+    // _checkGoogleDrive();
+    DurationUtils.delay(1000, () {
+      Get.off(MenuScreen());
+    });
   }
 
   void _checkGoogleDrive() async {
