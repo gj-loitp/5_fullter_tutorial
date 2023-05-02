@@ -267,7 +267,7 @@ dependencies:
   #https://pub.dev/packages/mask_text_input_formatter
   mask_text_input_formatter: ^2.4.0
   #https://pub.dev/packages/mobile_scanner
-  mobile_scanner: ^3.1.0
+  mobile_scanner: ^3.2.0
   #https://pub.dev/packages/modal_bottom_sheet
   #  modal_bottom_sheet: ^2.1.2 #TODO revert
   modal_bottom_sheet:

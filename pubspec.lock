@@ -1609,10 +1609,10 @@ packages:
     dependency: "direct main"
     description:
       name: mobile_scanner
-      sha256: "441ac8d39742c221b19519ed6469909687619405c593004b6332c97d908f838a"
+      sha256: da55204e5439bc8dc058df56231a7a1d513c6ec9cbad84492f56d493382d296f
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "3.2.0"
   modal_bottom_sheet:
     dependency: "direct main"
     description:
