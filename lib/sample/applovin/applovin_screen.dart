@@ -6,6 +6,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -83,7 +84,12 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
             ElevatedButton(
               onPressed: _isInitialized
                   ? () {
-                      AppLovinMAX.showMediationDebugger();
+                      if (kDebugMode) {
+                        AppLovinMAX.showMediationDebugger();
+                      } else {
+                        showSnackBarFull(
+                            "Applovin", "Only available in debug mode");
+                      }
                     }
                   : null,
               child: const Text("Mediation Debugger"),
