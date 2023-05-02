@@ -225,23 +225,26 @@ class MenuAnimationScreen extends StatelessWidget {
               ],
             ),
           ),
-          MaxAdView(
-            adUnitId: bannerAdUnitId,
-            adFormat: AdFormat.banner,
-            listener: AdViewAdListener(onAdLoadedCallback: (ad) {
-              Dog.i('Banner widget ad loaded from ${ad.networkName}');
-            }, onAdLoadFailedCallback: (adUnitId, error) {
-              Dog.i(
-                  'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
-            }, onAdClickedCallback: (ad) {
-              Dog.i('Banner widget ad clicked');
-            }, onAdExpandedCallback: (ad) {
-              Dog.i('Banner widget ad expanded');
-            }, onAdCollapsedCallback: (ad) {
-              Dog.i('Banner widget ad collapsed');
-            }, onAdRevenuePaidCallback: (ad) {
-              Dog.i('Banner widget ad revenue paid: ${ad.revenue}');
-            }),
+          Container(
+            margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
+            child: MaxAdView(
+              adUnitId: bannerAdUnitId,
+              adFormat: AdFormat.banner,
+              listener: AdViewAdListener(onAdLoadedCallback: (ad) {
+                Dog.i('Banner widget ad loaded from ${ad.networkName}');
+              }, onAdLoadFailedCallback: (adUnitId, error) {
+                Dog.i(
+                    'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
+              }, onAdClickedCallback: (ad) {
+                Dog.i('Banner widget ad clicked');
+              }, onAdExpandedCallback: (ad) {
+                Dog.i('Banner widget ad expanded');
+              }, onAdCollapsedCallback: (ad) {
+                Dog.i('Banner widget ad collapsed');
+              }, onAdRevenuePaidCallback: (ad) {
+                Dog.i('Banner widget ad revenue paid: ${ad.revenue}');
+              }),
+            ),
           ),
         ],
       ),

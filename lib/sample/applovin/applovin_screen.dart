@@ -190,7 +190,8 @@ Incomplete, if not for you.""",
           ),
           if (_isWidgetBannerShowing)
             Container(
-              color: Colors.red,
+              color: Colors.transparent,
+              margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
               child: MaxAdView(
                 adUnitId: bannerAdUnitId,
                 adFormat: AdFormat.banner,
