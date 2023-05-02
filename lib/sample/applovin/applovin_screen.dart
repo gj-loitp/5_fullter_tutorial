@@ -96,20 +96,24 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
 
           //Interstitial
           ElevatedButton(
-            onPressed: (_isInitialized &&
-                _interstitialLoadState != AdLoadState.loading)
-                ? () async {
-              bool isReady = (await AppLovinMAX.isInterstitialReady(
-                  interstitialAdUnitId))!;
-              if (isReady) {
-                AppLovinMAX.showInterstitial(interstitialAdUnitId);
-              } else {
-                logStatus('Loading interstitial ad...');
-                _interstitialLoadState = AdLoadState.loading;
-                AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+            onPressed: () {
+              void showInter() async {
+                bool isReady = (await AppLovinMAX.isInterstitialReady(
+                    interstitialAdUnitId))!;
+                if (isReady) {
+                  AppLovinMAX.showInterstitial(interstitialAdUnitId);
+                } else {
+                  logStatus('Loading interstitial ad...');
+                  _interstitialLoadState = AdLoadState.loading;
+                  AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+                }
               }
-            }
-                : null,
+
+              if (_isInitialized &&
+                  _interstitialLoadState != AdLoadState.loading) {
+                showInter();
+              }
+            },
             child: Text(getInterstitialButtonTitle()),
           ),
           ElevatedButton(
