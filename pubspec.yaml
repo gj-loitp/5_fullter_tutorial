@@ -262,7 +262,7 @@ dependencies:
   #https://pub.dev/packages/loading_animation_widget
   loading_animation_widget: ^1.2.0+4
   #https://pub.dev/packages/lottie
-  lottie: ^2.3.1
+  lottie: ^2.3.2
 
   #https://pub.dev/packages/mask_text_input_formatter
   mask_text_input_formatter: ^2.4.0
