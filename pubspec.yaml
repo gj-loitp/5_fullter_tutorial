@@ -12,6 +12,8 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  #https://pub.dev/packages/applovin_max
+  applovin_max: ^2.5.0
   #https://pub.dev/packages/advance_pdf_viewer
   advance_pdf_viewer: ^2.0.1
   #https://pub.dev/packages/after_layout
