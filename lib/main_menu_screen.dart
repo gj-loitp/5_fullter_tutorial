@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:applovin_max/applovin_max.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
@@ -38,6 +40,58 @@ class MenuScreen extends StatefulWidget {
 
 class _MenuScreenState extends BaseStatefulState<MenuScreen> {
   var _cMenu = Get.put(MainMenuController());
+  var _interstitialRetryAttempt = 0;
+
+  void initializeInterstitialAds() {
+    AppLovinMAX.setInterstitialListener(InterstitialListener(
+      onAdLoadedCallback: (ad) {
+        // Interstitial ad is ready to be shown. AppLovinMAX.isInterstitialReady(_interstitial_ad_unit_id) will now return 'true'
+        Dog.e('Interstitial ad loaded from ' + ad.networkName);
+        // Reset retry attempt
+        _interstitialRetryAttempt = 0;
+      },
+      onAdLoadFailedCallback: (adUnitId, error) {
+        // Interstitial ad failed to load
+        // We recommend retrying with exponentially higher delays up to a maximum delay (in this case 64 seconds)
+        _interstitialRetryAttempt = _interstitialRetryAttempt + 1;
+        int retryDelay = pow(2, min(6, _interstitialRetryAttempt)).toInt();
+        Dog.e('Interstitial ad failed to load with code ' +
+            error.code.toString() +
+            ' - retrying in ' +
+            retryDelay.toString() +
+            's');
+        Future.delayed(Duration(milliseconds: retryDelay * 1000), () {
+          AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+        });
+      },
+      onAdDisplayedCallback: (ad) {
+        Dog.e("onAdDisplayedCallback");
+      },
+      onAdDisplayFailedCallback: (ad, error) {
+        Dog.e("onAdDisplayFailedCallback");
+      },
+      onAdClickedCallback: (ad) {
+        Dog.e("onAdClickedCallback");
+      },
+      onAdHiddenCallback: (ad) {
+        Dog.e("onAdHiddenCallback");
+      },
+    ));
+
+    // Load the first interstitial
+    AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+  }
+
+  Future<void> showInterAd() async {
+    bool isReady =
+        (await AppLovinMAX.isInterstitialReady(interstitialAdUnitId))!;
+    if (isReady) {
+      AppLovinMAX.showInterstitial(interstitialAdUnitId);
+    } else {
+      Dog.e('Loading interstitial ad...');
+      AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+    }
+  }
 
   @override
   void initState() {
@@ -45,6 +99,8 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
 
     _cMenu.setupData();
     _cMenu.initPackageInfo();
+
+    initializeInterstitialAds();
   }
 
   @override
@@ -58,10 +114,10 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
     return Scaffold(
       appBar: UIUtils.getAppBar(
         "Main menu",
-        () {
+            () {
           SystemNavigator.pop();
         },
-        () {
+            () {
           UrlLauncherUtils.launchPolicy();
         },
         iconData: Icons.policy,
@@ -87,7 +143,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   ),
                   UIUtils.getButton(
                     "Android Native Tutorial (Kotlin/Java)",
-                    () {
+                        () {
                       UrlLauncherUtils.launchInBrowser(
                           "https://play.google.com/store/apps/details?id=com.roygroup.base");
                     },
@@ -95,52 +151,58 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   UIUtils.getButton(
                     "Animation",
                     () {
+                      showInterAd();
                       Get.to(() => MenuAnimationScreen());
                     },
                   ),
                   UIUtils.getButton(
                     "Applovin",
-                    () {
+                        () {
                       Get.to(() => ApplovinScreen());
                     },
                   ),
                   UIUtils.getButton(
                     "MenuDatabaseScreen",
-                    () {
+                        () {
+                      showInterAd();
                       Get.to(() => MenuDatabaseScreen());
                     },
                   ),
                   if (isFullData)
                     UIUtils.getButton(
                       "Demo",
-                      () {
+                          () {
+                        showInterAd();
                         Get.to(() => MenuDemoScreen());
                       },
                     ),
                   UIUtils.getButton(
                     "Function",
-                    () {
+                        () {
+                      showInterAd();
                       Get.to(() => MenuFuncScreen());
                     },
                   ),
                   if (isFullData)
                     UIUtils.getButton(
                       "Game",
-                      () async {
+                          () async {
+                        showInterAd();
                         await Flame.device.fullScreen();
                         Get.to(() => MainGamePage());
                       },
                     ),
                   UIUtils.getButton(
                     "Syntax",
-                    () {
+                        () {
                       Get.to(() => SyntaxScreen());
                     },
                   ),
                   if (isFullData)
                     UIUtils.getButton(
                       "Widget",
-                      () {
+                          () {
+                        showInterAd();
                         Get.to(() => MenuWidgetScreen());
                       },
                     ),
@@ -148,39 +210,39 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                     if (kDebugMode)
                       UIUtils.getButton(
                         "Github",
-                        () {
+                            () {
                           UrlLauncherUtils.launchInWebViewWithJavaScript(
                               "https://github.com/tplloi/fullter_tutorial");
                         },
                       ),
                   UIUtils.getButton(
                     "Rate app",
-                    () {
+                        () {
                       UrlLauncherUtils.rateApp(null, null);
                     },
                   ),
                   UIUtils.getButton(
                     "More app",
-                    () {
+                        () {
                       UrlLauncherUtils.moreApp();
                     },
                   ),
                   UIUtils.getButton(
                     "Policy",
-                    () {
+                        () {
                       UrlLauncherUtils.launchPolicy();
                     },
                   ),
                   UIUtils.getButton(
                     "EmptyScreen",
-                    () {
+                        () {
                       Get.to(() => EmptyScreen());
                     },
                   ),
                   if (kDebugMode)
                     UIUtils.getButton(
                       "Force a test crash",
-                      () {
+                          () {
                         FirebaseCrashlytics.instance.crash();
                       },
                     ),
