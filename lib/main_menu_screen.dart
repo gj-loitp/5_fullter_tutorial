@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:applovin_max/applovin_max.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.dart';
@@ -114,138 +115,139 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
     return Scaffold(
       appBar: UIUtils.getAppBar(
         "Main menu",
-            () {
+        () {
           SystemNavigator.pop();
         },
-            () {
+        () {
           UrlLauncherUtils.launchPolicy();
         },
         iconData: Icons.policy,
       ),
-      body: Column(
-        children: [
-          Expanded(
-            child: ListView(
-              physics: BouncingScrollPhysics(),
-              padding: EdgeInsets.fromLTRB(
-                DimenConstants.marginPaddingMedium,
-                DimenConstants.marginPaddingMedium,
-                DimenConstants.marginPaddingMedium,
-                DimenConstants.marginPaddingLarge,
-              ),
-              children: [
-                Container(
-                  alignment: Alignment.center,
-                  child: UIUtils.getText(
-                      "Version ${_cMenu.packageInfo.version}"),
+      body: Obx(() {
+        return Column(
+          children: [
+            Expanded(
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                padding: EdgeInsets.fromLTRB(
+                  DimenConstants.marginPaddingMedium,
+                  DimenConstants.marginPaddingMedium,
+                  DimenConstants.marginPaddingMedium,
+                  DimenConstants.marginPaddingLarge,
                 ),
-                UIUtils.getButton(
-                  "Android Native Tutorial (Kotlin/Java)",
-                      () {
-                    UrlLauncherUtils.launchInBrowser(
-                        "https://play.google.com/store/apps/details?id=com.roygroup.base");
-                  },
-                ),
-                UIUtils.getButton(
-                  "Animation",
-                      () {
-                    showInterAd();
-                    Get.to(() => MenuAnimationScreen());
-                  },
-                ),
-                UIUtils.getButton(
-                  "Applovin",
-                      () {
-                    Get.to(() => ApplovinScreen());
-                  },
-                ),
-                UIUtils.getButton(
-                  "MenuDatabaseScreen",
-                      () {
-                    showInterAd();
-                    Get.to(() => MenuDatabaseScreen());
-                  },
-                ),
-                UIUtils.getButton(
-                  "Demo",
-                      () {
-                    showInterAd();
-                    Get.to(() => MenuDemoScreen());
-                  },
-                ),
-                UIUtils.getButton(
-                  "Function",
-                      () {
-                    showInterAd();
-                    Get.to(() => MenuFuncScreen());
-                  },
-                ),
-                UIUtils.getButton(
-                  "Game",
-                      () async {
-                    showInterAd();
-                    await Flame.device.fullScreen();
-                    Get.to(() => MainGamePage());
-                  },
-                ),
-                UIUtils.getButton(
-                  "Syntax",
-                      () {
-                    Get.to(() => SyntaxScreen());
-                  },
-                ),
-                UIUtils.getButton(
-                  "Widget",
-                      () {
-                    showInterAd();
-                    Get.to(() => MenuWidgetScreen());
-                  },
-                ),
-                UIUtils.getButton(
-                  "Github",
-                      () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript(
-                        "https://github.com/tplloi/fullter_tutorial");
-                  },
-                ),
-                UIUtils.getButton(
-                  "Rate app",
-                      () {
-                    UrlLauncherUtils.rateApp(null, null);
-                  },
-                ),
-                UIUtils.getButton(
-                  "More app",
-                      () {
-                    UrlLauncherUtils.moreApp();
-                  },
-                ),
-                UIUtils.getButton(
-                  "Policy",
-                      () {
-                    UrlLauncherUtils.launchPolicy();
-                  },
-                ),
-                UIUtils.getButton(
-                  "EmptyScreen",
-                      () {
-                    Get.to(() => EmptyScreen());
-                  },
-                ),
-                if (kDebugMode)
+                children: [
+                  Container(
+                    alignment: Alignment.center,
+                    child: UIUtils.getText(
+                        "Version ${_cMenu.versionName}"),
+                  ),
                   UIUtils.getButton(
-                    "Force a test crash",
-                        () {
-                      FirebaseCrashlytics.instance.crash();
+                    "Android Native Tutorial (Kotlin/Java)",
+                    () {
+                      UrlLauncherUtils.launchInBrowser(
+                          "https://play.google.com/store/apps/details?id=com.roygroup.base");
                     },
                   ),
-                SizedBox(height: DimenConstants.marginPaddingMedium),
-                InkWell(
-                  onTap: () {
-                    UrlLauncherUtils.moreApp();
-                  },
-                  child: UIUtils.getText(
-                      """People can criticise me all the time they want, by this is what I am and I won't change the way I live for them.
+                  UIUtils.getButton(
+                    "Animation",
+                    () {
+                      showInterAd();
+                      Get.to(() => MenuAnimationScreen());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Applovin",
+                    () {
+                      Get.to(() => ApplovinScreen());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "MenuDatabaseScreen",
+                    () {
+                      showInterAd();
+                      Get.to(() => MenuDatabaseScreen());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Demo",
+                    () {
+                      showInterAd();
+                      Get.to(() => MenuDemoScreen());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Function",
+                    () {
+                      showInterAd();
+                      Get.to(() => MenuFuncScreen());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Game",
+                    () async {
+                      showInterAd();
+                      await Flame.device.fullScreen();
+                      Get.to(() => MainGamePage());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Syntax",
+                    () {
+                      Get.to(() => SyntaxScreen());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Widget",
+                    () {
+                      showInterAd();
+                      Get.to(() => MenuWidgetScreen());
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Github",
+                    () {
+                      UrlLauncherUtils.launchInWebViewWithJavaScript(
+                          "https://github.com/tplloi/fullter_tutorial");
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Rate app",
+                    () {
+                      UrlLauncherUtils.rateApp(null, null);
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "More app",
+                    () {
+                      UrlLauncherUtils.moreApp();
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "Policy",
+                    () {
+                      UrlLauncherUtils.launchPolicy();
+                    },
+                  ),
+                  UIUtils.getButton(
+                    "EmptyScreen",
+                    () {
+                      Get.to(() => EmptyScreen());
+                    },
+                  ),
+                  if (kDebugMode)
+                    UIUtils.getButton(
+                      "Force a test crash",
+                      () {
+                        FirebaseCrashlytics.instance.crash();
+                      },
+                    ),
+                  SizedBox(height: DimenConstants.marginPaddingMedium),
+                  InkWell(
+                    onTap: () {
+                      UrlLauncherUtils.moreApp();
+                    },
+                    child: UIUtils.getText(
+                        """People can criticise me all the time they want, by this is what I am and I won't change the way I live for them.
 I live the way I want to flow.
 If we don’t transform the world, who will? If not now, when?
 If you have something to give, give it now
@@ -253,33 +255,36 @@ Do your little bit of good where you are.
 It’s those little bits of good put together that overwhelm the world.
 Don’t just think, do it. Now it is you turn,  do it now, download my apps and rate 5 stars. Thank you!
 https://play.google.com/store/apps/dev?id=9198084038765766736"""),
-                ),
-              ],
+                  ),
+                ],
+              ),
             ),
-          ),
-          Container(
-            margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
-            child: MaxAdView(
-              adUnitId: bannerAdUnitId,
-              adFormat: AdFormat.banner,
-              listener: AdViewAdListener(onAdLoadedCallback: (ad) {
-                Dog.i('Banner widget ad loaded from ${ad.networkName}');
-              }, onAdLoadFailedCallback: (adUnitId, error) {
-                Dog.i(
-                    'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
-              }, onAdClickedCallback: (ad) {
-                Dog.i('Banner widget ad clicked');
-              }, onAdExpandedCallback: (ad) {
-                Dog.i('Banner widget ad expanded');
-              }, onAdCollapsedCallback: (ad) {
-                Dog.i('Banner widget ad collapsed');
-              }, onAdRevenuePaidCallback: (ad) {
-                Dog.i('Banner widget ad revenue paid: ${ad.revenue}');
-              }),
+            Container(
+              // color: ColorConstants.appColor,
+              width: Get.width,
+              margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
+              child: MaxAdView(
+                adUnitId: bannerAdUnitId,
+                adFormat: AdFormat.banner,
+                listener: AdViewAdListener(onAdLoadedCallback: (ad) {
+                  Dog.i('Banner widget ad loaded from ${ad.networkName}');
+                }, onAdLoadFailedCallback: (adUnitId, error) {
+                  Dog.i(
+                      'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
+                }, onAdClickedCallback: (ad) {
+                  Dog.i('Banner widget ad clicked');
+                }, onAdExpandedCallback: (ad) {
+                  Dog.i('Banner widget ad expanded');
+                }, onAdCollapsedCallback: (ad) {
+                  Dog.i('Banner widget ad collapsed');
+                }, onAdRevenuePaidCallback: (ad) {
+                  Dog.i('Banner widget ad revenue paid: ${ad.revenue}');
+                }),
+              ),
             ),
-          ),
-        ],
-      ),
+          ],
+        );
+      }),
     );
   }
 }
