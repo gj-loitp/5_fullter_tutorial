@@ -5,7 +5,7 @@ import '../../lib/core/base_controller.dart';
 import '../../lib/util/shared_preferences_util.dart';
 
 class MainMenuController extends BaseController {
-  var isFullData = false.obs;
+  // var isFullData = false.obs;
 
   PackageInfo packageInfo = PackageInfo(
     appName: 'Unknown',
@@ -18,9 +18,9 @@ class MainMenuController extends BaseController {
     Get.delete<MainMenuController>();
   }
 
-  void setupData() async {
-    isFullData.value = await SharedPreferencesUtil.isFullData();
-  }
+  // void setupData() async {
+  //   isFullData.value = await SharedPreferencesUtil.isFullData();
+  // }
 
   Future<void> initPackageInfo() async {
     final info = await PackageInfo.fromPlatform();

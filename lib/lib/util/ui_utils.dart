@@ -5,6 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 
+import '../common/const/color_constants.dart';
+
 /**
  * Created by Loitp on 05,August,2022
  * Galaxy One company,
@@ -50,7 +52,10 @@ class UIUtils {
         _buildActionCodeWidget(),
       ],
       backgroundColor: backgroundColor,
-      systemOverlayStyle: SystemUiOverlayStyle.light,
+      systemOverlayStyle: const SystemUiOverlayStyle(
+        systemNavigationBarColor: ColorConstants.appColor,
+        statusBarColor: ColorConstants.appColor,
+      ),
     );
   }
 
