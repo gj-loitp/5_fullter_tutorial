@@ -348,7 +348,6 @@ class _HomeState extends State<Home> {
                       context: context,
                       theme: ThemeData(
                         primaryColor: Colors.red[400],
-                        accentColor: Colors.green[800],
                         dialogBackgroundColor: Colors.purple[50],
                         textTheme: TextTheme(
                           bodyText2: TextStyle(color: Colors.red),
@@ -358,6 +357,8 @@ class _HomeState extends State<Home> {
                         accentTextTheme: TextTheme(
                           bodyText1: TextStyle(color: Colors.green[200]),
                         ),
+                        colorScheme: ColorScheme.fromSwatch()
+                            .copyWith(secondary: Colors.green[800]),
                       ),
                     );
                     if (newDateTime != null) {
