@@ -5,7 +5,6 @@ import 'package:com.roy93group.flutter_tutorial/sample/widget/blur/blur_screen.d
 import 'package:com.roy93group.flutter_tutorial/sample/widget/overflow_view/overflow_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/picker/menu_picker_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/scrollable_table_view/scrollable_table_view_screen.dart';
-import 'package:com.roy93group.flutter_tutorial/sample/widget/simple_url_preview/simple_url_preview_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/super_circle/super_circle_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/swipe_cards/swipe_cards_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/tab_page_selector/tab_page_selector_sreen.dart';
@@ -497,14 +496,6 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(ShimmerScreen());
                     },
-                  ),
-                  UIUtils.getButton(
-                    "simple_url_preview",
-                    () {
-                      Get.to(SimpleUrlPreviewScreen());
-                    },
-                    description:
-                        "Flutter package to show url preview. Custamizable height, background and text styles, as well as lines.",
                   ),
                   UIUtils.getButton(
                     "slide_countdown",

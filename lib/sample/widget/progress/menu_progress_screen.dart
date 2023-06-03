@@ -7,7 +7,6 @@ import 'package:get/get.dart';
 import 'circular_progress_indicator_app.dart';
 import 'flutter_spinkit/flutter_spinkit_screen.dart';
 import 'linear_progress_indicator_app.dart';
-import 'liquid_progress_indicator/menu_liquid_progress_indicator.dart';
 import 'loading_animation_widget/loading_animation_widget_screen.dart';
 import 'percent_indicator/percent_indicator_screen.dart';
 import 'progress_indicator_screen.dart';
@@ -45,11 +44,6 @@ class MenuProgressScreen extends StatelessWidget {
             description:
                 "A collection of loading indicators animated with flutter. Heavily inspired by @tobiasahlin's SpinKit.",
           ),
-          UIUtils.getButton("liquid_progress_indicator", () {
-            Get.to(MenuLiquidProgressIndicatorScreen());
-          },
-              description:
-                  "A progress indicator with water-like effect in Flutter. Works similarly to Flutters own ProgressIndicator."),
           UIUtils.getButton(
             "loading_animation_widget",
             () {
@@ -76,11 +70,11 @@ class MenuProgressScreen extends StatelessWidget {
           ),
           UIUtils.getButton(
             "skeleton_loader",
-                () {
+            () {
               Get.to(SkeletonLoaderScreen());
             },
             description:
-            "A Flutter Package which provides a fully customizable loading skeleton for your app",
+                "A Flutter Package which provides a fully customizable loading skeleton for your app",
           ),
           UIUtils.getButton(
             "smooth_page_indicator",

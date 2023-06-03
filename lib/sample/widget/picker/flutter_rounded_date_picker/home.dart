@@ -354,9 +354,9 @@ class _HomeState extends State<Home> {
                           caption: TextStyle(color: Colors.blue),
                         ),
                         disabledColor: Colors.orange,
-                        accentTextTheme: TextTheme(
-                          bodyText1: TextStyle(color: Colors.green[200]),
-                        ),
+                        // accentTextTheme: TextTheme(
+                        //   bodyText1: TextStyle(color: Colors.green[200]),
+                        // ),
                         colorScheme: ColorScheme.fromSwatch()
                             .copyWith(secondary: Colors.green[800]),
                       ),
