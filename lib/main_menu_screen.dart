@@ -8,7 +8,6 @@ import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/func/main_func_screen.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flame/flame.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
@@ -22,7 +21,6 @@ import 'sample/controller/main_menu_controller.dart';
 import 'sample/database/menu_database_screen.dart';
 import 'sample/demo/menu_demo_screen.dart';
 import 'sample/demo/syntax/syntax_screen.dart';
-import 'sample/game/ray_world/main_game_page.dart';
 import 'sample/widget/menu_widget_screen.dart';
 
 /**
@@ -138,8 +136,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                 children: [
                   Container(
                     alignment: Alignment.center,
-                    child: UIUtils.getText(
-                        "Version ${_cMenu.versionName}"),
+                    child: UIUtils.getText("Version ${_cMenu.versionName}"),
                   ),
                   UIUtils.getButton(
                     "Android Native Tutorial (Kotlin/Java)",
@@ -180,14 +177,6 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                     () {
                       showInterAd();
                       Get.to(() => MenuFuncScreen());
-                    },
-                  ),
-                  UIUtils.getButton(
-                    "Game",
-                    () async {
-                      showInterAd();
-                      await Flame.device.fullScreen();
-                      Get.to(() => MainGamePage());
                     },
                   ),
                   UIUtils.getButton(

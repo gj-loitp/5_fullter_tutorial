@@ -462,17 +462,19 @@ dependencies:
   youtube_player_flutter: ^8.1.2
 
   #https://pub.dev/packages/flame
-  flame: 1.0.0-releasecandidate.15
+#  flame: 1.0.0-releasecandidate.15
   #https://pub.dev/packages/tiledjsonreader
   tiledjsonreader: ^1.2.6
   #https://pub.dev/packages/ordered_set
 #  ordered_set: ^5.0.1
 
 dependency_overrides:
-  intl: ^0.18.0
+  intl: ^0.18.1
 #  qr: ^2.0.0
   connectivity_plus: ^3.0.3
   network_info_plus: ^3.0.2
+#  ordered_set: ^5.0.1
+  simple_animations: ^5.0.2
 
 dev_dependencies:
   flutter_test:
