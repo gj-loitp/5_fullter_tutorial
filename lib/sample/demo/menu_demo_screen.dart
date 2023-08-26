@@ -26,6 +26,7 @@ import 'easy_debounce/easy_debounce_screen.dart';
 import 'encypt/encrypt_screen.dart';
 import 'event_bus/event_bus_screen.dart';
 import 'firebase_remote_config/firebase_remote_config_screen.dart';
+import 'flex_color_scheme/flex_color_scheme_screen.dart';
 import 'flutter_bloc/menu_flutter_block_screen.dart';
 import 'flutter_local_notifications/flutter_local_notifications_screen.dart';
 import 'flutter_offline/flutter_offline_screen.dart';
@@ -173,6 +174,14 @@ class MenuDemoScreen extends StatelessWidget {
                   },
                   description:
                       "Flutter plugin for Firebase Remote Config. Update your application look and feel and behavior without re-releasing.",
+                ),
+                UIUtils.getButton(
+                  "flex_color_scheme",
+                  () {
+                    Get.to(() => FlexColorSchemeScreen());
+                  },
+                  description:
+                      "A Flutter package to use and make beautiful Material design based themes.",
                 ),
                 UIUtils.getButton(
                   "flutter_bloc",
