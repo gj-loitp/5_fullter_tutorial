@@ -381,18 +381,18 @@ packages:
     dependency: transitive
     description:
       name: community_charts_common
-      sha256: "073097712935b321b98663a78941cc705d6818155c9f290ce28ae5cd615fb057"
+      sha256: bcda2831d8c3225036102dff007e2a901a2fdfcbba604e10c78db3fe5d9362a5
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0"
+    version: "1.0.1"
   community_charts_flutter:
     dependency: transitive
     description:
       name: community_charts_flutter
-      sha256: "5d53f2e1b7428a4f76681b62dfda3e20390c2df642bb9e8c3a89f41c7fb3803e"
+      sha256: "2294cba46b67659109b665f2d9ffeffef93bb1540a5e7a7bcf2630b809a9363e"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.0"
+    version: "1.0.1"
   confetti:
     dependency: "direct main"
     description:
@@ -477,10 +477,10 @@ packages:
     dependency: "direct main"
     description:
       name: d_chart
-      sha256: da1e1155dcd5082690890a276da38b36f74bdd834082a0aa7f3159532d691e0c
+      sha256: "89a3c5c9c023249497b2db26f9e4d0da73630dfc389746a024c2ea09a8c7a26a"
       url: "https://pub.dev"
     source: hosted
-    version: "2.2.11"
+    version: "2.6.0"
   date_picker_timeline_fixed:
     dependency: "direct main"
     description:
