@@ -204,6 +204,8 @@ dependencies:
   flutter_reaction_button: ^1.0.8 #migrate later
   #https://pub.dev/packages/flutter_rounded_date_picker
   flutter_rounded_date_picker: ^3.0.4
+  #https://pub.dev/packages/flutter_riverpod
+  flutter_riverpod: ^2.3.6
   #https://pub.dev/packages/flutter_simple_treeview
   flutter_simple_treeview: ^3.0.2
   #https://pub.dev/packages/flutter_slidable
