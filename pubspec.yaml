@@ -71,6 +71,8 @@ dependencies:
   confetti: ^0.7.0
   #https://pub.dev/packages/connectivity_plus
   connectivity_plus: ^4.0.2
+  #https://pub.dev/packages/convex_bottom_bar
+  convex_bottom_bar: ^3.2.0
   #https://pub.dev/packages/country_picker
   country_picker: ^2.0.20
   #https://pub.dev/packages/clay_containers
