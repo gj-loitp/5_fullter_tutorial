@@ -213,6 +213,15 @@ class MenuDemoScreen extends StatelessWidget {
                       "A tidy utility to handle offline/online connectivity like a Boss.",
                 ),
                 UIUtils.getButton(
+                  "flutter_riverpod",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript(
+                        "https://pub.dev/packages/flutter_riverpod");
+                  },
+                  description:
+                      "A simple way to access state from anywhere in your application while robust and testable.",
+                ),
+                UIUtils.getButton(
                   "flutter_screen_lock",
                   () {
                     Get.to(() => FlutterScreenLockScreen());
