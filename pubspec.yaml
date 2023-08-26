@@ -467,8 +467,8 @@ dependencies:
 dependency_overrides:
   intl: ^0.18.1
 #  qr: ^2.0.0
-  connectivity_plus: ^3.0.3
-  network_info_plus: ^3.0.2
+#  connectivity_plus: ^3.0.3
+  network_info_plus: ^4.0.1
 #  ordered_set: ^5.0.1
   simple_animations: ^5.0.2
 
