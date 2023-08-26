@@ -211,11 +211,11 @@ dependencies:
   #https://pub.dev/packages/flutter_svg
   flutter_svg: ^1.1.6 #migrate later
   #https://pub.dev/packages/flutter_speed_dial
-  flutter_speed_dial: ^6.2.0
+  flutter_speed_dial: ^7.0.0
   #https://pub.dev/packages/flutter_switch
   flutter_switch: ^0.3.2
   #https://pub.dev/packages/flutter_spinkit
-  flutter_spinkit: ^5.1.0
+  flutter_spinkit: ^5.2.0
   #https://pub.dev/packages/flutter_sticky_header
   flutter_sticky_header: ^0.6.5
   #https://pub.dev/packages/flutter_screen_lock
@@ -223,7 +223,7 @@ dependencies:
   #https://pub.dev/packages/flutter_phoenix
   flutter_phoenix: ^1.1.1
   #https://pub.dev/packages/fluttertoast
-  fluttertoast: ^8.2.1
+  fluttertoast: ^8.2.2
   #https://pub.dev/packages/flutter_toggle_tab
   flutter_toggle_tab: ^1.2.0
 
