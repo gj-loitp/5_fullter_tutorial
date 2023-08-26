@@ -7,6 +7,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:internet_file/internet_file.dart';
+import 'package:internet_file/storage_io.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -53,6 +54,11 @@ class _InternetFileScreenState extends BaseStatefulState<InternetFileScreen> {
           UIUtils.getButton("Simple usage anywhere", () {
             _down();
           }),
+          UIUtils.getButton(
+              "For local store files you can usage InternetFileStorageIO (not works on web)",
+              () {
+            _down2();
+          }),
         ],
       ),
     );
@@ -69,5 +75,19 @@ class _InternetFileScreenState extends BaseStatefulState<InternetFileScreen> {
     );
     showSnackBarFull("Done",
         "url https://github.com/rbcprolabs/icon_font_generator/raw/master/example/lib/icon_font/ui_icons.ttf");
+  }
+
+  _down2() async {
+    final storageIO = InternetFileStorageIO();
+
+    await InternetFile.get(
+      'https://github.com/rbcprolabs/icon_font_generator/raw/master/example/lib/icon_font/ui_icons.ttf',
+      storage: storageIO,
+      storageAdditional: storageIO.additional(
+        filename: 'ui_icons.ttf',
+        location: '',
+      ),
+    );
+    showSnackBarFull("Done", "filename ui_icons.ttf");
   }
 }
