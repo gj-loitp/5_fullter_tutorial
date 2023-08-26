@@ -70,7 +70,7 @@ dependencies:
   #https://pub.dev/packages/confetti
   confetti: ^0.7.0
   #https://pub.dev/packages/connectivity_plus
-  connectivity_plus: ^3.0.3
+  connectivity_plus: ^4.0.2
   #https://pub.dev/packages/country_picker
   country_picker: ^2.0.20
   #https://pub.dev/packages/clay_containers
