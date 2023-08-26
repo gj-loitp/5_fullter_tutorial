@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/infinite_scroll_pagination/samples/beer_list_view.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/infinite_scroll_pagination/samples/beer_masonry_grid.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/list/infinite_scroll_pagination/samples/beer_page_view.dart';
@@ -45,6 +46,7 @@ class _BeerListScreenState extends State<BeerListScreen> {
   Widget build(BuildContext context) => Scaffold(
         appBar: AppBar(
           title: const Text('Beers'),
+          backgroundColor: ColorConstants.appColor,
         ),
         resizeToAvoidBottomInset: false,
         bottomNavigationBar: BottomNavigationBar(
