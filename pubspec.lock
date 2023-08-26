@@ -573,10 +573,10 @@ packages:
     dependency: "direct main"
     description:
       name: dots_indicator
-      sha256: e59dfc90030ee5a4fd4c53144a8ce97cc7a823c2067b8fb9814960cd1ae63f89
+      sha256: f1599baa429936ba87f06ae5f2adc920a367b16d08f74db58c3d0f6e93bcdb5c
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.0"
+    version: "2.1.2"
   dotted_border:
     dependency: "direct main"
     description:
@@ -589,10 +589,10 @@ packages:
     dependency: "direct main"
     description:
       name: dotted_line
-      sha256: "453e6d0ec4fe923ae00469dbc2973b9e9b11ef1c71abcded003d05af0a219d23"
+      sha256: c931ba331656154711d9420f369f80cf9e8869ca9933ae5fb35b7669bcbe7d2e
       url: "https://pub.dev"
     source: hosted
-    version: "3.1.0"
+    version: "3.2.2"
   drag_select_grid_view:
     dependency: "direct main"
     description:
