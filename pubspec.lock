@@ -57,6 +57,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.7.0"
+  animations:
+    dependency: "direct main"
+    description:
+      name: animations
+      sha256: fe8a6bdca435f718bb1dc8a11661b2c22504c6da40ef934cee8327ed77934164
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.7"
   another_flushbar:
     dependency: "direct main"
     description:
@@ -849,6 +857,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.5+1"
+  flex_color_picker:
+    dependency: "direct main"
+    description:
+      name: flex_color_picker
+      sha256: f37476ab3e80dcaca94e428e159944d465dd16312fda9ff41e07e86f04bfa51c
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.3.0"
   flex_color_scheme:
     dependency: "direct main"
     description:
@@ -1309,6 +1325,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.0.5"
+  hive:
+    dependency: "direct main"
+    description:
+      name: hive
+      sha256: "8dcf6db979d7933da8217edcec84e9df1bdb4e4edc7fc77dbd5aa74356d6d941"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.3"
   horizontal_calendar:
     dependency: "direct main"
     description:

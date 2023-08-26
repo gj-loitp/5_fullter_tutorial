@@ -26,6 +26,8 @@ dependencies:
   animated_text_kit: ^4.2.2
   #https://pub.dev/packages/animated_toggle_switch
   animated_toggle_switch: ^0.7.0
+  #https://pub.dev/packages/animations
+  animations: ^2.0.7
   #https://pub.dev/packages/another_flushbar
   another_flushbar: ^1.12.30
   #https://pub.dev/packages/avatar_glow
@@ -158,6 +160,8 @@ dependencies:
   flexible_calendar: ^1.0.1
   #https://pub.dev/packages/flex_color_scheme
   flex_color_scheme: ^7.3.1
+  # https://pub.dev/packages/flex_color_picker
+  flex_color_picker: ^3.3.0
   #https://pub.dev/packages/floating_bubbles
   floating_bubbles: ^2.5.1
   #https://pub.dev/packages/flip_card
@@ -250,6 +254,8 @@ dependencies:
   html2md: ^1.3.1
   #https://pub.dev/packages/hsv_color_pickers
   hsv_color_pickers: ^0.3.0
+  #https://pub.dev/packages/hive
+  hive: ^2.2.3
 
   #  latlong: ^0.6.1
   #  latlong2: ^0.8.1
