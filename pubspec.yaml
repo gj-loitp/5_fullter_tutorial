@@ -86,7 +86,7 @@ dependencies:
   #https://pub.dev/packages/curved_navigation_bar
   curved_navigation_bar: ^1.0.3
   #https://pub.dev/packages/csslib
-  csslib: ^0.17.2
+  csslib: ^1.0.0
 
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0
