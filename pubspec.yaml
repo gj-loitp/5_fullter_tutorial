@@ -161,13 +161,13 @@ dependencies:
   #https://pub.dev/packages/flutter_animated_button
   flutter_animated_button: ^2.0.3
   #https://pub.dev/packages/flutter_bloc
-  flutter_bloc: ^8.1.2
+  flutter_bloc: ^8.1.3
   #https://pub.dev/packages/flutter_circle_color_picker
   flutter_circle_color_picker: ^0.3.0
   #https://pub.dev/packages/flutter_colorpicker
   flutter_colorpicker: ^1.0.3
   #https://pub.dev/packages/flutter_credit_card
-  flutter_credit_card: ^3.0.6
+  flutter_credit_card: ^3.0.7
   #https://pub.dev/packages/flutter_drawing_board
   flutter_drawing_board: ^0.4.4+2
   #https://pub.dev/packages/flutter_easyloading
