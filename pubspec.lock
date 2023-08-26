@@ -1188,10 +1188,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_toggle_tab
-      sha256: a06de7325c7a744122877212baa601ecfdd7c0fb8dfd80346f2ade69b030c054
+      sha256: "90ad0d050f656df677998825f985637d010117a1793828cd7e6dadada4ecd2c5"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.0"
+    version: "1.4.1"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
