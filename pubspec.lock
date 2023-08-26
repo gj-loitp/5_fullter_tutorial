@@ -2519,10 +2519,10 @@ packages:
     dependency: "direct main"
     description:
       name: toggle_switch
-      sha256: "82c778c4bfe93af154a41e346ccd1d5b0cb6a50f8f187941412edd0a9bbf51ee"
+      sha256: "9e6af1f0c5a97d9de41109dc7b9e1b3bbe73417f89b10e0e44dc834fb493d4cb"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.1"
+    version: "2.1.0"
   transparent_image:
     dependency: "direct main"
     description:
@@ -2647,10 +2647,10 @@ packages:
     dependency: "direct main"
     description:
       name: velocity_x
-      sha256: b70a9de038ac2265cba77c030487463a75c66d65da8d4d917dc6834293ff73a3
+      sha256: "41734c40f1609aaafa5337fd9a9e7e9aaf3464dce8ee2cad18be4226b184e5ca"
       url: "https://pub.dev"
     source: hosted
-    version: "3.6.0"
+    version: "4.1.1"
   vertical_card_pager:
     dependency: "direct main"
     description:
@@ -2663,10 +2663,10 @@ packages:
     dependency: "direct main"
     description:
       name: vibration
-      sha256: "1dc9d1a0d62b12f1276eb7146b21585db5fe01771b8ca0234fefdf74ba51f963"
+      sha256: d81f665bcb201f586c295a21f3fe8f1cb6dc32c81a213a99e9c714ec8e811ce5
       url: "https://pub.dev"
     source: hosted
-    version: "1.7.6"
+    version: "1.8.1"
   video_player:
     dependency: "direct main"
     description:
