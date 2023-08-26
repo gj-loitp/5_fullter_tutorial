@@ -1305,10 +1305,10 @@ packages:
     dependency: "direct main"
     description:
       name: horizontal_data_table
-      sha256: e145215ae46530f24d87d7b5844d872e004be2f30724877306cf337b8ef3f306
+      sha256: c8ab5256bbced698a729f3e0ff2cb0e8e97416cdbb082860370eaf883badf722
       url: "https://pub.dev"
     source: hosted
-    version: "4.1.5"
+    version: "4.3.1"
   horizontal_picker:
     dependency: "direct main"
     description:
@@ -1369,10 +1369,10 @@ packages:
     dependency: "direct main"
     description:
       name: image_gallery_saver
-      sha256: be812580c7a320d3bf583af89cac6b376f170d48000aca75215a73285a3223a0
+      sha256: "0aba74216a4d9b0561510cb968015d56b701ba1bd94aace26aacdd8ae5761816"
       url: "https://pub.dev"
     source: hosted
-    version: "1.7.1"
+    version: "2.0.3"
   image_picker:
     dependency: "direct main"
     description:
@@ -2106,18 +2106,18 @@ packages:
     dependency: "direct main"
     description:
       name: remove_emoji
-      sha256: "3cf5b2a4a26c2f05704e5c9676c782c3ccb711271bf774a3a18af019b6180f85"
+      sha256: ed9e8463e8c9ca05b86fcddd4c0dbd2c2605a50d267f4ffa05496607924809e3
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.7"
+    version: "0.0.10"
   restart_app:
     dependency: "direct main"
     description:
       name: restart_app
-      sha256: fed4f0756df1fd3a84dbb78fe35869f54ddb1e095604d5843bfc60b76e1398fd
+      sha256: b37daeb1c02fcab30e19d9e30b6fdd215bd53577efd927042eb77cf6f09daadb
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.2"
+    version: "1.2.1"
   rive:
     dependency: transitive
     description:
@@ -2303,10 +2303,10 @@ packages:
     dependency: "direct main"
     description:
       name: slide_countdown
-      sha256: "875af3ece988a1131a43636e78912f856d516cf7fdda3db403e0d3749e4bed71"
+      sha256: "8f45cff7c07b3f11825f52edae71e984888ccba918cef74eb479abeaa4665106"
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "0.6.0"
   sliding_up_panel:
     dependency: "direct main"
     description:
@@ -2399,10 +2399,10 @@ packages:
     dependency: transitive
     description:
       name: stream_duration
-      sha256: "7a3a6b268dfa7a8a884cda40fbe34a67c78b91ed217c257653be93fb9e1805a3"
+      sha256: a29e071bf3e5d284e1e7dce98dbbaf547e16543c4802ec4f1a5c74e516c71af5
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.0"
+    version: "3.2.1"
   stream_transform:
     dependency: transitive
     description:

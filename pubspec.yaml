@@ -324,7 +324,7 @@ dependencies:
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
   #https://pub.dev/packages/slide_countdown
-  slide_countdown: ^0.5.0
+  slide_countdown: ^0.6.0
   #https://pub.dev/packages/sqflite
   sqflite: ^2.3.0
   #https://pub.dev/packages/splash
@@ -343,25 +343,25 @@ dependencies:
   #https://pub.dev/packages/recase
   recase: ^4.1.0
   #https://pub.dev/packages/remove_emoji
-  remove_emoji: ^0.0.7
+  remove_emoji: ^0.0.10
   #https://pub.dev/packages/restart_app
-  restart_app: ^1.1.2
+  restart_app: ^1.2.1
   #https://pub.dev/packages/rxdart
   rxdart: ^0.27.7
 
   #https://pub.dev/packages/image_gallery_saver
-  image_gallery_saver: ^1.7.1
+  image_gallery_saver: ^2.0.3
   #https://pub.dev/packages/image_picker
   image_picker: ^0.8.7
   #https://pub.dev/packages/in_app_review
   in_app_review: ^2.0.6
   #https://pub.dev/packages/intl
-  intl: ^0.18.0
+  intl: ^0.18.1
   #https://pub.dev/packages/internet_connection_checker
   internet_connection_checker: ^1.0.0+1
 
   #https://pub.dev/packages/horizontal_data_table
-  horizontal_data_table: ^4.1.5
+  horizontal_data_table: ^4.3.1
   #https://pub.dev/packages/http
   http: ^0.13.5
 
