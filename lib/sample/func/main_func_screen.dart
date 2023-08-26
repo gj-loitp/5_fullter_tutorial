@@ -20,6 +20,7 @@ import 'flutter_image_compress/flutter_image_compress_screen.dart';
 import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
+import 'internet_file/internet_file_screen.dart';
 import 'nav/nav_screen.dart';
 import 'platform_device_id/platform_device_id_screen.dart';
 import 'random_string/random_string_screen.dart';
@@ -164,6 +165,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                   description:
                       "A pure Dart library that checks for internet by opening a socket to a list of specified addresses, each with individual port and timeout. Defaults are provided for convenience.",
+                ),
+                UIUtils.getButton(
+                  "internet_file",
+                  () {
+                    Get.to(() => InternetFileScreen());
+                  },
+                  description:
+                      "A internet file getter (also optional downloader) that works in all platforms",
                 ),
                 UIUtils.getButton(
                   "nav",
