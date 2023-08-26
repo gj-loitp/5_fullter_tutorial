@@ -4,7 +4,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:wakelock/wakelock.dart';
+import 'package:wakelock_plus/wakelock_plus.dart';
 
 /**
  * Created by Loitp on 08,August,2022
@@ -53,11 +53,11 @@ class _WakeLockScreenState extends BaseStatefulState<WakeLockScreen> {
               "The plugin allows you to enable and toggle the screen wakelock, which prevents the screen from turning off automatically."
               "Essentially, this allows you to keep the device awake, i.e. prevent the device from sleeping."),
           UIUtils.getButton("Enable", () {
-            Wakelock.enable();
+            WakelockPlus.enable();
             _show();
           }),
           UIUtils.getButton("Disable", () {
-            Wakelock.disable();
+            WakelockPlus.disable();
             _show();
           }),
         ],
@@ -66,7 +66,7 @@ class _WakeLockScreenState extends BaseStatefulState<WakeLockScreen> {
   }
 
   Future<void> _show() async {
-    bool wakelockEnabled = await Wakelock.enabled;
+    bool wakelockEnabled = await WakelockPlus.enabled;
     showSnackBarFull("Wakelock", "wakelockEnabled $wakelockEnabled");
   }
 }

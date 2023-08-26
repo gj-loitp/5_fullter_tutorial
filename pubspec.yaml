@@ -316,7 +316,7 @@ dependencies:
   #https://pub.dev/packages/scrollable_positioned_list
   scrollable_positioned_list: ^0.3.5
   #https://pub.dev/packages/share_plus
-  share_plus: ^6.3.1
+  share_plus: ^7.1.0
   #https://pub.dev/packages/simple_url_preview
 #  simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
@@ -372,7 +372,7 @@ dependencies:
   video_player: ^2.6.0
 
   #https://pub.dev/packages/package_info_plus
-  package_info_plus: ^3.0.3
+  package_info_plus: ^4.1.0
   #https://pub.dev/packages/panara_dialogs
   panara_dialogs: ^0.1.4
   #https://pub.dev/packages/path_provider
@@ -447,7 +447,9 @@ dependencies:
   vibration: ^1.7.6
 
   #https://pub.dev/packages/wakelock
-  wakelock: ^0.6.2
+#  wakelock: ^0.6.2
+  #https://pub.dev/packages/wakelock_plus
+  wakelock_plus: ^1.1.1
   #https://pub.dev/packages/wave
   wave: ^0.2.2
   #https://pub.dev/packages/webview_flutter
