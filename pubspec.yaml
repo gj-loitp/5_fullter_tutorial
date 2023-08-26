@@ -40,7 +40,7 @@ dependencies:
   #https://pub.dev/packages/badges
   badges: ^2.0.3 #migrate later
   #https://pub.dev/packages/battery_plus
-  battery_plus: ^3.0.3
+  battery_plus: ^4.0.2
   #https://pub.dev/packages/basic_utils
   basic_utils: ^5.5.3
   #https://pub.dev/packages/bottom_bar_with_sheet
