@@ -411,9 +411,9 @@ dependencies:
   #https://pub.dev/packages/shape_of_view_null_safe
   shape_of_view_null_safe: ^2.0.0
   #https://pub.dev/packages/smooth_page_indicator
-  smooth_page_indicator: ^1.0.1
+  smooth_page_indicator: ^1.1.0
   #https://pub.dev/packages/sidebarx
-  sidebarx: ^0.15.0
+  sidebarx: ^0.16.1
   #https://pub.dev/packages/skeleton_loader
   skeleton_loader: ^2.0.0+4
   #https://pub.dev/packages/sliding_up_panel
@@ -425,12 +425,12 @@ dependencies:
   #https://pub.dev/packages/swipe_cards
   swipe_cards: ^2.0.0+1
   #https://pub.dev/packages/syncfusion_flutter_gauges
-  syncfusion_flutter_gauges: ^21.1.37
+  syncfusion_flutter_gauges: ^22.2.10
 
   #https://pub.dev/packages/tiengviet
   tiengviet: ^0.5.0
   #https://pub.dev/packages/timeago
-  timeago: ^3.4.0
+  timeago: ^3.5.0
   #https://pub.dev/packages/timelines
   timelines: ^0.1.0
   #https://pub.dev/packages/toggle_switch

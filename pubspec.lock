@@ -2274,10 +2274,10 @@ packages:
     dependency: "direct main"
     description:
       name: sidebarx
-      sha256: "26a8392ceddb659c8f2c688beba6c04bcbf520b4d5decb143c5fd7253653081f"
+      sha256: e14796e2ac07e51ad27e19dc35e1316d6993d32faa27eb0b6008718a70a8fa99
       url: "https://pub.dev"
     source: hosted
-    version: "0.15.0"
+    version: "0.16.1"
   simple_animations:
     dependency: "direct overridden"
     description:
@@ -2319,10 +2319,10 @@ packages:
     dependency: "direct main"
     description:
       name: smooth_page_indicator
-      sha256: "8c301bc686892306cd41672c1880167f140c16be305d5ede8201fefd9fcda829"
+      sha256: "725bc638d5e79df0c84658e1291449996943f93bacbc2cec49963dbbab48d8ae"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "1.1.0"
   source_span:
     dependency: transitive
     description:
@@ -2439,18 +2439,18 @@ packages:
     dependency: transitive
     description:
       name: syncfusion_flutter_core
-      sha256: f23067e46b781d488abf8e22e5608ca9972b49562e95f9e46cb6134e968f721b
+      sha256: "438eb5008610df9dac9fe37263ea39f58f5e123fbe0f8c57b95b950a6424cae4"
       url: "https://pub.dev"
     source: hosted
-    version: "21.1.37"
+    version: "22.2.10"
   syncfusion_flutter_gauges:
     dependency: "direct main"
     description:
       name: syncfusion_flutter_gauges
-      sha256: "49e1a0be69b4a1a86435d8a80155b62a5dd107d16436e8d99d44238a08c60460"
+      sha256: "162874f1b3c0d207b661a309e21fad38fde65b2fa8d4622fa41de14d85e74748"
       url: "https://pub.dev"
     source: hosted
-    version: "21.1.37"
+    version: "22.2.10"
   synchronized:
     dependency: transitive
     description:
@@ -2495,10 +2495,10 @@ packages:
     dependency: "direct main"
     description:
       name: timeago
-      sha256: a415b9a05ef64b845c859a91161fc9f689f88eaaa4c04759517d201891b99e90
+      sha256: "4addcda362e51f23cf7ae2357fccd053f29d59b4ddd17fb07fc3e7febb47a456"
       url: "https://pub.dev"
     source: hosted
-    version: "3.4.0"
+    version: "3.5.0"
   timelines:
     dependency: "direct main"
     description:
