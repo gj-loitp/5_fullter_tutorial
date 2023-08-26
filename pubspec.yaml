@@ -147,11 +147,11 @@ dependencies:
   firebase_crashlytics: ^3.3.5
   firebase_remote_config: ^4.2.5
   #https://pub:dev/packages/file_picker
-  file_picker: ^5.2.6
+  file_picker: ^5.3.4
   #https://pub.dev/packages/flash
   flash: ^3.0.0-dev+1 #migrate later
   #https://pub.dev/packages/fl_chart
-  fl_chart: ^0.61.0
+  fl_chart: ^0.61.0 #migrate later
   #https://pub.dev/packages/flexible_calendar
   flexible_calendar: ^1.0.1
   #https://pub.dev/packages/floating_bubbles
