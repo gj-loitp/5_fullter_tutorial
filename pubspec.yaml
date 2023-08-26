@@ -56,7 +56,7 @@ dependencies:
   #https://pub.dev/packages/calendar_appbar
   calendar_appbar: ^0.0.6
   #https://pub.dev/packages/calendar_view
-  calendar_view: ^1.0.2
+  calendar_view: ^1.0.4
   #https://pub.dev/packages/carousel_slider
   carousel_slider: ^4.2.1
   #https://pub.dev/packages/circular_bottom_navigation
