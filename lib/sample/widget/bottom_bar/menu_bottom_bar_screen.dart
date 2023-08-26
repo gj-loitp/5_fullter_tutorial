@@ -8,6 +8,7 @@ import 'bottom_bar/bottom_app_bar_screen.dart';
 import 'bottom_bar_with_sheet/bottom_bar_with_sheet_screen.dart';
 import 'bottom_navy_bar/bottom_navy_bar_screen.dart';
 import 'circular_bottom_navigation/circular_bottom_navigation_screen.dart';
+import 'convex_bottom_bar/convex_bottom_bar_screen.dart';
 import 'curved_navigation_bar/curved_navigation_bar_screen.dart';
 import 'flutter_snake_navigationbar/flutter_snake_navigationbar_screen.dart';
 import 'tab_bar/tab_bar_screen.dart';
@@ -71,6 +72,14 @@ class MenuBottomBarScreen extends StatelessWidget {
             () {
               Get.to(BottomAppBarScreen());
             },
+          ),
+          UIUtils.getButton(
+            "convex_bottom_bar",
+            () {
+              Get.to(ConvexBottomBarScreen());
+            },
+            description:
+                "A Flutter package which implements a ConvexAppBar to show a convex tab in the bottom bar. Theming supported.",
           ),
           UIUtils.getButton(
             "curved_navigation_bar",
