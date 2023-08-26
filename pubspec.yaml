@@ -34,8 +34,8 @@ dependencies:
   auto_size_text: ^3.0.0
   #https://pub.dev/packages/app_settings
   app_settings: ^5.0.0
-  #https://pubdev/packages/awesome_dialog
-  awesome_dialog: ^3.0.2
+  #https://pub.dev/packages/awesome_dialog
+  awesome_dialog: ^3.1.0
 
   #https://pub.dev/packages/badges
   badges: ^2.0.3 #migrate later
