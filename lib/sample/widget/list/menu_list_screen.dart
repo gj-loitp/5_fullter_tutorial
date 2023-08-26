@@ -9,6 +9,7 @@ import 'draggable_scrollbar_demo/DraggableScrollbarDemoScreen.dart';
 import 'flutter_sticky_header/FlutterStickyHeaderScreen.dart';
 import 'grouped_list/grouped_list_screen.dart';
 import 'header_body_footer/HeaderBodyFooterScreen.dart';
+import 'infinite_scroll_pagination/infinite_scroll_pagination_screen.dart';
 import 'lazy_load_scroll_view/LazyLoadScrollViewScreen.dart';
 import 'list_body_widget/ListBodyScreen.dart';
 import 'list_random_words/RandomWordsScreen.dart';
@@ -69,6 +70,14 @@ class MenuListScreen extends StatelessWidget {
             },
             description:
                 "Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.",
+          ),
+          UIUtils.getButton(
+            "infinite_scroll_pagination",
+            () {
+              Get.to(() => InfiniteScrollPaginationScreen());
+            },
+            description:
+                "Lazily load and display pages of items as the user scrolls down your screen.",
           ),
           UIUtils.getButton(
             "grouped_list",
