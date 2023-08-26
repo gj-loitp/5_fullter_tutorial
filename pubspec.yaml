@@ -156,8 +156,10 @@ dependencies:
   fl_chart: ^0.61.0 #migrate later
   #https://pub.dev/packages/flexible_calendar
   flexible_calendar: ^1.0.1
+  #https://pub.dev/packages/flex_color_scheme
+  flex_color_scheme: ^7.3.1
   #https://pub.dev/packages/floating_bubbles
-  floating_bubbles: ^2.4.0
+  floating_bubbles: ^2.5.1
   #https://pub.dev/packages/flip_card
   flip_card: ^0.7.0
   #https://pub.dev/packages/flutter_animated_button

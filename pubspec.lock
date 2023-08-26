@@ -849,6 +849,22 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.5+1"
+  flex_color_scheme:
+    dependency: "direct main"
+    description:
+      name: flex_color_scheme
+      sha256: "32914024a4f404d90ff449f58d279191675b28e7c08824046baf06826e99d984"
+      url: "https://pub.dev"
+    source: hosted
+    version: "7.3.1"
+  flex_seed_scheme:
+    dependency: transitive
+    description:
+      name: flex_seed_scheme
+      sha256: "29c12aba221eb8a368a119685371381f8035011d18de5ba277ad11d7dfb8657f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.4.0"
   flexible_calendar:
     dependency: "direct main"
     description:
@@ -869,10 +885,10 @@ packages:
     dependency: "direct main"
     description:
       name: floating_bubbles
-      sha256: "3e93bda510ea31705e197072c551ae228da62ec6b4eb7a85101c540e6d9a2223"
+      sha256: a21f9c4e0247b1efb1f584320b459242952821585336119d3838c99ce5b5510e
       url: "https://pub.dev"
     source: hosted
-    version: "2.4.0"
+    version: "2.5.1"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -2885,4 +2901,4 @@ packages:
     version: "8.1.2"
 sdks:
   dart: ">=3.1.0-185.0.dev <4.0.0"
-  flutter: ">=3.10.0"
+  flutter: ">=3.13.0"
