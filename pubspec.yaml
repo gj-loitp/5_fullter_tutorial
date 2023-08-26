@@ -187,7 +187,7 @@ dependencies:
   #https://pub.dev/packages/flutter_native_splash
   flutter_native_splash: ^2.3.2
   #https://pub.dev/packages/flutter_offline
-  flutter_offline: ^2.1.0
+  flutter_offline: ^3.0.0
   #https://pub.dev/packages/flutter_image_compress
   flutter_image_compress: ^1.1.3
   #https://pub.dev/packages/flutter_rating_bar
@@ -195,7 +195,7 @@ dependencies:
   #https://pub.dev/packages/flutter_reaction_button
   flutter_reaction_button: ^1.0.8 #migrate later
   #https://pub.dev/packages/flutter_rounded_date_picker
-  flutter_rounded_date_picker: ^3.0.3
+  flutter_rounded_date_picker: ^3.0.4
   #https://pub.dev/packages/flutter_simple_treeview
   flutter_simple_treeview: ^3.0.2
   #https://pub.dev/packages/flutter_slidable

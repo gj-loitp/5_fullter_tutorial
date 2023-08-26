@@ -1023,10 +1023,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_offline
-      sha256: a72ae6c771e38482afe1ebf3b564158769fd90a6508ed3c995da56101bcfddc2
+      sha256: e8b34728ffa6391158190cd983ee942be1a8b7ce243013c323121cd8b0490e1b
       url: "https://pub.dev"
     source: hosted
-    version: "2.1.0"
+    version: "3.0.0"
   flutter_phoenix:
     dependency: "direct main"
     description:
@@ -1071,10 +1071,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_rounded_date_picker
-      sha256: e7143cc5cbf3aec1536286653e38b0809abc99fb76c91bd910dbd98ae003d890
+      sha256: e6aa2dc5d3b44e8bbe85ef901be69eac59ba4136427f11f4c8b2a303e1e774e7
       url: "https://pub.dev"
     source: hosted
-    version: "3.0.3"
+    version: "3.0.4"
   flutter_screen_lock:
     dependency: "direct main"
     description:
