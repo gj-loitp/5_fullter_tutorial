@@ -82,7 +82,7 @@ dependencies:
   #https://pub.dev/packages/cupertino_icons
   cupertino_icons: ^1.0.5
   #https://pub.dev/packages/crypto/install
-  crypto: ^3.0.2
+  crypto: ^3.0.3
   #https://pub.dev/packages/curved_navigation_bar
   curved_navigation_bar: ^1.0.3
   #https://pub.dev/packages/csslib
