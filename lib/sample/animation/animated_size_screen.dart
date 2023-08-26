@@ -56,7 +56,7 @@ class _AnimatedSizeWidgetState extends State<AnimatedSizeWidget>
                 height: height,
                 color: Colors.blue,
               ),
-              vsync: this,
+              // vsync: this,
             ),
           ),
         ),

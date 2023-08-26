@@ -1,6 +1,8 @@
 import 'dart:async';
 import 'dart:io';
 
+import 'package:applovin_max/applovin_max.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flash/flash.dart';
@@ -167,6 +169,9 @@ void main() async {
 
   final navigatorKey = GlobalKey<NavigatorState>();
 
+  //init applovin
+  initializePlugin();
+
   runApp(
     DevicePreview(
       enabled: kIsWeb,
@@ -214,4 +219,15 @@ void testLogger() {
   Dog.e("testLogger");
   Dog.v("testLogger");
   Dog.i("testLogger");
+}
+
+Future<void> initializePlugin() async {
+  Map? configuration = await AppLovinMAX.initialize(sdkKey);
+  if (configuration != null) {
+    Dog.i("initializePlugin success");
+    if (kDebugMode) {
+      Get.snackbar("Applovin",
+          "initializePlugin success (only show this msg in debug mode)");
+    }
+  }
 }

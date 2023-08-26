@@ -92,147 +92,165 @@ class _MyAppState extends State<MyApp> {
 
     actionItems.addAll([
       ListTile(
-          title: Text('Example Call With Callback'),
-          minVerticalPadding: 5.0,
-          onTap: (() {
-            AppSettings.openWIFISettings(callback: () {
-              print("sample callback function called");
-            });
-          })),
-      ListTile(
-          title: Text('WIFI'),
-          minVerticalPadding: 5.0,
-          onTap: (() {
-            AppSettings.openWIFISettings();
-          })),
-      ListTile(
-        title: Text("Location"),
+        title: Text('accessibility'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openLocationSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.accessibility);
         },
       ),
       ListTile(
-        title: Text("Security"),
+        title: Text('alarm'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openSecuritySettings();
+          AppSettings.openAppSettings(type: AppSettingsType.alarm);
         },
       ),
       ListTile(
-        title: Text("Lock & Password"),
+        title: Text('apn'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openLockAndPasswordSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.apn);
         },
       ),
       ListTile(
-        title: Text("App Settings"),
+        title: Text('batteryOptimization'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openAppSettings();
+          AppSettings.openAppSettings(
+              type: AppSettingsType.batteryOptimization);
         },
       ),
       ListTile(
-        title: Text("Bluetooth"),
+        title: Text('bluetooth'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openBluetoothSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.bluetooth);
         },
       ),
       ListTile(
-        title: Text("Data Roaming"),
+        title: Text('dataRoaming'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openDataRoamingSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.dataRoaming);
         },
       ),
       ListTile(
-        title: Text("Date"),
+        title: Text('date'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openDateSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.date);
         },
       ),
       ListTile(
-        title: Text("Display"),
+        title: Text('developer'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openDisplaySettings();
+          AppSettings.openAppSettings(type: AppSettingsType.developer);
         },
       ),
       ListTile(
-        title: Text("Notification"),
+        title: Text('device'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openNotificationSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.device);
         },
       ),
       ListTile(
-        title: Text("Sound"),
+        title: Text('display'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openSoundSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.display);
         },
       ),
       ListTile(
-        title: Text("Internal Storage"),
+        title: Text('hotspot'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openInternalStorageSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.hotspot);
         },
       ),
       ListTile(
-        title: Text("Battery optimization"),
+        title: Text('internalStorage'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openBatteryOptimizationSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.internalStorage);
         },
       ),
       ListTile(
-        title: Text("NFC"),
+        title: Text('location'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openNFCSettings();
+          AppSettings.openAppSettings(type: AppSettingsType.location);
         },
       ),
       ListTile(
-        title: Text("VPN"),
+        title: Text('lockAndPassword'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openVPNSettings(
-            asAnotherTask: true,
-          );
+          AppSettings.openAppSettings(type: AppSettingsType.lockAndPassword);
         },
       ),
       ListTile(
-        title: Text("Device Settings"),
+        title: Text('nfc'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openDeviceSettings(
-            asAnotherTask: true,
-          );
+          AppSettings.openAppSettings(type: AppSettingsType.nfc);
         },
       ),
       ListTile(
-        title: Text("Accessibility"),
+        title: Text('notification'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openAccessibilitySettings(
-            asAnotherTask: true,
-          );
+          AppSettings.openAppSettings(type: AppSettingsType.notification);
         },
       ),
       ListTile(
-        title: Text("Developer"),
+        title: Text('security'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openDevelopmentSettings(
-            asAnotherTask: true,
-          );
+          AppSettings.openAppSettings(type: AppSettingsType.security);
         },
       ),
       ListTile(
-        title: Text("Hotspot"),
+        title: Text('settings'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openHotspotSettings(
-            asAnotherTask: true,
-          );
+          AppSettings.openAppSettings(type: AppSettingsType.settings);
         },
       ),
       ListTile(
-        title: Text("APN"),
+        title: Text('sound'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openAPNSettings(asAnotherTask: true);
+          AppSettings.openAppSettings(type: AppSettingsType.sound);
         },
       ),
       ListTile(
-        title: Text("Alarm & Reminders"),
+        title: Text('subscriptions'),
+        minVerticalPadding: 5.0,
         onTap: () {
-          AppSettings.openAlarmSettings(asAnotherTask: true);
+          AppSettings.openAppSettings(type: AppSettingsType.subscriptions);
+        },
+      ),
+      ListTile(
+        title: Text('vpn'),
+        minVerticalPadding: 5.0,
+        onTap: () {
+          AppSettings.openAppSettings(type: AppSettingsType.vpn);
+        },
+      ),
+      ListTile(
+        title: Text('wifi'),
+        minVerticalPadding: 5.0,
+        onTap: () {
+          AppSettings.openAppSettings(type: AppSettingsType.wifi);
+        },
+      ),
+      ListTile(
+        title: Text('wireless'),
+        minVerticalPadding: 5.0,
+        onTap: () {
+          AppSettings.openAppSettings(type: AppSettingsType.wireless);
         },
       ),
     ]);
