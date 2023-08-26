@@ -1289,10 +1289,10 @@ packages:
     dependency: "direct main"
     description:
       name: horizontal_calendar
-      sha256: f7013e43006ffa1251befe956bc284e5357ad6ed3a6c24bd39c48875f0df47cd
+      sha256: "9e9450a61dba4afe8f8b3139d01ae49861a9846d2f43b74e9ab21773b4cbe0f2"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.2"
+    version: "1.1.2"
   horizontal_card_pager:
     dependency: "direct main"
     description:
@@ -1321,10 +1321,10 @@ packages:
     dependency: "direct main"
     description:
       name: hsv_color_pickers
-      sha256: "70becca80fe1f9561e51b23e403e9b09c5a4862ff90b6d36a52878dc94ad8284"
+      sha256: "3bfa978ad1ef2d19746c947aae37d4eb1a1dbab3ca4aa35d35005caf6b03560f"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.2"
+    version: "0.3.0"
   html:
     dependency: "direct main"
     description:
@@ -1337,10 +1337,10 @@ packages:
     dependency: "direct main"
     description:
       name: html2md
-      sha256: efa0a8e8544108734338dbb614821045aa118bcea3d4f14b3da41cf29659e6de
+      sha256: "6f50cec926b0a09816aadb66a59e4cda45c91fd00551e5a8298870069729b508"
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.6"
+    version: "1.3.1"
   http:
     dependency: "direct main"
     description:

@@ -235,17 +235,17 @@ dependencies:
   #https://pub.dev/packages/hexcolor
   hexcolor: ^3.0.1
   #https://pub.dev/packages/horizontal_calendar
-  horizontal_calendar: ^1.0.2
+  horizontal_calendar: ^1.1.2
   #https://pub.dev/packages/horizontal_card_pager
   horizontal_card_pager: ^1.1.1
   #https://pub.dev/packages/horizontal_picker
   horizontal_picker: ^1.2.0
   #https://pub.dev/packages/html
-  html: ^0.15.2
+  html: ^0.15.4
   #https://pub.dev/packages/html2md
-  html2md: ^1.2.6
+  html2md: ^1.3.1
   #https://pub.dev/packages/hsv_color_pickers
-  hsv_color_pickers: ^0.2.2
+  hsv_color_pickers: ^0.3.0
 
   #  latlong: ^0.6.1
   #  latlong2: ^0.8.1
