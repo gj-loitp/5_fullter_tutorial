@@ -23,10 +23,15 @@ enum AdLoadState { notLoaded, loading, loaded }
 const String sdkKey =
     "e75FnQfS9XTTqM1Kne69U7PW_MBgAnGQTFvtwVVui6kRPKs5L7ws9twr5IQWwVfzPKZ5pF2IfDa7lguMgGlCyt";
 
-final String interstitialAdUnitId =
+final String _interstitialAdUnitId =
     Platform.isAndroid ? "f4a542a4bda4c5f1" : "IOS_INTER_AD_UNIT_ID";
-final String bannerAdUnitId =
+final String _bannerAdUnitId =
     Platform.isAndroid ? "aed1455d708c540e" : "IOS_BANNER_AD_UNIT_ID";
+
+final interstitialAdUnitId =
+    (kDebugMode) ? ("${_interstitialAdUnitId}_debug") : _interstitialAdUnitId;
+final bannerAdUnitId =
+    (kDebugMode) ? ("${_bannerAdUnitId}_debug") : _bannerAdUnitId;
 
 var _isInitialized = false;
 var _interstitialLoadState = AdLoadState.notLoaded;
@@ -83,13 +88,13 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           ElevatedButton(
             onPressed: _isInitialized
                 ? () {
-              if (kDebugMode) {
-                AppLovinMAX.showMediationDebugger();
-              } else {
-                showSnackBarFull(
-                    "Applovin", "Only available in debug mode");
-              }
-            }
+                    if (kDebugMode) {
+                      AppLovinMAX.showMediationDebugger();
+                    } else {
+                      showSnackBarFull(
+                          "Applovin", "Only available in debug mode");
+                    }
+                  }
                 : null,
             child: const Text("Mediation Debugger"),
           ),
@@ -119,31 +124,31 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           ElevatedButton(
             onPressed: (_isInitialized && !_isWidgetBannerShowing)
                 ? () async {
-              if (_isProgrammaticBannerShowing) {
-                AppLovinMAX.hideBanner(bannerAdUnitId);
-              } else {
-                if (!_isProgrammaticBannerCreated) {
-                  //
-                  // Programmatic banner creation - banners are automatically sized to 320x50 on phones and 728x90 on tablets
-                  //
-                  AppLovinMAX.createBanner(
-                      bannerAdUnitId, AdViewPosition.bottomCenter);
+                    if (_isProgrammaticBannerShowing) {
+                      AppLovinMAX.hideBanner(bannerAdUnitId);
+                    } else {
+                      if (!_isProgrammaticBannerCreated) {
+                        //
+                        // Programmatic banner creation - banners are automatically sized to 320x50 on phones and 728x90 on tablets
+                        //
+                        AppLovinMAX.createBanner(
+                            bannerAdUnitId, AdViewPosition.bottomCenter);
 
-                  // Set banner background color to black - PLEASE USE HEX STRINGS ONLY
-                  AppLovinMAX.setBannerBackgroundColor(
-                      bannerAdUnitId, '#ff0000');
+                        // Set banner background color to black - PLEASE USE HEX STRINGS ONLY
+                        AppLovinMAX.setBannerBackgroundColor(
+                            bannerAdUnitId, '#ff0000');
 
-                  _isProgrammaticBannerCreated = true;
-                }
+                        _isProgrammaticBannerCreated = true;
+                      }
 
-                AppLovinMAX.showBanner(bannerAdUnitId);
-              }
+                      AppLovinMAX.showBanner(bannerAdUnitId);
+                    }
 
-              setState(() {
-                _isProgrammaticBannerShowing =
-                !_isProgrammaticBannerShowing;
-              });
-            }
+                    setState(() {
+                      _isProgrammaticBannerShowing =
+                          !_isProgrammaticBannerShowing;
+                    });
+                  }
                 : null,
             child: Text(getProgrammaticBannerButtonTitle()),
           ),
@@ -152,10 +157,10 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           ElevatedButton(
             onPressed: (_isInitialized && !_isProgrammaticBannerShowing)
                 ? () async {
-              setState(() {
-                _isWidgetBannerShowing = !_isWidgetBannerShowing;
-              });
-            }
+                    setState(() {
+                      _isWidgetBannerShowing = !_isWidgetBannerShowing;
+                    });
+                  }
                 : null,
             child: Text(getWidgetBannerButtonTitle()),
           ),
