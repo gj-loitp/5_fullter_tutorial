@@ -15,7 +15,7 @@ dependencies:
   #https://pub.dev/packages/applovin_max
   applovin_max: ^3.1.2
   #https://pub.dev/packages/advance_pdf_viewer
-  advance_pdf_viewer: ^2.0.1
+#  advance_pdf_viewer: ^2.0.1
   #https://pub.dev/packages/after_layout
   after_layout: ^1.2.0
   #https://pub.dev/packages/animated_background
@@ -361,6 +361,7 @@ dependencies:
   #https://pub.dev/packages/rxdart
   rxdart: ^0.27.7
 
+  ##i
   #https://pub.dev/packages/infinite_scroll_pagination
   infinite_scroll_pagination: ^4.0.0
   #https://pub.dev/packages/image_gallery_saver
@@ -373,6 +374,8 @@ dependencies:
   intl: ^0.18.1
   #https://pub.dev/packages/internet_connection_checker
   internet_connection_checker: ^1.0.0+1
+  #https://pub.dev/packages/internet_file
+  internet_file: ^1.2.0
 
   #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.3.1
@@ -473,10 +476,16 @@ dependencies:
   #https://pub.dev/packages/wechat_camera_picker
   wechat_camera_picker: ^4.0.0
 
+  ##y
   #https://pub.dev/packages/youtube_player_flutter
   youtube_player_flutter: ^8.1.2
 
+  ##t
   tiledjsonreader: ^1.2.7
+
+  ##p
+  #https://pub.dev/packages/pdfx
+  pdfx: ^2.4.0
 
 dependency_overrides:
   intl: ^0.18.1

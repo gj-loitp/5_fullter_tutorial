@@ -3,6 +3,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/pdf_text/pdf_text_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/pdfx/pdfx_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/recase/recase_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/remove_emoji/remove_emoji_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/scanner/menu_scanner_screen.dart';
@@ -13,7 +14,6 @@ import 'package:get/get.dart';
 import '../../lib/util/log_dog_utils.dart';
 import '../../lib/util/url_launcher_utils.dart';
 import '../applovin/applovin_screen.dart';
-import 'advance_pdf_viewer/advance_pdf_viewer_screen.dart';
 import 'battery_plus/battery_plus_screen.dart';
 import 'clipboard/clipboard_screen.dart';
 import 'connectivity_plus/connectivity_plus_screen.dart';
@@ -77,12 +77,6 @@ class MenuDemoScreen extends StatelessWidget {
               padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
               physics: BouncingScrollPhysics(),
               children: [
-                UIUtils.getButton(
-                  "AdvancePDFViewerScreen",
-                  () {
-                    Get.to(() => AdvancePDFViewerScreen());
-                  },
-                ),
                 UIUtils.getButton(
                   "battery_plus",
                   () {
@@ -305,12 +299,20 @@ class MenuDemoScreen extends StatelessWidget {
                       "This plugin for Flutter allows you to read the text content of PDF documents and convert it into strings. It works on iOS and Android.",
                 ),
                 UIUtils.getButton(
+                  "pdfx",
+                  () {
+                    Get.to(() => PdfxScreen());
+                  },
+                  description:
+                      "This plugin for Flutter allows you to read the text content of PDF documents and convert it into strings. It works on iOS and Android.",
+                ),
+                UIUtils.getButton(
                   "permission_handler",
                   () {
                     Get.to(() => PermissionHandlerScreen());
                   },
                   description:
-                      "Permission plugin for Flutter. This plugin provides a cross-platform (iOS, Android) API to request and check permissions.",
+                      "Flutter plugin to render & show PDF pages as images on Web, MacOS, Windows, Android and iOS.",
                 ),
                 UIUtils.getButton(
                   "recase",
