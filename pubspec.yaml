@@ -207,7 +207,7 @@ dependencies:
   #https://pub.dev/packages/flutter_snake_navigationbar
   flutter_snake_navigationbar: ^0.6.1
   #https://pub.dev/packages/flutter_staggered_grid_view
-  flutter_staggered_grid_view: ^0.4.1 #migrate later
+  flutter_staggered_grid_view: ^0.7.0
   #https://pub.dev/packages/flutter_svg
   flutter_svg: ^1.1.6 #migrate later
   #https://pub.dev/packages/flutter_speed_dial
@@ -349,6 +349,8 @@ dependencies:
   #https://pub.dev/packages/rxdart
   rxdart: ^0.27.7
 
+  #https://pub.dev/packages/infinite_scroll_pagination
+  infinite_scroll_pagination: ^4.0.0
   #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^2.0.3
   #https://pub.dev/packages/image_picker
