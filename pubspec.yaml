@@ -377,10 +377,11 @@ dependencies:
   #https://pub.dev/packages/internet_file
   internet_file: ^1.2.0
 
+  ##h
   #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.3.1
   #https://pub.dev/packages/http
-  http: ^0.13.5
+  http: ^1.1.0
 
   #https://pub.dev/packages/kenburns_nullsafety
   kenburns_nullsafety: ^1.0.0
@@ -494,6 +495,7 @@ dependency_overrides:
   network_info_plus: ^4.0.1
 #  ordered_set: ^5.0.1
   simple_animations: ^5.0.2
+  http: ^0.13.5
 
 dev_dependencies:
   flutter_test:
