@@ -8,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'csslib/csslib_screen.dart';
+import 'flutter_markdown/flutter_markdown_screen.dart';
 import 'html/html_screen.dart';
 
 /**
@@ -41,6 +42,14 @@ class MenuWebviewScreen extends StatelessWidget {
               },
               description:
                   "A library for parsing and analyzing CSS (Cascading Style Sheets)",
+            ),
+            UIUtils.getButton(
+              "flutter_markdown",
+              () {
+                Get.to(() => FlutterMarkdownScreen());
+              },
+              description:
+                  "A Markdown renderer for Flutter. Create rich text output, including text styles, tables, links, and more, from plain text data formatted with simple Markdown tags.",
             ),
             UIUtils.getButton(
               "html",
