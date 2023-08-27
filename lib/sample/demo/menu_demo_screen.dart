@@ -31,6 +31,7 @@ import 'flutter_bloc/menu_flutter_block_screen.dart';
 import 'flutter_local_notifications/flutter_local_notifications_screen.dart';
 import 'flutter_offline/flutter_offline_screen.dart';
 import 'flutter_screen_lock/flutter_screen_lock_screen.dart';
+import 'flutter_screenutil/flutter_screenutil_screen.dart';
 import 'focus_detector/focus_detector_screen.dart';
 import 'getx/get_x_screen.dart';
 import 'html2md/html2md_screen.dart';
@@ -222,6 +223,14 @@ class MenuDemoScreen extends StatelessWidget {
                   },
                   description:
                       "Provides the ability to lock the screen on ios and android. Biometric authentication can be used in addition to passcode.",
+                ),
+                UIUtils.getButton(
+                  "flutter_screenutil",
+                  () {
+                    Get.to(() => FlutterScreenutilScreen());
+                  },
+                  description:
+                      "A flutter plugin for adapting screen and font size.Guaranteed to look good on different models",
                 ),
                 UIUtils.getButton(
                   "focus_detector",
