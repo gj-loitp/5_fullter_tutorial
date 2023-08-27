@@ -15,7 +15,7 @@ dependencies:
   #https://pub.dev/packages/applovin_max
   applovin_max: ^3.1.2
   #https://pub.dev/packages/advance_pdf_viewer
-  advance_pdf_viewer: ^2.0.1
+#  advance_pdf_viewer: ^2.0.1
   #https://pub.dev/packages/after_layout
   after_layout: ^1.2.0
   #https://pub.dev/packages/animated_background
@@ -26,6 +26,8 @@ dependencies:
   animated_text_kit: ^4.2.2
   #https://pub.dev/packages/animated_toggle_switch
   animated_toggle_switch: ^0.7.0
+  #https://pub.dev/packages/animations
+  animations: ^2.0.7
   #https://pub.dev/packages/another_flushbar
   another_flushbar: ^1.12.30
   #https://pub.dev/packages/avatar_glow
@@ -71,6 +73,8 @@ dependencies:
   confetti: ^0.7.0
   #https://pub.dev/packages/connectivity_plus
   connectivity_plus: ^4.0.2
+  #https://pub.dev/packages/convex_bottom_bar
+  convex_bottom_bar: ^3.2.0
   #https://pub.dev/packages/country_picker
   country_picker: ^2.0.20
   #https://pub.dev/packages/clay_containers
@@ -132,8 +136,11 @@ dependencies:
   #https://pub.dev/packages/equatable
   equatable: ^2.0.5
 
+  ##f
   #https://pub.dev/packages/fast_color_picker
   fast_color_picker: ^0.1.1
+  #https://pub.dev/packages/feedback
+  feedback: ^2.6.0
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
   #https://pub.dev/packages/folding_cell
@@ -149,13 +156,17 @@ dependencies:
   #https://pub:dev/packages/file_picker
   file_picker: ^5.3.4
   #https://pub.dev/packages/flash
-  flash: ^3.0.0-dev+1 #migrate later
+  flash: ^3.0.5+1
   #https://pub.dev/packages/fl_chart
   fl_chart: ^0.61.0 #migrate later
   #https://pub.dev/packages/flexible_calendar
   flexible_calendar: ^1.0.1
+  #https://pub.dev/packages/flex_color_scheme
+  flex_color_scheme: ^7.3.1
+  # https://pub.dev/packages/flex_color_picker
+  flex_color_picker: ^3.3.0
   #https://pub.dev/packages/floating_bubbles
-  floating_bubbles: ^2.4.0
+  floating_bubbles: ^2.5.1
   #https://pub.dev/packages/flip_card
   flip_card: ^0.7.0
   #https://pub.dev/packages/flutter_animated_button
@@ -172,6 +183,8 @@ dependencies:
   flutter_drawing_board: ^0.4.4+2
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
+  #https://pub.dev/packages/flutter_email_sender
+  flutter_email_sender: ^6.0.1
   #https://pub.dev/packages/flutter_html
   #flutter_html: ^2.2.1
   #https://pub.dev/packages/flutter_file_view
@@ -182,6 +195,8 @@ dependencies:
   flutter_linkify: ^6.0.0
   #https://pub.dev/packages/flutter_map
   #  flutter_map: ^3.1.0
+  #https://pub.dev/packages/flutter_markdown
+  flutter_markdown: ^0.6.17+1
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash
@@ -196,6 +211,8 @@ dependencies:
   flutter_reaction_button: ^1.0.8 #migrate later
   #https://pub.dev/packages/flutter_rounded_date_picker
   flutter_rounded_date_picker: ^3.0.4
+  #https://pub.dev/packages/flutter_riverpod
+  flutter_riverpod: ^2.3.7
   #https://pub.dev/packages/flutter_simple_treeview
   flutter_simple_treeview: ^3.0.2
   #https://pub.dev/packages/flutter_slidable
@@ -227,8 +244,9 @@ dependencies:
   #https://pub.dev/packages/flutter_toggle_tab
   flutter_toggle_tab: ^1.4.1
 
+  ##g
   #https://pub.dev/packages/google_fonts
-  google_fonts: ^4.0.3
+  google_fonts: ^5.1.0
   #https://pub.dev/packages/grouped_list
   grouped_list: ^5.1.2
 
@@ -246,6 +264,8 @@ dependencies:
   html2md: ^1.3.1
   #https://pub.dev/packages/hsv_color_pickers
   hsv_color_pickers: ^0.3.0
+  #https://pub.dev/packages/hive
+  hive: ^2.2.3
 
   #  latlong: ^0.6.1
   #  latlong2: ^0.8.1
@@ -306,6 +326,7 @@ dependencies:
   #https://pub.dev/packages/url_launcher
   url_launcher: ^6.1.12
 
+  ##q
   #https://pub.dev/packages/qr_code_scanner
   qr_code_scanner: ^1.0.1
   #https://pub.dev/packages/qr_flutter
@@ -349,6 +370,7 @@ dependencies:
   #https://pub.dev/packages/rxdart
   rxdart: ^0.27.7
 
+  ##i
   #https://pub.dev/packages/infinite_scroll_pagination
   infinite_scroll_pagination: ^4.0.0
   #https://pub.dev/packages/image_gallery_saver
@@ -361,11 +383,14 @@ dependencies:
   intl: ^0.18.1
   #https://pub.dev/packages/internet_connection_checker
   internet_connection_checker: ^1.0.0+1
+  #https://pub.dev/packages/internet_file
+  internet_file: ^1.2.0
 
+  ##h
   #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.3.1
   #https://pub.dev/packages/http
-  http: ^0.13.5
+  http: ^1.1.0
 
   #https://pub.dev/packages/kenburns_nullsafety
   kenburns_nullsafety: ^1.0.0
@@ -461,10 +486,16 @@ dependencies:
   #https://pub.dev/packages/wechat_camera_picker
   wechat_camera_picker: ^4.0.0
 
+  ##y
   #https://pub.dev/packages/youtube_player_flutter
   youtube_player_flutter: ^8.1.2
 
+  ##t
   tiledjsonreader: ^1.2.7
+
+  ##p
+  #https://pub.dev/packages/pdfx
+  pdfx: ^2.4.0
 
 dependency_overrides:
   intl: ^0.18.1
@@ -473,6 +504,7 @@ dependency_overrides:
   network_info_plus: ^4.0.1
 #  ordered_set: ^5.0.1
   simple_animations: ^5.0.2
+  http: ^0.13.5
 
 dev_dependencies:
   flutter_test:

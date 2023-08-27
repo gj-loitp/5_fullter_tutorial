@@ -16,10 +16,13 @@ import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'device_preview/device_preview_screen.dart';
 import 'email_validator/email_validator_screen.dart';
+import 'feedback/feedback_screen.dart';
+import 'flutter_email_sender/flutter_email_sender_screen.dart';
 import 'flutter_image_compress/flutter_image_compress_screen.dart';
 import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
 import 'internet_connection_checker/internet_connection_checker_screen.dart';
+import 'internet_file/internet_file_screen.dart';
 import 'nav/nav_screen.dart';
 import 'platform_device_id/platform_device_id_screen.dart';
 import 'random_string/random_string_screen.dart';
@@ -125,6 +128,22 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                       "A simple (but correct) dart class for validating email addresses.",
                 ),
                 UIUtils.getButton(
+                  "feedback",
+                  () {
+                    Get.to(() => FeedbackScreen());
+                  },
+                  description:
+                      "A Flutter package for getting better feedback. It allows the user to give interactive feedback directly in the app.",
+                ),
+                UIUtils.getButton(
+                  "flutter_email_sender",
+                  () {
+                    Get.to(() => FlutterEmailSenderScreen());
+                  },
+                  description:
+                      "Allows send emails from flutter using native platform functionality.",
+                ),
+                UIUtils.getButton(
                   "flutter_app_name",
                   () {
                     UrlLauncherUtils.launchInWebViewWithJavaScript(
@@ -164,6 +183,23 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                   description:
                       "A pure Dart library that checks for internet by opening a socket to a list of specified addresses, each with individual port and timeout. Defaults are provided for convenience.",
+                ),
+                UIUtils.getButton(
+                  "internet_file",
+                  () {
+                    Get.to(() => InternetFileScreen());
+                  },
+                  description:
+                      "A internet file getter (also optional downloader) that works in all platforms",
+                ),
+                UIUtils.getButton(
+                  "intl",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript(
+                        "https://pub.dev/packages/intl");
+                  },
+                  description:
+                      "Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.",
                 ),
                 UIUtils.getButton(
                   "nav",

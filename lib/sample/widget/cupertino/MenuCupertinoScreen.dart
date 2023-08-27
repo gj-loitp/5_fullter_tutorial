@@ -3,6 +3,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../../../lib/util/url_launcher_utils.dart';
 import 'CupertinoActionSheetScreen.dart';
 import 'CupertinoSegmentedControlScreen.dart';
 import 'CupertinoTimerPickerScreen.dart';
@@ -32,6 +33,12 @@ class MenuCupertinoScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
+            UIUtils.getButton("cupertino_icons", () {
+              UrlLauncherUtils.launchInWebViewWithJavaScript(
+                  "https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants");
+            },
+                description:
+                    'Default icons asset for Cupertino widgets based on Apple styled icons'),
             UIUtils.getButton(
               "CupertinoActionSheetScreen",
               () {

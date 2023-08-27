@@ -3,6 +3,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'hive/hive_screen.dart';
 import 'shared_preferences/shared_preferences_screen.dart';
 import 'sqflite/sqlite_demo_screen.dart';
 
@@ -19,9 +20,7 @@ class MenuDatabaseScreen extends StatelessWidget {
     return Scaffold(
       appBar: UIUtils.getAppBar(
         "MenuDatabaseScreen",
-        () => {
-          Get.back(),
-        },
+        () => Get.back(),
         null,
       ),
       body: ListView(
@@ -29,17 +28,18 @@ class MenuDatabaseScreen extends StatelessWidget {
         padding: EdgeInsets.all(DimenConstants.marginPaddingMedium),
         children: [
           UIUtils.getButton(
-            "SharedPreferencesScreen",
-            () => {
-              Get.to(() => SharedPreferencesScreen()),
-            },
+            "Hive",
+            () => Get.to(() => HiveScreen()),
+            description:
+                "Lightweight and blazing fast key-value database written in pure Dart. Strongly encrypted using AES-256.",
           ),
-          UIUtils.getButton(
-            "sqflite",
-            () => {
-              Get.to(() => SQLiteDemoScreen()),
-            },
-          ),
+          UIUtils.getButton("SharedPreferencesScreen",
+              () => Get.to(() => SharedPreferencesScreen()),
+              description:
+                  'Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.'),
+          UIUtils.getButton("sqflite", () => Get.to(() => SQLiteDemoScreen()),
+              description:
+                  'Flutter plugin for SQLite, a self-contained, high-reliability, embedded, SQL database engine.'),
         ],
       ),
     );
