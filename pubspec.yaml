@@ -136,8 +136,11 @@ dependencies:
   #https://pub.dev/packages/equatable
   equatable: ^2.0.5
 
+  ##f
   #https://pub.dev/packages/fast_color_picker
   fast_color_picker: ^0.1.1
+  #https://pub.dev/packages/feedback
+  feedback: ^2.6.0
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
   #https://pub.dev/packages/folding_cell
@@ -237,8 +240,9 @@ dependencies:
   #https://pub.dev/packages/flutter_toggle_tab
   flutter_toggle_tab: ^1.4.1
 
+  ##g
   #https://pub.dev/packages/google_fonts
-  google_fonts: ^4.0.3
+  google_fonts: ^5.1.0
   #https://pub.dev/packages/grouped_list
   grouped_list: ^5.1.2
 
@@ -318,6 +322,7 @@ dependencies:
   #https://pub.dev/packages/url_launcher
   url_launcher: ^6.1.12
 
+  ##q
   #https://pub.dev/packages/qr_code_scanner
   qr_code_scanner: ^1.0.1
   #https://pub.dev/packages/qr_flutter

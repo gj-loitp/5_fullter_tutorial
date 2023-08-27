@@ -721,6 +721,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.1.1"
+  feedback:
+    dependency: "direct main"
+    description:
+      name: feedback
+      sha256: a3a18af1d490b1e172cc354f1270760d14d2d0d5bb65e2d3710565de88507f33
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.6.0"
   ffi:
     dependency: transitive
     description:
@@ -1329,10 +1337,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_fonts
-      sha256: "927573f2e8a8d65c17931e21918ad0ab0666b1b636537de7c4932bdb487b190f"
+      sha256: e20ff62b158b96f392bfc8afe29dee1503c94fbea2cbe8186fd59b756b8ae982
       url: "https://pub.dev"
     source: hosted
-    version: "4.0.3"
+    version: "5.1.0"
   graphs:
     dependency: transitive
     description:
