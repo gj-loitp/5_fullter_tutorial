@@ -184,7 +184,7 @@ dependencies:
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
   #https://pub.dev/packages/flutter_email_sender
-  flutter_email_sender: ^5.1.0
+  flutter_email_sender: ^6.0.1
   #https://pub.dev/packages/flutter_html
   #flutter_html: ^2.2.1
   #https://pub.dev/packages/flutter_file_view
@@ -196,7 +196,7 @@ dependencies:
   #https://pub.dev/packages/flutter_map
   #  flutter_map: ^3.1.0
   #https://pub.dev/packages/flutter_markdown
-  flutter_markdown: ^0.6.2
+  flutter_markdown: ^0.6.17+1
   #https://pub.dev/packages/flutter_native_timezone
   flutter_native_timezone: ^2.0.0
   #https://pub.dev/packages/flutter_native_splash

@@ -1026,10 +1026,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_email_sender
-      sha256: "9e253c69617f43d4cb5de672e93a7a19c12a21fb6a75e66c6ce7626336c4c1bc"
+      sha256: "52b713a67a966be4d9e6f68a323fc0a5bc2da71c567eb451af1aa90d30adbc3a"
       url: "https://pub.dev"
     source: hosted
-    version: "5.2.0"
+    version: "6.0.1"
   flutter_hsvcolor_picker:
     dependency: transitive
     description:
