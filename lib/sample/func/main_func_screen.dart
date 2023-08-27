@@ -175,6 +175,15 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                       "A internet file getter (also optional downloader) that works in all platforms",
                 ),
                 UIUtils.getButton(
+                  "intl",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript(
+                        "https://pub.dev/packages/intl");
+                  },
+                  description:
+                      "Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.",
+                ),
+                UIUtils.getButton(
                   "nav",
                   () {
                     Get.to(() => NavScreen());
