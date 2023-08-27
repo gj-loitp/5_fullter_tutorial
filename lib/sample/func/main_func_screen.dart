@@ -16,6 +16,7 @@ import 'characters/characters_screen.dart';
 import 'communication_between_widget/communication_between_widget_screen.dart';
 import 'device_preview/device_preview_screen.dart';
 import 'email_validator/email_validator_screen.dart';
+import 'feedback/feedback_screen.dart';
 import 'flutter_image_compress/flutter_image_compress_screen.dart';
 import 'flutter_phoenix/flutter_phoenix_screen.dart';
 import 'hexcolor/hexcolor_screen.dart';
@@ -124,6 +125,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                   description:
                       "A simple (but correct) dart class for validating email addresses.",
+                ),
+                UIUtils.getButton(
+                  "feedback",
+                  () {
+                    Get.to(() => FeedbackScreen());
+                  },
+                  description:
+                      "A Flutter package for getting better feedback. It allows the user to give interactive feedback directly in the app.",
                 ),
                 UIUtils.getButton(
                   "flutter_app_name",
