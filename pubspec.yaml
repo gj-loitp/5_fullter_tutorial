@@ -471,7 +471,7 @@ dependencies:
   #https://pub.dev/packages/vertical_card_pager
   vertical_card_pager: ^1.5.0
   #https://pub.dev/packages/vibration
-  vibration: ^1.8.1
+  vibration: ^1.8.2
 
   #https://pub.dev/packages/wakelock
 #  wakelock: ^0.6.2
@@ -501,10 +501,10 @@ dependency_overrides:
   intl: ^0.18.1
 #  qr: ^2.0.0
 #  connectivity_plus: ^3.0.3
-  network_info_plus: ^4.0.1
+  network_info_plus: ^4.0.2
 #  ordered_set: ^5.0.1
   simple_animations: ^5.0.2
-  http: ^0.13.5
+  http: ^1.1.0
 
 dev_dependencies:
   flutter_test:
