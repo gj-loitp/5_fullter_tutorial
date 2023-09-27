@@ -1854,14 +1854,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.2"
-  one_target_mobile_sdk:
-    dependency: "direct main"
-    description:
-      name: one_target_mobile_sdk
-      sha256: "44a15cd49725802713b8b775e21618ee1a2b20e3122464bad562b54acc1ba862"
-      url: "https://pub.dev"
-    source: hosted
-    version: "0.0.28"
   otp_text_field:
     dependency: "direct main"
     description:

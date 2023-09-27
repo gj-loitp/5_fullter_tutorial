@@ -312,7 +312,7 @@ dependencies:
   #https://pub.dev/packages/octo_image
   octo_image: ^1.0.2
   #https://pub.dev/packages/one_target_mobile_sdk
-  one_target_mobile_sdk: ^0.0.28
+#  one_target_mobile_sdk: ^0.0.28
   #https://pub.dev/packages/overflow_view
   overflow_view: ^0.3.1
   #https://pub.dev/packages/otp_text_field
