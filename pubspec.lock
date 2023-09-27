@@ -1018,18 +1018,18 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_email_sender
-      sha256: "52b713a67a966be4d9e6f68a323fc0a5bc2da71c567eb451af1aa90d30adbc3a"
+      sha256: "5001e9158f91a8799140fb30a11ad89cd587244f30b4f848d87085985c49b60f"
       url: "https://pub.dev"
     source: hosted
-    version: "6.0.1"
+    version: "6.0.2"
   flutter_hsvcolor_picker:
     dependency: transitive
     description:
       name: flutter_hsvcolor_picker
-      sha256: "5612d51d3f826f7c7f5cb8c2462a9d13f2b71884f4765aaf69f04e3ee06a18bf"
+      sha256: ea5868dbb1c840ef502bbf60168b26e18eab13a3a2b07bfef0c59a64e7fedc2c
       url: "https://pub.dev"
     source: hosted
-    version: "1.2.3"
+    version: "1.5.0"
   flutter_image_compress:
     dependency: "direct main"
     description:
@@ -1087,10 +1087,10 @@ packages:
     dependency: "direct main"
     description:
       name: flutter_markdown
-      sha256: "2b206d397dd7836ea60035b2d43825c8a303a76a5098e66f42d55a753e18d431"
+      sha256: a10979814c5f4ddbe2b6143fba25d927599e21e3ba65b3862995960606fae78f
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.17+1"
+    version: "0.6.17+3"
   flutter_native_splash:
     dependency: "direct main"
     description:
