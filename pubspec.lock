@@ -605,10 +605,10 @@ packages:
     dependency: "direct main"
     description:
       name: drag_select_grid_view
-      sha256: "2d9fff9404fe7a689fa35e81950f908a7c4e2efd28e86ab10cbc767c6e69d7d7"
+      sha256: cfca7bf84b26e14cc9ca857bb1a766461ea8de49134f188b7b181c1afa75af3a
       url: "https://pub.dev"
     source: hosted
-    version: "0.6.1"
+    version: "0.6.2"
   draggable_scrollbar:
     dependency: "direct main"
     description:
