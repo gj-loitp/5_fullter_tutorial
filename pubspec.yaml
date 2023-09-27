@@ -128,7 +128,7 @@ dependencies:
   #https://pub.dev/packages/email_validator
   email_validator: ^2.1.17
   #https://pub.dev/packages/encrypt
-  encrypt: ^5.0.1
+  encrypt: ^5.0.3
   #https://pub.dev/packages/english_words
   english_words: ^4.0.0
   #https://pub.dev/packages/event_bus
@@ -149,10 +149,10 @@ dependencies:
   fk_toggle: ^0.1.4
   #https://pub.dev/packages/font_awesome_flutter
   font_awesome_flutter: ^10.5.0
-  firebase_core: ^2.15.1
-  firebase_analytics: ^10.4.5
-  firebase_crashlytics: ^3.3.5
-  firebase_remote_config: ^4.2.5
+  firebase_core: ^2.16.0
+  firebase_analytics: ^10.5.0
+  firebase_crashlytics: ^3.3.6
+  firebase_remote_config: ^4.2.6
   #https://pub:dev/packages/file_picker
   file_picker: ^5.3.4
   #https://pub.dev/packages/flash
