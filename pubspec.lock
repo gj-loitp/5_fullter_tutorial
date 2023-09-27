@@ -317,10 +317,10 @@ packages:
     dependency: "direct main"
     description:
       name: chewie
-      sha256: "60701da1f22ed20cd2d40e856fd1f2249dacf5b629d9fa50676443a18a4857b8"
+      sha256: ccfce3350ae9fd419cd336cdf3380f77a08e45171e1e3cb3d499d204de5e7ea8
       url: "https://pub.dev"
     source: hosted
-    version: "1.7.0"
+    version: "1.7.1"
   circular_bottom_navigation:
     dependency: "direct main"
     description:
