@@ -35,7 +35,7 @@ dependencies:
   #https://pub.dev/packages/auto_size_text
   auto_size_text: ^3.0.0
   #https://pub.dev/packages/app_settings
-  app_settings: ^5.0.0
+  app_settings: ^5.1.1
   #https://pub.dev/packages/awesome_dialog
   awesome_dialog: ^3.1.0
 
@@ -44,7 +44,7 @@ dependencies:
   #https://pub.dev/packages/battery_plus
   battery_plus: ^4.0.2
   #https://pub.dev/packages/basic_utils
-  basic_utils: ^5.5.3
+  basic_utils: ^5.6.1
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
   #https://pub.dev/packages/bottom_navy_bar
