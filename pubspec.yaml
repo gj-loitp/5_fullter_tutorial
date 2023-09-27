@@ -54,7 +54,7 @@ dependencies:
   bloc: ^8.1.2
 
   #https://pub.dev/packages/cached_network_image
-  cached_network_image: ^3.2.3
+  cached_network_image: ^3.3.0
   #https://pub.dev/packages/calendar_appbar
   calendar_appbar: ^0.0.6
   #https://pub.dev/packages/calendar_view
@@ -310,7 +310,7 @@ dependencies:
   #https://pub.dev/packages/o_color_picker
   o_color_picker: ^1.0.2
   #https://pub.dev/packages/octo_image
-  octo_image: ^1.0.2
+  octo_image: ^2.0.0
   #https://pub.dev/packages/one_target_mobile_sdk
 #  one_target_mobile_sdk: ^0.0.28
   #https://pub.dev/packages/overflow_view
