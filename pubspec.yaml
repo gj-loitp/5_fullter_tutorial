@@ -355,7 +355,7 @@ dependencies:
   marquee: ^2.2.3
 
   #https://pub.dev/packages/get
-  get: ^4.6.5
+  get: ^4.6.6
 
   #https://pub.dev/packages/random_string
   random_string: ^2.3.1
