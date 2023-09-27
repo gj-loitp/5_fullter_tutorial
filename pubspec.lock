@@ -1345,10 +1345,10 @@ packages:
     dependency: "direct main"
     description:
       name: google_fonts
-      sha256: e20ff62b158b96f392bfc8afe29dee1503c94fbea2cbe8186fd59b756b8ae982
+      sha256: f0b8d115a13ecf827013ec9fc883390ccc0e87a96ed5347a3114cac177ef18e8
       url: "https://pub.dev"
     source: hosted
-    version: "5.1.0"
+    version: "6.1.0"
   graphs:
     dependency: transitive
     description:
@@ -1673,10 +1673,10 @@ packages:
     dependency: "direct main"
     description:
       name: logger
-      sha256: "66cb048220ca51cf9011da69fa581e4ee2bed4be6e82870d9e9baae75739da49"
+      sha256: "6bbb9d6f7056729537a4309bda2e74e18e5d9f14302489cc1e93f33b3fe32cac"
       url: "https://pub.dev"
     source: hosted
-    version: "2.0.1"
+    version: "2.0.2+1"
   logging:
     dependency: transitive
     description:
@@ -1770,10 +1770,10 @@ packages:
     dependency: "direct main"
     description:
       name: multi_image_picker_view
-      sha256: "669710cca5ba98fb5b85dd8e122a6917da6965b55945c4fc340521eb96acf6da"
+      sha256: d7619628accec059f5b04343c047691b066cc7c1f8430f1c3648927379f67892
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.15"
+    version: "0.0.17"
   nav:
     dependency: "direct main"
     description:
