@@ -440,7 +440,7 @@ dependencies:
   #https://pub.dev/packages/smooth_page_indicator
   smooth_page_indicator: ^1.1.0
   #https://pub.dev/packages/sidebarx
-  sidebarx: ^0.16.1
+  sidebarx: ^0.16.2
   #https://pub.dev/packages/skeleton_loader
   skeleton_loader: ^2.0.0+4
   #https://pub.dev/packages/sliding_up_panel
