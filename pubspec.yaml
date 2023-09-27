@@ -154,7 +154,7 @@ dependencies:
   firebase_crashlytics: ^3.3.6
   firebase_remote_config: ^4.2.6
   #https://pub:dev/packages/file_picker
-  file_picker: ^5.3.4
+  file_picker: ^5.5.0
   #https://pub.dev/packages/flash
   flash: ^3.0.5+1
   #https://pub.dev/packages/fl_chart
