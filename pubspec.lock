@@ -485,10 +485,10 @@ packages:
     dependency: "direct main"
     description:
       name: d_chart
-      sha256: "89a3c5c9c023249497b2db26f9e4d0da73630dfc389746a024c2ea09a8c7a26a"
+      sha256: "25383f0d0b71a3f540511573ac0603286b2d736ead55073d595b7f48764919e4"
       url: "https://pub.dev"
     source: hosted
-    version: "2.6.0"
+    version: "2.6.2"
   date_picker_timeline_fixed:
     dependency: "direct main"
     description:
