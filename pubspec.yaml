@@ -27,7 +27,7 @@ dependencies:
   #https://pub.dev/packages/animated_toggle_switch
   animated_toggle_switch: ^0.7.0
   #https://pub.dev/packages/animations
-  animations: ^2.0.7
+  animations: ^2.0.8
   #https://pub.dev/packages/another_flushbar
   another_flushbar: ^1.12.30
   #https://pub.dev/packages/avatar_glow
