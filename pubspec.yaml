@@ -108,6 +108,8 @@ dependencies:
   diacritic: ^0.1.4
   #https://pub.dev/packages/dio
   dio: ^5.3.3
+  #https://pub.dev/packages/flutter_pretty_dio_logger
+  flutter_pretty_dio_logger: ^3.0.0
   #https://pub.dev/packages/dotted_border
   dotted_border: ^2.1.0
   #https://pub.dev/packages/dotted_line

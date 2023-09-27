@@ -3,7 +3,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dar
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_pretty_dio_logger/flutter_pretty_dio_logger.dart';
 import 'package:get/get.dart';
 
 /**
@@ -64,8 +66,27 @@ class _DioScreenState extends BaseStatefulState<DioScreen> {
 
   void _getHttp() async {
     try {
-      var response = await Dio().get('http://www.thichtruyen.vn');
+      Dio dio = Dio();
+      var response = await dio.get('http://www.thichtruyen.vn');
       // var response = await Dio().get('https://drive.google.com/uc?export=download&id=1bjIaEuvDJhrdlP__LNEf43__pkEVV75D');
+
+      if (kDebugMode) {
+        dio.interceptors.add(
+          PrettyDioLogger(
+            requestHeader: true,
+            queryParameters: true,
+            requestBody: true,
+            responseHeader: true,
+            responseBody: true,
+            error: true,
+            showProcessingTime: true,
+            showCUrl: true,
+            canShowLog: kDebugMode,
+            convertFormData: true,
+          ),
+        );
+      }
+
       print(response);
       setState(() {
         _response = response.data;
