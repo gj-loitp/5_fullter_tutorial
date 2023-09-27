@@ -324,7 +324,7 @@ dependencies:
   transparent_image: ^2.0.1
 
   #https://pub.dev/packages/url_launcher
-  url_launcher: ^6.1.12
+  url_launcher: ^6.1.14
 
   ##q
   #https://pub.dev/packages/qr_code_scanner
@@ -341,7 +341,7 @@ dependencies:
   #https://pub.dev/packages/simple_url_preview
 #  simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
-  shared_preferences: ^2.2.0
+  shared_preferences: ^2.2.1
   #https://pub.dev/packages/shimmer
   shimmer: ^2.0.0
   #https://pub.dev/packages/slide_countdown
