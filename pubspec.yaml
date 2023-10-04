@@ -429,6 +429,7 @@ dependencies:
   #https://pub.dev/packages/pretty_qr_code
   pretty_qr_code: ^2.0.2 #migrate later
 
+  ##s
   #https://pub.dev/packages/screenshot
 #  screenshot: ^2.1.0
   #https://pub.dev/packages/scrollable_table_view
@@ -449,6 +450,8 @@ dependencies:
   sliding_up_panel: ^2.0.0+1
   #https://pub.dev/packages/sticky_headers
   sticky_headers: ^0.3.0+2
+  #https://pub.dev/packages/string_validator
+  string_validator: ^1.0.0
   #https://pub.dev/packages/super_circle
   super_circle: ^1.0.0
   #https://pub.dev/packages/swipe_cards

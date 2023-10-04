@@ -226,6 +226,13 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                       "Simple library for generating random ascii strings by default using Random from 'dart:math'.",
                 ),
                 UIUtils.getButton(
+                  "string_validator",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/string_validator");
+                  },
+                  description: "Dart library for validating and sanitizing strings, especially those from user input.",
+                ),
+                UIUtils.getButton(
                   "uuid",
                   () {
                     Get.to(() => UUIDScreen());
