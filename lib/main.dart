@@ -28,6 +28,7 @@ import 'splash_screen.dart';
  * freuss47@gmail.com
  */
 
+//TODO check to change new ic_launcher
 //firebase console
 //https://console.firebase.google.com/u/0/project/roy-flutter-tutorial/overview
 
