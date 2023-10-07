@@ -1,7 +1,6 @@
 import 'dart:math';
 
 import 'package:applovin_max/applovin_max.dart';
-import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.dart';

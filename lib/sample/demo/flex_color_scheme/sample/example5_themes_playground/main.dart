@@ -92,7 +92,7 @@ class PlaygroundApp extends StatelessWidget {
       listenable: controller,
       builder: (BuildContext context, Widget? child) {
         return MaterialApp(
-          debugShowCheckedModeBanner: false,
+          debugShowCheckedModeBanner: true,
           title: 'Themes Playground',
           // The Theme controller controls if we use FlexColorScheme made
           // ThemeData or standard SDK ThemeData. It also

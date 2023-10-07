@@ -35,7 +35,7 @@ class CalendarViewScreen extends StatelessWidget {
           controller: EventController<Event>()..addAll(_events),
           child: MaterialApp(
             title: 'Flutter Calendar Page Demo',
-            debugShowCheckedModeBanner: false,
+            debugShowCheckedModeBanner: true,
             theme: ThemeData.light(),
             scrollBehavior: ScrollBehavior().copyWith(
               dragDevices: {

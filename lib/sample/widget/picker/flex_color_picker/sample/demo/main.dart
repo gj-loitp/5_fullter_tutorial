@@ -46,7 +46,7 @@ class PickerDemoApp extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       checkerboardRasterCacheImages: false,
       title: 'FlexColorPicker',
       theme: AppTheme.light,

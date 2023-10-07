@@ -61,7 +61,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) => MaterialApp(
-        debugShowCheckedModeBanner: false,
+        debugShowCheckedModeBanner: true,
         theme: ThemeData(primaryColor: Colors.white),
         darkTheme: ThemeData.dark(),
         home: UniversalPlatform.isWindows
