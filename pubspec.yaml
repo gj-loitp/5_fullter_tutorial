@@ -334,6 +334,7 @@ dependencies:
   #https://pub.dev/packages/qr_flutter
   qr_flutter: ^4.1.0
 
+  ##s
   #https://pub.dev/packages/scaffold_gradient_background
   #scaffold_gradient_background: ^1.0.3+1
   #https://pub.dev/packages/scrollable_positioned_list
@@ -352,6 +353,8 @@ dependencies:
   sqflite: ^2.3.0
   #https://pub.dev/packages/splash
   splash: ^1.1.0
+  #https://pub.dev/packages/step_progress_indicator
+  step_progress_indicator: ^1.0.2
 
   #https://pub.dev/packages/marquee
   marquee: ^2.2.3
