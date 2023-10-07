@@ -24,7 +24,7 @@ class _ColorPickerDemoState extends State<ColorPickerDemo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       scrollBehavior: AppScrollBehavior(),
       title: 'ColorPicker',
       theme: ThemeData(useMaterial3: true),

@@ -222,7 +222,7 @@ class SimulatorFrame extends StatelessWidget {
       orientation: orientation,
       screen: Builder(
         builder: (BuildContext deviceContext) => MaterialApp(
-          debugShowCheckedModeBanner: false,
+          debugShowCheckedModeBanner: true,
           // TODO(rydmike): Experiment, simulator app uses theme directly.
           // Instead of theming simulator via inherited theme.of(context), let
           // us try this version where use same theme function as the main app.

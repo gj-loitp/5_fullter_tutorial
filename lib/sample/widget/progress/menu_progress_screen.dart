@@ -1,6 +1,7 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/progress/progress_indicators/progress_indicators_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/progress/step_progress_indicator/step_progress_indicator_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -65,24 +66,28 @@ class MenuProgressScreen extends StatelessWidget {
             () {
               Get.to(ProgressIndicatorsScreen());
             },
-            description:
-                "A handful collection of some cool progress indicators and text animators.",
+            description: "A handful collection of some cool progress indicators and text animators.",
           ),
           UIUtils.getButton(
             "skeleton_loader",
             () {
               Get.to(SkeletonLoaderScreen());
             },
-            description:
-                "A Flutter Package which provides a fully customizable loading skeleton for your app",
+            description: "A Flutter Package which provides a fully customizable loading skeleton for your app",
           ),
           UIUtils.getButton(
             "smooth_page_indicator",
             () {
               Get.to(SmoothPageIndicatorScreen());
             },
-            description:
-                "Customizable animated page indicator with a set of built-in effects.",
+            description: "Customizable animated page indicator with a set of built-in effects.",
+          ),
+          UIUtils.getButton(
+            "step_progress_indicator",
+            () {
+              Get.to(StepProgressIndicatorScreen());
+            },
+            description: "Bar indicator made of a series of selected and unselected steps",
           ),
           UIUtils.getButton(
             "syncfusion_flutter_gauges",

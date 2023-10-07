@@ -5,7 +5,6 @@ import 'package:com.roy93group.flutter_tutorial/sample/func/uuid/uuid_screen.dar
 import 'package:com.roy93group.flutter_tutorial/sample/func/vibration/vibration_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-
 import '../../lib/core/base_stateful_state.dart';
 import '../../lib/util/log_dog_utils.dart';
 import '../../lib/util/ui_utils.dart';
@@ -82,8 +81,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => AppSettingsScreen());
                   },
-                  description:
-                      "A Flutter plugin for opening iOS and Android phone settings from an app.",
+                  description: "A Flutter plugin for opening iOS and Android phone settings from an app.",
                 ),
                 UIUtils.getButton(
                   "Async",
@@ -92,8 +90,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                 ),
                 UIUtils.getButton("change_app_package_name", () {
-                  UrlLauncherUtils.launchInWebViewWithJavaScript(
-                      "https://pub.dev/packages/change_app_package_name");
+                  UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/change_app_package_name");
                 },
                     description:
                         "Change App Package Name with single command. Update AndroidManifest, build.gradle, MainActivity files & move MainActivity file to new directory structure automatically."),
@@ -102,8 +99,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => CharactersScreen());
                   },
-                  description:
-                      "String replacement with operations that are Unicode/grapheme cluster aware.",
+                  description: "String replacement with operations that are Unicode/grapheme cluster aware.",
                 ),
                 UIUtils.getButton(
                   "CommunicationBetweenWidgetScreen",
@@ -116,16 +112,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => DevicePreviewScreen());
                   },
-                  description:
-                      "Approximate how your Flutter app looks and performs on another device.",
+                  description: "Approximate how your Flutter app looks and performs on another device.",
                 ),
                 UIUtils.getButton(
                   "email_validator",
                   () {
                     Get.to(() => EmailValidatorScreen());
                   },
-                  description:
-                      "A simple (but correct) dart class for validating email addresses.",
+                  description: "A simple (but correct) dart class for validating email addresses.",
                 ),
                 UIUtils.getButton(
                   "feedback",
@@ -140,17 +134,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => FlutterEmailSenderScreen());
                   },
-                  description:
-                      "Allows send emails from flutter using native platform functionality.",
+                  description: "Allows send emails from flutter using native platform functionality.",
                 ),
                 UIUtils.getButton(
                   "flutter_app_name",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript(
-                        "https://pub.dev/packages/flutter_app_name");
+                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/flutter_app_name");
                   },
-                  description:
-                      "A package that makes it easy to set your flutter app launcher name.",
+                  description: "A package that makes it easy to set your flutter app launcher name.",
                 ),
                 UIUtils.getButton(
                   "flutter_image_compress",
@@ -165,8 +156,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => FlutterPhoenixScreen());
                   },
-                  description:
-                      "Easily restart your application from scratch, losing any previous state.",
+                  description: "Easily restart your application from scratch, losing any previous state.",
                 ),
                 UIUtils.getButton(
                   "hexcolor",
@@ -189,14 +179,12 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => InternetFileScreen());
                   },
-                  description:
-                      "A internet file getter (also optional downloader) that works in all platforms",
+                  description: "A internet file getter (also optional downloader) that works in all platforms",
                 ),
                 UIUtils.getButton(
                   "intl",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript(
-                        "https://pub.dev/packages/intl");
+                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/intl");
                   },
                   description:
                       "Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.",
@@ -214,8 +202,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => PlatformDeviceIdScreen());
                   },
-                  description:
-                      "You can get device id from platform - linux/mac/windows/android/ios/web.",
+                  description: "You can get device id from platform - linux/mac/windows/android/ios/web.",
                 ),
                 UIUtils.getButton(
                   "random_string",
@@ -224,6 +211,13 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                   description:
                       "Simple library for generating random ascii strings by default using Random from 'dart:math'.",
+                ),
+                UIUtils.getButton(
+                  "string_validator",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/string_validator");
+                  },
+                  description: "Dart library for validating and sanitizing strings, especially those from user input.",
                 ),
                 UIUtils.getButton(
                   "uuid",
@@ -238,8 +232,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => VibrationScreen());
                   },
-                  description:
-                      "A plugin for handling Vibration API on iOS, Android, and web.",
+                  description: "A plugin for handling Vibration API on iOS, Android, and web.",
                 ),
               ],
             ),
@@ -252,8 +245,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
               listener: AdViewAdListener(onAdLoadedCallback: (ad) {
                 Dog.i('Banner widget ad loaded from ${ad.networkName}');
               }, onAdLoadFailedCallback: (adUnitId, error) {
-                Dog.i(
-                    'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
+                Dog.i('Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
               }, onAdClickedCallback: (ad) {
                 Dog.i('Banner widget ad clicked');
               }, onAdExpandedCallback: (ad) {

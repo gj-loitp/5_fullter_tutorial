@@ -58,7 +58,7 @@ class SidebarXExampleApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'SidebarX Example',
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       theme: ThemeData(
         primaryColor: primaryColor,
         canvasColor: canvasColor,

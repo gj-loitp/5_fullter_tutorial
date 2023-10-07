@@ -69,7 +69,7 @@ class CarouselDemo extends StatelessWidget {
           initialRoute: '/',
           darkTheme: ThemeData.dark(),
           themeMode: ThemeMode.values.toList()[value as int],
-          debugShowCheckedModeBanner: false,
+          debugShowCheckedModeBanner: true,
           routes: {
             '/': (ctx) => CarouselDemoHome(),
             '/basic': (ctx) => BasicDemo(),

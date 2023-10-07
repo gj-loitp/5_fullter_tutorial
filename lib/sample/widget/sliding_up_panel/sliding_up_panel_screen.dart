@@ -63,7 +63,7 @@ class SlidingUpPanelExample extends StatelessWidget {
     ));
 
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       title: 'SlidingUpPanel Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,

@@ -15,7 +15,7 @@ class NavigationDrawerScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       home: HomeScreen(), // route for home is '/' implicitly
       routes: <String, WidgetBuilder>{
         SettingsScreen.routeName: (BuildContext context) => SettingsScreen(),

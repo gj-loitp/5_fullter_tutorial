@@ -36,7 +36,7 @@ class _DemoAppState extends State<DemoApp> {
     const FlexScheme usedScheme = FlexScheme.mandyRed;
 
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       title: 'Basic Theme Usage',
       // Use a predefined FlexThemeData.light() theme for the light theme.
       theme: FlexThemeData.light(

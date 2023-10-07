@@ -85,7 +85,7 @@ class MySampleState extends State<MySample> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Credit Card View Demo',
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),

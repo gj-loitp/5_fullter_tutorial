@@ -22,7 +22,7 @@ class YoutubePlayerDemoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       title: 'Youtube Player Flutter',
       theme: ThemeData(
         primarySwatch: Colors.blue,

@@ -39,7 +39,6 @@ import 'image_gallery_saver/image_gallery_saver_screen.dart';
 import 'inherited/menu_inherited_screen.dart';
 import 'load_local_json/load_local_json_screen.dart';
 import 'local_auth/local_auth_screen.dart';
-import 'one_target_mobile_sdk/one_target_mobile_sdk_screen.dart';
 import 'package_info_plus/package_info_plus_screen.dart';
 import 'permission_handler/permission_handler_screen.dart';
 import 'restart_app/restart_app_screen.dart';
@@ -283,13 +282,6 @@ class MenuDemoScreen extends StatelessWidget {
                   },
                   description:
                       "Flutter plugin for Android and iOS devices to allow local authentication via fingerprint, touch ID, face ID, passcode, pin, or pattern.",
-                ),
-                UIUtils.getButton(
-                  "one_target_mobile_sdk",
-                  () {
-                    Get.to(() => OneTargetMobileSDKScreen());
-                  },
-                  description: "G1 tracking's plugin",
                 ),
                 UIUtils.getButton(
                   "package_info_plus",

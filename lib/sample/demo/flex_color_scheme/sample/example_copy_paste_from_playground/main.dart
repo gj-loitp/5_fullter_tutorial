@@ -38,7 +38,7 @@ class _DemoAppState extends State<DemoApp> {
     // debugDefaultTargetPlatformOverride = TargetPlatform.iOS;
 
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       title: 'Copy Playground',
       // To use this app with the Flutter SDK default theme and default
       // Material Design 2 color scheme, uncomment and use the theme setup below

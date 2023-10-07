@@ -9,7 +9,7 @@ class BaseExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       theme: ThemeData(
         iconTheme: const IconThemeData(
           color: Colors.blue,

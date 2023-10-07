@@ -557,7 +557,7 @@ class _DemoAppFlexColorSchemeState extends State<DemoAppFlexColorScheme> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: true,
       title: 'Hot Reload Playground',
       // Define the light theme for the app, based on defined colors and
       // properties above.
