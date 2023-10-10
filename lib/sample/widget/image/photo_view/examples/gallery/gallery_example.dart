@@ -1,3 +1,4 @@
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/color_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -46,6 +47,12 @@ class _GalleryExampleState extends State<GalleryExample> {
                   },
                 ),
                 GalleryExampleItemThumbnail(
+                  galleryExampleItem: galleryItems[1],
+                  onTap: () {
+                    open(context, 1);
+                  },
+                ),
+                GalleryExampleItemThumbnail(
                   galleryExampleItem: galleryItems[2],
                   onTap: () {
                     open(context, 2);
@@ -55,6 +62,35 @@ class _GalleryExampleState extends State<GalleryExample> {
                   galleryExampleItem: galleryItems[3],
                   onTap: () {
                     open(context, 3);
+                  },
+                ),
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                GalleryExampleItemThumbnail(
+                  galleryExampleItem: galleryItems[4],
+                  onTap: () {
+                    open(context, 4);
+                  },
+                ),
+                GalleryExampleItemThumbnail(
+                  galleryExampleItem: galleryItems[5],
+                  onTap: () {
+                    open(context, 5);
+                  },
+                ),
+                GalleryExampleItemThumbnail(
+                  galleryExampleItem: galleryItems[6],
+                  onTap: () {
+                    open(context, 6);
+                  },
+                ),
+                GalleryExampleItemThumbnail(
+                  galleryExampleItem: galleryItems[7],
+                  onTap: () {
+                    open(context, 7);
                   },
                 ),
               ],
@@ -84,7 +120,7 @@ class _GalleryExampleState extends State<GalleryExample> {
       GalleryPhotoViewWrapper(
         galleryItems: galleryItems,
         backgroundDecoration: const BoxDecoration(
-          color: Colors.black,
+          color: ColorConstants.appColor,
         ),
         initialIndex: index,
         scrollDirection: verticalGallery ? Axis.vertical : Axis.horizontal,
@@ -185,7 +221,7 @@ class _GalleryPhotoViewWrapperState extends State<GalleryPhotoViewWrapper> {
             heroAttributes: PhotoViewHeroAttributes(tag: item.id),
           )
         : PhotoViewGalleryPageOptions(
-            imageProvider: AssetImage(item.resource),
+            imageProvider: NetworkImage(item.resource),
             initialScale: PhotoViewComputedScale.contained,
             minScale: PhotoViewComputedScale.contained * (0.5 + index / 10),
             maxScale: PhotoViewComputedScale.covered * 4.1,

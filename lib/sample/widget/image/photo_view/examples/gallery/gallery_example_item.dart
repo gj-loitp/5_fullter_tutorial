@@ -38,7 +38,7 @@ class GalleryExampleItemThumbnail extends StatelessWidget {
         onTap: onTap,
         child: Hero(
           tag: galleryExampleItem.id,
-          child: Image.asset(galleryExampleItem.resource, height: 80.0),
+          child: Image.network(galleryExampleItem.resource, height: 80.0),
         ),
       ),
     );
@@ -48,16 +48,33 @@ class GalleryExampleItemThumbnail extends StatelessWidget {
 List<GalleryExampleItem> galleryItems = <GalleryExampleItem>[
   GalleryExampleItem(
     id: "tag1",
-    resource: "assets/images/gallery1.jpg",
+    resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-4-16677111180281863259936.jpg",
   ),
   GalleryExampleItem(
-      id: "tag2", resource: "assets/images/firefox.svg", isSvg: true),
+      id: "tag2",
+      resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-6-16677111281791568448463.jpg"),
   GalleryExampleItem(
     id: "tag3",
-    resource: "assets/images/gallery2.jpg",
+    resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-9-1667711144754229839920.png",
   ),
   GalleryExampleItem(
     id: "tag4",
-    resource: "assets/images/gallery3.jpg",
+    resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-8-1667711137977923479445.jpg",
+  ),
+  GalleryExampleItem(
+    id: "tag5",
+    resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-8-1667711137977923479445.jpg",
+  ),
+  GalleryExampleItem(
+    id: "tag6",
+    resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-4-16677111180281863259936.jpg",
+  ),
+  GalleryExampleItem(
+    id: "tag7",
+    resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-5-16677111235391948113511.jpg",
+  ),
+  GalleryExampleItem(
+    id: "tag8",
+    resource: "https://kenh14cdn.com/thumb_w/620/203336854389633024/2022/11/6/photo-8-1667711137977923479445.jpg",
   ),
 ];
