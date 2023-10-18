@@ -10,6 +10,7 @@ import 'package:flash/flash_helper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
@@ -45,19 +46,16 @@ import 'splash_screen.dart';
 //lan dau mo app check valid google neu ko co connection se bi treo app
 //firebase
 
-final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-    FlutterLocalNotificationsPlugin();
+final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
 /// Streams are created so that app can respond to notification-related events
 /// since the plugin is initialised in the `main` function
 final BehaviorSubject<ReceivedNotification> didReceiveLocalNotificationSubject =
     BehaviorSubject<ReceivedNotification>();
 
-final BehaviorSubject<String?> selectNotificationSubject =
-    BehaviorSubject<String?>();
+final BehaviorSubject<String?> selectNotificationSubject = BehaviorSubject<String?>();
 
-const MethodChannel platform =
-    MethodChannel('dexterx.dev/flutter_local_notifications_example');
+const MethodChannel platform = MethodChannel('dexterx.dev/flutter_local_notifications_example');
 
 class ReceivedNotification {
   ReceivedNotification({
@@ -85,8 +83,7 @@ void main() async {
       // statusBarColor: Colors.blue, // status bar color
       // statusBarIconBrightness: Brightness.light, // status bar icons' color
       systemNavigationBarColor: Colors.deepOrange, // navigation bar color
-      systemNavigationBarIconBrightness:
-          Brightness.light, //navigation bar icons' color
+      systemNavigationBarIconBrightness: Brightness.light, //navigation bar icons' color
     ),
   );
   testLogger();
@@ -106,50 +103,45 @@ void main() async {
   //   await Firebase.initializeApp();
   // }
   await Firebase.initializeApp();
-
   await _configureLocalTimeZone();
-
-  final NotificationAppLaunchDetails? notificationAppLaunchDetails = !kIsWeb &&
-          Platform.isLinux
-      ? null
-      : await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
+  if (Platform.isAndroid) {
+    await FlutterDisplayMode.setHighRefreshRate();
+  }
+  final NotificationAppLaunchDetails? notificationAppLaunchDetails =
+      !kIsWeb && Platform.isLinux ? null : await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
   if (notificationAppLaunchDetails?.didNotificationLaunchApp ?? false) {
     selectedNotificationPayload = notificationAppLaunchDetails!.payload;
   }
 
-  const AndroidInitializationSettings initializationSettingsAndroid =
-      AndroidInitializationSettings('app_icon');
+  const AndroidInitializationSettings initializationSettingsAndroid = AndroidInitializationSettings('app_icon');
 
   /// Note: permissions aren't requested here just to demonstrate that can be
   /// done later
-  final IOSInitializationSettings initializationSettingsIOS =
-      IOSInitializationSettings(
-          requestAlertPermission: false,
-          requestBadgePermission: false,
-          requestSoundPermission: false,
-          onDidReceiveLocalNotification: (
-            int id,
-            String? title,
-            String? body,
-            String? payload,
-          ) async {
-            didReceiveLocalNotificationSubject.add(
-              ReceivedNotification(
-                id: id,
-                title: title,
-                body: body,
-                payload: payload,
-              ),
-            );
-          });
-  const MacOSInitializationSettings initializationSettingsMacOS =
-      MacOSInitializationSettings(
+  final IOSInitializationSettings initializationSettingsIOS = IOSInitializationSettings(
+      requestAlertPermission: false,
+      requestBadgePermission: false,
+      requestSoundPermission: false,
+      onDidReceiveLocalNotification: (
+        int id,
+        String? title,
+        String? body,
+        String? payload,
+      ) async {
+        didReceiveLocalNotificationSubject.add(
+          ReceivedNotification(
+            id: id,
+            title: title,
+            body: body,
+            payload: payload,
+          ),
+        );
+      });
+  const MacOSInitializationSettings initializationSettingsMacOS = MacOSInitializationSettings(
     requestAlertPermission: false,
     requestBadgePermission: false,
     requestSoundPermission: false,
   );
-  final LinuxInitializationSettings initializationSettingsLinux =
-      LinuxInitializationSettings(
+  final LinuxInitializationSettings initializationSettingsLinux = LinuxInitializationSettings(
     defaultActionName: 'Open notification',
     defaultIcon: AssetsLinuxIcon('icons/app_icon.png'),
   );
@@ -196,8 +188,7 @@ void main() async {
             return child;
           },
           locale: DevicePreview.locale(context),
-          theme: ThemeData.light()
-              .copyWith(extensions: [FlashToastTheme(), FlashBarTheme()]),
+          theme: ThemeData.light().copyWith(extensions: [FlashToastTheme(), FlashBarTheme()]),
           darkTheme: ThemeData.dark(),
           themeMode: ThemeMode.light,
         ),
@@ -227,8 +218,7 @@ Future<void> initializePlugin() async {
   if (configuration != null) {
     Dog.i("initializePlugin success");
     if (kDebugMode) {
-      Get.snackbar("Applovin",
-          "initializePlugin success (only show this msg in debug mode)");
+      Get.snackbar("Applovin", "initializePlugin success (only show this msg in debug mode)");
     }
   }
 }
