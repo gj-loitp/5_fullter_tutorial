@@ -130,6 +130,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                       "A Flutter package for getting better feedback. It allows the user to give interactive feedback directly in the app.",
                 ),
                 UIUtils.getButton(
+                  "flutter_displaymode",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/flutter_displaymode");
+                  },
+                  description:
+                      "A Flutter plugin to set display mode (resolution, refresh rate) on Android platform. Allows to enable high refresh rate on supported devices.",
+                ),
+                UIUtils.getButton(
                   "flutter_email_sender",
                   () {
                     Get.to(() => FlutterEmailSenderScreen());
