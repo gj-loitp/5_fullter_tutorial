@@ -209,6 +209,7 @@ dependencies:
   flutter_offline: ^3.0.0
   #https://pub.dev/packages/flutter_image_compress
   flutter_image_compress: ^1.1.3
+  flutter_inappwebview: ^5.8.0
   #https://pub.dev/packages/flutter_rating_bar
   flutter_rating_bar: ^4.0.1
   #https://pub.dev/packages/flutter_reaction_button
