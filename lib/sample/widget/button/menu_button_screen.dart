@@ -1,5 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/button/flat_3d_button/flat_3d_button_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/button/flutter_speed_dial/FlutterSpeedDialScreen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/button/like_button_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/widget/button/progress_state_button/ProgressStateScreen.dart';
@@ -51,6 +52,14 @@ class MenuButtonScreen extends StatelessWidget {
                   "Flutter's core Dropdown Button widget with steady dropdown menu and many options you can customize to your needs.",
             ),
             UIUtils.getButton(
+              "flat_3d_button",
+              () {
+                Get.to(Flat3dButtonScreen());
+              },
+              description:
+                  "A simple 3D flat button with click animation, flat 3d button contains 3 methods, a flat 3d button with any widget as it's child, text as it's child and also an icon as it's child",
+            ),
+            UIUtils.getButton(
               "flutter_animated_button",
               () {
                 Get.to(FlutterAnimatedButtonScreen());
@@ -71,8 +80,7 @@ class MenuButtonScreen extends StatelessWidget {
               () {
                 Get.to(ProgressStateScreen());
               },
-              description:
-                  "A customizable progress button widget for Flutter Android, IOS and Web.",
+              description: "A customizable progress button widget for Flutter Android, IOS and Web.",
             ),
             UIUtils.getButton(
               "BackButtonScreen",
