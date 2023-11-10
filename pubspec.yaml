@@ -142,7 +142,7 @@ dependencies:
   #https://pub.dev/packages/fast_color_picker
   fast_color_picker: ^0.1.1
   #https://pub.dev/packages/feedback
-  feedback: ^2.6.0
+  feedback: ^3.0.0
   #https://pub.dev/packages/focus_detector
   focus_detector: ^2.0.1
   #https://pub.dev/packages/folding_cell
@@ -151,10 +151,10 @@ dependencies:
   fk_toggle: ^0.1.4
   #https://pub.dev/packages/font_awesome_flutter
   font_awesome_flutter: ^10.5.0
-  firebase_core: ^2.16.0
-  firebase_analytics: ^10.5.0
-  firebase_crashlytics: ^3.3.6
-  firebase_remote_config: ^4.2.6
+  firebase_core: ^2.22.0
+  firebase_analytics: ^10.6.4
+  firebase_crashlytics: ^3.4.4
+  firebase_remote_config: ^4.3.4
   #https://pub:dev/packages/file_picker
   file_picker: ^5.5.0
   #https://pub.dev/packages/flash
