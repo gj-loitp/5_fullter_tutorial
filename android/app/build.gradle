@@ -47,7 +47,7 @@ android {
         applicationId "com.roy93group.fullter_tutorial"
 
         // Required by the Flutter WebView plugin: https://pub.dev/packages/webview_flutter
-        minSdkVersion 21
+        minSdkVersion 22
         targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
