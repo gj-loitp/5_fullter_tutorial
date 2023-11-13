@@ -468,7 +468,7 @@ dependencies:
   syncfusion_flutter_gauges: ^23.1.44
 
   #https://pub.dev/packages/tiengviet
-  tiengviet: ^0.5.0
+  tiengviet: ^1.0.0
   #https://pub.dev/packages/timeago
   timeago: ^3.5.0
   #https://pub.dev/packages/timelines

@@ -2679,10 +2679,10 @@ packages:
     dependency: "direct main"
     description:
       name: tiengviet
-      sha256: "4b9c8371b4c2255ad7363820ec9873eab4cb4202516532cab4f76bd5826d94a8"
+      sha256: e14c4fa7db66c62c75e79dd2e8111a89d1cbddebd7086e37ca08e150c5f81bba
       url: "https://pub.dev"
     source: hosted
-    version: "0.5.0"
+    version: "1.0.0"
   tiledjsonreader:
     dependency: "direct main"
     description:
