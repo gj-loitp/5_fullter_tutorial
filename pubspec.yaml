@@ -403,7 +403,7 @@ dependencies:
   http: ^1.1.0
 
   #https://pub.dev/packages/kenburns_nullsafety
-  kenburns_nullsafety: ^1.0.0
+  kenburns_nullsafety: ^1.0.1
 
   #https://pub.dev/packages/video_player
   video_player: ^2.7.2
