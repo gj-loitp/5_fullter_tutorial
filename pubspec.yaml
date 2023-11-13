@@ -406,7 +406,7 @@ dependencies:
   kenburns_nullsafety: ^1.0.1
 
   #https://pub.dev/packages/video_player
-  video_player: ^2.7.2
+  video_player: ^2.8.1
 
   #https://pub.dev/packages/package_info_plus
   package_info_plus: ^4.1.0
