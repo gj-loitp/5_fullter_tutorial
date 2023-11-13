@@ -388,7 +388,7 @@ dependencies:
   #https://pub.dev/packages/image_picker
   image_picker: ^0.8.7
   #https://pub.dev/packages/in_app_review
-  in_app_review: ^2.0.6
+  in_app_review: ^2.0.8
   #https://pub.dev/packages/intl
   intl: ^0.18.1
   #https://pub.dev/packages/internet_connection_checker
