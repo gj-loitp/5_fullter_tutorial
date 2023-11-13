@@ -310,7 +310,7 @@ dependencies:
   #https://pub.dev/packages/nav
   nav: ^1.4.2
   #https://pub.dev/packages/network_info_plus
-  network_info_plus: ^4.0.2
+  network_info_plus: ^4.1.0
   #https://pub.dev/packages/numberpicker
   numberpicker: ^2.1.2
 
