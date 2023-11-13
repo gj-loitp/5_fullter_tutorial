@@ -497,7 +497,7 @@ dependencies:
   #https://pub.dev/packages/web_scraper
   web_scraper: ^0.1.4
   #https://pub.dev/packages/wechat_camera_picker
-  wechat_camera_picker: ^4.0.0
+  wechat_camera_picker: ^4.0.2
 
   ##y
   #https://pub.dev/packages/youtube_player_flutter
