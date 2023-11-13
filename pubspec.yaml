@@ -504,7 +504,7 @@ dependencies:
   youtube_player_flutter: ^8.1.2
 
   ##t
-  tiledjsonreader: ^1.2.7
+  tiledjsonreader: ^1.3.3
 
   ##p
   #https://pub.dev/packages/pdfx
