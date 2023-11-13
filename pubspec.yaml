@@ -158,7 +158,7 @@ dependencies:
   #https://pub:dev/packages/file_picker
   file_picker: ^5.5.0
   #https://pub.dev/packages/flash
-  flash: ^3.0.5+1
+  flash: ^3.0.5+2
   #https://pub.dev/packages/flat_3d_button
   flat_3d_button: ^1.0.3
   #https://pub.dev/packages/fl_chart
