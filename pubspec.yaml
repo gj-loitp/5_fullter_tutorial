@@ -484,7 +484,7 @@ dependencies:
   #https://pub.dev/packages/vertical_card_pager
   vertical_card_pager: ^1.5.0
   #https://pub.dev/packages/vibration
-  vibration: ^1.8.2
+  vibration: ^1.8.3
 
   #https://pub.dev/packages/wakelock
 #  wakelock: ^0.6.2
