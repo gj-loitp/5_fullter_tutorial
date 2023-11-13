@@ -459,7 +459,7 @@ dependencies:
   #https://pub.dev/packages/sticky_headers
   sticky_headers: ^0.3.0+2
   #https://pub.dev/packages/string_validator
-  string_validator: ^1.0.0
+  string_validator: ^1.0.2
   #https://pub.dev/packages/super_circle
   super_circle: ^1.0.0
   #https://pub.dev/packages/swipe_cards
