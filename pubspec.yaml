@@ -42,9 +42,9 @@ dependencies:
   #https://pub.dev/packages/badges
   badges: ^2.0.3 #migrate later
   #https://pub.dev/packages/battery_plus
-  battery_plus: ^4.0.2
+  battery_plus: ^4.1.0
   #https://pub.dev/packages/basic_utils
-  basic_utils: ^5.6.1
+  basic_utils: ^5.7.0
   #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
   #https://pub.dev/packages/bottom_navy_bar
