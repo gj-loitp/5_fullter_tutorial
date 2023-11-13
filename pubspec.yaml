@@ -409,7 +409,7 @@ dependencies:
   video_player: ^2.8.1
 
   #https://pub.dev/packages/package_info_plus
-  package_info_plus: ^4.1.0
+  package_info_plus: ^4.2.0
   #https://pub.dev/packages/panara_dialogs
   panara_dialogs: ^0.1.4
   #https://pub.dev/packages/path_provider
