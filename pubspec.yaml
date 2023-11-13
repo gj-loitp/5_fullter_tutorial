@@ -76,7 +76,7 @@ dependencies:
   #https://pub.dev/packages/convex_bottom_bar
   convex_bottom_bar: ^3.2.0
   #https://pub.dev/packages/country_picker
-  country_picker: ^2.0.21
+  country_picker: ^2.0.22
   #https://pub.dev/packages/clay_containers
   clay_containers: ^0.3.2
   #https://pub.dev/packages/characters
