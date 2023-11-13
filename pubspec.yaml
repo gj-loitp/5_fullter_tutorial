@@ -361,12 +361,15 @@ dependencies:
   #https://pub.dev/packages/step_progress_indicator
   step_progress_indicator: ^1.0.2
 
+  ##m
   #https://pub.dev/packages/marquee
   marquee: ^2.2.3
 
+  ##g
   #https://pub.dev/packages/get
   get: ^4.6.6
 
+  ##r
   #https://pub.dev/packages/random_string
   random_string: ^2.3.1
   #https://pub.dev/packages/rating_dialog
@@ -377,6 +380,8 @@ dependencies:
   remove_emoji: ^0.0.10
   #https://pub.dev/packages/restart_app
   restart_app: ^1.2.1
+  #https://pub.dev/packages/retry
+#  retry: ^3.1.2
   #https://pub.dev/packages/rxdart
   rxdart: ^0.27.7
 

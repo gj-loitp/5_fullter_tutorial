@@ -55,7 +55,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: UIUtils.getAppBar(
-        "Fuction menu",
+        "Function menu",
         () {
           Get.back();
         },
@@ -234,6 +234,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                   description:
                       "RFC4122 (v1, v4, v5) UUID Generator and Parser for all Dart platforms (Web, VM, Flutter)",
+                ),
+                UIUtils.getButton(
+                  "retry",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/retry");
+                  },
+                  description: ""
+                      "Utility for wrapping an asynchronous function in automatic retry logic with exponential back-off, useful when making requests over network.",
                 ),
                 UIUtils.getButton(
                   "vibration",
