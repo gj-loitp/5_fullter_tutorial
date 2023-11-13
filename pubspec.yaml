@@ -470,7 +470,7 @@ dependencies:
   #https://pub.dev/packages/tiengviet
   tiengviet: ^1.0.0
   #https://pub.dev/packages/timeago
-  timeago: ^3.5.0
+  timeago: ^3.6.0
   #https://pub.dev/packages/timelines
   timelines: ^0.1.0
   #https://pub.dev/packages/toggle_switch
