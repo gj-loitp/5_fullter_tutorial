@@ -345,7 +345,7 @@ dependencies:
   #https://pub.dev/packages/scrollable_positioned_list
   scrollable_positioned_list: ^0.3.8
   #https://pub.dev/packages/share_plus
-  share_plus: ^7.1.0
+  share_plus: ^7.2.1
   #https://pub.dev/packages/simple_url_preview
 #  simple_url_preview: ^3.0.1
   #https://pub.dev/packages/shared_preferences
