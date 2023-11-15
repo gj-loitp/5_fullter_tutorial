@@ -240,8 +240,15 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/retry");
                   },
-                  description: ""
+                  description:
                       "Utility for wrapping an asynchronous function in automatic retry logic with exponential back-off, useful when making requests over network.",
+                ),
+                UIUtils.getButton(
+                  "tuple",
+                  () {
+                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/tuple");
+                  },
+                  description: "A library providing a tuple data structure.",
                 ),
                 UIUtils.getButton(
                   "vibration",
