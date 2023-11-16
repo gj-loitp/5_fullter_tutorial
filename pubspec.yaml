@@ -123,6 +123,7 @@ dependencies:
   #https://pub.dev/packages/drop_shadow
   drop_shadow: ^0.1.0
 
+  ##e
   #https://pub.dev/packages/easy_debounce
   easy_debounce: ^2.0.3
   #https://pub.dev/packages/elastic_drawer
