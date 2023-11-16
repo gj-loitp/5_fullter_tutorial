@@ -41,7 +41,7 @@ class _CircularBottomNavigationScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/circular_bottom_navigation");
         },
       ),

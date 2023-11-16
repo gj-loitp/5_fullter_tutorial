@@ -40,7 +40,7 @@ class _FastColorPickerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/fast_color_picker");
         },
       ),

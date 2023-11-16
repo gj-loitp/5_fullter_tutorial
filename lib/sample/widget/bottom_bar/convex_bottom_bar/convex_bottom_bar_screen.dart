@@ -41,7 +41,7 @@ class _ConvexBottomBarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/hacktons/convex_bottom_bar");
         },
       ),

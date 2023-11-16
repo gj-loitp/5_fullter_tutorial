@@ -40,7 +40,7 @@ class _FlutterSmartDialogScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/flutter_smart_dialog");
         },
       ),

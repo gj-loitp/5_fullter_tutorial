@@ -40,7 +40,7 @@ class _CountryPickerScreenState extends BaseStatefulState<CountryPickerScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/country_picker");
         },
       ),

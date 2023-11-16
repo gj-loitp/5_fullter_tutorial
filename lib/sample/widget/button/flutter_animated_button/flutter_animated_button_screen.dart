@@ -42,7 +42,7 @@ class _FlutterAnimatedButtonScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_animated_button");
         },
       ),

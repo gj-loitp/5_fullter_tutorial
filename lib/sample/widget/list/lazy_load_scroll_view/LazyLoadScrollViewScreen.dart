@@ -91,7 +91,7 @@ class _LazyLoadScrollViewScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/lazy_load_scrollview");
         },
       ),

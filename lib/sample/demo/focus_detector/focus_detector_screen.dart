@@ -19,7 +19,7 @@ class FocusDetectorScreen extends StatelessWidget {
       appBar: UIUtils.getAppBar("focus_detector", () {
         Get.back();
       }, () {
-        UrlLauncherUtils.launchInWebViewWithJavaScript(
+        UrlLauncherUtils.launchInBrowser(
             "https://pub.dev/packages/focus_detector");
       }),
       body: Center(

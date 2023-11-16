@@ -79,7 +79,7 @@ class _ConnectivityPlusScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/connectivity_plus");
         },
       ),

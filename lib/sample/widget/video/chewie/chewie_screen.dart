@@ -40,7 +40,7 @@ class _ChewieScreenState extends BaseStatefulState<ChewieScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/chewie");
         },
       ),

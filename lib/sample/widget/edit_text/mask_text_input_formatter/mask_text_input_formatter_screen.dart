@@ -41,7 +41,7 @@ class _MaskTextInputFormatterScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/mask_text_input_formatter");
         },
       ),

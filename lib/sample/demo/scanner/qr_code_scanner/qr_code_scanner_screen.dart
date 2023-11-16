@@ -40,7 +40,7 @@ class _QrCodeScannerScreenState extends BaseStatefulState<QrCodeScannerScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/qr_code_scanner");
         },
       ),

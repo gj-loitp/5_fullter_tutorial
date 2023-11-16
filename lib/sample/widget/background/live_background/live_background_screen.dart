@@ -41,7 +41,7 @@ class _LiveBackgroundScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/live_background");
         },
       ),

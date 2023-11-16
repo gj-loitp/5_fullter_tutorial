@@ -27,7 +27,7 @@ class PhotoViewScreen extends StatelessWidget {
       appBar: UIUtils.getAppBar("photo_view", () {
         Get.back();
       }, () {
-        UrlLauncherUtils.launchInWebViewWithJavaScript(
+        UrlLauncherUtils.launchInBrowser(
             "https://pub.dev/packages/photo_view");
       }),
       body: Column(

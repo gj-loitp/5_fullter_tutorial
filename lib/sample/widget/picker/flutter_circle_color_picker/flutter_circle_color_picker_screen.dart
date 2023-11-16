@@ -39,7 +39,7 @@ class _FlutterCircleColorPickerScreenState extends BaseStatefulState<FlutterCirc
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_circle_color_picker");
         },
       ),

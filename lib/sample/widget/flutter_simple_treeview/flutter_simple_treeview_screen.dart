@@ -41,7 +41,7 @@ class _FlutterSimpleTreeViewScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_simple_treeview");
         },
       ),
@@ -50,7 +50,7 @@ class _FlutterSimpleTreeViewScreenState
         physics: BouncingScrollPhysics(),
         children: [
           UIUtils.getButton("Web demo", () {
-            UrlLauncherUtils.launchInWebViewWithJavaScript(
+            UrlLauncherUtils.launchInBrowser(
                 "https://flutter_simple_treeview.surge.sh/");
           }),
           TreeView(nodes: [

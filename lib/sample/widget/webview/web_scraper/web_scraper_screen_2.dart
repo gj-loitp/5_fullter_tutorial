@@ -73,7 +73,7 @@ class _WebScraperScreen2State extends BaseStatefulState<WebScraperScreen2> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/web_scraper");
         },
       ),

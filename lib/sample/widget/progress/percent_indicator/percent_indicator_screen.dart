@@ -43,7 +43,7 @@ class _PercentIndicatorScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/percent_indicator");
         },
       ),

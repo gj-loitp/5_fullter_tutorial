@@ -39,7 +39,7 @@ class _ClipboardScreenState extends BaseStatefulState<ClipboardScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/clipboard");
         },
       ),

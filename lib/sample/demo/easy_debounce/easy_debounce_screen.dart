@@ -41,7 +41,7 @@ class EasyDebounceScreenState extends BaseStatefulState<EasyDebounceScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/easy_debounce");
         },
       ),

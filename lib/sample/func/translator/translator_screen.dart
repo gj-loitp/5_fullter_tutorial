@@ -35,7 +35,7 @@ class _TranslatorScreenState extends BaseStatefulState<TranslatorScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/translator");
+          UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/translator");
         },
       ),
       body: ListView(

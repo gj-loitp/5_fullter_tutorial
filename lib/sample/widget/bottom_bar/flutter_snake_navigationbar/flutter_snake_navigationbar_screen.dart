@@ -40,7 +40,7 @@ class _FlutterSnakeNavigationbarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_snake_navigationbar");
         },
       ),

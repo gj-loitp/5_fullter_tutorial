@@ -133,7 +133,7 @@ class _CsslibScreenState extends BaseStatefulState<CsslibScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/csslib");
         },
       ),

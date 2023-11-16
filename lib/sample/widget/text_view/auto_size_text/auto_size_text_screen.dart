@@ -39,7 +39,7 @@ class _AutoSizeTextScreenState extends BaseStatefulState<AutoSizeTextScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/auto_size_text");
         },
       ),

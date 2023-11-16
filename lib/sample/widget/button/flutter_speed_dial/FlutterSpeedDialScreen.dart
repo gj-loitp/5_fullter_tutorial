@@ -64,7 +64,7 @@ class _FlutterSpeedDialScreenState
             Get.back();
           },
           () {
-            UrlLauncherUtils.launchInWebViewWithJavaScript(
+            UrlLauncherUtils.launchInBrowser(
                 "https://pub.dev/packages/flutter_speed_dial");
           },
         ),

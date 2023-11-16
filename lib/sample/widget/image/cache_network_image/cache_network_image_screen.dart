@@ -23,7 +23,7 @@ class CacheNetworkImageScreen extends StatelessWidget {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/cached_network_image");
         },
       ),

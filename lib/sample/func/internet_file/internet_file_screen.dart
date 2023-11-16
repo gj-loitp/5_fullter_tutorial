@@ -43,7 +43,7 @@ class _InternetFileScreenState extends BaseStatefulState<InternetFileScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/internet_file");
         },
       ),

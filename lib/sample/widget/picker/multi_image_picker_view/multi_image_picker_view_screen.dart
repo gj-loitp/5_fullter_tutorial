@@ -42,7 +42,7 @@ class _MultiImagePickerViewScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/multi_image_picker_view");
         },
       ),

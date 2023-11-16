@@ -41,7 +41,7 @@ class _StickyHeadersScreenState extends BaseStatefulState<StickyHeadersScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/sticky_headers");
         },
       ),

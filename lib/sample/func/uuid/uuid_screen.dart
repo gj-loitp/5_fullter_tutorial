@@ -41,7 +41,7 @@ class _UUIDScreenState extends BaseStatefulState<UUIDScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/uuid");
         },
       ),

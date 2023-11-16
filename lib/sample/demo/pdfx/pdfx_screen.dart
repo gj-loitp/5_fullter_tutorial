@@ -42,7 +42,7 @@ class _PdfxScreenState extends BaseStatefulState<PdfxScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/pdfx");
         },
       ),

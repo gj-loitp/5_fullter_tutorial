@@ -23,7 +23,7 @@ class AwesomeDialogScreen extends StatelessWidget {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/awesome_dialog");
         },
       ),

@@ -40,7 +40,7 @@ class _MobileScannerScreenState extends BaseStatefulState<MobileScannerScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/mobile_scanner");
         },
       ),

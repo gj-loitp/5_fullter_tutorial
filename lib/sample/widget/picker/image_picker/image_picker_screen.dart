@@ -233,7 +233,7 @@ class _ImagePickerScreenState extends BaseStatefulState<ImagePickerScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/image_picker");
         },
       ),

@@ -40,7 +40,7 @@ class _ScribbleScreenState extends BaseStatefulState<ScribbleScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/scribble");
         },
       ),

@@ -41,7 +41,7 @@ class _TimeAgoScreenState extends BaseStatefulState<TimeAgoScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/timeago");
         },
       ),

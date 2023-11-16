@@ -40,7 +40,7 @@ class _FlipCardScreenState extends BaseStatefulState<FlipCardScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flip_card");
         },
       ),

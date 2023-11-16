@@ -40,7 +40,7 @@ class _ProgressIndicatorsScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/progress_indicators");
         },
       ),

@@ -46,7 +46,7 @@ class _PlatformDeviceIdScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/platform_device_id");
         },
       ),

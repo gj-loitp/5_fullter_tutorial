@@ -39,7 +39,7 @@ class _AppSettingsScreenState extends BaseStatefulState<AppSettingsScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/app_settings");
         },
       ),

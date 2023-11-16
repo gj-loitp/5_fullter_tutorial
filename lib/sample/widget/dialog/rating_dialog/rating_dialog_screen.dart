@@ -40,7 +40,7 @@ class _RatingDialogScreenState extends BaseStatefulState<RatingDialogScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/rating_dialog");
         },
       ),

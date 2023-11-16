@@ -43,7 +43,7 @@ class _InternetConnectionCheckerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/internet_connection_checker");
         },
       ),

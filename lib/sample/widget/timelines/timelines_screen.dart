@@ -48,7 +48,7 @@ class _TimelinesScreenState extends BaseStatefulState<TimelinesScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/timelines");
         },
       ),

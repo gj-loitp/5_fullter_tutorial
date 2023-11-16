@@ -40,7 +40,7 @@ class _AnotherFlushbarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/another_flushbar");
         },
       ),

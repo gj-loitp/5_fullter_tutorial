@@ -22,7 +22,7 @@ class MenuFlutterStaggeredGridViewScreen extends StatelessWidget {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_staggered_grid_view");
         },
       ),

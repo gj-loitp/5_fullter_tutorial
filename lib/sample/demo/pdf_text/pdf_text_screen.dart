@@ -43,7 +43,7 @@ class _PdfTextScreenState extends BaseStatefulState<PdfTextScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/pdf_text");
         },
       ),

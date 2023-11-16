@@ -41,7 +41,7 @@ class _FlexColorPickerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flex_color_picker");
         },
       ),

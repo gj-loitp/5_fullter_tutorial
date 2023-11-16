@@ -44,7 +44,7 @@ class _BottomBarWithSheetScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/bottom_bar_with_sheet");
         },
       ),

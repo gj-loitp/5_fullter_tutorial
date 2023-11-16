@@ -61,7 +61,7 @@ class _PinCodeFieldsScreenState extends BaseStatefulState<PinCodeFieldsScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/pin_code_fields");
         },
       ),

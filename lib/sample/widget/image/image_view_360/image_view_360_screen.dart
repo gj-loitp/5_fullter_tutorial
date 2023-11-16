@@ -52,7 +52,7 @@ class _ImageView360ScreenState extends BaseStatefulState<ImageView360Screen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/imageview360");
         },
       ),

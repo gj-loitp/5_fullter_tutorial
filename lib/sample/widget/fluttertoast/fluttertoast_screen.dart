@@ -45,7 +45,7 @@ class _FluttertoastScreenState extends BaseStatefulState<FluttertoastScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/fluttertoast");
         },
       ),

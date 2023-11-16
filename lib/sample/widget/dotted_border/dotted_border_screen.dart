@@ -40,7 +40,7 @@ class _DottedBorderScreenState extends BaseStatefulState<DottedBorderScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/dotted_border");
         },
       ),

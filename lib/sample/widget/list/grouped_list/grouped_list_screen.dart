@@ -44,7 +44,7 @@ class _GroupedListScreenState extends BaseStatefulState<GroupedListScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/grouped_list");
         },
       ),

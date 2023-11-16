@@ -39,7 +39,7 @@ class _SplashScreenState extends BaseStatefulState<SplashScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/splash");
         },
       ),

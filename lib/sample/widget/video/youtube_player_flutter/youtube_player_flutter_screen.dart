@@ -41,7 +41,7 @@ class _YoutubePlayerFlutterScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/youtube_player_flutter");
         },
       ),

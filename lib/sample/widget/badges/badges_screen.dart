@@ -40,7 +40,7 @@ class _BadgesScreenState extends BaseStatefulState<BadgesScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/badges");
         },
       ),

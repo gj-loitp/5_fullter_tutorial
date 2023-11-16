@@ -42,7 +42,7 @@ class _FlutterSpinkitScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_spinkit");
         },
       ),

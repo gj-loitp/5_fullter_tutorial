@@ -39,7 +39,7 @@ class _DropShadowScreenState extends BaseStatefulState<DropShadowScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/drop_shadow");
         },
       ),

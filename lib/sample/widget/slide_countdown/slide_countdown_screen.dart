@@ -40,7 +40,7 @@ class _SlideCountdownScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/slide_countdown");
         },
       ),

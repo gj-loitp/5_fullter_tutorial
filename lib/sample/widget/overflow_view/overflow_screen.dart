@@ -52,7 +52,7 @@ class _OverflowScreenState extends BaseStatefulState<OverflowScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/overflow_view");
         },
       ),

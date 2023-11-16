@@ -46,7 +46,7 @@ class _AnimatedBottomNavigationBarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/animated_bottom_navigation_bar");
         },
       ),

@@ -48,7 +48,7 @@ class _ProgressStateScreenState extends BaseStatefulState<ProgressStateScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/progress_state_button");
         },
       ),

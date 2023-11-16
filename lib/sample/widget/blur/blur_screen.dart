@@ -43,7 +43,7 @@ class _BlurScreenState extends BaseStatefulState<BlurScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/blur");
         },
       ),

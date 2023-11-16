@@ -40,7 +40,7 @@ class _SyncfusionFlutterGaugesScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/syncfusion_flutter_gauges");
         },
       ),

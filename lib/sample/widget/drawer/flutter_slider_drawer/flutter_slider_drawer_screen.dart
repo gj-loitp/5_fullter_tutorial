@@ -40,7 +40,7 @@ class _FlutterSliderDrawerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_slider_drawer");
         },
       ),

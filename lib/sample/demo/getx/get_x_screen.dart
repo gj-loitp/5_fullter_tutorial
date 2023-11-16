@@ -37,7 +37,7 @@ class GetXScreen extends GetWidget with WidgetsBindingObserver {
           Get.back(),
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/get");
         },
       ),

@@ -41,7 +41,7 @@ class _CircularRevealAnimationScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/circular_reveal_animation");
         },
       ),

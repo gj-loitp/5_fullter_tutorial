@@ -34,7 +34,7 @@ class MenuCupertinoScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             UIUtils.getButton("cupertino_icons", () {
-              UrlLauncherUtils.launchInWebViewWithJavaScript(
+              UrlLauncherUtils.launchInBrowser(
                   "https://api.flutter.dev/flutter/cupertino/CupertinoIcons-class.html#constants");
             },
                 description:

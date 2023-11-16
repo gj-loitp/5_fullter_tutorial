@@ -71,7 +71,7 @@ class _InAppReviewScreenState extends State<InAppReviewScreen> {
             Get.back();
           },
           () {
-            UrlLauncherUtils.launchInWebViewWithJavaScript(
+            UrlLauncherUtils.launchInBrowser(
                 "https://pub.dev/packages/in_app_review");
           },
         ),

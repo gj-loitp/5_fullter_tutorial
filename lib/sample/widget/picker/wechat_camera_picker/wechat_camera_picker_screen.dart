@@ -42,7 +42,7 @@ class _WechatCameraPickerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/wechat_camera_picker");
         },
       ),

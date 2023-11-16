@@ -41,7 +41,7 @@ class _SwipeCardsScreenState extends BaseStatefulState<SwipeCardsScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/swipe_cards");
         },
       ),

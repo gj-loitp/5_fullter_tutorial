@@ -17,7 +17,7 @@ class UrlLauncherScreen extends StatelessWidget {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/url_launcher");
+          UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/url_launcher");
         },
       ),
       body: Center(
@@ -136,7 +136,7 @@ class _UrlLauncherHomePageState extends State<UrlLauncherHomePage> {
   Widget build(BuildContext context) {
     // onPressed calls using this URL are not gated on a 'canLaunch' check
     // because the assumption is that every device can launch a web URL.
-    final Uri toLaunch = Uri(scheme: 'https', host: 'www.cylog.org', path: 'headers/');
+    final Uri toLaunch = Uri.parse("https://pub.dev/packages/url_launcher");
     return ListView(
       physics: BouncingScrollPhysics(),
       children: <Widget>[

@@ -40,7 +40,7 @@ class _HexcolorScreenState extends BaseStatefulState<HexcolorScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/hexcolor");
         },
       ),

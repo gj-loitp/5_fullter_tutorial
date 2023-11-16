@@ -39,7 +39,7 @@ class _ElasticDrawerScreenState extends BaseStatefulState<ElasticDrawerScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/elastic_drawer");
         },
       ),

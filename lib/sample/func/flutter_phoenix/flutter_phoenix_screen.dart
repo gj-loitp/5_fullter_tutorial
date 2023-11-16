@@ -42,7 +42,7 @@ class _FlutterPhoenixScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_phoenix");
         },
       ),

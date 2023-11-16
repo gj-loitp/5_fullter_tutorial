@@ -41,7 +41,7 @@ class _WaveScreenState extends BaseStatefulState<WaveScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/wave");
         },
       ),

@@ -41,7 +41,7 @@ class _KenburnsNullSafetyScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/kenburns_nullsafety");
         },
       ),

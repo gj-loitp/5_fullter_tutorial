@@ -39,7 +39,7 @@ class _DChartScreenState extends BaseStatefulState<DChartScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/d_chart");
         },
       ),

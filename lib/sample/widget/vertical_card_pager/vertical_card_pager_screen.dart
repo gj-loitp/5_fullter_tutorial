@@ -40,7 +40,7 @@ class _VerticalCardPagerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/vertical_card_pager");
         },
       ),

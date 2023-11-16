@@ -54,7 +54,7 @@ class _EmailValidatorScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/email_validator");
         },
       ),

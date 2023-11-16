@@ -40,7 +40,7 @@ class _FeedbackScreenState extends BaseStatefulState<FeedbackScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/feedback");
         },
       ),

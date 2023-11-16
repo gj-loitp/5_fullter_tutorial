@@ -41,7 +41,7 @@ class _PanaraDialogScreenState extends BaseStatefulState {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/panara_dialogs");
         },
       ),

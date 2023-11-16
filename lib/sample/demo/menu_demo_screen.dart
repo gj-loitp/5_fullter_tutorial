@@ -209,7 +209,7 @@ class MenuDemoScreen extends StatelessWidget {
                 UIUtils.getButton(
                   "flutter_riverpod",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript(
+                    UrlLauncherUtils.launchInBrowser(
                         "https://pub.dev/packages/flutter_riverpod");
                   },
                   description:
@@ -405,7 +405,7 @@ class MenuDemoScreen extends StatelessWidget {
                 UIUtils.getButton(
                   "velocity_x",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript(
+                    UrlLauncherUtils.launchInBrowser(
                         "https://pub.dev/packages/velocity_x");
                   },
                   description:

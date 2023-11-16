@@ -40,7 +40,7 @@ class _RecaseScreenState extends BaseStatefulState<RecaseScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/recase");
         },
       ),

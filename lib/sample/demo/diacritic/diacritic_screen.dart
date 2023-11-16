@@ -40,7 +40,7 @@ class _DiacriticScreenState extends BaseStatefulState<DiacriticScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/diacritic");
         },
       ),

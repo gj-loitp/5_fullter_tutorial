@@ -44,7 +44,7 @@ class _FlutterRoundedDatePickerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_rounded_date_picker");
         },
       ),

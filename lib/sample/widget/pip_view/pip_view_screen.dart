@@ -39,7 +39,7 @@ class _PipViewScreenState extends BaseStatefulState<PipViewScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/pip_view");
         },
       ),

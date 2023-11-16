@@ -40,7 +40,7 @@ class _CarouselSliderScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/carousel_slider");
         },
       ),

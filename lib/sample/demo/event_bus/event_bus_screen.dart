@@ -57,7 +57,7 @@ class EventBusScreenState extends BaseStatefulState<EventBusScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/event_bus");
         },
       ),

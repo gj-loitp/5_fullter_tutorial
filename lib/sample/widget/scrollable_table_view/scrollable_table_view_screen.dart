@@ -40,7 +40,7 @@ class _ScrollableTableViewScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/scrollable_table_view");
         },
       ),

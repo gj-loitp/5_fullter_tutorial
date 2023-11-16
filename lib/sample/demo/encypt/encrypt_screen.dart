@@ -22,7 +22,7 @@ class EncryptScreen extends StatelessWidget {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/encrypt");
         },
       ),

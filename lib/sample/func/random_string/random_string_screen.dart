@@ -81,7 +81,7 @@ class _RandomStringScreenState extends BaseStatefulState<RandomStringScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/random_string");
         },
       ),

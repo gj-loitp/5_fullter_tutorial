@@ -41,7 +41,7 @@ class _ConfettiScreenState extends BaseStatefulState<ConfettiScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/confetti");
         },
       ),

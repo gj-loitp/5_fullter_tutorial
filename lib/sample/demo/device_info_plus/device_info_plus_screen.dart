@@ -199,7 +199,7 @@ class _DeviceInfoPlusScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/device_info_plus");
         },
       ),

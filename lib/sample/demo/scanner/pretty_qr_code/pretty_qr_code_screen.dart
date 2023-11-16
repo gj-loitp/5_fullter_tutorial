@@ -40,7 +40,7 @@ class _PrettyQrCodeScreenState extends BaseStatefulState<PrettyQrCodeScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/pretty_qr_code");
         },
       ),

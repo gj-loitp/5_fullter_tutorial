@@ -49,7 +49,7 @@ class _ScrollablePositionedListScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/scrollable_positioned_list");
         },
       ),

@@ -39,7 +39,7 @@ class _DottedLineScreenState extends BaseStatefulState<DottedLineScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/dotted_line");
         },
       ),

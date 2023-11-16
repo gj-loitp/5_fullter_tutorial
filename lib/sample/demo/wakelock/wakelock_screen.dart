@@ -40,7 +40,7 @@ class _WakeLockScreenState extends BaseStatefulState<WakeLockScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/wakelock");
         },
       ),

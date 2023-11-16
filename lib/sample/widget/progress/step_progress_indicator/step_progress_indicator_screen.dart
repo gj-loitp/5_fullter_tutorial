@@ -33,7 +33,7 @@ class _StepProgressIndicatorScreenState extends BaseStatefulState<StepProgressIn
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/step_progress_indicator");
+          UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/step_progress_indicator");
         },
       ),
       body: ListView(

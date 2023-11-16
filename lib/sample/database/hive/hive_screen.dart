@@ -39,7 +39,7 @@ class _HiveScreenState extends BaseStatefulState<HiveScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/hive");
         },
       ),
@@ -50,7 +50,7 @@ class _HiveScreenState extends BaseStatefulState<HiveScreen> {
           UIUtils.getButton(
             "Example",
             () {
-              UrlLauncherUtils.launchInWebViewWithJavaScript(
+              UrlLauncherUtils.launchInBrowser(
                   "https://github.com/isar/hive/tree/main/example");
             },
           ),

@@ -40,7 +40,7 @@ class _FlutterMarkdownScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_markdown");
         },
       ),
@@ -51,7 +51,7 @@ class _FlutterMarkdownScreenState
           UIUtils.getButton(
             "Sample later",
             () {
-              UrlLauncherUtils.launchInWebViewWithJavaScript(
+              UrlLauncherUtils.launchInBrowser(
                   "https://github.com/flutter/packages/tree/main/packages/flutter_markdown/example");
             },
           ),

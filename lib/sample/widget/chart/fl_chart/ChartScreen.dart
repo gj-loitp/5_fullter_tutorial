@@ -75,7 +75,7 @@ class _ChartScreenState extends BaseStatefulState<ChartScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/fl_chart");
         },
       ),

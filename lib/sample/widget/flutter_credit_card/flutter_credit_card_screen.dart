@@ -43,7 +43,7 @@ class _FlutterCreditCardScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_credit_card");
         },
       ),

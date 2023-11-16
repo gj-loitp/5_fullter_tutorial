@@ -27,7 +27,7 @@ class CalendarViewScreen extends StatelessWidget {
             Get.back();
           },
           () {
-            UrlLauncherUtils.launchInWebViewWithJavaScript(
+            UrlLauncherUtils.launchInBrowser(
                 "https://pub.dev/packages/calendar_view");
           },
         ),

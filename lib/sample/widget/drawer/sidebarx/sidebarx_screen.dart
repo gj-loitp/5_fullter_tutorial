@@ -39,7 +39,7 @@ class _SidebarxScreenState extends BaseStatefulState<SidebarxScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/sidebarx");
         },
       ),

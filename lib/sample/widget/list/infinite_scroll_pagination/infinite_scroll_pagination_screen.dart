@@ -42,7 +42,7 @@ class _InfiniteScrollPaginationScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/infinite_scroll_pagination");
         },
       ),

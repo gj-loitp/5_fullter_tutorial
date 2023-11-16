@@ -44,7 +44,7 @@ class _DelayedDisplayScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/delayed_display");
         },
       ),

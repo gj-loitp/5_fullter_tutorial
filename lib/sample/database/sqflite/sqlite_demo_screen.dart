@@ -48,7 +48,7 @@ class _SQLiteDemoScreenState extends State<SQLiteDemoScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/sqflite");
         },
       ),

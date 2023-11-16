@@ -58,7 +58,7 @@ class _PackageInforPlusScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/package_info_plus");
         },
       ),

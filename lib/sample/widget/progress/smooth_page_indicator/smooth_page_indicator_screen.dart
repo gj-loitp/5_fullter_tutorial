@@ -40,7 +40,7 @@ class _SmoothPageIndicatorScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/smooth_page_indicator");
         },
       ),

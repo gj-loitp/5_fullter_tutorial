@@ -45,7 +45,7 @@ class _FlutterOfflineScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_offline");
         },
       ),

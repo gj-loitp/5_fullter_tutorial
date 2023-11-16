@@ -67,7 +67,7 @@ class _HorizontalCardPagerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/horizontal_card_pager");
         },
       ),

@@ -39,7 +39,7 @@ class _AfterLayoutScreenState extends BaseStatefulState<AfterLayoutScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/after_layout");
         },
       ),

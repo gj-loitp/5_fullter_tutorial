@@ -48,7 +48,7 @@ class _FlutterStickyHeaderScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_sticky_header");
         },
       ),

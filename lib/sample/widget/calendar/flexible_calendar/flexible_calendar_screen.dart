@@ -41,7 +41,7 @@ class _FlexibleCalendarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flexible_calendar");
         },
       ),

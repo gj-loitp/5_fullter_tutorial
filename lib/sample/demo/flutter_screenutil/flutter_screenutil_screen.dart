@@ -40,7 +40,7 @@ class _FlutterScreenutilScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_screenutil");
         },
       ),
@@ -51,7 +51,7 @@ class _FlutterScreenutilScreenState
           UIUtils.getButton(
             "Sample later",
             () {
-              UrlLauncherUtils.launchInWebViewWithJavaScript(
+              UrlLauncherUtils.launchInBrowser(
                   "https://github.com/OpenFlutter/flutter_screenutil/tree/master/example");
             },
           ),

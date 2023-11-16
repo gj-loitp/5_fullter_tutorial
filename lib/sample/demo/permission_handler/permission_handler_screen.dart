@@ -44,7 +44,7 @@ class _PermissionHandlerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/permission_handler");
         },
       ),

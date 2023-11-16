@@ -41,7 +41,7 @@ class _HorizontalCalendarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/horizontal_calendar");
         },
       ),

@@ -42,7 +42,7 @@ class _FloatingBubblesScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/floating_bubbles");
         },
       ),

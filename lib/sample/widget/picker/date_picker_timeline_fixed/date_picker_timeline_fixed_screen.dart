@@ -40,7 +40,7 @@ class _DatePickerTimeLineFixedScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/date_picker_timeline_fixed");
         },
       ),

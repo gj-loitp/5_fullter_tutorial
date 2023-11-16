@@ -110,7 +110,7 @@ class _AnimatedBackgroundScreenState
               color: Colors.white,
             ),
             onPressed: () {
-              UrlLauncherUtils.launchInWebViewWithJavaScript(
+              UrlLauncherUtils.launchInBrowser(
                   "https://pub.dev/packages/animated_background");
             },
           ),

@@ -41,7 +41,7 @@ class _OctoImageScreenState extends BaseStatefulState<OctoImageScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/octo_image");
         },
       ),

@@ -52,7 +52,7 @@ class _FlutterImageCompressScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_image_compress");
         },
       ),

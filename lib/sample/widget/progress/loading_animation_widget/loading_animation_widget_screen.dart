@@ -44,7 +44,7 @@ class _LoadingAnimationWidgetScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/loading_animation_widget");
         },
       ),

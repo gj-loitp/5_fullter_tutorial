@@ -39,7 +39,7 @@ class _DevicePreviewScreenState extends BaseStatefulState<DevicePreviewScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/device_preview");
         },
       ),

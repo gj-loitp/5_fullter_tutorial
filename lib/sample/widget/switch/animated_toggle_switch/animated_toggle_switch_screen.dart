@@ -42,7 +42,7 @@ class _AnimatedToggleSwitchScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/animated_toggle_switch");
         },
       ),

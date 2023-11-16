@@ -49,7 +49,7 @@ class _DropdownButton2ScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/dropdown_button2");
         },
       ),

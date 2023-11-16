@@ -67,7 +67,7 @@ class _FirebaseRemoteConfigScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/firebase_remote_config");
         },
       ),

@@ -40,7 +40,7 @@ class _LottieScreenState extends BaseStatefulState<LottieScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/lottie");
         },
       ),

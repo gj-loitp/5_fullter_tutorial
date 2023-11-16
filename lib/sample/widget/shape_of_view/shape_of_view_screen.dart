@@ -41,7 +41,7 @@ class _ShapeOfViewScreenState extends BaseStatefulState<ShapeOfViewScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/shape_of_view");
         },
       ),

@@ -40,7 +40,7 @@ class _VibrationScreenState extends BaseStatefulState<VibrationScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/vibration");
         },
       ),

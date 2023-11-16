@@ -194,7 +194,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   UIUtils.getButton(
                     "Github",
                     () {
-                      UrlLauncherUtils.launchInWebViewWithJavaScript(
+                      UrlLauncherUtils.launchInBrowser(
                           "https://github.com/tplloi/fullter_tutorial");
                     },
                   ),

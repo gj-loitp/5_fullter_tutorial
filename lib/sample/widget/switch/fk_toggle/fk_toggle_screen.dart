@@ -39,7 +39,7 @@ class _FkToggleScreenState extends BaseStatefulState<FkToggleScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/fk_toggle");
         },
       ),

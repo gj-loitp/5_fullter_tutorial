@@ -41,7 +41,7 @@ class _SuperCircleScreenState extends BaseStatefulState<SuperCircleScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/super_circle");
         },
       ),

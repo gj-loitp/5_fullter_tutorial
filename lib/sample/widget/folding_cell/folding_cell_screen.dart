@@ -40,7 +40,7 @@ class _FoldingCellScreenState extends BaseStatefulState<FoldingCellScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/folding_cell");
         },
       ),

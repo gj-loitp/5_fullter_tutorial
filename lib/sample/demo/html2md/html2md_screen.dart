@@ -43,7 +43,7 @@ class _Html2MdScreenState extends BaseStatefulState<Html2MdScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/html2md");
         },
       ),

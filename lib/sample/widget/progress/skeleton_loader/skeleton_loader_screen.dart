@@ -44,7 +44,7 @@ class _SkeletonLoaderScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/skeleton_loader");
         },
       ),

@@ -43,7 +43,7 @@ class _HorizontalPickerScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/horizontal_picker/");
         },
       ),

@@ -70,7 +70,7 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/applovin_max");
         },
       ),

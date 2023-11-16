@@ -47,7 +47,7 @@ class _SharePlusScreenState extends BaseStatefulState<SharePlusScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/share_plus");
         },
       ),

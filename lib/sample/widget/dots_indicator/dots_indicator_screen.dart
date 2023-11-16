@@ -41,7 +41,7 @@ class _DotsIndicatorScreenState extends BaseStatefulState<DotsIndicatorScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/dots_indicator");
         },
       ),

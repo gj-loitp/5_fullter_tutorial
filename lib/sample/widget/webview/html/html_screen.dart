@@ -49,7 +49,7 @@ class _HtmlScreenState extends BaseStatefulState<HtmlScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/html");
         },
       ),

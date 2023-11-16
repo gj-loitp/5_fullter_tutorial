@@ -39,7 +39,7 @@ class _OColorPickerScreenState extends BaseStatefulState<OColorPickerScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/o_color_picker");
         },
       ),

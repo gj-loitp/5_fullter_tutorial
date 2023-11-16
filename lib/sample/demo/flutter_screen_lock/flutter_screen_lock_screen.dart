@@ -45,7 +45,7 @@ class _FlutterScreenLockScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_screen_lock");
         },
       ),

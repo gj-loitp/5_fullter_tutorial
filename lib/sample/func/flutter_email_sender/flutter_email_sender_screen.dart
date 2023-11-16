@@ -46,7 +46,7 @@ class _FlutterEmailSenderScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_email_sender");
         },
       ),

@@ -41,7 +41,7 @@ class _FlexColorSchemeScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flex_color_scheme");
         },
       ),

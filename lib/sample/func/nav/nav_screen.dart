@@ -40,7 +40,7 @@ class _NavScreenState extends BaseStatefulState<NavScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/nav");
         },
       ),

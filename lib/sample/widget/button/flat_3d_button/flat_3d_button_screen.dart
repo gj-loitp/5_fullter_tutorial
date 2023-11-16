@@ -33,7 +33,7 @@ class _Flat3dButtonScreenState extends BaseStatefulState<Flat3dButtonScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/flat_3d_button");
+          UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/flat_3d_button");
         },
       ),
       body: Container(

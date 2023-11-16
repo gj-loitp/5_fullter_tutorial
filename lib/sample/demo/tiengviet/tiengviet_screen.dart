@@ -40,7 +40,7 @@ class _TiengVietScreenState extends BaseStatefulState<TiengVietScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/tiengviet");
         },
       ),

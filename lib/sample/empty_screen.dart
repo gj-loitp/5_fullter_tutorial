@@ -32,7 +32,7 @@ class _EmptyScreenState extends BaseStatefulState<EmptyScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/fullter_tutorial");
         },
       ),

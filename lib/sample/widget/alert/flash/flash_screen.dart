@@ -52,7 +52,7 @@ class _FlashScreenState extends BaseStatefulState<FlashScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flash");
         },
       ),

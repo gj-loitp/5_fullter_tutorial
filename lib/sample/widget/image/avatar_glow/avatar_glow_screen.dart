@@ -22,7 +22,7 @@ class AvatarGlowScreen extends StatelessWidget {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/avatar_glow");
         },
       ),

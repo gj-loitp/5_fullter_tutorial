@@ -39,7 +39,7 @@ class _CharactersScreenState extends BaseStatefulState<CharactersScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/characters");
         },
       ),

@@ -52,7 +52,7 @@ class _ImageGallerySaverScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/image_gallery_saver");
         },
       ),

@@ -42,7 +42,7 @@ class _CalendarAppbarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/calendar_appbar");
         },
       ),

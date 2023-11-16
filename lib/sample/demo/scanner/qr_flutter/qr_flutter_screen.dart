@@ -40,7 +40,7 @@ class _QrFlutterScreenState extends BaseStatefulState<QrFlutterScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/qr_flutter");
         },
       ),

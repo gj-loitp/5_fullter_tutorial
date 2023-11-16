@@ -54,7 +54,7 @@ class _FlutterDrawingBoardScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/flutter_drawing_board");
         },
       ),

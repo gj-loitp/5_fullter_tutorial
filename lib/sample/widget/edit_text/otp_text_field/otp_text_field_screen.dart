@@ -41,7 +41,7 @@ class _OtpTextFieldScreenState extends BaseStatefulState<OtpTextFieldScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/otp_text_field");
         },
       ),

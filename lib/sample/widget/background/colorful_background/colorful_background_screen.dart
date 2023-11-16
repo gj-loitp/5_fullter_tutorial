@@ -40,7 +40,7 @@ class _ColorfulBackgroundScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/colorful_background");
         },
       ),

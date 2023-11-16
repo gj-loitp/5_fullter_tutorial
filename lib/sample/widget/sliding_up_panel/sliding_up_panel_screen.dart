@@ -44,7 +44,7 @@ class _SlidingUpPanelScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/sliding_up_panel");
         },
       ),

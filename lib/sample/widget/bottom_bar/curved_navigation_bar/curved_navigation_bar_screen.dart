@@ -40,7 +40,7 @@ class _CurvedNavigationBarScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/curved_navigation_bar");
         },
       ),

@@ -40,7 +40,7 @@ class _HsvColorPickersScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/hsv_color_pickers");
         },
       ),

@@ -41,7 +41,7 @@ class _ScrollToIndexScreenState extends BaseStatefulState<ScrollToIndexScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://github.com/tplloi/scroll_to_index");
         },
       ),

@@ -91,7 +91,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                 ),
                 UIUtils.getButton("change_app_package_name", () {
-                  UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/change_app_package_name");
+                  UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/change_app_package_name");
                 },
                     description:
                         "Change App Package Name with single command. Update AndroidManifest, build.gradle, MainActivity files & move MainActivity file to new directory structure automatically."),
@@ -133,7 +133,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                 UIUtils.getButton(
                   "flutter_displaymode",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/flutter_displaymode");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/flutter_displaymode");
                   },
                   description:
                       "A Flutter plugin to set display mode (resolution, refresh rate) on Android platform. Allows to enable high refresh rate on supported devices.",
@@ -148,7 +148,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                 UIUtils.getButton(
                   "flutter_app_name",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/flutter_app_name");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/flutter_app_name");
                   },
                   description: "A package that makes it easy to set your flutter app launcher name.",
                 ),
@@ -193,7 +193,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                 UIUtils.getButton(
                   "intl",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/intl");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/intl");
                   },
                   description:
                       "Contains code to deal with internationalized/localized messages, date and number formatting and parsing, bi-directional text, and other internationalization issues.",
@@ -224,7 +224,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                 UIUtils.getButton(
                   "string_validator",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/string_validator");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/string_validator");
                   },
                   description: "Dart library for validating and sanitizing strings, especially those from user input.",
                 ),
@@ -239,7 +239,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                 UIUtils.getButton(
                   "retry",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/retry");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/retry");
                   },
                   description:
                       "Utility for wrapping an asynchronous function in automatic retry logic with exponential back-off, useful when making requests over network.",
@@ -255,7 +255,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                 UIUtils.getButton(
                   "tuple",
                   () {
-                    UrlLauncherUtils.launchInWebViewWithJavaScript("https://pub.dev/packages/tuple");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/tuple");
                   },
                   description: "A library providing a tuple data structure.",
                 ),

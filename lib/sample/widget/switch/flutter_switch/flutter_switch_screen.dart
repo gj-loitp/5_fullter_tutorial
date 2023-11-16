@@ -39,7 +39,7 @@ class _FlutterSwitchScreenState extends BaseStatefulState<FlutterSwitchScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_switch");
         },
       ),

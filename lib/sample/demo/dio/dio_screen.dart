@@ -44,7 +44,7 @@ class _DioScreenState extends BaseStatefulState<DioScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/dio");
         },
       ),

@@ -53,7 +53,7 @@ class _LocalAuthScreenState extends BaseStatefulState<LocalAuthScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/local_auth");
         },
       ),

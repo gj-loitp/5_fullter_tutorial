@@ -39,7 +39,7 @@ class _BottomNavyBarScreenState extends BaseStatefulState<BottomNavyBarScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/bottom_navy_bar");
         },
       ),

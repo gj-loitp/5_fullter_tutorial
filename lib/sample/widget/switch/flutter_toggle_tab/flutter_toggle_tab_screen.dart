@@ -41,7 +41,7 @@ class _FlutterToggleTabScreenState
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/flutter_toggle_tab");
         },
       ),

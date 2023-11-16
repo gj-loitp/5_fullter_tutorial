@@ -40,7 +40,7 @@ class _NumberPickerScreenState extends BaseStatefulState<NumberPickerScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInWebViewWithJavaScript(
+          UrlLauncherUtils.launchInBrowser(
               "https://pub.dev/packages/numberpicker");
         },
       ),
