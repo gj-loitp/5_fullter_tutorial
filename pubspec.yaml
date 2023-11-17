@@ -537,7 +537,7 @@ dev_dependencies:
     sdk: flutter
 
   #https://pub.dev/packages/flutter_launcher_icons
-  #flutter_launcher_icons: "^0.10.0"
+  flutter_launcher_icons: ^0.13.1
 
   #https://pub.dev/packages/flutter_app_name
 #  flutter_app_name: ^0.1.1
