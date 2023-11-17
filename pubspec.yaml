@@ -12,6 +12,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  ##a
   #https://pub.dev/packages/applovin_max
   applovin_max: ^3.3.0
   #https://pub.dev/packages/advance_pdf_viewer
@@ -34,6 +35,8 @@ dependencies:
   avatar_glow: ^2.0.2
   #https://pub.dev/packages/auto_size_text
   auto_size_text: ^3.0.0
+  #https://pub.dev/packages/auto_route
+#  auto_route: ^7.8.4
   #https://pub.dev/packages/app_settings
   app_settings: ^5.1.1
   #https://pub.dev/packages/awesome_dialog
