@@ -2715,6 +2715,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+  tiktoklikescroller:
+    dependency: "direct main"
+    description:
+      name: tiktoklikescroller
+      sha256: "4d984830e3e12c26251a05f55ae9bae0409612b5acc9a8b8ae4aafe5f7e3c008"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.5"
   tiledjsonreader:
     dependency: "direct main"
     description:

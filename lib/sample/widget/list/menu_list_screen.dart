@@ -1,5 +1,6 @@
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/widget/list/tiktoklikescroller/tiktoklikescroller_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -48,8 +49,7 @@ class MenuListScreen extends StatelessWidget {
             () {
               Get.to(() => CarouselSliderScreen());
             },
-            description:
-                "A carousel slider widget, support infinite scroll and custom child widget.",
+            description: "A carousel slider widget, support infinite scroll and custom child widget.",
           ),
           UIUtils.getButton(
             "ContactPageScreen",
@@ -68,24 +68,21 @@ class MenuListScreen extends StatelessWidget {
             () {
               Get.to(() => FlutterStickyHeaderScreen());
             },
-            description:
-                "Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.",
+            description: "Flutter implementation of sticky headers as a sliver. Use it in a CustomScrollView.",
           ),
           UIUtils.getButton(
             "infinite_scroll_pagination",
             () {
               Get.to(() => InfiniteScrollPaginationScreen());
             },
-            description:
-                "Lazily load and display pages of items as the user scrolls down your screen.",
+            description: "Lazily load and display pages of items as the user scrolls down your screen.",
           ),
           UIUtils.getButton(
             "grouped_list",
             () {
               Get.to(() => GroupedListScreen());
             },
-            description:
-                "A Flutter ListView where the list items can be grouped into sections.",
+            description: "A Flutter ListView where the list items can be grouped into sections.",
           ),
           UIUtils.getButton(
             "HeaderBodyFooterScreen",
@@ -136,24 +133,21 @@ class MenuListScreen extends StatelessWidget {
             () {
               Get.to(() => PullToRefreshScreen());
             },
-            description:
-                "a widget provided to the flutter scroll component drop-down refresh and pull up load.",
+            description: "a widget provided to the flutter scroll component drop-down refresh and pull up load.",
           ),
           UIUtils.getButton(
             "scroll_to_index",
             () {
               Get.to(() => ScrollToIndexScreen());
             },
-            description:
-                "Scroll to a specific child of any scrollable widget in Flutter",
+            description: "Scroll to a specific child of any scrollable widget in Flutter",
           ),
           UIUtils.getButton(
             "scrollable_positioned_list",
             () {
               Get.to(() => ScrollablePositionedListScreen());
             },
-            description:
-                "A list with helper methods to programmatically scroll to an item.",
+            description: "A list with helper methods to programmatically scroll to an item.",
           ),
           UIUtils.getButton(
             "sticky_headers",
@@ -162,6 +156,13 @@ class MenuListScreen extends StatelessWidget {
             },
             description:
                 "Flutter Sticky Headers - Lets you place headers on scrollable content that will stick to the top of the container whilst the content is scrolled.",
+          ),
+          UIUtils.getButton(
+            "tiktoklikescroller",
+            () {
+              Get.to(() => TiktokLikeScrollerScreen());
+            },
+            description: "A vertical fullscreen scroll implementation that snaps in place, similar to the TikTok app",
           ),
         ],
       ),
