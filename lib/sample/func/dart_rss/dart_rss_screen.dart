@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
@@ -60,24 +62,34 @@ class _DartRssScreenState extends BaseStatefulState<DartRssScreen> {
     debugPrint("roy93~ _get $rss");
 
     final client = http.Client();
+    final url = Uri.parse(rss);
+    final response = await client.get(url);
+    debugPrint("roy93~ response.statusCode ${response.statusCode}");
+    if (response.statusCode == 200) {
+      // debugPrint("roy93~ response.bodyBytes ${response.bodyBytes}");
+      // debugPrint("roy93~ response.body ${response.body}");
+      const utf8Decoder = Utf8Decoder(allowMalformed: true);
+      final decodedBytes = utf8Decoder.convert(response.bodyBytes);
+      debugPrint("roy93~ decodedBytes $decodedBytes");
 
-    var bodyString = (await client.get(Uri.parse(rss))).body;
-    final rssFeed = RssFeed.parse(bodyString);
+      var rssFeed = new RssFeed.parse(decodedBytes);
 
-    _s = "================";
-    _s += "\nrssFeed $rssFeed";
-    _s += "\ntitle ${rssFeed.title}";
-    _s += "\nlink ${rssFeed.link}";
-    _s += "\ndescription ${rssFeed.description}";
-    _s += "\ncopyright ${rssFeed.copyright}";
-    _s += "\nimage ${rssFeed.image}";
-    _s += "\nitems length ${rssFeed.items.length}";
-    rssFeed.items.forEach((element) {
-      _s += "\n~~~ element ${element.title}~${element.description}~${element.pubDate}";
-    });
-    _s += "================";
-    setState(() {
-      _s;
-    });
+      _s = "================";
+      _s += "\nrssFeed $rssFeed";
+      _s += "\ntitle ${rssFeed.title}";
+      _s += "\nlink ${rssFeed.link}";
+      _s += "\ndescription ${rssFeed.description}";
+      _s += "\ncopyright ${rssFeed.copyright}";
+      _s += "\nimage ${rssFeed.image}";
+      _s += "\nitems length ${rssFeed.items.length}";
+      rssFeed.items.forEach((element) {
+        _s += "\n~~~ element ${element.title}~${element.description}~${element.pubDate}";
+      });
+      _s += "================";
+      debugPrint("roy93~ $_s");
+      setState(() {
+        _s;
+      });
+    }
   }
 }
