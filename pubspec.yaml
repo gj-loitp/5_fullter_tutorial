@@ -13,7 +13,7 @@ dependencies:
     sdk: flutter
 
   #https://pub.dev/packages/applovin_max
-  applovin_max: ^3.3.0
+  applovin_max: ^3.4.1
   #https://pub.dev/packages/advance_pdf_viewer
 #  advance_pdf_viewer: ^2.0.1
   #https://pub.dev/packages/after_layout
@@ -92,6 +92,7 @@ dependencies:
   #https://pub.dev/packages/csslib
   csslib: ^1.0.0
 
+  ##d
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0
   #https://pub.dev/packages/d_chart
