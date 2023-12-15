@@ -15,6 +15,8 @@ class DartRssScreen extends StatefulWidget {
 }
 
 class _DartRssScreenState extends BaseStatefulState<DartRssScreen> {
+  var _s = "";
+
   @override
   void initState() {
     super.initState();
@@ -46,37 +48,36 @@ class _DartRssScreenState extends BaseStatefulState<DartRssScreen> {
             () {
               _get("http://xsktcantho.com.vn/rss.asp?id=1&d=K1T7_2023");
             },
-          )
+          ),
+          SizedBox(height: DimenConstants.marginPaddingMedium),
+          UIUtils.getText(_s),
         ],
       ),
     );
   }
 
-  void _get(String rss) {
+  Future<void> _get(String rss) async {
     debugPrint("roy93~ _get $rss");
 
     final client = http.Client();
 
-    client.get(Uri.parse(rss)).then((response) {
-      return response.body;
-    }).then((bodyString) {
-      final rssFeed = RssFeed.parse(bodyString);
-      debugPrint("roy93~ rssFeed $rssFeed");
+    var bodyString = (await client.get(Uri.parse(rss))).body;
+    final rssFeed = RssFeed.parse(bodyString);
 
-      debugPrint("roy93~ title ${rssFeed.title}");
-      debugPrint("roy93~ link ${rssFeed.link}");
-      debugPrint("roy93~ description ${rssFeed.description}");
-      debugPrint("roy93~ copyright ${rssFeed.copyright}");
-      debugPrint("roy93~ image ${rssFeed.image}");
-      debugPrint("roy93~ items length ${rssFeed.items.length}");
-      var _list = rssFeed.items;
-      _list.forEach((element) {
-        debugPrint("roy93~ element ${element.title}~${element.description}~${element.pubDate}");
-      });
-
-      showSnackBarFull("Get data success, check logcat to view the data response", "rssFeed.title ${rssFeed.title}");
-
-      return rssFeed;
+    _s = "================";
+    _s += "\nrssFeed $rssFeed";
+    _s += "\ntitle ${rssFeed.title}";
+    _s += "\nlink ${rssFeed.link}";
+    _s += "\ndescription ${rssFeed.description}";
+    _s += "\ncopyright ${rssFeed.copyright}";
+    _s += "\nimage ${rssFeed.image}";
+    _s += "\nitems length ${rssFeed.items.length}";
+    rssFeed.items.forEach((element) {
+      _s += "\n~~~ element ${element.title}~${element.description}~${element.pubDate}";
+    });
+    _s += "================";
+    setState(() {
+      _s;
     });
   }
 }
