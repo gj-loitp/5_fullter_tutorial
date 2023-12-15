@@ -85,16 +85,27 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   description: "A Flutter plugin for opening iOS and Android phone settings from an app.",
                 ),
                 UIUtils.getButton(
-                  "Async",
+                  "async",
                   () {
                     Get.to(() => MenuAsyncScreen());
                   },
                 ),
-                UIUtils.getButton("change_app_package_name", () {
-                  UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/change_app_package_name");
-                },
-                    description:
-                        "Change App Package Name with single command. Update AndroidManifest, build.gradle, MainActivity files & move MainActivity file to new directory structure automatically."),
+                UIUtils.getButton(
+                  "auto_route",
+                  () {
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/auto_route");
+                  },
+                  description:
+                      "AutoRoute is a declarative routing solution, where everything needed for navigation is automatically generated for you.",
+                ),
+                UIUtils.getButton(
+                  "change_app_package_name",
+                  () {
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/change_app_package_name");
+                  },
+                  description:
+                      "Change App Package Name with single command. Update AndroidManifest, build.gradle, MainActivity files & move MainActivity file to new directory structure automatically.",
+                ),
                 UIUtils.getButton(
                   "characters",
                   () {

@@ -2683,6 +2683,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.0"
+  tdk_bouncingwidget:
+    dependency: "direct main"
+    description:
+      name: tdk_bouncingwidget
+      sha256: dbf7590b11986491ee6bf9ba137cf88d25eb1df1961b89b2cb0d9914a6e021b1
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.4"
   term_glyph:
     dependency: transitive
     description:
@@ -2707,6 +2715,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.0"
+  tiktoklikescroller:
+    dependency: "direct main"
+    description:
+      name: tiktoklikescroller
+      sha256: "4d984830e3e12c26251a05f55ae9bae0409612b5acc9a8b8ae4aafe5f7e3c008"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.2.5"
   tiledjsonreader:
     dependency: "direct main"
     description:

@@ -65,16 +65,16 @@ class UIUtils {
     double marginTop = DimenConstants.marginPaddingMedium,
     String description = "",
   }) {
+    // var _height = DimenConstants.buttonHeight * 1.5;
     return Container(
       margin: EdgeInsets.only(top: marginTop),
-      height: DimenConstants.buttonHeight * 1.5,
+      // height: _height,
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.black,
           backgroundColor: Colors.white,
           shape: new RoundedRectangleBorder(
-            borderRadius:
-                new BorderRadius.circular(DimenConstants.radiusMedium),
+            borderRadius: new BorderRadius.circular(DimenConstants.radiusMedium),
             side: BorderSide(
               color: const Color(0xFF8C98A8).withOpacity(0.2),
               width: 0.5,
@@ -88,6 +88,11 @@ class UIUtils {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
+                  SizedBox(
+                    height: description.isNotEmpty == true
+                        ? DimenConstants.marginPaddingSmall
+                        : DimenConstants.marginPaddingMedium,
+                  ),
                   Text(
                     text,
                     style: TextStyle(
@@ -95,6 +100,7 @@ class UIUtils {
                       fontSize: DimenConstants.txtMedium,
                     ),
                   ),
+                  if (description.isNotEmpty == true) SizedBox(height: DimenConstants.marginPaddingSmall),
                   if (description.isNotEmpty == true)
                     Text(
                       description,
@@ -103,6 +109,11 @@ class UIUtils {
                         fontSize: DimenConstants.txtSmall,
                       ),
                     ),
+                  SizedBox(
+                    height: description.isNotEmpty == true
+                        ? DimenConstants.marginPaddingSmall
+                        : DimenConstants.marginPaddingMedium,
+                  ),
                 ],
               ),
             ),
@@ -361,8 +372,7 @@ class UIUtils {
     );
   }
 
-  static Widget buildHorizontalDivider(
-      Color color, double width, double height) {
+  static Widget buildHorizontalDivider(Color color, double width, double height) {
     return Container(
       margin: EdgeInsets.all(0.0),
       height: height,
@@ -380,8 +390,7 @@ class UIUtils {
     );
   }
 
-  static void showFullWidthSnackBar(String title, String message,
-      {bool isTop = true}) {
+  static void showFullWidthSnackBar(String title, String message, {bool isTop = true}) {
     Get.snackbar(
       title,
       message,
@@ -408,8 +417,7 @@ class UIUtils {
     );
   }
 
-  static void showFullWidthSnackBarError(String title, String message,
-      {bool isTop = true}) {
+  static void showFullWidthSnackBarError(String title, String message, {bool isTop = true}) {
     Get.snackbar(
       title,
       message,

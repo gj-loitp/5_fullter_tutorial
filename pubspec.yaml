@@ -12,6 +12,7 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
+  ##a
   #https://pub.dev/packages/applovin_max
   applovin_max: ^3.4.1
   #https://pub.dev/packages/advance_pdf_viewer
@@ -34,6 +35,8 @@ dependencies:
   avatar_glow: ^2.0.2
   #https://pub.dev/packages/auto_size_text
   auto_size_text: ^3.0.0
+  #https://pub.dev/packages/auto_route
+#  auto_route: ^7.8.4
   #https://pub.dev/packages/app_settings
   app_settings: ^5.1.1
   #https://pub.dev/packages/awesome_dialog
@@ -127,6 +130,8 @@ dependencies:
   ##e
   #https://pub.dev/packages/easy_debounce
   easy_debounce: ^2.0.3
+  #https://pub.dev/packages/easy_refresh
+#  easy_refresh: ^3.3.2+4
   #https://pub.dev/packages/elastic_drawer
   elastic_drawer: ^2.0.2
   #https://pub.dev/packages/email_validator
@@ -511,7 +516,11 @@ dependencies:
   youtube_player_flutter: ^8.1.2
 
   ##t
+  #https://pub.dev/packages/tdk_bouncingwidget
+  tdk_bouncingwidget: ^1.0.4
   tiledjsonreader: ^1.3.3
+  #https://pub.dev/packages/tiktoklikescroller
+  tiktoklikescroller: ^0.2.5
   #https://pub.dev/packages/tuple
 #  tuple: ^2.0.2
   #https://pub.dev/packages/translator
