@@ -98,6 +98,8 @@ dependencies:
   ##d
   #https://pub.dev/packages/date_picker_timeline_fixed
   date_picker_timeline_fixed: ^2.0.0
+  #https://pub.dev/packages/dart_rss
+  dart_rss: ^3.0.1
   #https://pub.dev/packages/d_chart
   d_chart: ^2.6.2
   #https://pub.dev/packages/drag_select_grid_view

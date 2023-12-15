@@ -1,6 +1,7 @@
 import 'package:applovin_max/applovin_max.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/func/dart_rss/dart_rss_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/func/translator/translator_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/func/uuid/uuid_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/func/vibration/vibration_screen.dart';
@@ -118,6 +119,13 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   () {
                     Get.to(() => CommunicationBetweenWidgetScreen());
                   },
+                ),
+                UIUtils.getButton(
+                  "dart_rss",
+                  () {
+                    Get.to(() => DartRssScreen());
+                  },
+                  description: "Dart parser for RSS1.0, RSS2.0, Atom feeds.",
                 ),
                 UIUtils.getButton(
                   "device_preview",
