@@ -2,6 +2,7 @@ import 'package:applovin_max/applovin_max.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_scalable_ocr/flutter_scalable_ocr_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/pdf_text/pdf_text_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/pdfx/pdfx_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/recase/recase_screen.dart';
@@ -90,8 +91,7 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => ClipboardScreen());
                   },
-                  description:
-                      "A flutter package that helps copy text to clipboard and paste from clipboard.",
+                  description: "A flutter package that helps copy text to clipboard and paste from clipboard.",
                 ),
                 UIUtils.getButton(
                   "connectivity_plus",
@@ -142,24 +142,21 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => EasyDebounceScreen());
                   },
-                  description:
-                      "An extremely easy-to-use method call debouncer package for Dart/Flutter.",
+                  description: "An extremely easy-to-use method call debouncer package for Dart/Flutter.",
                 ),
                 UIUtils.getButton(
                   "encrypt",
                   () {
                     Get.to(() => EncryptScreen());
                   },
-                  description:
-                      "A set of high-level APIs over PointyCastle for two-way cryptography.",
+                  description: "A set of high-level APIs over PointyCastle for two-way cryptography.",
                 ),
                 UIUtils.getButton(
                   "event_bus",
                   () {
                     Get.to(() => EventBusScreen());
                   },
-                  description:
-                      "A simple Event Bus using Dart Streams for decoupling applications",
+                  description: "A simple Event Bus using Dart Streams for decoupling applications",
                 ),
                 UIUtils.getButton(
                   "firebase_remote_config",
@@ -174,8 +171,7 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => FlexColorSchemeScreen());
                   },
-                  description:
-                      "A Flutter package to use and make beautiful Material design based themes.",
+                  description: "A Flutter package to use and make beautiful Material design based themes.",
                 ),
                 UIUtils.getButton(
                   "flutter_bloc",
@@ -188,12 +184,9 @@ class MenuDemoScreen extends StatelessWidget {
                 UIUtils.getButton(
                   "FlutterLocalNotificationScreen",
                   () async {
-                    final NotificationAppLaunchDetails?
-                        notificationAppLaunchDetails =
-                        await flutterLocalNotificationsPlugin
-                            .getNotificationAppLaunchDetails();
-                    Get.to(() => FlutterLocalNotificationScreen(
-                        notificationAppLaunchDetails));
+                    final NotificationAppLaunchDetails? notificationAppLaunchDetails =
+                        await flutterLocalNotificationsPlugin.getNotificationAppLaunchDetails();
+                    Get.to(() => FlutterLocalNotificationScreen(notificationAppLaunchDetails));
                   },
                   description:
                       "A cross platform plugin for displaying and scheduling local notifications for Flutter applications with the ability to customise for each platform.",
@@ -203,17 +196,23 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => FlutterOfflineScreen());
                   },
-                  description:
-                      "A tidy utility to handle offline/online connectivity like a Boss.",
+                  description: "A tidy utility to handle offline/online connectivity like a Boss.",
                 ),
                 UIUtils.getButton(
                   "flutter_riverpod",
                   () {
-                    UrlLauncherUtils.launchInBrowser(
-                        "https://pub.dev/packages/flutter_riverpod");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/flutter_riverpod");
                   },
                   description:
                       "A simple way to access state from anywhere in your application while robust and testable.",
+                ),
+                UIUtils.getButton(
+                  "flutter_scalable_ocr",
+                  () {
+                    Get.to(() => FlutterScalableOcrScreen());
+                  },
+                  description:
+                      "Flutter scalable OCR package is a wrapper around google_mlkit_text_recognition where you can partialy select part of camera which text will be processed of.",
                 ),
                 UIUtils.getButton(
                   "flutter_screen_lock",
@@ -236,8 +235,7 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => FocusDetectorScreen());
                   },
-                  description:
-                      "Detects when your widget appears or disappears from the screen",
+                  description: "Detects when your widget appears or disappears from the screen",
                 ),
                 UIUtils.getButton(
                   "get",
@@ -320,16 +318,14 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => RecaseScreen());
                   },
-                  description:
-                      "Changes the case of the input text to the desire case convention.",
+                  description: "Changes the case of the input text to the desire case convention.",
                 ),
                 UIUtils.getButton(
                   "remove_emoji",
                   () {
                     Get.to(() => RemoveEmojiScreen());
                   },
-                  description:
-                      "Dart and flutter package accurately replace/remove emojis in text",
+                  description: "Dart and flutter package accurately replace/remove emojis in text",
                 ),
                 UIUtils.getButton(
                   "restart_app",
@@ -379,8 +375,7 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => TimeAgoScreen());
                   },
-                  description:
-                      "A library useful for creating fuzzy timestamps. (e.g. '15 minutes ago')",
+                  description: "A library useful for creating fuzzy timestamps. (e.g. '15 minutes ago')",
                 ),
                 UIUtils.getButton(
                   "Tip calculator",
@@ -399,17 +394,14 @@ class MenuDemoScreen extends StatelessWidget {
                   () {
                     Get.to(() => UrlLauncherScreen());
                   },
-                  description:
-                      "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
+                  description: "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
                 ),
                 UIUtils.getButton(
                   "velocity_x",
                   () {
-                    UrlLauncherUtils.launchInBrowser(
-                        "https://pub.dev/packages/velocity_x");
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/velocity_x");
                   },
-                  description:
-                      "A minimalist Flutter framework for rapidly building custom designs..",
+                  description: "A minimalist Flutter framework for rapidly building custom designs..",
                 ),
                 UIUtils.getButton(
                   "wakelock",
@@ -430,8 +422,7 @@ class MenuDemoScreen extends StatelessWidget {
               listener: AdViewAdListener(onAdLoadedCallback: (ad) {
                 Dog.i('Banner widget ad loaded from ${ad.networkName}');
               }, onAdLoadFailedCallback: (adUnitId, error) {
-                Dog.i(
-                    'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
+                Dog.i('Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
               }, onAdClickedCallback: (ad) {
                 Dog.i('Banner widget ad clicked');
               }, onAdExpandedCallback: (ad) {
