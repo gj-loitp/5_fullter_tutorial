@@ -187,6 +187,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   description: "Easily restart your application from scratch, losing any previous state.",
                 ),
                 UIUtils.getButton(
+                  "google_mlkit_text_recognition",
+                  () {
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/google_mlkit_text_recognition");
+                  },
+                  description:
+                      "A Flutter plugin to use Google's ML Kit Text Recognition to recognize text in any Chinese, Devanagari, Japanese, Korean and Latin character set.",
+                ),
+                UIUtils.getButton(
                   "hexcolor",
                   () {
                     Get.to(() => HexcolorScreen());
