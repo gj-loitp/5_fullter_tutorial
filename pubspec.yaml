@@ -160,10 +160,10 @@ dependencies:
   fk_toggle: ^0.1.4
   #https://pub.dev/packages/font_awesome_flutter
   font_awesome_flutter: ^10.6.0
-  firebase_core: ^2.22.0
-  firebase_analytics: ^10.6.4
-  firebase_crashlytics: ^3.4.4
-  firebase_remote_config: ^4.3.4
+  firebase_core: ^2.24.2
+  firebase_analytics: ^10.7.4
+  firebase_crashlytics: ^3.4.8
+  firebase_remote_config: ^4.3.8
   #https://pub:dev/packages/file_picker
   file_picker: ^5.5.0
   #https://pub.dev/packages/flash
@@ -228,7 +228,9 @@ dependencies:
   #https://pub.dev/packages/flutter_rounded_date_picker
   flutter_rounded_date_picker: ^3.0.4
   #https://pub.dev/packages/flutter_riverpod
-  flutter_riverpod: ^2.4.5
+  flutter_riverpod: ^2.4.9
+  #https://pub.dev/packages/flutter_scalable_ocr
+  flutter_scalable_ocr: ^2.0.0
   #https://pub.dev/packages/flutter_simple_treeview
   flutter_simple_treeview: ^3.0.2
   #https://pub.dev/packages/flutter_slidable
