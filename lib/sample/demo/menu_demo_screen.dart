@@ -3,6 +3,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/main.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/flutter_scalable_ocr/flutter_scalable_ocr_screen.dart';
+import 'package:com.roy93group.flutter_tutorial/sample/demo/image_to_text_flutter/image_to_text_flutter_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/pdf_text/pdf_text_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/pdfx/pdfx_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/demo/recase/recase_screen.dart';
@@ -260,6 +261,14 @@ class MenuDemoScreen extends StatelessWidget {
                   },
                   description:
                       "A new flutter plugin project for save image to gallery, iOS need to add the following keys to your Info.plist file.",
+                ),
+                UIUtils.getButton(
+                  "Image_to_Text_Flutter",
+                  () {
+                    Get.to(() => ImageToTextFlutterScreen());
+                  },
+                  description:
+                      """The "Image to Text" Flutter app allows users to extract text from images using the device camera. It utilizes the Google ML Kit Text Recognition API to perform Optical Character Recognition (OCR) on the images captured through the camera.""",
                 ),
                 UIUtils.getButton(
                   "Inherited",
