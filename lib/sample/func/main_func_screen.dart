@@ -92,6 +92,14 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
                   },
                 ),
                 UIUtils.getButton(
+                  "camera",
+                  () {
+                    UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/camera");
+                  },
+                  description:
+                      "A Flutter plugin for controlling the camera. Supports previewing the camera feed, capturing images and video, and streaming image buffers to Dart",
+                ),
+                UIUtils.getButton(
                   "auto_route",
                   () {
                     UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/auto_route");
