@@ -20,18 +20,12 @@ import 'package:get/get.dart';
 
 enum AdLoadState { notLoaded, loading, loaded }
 
-const String sdkKey =
-    "e75FnQfS9XTTqM1Kne69U7PW_MBgAnGQTFvtwVVui6kRPKs5L7ws9twr5IQWwVfzPKZ5pF2IfDa7lguMgGlCyt";
+const String sdkKey = "~";
+final String _interstitialAdUnitId = Platform.isAndroid ? "~" : "IOS_INTER_AD_UNIT_ID";
+final String _bannerAdUnitId = Platform.isAndroid ? "~" : "IOS_BANNER_AD_UNIT_ID";
 
-final String _interstitialAdUnitId =
-    Platform.isAndroid ? "f4a542a4bda4c5f1" : "IOS_INTER_AD_UNIT_ID";
-final String _bannerAdUnitId =
-    Platform.isAndroid ? "aed1455d708c540e" : "IOS_BANNER_AD_UNIT_ID";
-
-final interstitialAdUnitId =
-    (kDebugMode) ? ("${_interstitialAdUnitId}_debug") : _interstitialAdUnitId;
-final bannerAdUnitId =
-    (kDebugMode) ? ("${_bannerAdUnitId}_debug") : _bannerAdUnitId;
+final interstitialAdUnitId = (kDebugMode) ? ("${_interstitialAdUnitId}_debug") : _interstitialAdUnitId;
+final bannerAdUnitId = (kDebugMode) ? ("${_bannerAdUnitId}_debug") : _bannerAdUnitId;
 
 var _isInitialized = false;
 var _interstitialLoadState = AdLoadState.notLoaded;
@@ -70,8 +64,7 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInBrowser(
-              "https://pub.dev/packages/applovin_max");
+          UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/applovin_max");
         },
       ),
       body: Column(
@@ -91,8 +84,7 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
                     if (kDebugMode) {
                       AppLovinMAX.showMediationDebugger();
                     } else {
-                      showSnackBarFull(
-                          "Applovin", "Only available in debug mode");
+                      showSnackBarFull("Applovin", "Only available in debug mode");
                     }
                   }
                 : null,
@@ -103,8 +95,7 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           ElevatedButton(
             onPressed: () {
               void showInter() async {
-                bool isReady = (await AppLovinMAX.isInterstitialReady(
-                    interstitialAdUnitId))!;
+                bool isReady = (await AppLovinMAX.isInterstitialReady(interstitialAdUnitId))!;
                 if (isReady) {
                   AppLovinMAX.showInterstitial(interstitialAdUnitId);
                 } else {
@@ -114,8 +105,7 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
                 }
               }
 
-              if (_isInitialized &&
-                  _interstitialLoadState != AdLoadState.loading) {
+              if (_isInitialized && _interstitialLoadState != AdLoadState.loading) {
                 showInter();
               }
             },
@@ -131,12 +121,10 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
                         //
                         // Programmatic banner creation - banners are automatically sized to 320x50 on phones and 728x90 on tablets
                         //
-                        AppLovinMAX.createBanner(
-                            bannerAdUnitId, AdViewPosition.bottomCenter);
+                        AppLovinMAX.createBanner(bannerAdUnitId, AdViewPosition.bottomCenter);
 
                         // Set banner background color to black - PLEASE USE HEX STRINGS ONLY
-                        AppLovinMAX.setBannerBackgroundColor(
-                            bannerAdUnitId, '#ff0000');
+                        AppLovinMAX.setBannerBackgroundColor(bannerAdUnitId, '#ff0000');
 
                         _isProgrammaticBannerCreated = true;
                       }
@@ -145,8 +133,7 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
                     }
 
                     setState(() {
-                      _isProgrammaticBannerShowing =
-                          !_isProgrammaticBannerShowing;
+                      _isProgrammaticBannerShowing = !_isProgrammaticBannerShowing;
                     });
                   }
                 : null,
@@ -229,7 +216,7 @@ Incomplete, if not for you.""",
   Future<void> initializePlugin() async {
     logStatus("Initializing SDK...");
 
-    Map? configuration = await AppLovinMAX.initialize(sdkKey);
+    var configuration = await AppLovinMAX.initialize(sdkKey);
     if (configuration != null) {
       _isInitialized = true;
 
@@ -259,8 +246,7 @@ Incomplete, if not for you.""",
         _interstitialRetryAttempt = _interstitialRetryAttempt + 1;
 
         int retryDelay = pow(2, min(6, _interstitialRetryAttempt)).toInt();
-        logStatus(
-            'Interstitial ad failed to load with code ${error.code} - retrying in ${retryDelay}s');
+        logStatus('Interstitial ad failed to load with code ${error.code} - retrying in ${retryDelay}s');
 
         Future.delayed(Duration(milliseconds: retryDelay * 1000), () {
           AppLovinMAX.loadInterstitial(interstitialAdUnitId);
@@ -271,8 +257,7 @@ Incomplete, if not for you.""",
       },
       onAdDisplayFailedCallback: (ad, error) {
         _interstitialLoadState = AdLoadState.notLoaded;
-        logStatus(
-            'Interstitial ad failed to display with code ${error.code} and message ${error.message}');
+        logStatus('Interstitial ad failed to display with code ${error.code} and message ${error.message}');
       },
       onAdClickedCallback: (ad) {
         logStatus('Interstitial ad clicked');
@@ -290,8 +275,7 @@ Incomplete, if not for you.""",
     AppLovinMAX.setBannerListener(AdViewAdListener(onAdLoadedCallback: (ad) {
       logStatus('Banner ad loaded from ${ad.networkName}');
     }, onAdLoadFailedCallback: (adUnitId, error) {
-      logStatus(
-          'Banner ad failed to load with error code ${error.code} and message: ${error.message}');
+      logStatus('Banner ad failed to load with error code ${error.code} and message: ${error.message}');
     }, onAdClickedCallback: (ad) {
       logStatus('Banner ad clicked');
     }, onAdExpandedCallback: (ad) {
@@ -314,9 +298,7 @@ Incomplete, if not for you.""",
   }
 
   String getProgrammaticBannerButtonTitle() {
-    return _isProgrammaticBannerShowing
-        ? 'Hide Programmatic Banner'
-        : 'Show Programmatic Banner';
+    return _isProgrammaticBannerShowing ? 'Hide Programmatic Banner' : 'Show Programmatic Banner';
   }
 
   String getWidgetBannerButtonTitle() {

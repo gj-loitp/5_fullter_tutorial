@@ -36,15 +36,18 @@ import 'splash_screen.dart';
 //drive config
 //https://drive.google.com/drive/u/0/folders/1kevDB8a5a-POwkGupg3xOiZByoGjAe3B
 //TODO dark mode
+//TODO rate app, more app
+//TODO change keystore 2022.10.03
+//TODO change background_image: "assets/images/splash.jpg"
+//TODO app name, ic launcher
+//TODO google config show isFullData use dio demo screen 2022.10.13
+//TODO lan dau mo app check valid google neu ko co connection se bi treo app
+//TODO firebase
+//TODO applovin
+//TODO pkg name
 
-//done
-//rate app, more app
-//change keystore 2022.10.03
-//change background_image: "assets/images/splash.jpg"
-//app name, ic launcher
-//google config show isFullData use dio demo screen 2022.10.13
-//lan dau mo app check valid google neu ko co connection se bi treo app
-//firebase
+//@mckimquyen
+
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
@@ -214,7 +217,7 @@ void testLogger() {
 }
 
 Future<void> initializePlugin() async {
-  Map? configuration = await AppLovinMAX.initialize(sdkKey);
+  var configuration = await AppLovinMAX.initialize(sdkKey);
   if (configuration != null) {
     Dog.i("initializePlugin success");
     if (kDebugMode) {
