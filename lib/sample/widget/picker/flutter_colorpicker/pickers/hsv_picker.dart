@@ -112,7 +112,7 @@ class _HSVColorPickerExampleState extends State<HSVColorPickerExample> {
                         : Colors.black),
               ),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -156,7 +156,7 @@ ColorPicker(
                       ? Colors.white
                       : Colors.black),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -301,7 +301,7 @@ ColorPicker(
                         : Colors.black),
               ),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -334,7 +334,7 @@ HueRingPicker(
                       ? Colors.white
                       : Colors.black),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -394,7 +394,7 @@ HueRingPicker(
                         : Colors.black),
               ),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -431,7 +431,7 @@ SlidePicker(
                       ? Colors.white
                       : Colors.black),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -568,7 +568,7 @@ SlidePicker(
                         : Colors.black),
               ),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -632,7 +632,7 @@ Column(
                       ? Colors.white
                       : Colors.black),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),

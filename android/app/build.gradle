@@ -27,7 +27,7 @@ apply plugin: 'com.google.gms.google-services'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
 android {
-    compileSdk 33
+    compileSdk 34
     ndkVersion "25.1.8937393"
 
     compileOptions {
@@ -48,7 +48,7 @@ android {
 
         // Required by the Flutter WebView plugin: https://pub.dev/packages/webview_flutter
         minSdkVersion 22
-        targetSdkVersion 33
+        targetSdkVersion 34
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
 

@@ -3,8 +3,9 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:uuid/data.dart';
+import 'package:uuid/rng.dart';
 import 'package:uuid/uuid.dart';
-import 'package:uuid/uuid_util.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -41,8 +42,7 @@ class _UUIDScreenState extends BaseStatefulState<UUIDScreen> {
           Get.back();
         },
         () {
-          UrlLauncherUtils.launchInBrowser(
-              "https://pub.dev/packages/uuid");
+          UrlLauncherUtils.launchInBrowser("https://pub.dev/packages/uuid");
         },
       ),
       body: Center(
@@ -68,7 +68,7 @@ class _UUIDScreenState extends BaseStatefulState<UUIDScreen> {
     var v4 = uuid.v4(); // -> '110ec58a-a0f2-4ac4-8393-c866d813b8d1'
 
     // Generate a v4 (crypto-random) id
-    var v4Crypto = uuid.v4(options: {'rng': UuidUtil.cryptoRNG});
+    var v4Crypto = uuid.v4(config: V4Options(null, CryptoRNG()));
     // -> '110ec58a-a0f2-4ac4-8393-c866d813b8d1'
 
     // Generate a v5 (namespace-name-sha1-based) id
@@ -76,18 +76,7 @@ class _UUIDScreenState extends BaseStatefulState<UUIDScreen> {
     // -> 'c74a196f-f19d-5ea9-bffd-a2742432fc9c'
 
     var v8Exact = uuid.v1(options: {
-      'randomBytes': [
-        0x01,
-        0x23,
-        0x45,
-        0x67,
-        0x89,
-        0xab,
-        0x01,
-        0x23,
-        0x45,
-        0x67
-      ],
+      'randomBytes': [0x01, 0x23, 0x45, 0x67, 0x89, 0xab, 0x01, 0x23, 0x45, 0x67],
       'time': DateTime.utc(2011, 10, 9, 8, 7, 6, 543, 210),
     }); // -> '1e1041c7-10b9-662e-9234-0123456789ab'
 

@@ -146,7 +146,7 @@ Widget pickerLayoutBuilder(BuildContext context, List<Color> colors, PickerItem 
                     ? Colors.white
                     : Colors.black),
             style: ElevatedButton.styleFrom(
-              primary: widget.pickerColor,
+              backgroundColor: widget.pickerColor,
               shadowColor: widget.pickerColor.withOpacity(1),
               elevation: 10,
             ),
@@ -236,7 +236,7 @@ Widget pickerItemBuilder(Color color, bool isCurrentColor, void Function() chang
                     ? Colors.white
                     : Colors.black),
             style: ElevatedButton.styleFrom(
-              primary: widget.pickerColor,
+              backgroundColor: widget.pickerColor,
               shadowColor: widget.pickerColor.withOpacity(1),
               elevation: 10,
             ),
@@ -326,7 +326,7 @@ Widget pickerItemBuilder(Color color, bool isCurrentColor, void Function() chang
                         : Colors.black),
               ),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -362,7 +362,7 @@ BlockPicker(
                       ? Colors.white
                       : Colors.black),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -406,7 +406,7 @@ BlockPicker(
                         : Colors.black),
               ),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),
@@ -442,7 +442,7 @@ MultipleChoiceBlockPicker(
                       ? Colors.white
                       : Colors.black),
               style: ElevatedButton.styleFrom(
-                primary: widget.pickerColor,
+                backgroundColor: widget.pickerColor,
                 shadowColor: widget.pickerColor.withOpacity(1),
                 elevation: 10,
               ),

@@ -1,8 +1,9 @@
-import 'dart:async' show Future, StreamController;
+import 'dart:async';
 import 'dart:ui' as ui show Codec;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
 
 enum TestUseCase {
@@ -21,9 +22,7 @@ class MockImageProvider extends ImageProvider<MockImageProvider> {
 
   final TestUseCase useCase;
 
-  bool get showLoading =>
-      useCase == TestUseCase.loadAndFail ||
-      useCase == TestUseCase.loadAndSuccess;
+  bool get showLoading => useCase == TestUseCase.loadAndFail || useCase == TestUseCase.loadAndSuccess;
 
   bool get fail => useCase == TestUseCase.loadAndFail;
 
@@ -33,7 +32,7 @@ class MockImageProvider extends ImageProvider<MockImageProvider> {
   }
 
   @override
-  ImageStreamCompleter load(MockImageProvider key, DecoderCallback decode) {
+  ImageStreamCompleter loadImage(MockImageProvider key, ImageDecoderCallback decode) {
     final chunkEvents = StreamController<ImageChunkEvent>();
     return MultiFrameImageStreamCompleter(
       codec: _loadAsync(key, chunkEvents, decode).first,
@@ -45,15 +44,14 @@ class MockImageProvider extends ImageProvider<MockImageProvider> {
   Stream<ui.Codec> _loadAsync(
     MockImageProvider key,
     StreamController<ImageChunkEvent> chunkEvents,
-    DecoderCallback decode,
+    ImageDecoderCallback decode,
   ) async* {
     try {
       if (showLoading) {
         var totalSize = 100;
         for (var i = 0; i < totalSize; i++) {
           await Future.delayed(const Duration(milliseconds: 10));
-          chunkEvents.add(ImageChunkEvent(
-              cumulativeBytesLoaded: i + 1, expectedTotalBytes: totalSize));
+          chunkEvents.add(ImageChunkEvent(cumulativeBytesLoaded: i + 1, expectedTotalBytes: totalSize));
         }
       }
       if (fail) {
@@ -62,7 +60,8 @@ class MockImageProvider extends ImageProvider<MockImageProvider> {
       var url = 'https://blurha.sh/assets/images/img1.jpg';
       Uint8List imageBytes;
       imageBytes = (await http.get(Uri.parse(url))).bodyBytes;
-      var decodedImage = await decode(imageBytes);
+      final buffer = await ImmutableBuffer.fromUint8List(imageBytes);
+      var decodedImage = await decode(buffer);
       yield decodedImage;
     } finally {
       await chunkEvents.close();

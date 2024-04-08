@@ -32,7 +32,6 @@ import 'flex_color_scheme/flex_color_scheme_screen.dart';
 import 'flutter_bloc/menu_flutter_block_screen.dart';
 import 'flutter_local_notifications/flutter_local_notifications_screen.dart';
 import 'flutter_offline/flutter_offline_screen.dart';
-import 'flutter_screen_lock/flutter_screen_lock_screen.dart';
 import 'flutter_screenutil/flutter_screenutil_screen.dart';
 import 'focus_detector/focus_detector_screen.dart';
 import 'getx/get_x_screen.dart';
@@ -214,14 +213,6 @@ class MenuDemoScreen extends StatelessWidget {
                   },
                   description:
                       "Flutter scalable OCR package is a wrapper around google_mlkit_text_recognition where you can partialy select part of camera which text will be processed of.",
-                ),
-                UIUtils.getButton(
-                  "flutter_screen_lock",
-                  () {
-                    Get.to(() => FlutterScreenLockScreen());
-                  },
-                  description:
-                      "Provides the ability to lock the screen on ios and android. Biometric authentication can be used in addition to passcode.",
                 ),
                 UIUtils.getButton(
                   "flutter_screenutil",
