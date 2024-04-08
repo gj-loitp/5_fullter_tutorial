@@ -19,19 +19,12 @@ dependencies:
   animated_bottom_navigation_bar: ^1.3.3
   animated_text_kit: ^4.2.2
   animated_toggle_switch: ^0.7.0 #migrate later
-  #https://pub.dev/packages/animations
-  animations: ^2.0.8
-  #https://pub.dev/packages/another_flushbar
+  animations: ^2.0.11
   another_flushbar: ^1.12.30
-  #https://pub.dev/packages/avatar_glow
   avatar_glow: ^2.0.2
-  #https://pub.dev/packages/auto_size_text
   auto_size_text: ^3.0.0
-  #https://pub.dev/packages/auto_route
 #  auto_route: ^7.8.4
-  #https://pub.dev/packages/app_settings
   app_settings: ^5.1.1
-  #https://pub.dev/packages/awesome_dialog
   awesome_dialog: ^3.1.0
 
   #https://pub.dev/packages/badges
