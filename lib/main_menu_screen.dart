@@ -6,8 +6,6 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart
 import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/func/main_func_screen.dart';
-import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -222,13 +220,6 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                       Get.to(() => EmptyScreen());
                     },
                   ),
-                  if (kDebugMode)
-                    UIUtils.getButton(
-                      "Force a test crash",
-                      () {
-                        FirebaseCrashlytics.instance.crash();
-                      },
-                    ),
                   SizedBox(height: DimenConstants.marginPaddingMedium),
                   InkWell(
                     onTap: () {

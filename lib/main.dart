@@ -4,7 +4,6 @@ import 'dart:io';
 import 'package:applovin_max/applovin_max.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flash/flash.dart';
 import 'package:flash/flash_helper.dart';
 import 'package:flutter/foundation.dart';
@@ -105,7 +104,6 @@ void main() async {
   // } else {
   //   await Firebase.initializeApp();
   // }
-  await Firebase.initializeApp();
   await _configureLocalTimeZone();
   if (Platform.isAndroid) {
     await FlutterDisplayMode.setHighRefreshRate();

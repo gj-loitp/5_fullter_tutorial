@@ -162,10 +162,10 @@ dependencies:
   fk_toggle: ^0.1.4
   #https://pub.dev/packages/font_awesome_flutter
   font_awesome_flutter: ^10.6.0
-  firebase_core: ^2.24.2
-  firebase_analytics: ^10.7.4
-  firebase_crashlytics: ^3.4.8
-  firebase_remote_config: ^4.3.8
+#  firebase_core: ^2.28.0
+#  firebase_analytics: ^10.10.0
+#  firebase_crashlytics: ^3.5.0
+#  firebase_remote_config: ^4.4.0
   #https://pub:dev/packages/file_picker
   file_picker: ^5.5.0
   #https://pub.dev/packages/flash
@@ -544,12 +544,10 @@ dependencies:
 
 dependency_overrides:
   intl: ^0.18.1
-#  qr: ^2.0.0
-#  connectivity_plus: ^3.0.3
   network_info_plus: ^4.1.0
-#  ordered_set: ^5.0.1
   simple_animations: ^5.0.2
   http: ^1.1.0
+#  built_value: 8.6.3
 
 dev_dependencies:
   flutter_test:
