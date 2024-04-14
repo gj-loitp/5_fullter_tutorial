@@ -306,11 +306,11 @@ class UIUtils {
                 SizedBox(height: DimenConstants.marginPaddingMedium),
                 AvatarGlow(
                   glowColor: Colors.green,
-                  endRadius: 60,
+                  // endRadius: 60,
                   duration: Duration(milliseconds: 2000),
                   repeat: true,
-                  showTwoGlows: true,
-                  repeatPauseDuration: Duration(milliseconds: 100),
+                  // showTwoGlows: true,
+                  // repeatPauseDuration: Duration(milliseconds: 100),
                   child: Image.asset(
                     "assets/images/ic_success.png",
                     height: 60,

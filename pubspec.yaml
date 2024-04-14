@@ -21,7 +21,7 @@ dependencies:
   animated_toggle_switch: ^0.7.0 #migrate later
   animations: ^2.0.11
   another_flushbar: ^1.12.30
-  avatar_glow: ^2.0.2
+  avatar_glow: ^3.0.1
   auto_size_text: ^3.0.0
 #  auto_route: ^7.8.4
   app_settings: ^5.1.1
