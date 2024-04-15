@@ -103,8 +103,8 @@ dependencies:
   fl_chart: ^0.61.0 #migrate later
   flexible_calendar: ^1.0.1
   flex_color_scheme: ^7.3.1
-  flex_color_picker: ^3.3.0
-  floating_bubbles: ^2.5.1
+  flex_color_picker: ^3.4.1
+  floating_bubbles: ^2.6.2
   flip_card: ^0.7.0
   flutter_animated_button: ^2.0.3
   flutter_bloc: ^8.1.3

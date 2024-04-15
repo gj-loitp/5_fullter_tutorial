@@ -845,10 +845,10 @@ packages:
     dependency: "direct main"
     description:
       name: flex_color_picker
-      sha256: f37476ab3e80dcaca94e428e159944d465dd16312fda9ff41e07e86f04bfa51c
+      sha256: "5c846437069fb7afdd7ade6bf37e628a71d2ab0787095ddcb1253bf9345d5f3a"
       url: "https://pub.dev"
     source: hosted
-    version: "3.3.0"
+    version: "3.4.1"
   flex_color_scheme:
     dependency: "direct main"
     description:
@@ -885,10 +885,10 @@ packages:
     dependency: "direct main"
     description:
       name: floating_bubbles
-      sha256: a21f9c4e0247b1efb1f584320b459242952821585336119d3838c99ce5b5510e
+      sha256: "4f39efc44eb5777861e346aa747950b605c2ba538ec0c67e9a2219330191f533"
       url: "https://pub.dev"
     source: hosted
-    version: "2.5.1"
+    version: "2.6.2"
   flutter:
     dependency: "direct main"
     description: flutter
