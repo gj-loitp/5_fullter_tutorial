@@ -77,41 +77,26 @@ dependencies:
   drop_shadow: ^0.1.0
 
   ##e
-  #https://pub.dev/packages/easy_debounce
   easy_debounce: ^2.0.3
-  #https://pub.dev/packages/easy_refresh
 #  easy_refresh: ^3.3.2+4
-  #https://pub.dev/packages/elastic_drawer
   elastic_drawer: ^2.0.2
-  #https://pub.dev/packages/email_validator
   email_validator: ^2.1.17
-  #https://pub.dev/packages/encrypt
   encrypt: ^5.0.3
-  #https://pub.dev/packages/english_words
   english_words: ^4.0.0
-  #https://pub.dev/packages/event_bus
   event_bus: ^2.0.0
-  #https://pub.dev/packages/equatable
   equatable: ^2.0.5
 
   ##f
-  #https://pub.dev/packages/fast_color_picker
   fast_color_picker: ^0.1.1
-  #https://pub.dev/packages/feedback
-  feedback: ^3.0.0
-  #https://pub.dev/packages/focus_detector
+  feedback: ^3.0.1
   focus_detector: ^2.0.1
-  #https://pub.dev/packages/folding_cell
   folding_cell: ^1.0.2
-  #https://pub.dev/packages/fk_toggle
   fk_toggle: ^0.1.4
-  #https://pub.dev/packages/font_awesome_flutter
-  font_awesome_flutter: ^10.6.0
+  font_awesome_flutter: ^10.7.0
 #  firebase_core: ^2.28.0
 #  firebase_analytics: ^10.10.0
 #  firebase_crashlytics: ^3.5.0
 #  firebase_remote_config: ^4.4.0
-  #https://pub:dev/packages/file_picker
   file_picker: ^5.5.0
   #https://pub.dev/packages/flash
   flash: ^3.0.5+2
