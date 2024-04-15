@@ -245,10 +245,10 @@ packages:
     dependency: "direct main"
     description:
       name: calendar_view
-      sha256: "26b47b00e045c5874df3803960765775457f4666b13d5ae7663e66209834424e"
+      sha256: "9c22c2f580e46a8f4a963013e562ae36e497e86269128162f3a1db72874fd06d"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.4"
+    version: "1.1.0"
   camera:
     dependency: "direct main"
     description:

@@ -39,7 +39,7 @@ dependencies:
   ##c
   cached_network_image: ^3.3.1
   calendar_appbar: ^0.0.6
-  calendar_view: ^1.0.4
+  calendar_view: ^1.1.0
   camera: ^0.10.5+2
   carousel_slider: ^4.2.1
   circular_bottom_navigation: ^2.3.0
