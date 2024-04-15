@@ -27,21 +27,16 @@ dependencies:
   app_settings: ^5.1.1
   awesome_dialog: ^3.2.0
 
-  #https://pub.dev/packages/badges
+  ##b
   badges: ^2.0.3 #migrate later
-  #https://pub.dev/packages/battery_plus
-  battery_plus: ^4.1.0
-  #https://pub.dev/packages/basic_utils
+  battery_plus: ^6.0.1
   basic_utils: ^5.7.0
-  #https://pub.dev/packages/bottom_bar_with_sheet
   bottom_bar_with_sheet: ^2.4.0
-  #https://pub.dev/packages/bottom_navy_bar
   bottom_navy_bar: ^6.0.0
-  #https://pub.dev/packages/blur
   blur: ^3.1.0
-  bloc: ^8.1.2
+  bloc: ^8.1.4
 
-  #https://pub.dev/packages/cached_network_image
+  ##c
   cached_network_image: ^3.3.0
   #https://pub.dev/packages/calendar_appbar
   calendar_appbar: ^0.0.6
