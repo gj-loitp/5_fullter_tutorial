@@ -98,35 +98,20 @@ dependencies:
 #  firebase_crashlytics: ^3.5.0
 #  firebase_remote_config: ^4.4.0
   file_picker: ^5.5.0
-  #https://pub.dev/packages/flash
-  flash: ^3.0.5+2
-  #https://pub.dev/packages/flat_3d_button
+  flash: ^3.1.0
   flat_3d_button: ^1.0.3
-  #https://pub.dev/packages/fl_chart
   fl_chart: ^0.61.0 #migrate later
-  #https://pub.dev/packages/flexible_calendar
   flexible_calendar: ^1.0.1
-  #https://pub.dev/packages/flex_color_scheme
   flex_color_scheme: ^7.3.1
-  # https://pub.dev/packages/flex_color_picker
   flex_color_picker: ^3.3.0
-  #https://pub.dev/packages/floating_bubbles
   floating_bubbles: ^2.5.1
-  #https://pub.dev/packages/flip_card
   flip_card: ^0.7.0
-  #https://pub.dev/packages/flutter_animated_button
   flutter_animated_button: ^2.0.3
-  #https://pub.dev/packages/flutter_bloc
   flutter_bloc: ^8.1.3
-  #https://pub.dev/packages/flutter_circle_color_picker
   flutter_circle_color_picker: ^0.3.0
-  #https://pub.dev/packages/flutter_colorpicker
   flutter_colorpicker: ^1.0.3
-  #https://pub.dev/packages/flutter_credit_card
   flutter_credit_card: ^3.0.7
-  #https://pub.dev/packages/flutter_displaymode
   flutter_displaymode: ^0.6.0
-  #https://pub.dev/packages/flutter_drawing_board
   flutter_drawing_board: ^0.4.4+2
   #https://pub.dev/packages/flutter_easyloading
   flutter_easyloading: ^3.0.5
@@ -247,7 +232,6 @@ dependencies:
       url: https://github.com/eli1stark/modal_bottom_sheet.git
       ref: 2b3f9f84f46418c1b337968c88883995f65f47e7
       path: modal_bottom_sheet
-  #https://pub.dev/packages/multi_image_picker_view
   multi_image_picker_view: ^0.0.17
 
   #https://pub.dev/packages/nav
