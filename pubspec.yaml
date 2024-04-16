@@ -185,21 +185,16 @@ dependencies:
       path: modal_bottom_sheet
   multi_image_picker_view: ^0.0.17
 
-  #https://pub.dev/packages/nav
-  nav: ^1.4.2
+  ##n
+  nav: ^1.4.3
   network_info_plus: ^5.0.3
-  #https://pub.dev/packages/numberpicker
   numberpicker: ^2.1.2
 
-  #https://pub.dev/packages/o_color_picker
+  ##o
   o_color_picker: ^1.0.2
-  #https://pub.dev/packages/octo_image
   octo_image: ^2.0.0
-  #https://pub.dev/packages/one_target_mobile_sdk
 #  one_target_mobile_sdk: ^0.0.28
-  #https://pub.dev/packages/overflow_view
   overflow_view: ^0.3.1
-  #https://pub.dev/packages/otp_text_field
   otp_text_field: ^1.1.3
 
   #https://pub.dev/packages/time_planner

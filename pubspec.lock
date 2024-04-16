@@ -1842,10 +1842,10 @@ packages:
     dependency: "direct main"
     description:
       name: nav
-      sha256: d09206bcaed5ab10250ea5129d13c8b959a837cd9a3ef4b048f7892218d82f9d
+      sha256: "8a03ee87cb24357307071d8a6183bfb59bc1489cec879bcf52184935041cb618"
       url: "https://pub.dev"
     source: hosted
-    version: "1.4.2"
+    version: "1.4.3"
   nepali_utils:
     dependency: transitive
     description:
