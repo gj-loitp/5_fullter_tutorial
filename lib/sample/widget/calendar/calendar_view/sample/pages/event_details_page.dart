@@ -50,9 +50,7 @@ class DetailsPage extends StatelessWidget {
                     children: [
                       Text("From"),
                       Text(
-                        event.startTime
-                                ?.getTimeInFormat(TimeStampFormat.parse_12) ??
-                            "",
+                        event.startTime?.getTimeInFormat(TimeStampFormat.parse_12) ?? "",
                       ),
                     ],
                   ),
@@ -64,9 +62,7 @@ class DetailsPage extends StatelessWidget {
                     children: [
                       Text("To"),
                       Text(
-                        event.endTime
-                                ?.getTimeInFormat(TimeStampFormat.parse_12) ??
-                            "",
+                        event.endTime?.getTimeInFormat(TimeStampFormat.parse_12) ?? "",
                       ),
                     ],
                   ),
@@ -83,7 +79,7 @@ class DetailsPage extends StatelessWidget {
             SizedBox(
               height: 10.0,
             ),
-            Text(event.description),
+            Text(event.description ?? ""),
           ]
         ],
       ),
