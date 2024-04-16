@@ -235,20 +235,15 @@ dependencies:
 #  retry: ^3.1.2
   rxdart: ^0.27.7
 
-
-
-
-
   ##i
-  #https://pub.dev/packages/infinite_scroll_pagination
   infinite_scroll_pagination: ^4.0.0
-  #https://pub.dev/packages/image_gallery_saver
   image_gallery_saver: ^2.0.3
-  #https://pub.dev/packages/image_picker
   image_picker: ^0.8.7
-  #https://pub.dev/packages/in_app_review
-  in_app_review: ^2.0.8
-  #https://pub.dev/packages/intl
+  in_app_review: ^2.0.9
+
+
+
+
   intl: ^0.18.1
   #https://pub.dev/packages/internet_connection_checker
   internet_connection_checker: ^1.0.0+1
