@@ -240,28 +240,21 @@ dependencies:
   image_gallery_saver: ^2.0.3
   image_picker: ^0.8.7
   in_app_review: ^2.0.9
-
-
-
-
-  intl: ^0.18.1
-  #https://pub.dev/packages/internet_connection_checker
+  intl: ^0.19.0
   internet_connection_checker: ^1.0.0+1
-  #https://pub.dev/packages/internet_file
   internet_file: ^1.2.0
 
   ##h
-  #https://pub.dev/packages/horizontal_data_table
   horizontal_data_table: ^4.3.1
-  #https://pub.dev/packages/http
-  http: ^1.1.0
+  http: ^1.2.1
 
-  #https://pub.dev/packages/kenburns_nullsafety
+  ##k
   kenburns_nullsafety: ^1.0.1
 
-  #https://pub.dev/packages/video_player
+  ##v
   video_player: ^2.8.1
 
+  ##p
   package_info_plus: ^7.0.0
   #https://pub.dev/packages/panara_dialogs
   panara_dialogs: ^0.1.4
