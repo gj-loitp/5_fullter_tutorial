@@ -176,7 +176,7 @@ dependencies:
 
   ##m
   mask_text_input_formatter: ^2.9.0
-  mobile_scanner: ^3.5.2
+  mobile_scanner: ^4.0.1
   #modal_bottom_sheet: ^2.1.2
   modal_bottom_sheet:
     git:
