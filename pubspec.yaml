@@ -221,28 +221,23 @@ dependencies:
   step_progress_indicator: ^1.0.2
 
   ##m
-  #https://pub.dev/packages/marquee
   marquee: ^2.2.3
 
   ##g
-  #https://pub.dev/packages/get
   get: ^4.6.6
 
   ##r
-  #https://pub.dev/packages/random_string
   random_string: ^2.3.1
-  #https://pub.dev/packages/rating_dialog
   rating_dialog: ^2.0.4
-  #https://pub.dev/packages/recase
   recase: ^4.1.0
-  #https://pub.dev/packages/remove_emoji
   remove_emoji: ^0.0.10
-  #https://pub.dev/packages/restart_app
   restart_app: ^1.2.1
-  #https://pub.dev/packages/retry
 #  retry: ^3.1.2
-  #https://pub.dev/packages/rxdart
   rxdart: ^0.27.7
+
+
+
+
 
   ##i
   #https://pub.dev/packages/infinite_scroll_pagination
@@ -315,7 +310,6 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   #https://pub.dev/packages/sidebarx
   sidebarx: ^0.16.2
-  #https://pub.dev/packages/skeleton_loader
   skeleton_loader: ^2.0.0+4
   #https://pub.dev/packages/sliding_up_panel
   sliding_up_panel: ^2.0.0+1
