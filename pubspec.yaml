@@ -171,14 +171,12 @@ dependencies:
   like_button: ^2.0.5
 #  liquid_progress_indicator: ^0.4.0
   live_background: ^0.1.3
-  loading_animation_widget: ^1.2.0+4
+  loading_animation_widget: ^1.2.1
   lottie: ^3.1.0
 
-  #https://pub.dev/packages/mask_text_input_formatter
-  mask_text_input_formatter: ^2.5.0
-  #https://pub.dev/packages/mobile_scanner
+  ##m
+  mask_text_input_formatter: ^2.9.0
   mobile_scanner: ^3.5.2
-  #https://pub.dev/packages/modal_bottom_sheet
   #modal_bottom_sheet: ^2.1.2
   modal_bottom_sheet:
     git:
