@@ -284,21 +284,18 @@ dependencies:
   string_validator: ^1.0.2
   super_circle: ^1.0.0
   swipe_cards: ^2.0.0+1
-  syncfusion_flutter_gauges: ^23.1.44
+  syncfusion_flutter_gauges: ^25.1.40
 
-  #https://pub.dev/packages/tiengviet
+  ##t
   tiengviet: ^1.0.0
-  #https://pub.dev/packages/timeago
-  timeago: ^3.6.0
-  #https://pub.dev/packages/timelines
+  timeago: ^3.6.1
   timelines: ^0.1.0
-  #https://pub.dev/packages/toggle_switch
   toggle_switch: ^2.1.0
 
-  #https://pub.dev/packages/uuid
-  uuid: ^4.3.3
+  ##u
+  uuid: ^4.4.0
 
-  #https://pub.dev/packages/velocity_x
+  ##v
   velocity_x: ^4.1.1
   #https://pub.dev/packages/vertical_card_pager
   vertical_card_pager: ^1.5.0
