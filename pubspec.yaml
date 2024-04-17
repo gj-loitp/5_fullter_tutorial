@@ -277,7 +277,7 @@ dependencies:
   scribble: ^0.9.1
   shape_of_view_null_safe: ^3.0.0
   smooth_page_indicator: ^1.1.0
-  sidebarx: ^0.16.2
+  sidebarx: ^0.17.1
   skeleton_loader: ^2.0.0+4
   sliding_up_panel: ^2.0.0+1
   sticky_headers: ^0.3.0+2

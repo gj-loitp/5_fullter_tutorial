@@ -2514,10 +2514,10 @@ packages:
     dependency: "direct main"
     description:
       name: sidebarx
-      sha256: acf77df4647a3f77e128eef5dd0daf89d44e6b1f157e8f8f9bd0963d42b22570
+      sha256: abe39d6db237fb8e25c600e8039ffab80fa7fe71acab03e9c378c31f912d2766
       url: "https://pub.dev"
     source: hosted
-    version: "0.16.2"
+    version: "0.17.1"
   simple_animations:
     dependency: "direct overridden"
     description:
