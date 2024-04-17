@@ -296,10 +296,8 @@ dependencies:
   uuid: ^4.4.0
 
   ##v
-  velocity_x: ^4.1.1
-  #https://pub.dev/packages/vertical_card_pager
-  vertical_card_pager: ^1.5.0
-  #https://pub.dev/packages/vibration
+  velocity_x: ^4.1.2
+  vertical_card_pager: ^1.6.2
   vibration: ^1.8.3
 
   #https://pub.dev/packages/wakelock
