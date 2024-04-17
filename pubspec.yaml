@@ -298,19 +298,15 @@ dependencies:
   ##v
   velocity_x: ^4.1.2
   vertical_card_pager: ^1.6.2
-  vibration: ^1.8.3
+  vibration: ^1.8.4
 
-  #https://pub.dev/packages/wakelock
+  ##w
 #  wakelock: ^0.6.2
   wakelock_plus: ^1.2.4
-  #https://pub.dev/packages/wave
   wave: ^0.2.2
-  #https://pub.dev/packages/webview_flutter
   webview_flutter: ^3.0.4 #migate later
-  #https://pub.dev/packages/web_scraper
   web_scraper: ^0.1.4
-  #https://pub.dev/packages/wechat_camera_picker
-  wechat_camera_picker: ^4.0.2
+  wechat_camera_picker: ^4.2.1
 
   ##y
   youtube_player_flutter: ^9.0.1
