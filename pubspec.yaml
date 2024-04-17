@@ -337,13 +337,8 @@ dependency_overrides:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-  #https://pub.dev/packages/flutter_launcher_icons
   flutter_launcher_icons: ^0.13.1
-
-  #https://pub.dev/packages/flutter_app_name
 #  flutter_app_name: ^0.1.1
-
 #  qr: ^2.0.0
 #  change_app_package_name: ^1.1.0
 
