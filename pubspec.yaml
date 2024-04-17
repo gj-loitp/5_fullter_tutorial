@@ -275,7 +275,7 @@ dependencies:
   scrollable_table_view: ^1.0.1
   scroll_to_index: ^3.0.1
   scribble: ^0.9.1
-  shape_of_view_null_safe: ^2.0.0
+  shape_of_view_null_safe: ^3.0.0
   smooth_page_indicator: ^1.1.0
   sidebarx: ^0.16.2
   skeleton_loader: ^2.0.0+4
