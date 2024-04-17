@@ -290,7 +290,7 @@ dependencies:
   tiengviet: ^1.0.0
   timeago: ^3.6.1
   timelines: ^0.1.0
-  toggle_switch: ^2.1.0
+  toggle_switch: ^2.3.0
 
   ##u
   uuid: ^4.4.0
