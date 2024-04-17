@@ -330,7 +330,7 @@ dependencies:
 dependency_overrides:
   intl: ^0.19.0
   network_info_plus: ^5.0.3
-  simple_animations: ^5.0.2
+#  simple_animations: ^5.0.2
   http: ^1.2.1
 #  built_value: 8.6.3
 

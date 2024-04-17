@@ -2519,7 +2519,7 @@ packages:
     source: hosted
     version: "0.17.1"
   simple_animations:
-    dependency: "direct overridden"
+    dependency: transitive
     description:
       name: simple_animations
       sha256: "1ea7b93fb98e2a611b6865d632de55607b766328d14700143353129ee0559d3a"
