@@ -38,7 +38,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
   var _cMenu = Get.put(MainMenuController());
   var _interstitialRetryAttempt = 0;
 
-  void initializeInterstitialAds() {
+  void _initializeInterstitialAds() {
     AppLovinMAX.setInterstitialListener(InterstitialListener(
       onAdLoadedCallback: (ad) {
         // Interstitial ad is ready to be shown. AppLovinMAX.isInterstitialReady(_interstitial_ad_unit_id) will now return 'true'
@@ -78,7 +78,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
     AppLovinMAX.loadInterstitial(getInterstitialAdUnitId());
   }
 
-  Future<void> showInterAd() async {
+  Future<void> _showInterAd() async {
     bool isReady = (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId())) ?? false;
     if (isReady) {
       AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
@@ -95,7 +95,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
     // _cMenu.setupData();
     _cMenu.initPackageInfo();
 
-    initializeInterstitialAds();
+    _initializeInterstitialAds();
   }
 
   @override
@@ -144,7 +144,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   UIUtils.getButton(
                     "Animation",
                     () {
-                      showInterAd();
+                      _showInterAd();
                       Get.to(() => MenuAnimationScreen());
                     },
                   ),
@@ -157,21 +157,21 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   UIUtils.getButton(
                     "MenuDatabaseScreen",
                     () {
-                      showInterAd();
+                      _showInterAd();
                       Get.to(() => MenuDatabaseScreen());
                     },
                   ),
                   UIUtils.getButton(
                     "Demo",
                     () {
-                      showInterAd();
+                      _showInterAd();
                       Get.to(() => MenuDemoScreen());
                     },
                   ),
                   UIUtils.getButton(
                     "Function",
                     () {
-                      showInterAd();
+                      _showInterAd();
                       Get.to(() => MenuFuncScreen());
                     },
                   ),
@@ -184,7 +184,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   UIUtils.getButton(
                     "Widget",
                     () {
-                      showInterAd();
+                      _showInterAd();
                       Get.to(() => MenuWidgetScreen());
                     },
                   ),
