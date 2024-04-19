@@ -24,8 +24,13 @@ const String sdkKey = "e75FnQfS9XTTqM1Kne69U7PW_MBgAnGQTFvtwVVui6kRPKs5L7ws9twr5
 final String _interstitialAdUnitId = Platform.isAndroid ? "~" : "IOS_INTER_AD_UNIT_ID";
 final String _bannerAdUnitId = Platform.isAndroid ? "~" : "IOS_BANNER_AD_UNIT_ID";
 
-final interstitialAdUnitId = (kDebugMode) ? ("${_interstitialAdUnitId}_debug") : _interstitialAdUnitId;
-final bannerAdUnitId = (kDebugMode) ? ("${_bannerAdUnitId}_debug") : _bannerAdUnitId;
+String getInterstitialAdUnitId() {
+  return (kDebugMode) ? ("${_interstitialAdUnitId}_debug") : _interstitialAdUnitId;
+}
+
+String getBannerAdUnitId() {
+  return (kDebugMode) ? ("${_bannerAdUnitId}_debug") : _bannerAdUnitId;
+}
 
 var _isInitialized = false;
 var _interstitialLoadState = AdLoadState.notLoaded;
@@ -95,13 +100,13 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           ElevatedButton(
             onPressed: () {
               void showInter() async {
-                bool isReady = (await AppLovinMAX.isInterstitialReady(interstitialAdUnitId))!;
+                bool isReady = (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId()))!;
                 if (isReady) {
-                  AppLovinMAX.showInterstitial(interstitialAdUnitId);
+                  AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
                 } else {
                   logStatus('Loading interstitial ad...');
                   _interstitialLoadState = AdLoadState.loading;
-                  AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+                  AppLovinMAX.loadInterstitial(getInterstitialAdUnitId());
                 }
               }
 
@@ -115,21 +120,21 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
             onPressed: (_isInitialized && !_isWidgetBannerShowing)
                 ? () async {
                     if (_isProgrammaticBannerShowing) {
-                      AppLovinMAX.hideBanner(bannerAdUnitId);
+                      AppLovinMAX.hideBanner(getBannerAdUnitId());
                     } else {
                       if (!_isProgrammaticBannerCreated) {
                         //
                         // Programmatic banner creation - banners are automatically sized to 320x50 on phones and 728x90 on tablets
                         //
-                        AppLovinMAX.createBanner(bannerAdUnitId, AdViewPosition.bottomCenter);
+                        AppLovinMAX.createBanner(getBannerAdUnitId(), AdViewPosition.bottomCenter);
 
                         // Set banner background color to black - PLEASE USE HEX STRINGS ONLY
-                        AppLovinMAX.setBannerBackgroundColor(bannerAdUnitId, '#ff0000');
+                        AppLovinMAX.setBannerBackgroundColor(getBannerAdUnitId(), '#ff0000');
 
                         _isProgrammaticBannerCreated = true;
                       }
 
-                      AppLovinMAX.showBanner(bannerAdUnitId);
+                      AppLovinMAX.showBanner(getBannerAdUnitId());
                     }
 
                     setState(() {
@@ -189,7 +194,7 @@ Incomplete, if not for you.""",
               color: Colors.transparent,
               margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
               child: MaxAdView(
-                adUnitId: bannerAdUnitId,
+                adUnitId: getBannerAdUnitId(),
                 adFormat: AdFormat.banner,
                 listener: AdViewAdListener(onAdLoadedCallback: (ad) {
                   logStatus('Banner widget ad loaded from ${ad.networkName}');
@@ -254,7 +259,7 @@ Incomplete, if not for you.""",
         logStatus('Interstitial ad failed to load with code ${error.code} - retrying in ${retryDelay}s');
 
         Future.delayed(Duration(milliseconds: retryDelay * 1000), () {
-          AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+          AppLovinMAX.loadInterstitial(getInterstitialAdUnitId());
         });
       },
       onAdDisplayedCallback: (ad) {

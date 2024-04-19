@@ -57,7 +57,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
             retryDelay.toString() +
             's');
         Future.delayed(Duration(milliseconds: retryDelay * 1000), () {
-          AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+          AppLovinMAX.loadInterstitial(getInterstitialAdUnitId());
         });
       },
       onAdDisplayedCallback: (ad) {
@@ -75,17 +75,17 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
     ));
 
     // Load the first interstitial
-    AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+    AppLovinMAX.loadInterstitial(getInterstitialAdUnitId());
   }
 
   Future<void> showInterAd() async {
     bool isReady =
-        (await AppLovinMAX.isInterstitialReady(interstitialAdUnitId))!;
+        (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId()))!;
     if (isReady) {
-      AppLovinMAX.showInterstitial(interstitialAdUnitId);
+      AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
     } else {
       Dog.e('Loading interstitial ad...');
-      AppLovinMAX.loadInterstitial(interstitialAdUnitId);
+      AppLovinMAX.loadInterstitial(getInterstitialAdUnitId());
     }
   }
 
@@ -243,7 +243,7 @@ https://play.google.com/store/apps/dev?id=9198084038765766736"""),
               width: Get.width,
               margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
               child: MaxAdView(
-                adUnitId: bannerAdUnitId,
+                adUnitId: getBannerAdUnitId(),
                 adFormat: AdFormat.banner,
                 listener: AdViewAdListener(onAdLoadedCallback: (ad) {
                   Dog.i('Banner widget ad loaded from ${ad.networkName}');

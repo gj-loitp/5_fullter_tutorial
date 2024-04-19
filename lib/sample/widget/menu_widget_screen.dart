@@ -624,7 +624,7 @@ class MenuWidgetScreen extends StatelessWidget {
           Container(
             margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
             child: MaxAdView(
-              adUnitId: bannerAdUnitId,
+              adUnitId: getBannerAdUnitId(),
               adFormat: AdFormat.banner,
               listener: AdViewAdListener(onAdLoadedCallback: (ad) {
                 Dog.i('Banner widget ad loaded from ${ad.networkName}');
