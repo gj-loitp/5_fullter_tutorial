@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:applovin_max/applovin_max.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/applovin/applovin_screen.dart';
 import 'package:com.roy93group.flutter_tutorial/sample/empty_screen.dart';
@@ -81,7 +82,11 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
   Future<void> _showInterAd() async {
     bool isReady = (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId())) ?? false;
     if (isReady) {
-      AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
+      if (isApplovinDeviceTest()) {
+        showSnackBarFull(StringConstants.warning, "showInterstitial successfully in test device");
+      } else {
+        AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
+      }
     } else {
       Dog.e('Loading interstitial ad...');
       AppLovinMAX.loadInterstitial(getInterstitialAdUnitId());
