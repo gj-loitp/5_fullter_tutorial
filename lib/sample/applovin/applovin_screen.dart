@@ -9,6 +9,7 @@ import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:platform_device_id/platform_device_id.dart';
 
 /**
  * Created by Loitp on 05,August,2022
@@ -23,15 +24,29 @@ enum AdLoadState { notLoaded, loading, loaded }
 const String sdkKey = "e75FnQfS9XTTqM1Kne69U7PW_MBgAnGQTFvtwVVui6kRPKs5L7ws9twr5IQWwVfzPKZ5pF2IfDa7lguMgGlCyt";
 final String _interstitialAdUnitId = Platform.isAndroid ? "~" : "IOS_INTER_AD_UNIT_ID";
 final String _bannerAdUnitId = Platform.isAndroid ? "~" : "IOS_BANNER_AD_UNIT_ID";
+var _listMyDevice = [
+  "eeaaab5a1f0cf524", //poco f3
+];
 
 String getInterstitialAdUnitId() {
-  return (kDebugMode) ? ("${_interstitialAdUnitId}_debug") : _interstitialAdUnitId;
+  debugPrint("roy93~ getInterstitialAdUnitId deviceId $deviceId");
+  if (kDebugMode || _listMyDevice.contains(deviceId)) {
+    return "${_interstitialAdUnitId}_debug";
+  } else {
+    return _interstitialAdUnitId;
+  }
 }
 
 String getBannerAdUnitId() {
-  return (kDebugMode) ? ("${_bannerAdUnitId}_debug") : _bannerAdUnitId;
+  debugPrint("roy93~ getBannerAdUnitId deviceId $deviceId");
+  if (kDebugMode || _listMyDevice.contains(deviceId)) {
+    return "${_bannerAdUnitId}_debug";
+  } else {
+    return _bannerAdUnitId;
+  }
 }
 
+String? deviceId;
 var _isInitialized = false;
 var _interstitialLoadState = AdLoadState.notLoaded;
 var _interstitialRetryAttempt = 0;
@@ -227,6 +242,7 @@ Incomplete, if not for you.""",
       _isInitialized = true;
       attachAdListeners();
     } else {
+      deviceId = await PlatformDeviceId.getDeviceId;
       var configuration = await AppLovinMAX.initialize(sdkKey);
       if (configuration != null) {
         _isInitialized = true;

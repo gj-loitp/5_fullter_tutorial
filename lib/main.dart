@@ -14,6 +14,7 @@ import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
 import 'package:get/get.dart';
+import 'package:platform_device_id/platform_device_id.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:timezone/data/latest_all.dart' as tz;
 import 'package:timezone/timezone.dart' as tz;
@@ -215,6 +216,7 @@ void testLogger() {
 }
 
 Future<void> initializePlugin() async {
+  deviceId = await PlatformDeviceId.getDeviceId;
   var configuration = await AppLovinMAX.initialize(sdkKey);
   if (configuration != null) {
     Dog.i("initializePlugin success");
