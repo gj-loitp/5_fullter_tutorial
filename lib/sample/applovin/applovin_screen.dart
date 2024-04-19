@@ -20,7 +20,7 @@ import 'package:get/get.dart';
 
 enum AdLoadState { notLoaded, loading, loaded }
 
-const String sdkKey = "~";
+const String sdkKey = "e75FnQfS9XTTqM1Kne69U7PW_MBgAnGQTFvtwVVui6kRPKs5L7ws9twr5IQWwVfzPKZ5pF2IfDa7lguMgGlCyt";
 final String _interstitialAdUnitId = Platform.isAndroid ? "~" : "IOS_INTER_AD_UNIT_ID";
 final String _bannerAdUnitId = Platform.isAndroid ? "~" : "IOS_BANNER_AD_UNIT_ID";
 
