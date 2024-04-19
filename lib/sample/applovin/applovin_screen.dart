@@ -49,6 +49,14 @@ String getBannerAdUnitId() {
   }
 }
 
+Color getBannerBackgroundColor() {
+  if (kDebugMode || _listMyDevice.contains(deviceId)) {
+    return Colors.red;
+  } else {
+    return Colors.transparent;
+  }
+}
+
 String? deviceId;
 var _isInitialized = false;
 var _interstitialLoadState = AdLoadState.notLoaded;
@@ -209,7 +217,7 @@ Incomplete, if not for you.""",
           ),
           if (_isWidgetBannerShowing)
             Container(
-              color: Colors.transparent,
+              color: getBannerBackgroundColor(),
               margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
               child: MaxAdView(
                 adUnitId: getBannerAdUnitId(),
