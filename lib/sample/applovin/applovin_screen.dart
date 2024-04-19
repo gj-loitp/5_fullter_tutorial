@@ -3,6 +3,7 @@ import 'dart:math';
 
 import 'package:applovin_max/applovin_max.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/common/const/dimen_constants.dart';
+import 'package:com.roy93group.flutter_tutorial/lib/common/const/string_constants.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/core/base_stateful_state.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/ui_utils.dart';
 import 'package:com.roy93group.flutter_tutorial/lib/util/url_launcher_utils.dart';
@@ -10,14 +11,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:platform_device_id/platform_device_id.dart';
-
-/**
- * Created by Loitp on 05,August,2022
- * Galaxy One company,
- * Vietnam
- * +840766040293
- * freuss47@gmail.com
- */
 
 enum AdLoadState { notLoaded, loading, loaded }
 
@@ -33,27 +26,23 @@ var _listMyDevice = [
 
 String getInterstitialAdUnitId() {
   debugPrint("roy93~ getInterstitialAdUnitId deviceId $deviceId");
-  if (kDebugMode || _listMyDevice.contains(deviceId)) {
-    return "${_interstitialAdUnitId}_debug";
-  } else {
-    return _interstitialAdUnitId;
-  }
+  return isApplovinDeviceTest() ? "${_interstitialAdUnitId}_debug" : _interstitialAdUnitId;
 }
 
 String getBannerAdUnitId() {
   debugPrint("roy93~ getBannerAdUnitId deviceId $deviceId");
-  if (kDebugMode || _listMyDevice.contains(deviceId)) {
-    return "${_bannerAdUnitId}_debug";
-  } else {
-    return _bannerAdUnitId;
-  }
+  return isApplovinDeviceTest() ? "${_bannerAdUnitId}_debug" : _bannerAdUnitId;
 }
 
 Color getBannerBackgroundColor() {
+  return isApplovinDeviceTest() ? Colors.red : Colors.transparent;
+}
+
+bool isApplovinDeviceTest() {
   if (kDebugMode || _listMyDevice.contains(deviceId)) {
-    return Colors.red;
+    return true;
   } else {
-    return Colors.transparent;
+    return false;
   }
 }
 
@@ -126,9 +115,13 @@ class _ApplovinScreenState extends BaseStatefulState<ApplovinScreen> {
           ElevatedButton(
             onPressed: () {
               void showInter() async {
-                bool isReady = (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId()))!;
+                bool isReady = (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId())) ?? false;
                 if (isReady) {
-                  AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
+                  if (isApplovinDeviceTest()) {
+                    showSnackBarFull(StringConstants.warning, "showInterstitial successfully in test device");
+                  } else {
+                    AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
+                  }
                 } else {
                   logStatus('Loading interstitial ad...');
                   _interstitialLoadState = AdLoadState.loading;
