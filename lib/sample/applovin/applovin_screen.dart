@@ -28,6 +28,7 @@ var _listMyDevice = [
   "eeaaab5a1f0cf524", //poco f3
   "f2b945dfa5e953cf", //mi pad 5
   "05f26989e8ce5d06", //vsmart aris
+  "b09ab0a421fa04a4", //samsung a50s
 ];
 
 String getInterstitialAdUnitId() {
