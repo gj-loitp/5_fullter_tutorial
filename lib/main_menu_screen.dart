@@ -79,8 +79,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
   }
 
   Future<void> showInterAd() async {
-    bool isReady =
-        (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId()))!;
+    bool isReady = (await AppLovinMAX.isInterstitialReady(getInterstitialAdUnitId())) ?? false;
     if (isReady) {
       AppLovinMAX.showInterstitial(getInterstitialAdUnitId());
     } else {
@@ -192,8 +191,7 @@ class _MenuScreenState extends BaseStatefulState<MenuScreen> {
                   UIUtils.getButton(
                     "Github",
                     () {
-                      UrlLauncherUtils.launchInBrowser(
-                          "https://github.com/tplloi/fullter_tutorial");
+                      UrlLauncherUtils.launchInBrowser("https://github.com/tplloi/fullter_tutorial");
                     },
                   ),
                   UIUtils.getButton(
@@ -248,8 +246,7 @@ https://play.google.com/store/apps/dev?id=9198084038765766736"""),
                 listener: AdViewAdListener(onAdLoadedCallback: (ad) {
                   Dog.i('Banner widget ad loaded from ${ad.networkName}');
                 }, onAdLoadFailedCallback: (adUnitId, error) {
-                  Dog.i(
-                      'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
+                  Dog.i('Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
                 }, onAdClickedCallback: (ad) {
                   Dog.i('Banner widget ad clicked');
                 }, onAdExpandedCallback: (ad) {
