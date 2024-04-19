@@ -239,7 +239,7 @@ https://play.google.com/store/apps/dev?id=9198084038765766736"""),
               ),
             ),
             Container(
-              // color: ColorConstants.appColor,
+              color: getBannerBackgroundColor(),
               width: Get.width,
               margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
               child: MaxAdView(

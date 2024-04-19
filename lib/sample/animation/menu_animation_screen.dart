@@ -227,6 +227,7 @@ class MenuAnimationScreen extends StatelessWidget {
             ),
           ),
           Container(
+            color: getBannerBackgroundColor(),
             margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
             child: MaxAdView(
               adUnitId: getBannerAdUnitId(),

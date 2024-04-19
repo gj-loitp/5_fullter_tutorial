@@ -194,8 +194,7 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(() => ClayContainersScreen());
                     },
-                    description:
-                        "Easily create custom neumorphic container widgets for your own unique design.",
+                    description: "Easily create custom neumorphic container widgets for your own unique design.",
                   ),
                   UIUtils.getButton(
                     "RadioButtonScreen",
@@ -226,8 +225,7 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(() => DChartScreen());
                     },
-                    description:
-                        "D'Chart is a package for compact chart widgets.",
+                    description: "D'Chart is a package for compact chart widgets.",
                   ),
                   UIUtils.getButton(
                     "delayed_display",
@@ -248,16 +246,14 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(() => DotsIndicatorScreen());
                     },
-                    description:
-                        "Dots indicator to show progression of a PageView for example",
+                    description: "Dots indicator to show progression of a PageView for example",
                   ),
                   UIUtils.getButton(
                     "dotted_border",
                     () {
                       Get.to(() => DottedBorderScreen());
                     },
-                    description:
-                        "A flutter package to let users easily add a dashed border around any widget.",
+                    description: "A flutter package to let users easily add a dashed border around any widget.",
                   ),
                   UIUtils.getButton(
                     "dotted_line",
@@ -278,8 +274,7 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(() => DropShadowScreen());
                     },
-                    description:
-                        "Add highly customizable drop shadow effect for any widgets in flutter",
+                    description: "Add highly customizable drop shadow effect for any widgets in flutter",
                   ),
                   UIUtils.getButton(
                     "EasyLoadingScreen",
@@ -326,32 +321,28 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(() => FlutterSimpleTreeViewScreen());
                     },
-                    description:
-                        "A widget, that visualises a tree structure, where a node can be any widget.",
+                    description: "A widget, that visualises a tree structure, where a node can be any widget.",
                   ),
                   UIUtils.getButton(
                     "fluttertoast",
                     () {
                       Get.to(() => FluttertoastScreen());
                     },
-                    description:
-                        "Toast Library for Flutter, Easily create toast messages in single line of code",
+                    description: "Toast Library for Flutter, Easily create toast messages in single line of code",
                   ),
                   UIUtils.getButton(
                     "folding_cell",
                     () {
                       Get.to(() => FoldingCellScreen());
                     },
-                    description:
-                        "Simple folding cell widget, pass frontWidget and innerWidget to fold and unfold.",
+                    description: "Simple folding cell widget, pass frontWidget and innerWidget to fold and unfold.",
                   ),
                   UIUtils.getButton(
                     "flutter_credit_card",
                     () {
                       Get.to(() => FlutterCreditCardScreen());
                     },
-                    description:
-                        "A Credit Card widget package, support entering card details, card flip animation.",
+                    description: "A Credit Card widget package, support entering card details, card flip animation.",
                   ),
                   UIUtils.getButton(
                     "flutter_drawing_board",
@@ -487,8 +478,7 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(ShapeOfViewScreen());
                     },
-                    description:
-                        "Give a custom shape to any flutter widget, Material Design 2 ready",
+                    description: "Give a custom shape to any flutter widget, Material Design 2 ready",
                   ),
                   UIUtils.getButton(
                     "ShimmerScreen",
@@ -501,8 +491,7 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(SlideCountdownScreen());
                     },
-                    description:
-                        "A Flutter package to create easy slide animation countdown / countup timer..",
+                    description: "A Flutter package to create easy slide animation countdown / countup timer..",
                   ),
                   UIUtils.getButton(
                     "Slider",
@@ -515,8 +504,7 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(SlidingUpPanelScreen());
                     },
-                    description:
-                        "A draggable Flutter widget that makes implementing a SlidingUpPanel much easier!",
+                    description: "A draggable Flutter widget that makes implementing a SlidingUpPanel much easier!",
                   ),
                   UIUtils.getButton(
                     "StackScreen",
@@ -594,9 +582,7 @@ class MenuWidgetScreen extends StatelessWidget {
                   ),
                   UIUtils.getButton("vertical_card_pager", () {
                     Get.to(() => VerticalCardPagerScreen());
-                  },
-                      description:
-                          "Use dynamic and beautiful card view pagers to help you create great apps."),
+                  }, description: "Use dynamic and beautiful card view pagers to help you create great apps."),
                   UIUtils.getButton(
                     "video",
                     () {
@@ -608,8 +594,7 @@ class MenuWidgetScreen extends StatelessWidget {
                     () {
                       Get.to(() => WaveScreen());
                     },
-                    description:
-                        "Widget for displaying waves with custom color, duration, floating and blur effects.",
+                    description: "Widget for displaying waves with custom color, duration, floating and blur effects.",
                   ),
                   UIUtils.getButton(
                     "Web view",
@@ -622,6 +607,7 @@ class MenuWidgetScreen extends StatelessWidget {
             ),
           ),
           Container(
+            color: getBannerBackgroundColor(),
             margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
             child: MaxAdView(
               adUnitId: getBannerAdUnitId(),
@@ -629,8 +615,7 @@ class MenuWidgetScreen extends StatelessWidget {
               listener: AdViewAdListener(onAdLoadedCallback: (ad) {
                 Dog.i('Banner widget ad loaded from ${ad.networkName}');
               }, onAdLoadFailedCallback: (adUnitId, error) {
-                Dog.i(
-                    'Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
+                Dog.i('Banner widget ad failed to load with error code ${error.code} and message: ${error.message}');
               }, onAdClickedCallback: (ad) {
                 Dog.i('Banner widget ad clicked');
               }, onAdExpandedCallback: (ad) {

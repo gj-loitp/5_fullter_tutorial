@@ -305,6 +305,7 @@ class _MenuFuncScreenState extends BaseStatefulState<MenuFuncScreen> {
             ),
           ),
           Container(
+            color: getBannerBackgroundColor(),
             margin: EdgeInsets.only(top: DimenConstants.marginPaddingSmall),
             child: MaxAdView(
               adUnitId: getBannerAdUnitId(),
