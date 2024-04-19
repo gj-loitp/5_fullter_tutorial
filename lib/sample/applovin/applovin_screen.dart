@@ -216,13 +216,18 @@ Incomplete, if not for you.""",
   Future<void> initializePlugin() async {
     logStatus("Initializing SDK...");
 
-    var configuration = await AppLovinMAX.initialize(sdkKey);
-    if (configuration != null) {
+    var isInitialized = await AppLovinMAX.isInitialized();
+    logStatus("isInitialized $isInitialized");
+    if (isInitialized == true) {
       _isInitialized = true;
-
-      logStatus("SDK Initialized: $configuration");
-
       attachAdListeners();
+    } else {
+      var configuration = await AppLovinMAX.initialize(sdkKey);
+      if (configuration != null) {
+        _isInitialized = true;
+        logStatus("SDK Initialized: $configuration");
+        attachAdListeners();
+      }
     }
   }
 
@@ -306,8 +311,7 @@ Incomplete, if not for you.""",
   }
 
   void logStatus(String status) {
-    /// ignore: avoid_print
-    print(status);
+    debugPrint("roy93~ $status");
 
     setState(() {
       _statusText = status;
