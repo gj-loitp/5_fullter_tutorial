@@ -27,6 +27,7 @@ final String _bannerAdUnitId = Platform.isAndroid ? "~" : "IOS_BANNER_AD_UNIT_ID
 var _listMyDevice = [
   "eeaaab5a1f0cf524", //poco f3
   "f2b945dfa5e953cf", //mi pad 5
+  "05f26989e8ce5d06", //vsmart aris
 ];
 
 String getInterstitialAdUnitId() {
