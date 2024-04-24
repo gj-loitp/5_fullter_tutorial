@@ -1155,6 +1155,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.0"
+  flutter_quiz_matcher:
+    dependency: "direct main"
+    description:
+      name: flutter_quiz_matcher
+      sha256: e1ea656a43d0ecaad1416012c7619eb5f288763c6eafdb527aa01177243bb063
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.4"
   flutter_rating_bar:
     dependency: "direct main"
     description:

@@ -142,6 +142,7 @@ dependencies:
   flutter_switch: ^0.3.2
   flutter_spinkit: ^5.2.1
   flutter_sticky_header: ^0.6.5
+  flutter_quiz_matcher: ^0.0.4
 #  flutter_screen_lock: ^9.0.2
   flutter_phoenix: ^1.1.1
   fluttertoast: ^8.2.5
