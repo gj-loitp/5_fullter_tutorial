@@ -13,6 +13,7 @@ import 'package:flutter_displaymode/flutter_displaymode.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_native_timezone/flutter_native_timezone.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
+import 'package:flutter_udid/flutter_udid.dart';
 import 'package:get/get.dart';
 import 'package:platform_device_id/platform_device_id.dart';
 import 'package:rxdart/rxdart.dart';
@@ -47,7 +48,6 @@ import 'splash_screen.dart';
 //TODO pkg name
 
 //@mckimquyen
-
 
 final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
 
@@ -216,7 +216,12 @@ void testLogger() {
 }
 
 Future<void> initializePlugin() async {
-  deviceId = await PlatformDeviceId.getDeviceId;
+  // deviceId = await PlatformDeviceId.getDeviceId;
+  // debugPrint("roy93~ deviceId $deviceId");
+
+  deviceId = await FlutterUdid.consistentUdid;
+  // debugPrint("deviceId $deviceId");
+
   var configuration = await AppLovinMAX.initialize(sdkKey);
   if (configuration != null) {
     Dog.i("initializePlugin success");

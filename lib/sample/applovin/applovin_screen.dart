@@ -18,6 +18,7 @@ const String sdkKey = "e75FnQfS9XTTqM1Kne69U7PW_MBgAnGQTFvtwVVui6kRPKs5L7ws9twr5
 final String _interstitialAdUnitId = Platform.isAndroid ? "~" : "IOS_INTER_AD_UNIT_ID";
 final String _bannerAdUnitId = Platform.isAndroid ? "~" : "IOS_BANNER_AD_UNIT_ID";
 var _listMyDevice = [
+  //~~~~platform_device_id
   "eeaaab5a1f0cf524", //poco f3 debug
   "14ba851bdbeea403", //poco f3 release
   "f2b945dfa5e953cf", //mi pad 5 debug
@@ -26,10 +27,19 @@ var _listMyDevice = [
   "69ed2d36ce2ac078", //vsmart aris release
   "b09ab0a421fa04a4", //samsung a50s debug
   "001b36fb160413f2", //samsung a50s release
+  //~~~~flutter_udid
+  "798a2c5f7fb63f9c6ccb38e5120cee7ac14dc5e75e16fd4361d159408b711766",//poco f3 debug + release
+  "", //mi pad 5 debug
+  "", //mi pad 5 release
+  "", //vsmart aris debug
+  "", //vsmart aris release
+  "", //samsung a50s debug
+  "", //samsung a50s release
 ];
 
 String getInterstitialAdUnitId() {
-  debugPrint("roy93~ getInterstitialAdUnitId deviceId $deviceId");
+  // debugPrint("roy93~ getInterstitialAdUnitId deviceId $deviceId");
+  print("roy93~ getInterstitialAdUnitId deviceId $deviceId");
   return isApplovinDeviceTest() ? "${_interstitialAdUnitId}_debug" : _interstitialAdUnitId;
 }
 
