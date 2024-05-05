@@ -31,8 +31,7 @@ var _listMyDevice = [
   "798a2c5f7fb63f9c6ccb38e5120cee7ac14dc5e75e16fd4361d159408b711766",//poco f3 debug + release
   "", //mi pad 5 debug
   "", //mi pad 5 release
-  "", //vsmart aris debug
-  "", //vsmart aris release
+  "068dfca3d91074f174e4161d02cd0f09cb93f502164bafcc016153841076e1b6", //vsmart aris debug + release
   "", //samsung a50s debug
   "", //samsung a50s release
 ];
