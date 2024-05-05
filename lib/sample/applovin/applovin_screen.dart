@@ -29,8 +29,7 @@ var _listMyDevice = [
   "001b36fb160413f2", //samsung a50s release
   //~~~~flutter_udid
   "798a2c5f7fb63f9c6ccb38e5120cee7ac14dc5e75e16fd4361d159408b711766",//poco f3 debug + release
-  "", //mi pad 5 debug
-  "", //mi pad 5 release
+  "4ad566d6ac781a4f37ac34a83c459530eb702e64df7d6d1d3747f33446dcea87", //mi pad 5 debug + release
   "068dfca3d91074f174e4161d02cd0f09cb93f502164bafcc016153841076e1b6", //vsmart aris debug + release
   "184b74248f05d8c3b50c69832216a1b8415557a132c6cef33af8a3baba081eca", //samsung a50s debug + release
 ];
