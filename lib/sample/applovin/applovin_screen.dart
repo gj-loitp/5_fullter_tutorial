@@ -32,8 +32,7 @@ var _listMyDevice = [
   "", //mi pad 5 debug
   "", //mi pad 5 release
   "068dfca3d91074f174e4161d02cd0f09cb93f502164bafcc016153841076e1b6", //vsmart aris debug + release
-  "", //samsung a50s debug
-  "", //samsung a50s release
+  "184b74248f05d8c3b50c69832216a1b8415557a132c6cef33af8a3baba081eca", //samsung a50s debug + release
 ];
 
 String getInterstitialAdUnitId() {
