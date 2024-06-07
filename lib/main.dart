@@ -44,7 +44,7 @@ import 'splash_screen.dart';
 //TODO google config show isFullData use dio demo screen 2022.10.13
 //TODO lan dau mo app check valid google neu ko co connection se bi treo app
 //TODO firebase
-//TODO applovin
+//TODO applovin, coi copy tu app kqxs
 //TODO pkg name
 
 //@mckimquyen
