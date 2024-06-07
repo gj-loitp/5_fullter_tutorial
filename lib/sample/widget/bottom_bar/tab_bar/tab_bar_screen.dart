@@ -26,7 +26,7 @@ class TabBarScreenState extends State<TabBarScreen>
   void initState() {
     super.initState();
 
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 6, vsync: this);
   }
 
   @override
@@ -51,6 +51,9 @@ class TabBarScreenState extends State<TabBarScreen>
           Tab1(),
           Tab2(),
           Tab3(),
+          Tab1(),
+          Tab2(),
+          Tab3(),
         ],
         // set the controller
         controller: _tabController,
@@ -72,6 +75,18 @@ class TabBarScreenState extends State<TabBarScreen>
               Tab(
                 icon: Icon(Icons.airport_shuttle),
                 text: "Shuttle",
+              ),
+              Tab(
+                icon: Icon(Icons.favorite),
+                text: "Favorite 2",
+              ),
+              Tab(
+                icon: Icon(Icons.adb),
+                text: "adb 2",
+              ),
+              Tab(
+                icon: Icon(Icons.airport_shuttle),
+                text: "Shuttle 2",
               ),
             ],
             // setup the controller
