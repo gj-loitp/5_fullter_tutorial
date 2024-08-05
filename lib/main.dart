@@ -181,14 +181,24 @@ void main() async {
           //           .copyWith(secondary: Colors.deepOrange)
           //           .copyWith(background: Colors.white),
           // ),
+          // builder: (context, child) {
+          //   return MediaQuery(
+          //     data: MediaQuery.of(context).copyWith(textScaler: const TextScaler.linear(1.0)),
+          //     child: child!,
+          //   );
+          // },
+          builder: (context, c) {
+            var child = c!;
+            child = DevicePreview.appBuilder(context, child);
+            child = Toast(child: child, navigatorKey: navigatorKey);
+            // return child;
+            return MediaQuery(
+              data: MediaQuery.of(context).copyWith(textScaler: const TextScaler.linear(1.0)),
+              child: child,
+            );
+          },
           home: SplashScreen(),
           navigatorKey: navigatorKey,
-          builder: (context, _) {
-            var child = _!;
-            child = DevicePreview.appBuilder(context, _);
-            child = Toast(child: child, navigatorKey: navigatorKey);
-            return child;
-          },
           locale: DevicePreview.locale(context),
           theme: ThemeData.light().copyWith(extensions: [FlashToastTheme(), FlashBarTheme()]),
           darkTheme: ThemeData.dark(),
